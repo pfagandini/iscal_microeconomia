@@ -1,0 +1,83 @@
+\documentclass[table]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{eurosym}
+\usepackage{amsmath}
+\usepackage{ragged2e}
+\usepackage[scaled]{helvet}
+\usepackage{tikz}
+\usepackage{eurosym}
+\usetikzlibrary{spy,shapes,arrows,positioning,decorations.pathreplacing}
+
+\tikzset{hide on/.code={\only<#1>{\color{white}}}}
+\definecolor{dark_green}{rgb}{0.0, 0.5, 0.0}
+
+\pgfdeclarelayer{bg}    % declare background layer
+\pgfsetlayers{bg,main}  % set the order of the layers (main is the standard layer)
+
+\apptocmd{\frame}{}{\justifying}{}
+
+\definecolor{iscal_color}{HTML}{641242} % ISCAL
+
+\setbeamertemplate{footline}{
+	\hspace{0.05\textwidth}
+	\raisebox{3ex}{\insertshortauthor{}}\hfill
+	\raisebox{3ex}{\insertframenumber{}/\inserttotalframenumber} \hfill
+	{\includegraphics[height=0.08\textheight]{../visual material/logo.png}}
+	\hspace{0.05\textwidth}
+}
+
+\tikzset{
+  invisible/.style={opacity=0},
+  visible on/.style={alt={#1{}{invisible}}},
+  alt/.code args={<#1>#2#3}{%
+    \alt<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}} % \pgfkeysalso doesn't change the path
+  },
+}
+
+\title{Microeconomia}
+\subtitle{Capitulo 2 : Teoria do Consumidor}
+\author[]{}
+\institute[ISCAL]{\includegraphics[height=0.10\textheight]{../visual material/logo_eng_full.png}}
+\date{Primavera 2020/2021}
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamercolor{title}{fg = iscal_color}
+\setbeamercolor{subtitle}{fg = iscal_color}
+\setbeamercolor{frametitle}{fg = white, bg = iscal_color}
+
+\hypersetup{linkcolor=iscal_color, colorlinks=true}
+
+\AtBeginSection{\frame{\sectionpage}}
+\renewcommand{\sectionname}{Parte}
+
+\begin{document}
+
+{
+\setbeamertemplate{footline}{}
+\begin{frame}
+	\maketitle
+\end{frame}
+}
+
+\begin{frame}{Conte\'udos}
+  \tableofcontents
+\end{frame}
+
+\section{Restri\c c\~ao Or\c camental e Curvas de Indiferen\c ca}
+\input{lecture 7}
+\section{Taxa marginal de substitui\c c\~ao e Fun\c c\~ao de utilidade}
+\input{lecture 8}
+\section{Formaliza\c c\~ao Anal\'itica do Problema do Consumidor}
+\input{Lecture 9}
+\section{Procura Individual}
+\input{Lecture 10}
+\section{Procura Individual - Hicks}
+\input{Lecture 11}
+
+\end{document}

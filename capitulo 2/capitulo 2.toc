@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Restri\c c\~ao Or\c camental e Curvas de Indiferen\c ca}{3}{0}{1}
+\beamer@sectionintoc {2}{Taxa marginal de substitui\c c\~ao e Fun\c c\~ao de utilidade}{34}{0}{2}
+\beamer@sectionintoc {3}{Formaliza\c c\~ao Anal\'itica do Problema do Consumidor}{78}{0}{3}
+\beamer@sectionintoc {4}{Procura Individual}{115}{0}{4}
+\beamer@sectionintoc {5}{Procura Individual - Hicks}{186}{0}{5}
