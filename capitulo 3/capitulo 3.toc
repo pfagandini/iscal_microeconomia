@@ -3,4 +3,4 @@
 \beamer@sectionintoc {3}{An\'alise de Custos}{65}{0}{3}
 \beamer@sectionintoc {4}{Oferta}{106}{0}{4}
 \beamer@sectionintoc {5}{Equilibrio de Mercado - Curto Prazo}{177}{0}{5}
-\beamer@sectionintoc {6}{Equilibrio de Mercado - Longo Prazo}{209}{0}{6}
+\beamer@sectionintoc {6}{Equilibrio de Mercado - Longo Prazo}{208}{0}{6}

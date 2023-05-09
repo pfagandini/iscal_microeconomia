@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.5.9)  9 MAY 2023 15:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.5.9)  9 MAY 2023 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1766,4 +1766,1329 @@ Package pdftex.def Info: ../visual material/logo.png  used on input line 205.
  [88
 
 ]
-Overfull \vbox (
+Overfull \vbox (6.11649pt too high) detected at line 260
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 260.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[89
+
+]
+Overfull \vbox (6.11649pt too high) detected at line 260
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 260.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[90
+
+]
+Overfull \vbox (6.11649pt too high) detected at line 260
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 260.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[91
+
+]
+Overfull \vbox (6.11649pt too high) detected at line 260
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 260.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[92
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 270.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [93
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 270.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [94
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 270.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [95
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 290.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [96
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 290.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [97
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 300.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [98
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 300.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [99
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 300.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [100
+
+]
+Overfull \hbox (12.92654pt too wide) in paragraph at lines 318--318
+ [] 
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 318.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[101
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 7.59998pt on input line 336.
+
+Overfull \hbox (16.28583pt too wide) in paragraph at lines 336--336
+ [] 
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 336.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[102
+
+]
+Overfull \hbox (16.28583pt too wide) in paragraph at lines 354--354
+ [] 
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 354.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[103
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 364.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [104
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 376.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [105
+
+])
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 78.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [106
+
+] (lecture 17.tex
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 12.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [107
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 22.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [108
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 30.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [109
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 83.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [110
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 83.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [111
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 83.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [112
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 83.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [113
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 83.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [114
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 83.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [115
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 83.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [116
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 176.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [117
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 176.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [118
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 176.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [119
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 176.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [120
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 176.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [121
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 176.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [122
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 176.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [123
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 176.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [124
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 176.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [125
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 176.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [126
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 176.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [127
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 176.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [128
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 269.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [129
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 269.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [130
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 269.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [131
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 269.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [132
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 269.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [133
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 269.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [134
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 269.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [135
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 269.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [136
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 269.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [137
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 269.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [138
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 269.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [139
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 269.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [140
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 280.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [141
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 328.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [142
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 328.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [143
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 328.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [144
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 337.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [145
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 346.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [146
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 407.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [147
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 407.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [148
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 416.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [149
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 421.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [150
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 431.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [151
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 487.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [152
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 487.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [153
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 487.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [154
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 487.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [155
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 487.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [156
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 487.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [157
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+[]\OT1/phv/m/n/10.95 Passagem
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+\OT1/phv/m/n/10.95 para outro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+\OT1/phv/m/n/10.95 ao longo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+\OT1/phv/m/n/10.95 da mesma
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+\OT1/phv/m/n/10.95 curva de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+[]\OT1/phv/m/n/10.95 Altera[][]ao
+ []
+
+
+Underfull \hbox (badness 5578) in paragraph at lines 518--518
+\OT1/phv/m/n/10.95 da posi[][]ao
+ []
+
+
+Overfull \hbox (10.13194pt too wide) in paragraph at lines 518--518
+[][] 
+ []
+
+
+Overfull \vbox (29.16235pt too high) detected at line 518
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 518.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[158
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+[]\OT1/phv/m/n/10.95 Passagem
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+\OT1/phv/m/n/10.95 para outro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+\OT1/phv/m/n/10.95 ao longo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+\OT1/phv/m/n/10.95 da mesma
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+\OT1/phv/m/n/10.95 curva de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+[]\OT1/phv/m/n/10.95 Altera[][]ao
+ []
+
+
+Underfull \hbox (badness 5578) in paragraph at lines 518--518
+\OT1/phv/m/n/10.95 da posi[][]ao
+ []
+
+
+Overfull \hbox (10.13194pt too wide) in paragraph at lines 518--518
+[][][] 
+ []
+
+
+Overfull \vbox (29.16235pt too high) detected at line 518
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 518.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[159
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 527.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [160
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 536.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [161
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 579.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [162
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 579.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [163
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 579.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [164
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 579.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [165
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 623.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [166
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 623.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [167
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 623.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [168
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 623.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [169
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 634.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [170
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 641.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [171
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 693.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 693.
+LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
+(Font)              scaled to size 8.54997pt on input line 693.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 9.49997pt on input line 693.
+
+Overfull \hbox (11.9545pt too wide) in paragraph at lines 693--693
+[][][][][][]  
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 693.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[172
+
+]
+Overfull \hbox (11.9545pt too wide) in paragraph at lines 693--693
+[][][][][][]  
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 693.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[173
+
+]
+Overfull \hbox (11.9545pt too wide) in paragraph at lines 693--693
+[][][][][][]  
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 693.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[174
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 706.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [175
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 720.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [176
+
+])
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 80.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [177
+
+] (lecture 18.tex
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 12.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [178
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 22.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [179
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 22.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [180
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 22.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [181
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 22.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [182
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 69.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [183
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 69.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [184
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 69.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [185
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 69.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [186
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 69.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [187
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 77.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [188
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 120.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [189
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 120.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [190
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 163.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [191
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 163.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [192
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 216.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [193
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 216.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [194
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 216.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [195
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 216.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [196
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 216.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [197
+
+]
+Missing character: There is no ; in font nullfont!
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 270.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[198
+
+]
+Missing character: There is no ; in font nullfont!
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 270.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[199
+
+]
+Missing character: There is no ; in font nullfont!
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 270.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[200
+
+]
+Missing character: There is no ; in font nullfont!
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 270.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[201
+
+]
+Missing character: There is no ; in font nullfont!
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 270.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[202
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 288.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [203
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 320.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [204
+
+]
+Overfull \hbox (15.35542pt too wide) in paragraph at lines 384--384
+ [] 
+ []
+
+
+Overfull \hbox (14.93828pt too wide) in paragraph at lines 384--384
+ [] 
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 384.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[205
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 393.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [206
+
+]
+Overfull \hbox (2.84949pt too wide) in paragraph at lines 430--430
+ [] 
+ []
+
+
+Overfull \vbox (16.83615pt too high) detected at line 430
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 430.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[207
+
+])
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 82.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [208
+
+] (lecture 19.tex
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 8.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [209
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 17.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [210
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 26.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [211
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 45.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [212
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 52.
+LaTeX Font Info:    Font shape `OT1/phv/b/sl' will be
+(Font)              scaled to size 10.40245pt on input line 52.
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 52.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [213
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 64.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [214
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 74.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [215
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 89.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [216
+
+]
+Underfull \hbox (badness 3343) in paragraph at lines 137--137
+\OT1/phv/m/n/10.95 mas sem-pre com um
+ []
+
+
+Overfull \vbox (1.82935pt too high) detected at line 137
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 137.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[217
+
+]
+Underfull \hbox (badness 3343) in paragraph at lines 137--137
+\OT1/phv/m/n/10.95 mas sem-pre com um
+ []
+
+
+Overfull \vbox (1.82935pt too high) detected at line 137
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 137.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[218
+
+]
+Underfull \hbox (badness 3343) in paragraph at lines 137--137
+\OT1/phv/m/n/10.95 mas sem-pre com um
+ []
+
+
+Overfull \vbox (1.82935pt too high) detected at line 137
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 137.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[219
+
+]
+Underfull \hbox (badness 3343) in paragraph at lines 137--137
+\OT1/phv/m/n/10.95 mas sem-pre com um
+ []
+
+
+Overfull \vbox (1.82935pt too high) detected at line 137
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 137.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[220
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 175.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [221
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 185.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [222
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 249.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [223
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 249.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [224
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 286.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [225
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 332.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [226
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 332.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [227
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 332.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [228
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 341.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [229
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 350.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [230
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]\OT1/phv/m/n/10.95 Economias
+ []
+
+
+Overfull \hbox (11.88533pt too wide) in paragraph at lines 373--373
+[]\OT1/phv/m/n/10.95 Deseconomias
+ []
+
+
+Overfull \vbox (11.16634pt too high) detected at line 373
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 373.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[231
+
+]
+Overfull \hbox (11.16429pt too wide) in paragraph at lines 383--383
+[]\OT1/phv/m/n/10.95 Quanto menor a quan-ti-dade que min-i-miza o $\OT1/phv/m/sl/10.95 CM[]$ \OT1/phv/m/n/10.95 maior []e a tend[]encia
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 383.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[232
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 418.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [233
+
+]
+Overfull \hbox (4.06345pt too wide) in paragraph at lines 488--488
+ [] 
+ []
+
+
+Overfull \vbox (5.40501pt too high) detected at line 488
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 488.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[234
+
+]
+Overfull \hbox (4.06345pt too wide) in paragraph at lines 488--488
+ [] 
+ []
+
+
+Overfull \vbox (5.40501pt too high) detected at line 488
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 488.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[235
+
+]
+Overfull \hbox (4.06345pt too wide) in paragraph at lines 488--488
+ [] 
+ []
+
+
+Overfull \vbox (5.40501pt too high) detected at line 488
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 488.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[236
+
+]
+Overfull \hbox (4.06345pt too wide) in paragraph at lines 488--488
+ [] 
+ []
+
+
+Overfull \vbox (5.40501pt too high) detected at line 488
+ []
+
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 488.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+[237
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 493.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [238
+
+]
+File: ../visual material/logo.png Graphic file (type png)
+<use ../visual material/logo.png>
+Package pdftex.def Info: ../visual material/logo.png  used on input line 532.
+(pdftex.def)             Requested size: 55.30632pt x 19.9661pt.
+ [239
+
+])
+\tf@nav=\write6
+\openout6 = `"capitulo 3.nav"'.
+
+\tf@toc=\write7
+\openout7 = `"capitulo 3.toc"'.
+
+\tf@snm=\write8
+\openout8 = `"capitulo 3.snm"'.
+
+ (capitulo 3.aux)
+Package rerunfilecheck Info: File `"capitulo 3".out' has not changed.
+(rerunfilecheck)             Checksum: E297F88643EE121D5B156AA44A04D4F5;1097.
+ ) 
+Here is how much of TeX's memory you used:
+ 38451 strings out of 476334
+ 805136 string characters out of 5797787
+ 1939382 words of memory out of 5000000
+ 57700 multiletter control sequences out of 15000+600000
+ 559314 words of font info for 116 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 128i,16n,122p,495b,1180s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on "capitulo 3.pdf" (239 pages, 879756 bytes).
+PDF statistics:
+ 1493 PDF objects out of 1728 (max. 8388607)
+ 485 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+
