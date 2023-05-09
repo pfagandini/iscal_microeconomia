@@ -48,25 +48,18 @@
 			\def\eb{2.80397}
 			\def\eq{1.72301}
 
-			\onslide<4-5>{
+			\onslide<4>{
 				\draw(\ea,{d(\ea)}) node[circle,fill,inner sep=1.5]{};
 			}
 
 			\only<4>{
-				\draw(\ea,{s(\ea)}) node[circle,fill,inner sep=1.5]{};
-				\draw[dashed](\ea,0)node[below]{$q_1$}--(\ea,{d(\ea)});
-				\draw[dashed](0,{s(\ea)})node[left]{$p_s$} -- (\ea,{s(\ea)});
-				\draw[dashed](0,{d(\ea)})node[left]{$p_d$} -- (\ea,{d(\ea)});
-			}
-
-			\only<5>{
 				\draw(\eb,{s(\eb)}) node[circle,fill,inner sep=1.5]{};
 				\draw[dashed](0,{s(\eb)})node[left]{$p_2$} -- (\eb,{s(\eb)});
 				\draw[dashed](\ea,{d(\ea)}) -- (\ea,0)node[below]{$q_d$};
 				\draw[dashed](\eb,{s(\eb)}) -- (\eb,0)node[below]{$q_s$};
 			}
 
-			\onslide<6->{
+			\onslide<5->{
 				\draw[dashed] (0,{d(\eq)})node[left]{$p_{eq}$} -- (\eq,{d(\eq)}) -- (\eq,0)node[below]{$q_{eq}$};
 				\draw(\eq,{d(\eq)}) node[black,circle,fill=red,inner sep=1.5,label=above:{$E$}]{};
 			}
