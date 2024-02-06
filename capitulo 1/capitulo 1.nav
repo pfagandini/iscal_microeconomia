@@ -113,31 +113,8 @@
 \headcommand {\beamer@framepages {115}{115}}
 \headcommand {\slideentry {3}{0}{18}{116/116}{}{0}}
 \headcommand {\beamer@framepages {116}{116}}
-\headcommand {\beamer@sectionpages {75}{116}}
+\headcommand {\beamer@partpages {1}{116}}
 \headcommand {\beamer@subsectionpages {75}{116}}
-\headcommand {\sectionentry {4}{FPP - Modelos n\~ao lineares}{117}{FPP - Modelos n\~ao lineares}{0}}
-\headcommand {\slideentry {4}{0}{1}{117/117}{}{0}}
-\headcommand {\beamer@framepages {117}{117}}
-\headcommand {\slideentry {4}{0}{2}{118/118}{}{0}}
-\headcommand {\beamer@framepages {118}{118}}
-\headcommand {\slideentry {4}{0}{3}{119/119}{}{0}}
-\headcommand {\beamer@framepages {119}{119}}
-\headcommand {\slideentry {4}{0}{4}{120/120}{}{0}}
-\headcommand {\beamer@framepages {120}{120}}
-\headcommand {\slideentry {4}{0}{5}{121/121}{}{0}}
-\headcommand {\beamer@framepages {121}{121}}
-\headcommand {\slideentry {4}{0}{6}{122/126}{}{0}}
-\headcommand {\beamer@framepages {122}{126}}
-\headcommand {\slideentry {4}{0}{7}{127/127}{}{0}}
-\headcommand {\beamer@framepages {127}{127}}
-\headcommand {\slideentry {4}{0}{8}{128/128}{}{0}}
-\headcommand {\beamer@framepages {128}{128}}
-\headcommand {\slideentry {4}{0}{9}{129/129}{}{0}}
-\headcommand {\beamer@framepages {129}{129}}
-\headcommand {\slideentry {4}{0}{10}{130/130}{}{0}}
-\headcommand {\beamer@framepages {130}{130}}
-\headcommand {\beamer@partpages {1}{130}}
-\headcommand {\beamer@subsectionpages {117}{130}}
-\headcommand {\beamer@sectionpages {117}{130}}
-\headcommand {\beamer@documentpages {130}}
-\headcommand {\gdef \inserttotalframenumber {63}}
+\headcommand {\beamer@sectionpages {75}{116}}
+\headcommand {\beamer@documentpages {116}}
+\headcommand {\gdef \inserttotalframenumber {53}}
