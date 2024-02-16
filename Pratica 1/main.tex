@@ -1,0 +1,208 @@
+\documentclass{beamer}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage[utf-8]{inputenc}
+\usepackage{tikz}
+\usepackage[portuguese]{babel}
+
+\author[P. Fagandini]{Paulo Fagandini}
+\title[Parte I]{Parte I: Aula Pr\'atica}
+\institute[ISCAL - IPL]{Lisbon Accounting and Business School}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Ex 16, Caderno 1}
+    A Amélia é a namorada do Nicolau. Ambos adoram fazer um demorado Brunch ao
+domingo. Gostam de incluir tostas $(x)$ e ovos cozinhados $(y)$ de várias maneiras, mas não
+querem demorar mais de 30min na sua preparação, preferindo degustar
+preguiçosamente… Naquele período de tempo, se a Amélia fizer apenas tostas,
+consegue fazer 3, se só fizer ovos, consegue executar 6 receitas; por seu lado, se o
+Nicolau apenas fizer tostas, consegue fazer 2, mas se só fizer ovos, consegue elaborar 8
+receitas. Admita que as capacidades culinárias destes agentes económicos são bem
+representadas por modelos lineares.
+
+\end{frame}
+
+\begin{frame}{Ex 16, Caderno 1}
+    a) Apresente as Fronteiras de Possibilidades de Produção da Amélia e do Nicolau
+e interprete os respectivos declives.
+
+    \vspace{0.25in}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            Am\'elia
+
+            \begin{tikzpicture}[scale = 0.5]%, every node/.style={scale=1}]
+                
+                \draw[->] (0,0) -- (4.5, 0)node[below]{$x$};
+                \draw[->] (0,0) -- (0, 8.5)node[left]{$y$};
+
+                \onslide<2-> {\filldraw[red] (3, 0) circle (5pt) node[below] {3};}
+                \onslide<3-> {\filldraw[red] (0, 6) circle (5pt) node[left] {6};}
+
+                \onslide<4-> {\draw[red] (3,0) -- (0,6);}
+            \end{tikzpicture}
+            \onslide<4->{FPP\textsubscript{a}:} \onslide<5->{\(y=6 - \frac{6}{3}x = 6-2x\)}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            Nicolau
+
+            \begin{tikzpicture}[scale = 0.5]%, every node/.style={scale=1}]
+                \draw[->] (0,0) -- (4.5, 0)node[below]{$x$};
+                \draw[->] (0,0) -- (0, 8.5)node[left]{$y$};
+
+                \onslide<6->{\filldraw[red] (2, 0) circle (5pt) node[below] {2};}
+                \onslide<7->{\filldraw[red] (0, 8) circle (5pt) node[left] {8};}
+
+                \onslide<8->{\draw[red] (2,0) -- (0,8);}
+            \end{tikzpicture}
+            \onslide<9->{FPP\textsubscript{n}:} \onslide<10->{\(y=8 - \frac{8}{2}x = 8-4x\)}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+
+    b) Qual deles tem vantagem comparativa na preparação de receitas de ovos? E na
+preparação de tostas? Devem ambos preparar tostas e ovos, ou deve cada um
+especializar-se numa das actividades? Explique, referindo como se pode
+interpretar neste caso a possibilidade teórica de ``comércio'' entre eles.
+
+\vspace{0.25in}
+
+\begin{columns}
+    \centering
+    \begin{column}{0.5\textwidth}
+        \centering
+        \onslide<2->{\(FPP_a: y = 6 - 2x\)}
+
+        \onslide<3->{\(2\)}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+        \centering
+        \onslide<2->{\(FPP_n: y = 8 - 4x\)}
+
+        \onslide<3->{\(4\)}
+    \end{column}
+\end{columns}
+
+\vspace{0.25in}
+
+\onslide<4->{Para quem \'e mais barato produzir tostas $(x)$?} \onslide<5->{para Am\'elia! Pelo que o Nicolau deve
+se especializar na preparação de ovos $(y)$.}
+    
+\vspace{0.15in}
+
+\onslide<6->{Os termos de troca para haver comércio devem encontrarse em \([2, 4]\)}
+
+\end{frame}
+
+\begin{frame}
+    c) Admita que os termos de troca se fixaram no centro do intervalo de valores
+possíveis e que terá referido na alínea anterior. Apresente a fronteira das
+possibilidades de consumo e explique como se pode definir um plano de
+produção e trocas para que se atinjauma situação em que ambos consomem no
+Brunch 1.5 tostas cada um. Nesse caso, quantos ovos consumiriam?
+
+\vspace{0.25in}
+\begin{itemize}
+    \item<2->{O ponto m\'edio de \([2, 4]\) \'e 3, ou seja 3 ovos por tosta.}
+    \item<3->{Nicolau, como se especializou no $y$, tem a mesma ordenada na origem,
+    Assim, a FPC\textsubscript{n}: $y = 8 - 3x$}
+    \item<4->{Am\'elia, tem 3 tostas, pelo que poderia troca-las por at\'e 9 ovos ($3\times 3$).
+    Assim, a sua FPC\textsubscript{a}: $y = 9 - 3x$}
+    \item<5-> Se trocam 3 tostas por ovo, Am\'elia podia dar 1.5 tosta ao Nicolau E
+    em troca iria receber $1.5 \times 3 = 4.5$ ovos.
+    \item<6-> Finalmente Am\'elia consume $(1.5, 4.5)$, e Nicolau $(1.5, 3.5)$.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            Am\'elia
+
+            \begin{tikzpicture}[scale = 0.5]
+                
+                \draw[->] (0,0) -- (5, 0)node[below]{$x$};
+                \draw[->] (0,0) -- (0, 9.5)node[left]{$y$};
+
+                \filldraw[red] (3, 0) circle (5pt) node[below] {3};
+                \filldraw[red] (0, 6) circle (5pt) node[left] {6};
+
+                \draw[red] (3,0) -- (0,6);
+                \draw[blue] (3, 0) -- (0, 9)node[left]{$9$};
+
+                \filldraw[blue] (1.5, 4.5) circle (5pt) node[above right]{$(1.5, 4.5)$};
+
+            \end{tikzpicture}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            Nicolau
+
+            \begin{tikzpicture}[scale = 0.5]
+                \draw[->] (0,0) -- (5, 0)node[below]{$x$};
+                \draw[->] (0,0) -- (0, 9.5)node[left]{$y$};
+
+                \filldraw[red] (2, 0) circle (5pt) node[below] {2};
+                \filldraw[red] (0, 8) circle (5pt) node[left] {8};
+
+                \draw[blue] (0, 8) -- ({8/3}, 0) node[below right] {$2.(6)$};
+                \draw[red] (2,0) -- (0,8);
+
+                \filldraw[blue] (1.5, 3.5) circle (5pt) node[above right]{$(1.5, 3.5)$};
+            \end{tikzpicture}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    d) O Baltazar é muito amigo do Nicolau e da Amélia. Se ele também quiser
+    frequentar o Brunch de Domingo, não será eficiente levar também tostas e ovos
+    para juntar aos dos seus amigos e todos comerem juntos, será melhor levar taças
+    de fruta, que ele prepara bastante bem. Explique como funcionaria este modelo,
+    à luz do conceito de vantagem comparativa e vantagens de comércio, caso
+    tenhamos 3 produtos para troca.
+
+    \vspace{0.25in}
+
+    \onslide<2->{
+        Certo, porque se tem ventagem comparativa na produ\c c\~ao de um tereceiro bem
+        assim todos podem estar melhor. Suponha que tem ventagem comparativa na
+        produ\c c\~ao de $x$ ou $y$, assim sempre algum dos 3 n\~ao iria ganhar
+        nada com com\'ercio com algum dos outros. Assim com um terceiro bem,
+        todos podem trocar com todos e estar melhor.
+    }
+\end{frame}
+
+
+\begin{frame}
+    e) Os Brunchs de domingo são um sucesso! A Amélia pensa em abrir um
+restaurante. Determine o custo de oportunidade dessa decisão, caso seja
+necessário a Amélia abdicar do seu emprego onde ganha 20 mil euros líquidos
+por ano, sabendo que terá de investir 10 mil euros em remodelação do espaço,
+maquinaria e licenças, para poder abrir o seu restaurante de Brunchs. Explique a
+diferença entre custo de oportunidade e despesa (no sentido contabilístico).
+Qual o volume de facturação que fará do negócio uma escolha racional?
+
+\vspace{0.25in}
+
+\onslide<2->{
+    \[CO=20 + 10 = 30\]
+}
+
+Ter\'a de faturar mais de 30 mil para que seja uma escolha racional.
+
+\end{frame}
+\end{document}
