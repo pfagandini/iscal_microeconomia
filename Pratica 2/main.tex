@@ -19,6 +19,8 @@ podem ser descritas pela função utilidade $U=\sqrt{xy}$.
 }
 
 
+\section{Quest\~ ao de desenvolvimento}
+
 \frame{
 a) Determine analiticamente a restrição orçamental do Miguel e faça a
 representação gráfica do espaço das possibilidades de consumo.
@@ -26,7 +28,9 @@ representação gráfica do espaço das possibilidades de consumo.
 \begin{columns}
 
     \begin{column}{0.49\textwidth}
-        \[2 x+1 y=120\]\[y = \frac{120}{1}-\frac{2}{1}x\]\[y = 120-2x\]
+        \onslide<2->{\[2 x+1 y=120\]}
+        \onslide<3->{\[y = \frac{120}{1}-\frac{2}{1}x\]}
+        \onslide<4->{\[y = 120-2x\]}
     \end{column}
 
     \begin{column}{0.49\textwidth}
@@ -35,10 +39,10 @@ representação gráfica do espaço das possibilidades de consumo.
 
             \begin{tikzpicture}[scale = 0.03]
 
-                \onslide<2->{\draw[<->] (0,150) node[left]{$y$} -- (0,0) -- (80,0)node[below]{$x$};}
+                \onslide<5->{\draw[<->] (0,150) node[left]{$y$} -- (0,0) -- (80,0)node[below]{$x$};}
 
-                \onslide<3->{\draw[blue, domain = 0:60] plot (\x, {120-2*\x});}
-                \onslide<4->{
+                \onslide<6->{\draw[blue, domain = 0:60] plot (\x, {120-2*\x});}
+                \onslide<7->{
                     \fill[blue, domain=0:60, variable = \x, opacity = 0.5] (0,0) -- plot (\x, {120-2*\x}) -- (0,0) -- cycle;
 
                     \draw(0, 120) node[left]{$120$};
@@ -150,7 +154,7 @@ iniciais.
 \onslide<2->{2\textsuperscript{a} Lei de Gossen: $|TMS|=\frac{p_x}{p_y}$}\\
 \onslide<3->{$\frac{y}{x}=\frac{2}{1}$} \onslide<4->{$\Rightarrow} \onslide<5->{\ y = 2x$}\\
 \onslide<5->{Restri\c c\~ao or\c camental: $2x + y = 120$}\\
-\onslide<6->{$2x + 2x = 120$} or $x = 30$ and $y = 60$.
+\onslide<6->{$2x + 2x = 120$} \onslide<7->{ou $x = 30$ e $y = 60$.}
 }
 
 \frame{
@@ -235,6 +239,7 @@ i.2) Aos pre\c cos iniciais, e se a procura for $x = 36-3p_x$ qual o excedente d
 
 }
 
+\section{Escolha Multipla}
 \input{escolha_mult.tex}
 
 \end{document}
