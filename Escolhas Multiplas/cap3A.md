@@ -64,3 +64,9 @@ Uma empresa tem um custo marginal de 10 e no mercado o preço do bem que produz 
 4) Mais do que está produzir agora.
 
 # Slide 8
+
+Uma empresa tem um custo de $C(Q)=2Q^2+10$. Qual o Cmg de produzir a 10\textsuperscript{a} unidade.
+1) 30
+2) 40
+3) 50
+4) 60
