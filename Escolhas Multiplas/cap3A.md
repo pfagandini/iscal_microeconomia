@@ -39,3 +39,11 @@ O limiar de rendibilidade é:
 2) É o nível de produção em que o custo marginal é igual à receita marginal.
 3) É o nível de preço em que ótimamente a empresa não tem lucros.
 4) É o nível de preço em que o custo marignal é igual ao custo variável médio.
+
+# Slide 6
+
+Se o custo médio de longo prazo de uma empresa for $CM_{LP}(Q)=Q^2-2Q+K$, qual a escala mínima eficiênte:
+1) 1
+2) 6
+3) 1/6
+4) K
