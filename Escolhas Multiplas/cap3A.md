@@ -1,8 +1,20 @@
 # Slide 1
 
+O custo marginal:
+
+1) É o custo total dividido pela quantidade produzida.
+2) É a variação do custo total da produção de uma unidade adicional.
+3) É o custo fixo dividido pela quantidade produzida.
+4) É a soma do custo fixo e do custo variável.
+
 # Slide 2
 
+Do equilíbrio de mercado de curto prazo:
 
+1) Ocorre quando a quantidade ofertada é igual à quantidade procurada.
+2) O preço de mercado é determinado pela interação da oferta e da procura.
+3) As empresas podem ter lucros ou perdas.
+4) Pode havre uma ou mais empresas a operar.
 
 # Slide 3
 
