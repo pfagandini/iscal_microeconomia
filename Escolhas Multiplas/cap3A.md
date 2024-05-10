@@ -1,5 +1,13 @@
 # Slide 1
 
+Qual o excedente do produtor ($XS$) no limiar de encerramento?
+1) O custo fixo ($CF$)
+2) 0
+3) 1
+4) Menos o custo fixo ($-CF$)
+
+# Slide 1
+
 O custo marginal:
 
 1) É o custo total dividido pela quantidade produzida.
@@ -47,3 +55,12 @@ Se o custo médio de longo prazo de uma empresa for $CM_{LP}(Q)=Q^2-2Q+K$, qual 
 2) 6
 3) 1/6
 4) K
+
+# Slide 7
+Uma empresa tem um custo marginal de 10 e no mercado o preço do bem que produz é 12. Qual a quantidade que maximiza o lucro?
+1) 12
+2) 2
+3) Menos do que está produzir agora.
+4) Mais do que está produzir agora.
+
+# Slide 8
