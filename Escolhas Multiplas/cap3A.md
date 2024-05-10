@@ -6,7 +6,7 @@ Qual o excedente do produtor ($XS$) no limiar de encerramento?
 3) 1
 4) Menos o custo fixo ($-CF$)
 
-# Slide 1
+# Slide 2
 
 Há 30 empresas idênticas a funcionar no mercado, qual um valor plausível dos lucros hoje, se no longo prazo haverão 23 empresas?
 1) 7
@@ -14,16 +14,7 @@ Há 30 empresas idênticas a funcionar no mercado, qual um valor plausível dos 
 3) 0
 4) 23/30
 
-# Slide 1
-
-O custo marginal:
-
-1) É o custo total dividido pela quantidade produzida.
-2) É a variação do custo total da produção de uma unidade adicional.
-3) É o custo fixo dividido pela quantidade produzida.
-4) É a soma do custo fixo e do custo variável.
-
-# Slide 2
+# Slide 3
 
 Do equilíbrio de mercado de curto prazo:
 
@@ -32,7 +23,7 @@ Do equilíbrio de mercado de curto prazo:
 3) As empresas podem ter lucros ou perdas.
 4) Pode havre uma ou mais empresas a operar.
 
-# Slide 3
+# Slide 4
 
 O custo marginal:
 1) É o custo total dividido pela quantidade produzida.
@@ -40,7 +31,7 @@ O custo marginal:
 3) É o custo fixo dividido pela quantidade produzida.
 4) É a soma do custo fixo e do custo variável.
 
-# Slide 4
+# Slide 5
 
 O custo médio total:
 1) É o custo total dividido pela quantidade produzida.
@@ -48,7 +39,7 @@ O custo médio total:
 3) É o custo fixo dividido pela quantidade produzida.
 4) É a soma do custo fixo e do custo variável.
 
-# Slide 5
+# Slide 6
 
 O limiar de rendibilidade é:
 1) O nível de produção em que o custo total é igual à receita total.
@@ -56,7 +47,7 @@ O limiar de rendibilidade é:
 3) É o nível de preço em que ótimamente a empresa não tem lucros.
 4) É o nível de preço em que o custo marignal é igual ao custo variável médio.
 
-# Slide 6
+# Slide 7
 
 Se o custo médio de longo prazo de uma empresa for $CM_{LP}(Q)=Q^2-2Q+K$, qual a escala mínima eficiênte:
 1) 1
@@ -64,14 +55,15 @@ Se o custo médio de longo prazo de uma empresa for $CM_{LP}(Q)=Q^2-2Q+K$, qual 
 3) 1/6
 4) K
 
-# Slide 7
+# Slide 8
+
 Uma empresa tem um custo marginal de 10 e no mercado o preço do bem que produz é 12. Qual a quantidade que maximiza o lucro?
 1) 12
 2) 2
 3) Menos do que está produzir agora.
 4) Mais do que está produzir agora.
 
-# Slide 8
+# Slide 9
 
 Uma empresa tem um custo de $C(Q)=2Q^2+10$. Qual o Cmg de produzir a 10\textsuperscript{a} unidade.
 1) 30
@@ -79,14 +71,31 @@ Uma empresa tem um custo de $C(Q)=2Q^2+10$. Qual o Cmg de produzir a 10\textsupe
 3) 50
 4) 60
 
+# Slide 10
+
+Se os custos médios de longo prazo fossem $CM(Q)=2Q^2-4Q+40$, qual a escala mínima eficiênte?
+
+1) 1
+2) 2
+3) 1/6
+4) 1/3
+
 # Slide 11
+
+Se os custos médios de longo prazo fossem $CM(Q)=3Q^2-12Q+20$, qual o preço de equilíbroi neste mercado?
+1) 8
+2) 15
+3) 31
+4) 27
+
+# Slide 12
 Considere uma empresa com custos de longo prazo $CM(Q)=4Q^2-16Q+26$. Se a procura for $Q_D=100-P$.
 1) 45
 2) 10
 3) 31
 4) 27
 
-# Slide 12
+# Slide 13
 Uma empresa vende o seu produto no mercado a 12 u.m. Qual o cuso médio se o seu lucro for igual a $Q$ u.m.? ($Q$ sendo a quantidade produzida)
 
 1) 3
@@ -94,7 +103,7 @@ Uma empresa vende o seu produto no mercado a 12 u.m. Qual o cuso médio se o seu
 3) 11
 4) 16
 
-# Slide 13
+# Slide 14
 
 Que pode ser verdade de uma empresa que tem um lucro de 15 u.m.
 1) O seu excedente é de 15 u.m.
