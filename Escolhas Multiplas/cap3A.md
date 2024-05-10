@@ -8,6 +8,14 @@ Qual o excedente do produtor ($XS$) no limiar de encerramento?
 
 # Slide 1
 
+Há 30 empresas idênticas a funcionar no mercado, qual um valor plausível dos lucros hoje, se no longo prazo haverão 23 empresas?
+1) 7
+2) -6
+3) 0
+4) 23/30
+
+# Slide 1
+
 O custo marginal:
 
 1) É o custo total dividido pela quantidade produzida.
@@ -70,3 +78,34 @@ Uma empresa tem um custo de $C(Q)=2Q^2+10$. Qual o Cmg de produzir a 10\textsupe
 2) 40
 3) 50
 4) 60
+
+# Slide 11
+Considere uma empresa com custos de longo prazo $CM(Q)=4Q^2-16Q+26$. Se a procura for $Q_D=100-P$.
+1) 45
+2) 10
+3) 31
+4) 27
+
+# Slide 12
+Uma empresa vende o seu produto no mercado a 12 u.m. Qual o cuso médio se o seu lucro for igual a $Q$ u.m.? ($Q$ sendo a quantidade produzida)
+
+1) 3
+2) 10
+3) 11
+4) 16
+
+# Slide 13
+
+Que pode ser verdade de uma empresa que tem um lucro de 15 u.m.
+1) O seu excedente é de 15 u.m.
+2) O seu custo fixo é de 0 u.m.
+3) O preço de venda está acima do limiar de rendibilidade.
+4) O seu excedente é de menos de 15 u.m.
+
+# Slide 15
+
+O quê pode dizer de um mercado com procura de $Q_D=180-2P$, e oferta $Q_S=-20+2P$.
+1) O excedente do consumidor é 5200.
+2) O excedente do produtor é 5200.
+3) O preço de equilíbrio é 50 u.m. e a quantidade é 80 unidades.
+4) O custo variável é 2400.
