@@ -8,7 +8,7 @@ class: invert
 ### Microeconomia - ISCAL
 Paulo Fagandini
 
-- [Escolhas múltiplas](/Escolhas_Multiplas/em.html)
+- [Escolhas múltiplas](/iscal_microeconomia/Escolhas_Multiplas/em.html)
 - Aulas teóricas
 - Aulas práticas
 - Cadernos de exercícios
