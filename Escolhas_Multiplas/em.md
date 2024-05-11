@@ -11,6 +11,6 @@ class: invert
 2) [Teoria do Consumidor e Procura]()
 3) Teoria do Produtor
     - [Da produção]()
-    - [Dos custos, Equilíbrio de Mercado, Longo Prazo](cap3A.html)
+    - [Dos custos, Equilíbrio de Mercado, Longo Prazo](/iscal_microeconomia/Escolhas_Multiplas/cap3A.html)
 3) [(3A) Elasticidades e Intervençaõ dos Mercados]()
 4) [Monopólio]()
