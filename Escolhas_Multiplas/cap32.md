@@ -5,7 +5,7 @@ theme : default
 class: invert
 ---
 
-# O problema da Empresa: Custos, Equilibrio de Mercado no Curto e no Longo Prazo.
+# O problema da Empresa: Custos, Equilibrio de Mercado no Curto e no Longo Prazo
 Paulo Fagandini
 
 ---
