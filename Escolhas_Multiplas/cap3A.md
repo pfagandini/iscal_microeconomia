@@ -75,7 +75,7 @@ d) Mais do que está produzir agora.
 
 ---
 
-## Uma empresa tem um custo de $C(Q)=2Q^2+10$. Qual o Cmg de produzir a 10<sup>a</sup> unidade.
+## Uma empresa tem um custo de $C(Q)=2Q^2+10$. Qual o Cmg de produzir a $10^a$ unidade.
 a) 30
 b) 40
 c) 50
