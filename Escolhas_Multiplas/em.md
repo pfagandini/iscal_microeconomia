@@ -4,8 +4,8 @@ author: Paulo Fagandini
 theme : default
 class: invert
 ---
-
-# Capítulos:
+# Escolha Múltipla
+## Capítulos:
 
 1. [Escolha racional e FFP]()
 2. [Teoria do Consumidor e Procura](/iscal_microeconomia/Escolhas_Multiplas/cap2.html)
