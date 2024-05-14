@@ -142,3 +142,9 @@ d) $p_1=4.3$ e $p_2=0$
 
 ---
 
+## "Agrovska" é a única produtora do ramo agro-alimentar, mercado onde existem barreiras à entrada pela vigência de um imposto aduaneiro que tem impedido a competição por parte de produtores estrangeiros. Os custos da "Agrovska" são: $CT(Q) = 0,05Q^3 - 6Q^2 + 335Q$, e a procura inversa do mercado: $P = 330 - 2,2Q$. Qual a escolha ótima do produtor (p, Q)?
+
+a) $(109.03, 90.13)$
+b) $(90.13, 109.03)$
+c) $(109.03, 149.73)$
+d) $(149.73, 90.13)$
