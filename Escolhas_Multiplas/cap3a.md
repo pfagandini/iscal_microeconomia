@@ -139,7 +139,7 @@ d) 68
 
 ## Qual das seguintes afirmações feitas por um ministro das finanças é obviamente falsa:
 
-I-  Dada as vendas em Portugal de 1 milhão de pacotes de cotonetes por mês, e representar uma procura bastante elástica, um imposto de 1 euro por pacto deverá refletir uma colheita de pouco mais de 1 milhão de euros.
+I-  Dada as vendas em Portugal de 1 milhão de pacotes de cotonetes por mês, e representar uma procura bastante elástica, um imposto de 1 euro por pacote deverá refletir uma colheita de pouco mais de 1 milhão de euros.
 II- Esperamos que um subsídio de 1 euro na cerveja sem álcool eleve as vendas em 100,000 unidades por mês, pelo que terá uma despesa fiscal de 100,000 euros.
 III- Antes de podermos fazer uma estimação do impacto do imposto nos combustíveis, precissamos de um estudio sério da elasticidade da procura.
 
