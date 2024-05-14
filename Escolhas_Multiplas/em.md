@@ -13,4 +13,4 @@ class: invert
     - [Da produção](/iscal_microeconomia/Escolhas_Multiplas/cap31.html)
     - [Dos custos, Equilíbrio de Mercado, Longo Prazo](/iscal_microeconomia/Escolhas_Multiplas/cap32.html)
 3. [(3A) Elasticidades e Intervençaõ dos Mercados](/iscal_microeconomia/Escolhas_Multiplas/cap3a.html)
-4. [Monopólio]()
+4. [Monopólio](/iscal_microeconomia/Escolhas_Multiplas/cap4.html)
