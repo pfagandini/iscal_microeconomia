@@ -5,7 +5,7 @@ theme : default
 class: invert
 ---
 
-# Escolhas racionais e FPP
+# Monopólio e Defesa da Concorrência
 Paulo Fagandini
 
 ---
