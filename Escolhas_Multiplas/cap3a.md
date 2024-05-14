@@ -150,12 +150,12 @@ d) II e III.
 
 ---
 
-## O quê é sempre falso. Um aumento do preço pode:
+## O quê não é sempre verdadeira. Um aumento do preço pode:
 
 a) Ter um impacto negativo na quantidade procurada.
 b) Aumentar a quantidade vendida de um bem substituto.
 c) Aumentar a despesa do consumidor.
-d) Diminuir a receita do consumidor.
+d) Diminuir a quantidade vendida em equilíbrio.
 
 ---
 
