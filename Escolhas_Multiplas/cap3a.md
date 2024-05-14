@@ -159,7 +159,7 @@ d) Diminuir a quantidade vendida em equilíbrio.
 
 ---
 
-## O quê pode dizer deeste mercado, sabendo que a despesa do consumidor caiu depois de um aumento dos preços no equilíbrio:
+## O quê pode dizer deste mercado, sabendo que a despesa do consumidor caiu depois de um aumento dos preços no equilíbrio:
 
 a) Tem uma procura infinitamente elástica.
 b) Estamos perante um bem inferior.
