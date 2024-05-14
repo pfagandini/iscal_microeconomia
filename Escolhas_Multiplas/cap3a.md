@@ -147,3 +147,21 @@ a) I, II e III.
 b) I e II.
 c) Só III.
 d) II e III.
+
+---
+
+## O quê é sempre falso faz um aumento do preço pode:
+
+a) Ter um impacto negativo na quantidade procurada.
+b) Aumentar a quantidade vendida de um bem substituto.
+c) Aumentar a despesa do consumidor.
+d) Diminuir a receita do consumidor.
+
+---
+
+## O quê pode dizer deeste mercado, sabendo que a despesa do consumidor caiu depois de um aumento dos preços no equilíbrio:
+
+a) Tem uma procura infinitamente elástica.
+b) Estamos perante um bem inferior.
+c) Está na parte inferior da procura direta.
+d) Certamente é um bem essensial para o consumidor.
