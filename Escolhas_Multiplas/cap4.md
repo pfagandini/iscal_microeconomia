@@ -148,3 +148,21 @@ a) $(109.03, 90.13)$
 b) $(90.13, 109.03)$
 c) $(109.03, 149.73)$
 d) $(149.73, 90.13)$
+
+---
+
+## Um monopolista enfrenta:
+
+a) Uma procura com declive positivo.
+b) Uma procura perfeitamente elástica.
+c) Uma procura decrescente.
+d) Uma procura com uma elasticidade preço positiva.
+
+---
+
+## O quê faz parte da solução ótima do monopolista.
+
+a) Encontra-se na parte rígida da procura.
+b) É onde a receita iguala o custo marginal.
+c) O preço é determinado na procura inversa.
+d) O monopolista tem tanto lucro como teria na melhor alternativa.
