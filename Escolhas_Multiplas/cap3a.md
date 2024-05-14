@@ -161,7 +161,7 @@ d) Diminuir a quantidade vendida em equilíbrio.
 
 ## O quê pode dizer deste mercado, sabendo que a despesa do consumidor caiu depois de um aumento dos preços no equilíbrio:
 
-a) Tem uma procura infinitamente elástica.
+a) Tem uma procura infinitamente rígida.
 b) Estamos perante um bem inferior.
 c) Está na parte inferior da procura direta.
 d) Certamente é um bem essensial para o consumidor.
