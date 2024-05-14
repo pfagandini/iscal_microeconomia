@@ -25,7 +25,7 @@ d) Só há uma empresa no mercado, e existem barreiras à entrada.
 a) Venda de smartphones de várias marcas no mercado.
 b) Distribuição de eletricidade em áreas remotas com apenas uma empresa de energia.
 c) Uma cadeia de fast-food com uma licença de funcionamento.
-d) Indústria automobilística dominada por uma grande empresas.
+d) Indústria automobilística dominada por uma grande empresa.
 
 ---
 
@@ -109,7 +109,7 @@ d) Cobrar preços diferentes com base no momento da compra.
 ## O que é um monopólio natural?
 
 a) Um mercado onde várias empresas competem entre si.
-b) Um mercado onde um único vendedor controla toda a oferta de um bem ou serviço.
+b) Um mercado onde a concorrência é inviável.
 c) Um mercado onde não há barreiras à entrada.
 d) Um mercado onde o governo controla a produção e distribuição de bens.
 
