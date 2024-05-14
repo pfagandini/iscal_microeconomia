@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 author: Paulo Fagandini
 theme : default
 % class: invert
@@ -119,7 +119,7 @@ d) Um mercado onde o governo controla a produção e distribuição de bens.
 
 a) 4
 b) 3
-c) 1.57
+c) 1.81
 d) 5.57
 
 ---
@@ -128,7 +128,7 @@ d) 5.57
 
 a) 4
 b) 3
-c) 1.81
+c) 1.57
 d) 5.57
 
 ---
