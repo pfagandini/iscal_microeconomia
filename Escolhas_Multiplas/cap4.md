@@ -115,7 +115,7 @@ d) Um mercado onde o governo controla a produção e distribuição de bens.
 
 ---
 
-## Considere uma empresa em situação de monopólio que oferece um bem dirigido a duas categorias de consumidores, incluídos em mercados perfeitamente separados. O primeiro mercado tem uma procura $Q_D^1=4-0.125 P_1$ e o segundo $Q_2=2-0.1P_2$. A função de custo é dada por $CT(Q)=Q^3-6Q^2+15Q+10$. Qual a produção no mercado 1 do monopolista?
+## Considere uma empresa em situação de monopólio que oferece um bem dirigido a duas categorias de consumidores, incluídos em mercados perfeitamente separados. O primeiro mercado tem uma procura $Q_D^1=4-0.125 P_1$ e o segundo $Q_D^2=2-0.1P_2$. A função de custo é dada por $CT(Q)=Q^3-6Q^2+15Q+10$. Qual a produção no mercado 1 do monopolista?
 
 a) 4
 b) 3
@@ -124,7 +124,7 @@ d) 5.57
 
 ---
 
-## Considere uma empresa em situação de monopólio que oferece um bem dirigido a duas categorias de consumidores, incluídos em mercados perfeitamente separados. O primeiro mercado tem uma procura $Q_D^1=4-0.125 P_1$ e o segundo $Q_2=2-0.1P_2$. A função de custo é dada por $CT(Q)=Q^3-6Q^2+15Q+10$. Qual a produção no mercado 2 do monopolista?
+## Considere uma empresa em situação de monopólio que oferece um bem dirigido a duas categorias de consumidores, incluídos em mercados perfeitamente separados. O primeiro mercado tem uma procura $Q_D^1=4-0.125 P_1$ e o segundo $Q_D^2=2-0.1P_2$. A função de custo é dada por $CT(Q)=Q^3-6Q^2+15Q+10$. Qual a produção no mercado 2 do monopolista?
 
 a) 4
 b) 3
