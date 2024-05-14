@@ -67,10 +67,10 @@ d) Unitária, pois a variação percentual na procura de um bem é igual à vari
 
 ## Um imposto sobre o consumo:
 
-a) Aumenta a quantidade ofertada e diminui a quantidade procurada, elevando o preço de equilíbrio.
-b) Aumenta a quantidade ofertada e aumenta a quantidade procurada, diminuindo o preço de equilíbrio.
-c) Diminui a quantidade ofertada e aumenta a quantidade procurada, elevando o preço de equilíbrio.
-d) Diminui a quantidade ofertada e diminui a quantidade procurada, diminuindo o preço de equilíbrio.
+a) Aumenta a quantidade ofertada e diminui a quantidade procurada, elevando o preço do consumidor
+b) Aumenta a quantidade ofertada e aumenta a quantidade procurada, diminuindo o preço do produtor.
+c) Diminui a quantidade ofertada e aumenta a quantidade procurada, elevando o preço do consumidor.
+d) Diminui a quantidade ofertada e diminui a quantidade procurada, diminuindo o preço do produtor.
 
 ---
 
