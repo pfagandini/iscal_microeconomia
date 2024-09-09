@@ -1,3 +1,0 @@
-\beamer@sectionintoc {1}{Conceitos Fundamentais}{3}{0}{1}
-\beamer@sectionintoc {2}{Racionalidade e An\'alise Custo-Benef\'icio}{44}{0}{2}
-\beamer@sectionintoc {3}{Fronteira das Possibilidades da Produ\c c\~ao}{75}{0}{3}
