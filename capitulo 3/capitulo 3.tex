@@ -1,4 +1,4 @@
-\documentclass[handout,table]{beamer}
+\documentclass[table]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage{xcolor}
 \usepackage{tcolorbox}
@@ -8,10 +8,15 @@
 \usepackage{eurosym}
 \usepackage{amsmath}
 \usepackage{ragged2e}
+
+\usepackage[T1]{fontenc}
 \usepackage[scaled]{helvet}
+
 \usepackage{tikz}
 \usepackage{eurosym}
 \usetikzlibrary{spy,shapes,arrows,positioning,decorations.pathreplacing,matrix,calligraphy,calc}
+
+\renewcommand{\familydefault}{\sfdefault}
 
 \tikzset{hide on/.code={\only<#1>{\color{white}}}}
 \definecolor{dark_green}{rgb}{0.0, 0.5, 0.0}

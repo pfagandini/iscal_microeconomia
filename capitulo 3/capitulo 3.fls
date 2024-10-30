@@ -1,6 +1,6 @@
-PWD c:/Users/Paulo/Documents/iscal_microeconomia/capitulo 3
+PWD c:/Users/pifr8/Documents/iscal_microeconomia/capitulo 3
 INPUT c:/texlive/2024/texmf-var/web2c/luahbtex/lualatex.fmt
-INPUT c:/Users/Paulo/Documents/iscal_microeconomia/capitulo 3/capitulo 3.tex
+INPUT c:/Users/pifr8/Documents/iscal_microeconomia/capitulo 3/capitulo 3.tex
 OUTPUT capitulo 3.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/tex-ini-files/lualatexquotejobname.lua
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/ltluatex.lua
@@ -249,6 +249,9 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/eurosym/eurosym.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmss.fd
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm
 INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/helvet.sty
 INPUT c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryspy.code.tex
 INPUT c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryspy.code.tex
@@ -302,6 +305,10 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-luatex.lua
 INPUT c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 INPUT c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT ./capitulo 3.aux
 OUTPUT capitulo 3.aux
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
@@ -319,14 +326,22 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/translator/translator-months-dictiona
 INPUT c:/texlive/2024/texmf-dist/tex/latex/translator/translator-numbers-dictionary-English.dict
 INPUT c:/texlive/2024/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 INPUT ./capitulo 3.nav
-INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
-INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc
-INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT ../visual material/logo_eng_full.png
 INPUT ../visual material/logo_eng_full.png
-INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ../visual material/logo.png
 INPUT ./capitulo 3.toc
@@ -355,7 +370,30 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman17-regular.luc
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
@@ -426,7 +464,29 @@ INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
 INPUT ./lecture 16.tex
+INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
@@ -452,7 +512,24 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
@@ -467,6 +544,12 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy5.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
@@ -487,6 +570,24 @@ INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
@@ -542,13 +643,66 @@ INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
-INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-regular.luc
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
@@ -585,7 +739,36 @@ INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
 INPUT ./lecture 19.tex
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT ../visual material/logo.png
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvbo8t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvbo8t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvbo8r.tfm
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
 INPUT ../visual material/logo.png
@@ -649,3 +832,7 @@ INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb
