@@ -1,4 +1,0 @@
-\beamer@sectionintoc {1}{Elasticidade e elasticidade da Procura}{3}{0}{1}
-\beamer@sectionintoc {2}{Elasticidade da Procura, despesa e outras elasticidades}{38}{0}{2}
-\beamer@sectionintoc {3}{Impostos}{105}{0}{3}
-\beamer@sectionintoc {4}{Controlo de Pre\c cos}{147}{0}{4}

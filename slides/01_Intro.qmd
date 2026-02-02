@@ -1,0 +1,231 @@
+---
+title: "Introdução"
+author: "Paulo Fagandini"
+institute: "ISCAL-IPL"
+format: 
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+    self-contained: false
+    logo: images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    incremental: true
+    math: 
+      method: mathjax
+    transition: slide
+    footer: "Statistics I"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+    
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: false
+editor: source
+execute:
+  enabled: true
+engine: knitr
+---
+
+# Aula 1 – Introdução e Apresentação
+
+**Data:** 2 de outubro de 2026, 15:30  
+**Conteúdo:** Introdução, Apresentação, Temas Genéricos
+
+---
+
+## Informações da Cadeira
+
+### Docentes
+
+- **Professor:** Paulo Fagandini  
+  📧 pfagandini@iscal.ipl.pt
+
+---
+
+## Modalidade do Curso
+
+- Aulas focadas na parte **matemática**, frequentemente a mais complexa para os alunos
+- Conceitos mais básicos e definições nas referências bibliográficas obrigatórias
+
+### Avaliação
+
+- **2 testes** de escolha múltipla (50% cada)
+  - Teste 1: 26 de outubro
+  - Teste 2: 14 de dezembro
+- Nota mínima de **7 valores** para se manter em avaliação contínua
+- Avaliação contínua **não é obrigatória**
+
+---
+
+## A Economia como Ciência
+
+### Problema Económico
+
+Decidir **o que** produzir, **como** e **para quem**, utilizando recursos escassos, passíveis de utilizações alternativas, num contexto de não saciedade (necessidades ilimitadas).
+
+---
+
+### Definição de Economia
+
+Segundo **Lionel Robbins** (1935):
+
+> Ciência que estuda o comportamento humano como uma relação entre fins e meios escassos que têm usos alternativos.
+
+---
+
+## Divisão da Economia
+
+### Microeconomia
+
+Estuda o comportamento e interação de **consumidores e produtores**, enquanto indivíduos isolados, que se encontram num mercado.
+
+### Macroeconomia
+
+Estuda o desempenho da economia à **escala nacional**. Analisa variáveis agregadas como o rendimento, o emprego e o investimento. Estuda fenómenos como a inflação e os ciclos económicos.
+
+---
+
+## Análise Económica
+
+### Dois tipos de análise:
+
+**Economia Positiva**  
+Análise científica, objetiva, com conclusões demonstráveis e verificáveis.
+
+**Economia Normativa**  
+Análise subjetiva, influenciada por juízos de valor, em função de preceitos políticos, éticos ou morais.
+
+---
+
+## Não confundir!
+
+- **Economia** (com E maiúsculo) → diz respeito à **ciência**
+- **economia** (com e minúsculo) → agregado de "agentes económicos" (indivíduos que tomam decisões) que interagem em determinado espaço
+
+---
+
+## A Escassez
+
+**O que seria o mundo sem escassez?**
+
+Não haveria necessidade de escolher entre utilizações alternativas para um recurso, porque ele existiria em quantidades ilimitadas...
+
+A escassez obriga a que se façam **escolhas**, levando a um **trade-off**: para se ter uma utilização de um recurso, prescinde-se (total ou parcialmente) de outra utilização alternativa.
+
+---
+
+## Custos Económicos
+
+O custo económico de utilização de um recurso é o **custo de oportunidade**.
+
+### Custo de Oportunidade
+
+> Valor gerado por um recurso na sua **melhor utilização alternativa**.
+
+O Custo de Oportunidade representa, portanto, o valor que os agentes económicos atribuem à melhor alternativa de que prescindem quando efetuam uma escolha.
+
+---
+
+## Questão
+
+### Qual é o custo de oportunidade da utilização de um recurso ilimitado?
+
+*(Resposta: Zero, porque não há alternativas escassas)*
+
+---
+
+## Exemplo Prático
+
+O João tem um **Prédio Rural** que pode vender por €1.000 no mercado, mas pagaria €100 de imposto sobre mais-valias de imóveis.
+
+Se plantar eucaliptos, pode ter um rendimento de €1.800 por ano, mas terá de investir €1.100 no cultivo e tratamento das árvores.
+
+**Se optar por plantar eucaliptos, qual o custo de oportunidade da decisão?**
+
+---
+
+### Solução: Custo de Oportunidade de Plantar
+
+O custo de oportunidade de **plantar** eucaliptos será o valor que o João conseguiria ter se optasse pela alternativa (vender):
+
+$$
+\underbrace{€1.000 - €100}_{\text{Excedente na alternativa}} + \overbrace{€1.100}^{\text{Despesa que não teria}} = €2.000
+$$
+
+---
+
+### Observação
+
+Qual a relação entre custo de oportunidade de uma escolha e a **despesa** com a sua aquisição?
+
+- A despesa com a aquisição pode ser considerada um **custo contabilístico** (no caso da plantação, €1.100)
+- O custo de oportunidade é **algo mais do que isso**: €1.100 + excedente da melhor alternativa
+
+---
+
+### E se o João optar por vender?
+
+O **custo de oportunidade da venda** será o valor que o João conseguiria ter se optasse pela alternativa (plantar eucaliptos):
+
+$$
+\underbrace{€1.800 - €1.100}_{\text{Excedente na alternativa}} + \overbrace{€100}^{\text{Despesa que não teria}} = €800
+$$
+
+---
+
+## Qual a Decisão Ótima?
+
+### ... Racionalidade!
+
+A decisão racional será aquela opção para a qual o **custo de oportunidade é inferior ao benefício bruto** nessa opção.
+
+---
+
+### No exemplo:
+
+**Vender:**
+- Custo de oportunidade = €800
+- Benefício bruto = €1.000
+
+**Plantar:**
+- Custo de oportunidade = €2.000
+- Benefício bruto = €1.800
+
+---
+
+### Conclusão
+
+A decisão racional é **vender o terreno**, pois é aquela para a qual o custo de oportunidade é inferior ao benefício bruto:
+
+$$
+\underbrace{€1.800 - €1.100 - €100}_{\text{CO da venda}} < \underbrace{€1.000}_{\text{Benefício bruto da venda}}
+$$
+
+---
+
+## Formas Equivalentes de Racionalidade
+
+Uma decisão é racional se:
+
+1. O seu **custo de oportunidade** for inferior ao seu **benefício bruto**
+2. O seu **excedente** for o maior
+3. O seu **Bmg** (benefício marginal) for superior ao **Cmg** (custo marginal) → **análise custo-benefício**
+
+---
+
+## Resumo da Aula 1
+
+- Conceitos fundamentais: Economia, Microeconomia vs Macroeconomia
+- Escassez e escolhas económicas
+- **Custo de oportunidade**: valor da melhor alternativa abandonada
+- **Racionalidade**: escolher quando CO < Benefício Bruto
+- Três formas equivalentes de verificar racionalidade
+
+---
+
+**Próxima aula:** Análise Custo-Benefício, Bmg e Cmg

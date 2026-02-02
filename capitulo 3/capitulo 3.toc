@@ -1,6 +1,0 @@
-\beamer@sectionintoc {1}{Geometria dos custos}{3}{0}{1}
-\beamer@sectionintoc {2}{Solu\c c\~ao anal\'itica do problema do produtor}{30}{0}{2}
-\beamer@sectionintoc {3}{An\'alise de Custos}{65}{0}{3}
-\beamer@sectionintoc {4}{Oferta}{106}{0}{4}
-\beamer@sectionintoc {5}{Equilibrio de Mercado - Curto Prazo}{177}{0}{5}
-\beamer@sectionintoc {6}{Equilibrio de Mercado - Longo Prazo}{208}{0}{6}

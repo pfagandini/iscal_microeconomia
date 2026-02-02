@@ -1,0 +1,12 @@
+---
+title: "Material"
+---
+
+About this site
+
+## Slides
+
+1. [Introdução](slides/01_Intro.qmd)
+
+
+## Exercícios

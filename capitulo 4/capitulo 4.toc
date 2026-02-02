@@ -1,4 +1,0 @@
-\beamer@sectionintoc {1}{Monop\'olio}{3}{0}{1}
-\beamer@sectionintoc {2}{Monop\'olio Natural e Regula\c c\~ao}{61}{0}{2}
-\beamer@sectionintoc {3}{Discrimina\c c\~ao de pre\c cos}{95}{0}{3}
-\beamer@sectionintoc {4}{Defesa da concorr\^encia}{105}{0}{4}

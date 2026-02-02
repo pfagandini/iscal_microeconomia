@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "!OLD/"
+
+website:
+  title: "Iscal - Microeconomia (Plano de Transição)"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: material.qmd
+        text: Material
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+

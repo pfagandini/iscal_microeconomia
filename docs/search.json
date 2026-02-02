@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Microeconomia (plano de transição)",
+    "section": "",
+    "text": "Neste website, poderão encontrar o material para a cadeira de Microeconomia a ser lecionada no semestre primavera do ano académico 2025-2026 da Licenciatura em Contabilidade e Administração - Tronco Comum, do Instituto Superior de Contabilidade e Administração de Lisboa, Instituto Politécnico de Lisboa.\nO responsável pela cadeira é o Prof. Paulo Fagandini."
+  },
+  {
+    "objectID": "material.html",
+    "href": "material.html",
+    "title": "Material",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "slides/01_Intro.html",
+    "href": "slides/01_Intro.html",
+    "title": "Introdução",
+    "section": "",
+    "text": "Data: 2 de outubro de 2026, 15:30\nConteúdo: Introdução, Apresentação, Temas Genéricos\n\n\n\n\n\n\nProfessor: Paulo Fagandini\n📧 pfagandini@iscal.ipl.pt\n\n\n\n\n\n\n\nAulas focadas na parte matemática, frequentemente a mais complexa para os alunos\nConceitos mais básicos e definições nas referências bibliográficas obrigatórias\n\n\n\n\n2 testes de escolha múltipla (50% cada)\n\nTeste 1: 26 de outubro\nTeste 2: 14 de dezembro\n\nNota mínima de 7 valores para se manter em avaliação contínua\nAvaliação contínua não é obrigatória\n\n\n\n\n\n\n\n\nDecidir o que produzir, como e para quem, utilizando recursos escassos, passíveis de utilizações alternativas, num contexto de não saciedade (necessidades ilimitadas).\n\n\n\n\nSegundo Lionel Robbins (1935):\n\nCiência que estuda o comportamento humano como uma relação entre fins e meios escassos que têm usos alternativos.\n\n\n\n\n\n\n\n\nEstuda o comportamento e interação de consumidores e produtores, enquanto indivíduos isolados, que se encontram num mercado.\n\n\n\nEstuda o desempenho da economia à escala nacional. Analisa variáveis agregadas como o rendimento, o emprego e o investimento. Estuda fenómenos como a inflação e os ciclos económicos.\n\n\n\n\n\n\n\nEconomia Positiva\nAnálise científica, objetiva, com conclusões demonstráveis e verificáveis.\nEconomia Normativa\nAnálise subjetiva, influenciada por juízos de valor, em função de preceitos políticos, éticos ou morais.\n\n\n\n\n\n\nEconomia (com E maiúsculo) → diz respeito à ciência\neconomia (com e minúsculo) → agregado de “agentes económicos” (indivíduos que tomam decisões) que interagem em determinado espaço\n\n\n\n\n\nO que seria o mundo sem escassez?\nNão haveria necessidade de escolher entre utilizações alternativas para um recurso, porque ele existiria em quantidades ilimitadas…\nA escassez obriga a que se façam escolhas, levando a um trade-off: para se ter uma utilização de um recurso, prescinde-se (total ou parcialmente) de outra utilização alternativa.\n\n\n\n\nO custo económico de utilização de um recurso é o custo de oportunidade.\n\n\n\nValor gerado por um recurso na sua melhor utilização alternativa.\n\nO Custo de Oportunidade representa, portanto, o valor que os agentes económicos atribuem à melhor alternativa de que prescindem quando efetuam uma escolha.\n\n\n\n\n\n\n\n(Resposta: Zero, porque não há alternativas escassas)\n\n\n\n\n\nO João tem um Prédio Rural que pode vender por €1.000 no mercado, mas pagaria €100 de imposto sobre mais-valias de imóveis.\nSe plantar eucaliptos, pode ter um rendimento de €1.800 por ano, mas terá de investir €1.100 no cultivo e tratamento das árvores.\nSe optar por plantar eucaliptos, qual o custo de oportunidade da decisão?\n\n\n\nO custo de oportunidade de plantar eucaliptos será o valor que o João conseguiria ter se optasse pela alternativa (vender):\n\\[\n\\underbrace{€1.000 - €100}_{\\text{Excedente na alternativa}} + \\overbrace{€1.100}^{\\text{Despesa que não teria}} = €2.000\n\\]\n\n\n\n\nQual a relação entre custo de oportunidade de uma escolha e a despesa com a sua aquisição?\n\nA despesa com a aquisição pode ser considerada um custo contabilístico (no caso da plantação, €1.100)\nO custo de oportunidade é algo mais do que isso: €1.100 + excedente da melhor alternativa\n\n\n\n\n\nO custo de oportunidade da venda será o valor que o João conseguiria ter se optasse pela alternativa (plantar eucaliptos):\n\\[\n\\underbrace{€1.800 - €1.100}_{\\text{Excedente na alternativa}} + \\overbrace{€100}^{\\text{Despesa que não teria}} = €800\n\\]\n\n\n\n\n\n\n\nA decisão racional será aquela opção para a qual o custo de oportunidade é inferior ao benefício bruto nessa opção.\n\n\n\n\nVender: - Custo de oportunidade = €800 - Benefício bruto = €1.000\nPlantar: - Custo de oportunidade = €2.000 - Benefício bruto = €1.800\n\n\n\n\nA decisão racional é vender o terreno, pois é aquela para a qual o custo de oportunidade é inferior ao benefício bruto:\n\\[\n\\underbrace{€1.800 - €1.100 - €100}_{\\text{CO da venda}} &lt; \\underbrace{€1.000}_{\\text{Benefício bruto da venda}}\n\\]\n\n\n\n\n\nUma decisão é racional se:\n\nO seu custo de oportunidade for inferior ao seu benefício bruto\nO seu excedente for o maior\nO seu Bmg (benefício marginal) for superior ao Cmg (custo marginal) → análise custo-benefício\n\n\n\n\n\n\nConceitos fundamentais: Economia, Microeconomia vs Macroeconomia\nEscassez e escolhas económicas\nCusto de oportunidade: valor da melhor alternativa abandonada\nRacionalidade: escolher quando CO &lt; Benefício Bruto\nTrês formas equivalentes de verificar racionalidade\n\n\nPróxima aula: Análise Custo-Benefício, Bmg e Cmg"
+  },
+  {
+    "objectID": "slides/01_Intro.html#informações-da-cadeira",
+    "href": "slides/01_Intro.html#informações-da-cadeira",
+    "title": "Introdução",
+    "section": "",
+    "text": "Professor: Paulo Fagandini\n📧 pfagandini@iscal.ipl.pt"
+  },
+  {
+    "objectID": "slides/01_Intro.html#modalidade-do-curso",
+    "href": "slides/01_Intro.html#modalidade-do-curso",
+    "title": "Introdução",
+    "section": "",
+    "text": "Aulas focadas na parte matemática, frequentemente a mais complexa para os alunos\nConceitos mais básicos e definições nas referências bibliográficas obrigatórias\n\n\n\n\n2 testes de escolha múltipla (50% cada)\n\nTeste 1: 26 de outubro\nTeste 2: 14 de dezembro\n\nNota mínima de 7 valores para se manter em avaliação contínua\nAvaliação contínua não é obrigatória"
+  },
+  {
+    "objectID": "slides/01_Intro.html#a-economia-como-ciência",
+    "href": "slides/01_Intro.html#a-economia-como-ciência",
+    "title": "Introdução",
+    "section": "",
+    "text": "Decidir o que produzir, como e para quem, utilizando recursos escassos, passíveis de utilizações alternativas, num contexto de não saciedade (necessidades ilimitadas).\n\n\n\n\nSegundo Lionel Robbins (1935):\n\nCiência que estuda o comportamento humano como uma relação entre fins e meios escassos que têm usos alternativos."
+  },
+  {
+    "objectID": "slides/01_Intro.html#divisão-da-economia",
+    "href": "slides/01_Intro.html#divisão-da-economia",
+    "title": "Introdução",
+    "section": "",
+    "text": "Estuda o comportamento e interação de consumidores e produtores, enquanto indivíduos isolados, que se encontram num mercado.\n\n\n\nEstuda o desempenho da economia à escala nacional. Analisa variáveis agregadas como o rendimento, o emprego e o investimento. Estuda fenómenos como a inflação e os ciclos económicos."
+  },
+  {
+    "objectID": "slides/01_Intro.html#análise-económica",
+    "href": "slides/01_Intro.html#análise-económica",
+    "title": "Introdução",
+    "section": "",
+    "text": "Economia Positiva\nAnálise científica, objetiva, com conclusões demonstráveis e verificáveis.\nEconomia Normativa\nAnálise subjetiva, influenciada por juízos de valor, em função de preceitos políticos, éticos ou morais."
+  },
+  {
+    "objectID": "slides/01_Intro.html#não-confundir",
+    "href": "slides/01_Intro.html#não-confundir",
+    "title": "Introdução",
+    "section": "",
+    "text": "Economia (com E maiúsculo) → diz respeito à ciência\neconomia (com e minúsculo) → agregado de “agentes económicos” (indivíduos que tomam decisões) que interagem em determinado espaço"
+  },
+  {
+    "objectID": "slides/01_Intro.html#a-escassez",
+    "href": "slides/01_Intro.html#a-escassez",
+    "title": "Introdução",
+    "section": "",
+    "text": "O que seria o mundo sem escassez?\nNão haveria necessidade de escolher entre utilizações alternativas para um recurso, porque ele existiria em quantidades ilimitadas…\nA escassez obriga a que se façam escolhas, levando a um trade-off: para se ter uma utilização de um recurso, prescinde-se (total ou parcialmente) de outra utilização alternativa."
+  },
+  {
+    "objectID": "slides/01_Intro.html#custos-económicos",
+    "href": "slides/01_Intro.html#custos-económicos",
+    "title": "Introdução",
+    "section": "",
+    "text": "O custo económico de utilização de um recurso é o custo de oportunidade.\n\n\n\nValor gerado por um recurso na sua melhor utilização alternativa.\n\nO Custo de Oportunidade representa, portanto, o valor que os agentes económicos atribuem à melhor alternativa de que prescindem quando efetuam uma escolha."
+  },
+  {
+    "objectID": "slides/01_Intro.html#questão",
+    "href": "slides/01_Intro.html#questão",
+    "title": "Introdução",
+    "section": "",
+    "text": "(Resposta: Zero, porque não há alternativas escassas)"
+  },
+  {
+    "objectID": "slides/01_Intro.html#exemplo-prático",
+    "href": "slides/01_Intro.html#exemplo-prático",
+    "title": "Introdução",
+    "section": "",
+    "text": "O João tem um Prédio Rural que pode vender por €1.000 no mercado, mas pagaria €100 de imposto sobre mais-valias de imóveis.\nSe plantar eucaliptos, pode ter um rendimento de €1.800 por ano, mas terá de investir €1.100 no cultivo e tratamento das árvores.\nSe optar por plantar eucaliptos, qual o custo de oportunidade da decisão?\n\n\n\nO custo de oportunidade de plantar eucaliptos será o valor que o João conseguiria ter se optasse pela alternativa (vender):\n\\[\n\\underbrace{€1.000 - €100}_{\\text{Excedente na alternativa}} + \\overbrace{€1.100}^{\\text{Despesa que não teria}} = €2.000\n\\]\n\n\n\n\nQual a relação entre custo de oportunidade de uma escolha e a despesa com a sua aquisição?\n\nA despesa com a aquisição pode ser considerada um custo contabilístico (no caso da plantação, €1.100)\nO custo de oportunidade é algo mais do que isso: €1.100 + excedente da melhor alternativa\n\n\n\n\n\nO custo de oportunidade da venda será o valor que o João conseguiria ter se optasse pela alternativa (plantar eucaliptos):\n\\[\n\\underbrace{€1.800 - €1.100}_{\\text{Excedente na alternativa}} + \\overbrace{€100}^{\\text{Despesa que não teria}} = €800\n\\]"
+  },
+  {
+    "objectID": "slides/01_Intro.html#qual-a-decisão-ótima",
+    "href": "slides/01_Intro.html#qual-a-decisão-ótima",
+    "title": "Introdução",
+    "section": "",
+    "text": "A decisão racional será aquela opção para a qual o custo de oportunidade é inferior ao benefício bruto nessa opção.\n\n\n\n\nVender: - Custo de oportunidade = €800 - Benefício bruto = €1.000\nPlantar: - Custo de oportunidade = €2.000 - Benefício bruto = €1.800\n\n\n\n\nA decisão racional é vender o terreno, pois é aquela para a qual o custo de oportunidade é inferior ao benefício bruto:\n\\[\n\\underbrace{€1.800 - €1.100 - €100}_{\\text{CO da venda}} &lt; \\underbrace{€1.000}_{\\text{Benefício bruto da venda}}\n\\]"
+  },
+  {
+    "objectID": "slides/01_Intro.html#formas-equivalentes-de-racionalidade",
+    "href": "slides/01_Intro.html#formas-equivalentes-de-racionalidade",
+    "title": "Introdução",
+    "section": "",
+    "text": "Uma decisão é racional se:\n\nO seu custo de oportunidade for inferior ao seu benefício bruto\nO seu excedente for o maior\nO seu Bmg (benefício marginal) for superior ao Cmg (custo marginal) → análise custo-benefício"
+  },
+  {
+    "objectID": "slides/01_Intro.html#resumo-da-aula-1",
+    "href": "slides/01_Intro.html#resumo-da-aula-1",
+    "title": "Introdução",
+    "section": "",
+    "text": "Conceitos fundamentais: Economia, Microeconomia vs Macroeconomia\nEscassez e escolhas económicas\nCusto de oportunidade: valor da melhor alternativa abandonada\nRacionalidade: escolher quando CO &lt; Benefício Bruto\nTrês formas equivalentes de verificar racionalidade\n\n\nPróxima aula: Análise Custo-Benefício, Bmg e Cmg"
+  },
+  {
+    "objectID": "material.html#slides",
+    "href": "material.html#slides",
+    "title": "Material",
+    "section": "Slides",
+    "text": "Slides\n\nIntrodução"
+  },
+  {
+    "objectID": "material.html#exercícios",
+    "href": "material.html#exercícios",
+    "title": "Material",
+    "section": "Exercícios",
+    "text": "Exercícios"
+  }
+]

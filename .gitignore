@@ -6,3 +6,6 @@
 *.fdb_latexmk
 *.snm
 *.synctex.gz
+
+/.quarto/
+**/*.quarto_ipynb
