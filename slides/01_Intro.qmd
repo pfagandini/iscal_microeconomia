@@ -8,14 +8,14 @@ format:
       - default
       - ../font_adjust.scss
     self-contained: false
-    logo: images/iscal_logo.svg
+    logo: ../images/iscal_logo.svg
     slide-number: true
     cross-ref: true
     incremental: true
     math: 
       method: mathjax
     transition: slide
-    footer: "Statistics I"
+    footer: "Microeconomia (Plano de Transição)"
     from: markdown+emoji
     code-overflow: wrap
     code-block-font-size: 0.75em
@@ -33,17 +33,18 @@ engine: knitr
 
 # Aula 1 – Introdução e Apresentação
 
-**Data:** 2 de outubro de 2026, 15:30  
-**Conteúdo:** Introdução, Apresentação, Temas Genéricos
-
----
-
 ## Informações da Cadeira
 
-### Docentes
+### Docente
+
+::: {.nonincremental}
 
 - **Professor:** Paulo Fagandini  
   📧 pfagandini@iscal.ipl.pt
+
+:::
+
+Como é expectável a interseção dos conteúdos e material com a antiga cadeira de Microeconomia é bastante grande. Contudo, a superposição não é total. Há divergências, com menos conteúdo nos temas até a produção e intervenções no mercado, e com novo material no capítulo de monopólio e oligopólio.
 
 ---
 
@@ -52,11 +53,12 @@ engine: knitr
 - Aulas focadas na parte **matemática**, frequentemente a mais complexa para os alunos
 - Conceitos mais básicos e definições nas referências bibliográficas obrigatórias
 
-### Avaliação
+## Avaliação
 
-- **2 testes** de escolha múltipla (50% cada)
-  - Teste 1: 26 de outubro
-  - Teste 2: 14 de dezembro
+- **3 testes** com perguntas abertas
+  - Teste 1 (40%): Semana 5
+  - Teste 2 (40%): Semana 11
+  - Teste 3 (20%): Semana 14
 - Nota mínima de **7 valores** para se manter em avaliação contínua
 - Avaliação contínua **não é obrigatória**
 
@@ -133,7 +135,9 @@ O Custo de Oportunidade representa, portanto, o valor que os agentes económicos
 
 ## Questão
 
-### Qual é o custo de oportunidade da utilização de um recurso ilimitado?
+Qual é o custo de oportunidade da utilização de um recurso ilimitado?
+
+. . .
 
 *(Resposta: Zero, porque não há alternativas escassas)*
 
@@ -180,7 +184,7 @@ $$
 
 ## Qual a Decisão Ótima?
 
-### ... Racionalidade!
+### Racionalidade!
 
 A decisão racional será aquela opção para a qual o **custo de oportunidade é inferior ao benefício bruto** nessa opção.
 
@@ -189,10 +193,12 @@ A decisão racional será aquela opção para a qual o **custo de oportunidade �
 ### No exemplo:
 
 **Vender:**
+
 - Custo de oportunidade = €800
 - Benefício bruto = €1.000
 
 **Plantar:**
+
 - Custo de oportunidade = €2.000
 - Benefício bruto = €1.800
 
