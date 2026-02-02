@@ -1,0 +1,331 @@
+---
+title: "FPP, FPC, e Ventagens do Comêrcio"
+author: "Paulo Fagandini"
+institute: "ISCAL-IPL"
+format: 
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math: 
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+    
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: false
+editor: source
+execute:
+  enabled: true
+engine: knitr
+---
+
+## A Fronteira das Possibilidades de Produção
+
+Descreve a **produção máxima** que é possível obter, para um conjunto de bens, dados os recursos disponíveis numa economia.
+
+---
+
+### Pressupostos do Modelo FPP
+
+No modelo:
+
+- Consideram-se **dois bens**
+- Admite-se que a **tecnologia e os recursos são fixos**
+- Ilustra-se o conceito de **eficiência de Pareto**
+- Utiliza-se o conceito de **custo de oportunidade**
+
+---
+
+## Representação Gráfica da FPP
+
+```{r, engine='tikz'}
+
+\begin{tikzpicture}[scale=1.5]
+\draw[->] (-0.1,0) -- (4,0) node[below right] {Bem $X$};
+\draw[->] (0,-0.1) -- (0,3) node[above left] {Bem $Y$};
+\draw[blue,thick] (0,2) node[left] {$A$} -- (3,0) node[below] {$B$};
+
+% Área sombreada
+\draw[fill=blue!10,opacity=0.7] (0,0) -- (0,2) -- (3,0) -- cycle;
+
+% Ponto M (ineficiente)
+\node[circle,fill=red,inner sep=2pt,label=right:{$M$}] at (0.8,0.8) {};
+
+% Ponto N (inatingível)
+\node[circle,fill=black,inner sep=2pt,label=right:{$N$}] at (2,2) {};
+
+\end{tikzpicture}
+```
+
+- **$M$**: Ineficiente (recursos desperdiçados)
+- **$N$**: Inatingível (fora das possibilidades)
+
+---
+
+### Interpretação dos Pontos
+
+- Os pontos **A** e **B** representam produção com **especialização** em cada uma das atividades
+
+- Pontos **sobre a FPP** são pontos de produção **eficientes** no sentido de Pareto
+
+- A partir de um ponto da FPP, caso se queira aumentar a produção de um bem, é preciso **prescindir** da produção de outro
+
+---
+
+## Custo Relativo
+
+A partir de um ponto da FPP, a razão $\left|\frac{\Delta Y}{\Delta X}\right|$ coincide com o **declive da FPP linear** (sem sinal) e designa-se **custo relativo** do bem $X$.
+
+**Representa um custo de oportunidade!**
+
+---
+
+## Visualização do Custo Relativo
+
+```{r, engine='tikz'}
+
+\begin{tikzpicture}[scale=1.5]
+\draw[->] (-0.1,0) -- (4,0) node[below right] {Bem $X$};
+\draw[->] (0,-0.1) -- (0,3) node[above left] {Bem $Y$};
+\draw[blue,thick] (0,2) node[left] {$A$} -- (3,0) node[below] {$B$};
+
+% Pontos a1 e a2
+\node[circle,fill=blue,inner sep=1.5pt,label=right:{$a_1$}] at (1,1.33) {};
+\node[circle,fill=blue,inner sep=1.5pt,label=right:{$a_2$}] at (2,0.67) {};
+
+% Setas Delta Y e Delta X
+\draw[orange,thick,->] (1,1.33) -- (1,0.67);
+\node[left] at (1,1.2) {$\Delta Y$};
+
+\draw[orange,thick,->] (1,0.67) -- (2,0.67);
+\node[below] at (1.5,0.67) {$\Delta X$};
+
+\end{tikzpicture}
+```
+
+Produzir mais $\Delta X$ *custa* $\Delta Y$, ou, cada unidade de $X$ *custa* $\frac{\Delta Y}{\Delta X}$ de unidades de $Y$.
+
+
+## Interpretação Matemática
+
+- $\frac{\Delta Y}{\Delta X}$ é a **taxa de variação média**: qual a variação em $Y$ por unidade de variação em $X$
+
+- Quando $\Delta X \to 0$, obtemos a **derivada**: $\frac{dY}{dX}$
+
+- A derivada mede o **declive da tangente** à FPP num ponto
+
+**Conclusão:** O custo relativo num ponto é dado pela derivada da FPP (em valor absoluto)
+
+## FPP e FPC
+
+Um agente económico, sempre pode consumir o que pode produzir, ou seja todos os pontos sobre (e abaixo) da **FPP** representam um espaço de consumo. Ainda mais, a **FPP** representa também a *Fronteira de Possibilidades de Consumo (FPC)*. Isto é verdade sempre que o agente económico não tenha possibilidade de comerciar com outros agentes.
+
+---
+
+## Vantagens do Comércio
+
+Há **ganhos** que decorrem de os indivíduos se **especializarem** nas tarefas que fazem melhor e recorrerem ao **comércio** para trocarem entre si o produto das suas atividades.
+
+Usemos a FPP para tirar essa conclusão!
+
+---
+
+## Exemplo: Pintor vs Cozinheiro
+
+Dois vizinhos: um sabe **pintar** e o outro sabe **cozinhar**
+
+```{r, engine='tikz'}
+\begin{tikzpicture}[scale=0.9]
+% Pintor
+\begin{scope}
+\draw[->] (-0.1,0) -- (4.5,0) node[below right] {Bolos};
+\draw[->] (0,-0.1) -- (0,3.5) node[left] {Quadros};
+\draw[blue,thick] (0,3) node[left] {15} -- (4,0) node[below]{20};
+\draw[dashed] (0,1.8) node[left] {9} -- (1.6,1.8) node[circle,fill,inner sep=1.5pt,label=above right:Produção]{} -- (1.6,0) node[below]{8};
+\end{scope}
+
+% Cozinheiro
+\begin{scope}[xshift=6cm]
+\draw[->] (-0.1,0) -- (4.5,0) node[below] {Bolos};
+\draw[->] (0,-0.1) -- (0,3.5) node[left] {Quadros};
+\draw[blue,thick] (0,1) node[left] {5} -- (3,0) node[below]{15};
+\draw[dashed] (0,0.8) node[left] {4} -- (0.6,0.8) node[circle,fill,inner sep=1.5pt,label=above right:Produção]{} -- (0.6,0) node[below]{3};
+\end{scope}
+\end{tikzpicture}
+```
+---
+
+## Custos Relativos e Vantagem Comparativa
+
+| Custos de Oportunidade | Pintor      |     | Cozinheiro  |
+|-------------------------|-------------|-----|-------------|
+| **Um bolo**             | $\frac{3}{4}$ | $>$ | $\frac{1}{3}$ |
+| **Um quadro**           | $\frac{4}{3}$ | $<$ | $3$         |
+
+---
+
+### Interpretação
+
+- O **cozinheiro** tem vantagem comparativa na produção de **bolos** (menor custo de oportunidade: $\frac{1}{3} < \frac{3}{4}$)
+
+- O **pintor** tem vantagem comparativa na produção de **quadros** (menor custo de oportunidade: $\frac{4}{3} < 3$)
+
+---
+
+### Quando Vale a Pena Especializar?
+
+**Pintor:**  
+Valerá a pena especializar-se na produção de **quadros** se puder trocar cada um por **mais do que** $\frac{4}{3}$ bolos (o seu custo de oportunidade)
+
+**Cozinheiro:**  
+Valerá a pena especializar-se na produção de **bolos** se puder trocar cada um por **mais do que** $\frac{1}{3}$ de quadro (ou seja, um quadro em troca de **no máximo 3 bolos**)
+
+---
+
+## Termos de Troca
+
+Estando o pintor disposto a **receber** $\frac{4}{3}$ bolos por cada quadro que venda e estando o cozinheiro disposto a **pagar** $3$ bolos por cada quadro que compre, **há margem para transações mutuamente vantajosas!**
+
+Pode haver trocas se um quadro se trocar por um qualquer número de bolos **entre** $\frac{4}{3}$ e $3$.
+
+---
+
+## Exemplo de Comércio
+
+Admitamos que há **especialização** e que:
+
+- O pintor vende **5 quadros** ao cozinheiro
+- O pintor compra **10 bolos** em troca
+
+**Termos de troca:** 1 quadro = 2 bolos  
+(valor entre $\frac{4}{3}$ e $3$)
+
+---
+
+### Resultado: Ganhos do Comércio
+
+|                  |         | **Autarcia**      || **Com Comércio**  || **Ganhos** |
+|------------------|---------|:--------:|:--:     |:-------: |:-------:|:--:    |
+|                  |         | Produção |Consumo  | Produção | Consumo |        |
+| :artist:         | :framed_picture: | 9        | 9       | 15       | 10      | **+1** | 
+|                  | :cupcake:   | 8        | 8       | 0        | 10      | **+2** | 
+| :cook:           | :framed_picture: | 4        | 4       | 0        | 5       | **+1** | 
+|                  | :cupcake:   | 3        | 3       | 15       | 5       | **+2** | 
+
+**Ambos ganham com o comércio!**
+
+---
+
+## Visualização: Consumo Após Comércio
+
+```{r, engine='tikz'}
+\begin{tikzpicture}[scale=0.9]
+% Pintor
+\begin{scope}
+\draw[->] (-0.1,0) -- (4.5,0) node[below right] {Bolos};
+\draw[->] (0,-0.1) -- (0,3.5) node[left] {Quadros};
+\draw[blue,thick] (0,3) node[left] {15} -- (4,0) node[below]{20};
+\draw[dashed] (0,2) node[left] {10} -- (2,2) node[circle,fill,inner sep=1.5pt,label=above right:Consumo]{} -- (2,0) node[below]{10};
+\node[circle,fill=red,inner sep=1.5pt,label=above right:Produção] at (0,3) {};
+\node[below] at (2,-0.7) {\textbf{Pintor}};
+\end{scope}
+
+% Cozinheiro
+\begin{scope}[xshift=6cm]
+\draw[->] (-0.1,0) -- (4.5,0) node[below] {Bolos};
+\draw[->] (0,-0.1) -- (0,3.5) node[left] {Quadros};
+\draw[blue,thick] (0,1) node[left] {5} -- (3,0) node[below]{15};
+\draw[dashed] (0,1) node[left] {5} -- (1,1) node[circle,fill,inner sep=1.5pt,label=above right:Consumo]{} -- (1,0) node[below]{5};
+\node[circle,fill=red,inner sep=1.5pt,label=above right:Produção] at (3,0) {};
+\node[below] at (1.5,-0.7) {\textbf{Cozinheiro}};
+\end{scope}
+\end{tikzpicture}
+```
+
+---
+
+## Possibilidades de Consumo com Comércio
+
+Possibilidades de consumo se termos de troca forem **1 quadro = 2 bolos**:
+
+```{r, engine='tikz'}
+\begin{tikzpicture}[scale=0.9]
+% Pintor
+\begin{scope}
+\draw[->] (-0.1,0) -- (6.5,0) node[below] {Bolos};
+\draw[->] (0,-0.1) -- (0,3.5) node[left] {Quadros};
+\draw[black,thick] (0,3) node[left] {15} -- (4,0) node[below]{20};
+\draw[blue,thick] (0,3) -- (6,0) node[below]{30};
+\draw[dashed] (0,2) node[left] {10} -- (2,2) node[circle,fill,inner sep=1.5pt,label=above right:Consumo]{} -- (2,0) node[below]{10};
+\node[circle,fill=red,inner sep=1.5pt,label=above right:Produção] at (0,3) {};
+\node[below] at (3,-0.7) {\textbf{Pintor}};
+\end{scope}
+
+% Cozinheiro
+\begin{scope}[xshift=8cm]
+\draw[->] (-0.1,0) -- (4.5,0) node[below] {Bolos};
+\draw[->] (0,-0.1) -- (0,3.5) node[left] {Quadros};
+\draw[black,thick] (0,1) node[left] {5} -- (3,0) node[below]{15};
+\draw[blue,thick] (0,1.5) -- (3,0);
+\draw[dashed] (0,1) node[left] {5} -- (1,1) node[circle,fill,inner sep=1.5pt,label=above right:Consumo]{} -- (1,0) node[below]{5};
+\node[circle,fill=red,inner sep=1.5pt,label=above right:Produção] at (3,0) {};
+\node[below] at (1.5,-0.7) {\textbf{Cozinheiro}};
+\end{scope}
+\end{tikzpicture}
+```
+
+**A linha azul mostra as novas possibilidades de consumo!**
+
+---
+
+## Vantagem Comparativa: Conclusões
+
+- No exemplo, o pintor tem **vantagem comparativa** na produção de quadros porque o seu custo de oportunidade é **menor** do que o do cozinheiro
+
+- É da **vantagem comparativa** que dependem os ganhos do comércio e os padrões de especialização
+
+---
+
+### Princípio Fundamental
+
+O comércio (neste caso, troca direta) tem a vantagem de permitir que cada um dos agentes económicos se **especialize** na tarefa que faz **relativamente melhor**, para que depois eles se encontrem no mercado para fazerem transações.
+
+Após o comércio, é possível os indivíduos estarem num **ponto de consumo** em que obtêm **mais quantidade de ambos os bens**, do que numa situação de autarcia, usando os **mesmos recursos**.
+
+---
+
+## Aplicações do Princípio
+
+- Todos temos uma **vantagem comparativa** nalguma atividade
+- O mesmo se aplica a **empresas**
+- O mesmo se aplica a **países**
+
+**É neste princípio que se baseia o comércio internacional!**
+
+---
+
+## Resumo da Aula 3
+
+- **Modelos económicos**: simplificação da realidade, abordagem *cæteris paribus*
+- **FPP**: produção máxima dados recursos e tecnologia fixos
+- **Custo relativo**: $\left|\frac{\Delta Y}{\Delta X}\right|$ = custo de oportunidade
+- **Vantagem comparativa**: especializar na atividade com menor CO
+- **Ganhos do comércio**: especialização + troca aumenta consumo
+- **Comércio internacional**: baseado em vantagem comparativa
+
+---
+
+**Próxima aula:** Revisão e exercícios práticos sobre FPP, custo de oportunidade e vantagem comparativa

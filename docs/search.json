@@ -142,64 +142,232 @@
   {
     "objectID": "slides/02_Escolhas_Racionais.html#análise-custo-benefício",
     "href": "slides/02_Escolhas_Racionais.html#análise-custo-benefício",
-    "title": "Introdução",
-    "section": "",
-    "text": "A comparação entre custos marginais e benefícios marginais é particularmente útil quando é necessário escolher a quantidade de um recurso que está a ser utilizada ou a quantidade de um bem que se está a produzir.\n\n\n\nValerá a pena aumentar a quantidade enquanto o benefício marginal (benefício adicional por mais uma unidade) for superior ao custo marginal (custo adicional por essa unidade)."
+    "title": "Escolhas Racionais, Excedente, Cmg-Bmg",
+    "section": "Análise Custo-Benefício",
+    "text": "Análise Custo-Benefício\nA comparação entre custos marginais e benefícios marginais é particularmente útil quando é necessário escolher a quantidade de um recurso que está a ser utilizada ou a quantidade de um bem que se está a produzir."
   },
   {
     "objectID": "slides/02_Escolhas_Racionais.html#exemplo-produtor-de-pêra-rocha",
     "href": "slides/02_Escolhas_Racionais.html#exemplo-produtor-de-pêra-rocha",
-    "title": "Introdução",
-    "section": "",
-    "text": "Um produtor de Pêra Rocha do Oeste precisa decidir que quantidade de pêra deve colher nos seus pomares.\n\nSe colher mais, consegue vender mais\nMas também tem mais custos\n\nAs receitas e os custos são de acordo com o quadro seguinte:\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantidade (10s caixas)\nReceitas (benefício)\nBenefício marginal\nCustos\nCusto marginal\n\n\n\n\n10\n€100\n\n€80\n\n\n\n11\n€109\n\n€85\n\n\n\n12\n€117\n\n€92\n\n\n\n13\n€124\n\n€100\n\n\n\n14\n€130\n\n€110\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantidade (10s caixas)\nReceitas (benefício)\nBenefício marginal\nCustos\nCusto marginal\n\n\n\n\n10\n€100\n-\n€80\n\n\n\n11\n€109\n€9\n€85\n\n\n\n12\n€117\n€8\n€92\n\n\n\n13\n€124\n€7\n€100\n\n\n\n14\n€130\n€6\n€110\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantidade (10s caixas)\nReceitas (benefício)\nBenefício marginal\nCustos\nCusto marginal\n\n\n\n\n10\n€100\n-\n€80\n-\n\n\n11\n€109\n€9\n€85\n€5\n\n\n12\n€117\n€8\n€92\n€7\n\n\n13\n€124\n€7\n€100\n€8\n\n\n14\n€130\n€6\n€110\n€10\n\n\n\n\\[Bmg = \\frac{\\Delta B}{\\Delta Q}, \\quad Cmg = \\frac{\\Delta C}{\\Delta Q}\\]\n\n\n\n\n\n\n\nQuantidade (10s caixas)\nReceitas\nBmg\nCustos\nCmg\n\n\n\n\n10\n€100\n-\n€80\n-\n\n\n11\n€109\n€9\n€85\n€5\n\n\n12\n€117\n€8\n€92\n€7\n\n\n13\n€124\n€7\n€100\n€8\n\n\n14\n€130\n€6\n€110\n€10\n\n\n16\n€140\n€5\n€132\n€11\n\n\n\n\n\n\n\n\n\n\nQuantidade\nReceitas\nBmg\nCustos\nCmg\nLucro\n\n\n\n\n10\n€100\n-\n€80\n-\n€20\n\n\n11\n€109\n€9\n€85\n€5\n€24\n\n\n12*\n€117\n€8\n€92\n€7\n€25\n\n\n13\n€124\n€7\n€100\n€8\n€24\n\n\n14\n€130\n€6\n€110\n€10\n€20\n\n\n16\n€140\n€5\n€132\n€11\n€12\n\n\n\nQuantidade ótima: 12 caixas (onde Bmg ≈ Cmg)"
+    "title": "Escolhas Racionais, Excedente, Cmg-Bmg",
+    "section": "Exemplo: Produtor de Pêra Rocha",
+    "text": "Exemplo: Produtor de Pêra Rocha\nUm produtor de Pêra Rocha do Oeste precisa decidir que quantidade de pêra deve colher nos seus pomares.\n\nSe colher mais, consegue vender mais\nMas também tem mais custos\n\n\nAs receitas e os custos são de acordo com o quadro seguinte:"
   },
   {
     "objectID": "slides/02_Escolhas_Racionais.html#interpretação-gráfica-bmg-e-cmg",
     "href": "slides/02_Escolhas_Racionais.html#interpretação-gráfica-bmg-e-cmg",
-    "title": "Introdução",
-    "section": "",
-    "text": "\\[\\tan \\alpha = \\frac{\\Delta C}{\\Delta Q} = Cmg\\]"
+    "title": "Escolhas Racionais, Excedente, Cmg-Bmg",
+    "section": "Interpretação Gráfica: Bmg e Cmg",
+    "text": "Interpretação Gráfica: Bmg e Cmg\n\nNo Quadro"
   },
   {
     "objectID": "slides/02_Escolhas_Racionais.html#condição-matemática-de-máximo",
     "href": "slides/02_Escolhas_Racionais.html#condição-matemática-de-máximo",
-    "title": "Introdução",
-    "section": "",
-    "text": "Para maximizar o lucro (Benefício - Custo):\n\\[\n\\max\\ (B - C)\n\\]\nCondição de primeira ordem:\n\\[\n\\frac{d(B-C)}{dQ} = 0 \\Rightarrow B' - C' = 0 \\Rightarrow B' = C'\n\\]\nConclusão:\n\\[\nBmg = Cmg\n\\]"
+    "title": "Escolhas Racionais, Excedente, Cmg-Bmg",
+    "section": "Condição Matemática de Máximo",
+    "text": "Condição Matemática de Máximo\nPara maximizar o lucro (Benefício - Custo):\n\\[\n\\max\\ (B - C)\n\\]\nCondição de primeira ordem:\n\\[\n\\frac{d(B-C)}{dQ} = 0 \\Rightarrow B' - C' = 0 \\Rightarrow B' = C'\n\\]\nConclusão:\n\\[\nBmg = Cmg\n\\]"
   },
   {
     "objectID": "slides/02_Escolhas_Racionais.html#conclusões-sobre-análise-marginal",
     "href": "slides/02_Escolhas_Racionais.html#conclusões-sobre-análise-marginal",
-    "title": "Introdução",
-    "section": "",
-    "text": "Análise marginal é o cálculo da variação de uma variável por unidade adicional de outra\nAnálise marginal corresponde, portanto, a uma taxa de variação média\nUma taxa de variação média é uma derivada\nO critério custo-benefício corresponde à condição de primeira ordem de máximo"
+    "title": "Escolhas Racionais, Excedente, Cmg-Bmg",
+    "section": "Conclusões sobre Análise Marginal",
+    "text": "Conclusões sobre Análise Marginal\n\nAnálise marginal é o cálculo da variação de uma variável por unidade adicional de outra\nAnálise marginal corresponde, portanto, a uma taxa de variação média\nUma taxa de variação média é uma derivada\nO critério custo-benefício corresponde à condição de primeira ordem de máximo"
   },
   {
     "objectID": "slides/02_Escolhas_Racionais.html#racionalidade",
     "href": "slides/02_Escolhas_Racionais.html#racionalidade",
-    "title": "Introdução",
-    "section": "",
-    "text": "Por vezes, os agentes económicos não tomam decisões racionais, porque a racionalidade é limitada, já que:\n\nA realidade é muito complexa\nA capacidade cognitiva dos indivíduos é limitada\nA informação é frequentemente incompleta\n\n\n\n\nMas admitiremos que os indivíduos são racionais e que reagem a incentivos.\nEscolhas racionais são escolhas eficientes."
+    "title": "Escolhas Racionais, Excedente, Cmg-Bmg",
+    "section": "Racionalidade",
+    "text": "Racionalidade\nPor vezes, os agentes económicos não tomam decisões racionais, porque a racionalidade é limitada, já que:\n\nA realidade é muito complexa\nA capacidade cognitiva dos indivíduos é limitada\nA informação é frequentemente incompleta"
   },
   {
     "objectID": "slides/02_Escolhas_Racionais.html#eficiência",
     "href": "slides/02_Escolhas_Racionais.html#eficiência",
-    "title": "Introdução",
-    "section": "",
-    "text": "Eficiência (no sentido de Pareto) significa não poder melhorar a situação de um agente económico sem piorar a situação de outro…\nEm geral, todas as escolhas eficientes têm subjacente um trade-off: uma situação de escolha em que para ter mais de uma opção é preciso prescindir de outra.\nNa produção, eficiência é incompatível com desaproveitamento de recursos."
+    "title": "Escolhas Racionais, Excedente, Cmg-Bmg",
+    "section": "Eficiência",
+    "text": "Eficiência\nEficiência (no sentido de Pareto) significa não poder melhorar a situação de um agente económico sem piorar a situação de outro…\nEm geral, todas as escolhas eficientes têm subjacente um trade-off: uma situação de escolha em que para ter mais de uma opção é preciso prescindir de outra.\nNa produção, eficiência é incompatível com desaproveitamento de recursos."
   },
   {
     "objectID": "slides/02_Escolhas_Racionais.html#bem-estar-social",
     "href": "slides/02_Escolhas_Racionais.html#bem-estar-social",
-    "title": "Introdução",
-    "section": "",
-    "text": "Refere-se à adição de todos os benefícios que decorrem das escolhas para todos os agentes económicos.\n\n\n\nSe, a partir de uma situação de eficiência de Pareto, se puder alterar as escolhas beneficiando algum(uns) agente(s) económico(s) de forma a que o seu benefício adicional compense a perda provocada noutro(s) agente(s) (para garantir maior equidade, por exemplo), haverá uma melhoria de bem-estar e trata-se de um movimento eficiente (Kaldor-Hicks).\nO bem-estar social será máximo quando se esgotarem todos os movimentos de Kaldor-Hicks."
+    "title": "Escolhas Racionais, Excedente, Cmg-Bmg",
+    "section": "Bem-Estar Social",
+    "text": "Bem-Estar Social\nRefere-se à adição de todos os benefícios que decorrem das escolhas para todos os agentes económicos. Note que estes benefícios não fazem referência ao benefício bruto, mas sim ao excedente."
   },
   {
     "objectID": "slides/02_Escolhas_Racionais.html#resumo-da-aula-2",
     "href": "slides/02_Escolhas_Racionais.html#resumo-da-aula-2",
-    "title": "Introdução",
-    "section": "",
-    "text": "Análise custo-benefício: comparar Bmg e Cmg\nRegra de otimização: aumentar quantidade enquanto Bmg &gt; Cmg\nCondição de máximo: Bmg = Cmg (derivada = 0)\nRacionalidade limitada: complexidade, cognição, informação\nEficiência de Pareto: não melhorar um sem piorar outro\nEficiência de Kaldor-Hicks: ganhos compensam perdas\n\n\nPróxima aula: Fronteira das Possibilidades de Produção (FPP), Custo Relativo, Vantagens do Comércio"
+    "title": "Escolhas Racionais, Excedente, Cmg-Bmg",
+    "section": "Resumo da Aula 2",
+    "text": "Resumo da Aula 2\n\nAnálise custo-benefício: comparar Bmg e Cmg\nRegra de otimização: aumentar quantidade enquanto Bmg &gt; Cmg\nCondição de máximo: Bmg = Cmg (derivada = 0)\nRacionalidade limitada: complexidade, cognição, informação\nEficiência de Pareto: não melhorar um sem piorar outro"
+  },
+  {
+    "objectID": "slides/02_Escolhas_Racionais.html#optimização-de-uma-função",
+    "href": "slides/02_Escolhas_Racionais.html#optimização-de-uma-função",
+    "title": "Escolhas Racionais, Excedente, Cmg-Bmg",
+    "section": "Optimização de uma função",
+    "text": "Optimização de uma função\nSe a uma função \\(f\\) for diferenciàvel no conjunto aberto \\(S\\), então:\n\nSe para \\(x^*\\in S\\), \\(f'(x^*)=0\\), e \\(f''(x^*)&lt;0\\), então \\(x^*\\) é um máximo local.\nSe para \\(x^*\\in S\\), \\(f'(x^*)=0\\), e \\(f''(x^*)&gt;0\\), então \\(x^*\\) é um minimo local.\n\n\nÀ condição na primeira derivada chamamos Condição de Primeiro Ordem (CPO), e à condição na segunda derivada chamamos Condição de Segundo Ordem (CSO).\n\nSe a função tiver segunda derivada monotónica, então a CSO não é necessária."
+  },
+  {
+    "objectID": "slides/03_FPP.html#modelos-em-economia",
+    "href": "slides/03_FPP.html#modelos-em-economia",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Modelos em Economia",
+    "text": "Modelos em Economia\nOs modelos são uma forma de ultrapassar a complexidade da realidade e evitar que se cometam erros de análise.\nAbordagem: cæteris paribus (tudo o resto constante)"
+  },
+  {
+    "objectID": "slides/03_FPP.html#a-fronteira-das-possibilidades-de-produção",
+    "href": "slides/03_FPP.html#a-fronteira-das-possibilidades-de-produção",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "A Fronteira das Possibilidades de Produção",
+    "text": "A Fronteira das Possibilidades de Produção\nDescreve a produção máxima que é possível obter, para um conjunto de bens, dados os recursos disponíveis numa economia."
+  },
+  {
+    "objectID": "slides/03_FPP.html#representação-gráfica-da-fpp",
+    "href": "slides/03_FPP.html#representação-gráfica-da-fpp",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Representação Gráfica da FPP",
+    "text": "Representação Gráfica da FPP\n\n\n\\(M\\): Ineficiente (recursos desperdiçados)\n\\(N\\): Inatingível (fora das possibilidades)"
+  },
+  {
+    "objectID": "slides/03_FPP.html#custo-relativo",
+    "href": "slides/03_FPP.html#custo-relativo",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Custo Relativo",
+    "text": "Custo Relativo\nA partir de um ponto da FPP, a razão \\(\\left|\\frac{\\Delta Y}{\\Delta X}\\right|\\) coincide com o declive da FPP linear (sem sinal) e designa-se custo relativo do bem \\(X\\).\nRepresenta um custo de oportunidade!"
+  },
+  {
+    "objectID": "slides/03_FPP.html#visualização-do-custo-relativo",
+    "href": "slides/03_FPP.html#visualização-do-custo-relativo",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Visualização do Custo Relativo",
+    "text": "Visualização do Custo Relativo\n\nProduzir mais \\(\\Delta X\\) custa \\(\\Delta Y\\), ou, cada unidade de \\(X\\) custa \\(\\frac{\\Delta Y}{\\Delta X}\\) de unidades de \\(Y\\)."
+  },
+  {
+    "objectID": "slides/03_FPP.html#exemplo-numérico-fpp-não-linear",
+    "href": "slides/03_FPP.html#exemplo-numérico-fpp-não-linear",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Exemplo Numérico: FPP Não Linear",
+    "text": "Exemplo Numérico: FPP Não Linear\nTabela de Possibilidades"
+  },
+  {
+    "objectID": "slides/03_FPP.html#custo-relativo-taxa-marginal-de-transformação",
+    "href": "slides/03_FPP.html#custo-relativo-taxa-marginal-de-transformação",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Custo Relativo (Taxa Marginal de Transformação)",
+    "text": "Custo Relativo (Taxa Marginal de Transformação)\n\\[CO_X = TMT_{Y,X} = -\\frac{\\Delta Y}{\\Delta X}\\]\n\n\n\nPossibilidade\nBem \\(X\\)\nBem \\(Y\\)\n\\(TMT_{Y,X}\\)\n\n\n\n\nA\n0\n30\n-\n\n\nB\n2\n28\n1\n\n\nC\n4\n24\n2\n\n\nD\n6\n18\n3\n\n\nE\n8\n10\n4\n\n\nF\n10\n0\n5\n\n\n\nCusto relativo crescente!"
+  },
+  {
+    "objectID": "slides/03_FPP.html#custo-relativo-crescente-visualização",
+    "href": "slides/03_FPP.html#custo-relativo-crescente-visualização",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Custo Relativo Crescente (Visualização)",
+    "text": "Custo Relativo Crescente (Visualização)"
+  },
+  {
+    "objectID": "slides/03_FPP.html#custo-relativo-e-derivada-da-fpp",
+    "href": "slides/03_FPP.html#custo-relativo-e-derivada-da-fpp",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Custo Relativo e Derivada da FPP",
+    "text": "Custo Relativo e Derivada da FPP"
+  },
+  {
+    "objectID": "slides/03_FPP.html#vantagens-do-comércio",
+    "href": "slides/03_FPP.html#vantagens-do-comércio",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Vantagens do Comércio",
+    "text": "Vantagens do Comércio\nHá ganhos que decorrem de os indivíduos se especializarem nas tarefas que fazem melhor e recorrerem ao comércio para trocarem entre si o produto das suas atividades.\nUsemos a FPP para tirar essa conclusão!"
+  },
+  {
+    "objectID": "slides/03_FPP.html#exemplo-pintor-vs-cozinheiro",
+    "href": "slides/03_FPP.html#exemplo-pintor-vs-cozinheiro",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Exemplo: Pintor vs Cozinheiro",
+    "text": "Exemplo: Pintor vs Cozinheiro\nDois vizinhos: um sabe pintar e o outro sabe cozinhar"
+  },
+  {
+    "objectID": "slides/03_FPP.html#custos-relativos-e-vantagem-comparativa",
+    "href": "slides/03_FPP.html#custos-relativos-e-vantagem-comparativa",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Custos Relativos e Vantagem Comparativa",
+    "text": "Custos Relativos e Vantagem Comparativa\n\n\n\nCustos de Oportunidade\nPintor\n\nCozinheiro\n\n\n\n\nUm bolo\n\\(\\frac{3}{4}\\)\n\\(&gt;\\)\n\\(\\frac{1}{3}\\)\n\n\nUm quadro\n\\(\\frac{4}{3}\\)\n\\(&lt;\\)\n\\(3\\)"
+  },
+  {
+    "objectID": "slides/03_FPP.html#termos-de-troca",
+    "href": "slides/03_FPP.html#termos-de-troca",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Termos de Troca",
+    "text": "Termos de Troca\nEstando o pintor disposto a receber \\(\\frac{4}{3}\\) bolos por cada quadro que venda e estando o cozinheiro disposto a pagar \\(3\\) bolos por cada quadro que compre, há margem para transações mutuamente vantajosas!\nPode haver trocas se um quadro se trocar por um qualquer número de bolos entre \\(\\frac{4}{3}\\) e \\(3\\)."
+  },
+  {
+    "objectID": "slides/03_FPP.html#exemplo-de-comércio",
+    "href": "slides/03_FPP.html#exemplo-de-comércio",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Exemplo de Comércio",
+    "text": "Exemplo de Comércio\nAdmitamos que há especialização e que:\n\nO pintor vende 5 quadros ao cozinheiro\nO pintor compra 10 bolos em troca\n\nTermos de troca: 1 quadro = 2 bolos\n(valor entre \\(\\frac{4}{3}\\) e \\(3\\))"
+  },
+  {
+    "objectID": "slides/03_FPP.html#visualização-consumo-após-comércio",
+    "href": "slides/03_FPP.html#visualização-consumo-após-comércio",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Visualização: Consumo Após Comércio",
+    "text": "Visualização: Consumo Após Comércio"
+  },
+  {
+    "objectID": "slides/03_FPP.html#possibilidades-de-consumo-com-comércio",
+    "href": "slides/03_FPP.html#possibilidades-de-consumo-com-comércio",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Possibilidades de Consumo com Comércio",
+    "text": "Possibilidades de Consumo com Comércio\nPossibilidades de consumo se termos de troca forem 1 quadro = 2 bolos:\n\nA linha azul mostra as novas possibilidades de consumo!"
+  },
+  {
+    "objectID": "slides/03_FPP.html#vantagem-comparativa-conclusões",
+    "href": "slides/03_FPP.html#vantagem-comparativa-conclusões",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Vantagem Comparativa: Conclusões",
+    "text": "Vantagem Comparativa: Conclusões\n\nNo exemplo, o pintor tem vantagem comparativa na produção de quadros porque o seu custo de oportunidade é menor do que o do cozinheiro\nÉ da vantagem comparativa que dependem os ganhos do comércio e os padrões de especialização"
+  },
+  {
+    "objectID": "slides/03_FPP.html#aplicações-do-princípio",
+    "href": "slides/03_FPP.html#aplicações-do-princípio",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Aplicações do Princípio",
+    "text": "Aplicações do Princípio\n\nTodos temos uma vantagem comparativa nalguma atividade\nO mesmo se aplica a empresas\nO mesmo se aplica a países\n\nÉ neste princípio que se baseia o comércio internacional!"
+  },
+  {
+    "objectID": "slides/03_FPP.html#comércio-internacional-e-fpp",
+    "href": "slides/03_FPP.html#comércio-internacional-e-fpp",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Comércio Internacional e FPP",
+    "text": "Comércio Internacional e FPP\n\n\\(\\Delta Y\\): Importação | \\(\\Delta X\\): Exportação"
+  },
+  {
+    "objectID": "slides/03_FPP.html#crescimento-económico-e-fpp",
+    "href": "slides/03_FPP.html#crescimento-económico-e-fpp",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Crescimento Económico e FPP",
+    "text": "Crescimento Económico e FPP"
+  },
+  {
+    "objectID": "slides/03_FPP.html#resumo-da-aula-3",
+    "href": "slides/03_FPP.html#resumo-da-aula-3",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Resumo da Aula 3",
+    "text": "Resumo da Aula 3\n\nModelos económicos: simplificação da realidade, abordagem cæteris paribus\nFPP: produção máxima dados recursos e tecnologia fixos\nCusto relativo: \\(\\left|\\frac{\\Delta Y}{\\Delta X}\\right|\\) = custo de oportunidade\nVantagem comparativa: especializar na atividade com menor CO\nGanhos do comércio: especialização + troca aumenta consumo\nComércio internacional: baseado em vantagem comparativa\nCrescimento económico: expansão da FPP"
+  },
+  {
+    "objectID": "slides/03_FPP.html#interpretação-matemática",
+    "href": "slides/03_FPP.html#interpretação-matemática",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "Interpretação Matemática",
+    "text": "Interpretação Matemática\n\n\\(\\frac{\\Delta Y}{\\Delta X}\\) é a taxa de variação média: qual a variação em \\(Y\\) por unidade de variação em \\(X\\)\nQuando \\(\\Delta X \\to 0\\), obtemos a derivada: \\(\\frac{dY}{dX}\\)\nA derivada mede o declive da tangente à FPP num ponto\n\nConclusão: O custo relativo num ponto é dado pela derivada da FPP (em valor absoluto)"
+  },
+  {
+    "objectID": "slides/03_FPP.html#fpp-e-fpc",
+    "href": "slides/03_FPP.html#fpp-e-fpc",
+    "title": "FPP, FPC, e Ventagens do Comêrcio",
+    "section": "FPP e FPC",
+    "text": "FPP e FPC\nUm agente económico, sempre pode consumir o que pode produzir, ou seja todos os pontos sobre (e abaixo) da FPP representam um espaço de consumo. Ainda mais, a FPP representa também a Fronteira de Possibilidades de Consumo (FPC). Isto é verdade sempre que o agente económico não tenha possibilidade de comerciar com outros agentes."
   }
 ]

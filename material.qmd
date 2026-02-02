@@ -8,6 +8,6 @@ About this site
 
 1. [Introdução](slides/01_Intro.qmd)
 2. [Escolhas Racionais](slides/02_Escolhas_Racionais.qmd)
-
+3. [FPP e Ventagens do Comêrcio](slides/03_FPP.qmd)
 
 ## Exercícios

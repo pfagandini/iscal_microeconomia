@@ -1,5 +1,5 @@
 ---
-title: "Introdução"
+title: "Escolhas Racionais, Excedente, Cmg-Bmg"
 author: "Paulo Fagandini"
 institute: "ISCAL-IPL"
 format: 
@@ -11,6 +11,7 @@ format:
     logo: ../images/iscal_logo.svg
     slide-number: true
     cross-ref: true
+    keep-tex: false
     incremental: true
     math: 
       method: mathjax
@@ -31,10 +32,6 @@ execute:
 engine: knitr
 ---
 
-# Aula 2 – Escolhas Racionais, Excedente, Cmg-Bmg
-
----
-
 ## Análise Custo-Benefício
 
 A comparação entre **custos marginais** e **benefícios marginais** é particularmente útil quando é necessário escolher a **quantidade** de um recurso que está a ser utilizada ou a quantidade de um bem que se está a produzir.
@@ -53,6 +50,8 @@ Um produtor de Pêra Rocha do Oeste precisa decidir que quantidade de pêra deve
 
 - Se colher mais, consegue **vender mais**
 - Mas também tem **mais custos**
+
+. . .
 
 As receitas e os custos são de acordo com o quadro seguinte:
 
@@ -107,6 +106,8 @@ $$Bmg = \frac{\Delta B}{\Delta Q}, \quad Cmg = \frac{\Delta C}{\Delta Q}$$
 | 14                      | €130     | €6  | €110   | €10   |
 | 16                      | €140     | €5  | €132   | €11   |
 
+> Qual a quantidade ótima de caixas a produzir?
+
 ---
 
 ### Cálculo do Lucro
@@ -124,30 +125,18 @@ $$Bmg = \frac{\Delta B}{\Delta Q}, \quad Cmg = \frac{\Delta C}{\Delta Q}$$
 
 ---
 
-## Interpretação Gráfica: Bmg e Cmg
+## Optimização de uma função
 
-\begin{tikzpicture}[scale=1.2]
-\draw[->] (-0.1,0) -- (4.2,0) node[below right] {$Q$};
-\draw[->] (0,-0.1) -- (0,4.2) node[above left] {Custo};
+Se a uma função $f$ for diferenciàvel no conjunto aberto $S$, então:
 
-% Pontos Q=12 e Q=13
-\draw[dashed] (0,2.5) node[left] {92} -- (1.5,2.5) -- (1.5,0) node[below] {12};
-\draw[dashed] (0,3) node[left] {100} -- (2.5,3) -- (2.5,0) node[below] {13};
+1. Se para $x^*\in S$, $f'(x^*)=0$, e $f''(x^*)<0$, então $x^*$ é um máximo local.
+2. Se para $x^*\in S$, $f'(x^*)=0$, e $f''(x^*)>0$, então $x^*$ é um minimo local.
 
-% Delta Q
-\draw[red,thick,->] (1.5,2.5) -- (2,2.5) node[below,midway] {$\Delta Q = 1$} -- (2.5,2.5);
+. . .
 
-% Delta C
-\draw[red,thick,->] (2.5,2.5) -- (2.5,2.75) node[right,midway] {$\Delta C = 8$} -- (2.5,3);
+À condição na primeira derivada chamamos **Condição de Primeiro Ordem (CPO)**, e à condição na segunda derivada chamamos **Condição de Segundo Ordem (CSO)**.
 
-% Curva de custo
-\draw[blue,smooth,domain=0.5:3.5,variable=\x] plot ({\x},{0.5 + (\x-1)^2/2});
-
-% Ângulo
-\draw[fill=blue!20,opacity=0.7] (2.5,3) -- (2.2,3) -- (2.3,3.2);
-\end{tikzpicture}
-
-$$\tan \alpha = \frac{\Delta C}{\Delta Q} = Cmg$$
+> Se a função tiver segunda derivada monotónica, então a **CSO** não é necessária.
 
 ---
 
@@ -215,15 +204,7 @@ Em geral, todas as escolhas eficientes têm subjacente um **trade-off**: uma sit
 
 ## Bem-Estar Social
 
-Refere-se à **adição de todos os benefícios** que decorrem das escolhas para todos os agentes económicos.
-
----
-
-### Eficiência de Kaldor-Hicks
-
-Se, a partir de uma situação de eficiência de Pareto, se puder alterar as escolhas beneficiando algum(uns) agente(s) económico(s) de forma a que o seu benefício adicional **compense** a perda provocada noutro(s) agente(s) (para garantir maior equidade, por exemplo), haverá uma **melhoria de bem-estar** e trata-se de um movimento eficiente (**Kaldor-Hicks**).
-
-O bem-estar social será **máximo** quando se esgotarem todos os movimentos de Kaldor-Hicks.
+Refere-se à **adição de todos os benefícios** que decorrem das escolhas para todos os agentes económicos. Note que estes benefícios não fazem referência ao benefício bruto, mas sim ao *excedente*.
 
 ---
 
@@ -234,7 +215,6 @@ O bem-estar social será **máximo** quando se esgotarem todos os movimentos de 
 - **Condição de máximo**: Bmg = Cmg (derivada = 0)
 - **Racionalidade limitada**: complexidade, cognição, informação
 - **Eficiência de Pareto**: não melhorar um sem piorar outro
-- **Eficiência de Kaldor-Hicks**: ganhos compensam perdas
 
 ---
 
