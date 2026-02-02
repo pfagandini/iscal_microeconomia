@@ -6,8 +6,22 @@ About this site
 
 ## Slides
 
-1. [Introdução](slides/01_Intro.qmd)
-2. [Escolhas Racionais](slides/02_Escolhas_Racionais.qmd)
-3. [FPP e Ventagens do Comêrcio](slides/03_FPP.qmd)
+### Capítulo I: Racionalidade e Vantagens do Comêrcio
+
+1. [Introdução](slides/01_Intro.qmd), [📄](slides/01_Intro-document.html)
+2. [Escolhas Racionais](slides/02_Escolhas_Racionais.qmd), [📄](slides/02_Escolhas_Racionais-document.html)
+3. [FPP e Ventagens do Comêrcio](slides/03_FPP.qmd), [📄](slides/03_FPP-document.html)
+
+### Capítulo II: Teoria do Consumidor e Procura
+
+### Capítulo III: Teoría da Produção - Curto Prazo
+
+### Capítulo IV: Equilíbrio de Mercado de Curto Prazo
+
+### Capítulo V: Produção e Equilíbrio de Mercado de Longo Prazo
+
+### Capítulo VI: Elasticidades e Intervenções dos Mercados
+
+### Capítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos
 
 ## Exercícios

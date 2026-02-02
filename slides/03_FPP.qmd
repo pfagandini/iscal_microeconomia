@@ -23,6 +23,7 @@ format:
     progress: true
     
   html:
+    output-file: 03_FPP-document.html
     toc: true
     number-sections: true
     embed-resources: false
