@@ -116,7 +116,7 @@
     "href": "material.html#slides",
     "title": "Material",
     "section": "Slides",
-    "text": "Slides\n\nIntrodução"
+    "text": "Slides\n\nIntrodução\nEscolhas Racionais"
   },
   {
     "objectID": "material.html#exercícios",
@@ -131,5 +131,75 @@
     "title": "Introdução",
     "section": "Avaliação",
     "text": "Avaliação\n\n3 testes com perguntas abertas\n\nTeste 1 (40%): Semana 5\nTeste 2 (40%): Semana 11\nTeste 3 (20%): Semana 14\n\nNota mínima de 7 valores para se manter em avaliação contínua\nAvaliação contínua não é obrigatória"
+  },
+  {
+    "objectID": "slides/02_Escolhas_Racionais.html",
+    "href": "slides/02_Escolhas_Racionais.html",
+    "title": "Introdução",
+    "section": "",
+    "text": "A comparação entre custos marginais e benefícios marginais é particularmente útil quando é necessário escolher a quantidade de um recurso que está a ser utilizada ou a quantidade de um bem que se está a produzir.\n\n\n\nValerá a pena aumentar a quantidade enquanto o benefício marginal (benefício adicional por mais uma unidade) for superior ao custo marginal (custo adicional por essa unidade).\n\n\n\n\n\nUm produtor de Pêra Rocha do Oeste precisa decidir que quantidade de pêra deve colher nos seus pomares.\n\nSe colher mais, consegue vender mais\nMas também tem mais custos\n\nAs receitas e os custos são de acordo com o quadro seguinte:\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantidade (10s caixas)\nReceitas (benefício)\nBenefício marginal\nCustos\nCusto marginal\n\n\n\n\n10\n€100\n\n€80\n\n\n\n11\n€109\n\n€85\n\n\n\n12\n€117\n\n€92\n\n\n\n13\n€124\n\n€100\n\n\n\n14\n€130\n\n€110\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantidade (10s caixas)\nReceitas (benefício)\nBenefício marginal\nCustos\nCusto marginal\n\n\n\n\n10\n€100\n-\n€80\n\n\n\n11\n€109\n€9\n€85\n\n\n\n12\n€117\n€8\n€92\n\n\n\n13\n€124\n€7\n€100\n\n\n\n14\n€130\n€6\n€110\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantidade (10s caixas)\nReceitas (benefício)\nBenefício marginal\nCustos\nCusto marginal\n\n\n\n\n10\n€100\n-\n€80\n-\n\n\n11\n€109\n€9\n€85\n€5\n\n\n12\n€117\n€8\n€92\n€7\n\n\n13\n€124\n€7\n€100\n€8\n\n\n14\n€130\n€6\n€110\n€10\n\n\n\n\\[Bmg = \\frac{\\Delta B}{\\Delta Q}, \\quad Cmg = \\frac{\\Delta C}{\\Delta Q}\\]\n\n\n\n\n\n\n\nQuantidade (10s caixas)\nReceitas\nBmg\nCustos\nCmg\n\n\n\n\n10\n€100\n-\n€80\n-\n\n\n11\n€109\n€9\n€85\n€5\n\n\n12\n€117\n€8\n€92\n€7\n\n\n13\n€124\n€7\n€100\n€8\n\n\n14\n€130\n€6\n€110\n€10\n\n\n16\n€140\n€5\n€132\n€11\n\n\n\n\n\n\n\n\n\n\nQuantidade\nReceitas\nBmg\nCustos\nCmg\nLucro\n\n\n\n\n10\n€100\n-\n€80\n-\n€20\n\n\n11\n€109\n€9\n€85\n€5\n€24\n\n\n12*\n€117\n€8\n€92\n€7\n€25\n\n\n13\n€124\n€7\n€100\n€8\n€24\n\n\n14\n€130\n€6\n€110\n€10\n€20\n\n\n16\n€140\n€5\n€132\n€11\n€12\n\n\n\nQuantidade ótima: 12 caixas (onde Bmg ≈ Cmg)\n\n\n\n\n\n\\[\\tan \\alpha = \\frac{\\Delta C}{\\Delta Q} = Cmg\\]\n\n\n\n\nPara maximizar o lucro (Benefício - Custo):\n\\[\n\\max\\ (B - C)\n\\]\nCondição de primeira ordem:\n\\[\n\\frac{d(B-C)}{dQ} = 0 \\Rightarrow B' - C' = 0 \\Rightarrow B' = C'\n\\]\nConclusão:\n\\[\nBmg = Cmg\n\\]\n\n\n\n\n\nAnálise marginal é o cálculo da variação de uma variável por unidade adicional de outra\nAnálise marginal corresponde, portanto, a uma taxa de variação média\nUma taxa de variação média é uma derivada\nO critério custo-benefício corresponde à condição de primeira ordem de máximo\n\n\n\n\n\nPor vezes, os agentes económicos não tomam decisões racionais, porque a racionalidade é limitada, já que:\n\nA realidade é muito complexa\nA capacidade cognitiva dos indivíduos é limitada\nA informação é frequentemente incompleta\n\n\n\n\nMas admitiremos que os indivíduos são racionais e que reagem a incentivos.\nEscolhas racionais são escolhas eficientes.\n\n\n\n\n\nEficiência (no sentido de Pareto) significa não poder melhorar a situação de um agente económico sem piorar a situação de outro…\nEm geral, todas as escolhas eficientes têm subjacente um trade-off: uma situação de escolha em que para ter mais de uma opção é preciso prescindir de outra.\nNa produção, eficiência é incompatível com desaproveitamento de recursos.\n\n\n\n\nRefere-se à adição de todos os benefícios que decorrem das escolhas para todos os agentes económicos.\n\n\n\nSe, a partir de uma situação de eficiência de Pareto, se puder alterar as escolhas beneficiando algum(uns) agente(s) económico(s) de forma a que o seu benefício adicional compense a perda provocada noutro(s) agente(s) (para garantir maior equidade, por exemplo), haverá uma melhoria de bem-estar e trata-se de um movimento eficiente (Kaldor-Hicks).\nO bem-estar social será máximo quando se esgotarem todos os movimentos de Kaldor-Hicks.\n\n\n\n\n\n\nAnálise custo-benefício: comparar Bmg e Cmg\nRegra de otimização: aumentar quantidade enquanto Bmg &gt; Cmg\nCondição de máximo: Bmg = Cmg (derivada = 0)\nRacionalidade limitada: complexidade, cognição, informação\nEficiência de Pareto: não melhorar um sem piorar outro\nEficiência de Kaldor-Hicks: ganhos compensam perdas\n\n\nPróxima aula: Fronteira das Possibilidades de Produção (FPP), Custo Relativo, Vantagens do Comércio"
+  },
+  {
+    "objectID": "slides/02_Escolhas_Racionais.html#análise-custo-benefício",
+    "href": "slides/02_Escolhas_Racionais.html#análise-custo-benefício",
+    "title": "Introdução",
+    "section": "",
+    "text": "A comparação entre custos marginais e benefícios marginais é particularmente útil quando é necessário escolher a quantidade de um recurso que está a ser utilizada ou a quantidade de um bem que se está a produzir.\n\n\n\nValerá a pena aumentar a quantidade enquanto o benefício marginal (benefício adicional por mais uma unidade) for superior ao custo marginal (custo adicional por essa unidade)."
+  },
+  {
+    "objectID": "slides/02_Escolhas_Racionais.html#exemplo-produtor-de-pêra-rocha",
+    "href": "slides/02_Escolhas_Racionais.html#exemplo-produtor-de-pêra-rocha",
+    "title": "Introdução",
+    "section": "",
+    "text": "Um produtor de Pêra Rocha do Oeste precisa decidir que quantidade de pêra deve colher nos seus pomares.\n\nSe colher mais, consegue vender mais\nMas também tem mais custos\n\nAs receitas e os custos são de acordo com o quadro seguinte:\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantidade (10s caixas)\nReceitas (benefício)\nBenefício marginal\nCustos\nCusto marginal\n\n\n\n\n10\n€100\n\n€80\n\n\n\n11\n€109\n\n€85\n\n\n\n12\n€117\n\n€92\n\n\n\n13\n€124\n\n€100\n\n\n\n14\n€130\n\n€110\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantidade (10s caixas)\nReceitas (benefício)\nBenefício marginal\nCustos\nCusto marginal\n\n\n\n\n10\n€100\n-\n€80\n\n\n\n11\n€109\n€9\n€85\n\n\n\n12\n€117\n€8\n€92\n\n\n\n13\n€124\n€7\n€100\n\n\n\n14\n€130\n€6\n€110\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuantidade (10s caixas)\nReceitas (benefício)\nBenefício marginal\nCustos\nCusto marginal\n\n\n\n\n10\n€100\n-\n€80\n-\n\n\n11\n€109\n€9\n€85\n€5\n\n\n12\n€117\n€8\n€92\n€7\n\n\n13\n€124\n€7\n€100\n€8\n\n\n14\n€130\n€6\n€110\n€10\n\n\n\n\\[Bmg = \\frac{\\Delta B}{\\Delta Q}, \\quad Cmg = \\frac{\\Delta C}{\\Delta Q}\\]\n\n\n\n\n\n\n\nQuantidade (10s caixas)\nReceitas\nBmg\nCustos\nCmg\n\n\n\n\n10\n€100\n-\n€80\n-\n\n\n11\n€109\n€9\n€85\n€5\n\n\n12\n€117\n€8\n€92\n€7\n\n\n13\n€124\n€7\n€100\n€8\n\n\n14\n€130\n€6\n€110\n€10\n\n\n16\n€140\n€5\n€132\n€11\n\n\n\n\n\n\n\n\n\n\nQuantidade\nReceitas\nBmg\nCustos\nCmg\nLucro\n\n\n\n\n10\n€100\n-\n€80\n-\n€20\n\n\n11\n€109\n€9\n€85\n€5\n€24\n\n\n12*\n€117\n€8\n€92\n€7\n€25\n\n\n13\n€124\n€7\n€100\n€8\n€24\n\n\n14\n€130\n€6\n€110\n€10\n€20\n\n\n16\n€140\n€5\n€132\n€11\n€12\n\n\n\nQuantidade ótima: 12 caixas (onde Bmg ≈ Cmg)"
+  },
+  {
+    "objectID": "slides/02_Escolhas_Racionais.html#interpretação-gráfica-bmg-e-cmg",
+    "href": "slides/02_Escolhas_Racionais.html#interpretação-gráfica-bmg-e-cmg",
+    "title": "Introdução",
+    "section": "",
+    "text": "\\[\\tan \\alpha = \\frac{\\Delta C}{\\Delta Q} = Cmg\\]"
+  },
+  {
+    "objectID": "slides/02_Escolhas_Racionais.html#condição-matemática-de-máximo",
+    "href": "slides/02_Escolhas_Racionais.html#condição-matemática-de-máximo",
+    "title": "Introdução",
+    "section": "",
+    "text": "Para maximizar o lucro (Benefício - Custo):\n\\[\n\\max\\ (B - C)\n\\]\nCondição de primeira ordem:\n\\[\n\\frac{d(B-C)}{dQ} = 0 \\Rightarrow B' - C' = 0 \\Rightarrow B' = C'\n\\]\nConclusão:\n\\[\nBmg = Cmg\n\\]"
+  },
+  {
+    "objectID": "slides/02_Escolhas_Racionais.html#conclusões-sobre-análise-marginal",
+    "href": "slides/02_Escolhas_Racionais.html#conclusões-sobre-análise-marginal",
+    "title": "Introdução",
+    "section": "",
+    "text": "Análise marginal é o cálculo da variação de uma variável por unidade adicional de outra\nAnálise marginal corresponde, portanto, a uma taxa de variação média\nUma taxa de variação média é uma derivada\nO critério custo-benefício corresponde à condição de primeira ordem de máximo"
+  },
+  {
+    "objectID": "slides/02_Escolhas_Racionais.html#racionalidade",
+    "href": "slides/02_Escolhas_Racionais.html#racionalidade",
+    "title": "Introdução",
+    "section": "",
+    "text": "Por vezes, os agentes económicos não tomam decisões racionais, porque a racionalidade é limitada, já que:\n\nA realidade é muito complexa\nA capacidade cognitiva dos indivíduos é limitada\nA informação é frequentemente incompleta\n\n\n\n\nMas admitiremos que os indivíduos são racionais e que reagem a incentivos.\nEscolhas racionais são escolhas eficientes."
+  },
+  {
+    "objectID": "slides/02_Escolhas_Racionais.html#eficiência",
+    "href": "slides/02_Escolhas_Racionais.html#eficiência",
+    "title": "Introdução",
+    "section": "",
+    "text": "Eficiência (no sentido de Pareto) significa não poder melhorar a situação de um agente económico sem piorar a situação de outro…\nEm geral, todas as escolhas eficientes têm subjacente um trade-off: uma situação de escolha em que para ter mais de uma opção é preciso prescindir de outra.\nNa produção, eficiência é incompatível com desaproveitamento de recursos."
+  },
+  {
+    "objectID": "slides/02_Escolhas_Racionais.html#bem-estar-social",
+    "href": "slides/02_Escolhas_Racionais.html#bem-estar-social",
+    "title": "Introdução",
+    "section": "",
+    "text": "Refere-se à adição de todos os benefícios que decorrem das escolhas para todos os agentes económicos.\n\n\n\nSe, a partir de uma situação de eficiência de Pareto, se puder alterar as escolhas beneficiando algum(uns) agente(s) económico(s) de forma a que o seu benefício adicional compense a perda provocada noutro(s) agente(s) (para garantir maior equidade, por exemplo), haverá uma melhoria de bem-estar e trata-se de um movimento eficiente (Kaldor-Hicks).\nO bem-estar social será máximo quando se esgotarem todos os movimentos de Kaldor-Hicks."
+  },
+  {
+    "objectID": "slides/02_Escolhas_Racionais.html#resumo-da-aula-2",
+    "href": "slides/02_Escolhas_Racionais.html#resumo-da-aula-2",
+    "title": "Introdução",
+    "section": "",
+    "text": "Análise custo-benefício: comparar Bmg e Cmg\nRegra de otimização: aumentar quantidade enquanto Bmg &gt; Cmg\nCondição de máximo: Bmg = Cmg (derivada = 0)\nRacionalidade limitada: complexidade, cognição, informação\nEficiência de Pareto: não melhorar um sem piorar outro\nEficiência de Kaldor-Hicks: ganhos compensam perdas\n\n\nPróxima aula: Fronteira das Possibilidades de Produção (FPP), Custo Relativo, Vantagens do Comércio"
   }
 ]

@@ -1,0 +1,241 @@
+---
+title: "Introdução"
+author: "Paulo Fagandini"
+institute: "ISCAL-IPL"
+format: 
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    incremental: true
+    math: 
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+    
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: false
+editor: source
+execute:
+  enabled: true
+engine: knitr
+---
+
+# Aula 2 – Escolhas Racionais, Excedente, Cmg-Bmg
+
+---
+
+## Análise Custo-Benefício
+
+A comparação entre **custos marginais** e **benefícios marginais** é particularmente útil quando é necessário escolher a **quantidade** de um recurso que está a ser utilizada ou a quantidade de um bem que se está a produzir.
+
+---
+
+### Princípio Fundamental
+
+Valerá a pena **aumentar a quantidade** enquanto o **benefício marginal** (benefício adicional por mais uma unidade) for **superior** ao **custo marginal** (custo adicional por essa unidade).
+
+---
+
+## Exemplo: Produtor de Pêra Rocha
+
+Um produtor de Pêra Rocha do Oeste precisa decidir que quantidade de pêra deve colher nos seus pomares.
+
+- Se colher mais, consegue **vender mais**
+- Mas também tem **mais custos**
+
+As receitas e os custos são de acordo com o quadro seguinte:
+
+---
+
+### Dados do Problema
+
+| Quantidade (10s caixas) | Receitas (benefício) | Benefício marginal | Custos | Custo marginal |
+|-------------------------|----------------------|-------------------|--------|----------------|
+| 10                      | €100                 |                   | €80    |                |
+| 11                      | €109                 |                   | €85    |                |
+| 12                      | €117                 |                   | €92    |                |
+| 13                      | €124                 |                   | €100   |                |
+| 14                      | €130                 |                   | €110   |                |
+
+---
+
+### Cálculo do Benefício Marginal
+
+| Quantidade (10s caixas) | Receitas (benefício) | Benefício marginal | Custos | Custo marginal |
+|-------------------------|----------------------|-------------------|--------|----------------|
+| 10                      | €100                 | -                 | €80    |                |
+| 11                      | €109                 | **€9**            | €85    |                |
+| 12                      | €117                 | **€8**            | €92    |                |
+| 13                      | €124                 | **€7**            | €100   |                |
+| 14                      | €130                 | **€6**            | €110   |                |
+
+---
+
+### Cálculo do Custo Marginal
+
+| Quantidade (10s caixas) | Receitas (benefício) | Benefício marginal | Custos | Custo marginal |
+|-------------------------|----------------------|-------------------|--------|----------------|
+| 10                      | €100                 | -                 | €80    | -              |
+| 11                      | €109                 | €9                | €85    | **€5**         |
+| 12                      | €117                 | €8                | €92    | **€7**         |
+| 13                      | €124                 | €7                | €100   | **€8**         |
+| 14                      | €130                 | €6                | €110   | **€10**        |
+
+$$Bmg = \frac{\Delta B}{\Delta Q}, \quad Cmg = \frac{\Delta C}{\Delta Q}$$
+
+---
+
+### Tabela Completa
+
+| Quantidade (10s caixas) | Receitas | Bmg | Custos | Cmg   |
+|-------------------------|----------|-----|--------|-------|
+| 10                      | €100     | -   | €80    | -     |
+| 11                      | €109     | €9  | €85    | €5    |
+| 12                      | €117     | €8  | €92    | €7    |
+| 13                      | €124     | €7  | €100   | €8    |
+| 14                      | €130     | €6  | €110   | €10   |
+| 16                      | €140     | €5  | €132   | €11   |
+
+---
+
+### Cálculo do Lucro
+
+| Quantidade | Receitas | Bmg | Custos | Cmg   | **Lucro** |
+|------------|----------|-----|--------|-------|-----------|
+| 10         | €100     | -   | €80    | -     | €20       |
+| 11         | €109     | €9  | €85    | €5    | €24       |
+| **12***    | **€117** | **€8** | **€92** | **€7** | **€25** |
+| 13         | €124     | €7  | €100   | €8    | €24       |
+| 14         | €130     | €6  | €110   | €10   | €20       |
+| 16         | €140     | €5  | €132   | €11   | €12       |
+
+**Quantidade ótima: 12 caixas** (onde Bmg ≈ Cmg)
+
+---
+
+## Interpretação Gráfica: Bmg e Cmg
+
+\begin{tikzpicture}[scale=1.2]
+\draw[->] (-0.1,0) -- (4.2,0) node[below right] {$Q$};
+\draw[->] (0,-0.1) -- (0,4.2) node[above left] {Custo};
+
+% Pontos Q=12 e Q=13
+\draw[dashed] (0,2.5) node[left] {92} -- (1.5,2.5) -- (1.5,0) node[below] {12};
+\draw[dashed] (0,3) node[left] {100} -- (2.5,3) -- (2.5,0) node[below] {13};
+
+% Delta Q
+\draw[red,thick,->] (1.5,2.5) -- (2,2.5) node[below,midway] {$\Delta Q = 1$} -- (2.5,2.5);
+
+% Delta C
+\draw[red,thick,->] (2.5,2.5) -- (2.5,2.75) node[right,midway] {$\Delta C = 8$} -- (2.5,3);
+
+% Curva de custo
+\draw[blue,smooth,domain=0.5:3.5,variable=\x] plot ({\x},{0.5 + (\x-1)^2/2});
+
+% Ângulo
+\draw[fill=blue!20,opacity=0.7] (2.5,3) -- (2.2,3) -- (2.3,3.2);
+\end{tikzpicture}
+
+$$\tan \alpha = \frac{\Delta C}{\Delta Q} = Cmg$$
+
+---
+
+## Condição Matemática de Máximo
+
+Para maximizar o lucro (Benefício - Custo):
+
+$$
+\max\ (B - C)
+$$
+
+Condição de primeira ordem:
+
+$$
+\frac{d(B-C)}{dQ} = 0 \Rightarrow B' - C' = 0 \Rightarrow B' = C'
+$$
+
+**Conclusão:**
+
+$$
+Bmg = Cmg
+$$
+
+---
+
+## Conclusões sobre Análise Marginal
+
+1. **Análise marginal** é o cálculo da variação de uma variável por unidade adicional de outra
+
+2. Análise marginal corresponde, portanto, a uma **taxa de variação média**
+
+3. Uma taxa de variação média é uma **derivada**
+
+4. O critério custo-benefício corresponde à **condição de primeira ordem de máximo**
+
+---
+
+## Racionalidade
+
+Por vezes, os agentes económicos **não** tomam decisões racionais, porque a racionalidade é **limitada**, já que:
+
+1. A realidade é muito **complexa**
+2. A capacidade **cognitiva** dos indivíduos é limitada
+3. A **informação** é frequentemente incompleta
+
+---
+
+### Pressuposto do Curso
+
+Mas admitiremos que os indivíduos são **racionais** e que reagem a **incentivos**.
+
+**Escolhas racionais são escolhas eficientes.**
+
+---
+
+## Eficiência
+
+**Eficiência** (no sentido de Pareto) significa não poder melhorar a situação de um agente económico sem piorar a situação de outro...
+
+Em geral, todas as escolhas eficientes têm subjacente um **trade-off**: uma situação de escolha em que para ter mais de uma opção é preciso prescindir de outra.
+
+**Na produção, eficiência é incompatível com desaproveitamento de recursos.**
+
+---
+
+## Bem-Estar Social
+
+Refere-se à **adição de todos os benefícios** que decorrem das escolhas para todos os agentes económicos.
+
+---
+
+### Eficiência de Kaldor-Hicks
+
+Se, a partir de uma situação de eficiência de Pareto, se puder alterar as escolhas beneficiando algum(uns) agente(s) económico(s) de forma a que o seu benefício adicional **compense** a perda provocada noutro(s) agente(s) (para garantir maior equidade, por exemplo), haverá uma **melhoria de bem-estar** e trata-se de um movimento eficiente (**Kaldor-Hicks**).
+
+O bem-estar social será **máximo** quando se esgotarem todos os movimentos de Kaldor-Hicks.
+
+---
+
+## Resumo da Aula 2
+
+- **Análise custo-benefício**: comparar Bmg e Cmg
+- **Regra de otimização**: aumentar quantidade enquanto Bmg > Cmg
+- **Condição de máximo**: Bmg = Cmg (derivada = 0)
+- **Racionalidade limitada**: complexidade, cognição, informação
+- **Eficiência de Pareto**: não melhorar um sem piorar outro
+- **Eficiência de Kaldor-Hicks**: ganhos compensam perdas
+
+---
+
+**Próxima aula:** Fronteira das Possibilidades de Produção (FPP), Custo Relativo, Vantagens do Comércio
