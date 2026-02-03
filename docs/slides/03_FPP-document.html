@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -270,22 +235,6 @@ window.Quarto = {
 <section id="representação-gráfica-da-fpp" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="representação-gráfica-da-fpp"><span class="header-section-number">2</span> Representação Gráfica da FPP</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">tikzpicture</span>}[scale=1.5]</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (-0.1,0) -- (4,0) node[below right] {Bem <span class="ss">$X$</span>};</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (0,-0.1) -- (0,3) node[above left] {Bem <span class="ss">$Y$</span>};</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[blue,thick] (0,2) node[left] {<span class="ss">$A$</span>} -- (3,0) node[below] {<span class="ss">$B$</span>};</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">% Área sombreada</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[fill=blue!10,opacity=0.7] (0,0) -- (0,2) -- (3,0) -- cycle;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">% Ponto M (ineficiente)</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[circle,fill=red,inner sep=2pt,label=right:{<span class="ss">$M$</span>}] at (0.8,0.8) {};</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">% Ponto N (inatingível)</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[circle,fill=black,inner sep=2pt,label=right:{<span class="ss">$N$</span>}] at (2,2) {};</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">tikzpicture</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -318,24 +267,6 @@ window.Quarto = {
 <section id="visualização-do-custo-relativo" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="visualização-do-custo-relativo"><span class="header-section-number">4</span> Visualização do Custo Relativo</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">tikzpicture</span>}[scale=1.5]</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (-0.1,0) -- (4,0) node[below right] {Bem <span class="ss">$X$</span>};</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (0,-0.1) -- (0,3) node[above left] {Bem <span class="ss">$Y$</span>};</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[blue,thick] (0,2) node[left] {<span class="ss">$A$</span>} -- (3,0) node[below] {<span class="ss">$B$</span>};</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">% Pontos a1 e a2</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[circle,fill=blue,inner sep=1.5pt,label=right:{<span class="ss">$a_1$</span>}] at (1,1.33) {};</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[circle,fill=blue,inner sep=1.5pt,label=right:{<span class="ss">$a_2$</span>}] at (2,0.67) {};</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">% Setas Delta Y e Delta X</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[orange,thick,-&gt;] (1,1.33) -- (1,0.67);</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[left] at (1,1.2) {<span class="ss">$</span><span class="sc">\Delta</span><span class="ss"> Y$</span>};</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[orange,thick,-&gt;] (1,0.67) -- (2,0.67);</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[below] at (1.5,0.67) {<span class="ss">$</span><span class="sc">\Delta</span><span class="ss"> X$</span>};</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">tikzpicture</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -370,23 +301,6 @@ window.Quarto = {
 <h2 data-number="8" class="anchored" data-anchor-id="exemplo-pintor-vs-cozinheiro"><span class="header-section-number">8</span> Exemplo: Pintor vs Cozinheiro</h2>
 <p>Dois vizinhos: um sabe <strong>pintar</strong> e o outro sabe <strong>cozinhar</strong></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">tikzpicture</span>}[scale=0.9]</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">% Pintor</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">scope</span>}</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (-0.1,0) -- (4.5,0) node[below right] {Bolos};</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (0,-0.1) -- (0,3.5) node[left] {Quadros};</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[blue,thick] (0,3) node[left] {15} -- (4,0) node[below]{20};</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[dashed] (0,1.8) node[left] {9} -- (1.6,1.8) node[circle,fill,inner sep=1.5pt,label=above right:Produção]{} -- (1.6,0) node[below]{8};</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">scope</span>}</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">% Cozinheiro</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">scope</span>}[xshift=6cm]</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (-0.1,0) -- (4.5,0) node[below] {Bolos};</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (0,-0.1) -- (0,3.5) node[left] {Quadros};</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[blue,thick] (0,1) node[left] {5} -- (3,0) node[below]{15};</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[dashed] (0,0.8) node[left] {4} -- (0.6,0.8) node[circle,fill,inner sep=1.5pt,label=above right:Produção]{} -- (0.6,0) node[below]{3};</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">scope</span>}</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">tikzpicture</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -535,27 +449,6 @@ Valerá a pena especializar-se na produção de <strong>bolos</strong> se puder 
 <section id="visualização-consumo-após-comércio" class="level2" data-number="12">
 <h2 data-number="12" class="anchored" data-anchor-id="visualização-consumo-após-comércio"><span class="header-section-number">12</span> Visualização: Consumo Após Comércio</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">tikzpicture</span>}[scale=0.9]</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">% Pintor</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">scope</span>}</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (-0.1,0) -- (4.5,0) node[below right] {Bolos};</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (0,-0.1) -- (0,3.5) node[left] {Quadros};</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[blue,thick] (0,3) node[left] {15} -- (4,0) node[below]{20};</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[dashed] (0,2) node[left] {10} -- (2,2) node[circle,fill,inner sep=1.5pt,label=above right:Consumo]{} -- (2,0) node[below]{10};</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[circle,fill=red,inner sep=1.5pt,label=above right:Produção] at (0,3) {};</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[below] at (2,-0.7) {<span class="fu">\textbf</span>{Pintor}};</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">scope</span>}</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">% Cozinheiro</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">scope</span>}[xshift=6cm]</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (-0.1,0) -- (4.5,0) node[below] {Bolos};</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (0,-0.1) -- (0,3.5) node[left] {Quadros};</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[blue,thick] (0,1) node[left] {5} -- (3,0) node[below]{15};</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[dashed] (0,1) node[left] {5} -- (1,1) node[circle,fill,inner sep=1.5pt,label=above right:Consumo]{} -- (1,0) node[below]{5};</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[circle,fill=red,inner sep=1.5pt,label=above right:Produção] at (3,0) {};</span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[below] at (1.5,-0.7) {<span class="fu">\textbf</span>{Cozinheiro}};</span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">scope</span>}</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">tikzpicture</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -570,29 +463,6 @@ Valerá a pena especializar-se na produção de <strong>bolos</strong> se puder 
 <h2 data-number="13" class="anchored" data-anchor-id="possibilidades-de-consumo-com-comércio"><span class="header-section-number">13</span> Possibilidades de Consumo com Comércio</h2>
 <p>Possibilidades de consumo se termos de troca forem <strong>1 quadro = 2 bolos</strong>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">tikzpicture</span>}[scale=0.9]</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">% Pintor</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">scope</span>}</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (-0.1,0) -- (6.5,0) node[below] {Bolos};</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (0,-0.1) -- (0,3.5) node[left] {Quadros};</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[black,thick] (0,3) node[left] {15} -- (4,0) node[below]{20};</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[blue,thick] (0,3) -- (6,0) node[below]{30};</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[dashed] (0,2) node[left] {10} -- (2,2) node[circle,fill,inner sep=1.5pt,label=above right:Consumo]{} -- (2,0) node[below]{10};</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[circle,fill=red,inner sep=1.5pt,label=above right:Produção] at (0,3) {};</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[below] at (3,-0.7) {<span class="fu">\textbf</span>{Pintor}};</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">scope</span>}</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co">% Cozinheiro</span></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">scope</span>}[xshift=8cm]</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (-0.1,0) -- (4.5,0) node[below] {Bolos};</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[-&gt;] (0,-0.1) -- (0,3.5) node[left] {Quadros};</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[black,thick] (0,1) node[left] {5} -- (3,0) node[below]{15};</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[blue,thick] (0,1.5) -- (3,0);</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span>[dashed] (0,1) node[left] {5} -- (1,1) node[circle,fill,inner sep=1.5pt,label=above right:Consumo]{} -- (1,0) node[below]{5};</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[circle,fill=red,inner sep=1.5pt,label=above right:Produção] at (3,0) {};</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span>[below] at (1.5,-0.7) {<span class="fu">\textbf</span>{Cozinheiro}};</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">scope</span>}</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">tikzpicture</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -640,6 +510,7 @@ Valerá a pena especializar-se na produção de <strong>bolos</strong> se puder 
 </ul>
 <hr>
 <p><strong>Próxima aula:</strong> Revisão e exercícios práticos sobre FPP, custo de oportunidade e vantagem comparativa</p>
+
 
 
 </section>
