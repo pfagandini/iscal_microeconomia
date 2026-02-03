@@ -25,6 +25,9 @@ format:
   html:
     output-file: 03_FPP-document.html
     toc: true
+    math: 
+      method: mathjax
+    keep-tex: false
     number-sections: true
     embed-resources: false
 editor: source
@@ -52,7 +55,7 @@ No modelo:
 
 ## Representação Gráfica da FPP
 
-```{r, engine='tikz'}
+```{r, engine='tikz', echo='false'}
 
 \begin{tikzpicture}[scale=1.5]
 \draw[->] (-0.1,0) -- (4,0) node[below right] {Bem $X$};
@@ -96,7 +99,7 @@ A partir de um ponto da FPP, a razão $\left|\frac{\Delta Y}{\Delta X}\right|$ c
 
 ## Visualização do Custo Relativo
 
-```{r, engine='tikz'}
+```{r, engine='tikz', echo='false'}
 
 \begin{tikzpicture}[scale=1.5]
 \draw[->] (-0.1,0) -- (4,0) node[below right] {Bem $X$};
@@ -148,7 +151,7 @@ Usemos a FPP para tirar essa conclusão!
 
 Dois vizinhos: um sabe **pintar** e o outro sabe **cozinhar**
 
-```{r, engine='tikz'}
+```{r, engine='tikz', echo='false'}
 \begin{tikzpicture}[scale=0.9]
 % Pintor
 \begin{scope}
@@ -232,7 +235,7 @@ Admitamos que há **especialização** e que:
 
 ## Visualização: Consumo Após Comércio
 
-```{r, engine='tikz'}
+```{r, engine='tikz', echo='false'}
 \begin{tikzpicture}[scale=0.9]
 % Pintor
 \begin{scope}
@@ -262,7 +265,7 @@ Admitamos que há **especialização** e que:
 
 Possibilidades de consumo se termos de troca forem **1 quadro = 2 bolos**:
 
-```{r, engine='tikz'}
+```{r, engine='tikz', echo='false'}
 \begin{tikzpicture}[scale=0.9]
 % Pintor
 \begin{scope}

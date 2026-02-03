@@ -26,6 +26,8 @@ format:
     toc: true
     number-sections: true
     embed-resources: false
+    math: 
+      method: mathjax
 editor: source
 execute:
   enabled: true

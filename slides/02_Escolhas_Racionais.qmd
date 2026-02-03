@@ -25,6 +25,8 @@ format:
   html:
     output-file: 02_Escolhas_Racionais-document.html
     toc: true
+    math: 
+      method: mathjax
     number-sections: true
     embed-resources: false
 editor: source
