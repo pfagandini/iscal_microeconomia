@@ -7,6 +7,7 @@ format:
     theme:
       - default
       - ../font_adjust.scss
+      - ../iscal_theme.scss
     self-contained: false
     logo: ../images/iscal_logo.svg
     slide-number: true
@@ -172,14 +173,23 @@ Dois vizinhos: um sabe **pintar** e o outro sabe **cozinhar**
 \end{scope}
 \end{tikzpicture}
 ```
+::::{.columns}
+:::{.column style="text-align: center;"}
+:artist:
+:::
+:::{.column style="text-align: center;"}
+:cook:
+:::
+::::
+
 ---
 
 ## Custos Relativos e Vantagem Comparativa
 
-| Custos de Oportunidade | Pintor      |     | Cozinheiro  |
+| Custos de Oportunidade | Pintor :artist:    |     | Cozinheiro :cook: |
 |-------------------------|-------------|-----|-------------|
-| **Um bolo**             | $\frac{3}{4}$ | $>$ | $\frac{1}{3}$ |
-| **Um quadro**           | $\frac{4}{3}$ | $<$ | $3$         |
+| **Um bolo** :cupcake:          | $\frac{3}{4}$ | $>$ | $\frac{1}{3}$ |
+| **Um quadro** :framed_picture: | $\frac{4}{3}$ | $<$ | $3$         |
 
 ---
 

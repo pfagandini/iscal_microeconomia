@@ -1,5 +1,6 @@
 ---
-title: "Escolhas Racionais, Excedente, Cmg-Bmg"
+title: "Escolhas Racionais"
+subtitle: "Excedente, Cmg-Bmg"
 author: "Paulo Fagandini"
 institute: "ISCAL-IPL"
 format: 
@@ -7,6 +8,7 @@ format:
     theme:
       - default
       - ../font_adjust.scss
+      - ../iscal_theme.scss
     self-contained: false
     logo: ../images/iscal_logo.svg
     slide-number: true

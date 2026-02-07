@@ -1,0 +1,172 @@
+/*-- scss:defaults --*/
+
+// ISCAL Brand Colors (based on visual identity)
+$iscal-burgundy: #8B1538;
+$iscal-dark-burgundy: #6B1028;
+$iscal-light-gray: #F5F5F5;
+$iscal-dark-gray: #333333;
+$iscal-blue: #0066CC;
+$iscal-accent: #D4AF37;
+
+// Fonts
+$font-family-sans-serif: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+$presentation-font-size-root: 36px;
+$presentation-heading-font: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+$presentation-heading-color: $iscal-burgundy;
+
+// Main colors
+$body-bg: white;
+$body-color: $iscal-dark-gray;
+$link-color: $iscal-blue;
+$link-color-hover: $iscal-dark-burgundy;
+
+/*-- scss:rules --*/
+
+// Slide styling
+.reveal {
+  font-size: $presentation-font-size-root;
+}
+
+// Headers
+.reveal h1 {
+  color: $iscal-burgundy;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  text-transform: none;
+}
+
+.reveal h2 {
+  color: $iscal-burgundy;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-top: 0.5em;
+  margin-bottom: 0.4em;
+  text-transform: none;
+}
+
+.reveal h3 {
+  color: $iscal-dark-burgundy;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 0.4em;
+  margin-bottom: 0.3em;
+}
+
+// Callout boxes
+.callout {
+  border-left: 5px solid $iscal-burgundy;
+  padding: 0.5em 0.7em;
+  margin: 1em 0;
+}
+
+.callout-note {
+  border-left-color: $iscal-blue;
+  background-color: lighten($iscal-blue, 45%);
+}
+
+.callout-warning {
+  border-left-color: #f0ad4e;
+  background-color: lighten(#f0ad4e, 35%);
+}
+
+.callout-important {
+  border-left-color: $iscal-burgundy;
+  background-color: lighten($iscal-burgundy, 55%);
+}
+
+// Code blocks
+.reveal pre {
+  font-size: 0.65em;
+  box-shadow: none;
+  border: 1px solid #ddd;
+}
+
+.reveal code {
+  color: $iscal-dark-burgundy;
+  background-color: $iscal-light-gray;
+}
+
+// Lists
+.reveal ul, .reveal ol {
+  line-height: 1.5;
+}
+
+.reveal li {
+  margin-bottom: 0.4em;
+}
+
+// Tables
+.reveal table {
+  font-size: 0.8em;
+  border-collapse: collapse;
+}
+
+.reveal table th {
+  background-color: $iscal-burgundy;
+  color: white;
+  font-weight: bold;
+  padding: 0.5em;
+  border: 1px solid $iscal-dark-burgundy;
+}
+
+.reveal table td {
+  padding: 0.4em;
+  border: 1px solid #ddd;
+}
+
+.reveal table tbody tr:nth-child(even) {
+  background-color: $iscal-light-gray;
+}
+
+// Highlighted boxes
+.highlight-box {
+  background-color: lighten($iscal-burgundy, 55%);
+  border: 2px solid $iscal-burgundy;
+  border-radius: 8px;
+  padding: 0.8em;
+  margin: 0.5em 0;
+}
+
+// Math styling
+.reveal .math {
+  color: $iscal-dark-gray;
+}
+
+// Incremental lists with better spacing
+.reveal .incremental > * {
+  margin-bottom: 0.4em;
+}
+
+// Footer styling
+.reveal .footer {
+  font-size: 0.5em;
+  color: $iscal-dark-gray;
+}
+
+// Columns
+.reveal .columns {
+  display: flex;
+  gap: 1em;
+}
+
+.reveal .column {
+  flex: 1;
+}
+
+// Small text helper
+.reveal .small {
+  font-size: 0.7em;
+}
+
+// Ensure proper spacing
+.reveal p {
+  margin-bottom: 0.5em;
+  line-height: 1.4;
+}
+
+// Slide numbers
+.reveal .slide-number {
+  color: $iscal-burgundy;
+  background-color: rgba(255, 255, 255, 0.9);
+}

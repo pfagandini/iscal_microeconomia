@@ -1,5 +1,6 @@
 ---
-title: "Introdução"
+title: "Introdução e Escolhas Racionais"
+subtitle: "Custo de Oportunidade"
 author: "Paulo Fagandini"
 institute: "ISCAL-IPL"
 format: 
@@ -7,6 +8,7 @@ format:
     theme:
       - default
       - ../font_adjust.scss
+      - ../iscal_theme.scss
     self-contained: false
     logo: ../images/iscal_logo.svg
     slide-number: true
@@ -34,7 +36,7 @@ execute:
 engine: knitr
 ---
 
-# Aula 1 – Introdução e Apresentação
+# Introdução e Apresentação
 
 ## Informações da Cadeira
 
@@ -56,9 +58,16 @@ Como é expectável a interseção dos conteúdos e material com a antiga cadeir
 - Aulas focadas na parte **matemática**, frequentemente a mais complexa para os alunos
 - Conceitos mais básicos e definições nas referências bibliográficas obrigatórias
 
+. . .
+
+Bibliografia recomendada:
+
+:book: *Princípios de microeconomia*, António José Morgado, Paulo Ferreira, 2ed, Rei dos Livros, 2021.  
+:book: *Exercícios de microeconomia*, António José Morgado, Paulo Ferreira. 2ed, Rei dos Livros, 2021.
+
 ## Avaliação
 
-- **3 testes** com perguntas abertas
+- **3 testes** (em papel, *old school*)
   - Teste 1 (40%): Semana 5
   - Teste 2 (40%): Semana 11
   - Teste 3 (20%): Semana 14
