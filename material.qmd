@@ -2,7 +2,7 @@
 title: "Material"
 ---
 
-About this site
+Podem encontrar o material para a cadeira nesta página, organizado por capítulo.
 
 ## Slides
 
@@ -11,8 +11,14 @@ About this site
 1. [Introdução](slides/01_Intro.qmd), [📄](slides/01_Intro-document.html)
 2. [Escolhas Racionais](slides/02_Escolhas_Racionais.qmd), [📄](slides/02_Escolhas_Racionais-document.html)
 3. [FPP e Ventagens do Comêrcio](slides/03_FPP.qmd), [📄](slides/03_FPP-document.html)
+4. [Aula Prática 1](slides/aula_pratica_1.qmd)
+5. [Aula Prática 2](slides/aula_pratica_2.qmd)
 
 ### Capítulo II: Teoria do Consumidor e Procura
+
+6. [Restrição Orçametal](slides/05_Restricao_orcamental.qmd)[📄](slides/05_Restricao_orcamental.html)
+7. [Preferências e axiomas de racionalidade](slides/06_Preferencias_axiomas.qmd)[📄](slides/06_Preferencias_axiomas_documento.html)
+8. [TMS e ótimo de consumo](slides/07_TMS_otimo.qmd)[📄](slides/07_TMS_otimo_documento.html)
 
 ### Capítulo III: Teoría da Produção - Curto Prazo
 
@@ -24,4 +30,3 @@ About this site
 
 ### Capítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos
 
-## Exercícios

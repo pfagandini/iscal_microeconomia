@@ -1,5 +1,6 @@
 ---
-title: "FPP, FPC, e Ventagens do Comêrcio"
+title: "Microeconomia"
+subtitle: "FPP, FPC, e Ventagens do Comêrcio"
 author: "Paulo Fagandini"
 institute: "ISCAL-IPL"
 format: 
@@ -341,6 +342,26 @@ Após o comércio, é possível os indivíduos estarem num **ponto de consumo** 
 - **Vantagem comparativa**: especializar na atividade com menor CO
 - **Ganhos do comércio**: especialização + troca aumenta consumo
 - **Comércio internacional**: baseado em vantagem comparativa
+
+---
+
+## Tarefa para casa
+
+O que aconteceria se a FPP em vez de linear, fosse concava? O quê significa isto? porquê poderia isto acontecer?
+
+````{tikz}
+#| fig-align: 'center'
+#| echo: false
+#| fig-width: 4
+#| fig-height: 4
+
+\begin{tikzpicture}[scale=1]
+  \draw[->] (-0.2,0) -- (5,0) node[below right] {$X$};
+  \draw[->] (0,-0.2) -- (0,5) node[above left] {$Y$};
+  \draw[thick, blue, domain=0:4, smooth, variable=\x] 
+    plot ({\x}, {4 - 0.25*\x*\x});
+\end{tikzpicture}
+````
 
 ---
 

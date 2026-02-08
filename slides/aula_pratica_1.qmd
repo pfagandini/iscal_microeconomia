@@ -1,0 +1,289 @@
+---
+title: "Aula Prática 1"
+subtitle: "Conceitos Fundamentais e Escolhas Racionais"
+author: "Microeconomia — ISCAL"
+date: "2026-02-18"
+format:
+  revealjs:
+    theme: 
+      - default 
+      - ../iscal_theme.scss
+    slide-number: true
+    chalkboard: true
+    smaller: true
+    scrollable: false
+    from: markdown+emoji
+    transition: fade
+    css: styles.css
+    header-includes: |
+      <style>
+        .reveal .slide-number { font-size: 0.6em; }
+        .reveal table { font-size: 0.75em; }
+        .reveal .small-text { font-size: 0.7em; }
+        .reveal blockquote { font-size: 0.85em; border-left: 4px solid #c0392b; padding-left: 1em; }
+        .solution-box { background-color: #eaf7ea; border: 2px solid #27ae60; border-radius: 8px; padding: 15px; margin: 10px 0; }
+        .question-box { background-color: #fdf2e9; border: 2px solid #e67e22; border-radius: 8px; padding: 15px; margin: 10px 0; }
+      </style>
+---
+
+## Estrutura da Aula
+
+1. Questões de conceitos (escolha múltipla)
+2. Exercícios de escolhas racionais (custo de oportunidade)
+3. Exercício de análise Bmg/Cmg
+
+# Parte I — Questões de Conceitos {background-color="#c0392b"}
+
+## Questão 1 — Escassez e Economia
+
+::: {.question-box}
+A Economia tem como preocupação a acumulação de riqueza. Esta frase é:
+
+a) Verdadeira, porque o objetivo da Economia é maximizar a riqueza dos países.
+b) Verdadeira, porque a riqueza é o principal indicador económico.
+c) Falsa, porque a Economia estuda a afetação de recursos escassos entre fins alternativos.
+d) Falsa, porque a Economia estuda apenas o comportamento dos consumidores.
+:::
+
+. . .
+
+::: {.solution-box}
+**Resposta: c)** A Economia, segundo Robbins (1935), é a ciência que estuda o comportamento humano como relação entre fins e meios escassos com usos alternativos. A preocupação central é a **escassez** e a necessidade de fazer **escolhas**, não a acumulação de riqueza em si.
+:::
+
+## Questão 2 — Microeconomia vs. Macroeconomia
+
+::: {.question-box}
+Qual das seguintes afirmações se refere à **Microeconomia**?
+
+a) Estuda o desempenho da economia à escala nacional.
+b) Analisa variáveis agregadas como o rendimento e o emprego.
+c) Estuda o comportamento e interação de consumidores e produtores individuais num mercado.
+d) Estuda fenómenos como a inflação e os ciclos económicos.
+:::
+
+. . .
+
+::: {.solution-box}
+**Resposta: c)** A Microeconomia estuda o comportamento de agentes económicos individuais (consumidores e produtores) e a sua interação em mercados. As alíneas a), b) e d) referem-se à Macroeconomia.
+:::
+
+## Questão 3 — Economia Positiva vs. Normativa
+
+::: {.question-box}
+Identifique a afirmação de Economia **Positiva**:
+
+a) O governo deveria aumentar o salário mínimo para reduzir a desigualdade.
+b) Um aumento do imposto sobre o tabaco reduz o consumo de cigarros.
+c) É injusto que os mais ricos paguem menos impostos proporcionalmente.
+d) O Estado deveria intervir mais na economia para garantir equidade.
+:::
+
+. . .
+
+::: {.solution-box}
+**Resposta: b)** Trata-se de uma afirmação objetiva, verificável empiricamente (Economia Positiva). As restantes envolvem juízos de valor — palavras como "deveria" e "injusto" indicam Economia Normativa.
+:::
+
+## Questão 4 — Custo de Oportunidade
+
+::: {.question-box}
+O custo de oportunidade de um recurso ilimitado é:
+
+a) Igual ao seu preço de mercado.
+b) Igual ao benefício que gera na sua utilização atual.
+c) Zero, porque não é necessário prescindir de nenhuma alternativa.
+d) Indeterminado, porque não podemos medir o valor de algo ilimitado.
+:::
+
+. . .
+
+::: {.solution-box}
+**Resposta: c)** Se um recurso é ilimitado, não há escassez, logo não há necessidade de escolher entre utilizações alternativas. Não se prescinde de nada para o utilizar, pelo que o custo de oportunidade é **zero**.
+:::
+
+## Questão 5 — Eficiência de Pareto
+
+::: {.question-box}
+Uma situação é eficiente no sentido de Pareto quando:
+
+a) Todos os agentes económicos estão igualmente satisfeitos.
+b) A produção total da economia é a máxima possível.
+c) Não é possível melhorar a situação de um agente sem piorar a de outro.
+d) O Estado não intervém na economia.
+:::
+
+. . .
+
+::: {.solution-box}
+**Resposta: c)** Eficiência de Pareto significa que não é possível realocar recursos de forma a beneficiar alguém sem prejudicar outrem. Não exige igualdade (a), nem produção máxima obrigatoriamente (b), nem ausência de Estado (d).
+:::
+
+## Questão 6 — Análise Custo-Benefício
+
+::: {.question-box}
+Segundo a análise custo-benefício, a quantidade ótima de produção é aquela em que:
+
+a) O benefício total é máximo.
+b) O custo total é mínimo.
+c) O benefício marginal é igual ao custo marginal ($Bmg = Cmg$).
+d) O benefício marginal é o dobro do custo marginal.
+:::
+
+. . .
+
+::: {.solution-box}
+**Resposta: c)** A condição de otimização é $Bmg = Cmg$. Equivale à condição de primeira ordem de máximo do lucro: $\max (B - C) \Rightarrow B' = C'$. Deve-se aumentar a produção enquanto $Bmg > Cmg$ e parar quando se igualam.
+:::
+
+
+# Parte II — Escolhas Racionais {background-color="#c0392b"}
+
+## Exercício 1 — Cinema ou Teatro
+
+::: {.question-box}
+O João tem de escolher entre ir ao cinema e ir ao teatro.
+
+- Bilhete de cinema: €6,50 — Máximo disposto a pagar: €7
+- Bilhete de teatro: €16 — Máximo disposto a pagar: €20
+
+Calcule o custo de oportunidade de ir ao teatro. Será uma decisão racional? Use três critérios equivalentes.
+:::
+
+## Exercício 1 — Solução (Critério 1: Custo de Oportunidade)
+
+**Custo de oportunidade de ir ao teatro:**
+
+$$CO_{\text{teatro}} = \underbrace{(€7 - €6{,}50)}_{\text{Excedente do cinema}} + \underbrace{€16}_{\text{Despesa do teatro}} = €16{,}50$$
+
+**Benefício bruto do teatro** = €20 (máximo disposto a pagar)
+
+$$CO_{\text{teatro}} = €16{,}50 < €20 = B_{\text{teatro}}$$
+
+✅ **É racional** ir ao teatro, pois o custo de oportunidade é inferior ao benefício bruto.
+
+## Exercício 1 — Solução (Critérios 2 e 3)
+
+**Critério 2 — Comparação de excedentes:**
+
+| Opção | Benefício | Custo | Excedente |
+|-------|-----------|-------|-----------|
+| Cinema | €7,00 | €6,50 | **€0,50** |
+| Teatro | €20,00 | €16,00 | **€4,00** |
+
+$\text{Excedente}_{\text{teatro}} = €4{,}00 > €0{,}50 = \text{Excedente}_{\text{cinema}}$ ✅
+
+**Critério 3 — Bmg vs. Cmg (de ir ao teatro em vez do cinema):**
+
+$$Bmg = €20 - €7 = €13 \quad ; \quad Cmg = €16 - €6{,}50 = €9{,}50$$
+$$Bmg = €13 > €9{,}50 = Cmg \quad ✅$$
+
+A decisão racional é ir ao **teatro**.
+
+## Exercício 2 — Ópera ou Concerto
+
+::: {.question-box}
+O Pedro recebeu €50 para gastar em atividades culturais. Pensa em ir à ópera ou a um concerto sinfónico, mas o dinheiro não chega para ambos.
+
+- Bilhete de ópera: €50
+- Bilhete do concerto: €40
+
+O valor atribuído a cada opção coincide com o máximo que estaria disposto a pagar. Se escolher ir à ópera, qual o custo de oportunidade?
+
+Será essa escolha racional?
+:::
+
+## Exercício 2 — Solução
+
+**Custo de oportunidade de ir à ópera:**
+
+$$CO_{\text{ópera}} = \underbrace{(€40 - €40)}_{\text{Excedente do concerto}} + \underbrace{€50}_{\text{Despesa da ópera}} = €50$$
+
+**Benefício bruto da ópera** = €50
+
+$$CO_{\text{ópera}} = €50 = €50 = B_{\text{ópera}}$$
+
+O agente é **indiferente** — o excedente de ambas as opções é zero:
+
+| Opção | Benefício | Custo | Excedente |
+|-------|-----------|-------|-----------|
+| Ópera | €50 | €50 | **€0** |
+| Concerto | €40 | €40 | **€0** |
+
+A escolha **não é irracional**, mas também não gera ganho líquido. Qualquer uma das opções é igualmente racional, dado que nenhuma gera excedente positivo.
+
+
+# Parte III — Análise Bmg / Cmg {background-color="#c0392b"}
+
+## Exercício 3 — Produção Ótima de Tartes
+
+::: {.question-box}
+A Filipa produz tartes no seu *atelier boulanger*. Vende cada tarte a €15. Complete a tabela e determine a quantidade ótima.
+
+| Tartes | Custos Totais | Vendas | Cmg | Bmg |
+|--------|--------------|--------|-----|-----|
+| 10 | 143 | 150 | — | — |
+| 11 | 155 | 165 | | |
+| 12 | 169 | 180 | | |
+| 13 | 190 | 195 | | |
+| 14 | 215 | 210 | | |
+| 16 | 275 | 240 | | |
+:::
+
+## Exercício 3 — Solução
+
+| Tartes | CT | Vendas | Cmg | Bmg | Lucro |
+|--------|-----|--------|------|------|-------|
+| 10 | 143 | 150 | — | — | 7 |
+| 11 | 155 | 165 | **12** | **15** | 10 |
+| **12** | **169** | **180** | **14** | **15** | **11** |
+| 13 | 190 | 195 | **21** | **15** | 5 |
+| 14 | 215 | 210 | **25** | **15** | −5 |
+| 16 | 275 | 240 | **30** | **15** | −35 |
+
+A quantidade ótima é **12 tartes**: é a última quantidade para a qual $Bmg \geq Cmg$.
+
+A partir da 13.ª tarte, $Cmg = 21 > 15 = Bmg$, portanto não compensa produzir mais.
+
+O lucro máximo é **€11** (em $Q = 12$).
+
+## Exercício 3 — Gráfico Bmg vs. Cmg
+
+```{r}
+#| echo: false
+#| fig-width: 7
+#| fig-height: 4.5
+#| fig-align: center
+
+Q <- c(11, 12, 13, 14, 16)
+Cmg <- c(12, 14, 21, 25, 30)
+Bmg <- rep(15, 5)
+
+par(mar = c(4, 4, 2, 1), family = "serif")
+plot(Q, Cmg, type = "b", pch = 19, col = "red", lwd = 2,
+     ylim = c(0, 35), xlim = c(10, 17),
+     xlab = "Quantidade de Tartes", ylab = "€",
+     main = "Bmg vs. Cmg — Produção de Tartes")
+lines(Q, Bmg, type = "b", pch = 17, col = "blue", lwd = 2)
+abline(v = 12, lty = 2, col = "grey50")
+legend("topleft", legend = c("Cmg", "Bmg = 15"),
+       col = c("red", "blue"), pch = c(19, 17), lwd = 2, bty = "n")
+text(12.3, 2, "Q* = 12", col = "grey30", cex = 0.9)
+```
+
+
+# Resumo {background-color="#2c3e50"}
+
+## Conceitos-Chave
+
+**Nesta aula praticámos:**
+
+- **Escassez** → obriga a fazer escolhas → gera *trade-offs*
+- **Custo de oportunidade** = valor da melhor alternativa sacrificada
+- Três critérios **equivalentes** de racionalidade:
+  1. $CO < B$ (custo de oportunidade < benefício bruto)
+  2. Maior excedente
+  3. $Bmg > Cmg$ (análise custo-benefício)
+- **Quantidade ótima**: produzir enquanto $Bmg \geq Cmg$
+
+**Próxima aula prática:** Fronteira de Possibilidades de Produção e Comércio

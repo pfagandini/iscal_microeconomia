@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.26">
+
+  <meta name="author" content="ISCAL - IPL">
+  <title>Iscal - Microeconomia (Plano de Transição) – Microeconomia</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-20f3deb7f695acde959b719fbd49d0d1.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Microeconomia</h1>
+  <p class="subtitle">Aula 6: Preferências e Axiomas de Racionalidade</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+ISCAL - IPL 
+</div>
+</div>
+</div>
+
+</section>
+<section id="objetivos-da-aula" class="slide level2 smaller">
+<h2>Objetivos da Aula 🎯</h2>
+<p>Nesta aula iremos estudar:</p>
+<ul>
+<li class="fragment">O conceito de <strong>cabaz de consumo</strong></li>
+<li class="fragment">A <strong>restrição orçamental</strong> do consumidor</li>
+<li class="fragment">Efeitos de alterações de <strong>preços</strong> e <strong>rendimento</strong></li>
+<li class="fragment"><strong>Axiomas de racionalidade</strong> das preferências</li>
+<li class="fragment"><strong>Curvas de indiferença</strong> e suas propriedades</li>
+<li class="fragment">Início da <strong>teoria do consumidor</strong> racional</li>
+</ul>
+</section>
+<section id="linguagem-cabaz-de-bens" class="slide level2">
+<h2>Linguagem: Cabaz de Bens 🛒</h2>
+<div class="definition">
+<p><strong>Cabaz de Bens</strong><br>
+É composto por quantidades de vários bens. Quando se comparam cabazes, os bens são os mesmos, mas as quantidades de cada um variam…</p>
+</div>
+<div class="fragment">
+<p><strong>Exemplo:</strong> Admitamos dois bens: - Laranjas (<span class="math inline">\(y\)</span>) 🍊 - Bolachas de chocolate (<span class="math inline">\(x\)</span>) 🍪</p>
+<p>O cabaz <span class="math inline">\((3,2)\)</span> é composto por <strong>3 bolachas</strong> e <strong>2 laranjas</strong>.</p>
+<p>Graficamente, é um <strong>ponto</strong> no espaço <span class="math inline">\((x,y)\)</span>.</p>
+</div>
+</section>
+<section id="representação-gráfica-de-um-cabaz" class="slide level2">
+<h2>Representação Gráfica de um Cabaz 📊</h2>
+
+<img data-src="06_Preferencias_axiomas_files/figure-revealjs/unnamed-chunk-1-1.png" width="576" class="r-stretch"></section>
+<section id="conjunto-das-possibilidades-de-consumo" class="slide level2">
+<h2>Conjunto das Possibilidades de Consumo 🎯</h2>
+<ul>
+<li class="fragment"><p>É o <strong>conjunto de todos os cabazes</strong> que podem ser adquiridos com um dado orçamento</p></li>
+<li class="fragment"><p>O conjunto de cabazes cuja despesa <strong>esgota o orçamento</strong> designa-se <strong>“Restrição Orçamental”</strong></p></li>
+<li class="fragment"><p><strong>Problema do consumidor:</strong> escolher o melhor cabaz dentro das suas possibilidades</p></li>
+</ul>
+</section>
+<section id="problema-do-consumidor" class="slide level2">
+<h2>Problema do Consumidor 🤔</h2>
+<p>De entre os cabazes disponíveis no Espaço das Possibilidades de Consumo, encontrar a <strong>escolha ótima</strong>, dadas as variáveis exógenas:</p>
+<ul>
+<li class="fragment"><p><strong>Orçamento</strong> (<span class="math inline">\(W\)</span>) 💰</p></li>
+<li class="fragment"><p><strong>Preços de mercado</strong> (<span class="math inline">\(p_x, p_y\)</span>) 💵</p></li>
+<li class="fragment"><p><strong>Preferências</strong> do consumidor 😊</p></li>
+</ul>
+<div class="fragment">
+<p>O consumidor irá, portanto, decidir o valor para as variáveis <strong>endógenas</strong> <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> — as suas <strong>variáveis de decisão</strong>!</p>
+</div>
+</section>
+<section id="restrição-orçamental" class="slide level2">
+<h2>Restrição Orçamental 💰</h2>
+<div class="alert">
+<p><strong>Equação da Restrição Orçamental:</strong> <span class="math display">\[X p_x + Y p_y = W\]</span></p>
+</div>
+<div class="fragment">
+<p><strong>Exemplo:</strong> €10 para gastar em bolachas e laranjas</p>
+<ul>
+<li class="fragment">Cada laranja custa <strong>10 cêntimos</strong> (<span class="math inline">\(p_y = 0{,}10\)</span>)</li>
+<li class="fragment">Cada bolacha custa <strong>25 cêntimos</strong> (<span class="math inline">\(p_x = 0{,}25\)</span>)</li>
+</ul>
+</div>
+<div class="fragment">
+<p>A restrição orçamental será: <span class="math display">\[0{,}25 X + 0{,}10 Y = 10\]</span></p>
+</div>
+</section>
+<section id="representação-gráfica-da-restrição-orçamental" class="slide level2">
+<h2>Representação Gráfica da Restrição Orçamental 📈</h2>
+
+<img data-src="06_Preferencias_axiomas_files/figure-revealjs/unnamed-chunk-2-1.png" width="672" class="r-stretch"><div class="fragment">
+<p>A Restrição Orçamental também pode ser descrita como: <span class="math inline">\(Y = 100 - 2{,}5X\)</span></p>
+</div>
+</section>
+<section id="alteração-do-preço-de-x" class="slide level2 smaller">
+<h2>Alteração do Preço de X 📉📈</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Aumento do preço de X:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="06_Preferencias_axiomas_files/figure-revealjs/unnamed-chunk-3-1.png" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>Diminuição do preço de Y:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="06_Preferencias_axiomas_files/figure-revealjs/unnamed-chunk-4-1.png" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+<div class="fragment">
+<ul>
+<li class="fragment"><strong>Aumento de <span class="math inline">\(p_x\)</span>:</strong> a restrição roda para <strong>dentro</strong> no eixo X</li>
+<li class="fragment"><strong>Diminuição de <span class="math inline">\(p_y\)</span>:</strong> a restrição roda para <strong>fora</strong> no eixo Y</li>
+</ul>
+</div>
+</section>
+<section id="alteração-do-rendimento" class="slide level2 smaller">
+<h2>Alteração do Rendimento 💵</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Diminuição do rendimento:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="06_Preferencias_axiomas_files/figure-revealjs/unnamed-chunk-5-1.png" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>Aumento do rendimento:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="06_Preferencias_axiomas_files/figure-revealjs/unnamed-chunk-6-1.png" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+<div class="fragment">
+<p>Alterações no <strong>rendimento</strong> provocam <strong>deslocações paralelas</strong> da restrição orçamental (o declive mantém-se!)</p>
+</div>
+</section>
+<section id="declive-da-restrição-orçamental" class="slide level2">
+<h2>Declive da Restrição Orçamental 📐</h2>
+<p><span class="math display">\[X p_x + Y p_y = W \quad \Leftrightarrow \quad Y = {\color{red}\frac{W}{p_y}} - {\color{blue}\frac{p_x}{p_y}}X\]</span></p>
+<ul>
+<li class="fragment"><p><span class="math inline">\(\frac{W}{p_y}\)</span>: <strong>Ordenada na Origem</strong> (máximo de Y que pode comprar)</p></li>
+<li class="fragment"><p><span class="math inline">\(-\frac{p_x}{p_y}\)</span>: <strong>Declive</strong> (termos de troca no mercado)</p></li>
+</ul>
+<div class="fragment">
+<p><strong>No nosso exemplo:</strong> <span class="math display">\[0{,}25X + 0{,}10Y = 10 \quad \Leftrightarrow \quad Y = {\color{red}100} - {\color{blue}2{,}5} X\]</span></p>
+<ul>
+<li class="fragment">Ordenada na origem: <strong>100 laranjas</strong></li>
+<li class="fragment">Declive: <strong>-2,5</strong> (para ter 1 bolacha a mais, abdico de 2,5 laranjas)</li>
+</ul>
+</div>
+</section>
+<section id="escolha-ótima-do-consumidor" class="slide level2">
+<h2>Escolha Ótima do Consumidor 🎯</h2>
+<p>Do conjunto das possibilidades de consumo, escolher o cabaz ótimo <span class="math inline">\((x,y)\)</span> em função de:</p>
+<ul>
+<li class="fragment"><p><strong>Variáveis exógenas:</strong> preços e rendimento 💰</p></li>
+<li class="fragment"><p><strong>Preferências</strong> do consumidor 😊</p>
+<ul>
+<li class="fragment">Para tal, precisamos da <strong>axiomática de preferências</strong>!</li>
+</ul></li>
+</ul>
+</section>
+<section id="axioma-1-desejabilidade-não-saciedade" class="slide level2">
+<h2>Axioma 1: Desejabilidade (Não Saciedade) 🔼</h2>
+<div class="definition">
+<p><strong>Desejabilidade ou Não Saciedade</strong><br>
+Consumir mais é melhor — o consumidor prefere sempre cabazes com maior quantidade de bens.</p>
+</div>
+<div class="fragment">
+<p><strong>Exemplo:</strong> O consumidor prefere o cabaz <span class="math inline">\(A=(25,30)\)</span> ao cabaz <span class="math inline">\(B=(20,20)\)</span> simplesmente porque o cabaz <span class="math inline">\(A\)</span> contém <strong>mais quantidade</strong> (para ambos os bens) do que o cabaz <span class="math inline">\(B\)</span>.</p>
+</div>
+</section>
+<section id="desejabilidade-representação-gráfica" class="slide level2">
+<h2>Desejabilidade: Representação Gráfica 📊</h2>
+
+<img data-src="06_Preferencias_axiomas_files/figure-revealjs/unnamed-chunk-7-1.png" width="672" class="r-stretch"></section>
+<section id="e-se-um-cabaz-tem-mais-de-um-bem-e-menos-do-outro" class="slide level2">
+<h2>E se um cabaz tem mais de um bem e menos do outro? 🤔</h2>
+<p><strong>Qual é o preferido:</strong> <span class="math inline">\((20,30)\)</span> ou <span class="math inline">\((30,20)\)</span>? 🍊🍪</p>
+<ul>
+<li class="fragment"><p>É preciso saber quais são os cabazes <strong>indiferentes</strong> entre si…</p></li>
+<li class="fragment"><p>Quantas laranjas está o consumidor <strong>disposto a abdicar</strong>, para ter mais uma bolacha de chocolate e <strong>ficar indiferente</strong>?</p>
+<ul>
+<li class="fragment">A resposta <strong>não depende</strong> do que pode comprar (orçamento)</li>
+<li class="fragment">Depende apenas das suas <strong>preferências</strong>!</li>
+</ul></li>
+</ul>
+</section>
+<section id="curva-de-indiferença" class="slide level2">
+<h2>Curva de Indiferença 📈</h2>
+<div class="definition">
+<p><strong>Curva de Indiferença</strong><br>
+Conjunto dos cabazes <strong>indiferentes</strong> entre si — que proporcionam o mesmo nível de satisfação ao consumidor!</p>
+</div>
+<div class="fragment">
+<ul>
+<li class="fragment">Devido à hipótese de <strong>desejabilidade</strong>, os cabazes indiferentes entre si:
+<ul>
+<li class="fragment"><strong>Não podem</strong> conter mais quantidade de <strong>ambos</strong> os bens</li>
+<li class="fragment"><strong>Não podem</strong> conter menos quantidade de <strong>ambos</strong> os bens</li>
+<li class="fragment"><strong>Têm de conter</strong> sempre <strong>mais de um</strong> e <strong>menos do outro</strong></li>
+</ul></li>
+<li class="fragment">Logo, no espaço XY, a curva de indiferença tem de ter <strong>inclinação negativa</strong>! ⬇️</li>
+</ul>
+</div>
+</section>
+<section id="curva-de-indiferença-representação-gráfica" class="slide level2">
+<h2>Curva de Indiferença: Representação Gráfica 📊</h2>
+
+<img data-src="06_Preferencias_axiomas_files/figure-revealjs/unnamed-chunk-8-1.png" width="768" class="r-stretch"></section>
+<section id="exercícios-de-aplicação" class="slide level2 smaller">
+<h2>Exercícios de Aplicação 📝</h2>
+<h3 id="exercício-1-escolha-múltipla">Exercício 1 (Escolha Múltipla)</h3>
+<p>Um consumidor tem um orçamento de €100 para gastar em livros (L) e filmes (F). Se o preço dos livros é €20 e o preço dos filmes é €10, qual é a equação da restrição orçamental?</p>
+<ol type="a">
+<li class="fragment"><span class="math inline">\(20L + 10F = 100\)</span> ✓</li>
+<li class="fragment"><span class="math inline">\(10L + 20F = 100\)</span></li>
+<li class="fragment"><span class="math inline">\(L + F = 100\)</span></li>
+<li class="fragment"><span class="math inline">\(20L = 10F + 100\)</span></li>
+</ol>
+<div class="fragment">
+<p><strong>Solução:</strong> A restrição orçamental é sempre <span class="math inline">\(p_L \cdot L + p_F \cdot F = W\)</span>, logo <span class="math inline">\(20L + 10F = 100\)</span>.</p>
+</div>
+</section>
+<section id="exercícios-de-aplicação-1" class="slide level2 smaller">
+<h2>Exercícios de Aplicação 📝</h2>
+<h3 id="exercício-2-escolha-múltipla">Exercício 2 (Escolha Múltipla)</h3>
+<p>Se o preço dos livros aumentar para €25 (mantendo tudo o resto constante), o que acontece à restrição orçamental?</p>
+<ol type="a">
+<li class="fragment">Desloca-se paralelamente para fora</li>
+<li class="fragment">Roda no eixo dos filmes, tornando-se mais inclinada ✓</li>
+<li class="fragment">Roda no eixo dos livros, tornando-se menos inclinada</li>
+<li class="fragment">Não se altera</li>
+</ol>
+<div class="fragment">
+<p><strong>Solução:</strong> Com <span class="math inline">\(p_L = 25\)</span>, o máximo de livros diminui de 5 para 4 (<span class="math inline">\(100/25=4\)</span>). O máximo de filmes mantém-se em 10. A reta roda no eixo Y (filmes) e fica mais inclinada.</p>
+</div>
+</section>
+<section id="exercícios-de-aplicação-2" class="slide level2 smaller">
+<h2>Exercícios de Aplicação 📝</h2>
+<h3 id="exercício-3-desenvolvimento">Exercício 3 (Desenvolvimento)</h3>
+<p>Maria tem €150 para gastar em camisolas (C) e calças (P). O preço das camisolas é €15 e o preço das calças é €30.</p>
+<ol type="a">
+<li class="fragment"><p>Escreva a equação da restrição orçamental.</p></li>
+<li class="fragment"><p>Qual é o máximo de camisolas que pode comprar? E de calças?</p></li>
+<li class="fragment"><p>Qual é o declive da restrição orçamental? O que significa este valor?</p></li>
+<li class="fragment"><p>Se o rendimento de Maria aumentar para €180, qual será a nova restrição orçamental? Represente graficamente as duas restrições.</p></li>
+</ol>
+<div class="fragment">
+<p><strong>Soluções:</strong><br>
+a) <span class="math inline">\(15C + 30P = 150\)</span><br>
+b) Máx. camisolas: <span class="math inline">\(150/15 = 10\)</span>; Máx. calças: <span class="math inline">\(150/30 = 5\)</span><br>
+c) Declive <span class="math inline">\(= -p_C/p_P = -15/30 = -0{,}5\)</span>. Para ter 1 calça a mais, abdica de 0,5 camisolas (ou 2 camisolas por calça).<br>
+d) Nova restrição: <span class="math inline">\(15C + 30P = 180\)</span>. As retas são paralelas (mesmo declive).</p>
+</div>
+</section>
+<section id="resumo-da-aula" class="slide level2 smaller">
+<h2>Resumo da Aula 📚</h2>
+<ol type="1">
+<li class="fragment"><p>Um <strong>cabaz</strong> é uma combinação de quantidades de bens, representado como um ponto no espaço</p></li>
+<li class="fragment"><p>A <strong>restrição orçamental</strong> (<span class="math inline">\(Xp_x + Yp_y = W\)</span>) define o conjunto de cabazes acessíveis</p></li>
+<li class="fragment"><p>O <strong>declive</strong> da restrição orçamental é <span class="math inline">\(-\frac{p_x}{p_y}\)</span> (termos de troca)</p></li>
+<li class="fragment"><p>Alterações de <strong>preços</strong> fazem rodar a restrição; alterações de <strong>rendimento</strong> deslocam-na paralelamente</p></li>
+<li class="fragment"><p><strong>Axioma da Desejabilidade</strong>: consumir mais é sempre melhor</p></li>
+<li class="fragment"><p><strong>Curva de indiferença</strong>: conjunto de cabazes que proporcionam o mesmo nível de satisfação</p></li>
+<li class="fragment"><p>Curvas de indiferença têm <strong>inclinação negativa</strong> (devido à desejabilidade)</p></li>
+</ol>
+<div class="fragment">
+<p><strong>Próxima aula:</strong> Taxa Marginal de Substituição, mais axiomas e o ótimo do consumidor! 🎯</p>
+</div>
+
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="../images/iscal_logo.svg" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Microeconomia (Plano de Transição)</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

@@ -1,8 +1,9 @@
 ---
-title: "Introdução e Escolhas Racionais"
-subtitle: "Custo de Oportunidade"
+title: "Microeconomia"
+subtitle: "Introdução e Escolhas Racionais: Custo de Oportunidade"
 author: "Paulo Fagandini"
 institute: "ISCAL-IPL"
+date: ""
 format: 
   revealjs:
     theme:
