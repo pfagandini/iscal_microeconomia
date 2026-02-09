@@ -1,0 +1,522 @@
+---
+title: "Microeconomia"
+subtitle: "Cabaz, Espaço e Restrição Orçamental"
+author: "Paulo Fagandini"
+institute: "ISCAL-IPL"
+date: ""
+format: 
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math: 
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+    
+  html:
+    output-file: 04_Restricao_Orcamental-document.html
+    toc: true
+    math: 
+      method: mathjax
+    number-sections: true
+    embed-resources: false
+editor: source
+execute:
+  enabled: true
+engine: knitr
+---
+
+## Do Produtor ao Consumidor
+
+Nas aulas anteriores estudámos a **Fronteira das Possibilidades de Produção** e os ganhos do comércio. Agora entramos no estudo do **consumidor**.
+
+O esquema geral do modelo micro começa pelo lado da procura:
+
+::: {.nonincremental}
+- **Consumidores** → Restrição Orçamental → Preferências → Utilidade → Escolha → Procura
+:::
+
+---
+
+## Cabaz de Bens
+
+Um **cabaz de bens** é composto por quantidades de vários bens. Quando comparamos cabazes, os bens são os mesmos, mas as quantidades variam.
+
+. . .
+
+Admitamos dois bens: laranjas ($Y$) e bolachas ($X$).
+
+O cabaz $(3, 2)$ é composto por 3 bolachas e 2 laranjas. Graficamente, é um **ponto** no espaço $(X, Y)$.
+
+---
+
+## Representação Gráfica de um Cabaz
+
+```{r, engine='tikz', echo=FALSE}
+
+\begin{tikzpicture}[scale=1.3]
+\draw[->] (-0.3,0) -- (5,0) node[below right] {$X$ (bolachas)};
+\draw[->] (0,-0.3) -- (0,4) node[above left] {$Y$ (laranjas)};
+
+\draw[dashed, gray] (3,0) node[below]{3} -- (3,2) -- (0,2) node[left]{2};
+\node[circle,fill=blue,inner sep=2.5pt,label=above right:{Cabaz $(3,2)$}] at (3,2) {};
+
+\end{tikzpicture}
+```
+
+Cada cabaz é um ponto no plano. O eixo horizontal mede a quantidade de $X$, o vertical mede a quantidade de $Y$.
+
+---
+
+## O Problema do Consumidor
+
+De entre todos os cabazes possíveis, o consumidor quer encontrar a **escolha ótima**, dadas as variáveis **exógenas** (que não controla):
+
+- Orçamento ($W$)
+- Preços de mercado ($p_X$, $p_Y$)
+
+. . .
+
+O consumidor decide as variáveis **endógenas**: as quantidades $X$ e $Y$ que vai consumir.
+
+---
+
+## Espaço das Possibilidades de Consumo
+
+É o **conjunto de todos os cabazes** que podem ser adquiridos com um dado orçamento.
+
+. . .
+
+Um cabaz $(X, Y)$ é acessível se a despesa total não exceder o orçamento:
+
+$$X \cdot p_X + Y \cdot p_Y \leq W$$
+
+. . .
+
+O conjunto de cabazes cuja despesa **esgota exatamente** o orçamento designa-se **Restrição Orçamental**.
+
+---
+
+## Restrição Orçamental
+
+A restrição orçamental é dada por:
+
+$$X \cdot p_X + Y \cdot p_Y = W$$
+
+. . .
+
+**Exemplo:** €10 para gastar em bolachas e laranjas. Cada bolacha custa €0,25 e cada laranja custa €0,10.
+
+$$0{,}25 X + 0{,}10 Y = 10$$
+
+---
+
+## Representação Gráfica
+
+```{r, engine='tikz', echo=FALSE}
+
+\begin{tikzpicture}[scale=0.055]
+\draw[->] (-2,0) -- (50,0) node[below right] {$X$ (bolachas)};
+\draw[->] (0,-2) -- (0,115) node[above left] {$Y$ (laranjas)};
+
+% Área sombreada - espaço orçamental
+\fill[blue!10] (0,0) -- (0,100) -- (40,0) -- cycle;
+
+% Restrição orçamental
+\draw[blue, thick] (0,100) -- (40,0);
+
+% Labels nos eixos
+\node[left] at (0,100) {$100$};
+\node[below] at (40,0) {$40$};
+
+% Anotação
+\draw[->] (28,60) node[right, text width=3cm, font=\small] {$0{,}25X + 0{,}10Y = 10$} -- (22,47);
+
+% Label do espaço
+\node[text width=3.5cm, font=\small] at (12,35) {Espaço das Possibilidades de Consumo};
+
+\end{tikzpicture}
+```
+
+O triângulo azul claro é o **espaço orçamental**: todos os cabazes acessíveis. A linha azul é a **restrição orçamental**.
+
+---
+
+## Interpretação dos Intercetos
+
+Se o consumidor gastar **todo o orçamento** num só bem:
+
+- Apenas bolachas: $X = \frac{W}{p_X} = \frac{10}{0{,}25} = 40$
+
+- Apenas laranjas: $Y = \frac{W}{p_Y} = \frac{10}{0{,}10} = 100$
+
+. . .
+
+::: {.callout-note}
+Os intercetos mostram a **quantidade máxima** de cada bem que o consumidor pode comprar se não consumir nada do outro.
+:::
+
+---
+
+## Forma Explícita da Restrição Orçamental
+
+Podemos reescrever a restrição orçamental isolando $Y$:
+
+$$X p_X + Y p_Y = W \quad \Leftrightarrow \quad Y = {\color{red}\frac{W}{p_Y}} - {\color{blue}\frac{p_X}{p_Y}} X$$
+
+. . .
+
+- ${\color{red}\frac{W}{p_Y}}$: **ordenada na origem** (interceto vertical)
+
+- ${\color{blue}-\frac{p_X}{p_Y}}$: **declive** da restrição orçamental
+
+. . .
+
+No exemplo: $Y = {\color{red}100} - {\color{blue}2{,}5}\, X$
+
+---
+
+## Significado Económico do Declive
+
+O declive da restrição orçamental é $-\frac{p_X}{p_Y}$.
+
+Em valor absoluto: $\frac{p_X}{p_Y}$ é o **preço relativo** do bem $X$ em termos do bem $Y$.
+
+. . .
+
+No exemplo: $\frac{0{,}25}{0{,}10} = 2{,}5$
+
+Significa que cada bolacha "custa" 2,5 laranjas — para comprar mais uma bolacha, o consumidor prescinde de 2,5 laranjas.
+
+. . .
+
+É um **custo de oportunidade**, tal como na FPP!
+
+---
+
+## Alterações na Restrição Orçamental
+
+O que acontece quando mudam os preços ou o orçamento?
+
+Vamos analisar três casos:
+
+::: {.nonincremental}
+1. Aumento do preço de $X$
+2. Diminuição do preço de $Y$
+3. Alteração do orçamento $W$
+:::
+
+---
+
+## Caso 1: Aumento do Preço de $X$
+
+```{r, engine='tikz', echo=FALSE}
+
+\begin{tikzpicture}[scale=1.4]
+\draw[->] (-0.2,0) -- (4.5,0) node[below right] {$X$};
+\draw[->] (0,-0.2) -- (0,3.5) node[above left] {$Y$};
+
+% RO original
+\draw[blue, thick] (0,2.5) node[left] {$\frac{W}{p_Y}$} -- (3.5,0) node[below] {$\frac{W}{p_X}$};
+
+% RO após aumento de px
+\draw[red, thick] (0,2.5) -- (2.2,0) node[below] {$\frac{W}{\hat{p}_X}$};
+
+% Seta indicativa
+\draw[->, thick, gray] (3.2,0.3) -- (2.5,0.3);
+
+% Legenda
+\node[right, text width=3cm, font=\small] at (2.8,2.2) {Aumento de $p_X$: roda sobre o interceto vertical};
+
+\end{tikzpicture}
+```
+
+O interceto vertical não muda (não depende de $p_X$). O interceto horizontal diminui. A reta **roda para dentro**.
+
+---
+
+## Caso 2: Diminuição do Preço de $Y$
+
+```{r, engine='tikz', echo=FALSE}
+
+\begin{tikzpicture}[scale=1.4]
+\draw[->] (-0.2,0) -- (4.5,0) node[below right] {$X$};
+\draw[->] (0,-0.2) -- (0,3.5) node[above left] {$Y$};
+
+% RO original
+\draw[blue, thick] (0,2) node[left] {$\frac{W}{p_Y}$} -- (3,0) node[below] {$\frac{W}{p_X}$};
+
+% RO após diminuição de py
+\draw[red, thick] (0,3) node[left] {$\frac{W}{\hat{p}_Y}$} -- (3,0);
+
+% Seta indicativa
+\draw[->, thick, gray] (0.3,2.2) -- (0.3,2.8);
+
+% Legenda
+\node[right, text width=3cm, font=\small] at (2.5,2.2) {Diminuição de $p_Y$: roda sobre o interceto horizontal};
+
+\end{tikzpicture}
+```
+
+O interceto horizontal não muda (não depende de $p_Y$). O interceto vertical aumenta. A reta **roda para fora**.
+
+---
+
+## Caso 3: Alteração do Orçamento
+
+```{r, engine='tikz', echo=FALSE}
+
+\begin{tikzpicture}[scale=1.4]
+\draw[->] (-0.2,0) -- (5,0) node[below right] {$X$};
+\draw[->] (0,-0.2) -- (0,4) node[above left] {$Y$};
+
+% RO original
+\draw[blue, thick] (0,2.5) node[left] {$\frac{W}{p_Y}$} -- (3.5,0) node[below] {$\frac{W}{p_X}$};
+
+% RO com W maior
+\draw[red, thick] (0,3.3) -- (4.62,0);
+
+% RO com W menor
+\draw[red, thick, dashed] (0,1.7) -- (2.38,0);
+
+% Setas
+\draw[->, thick, gray] (1.5,2) -- (2,2.5);
+\draw[->, thick, gray] (1.5,1.2) -- (1,0.7);
+
+% Legenda
+\node[right, text width=3.5cm, font=\small] at (3,3) {Aumento de $W$: desloca paralelamente para fora};
+\node[right, text width=3.5cm, font=\small] at (2.5,0.5) {Diminuição de $W$};
+
+\end{tikzpicture}
+```
+
+O declive $\frac{p_X}{p_Y}$ não muda. A reta desloca-se **paralelamente**.
+
+---
+
+## Resumo das Alterações
+
+| Variação | Interceto Vertical | Interceto Horizontal | Declive |
+|----------|:-:|:-:|:-:|
+| $p_X \uparrow$ | Não muda | $\downarrow$ | Muda |
+| $p_Y \downarrow$ | $\uparrow$ | Não muda | Muda |
+| $W \uparrow$ | $\uparrow$ | $\uparrow$ | Não muda |
+
+. . .
+
+**Regra prática:** se muda um preço, a reta **roda**; se muda o orçamento, a reta **desloca-se** paralelamente.
+
+---
+
+## Impostos Lump-Sum
+
+Um imposto *lump-sum* é um montante fixo que o consumidor tem de pagar, independentemente do que consome.
+
+. . .
+
+Se o imposto é $T$, o orçamento disponível passa a ser:
+
+$$W' = W - T$$
+
+. . .
+
+A restrição orçamental com imposto:
+
+$$X p_X + Y p_Y = W - T$$
+
+O efeito é idêntico a uma **redução do orçamento**: deslocação paralela para dentro.
+
+---
+
+## Subsídios Lump-Sum
+
+Um subsídio *lump-sum* é um montante fixo que o consumidor recebe, independentemente do que consome.
+
+. . .
+
+Se o subsídio é $S$, o orçamento disponível passa a ser:
+
+$$W' = W + S$$
+
+. . .
+
+A restrição orçamental com subsídio:
+
+$$X p_X + Y p_Y = W + S$$
+
+Efeito: deslocação paralela **para fora**.
+
+---
+
+## Efeito Gráfico de Imposto e Subsídio Lump-Sum
+
+```{r, engine='tikz', echo=FALSE}
+
+\begin{tikzpicture}[scale=1.4]
+\draw[->] (-0.2,0) -- (5,0) node[below right] {$X$};
+\draw[->] (0,-0.2) -- (0,4) node[above left] {$Y$};
+
+% RO original
+\draw[blue, thick] (0,2.5) node[left, black, font=\small] {$\frac{W}{p_Y}$} -- (3.5,0) node[below, black, font=\small] {$\frac{W}{p_X}$};
+\node[blue, font=\small] at (2.5,2.2) {Original};
+
+% RO com imposto
+\draw[red, thick, dashed] (0,1.7) node[left, black, font=\small] {$\frac{W-T}{p_Y}$} -- (2.38,0) node[below, black, font=\small] {$\frac{W-T}{p_X}$};
+\node[red, font=\small] at (0.8,0.4) {Imposto};
+
+% RO com subsidio
+\draw[green!60!black, thick, dashed] (0,3.3) node[left, black, font=\small] {$\frac{W+S}{p_Y}$} -- (4.62,0) node[below, black, font=\small] {$\frac{W+S}{p_X}$};
+\node[green!60!black, font=\small] at (3.5,1.8) {Subsídio};
+
+\end{tikzpicture}
+```
+
+O declive não muda em nenhum dos casos — os preços relativos mantêm-se iguais.
+
+---
+
+## Analogia: FPP vs Restrição Orçamental
+
+| | FPP | Restrição Orçamental |
+|---|---|---|
+| **Eixos** | Quantidades produzidas | Quantidades consumidas |
+| **Linha** | Produção máxima | Despesa = Orçamento |
+| **Declive** | Custo relativo de produção | Preço relativo ($p_X/p_Y$) |
+| **Interior** | Ineficiente | Não gasta todo o W |
+
+. . .
+
+A FPP limita o que se pode **produzir**; a restrição orçamental limita o que se pode **consumir**.
+
+---
+
+## Exemplo Numérico
+
+Um consumidor tem um orçamento de €120. O preço de um livro é €20 e o preço de uma refeição é €15.
+
+. . .
+
+A restrição orçamental é:
+
+$$20X + 15Y = 120$$
+
+. . .
+
+Em forma explícita:
+
+$$Y = 8 - \frac{4}{3}X$$
+
+. . .
+
+Intercetos: $X_{max} = 6$ livros; $Y_{max} = 8$ refeições. Declive: $-\frac{4}{3}$ (cada livro "custa" $\frac{4}{3} \approx 1{,}33$ refeições).
+
+---
+
+## Exemplo: Representação Gráfica
+
+```{r, engine='tikz', echo=FALSE}
+
+\begin{tikzpicture}[scale=1.2]
+\draw[->] (-0.3,0) -- (8,0) node[below right] {$X$ (livros)};
+\draw[->] (0,-0.3) -- (0,10) node[above left] {$Y$ (refeições)};
+
+% Espaço orçamental
+\fill[blue!10] (0,0) -- (0,8) -- (6,0) -- cycle;
+
+% RO
+\draw[blue, thick] (0,8) node[left, black] {$8$} -- (6,0) node[below, black] {$6$};
+
+% Ponto exemplo
+\node[circle,fill=red,inner sep=2pt,label=above right:{$(3, 4)$}] at (3,4) {};
+\draw[dashed, gray] (3,0) node[below]{3} -- (3,4) -- (0,4) node[left]{4};
+
+% Verificação
+\node[right, text width=4cm, font=\small] at (5,6) {Verificação: $20 \times 3 + 15 \times 4 = 60 + 60 = 120$ \checkmark};
+
+% Ticks
+\foreach \x in {1,...,6} {\draw (\x,0.1) -- (\x,-0.1);}
+\foreach \y in {1,...,8} {\draw (0.1,\y) -- (-0.1,\y);}
+
+\end{tikzpicture}
+```
+
+---
+
+## Resumo da Aula 4
+
+- **Cabaz de bens**: ponto no espaço $(X, Y)$ com quantidades de cada bem
+- **Espaço orçamental**: conjunto de cabazes acessíveis ($X p_X + Y p_Y \leq W$)
+- **Restrição orçamental**: $X p_X + Y p_Y = W$ — a fronteira do espaço
+- **Declive**: $-\frac{p_X}{p_Y}$ — preço relativo (custo de oportunidade)
+- **Variações de preços** rodam a reta; **variações de orçamento** deslocam-na
+- **Impostos/subsídios lump-sum** equivalem a alterar $W$
+
+---
+
+## Questão de Escolha Múltipla 1
+
+Um consumidor tem um orçamento de €200. O preço do bem $X$ é €10 e o preço do bem $Y$ é €5. Qual é o declive da restrição orçamental (em valor absoluto)?
+
+::: {.nonincremental}
+a) 0,5
+b) 2
+c) 10
+d) 20
+:::
+
+. . .
+
+**Resposta: b)** O declive em valor absoluto é $\frac{p_X}{p_Y} = \frac{10}{5} = 2$.
+
+---
+
+## Questão de Escolha Múltipla 2
+
+Se o preço do bem $X$ **diminui**, o que acontece à restrição orçamental?
+
+::: {.nonincremental}
+a) Desloca-se paralelamente para fora
+b) Roda sobre o interceto horizontal, expandindo-se
+c) Roda sobre o interceto vertical, expandindo-se
+d) Desloca-se paralelamente para dentro
+:::
+
+. . .
+
+**Resposta: c)** Quando $p_X$ diminui, o interceto vertical $\frac{W}{p_Y}$ não muda, mas o interceto horizontal $\frac{W}{p_X}$ aumenta. A reta roda sobre o ponto do eixo $Y$.
+
+---
+
+## Exercício
+
+Um consumidor dispõe de €60 para gastar em dois bens. O preço de $X$ é €3 e o preço de $Y$ é €2.
+
+::: {.nonincremental}
+1. Escreva a restrição orçamental.
+2. Calcule os intercetos.
+3. Se o governo aplica um imposto *lump-sum* de €12, qual é a nova restrição orçamental?
+:::
+
+. . .
+
+**Resolução:**
+
+1. $3X + 2Y = 60$
+2. $X_{max} = 20$; $Y_{max} = 30$
+3. $3X + 2Y = 48$ → $X_{max} = 16$; $Y_{max} = 24$. O declive mantém-se: $-\frac{3}{2}$.
+
+---
+
+**Próxima aula:** Preferências, Axiomas de Racionalidade
