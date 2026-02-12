@@ -443,7 +443,7 @@ Intercetos: $X_{max} = 6$ livros; $Y_{max} = 8$ refeições. Declive: $-\frac{4}
 \draw[dashed, gray] (3,0) node[below]{3} -- (3,4) -- (0,4) node[left]{4};
 
 % Verificação
-\node[right, text width=4cm, font=\small] at (5,6) {Verificação: $20 \times 3 + 15 \times 4 = 60 + 60 = 120$ \checkmark};
+\node[right, text width=4cm, font=\small] at (5,6) {Verificação: $20 \times 3 + 15 \times 4 = 60 + 60 = 120$};
 
 % Ticks
 \foreach \x in {1,...,6} {\draw (\x,0.1) -- (\x,-0.1);}

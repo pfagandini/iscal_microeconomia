@@ -157,7 +157,7 @@ Dois vizinhos: um sabe **pintar** e o outro sabe **cozinhar**
 
 ```{r, engine='tikz', echo=FALSE}
 \begin{tikzpicture}[scale=0.9]
-% Pintor
+
 \begin{scope}
 \draw[->] (-0.1,0) -- (4.5,0) node[below right] {Bolos};
 \draw[->] (0,-0.1) -- (0,3.5) node[left] {Quadros};
@@ -165,7 +165,7 @@ Dois vizinhos: um sabe **pintar** e o outro sabe **cozinhar**
 \draw[dashed] (0,1.8) node[left] {9} -- (1.6,1.8) node[circle,fill,inner sep=1.5pt,label=above right:Produção]{} -- (1.6,0) node[below]{8};
 \end{scope}
 
-% Cozinheiro
+
 \begin{scope}[xshift=6cm]
 \draw[->] (-0.1,0) -- (4.5,0) node[below] {Bolos};
 \draw[->] (0,-0.1) -- (0,3.5) node[left] {Quadros};
@@ -250,7 +250,7 @@ Admitamos que há **especialização** e que:
 
 ```{r, engine='tikz', echo=FALSE}
 \begin{tikzpicture}[scale=0.9]
-% Pintor
+
 \begin{scope}
 \draw[->] (-0.1,0) -- (4.5,0) node[below right] {Bolos};
 \draw[->] (0,-0.1) -- (0,3.5) node[left] {Quadros};
@@ -260,7 +260,6 @@ Admitamos que há **especialização** e que:
 \node[below] at (2,-0.7) {\textbf{Pintor}};
 \end{scope}
 
-% Cozinheiro
 \begin{scope}[xshift=6cm]
 \draw[->] (-0.1,0) -- (4.5,0) node[below] {Bolos};
 \draw[->] (0,-0.1) -- (0,3.5) node[left] {Quadros};
@@ -280,7 +279,7 @@ Possibilidades de consumo se termos de troca forem **1 quadro = 2 bolos**:
 
 ```{r, engine='tikz', echo=FALSE}
 \begin{tikzpicture}[scale=0.9]
-% Pintor
+
 \begin{scope}
 \draw[->] (-0.1,0) -- (6.5,0) node[below] {Bolos};
 \draw[->] (0,-0.1) -- (0,3.5) node[left] {Quadros};
@@ -291,7 +290,7 @@ Possibilidades de consumo se termos de troca forem **1 quadro = 2 bolos**:
 \node[below] at (3,-0.7) {\textbf{Pintor}};
 \end{scope}
 
-% Cozinheiro
+
 \begin{scope}[xshift=8cm]
 \draw[->] (-0.1,0) -- (4.5,0) node[below] {Bolos};
 \draw[->] (0,-0.1) -- (0,3.5) node[left] {Quadros};
@@ -349,7 +348,7 @@ Após o comércio, é possível os indivíduos estarem num **ponto de consumo** 
 
 O que aconteceria se a FPP em vez de linear, fosse concava? O quê significa isto? porquê poderia isto acontecer?
 
-````{tikz}
+````{r, engine='tikz'}
 #| fig-align: 'center'
 #| echo: false
 #| fig-width: 4
