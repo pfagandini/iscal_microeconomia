@@ -27,7 +27,7 @@ library(webexercises)
 
 ### Exercício 1
 
-O João é um consumidor racional e tem €150 por mês para gastar em frutas (Y, kg) e em legumes (X, kg) para a família. Cada kg de fruta custa PY=€2 e cada kg de legumes custa PX=€1. As preferências podem ser expressas pela função $U(X,Y) = XY$.
+O João é um consumidor racional e tem 150 por mês para gastar em frutas (Y, kg) e em legumes (X, kg) para a família. Cada kg de fruta custa PY=2 e cada kg de legumes custa PX=1. As preferências podem ser expressas pela função $U(X,Y) = XY$.
 
 1. Deduza a equação da recta de restrição orçamental e interprete o seu declive.
 
@@ -81,9 +81,9 @@ No ponto óptimo $(100, 25)$, a utilidade é $U = 100 \times 25 = 2500$.
 
 Um cabaz indiferente seria qualquer $(X, Y)$ tal que $XY = 2500$. Por exemplo, $(50, 50)$.
 
-Este cabaz não pertence ao espaço das possibilidades de consumo porque a despesa seria $50 \times 1 + 50 \times 2 = €150$... espere, este pertence! 
+Este cabaz não pertence ao espaço das possibilidades de consumo porque a despesa seria $50 \times 1 + 50 \times 2 = 150$... espere, este pertence! 
 
-Um melhor exemplo seria $(125, 20)$: $U = 2500$ mas despesa = $125 + 40 = €165 > €150$.
+Um melhor exemplo seria $(125, 20)$: $U = 2500$ mas despesa = $125 + 40 = 165 > 150$.
 
 Por definição, cabazes indiferentes ao óptimo que não sejam o próprio óptimo não pertencem ao espaço de consumo possível (exceto se também pertencerem à restrição orçamental, caso de soluções de canto).
 
@@ -108,7 +108,7 @@ Com a nova função utilidade:
 
 ### Exercício 3
 
-A função $U(Q) = 1200\ln Q$ descreve os níveis de satisfação que a Rita retira do consumo de um cosmético da sua preferência. Admita que cada embalagem de 100ml custa €10. Finalmente, suponha que o máximo que a Rita pagará por cada unidade é igual a $\frac{1200}{Q}$.
+A função $U(Q) = 1200\ln Q$ descreve os níveis de satisfação que a Rita retira do consumo de um cosmético da sua preferência. Admita que cada embalagem de 100ml custa 10. Finalmente, suponha que o máximo que a Rita pagará por cada unidade é igual a $\frac{1200}{Q}$.
 
 1. A função utilidade respeita a 1ª Lei de Gossen?
 
@@ -151,7 +151,7 @@ $$\frac{1200}{Q} = 10 \Rightarrow Q = 120$$
 
 **Excedente na última unidade:**
 
-Na última unidade consumida, a disponibilidade a pagar é $\frac{1200}{120} = €10$, que é exatamente igual ao preço. Logo, o excedente do consumidor na última unidade é **zero**.
+Na última unidade consumida, a disponibilidade a pagar é $\frac{1200}{120} = 10$, que é exatamente igual ao preço. Logo, o excedente do consumidor na última unidade é **zero**.
 
 **Comentário sobre procura inversa:**
 
@@ -161,7 +161,7 @@ A expressão $P = \frac{1200}{Q}$ é a curva de procura inversa da Rita. Todos o
 
 ### Exercício 4
 
-O Tiago é um consumidor racional, que dispõe de um presente de €120 para gastar em calças e em camisas para renovar o seu vestuário. Admita que uma camisa (bem x) custa €20 e um par de calças (bem y) custa €30. Admita ainda que as preferências do Tiago podem ser descritas pela função $U(x,y) = xy$.
+O Tiago é um consumidor racional, que dispõe de um presente de 120 para gastar em calças e em camisas para renovar o seu vestuário. Admita que uma camisa (bem x) custa 20 e um par de calças (bem y) custa 30. Admita ainda que as preferências do Tiago podem ser descritas pela função $U(x,y) = xy$.
 
 1. Escreva a equação da recta de restrição orçamental do Tiago e represente-a graficamente.
 
@@ -219,11 +219,11 @@ $|TMS| = \frac{y}{x} = \frac{2}{3}$
 
 **Benefício Marginal de mais uma camisa:**
 - Valorização em termos de calças: $\frac{2}{3}$ de $y$
-- Em termos monetários: $\frac{2}{3} \times 30 = €20$
-- Logo: $Bmg = €20$
+- Em termos monetários: $\frac{2}{3} \times 30 = 20$
+- Logo: $Bmg = 20$
 
 **Custo Marginal de mais uma camisa:**
-- $Cmg = P_x = €20$
+- $Cmg = P_x = 20$
 
 Como $Bmg = Cmg$, a escolha é óptima.
 
@@ -252,7 +252,7 @@ $(x, y) = (2, 3)$ tem utilidade $U = 2 \times 3 = 6$
 
 **É um ponto de consumo possível?**
 
-Despesa: $20(2) + 30(3) = 40 + 90 = €130 > €120$
+Despesa: $20(2) + 30(3) = 40 + 90 = 130 > 120$
 
 **Não**, este cabaz não pertence ao espaço das possibilidades de consumo porque excede o orçamento disponível.
 
@@ -289,11 +289,11 @@ Na abordagem ordinal da utilidade, apenas a **ordenação** das preferências im
 
 ### Exercício 5
 
-Repita a alínea c) do exercício anterior, admitindo que o preço de cada camisa aumentou para €30. Deduza a curva da procura deste bem. Como se alteraria se o rendimento duplicasse? Ilustre graficamente.
+Repita a alínea c) do exercício anterior, admitindo que o preço de cada camisa aumentou para 30. Deduza a curva da procura deste bem. Como se alteraria se o rendimento duplicasse? Ilustre graficamente.
 
 `r hide("Solução")`
 
-**Nova escolha óptima com $P_x = €30$:**
+**Nova escolha óptima com $P_x = 30$:**
 
 - 2ª Lei de Gossen: $\frac{y}{x} = \frac{30}{30} = 1$, logo $y = x$
 - Restrição: $30x + 30y = 120$, logo $x + y = 4$
@@ -309,7 +309,7 @@ A procura é: $$Q_x = \frac{60}{P_x}$$
 
 (Verificação: quando $P_x = 20$, $Q = 60/20 = 3$ ✓; quando $P_x = 30$, $Q = 60/30 = 2$ ✓)
 
-**Com rendimento duplicado ($W = €240$):**
+**Com rendimento duplicado ($W = 240$):**
 
 $$Q_x = \frac{120}{P_x}$$
 
@@ -319,7 +319,7 @@ A curva de procura desloca-se para a direita, dobrando a quantidade procurada a 
 
 ### Exercício 6
 
-O António é um consumidor racional e tem €45 por mês para gastar em chá (Y, pacotes de 100g) e em café (X, pacotes de 100g) para a família. Cada 100g de chá custa $P_Y = €3$ e cada 100g de café custa $P_X = €2$. As preferências podem ser expressas pela função $U(X,Y) = XY$.
+O António é um consumidor racional e tem 45 por mês para gastar em chá (Y, pacotes de 100g) e em café (X, pacotes de 100g) para a família. Cada 100g de chá custa $P_Y = 3$ e cada 100g de café custa $P_X = 2$. As preferências podem ser expressas pela função $U(X,Y) = XY$.
 
 1. Deduza a equação da recta orçamental e interprete o seu declive.
 
@@ -351,9 +351,9 @@ A recta orçamental intercepta:
 
 `r hide("Solução")`
 
-**Despesa do cabaz:** $2(8) + 3(3) = 16 + 9 = €25 < €45$
+**Despesa do cabaz:** $2(8) + 3(3) = 16 + 9 = 25 < 45$
 
-O cabaz $(8, 3)$ corresponde a uma despesa de €25. Como não esgota o orçamento, **pertence ao espaço das possibilidades de consumo**, mas **não pode ser óptimo** porque não esgota o orçamento.
+O cabaz $(8, 3)$ corresponde a uma despesa de 25. Como não esgota o orçamento, **pertence ao espaço das possibilidades de consumo**, mas **não pode ser óptimo** porque não esgota o orçamento.
 
 Um consumidor racional sempre esgota todo o orçamento disponível para maximizar utilidade.
 
@@ -398,7 +398,7 @@ Isto significa que o consumidor está disposto a abdicar de exatamente $\frac{2}
 
 **Cabaz indiferente:** Por exemplo, $X = 15$, $Y = 84.375/15 \approx 5.625$
 
-**Despesa:** $2(15) + 3(5.625) = 30 + 16.875 = €46.875 > €45$
+**Despesa:** $2(15) + 3(5.625) = 30 + 16.875 = 46.875 > 45$
 
 Este cabaz **não pertence ao espaço das possibilidades de consumo** porque a despesa excede o orçamento disponível.
 
@@ -406,7 +406,7 @@ Este cabaz **não pertence ao espaço das possibilidades de consumo** porque a d
 
 `r unhide()`
 
-7. Suponha agora que o preço do café aumentou para $P_X = €3$. Qual a nova recta de restrição orçamental e qual a escolha óptima?
+7. Suponha agora que o preço do café aumentou para $P_X = 3$. Qual a nova recta de restrição orçamental e qual a escolha óptima?
 
 `r hide("Solução")`
 
@@ -454,7 +454,7 @@ A procura de mercado é simplesmente a soma horizontal das procuras individuais.
 
 ### Exercício 7
 
-A Maria tem preferências que podem ser descritas pela função $U(X,Y) = XY$. Admita que tem €150 para gastar nos bens X e Y, sendo $P_X = €10$ e $P_Y = €15$.
+A Maria tem preferências que podem ser descritas pela função $U(X,Y) = XY$. Admita que tem 150 para gastar nos bens X e Y, sendo $P_X = 10$ e $P_Y = 15$.
 
 1. Determine a escolha óptima da Maria e represente graficamente.
 
@@ -464,7 +464,7 @@ A Maria tem preferências que podem ser descritas pela função $U(X,Y) = XY$. A
 
 ... mas a solução fornecida indica $X = Y = 6$. Verificando:
 
-Se $X = Y = 6$: despesa = $10(6) + 15(6) = 60 + 90 = €150$ ✓
+Se $X = Y = 6$: despesa = $10(6) + 15(6) = 60 + 90 = 150$ ✓
 
 Pela 2ª Lei de Gossen: $\frac{Y}{X} = \frac{10}{15} = \frac{2}{3}$
 
@@ -479,7 +479,7 @@ Há uma inconsistência. A solução correta com $U = XY$ seria:
 
 `r unhide()`
 
-2. Caso o preço de X aumente para €15, qual a nova escolha óptima?
+2. Caso o preço de X aumente para 15, qual a nova escolha óptima?
 
 `r hide("Solução")`
 
@@ -487,7 +487,7 @@ Há uma inconsistência. A solução correta com $U = XY$ seria:
 
 (Nota: A solução fornecida indica $Y = 6$, $X = 4$)
 
-Com $P_X = P_Y = €15$:
+Com $P_X = P_Y = 15$:
 - $\frac{Y}{X} = \frac{15}{15} = 1 \Rightarrow Y = X$
 - $15X + 15Y = 150 \Rightarrow X = Y = 5$
 
@@ -497,7 +497,7 @@ Com $P_X = P_Y = €15$:
 
 `r hide("Solução")`
 
-Com $W = €300$ (rendimento duplicado), as quantidades óptimas também duplicam.
+Com $W = 300$ (rendimento duplicado), as quantidades óptimas também duplicam.
 
 Para preferências Cobb-Douglas, quando o rendimento aumenta proporcionalmente, as quantidades consumidas aumentam na mesma proporção.
 
@@ -505,7 +505,7 @@ Para preferências Cobb-Douglas, quando o rendimento aumenta proporcionalmente, 
 
 ### Exercício 8
 
-O Miguel tem uma mesada de €120 que pode usar para o consumo mensal de bolos e maçãs. Assuma que um bolo (x) custa €2 e uma maçã (y) €1 e que as suas preferências podem ser descritas pela função utilidade $U(x,y) = xy$.
+O Miguel tem uma mesada de 120 que pode usar para o consumo mensal de bolos e maçãs. Assuma que um bolo (x) custa 2 e uma maçã (y) 1 e que as suas preferências podem ser descritas pela função utilidade $U(x,y) = xy$.
 
 1. Determine analiticamente a restrição orçamental do Miguel e faça a representação gráfica do espaço das possibilidades de consumo.
 
@@ -528,7 +528,7 @@ O espaço de consumo é a área abaixo e incluindo a reta orçamental.
 
 `r unhide()`
 
-2. Represente no gráfico anterior o efeito de uma diminuição do preço dos bolos para €1.5 na restrição orçamental. Em quanto aumentou a quantidade máxima que o Miguel pode comprar de bolos? E de maçãs?
+2. Represente no gráfico anterior o efeito de uma diminuição do preço dos bolos para 1.5 na restrição orçamental. Em quanto aumentou a quantidade máxima que o Miguel pode comprar de bolos? E de maçãs?
 
 `r hide("Solução")`
 
@@ -565,12 +565,12 @@ $$U(30, 75) = 2250$$
 Se $x = 20$ esgota orçamento: $U(20, 90) = 1800 = U(30, y_2)$
 $$30y_2 = 1800 \Rightarrow y_2 = 60$$
 
-Mas $(30, 60)$ tem despesa $1.5(30) + 60 = €105 < €120$, não esgota orçamento.
+Mas $(30, 60)$ tem despesa $1.5(30) + 60 = 105 < 120$, não esgota orçamento.
 
 Se $x = 30$ esgota orçamento: $U(30, 75) = 2250 = U(20, y_1)$
 $$20y_1 = 2250 \Rightarrow y_1 = 112.5$$
 
-Mas $(20, 112.5)$ tem despesa $1.5(20) + 112.5 = €142.5 > €120$, ultrapassa orçamento.
+Mas $(20, 112.5)$ tem despesa $1.5(20) + 112.5 = 142.5 > 120$, ultrapassa orçamento.
 
 **Conclusão:** Não é possível ter dois cabazes indiferentes que ambos esgotem o orçamento (exceto se forem o mesmo cabaz).
 
@@ -640,7 +640,7 @@ Como $|TMS| = 1$ não iguala nenhuma das razões de preços, não pode ser escol
 
 **Cabaz indiferente:** $(20, 90)$
 
-**Despesa:** $2(20) + 90 = €130 > €120$
+**Despesa:** $2(20) + 90 = 130 > 120$
 
 Este cabaz **não pertence** ao espaço das possibilidades de consumo porque excede o orçamento.
 
@@ -660,7 +660,7 @@ Esta curva passa por todos os cabazes com utilidade igual a 1800, incluindo o ca
 
 `r unhide()`
 
-9. Se o preço dos bolos aumentar para €2.5, o que espera que aconteça à quantidade consumida deste bem?
+9. Se o preço dos bolos aumentar para 2.5, o que espera que aconteça à quantidade consumida deste bem?
 
 `r hide("Solução")`
 
