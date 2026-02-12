@@ -24,29 +24,27 @@ library(webexercises)
 
 ---
 
-## 3B. Equilíbrio de Mercado - Curto Prazo
-
 ### Exercício 8
 
-Suponha que num mercado onde operam 30 empresas a oferta é descrita por $Q_S = 30(P - 20)$. Qual o limiar de encerramento de cada uma destas empresas? Se o custo fixo for igual a 100, qual o limiar de rendibilidade?
+Suponha que num mercado onde operam 30 empresas a oferta é descrita por $Q_S = -1200 +60P$. Qual o limiar de encerramento de cada uma destas empresas? Se o custo fixo for igual a 100, qual o limiar de rendibilidade?
 
 `r hide("Solução")`
 
-**Oferta de mercado:** $Q_S = 30(P - 20)$
+**Oferta de mercado:** $Q_S = -1200 + 60P$
 
 **Oferta individual:** Dividindo por 30:
-$$q_i = P - 20$$
+$$q_i = 2P - 40$$
 
 ou equivalentemente:
-$$P = q_i + 20$$
+$$P = \frac{1}{2}q_i + 20$$
 
-Esta é a curva de Cmg individual (que é a oferta).
+Esta é a curva de $Cmg$ individual (que é a oferta). Lembrar que $P=Cmg$.
 
 **Limiar de Encerramento:**
 
 Ocorre quando $P = \min CVM$.
 
-Da oferta individual $P = q_i + 20$, vemos que a oferta começa em $P = 20$ (quando $q_i = 0$).
+Da oferta (inversa) individual $P = \frac{1}{2}q_i + 20$, vemos que a oferta começa em $P = 20$ (quando $q_i = 0$).
 
 Logo, **limiar de encerramento: P = 20**
 
@@ -60,30 +58,21 @@ Sabemos que no mínimo do CTM: $CTM = Cmg$
 
 $$\frac{CF}{q} + CVM = Cmg$$
 
-No mínimo do CTM, também sabemos que $Cmg = CTM$. 
+Para uma função de custo com $Cmg = \frac{1}{2}q + 20$ (linear), temos:
+$$CV = \int \left(\frac{1}{2}q + 20\right)dq = 0.25q^2 + 20q$$
+$$CVM = 0.25q + 20$$
 
-Para uma função de custo com $Cmg = q + 20$ (linear), temos:
-$$CV = \int (q + 20)dq = 0.5q^2 + 20q$$
-$$CVM = 0.5q + 20$$
-
-$$CT = CF + CV = 100 + 0.5q^2 + 20q$$
-$$CTM = \frac{100}{q} + 0.5q + 20$$
+$$CT = CF + CV = 100 + 0.25q^2 + 20q$$
+$$CTM = \frac{100}{q} + 0.25q + 20$$
 
 Mínimo quando $CTM = Cmg$:
-$$\frac{100}{q} + 0.5q + 20 = q + 20$$
-$$\frac{100}{q} = 0.5q$$
-$$100 = 0.5q^2$$
-$$q^2 = 200$$
-$$q = 14.14$$
+$$\frac{100}{q} + 0.25q + 20 = \frac{1}{2}q + 20$$
+$$\frac{100}{q} = 0.25q$$
+$$100 = 0.25q^2$$
+$$q^2 = 400$$
+$$q = 20$$
 
-$$P = 14.14 + 20 = 34.14$$
-
-**Solução fornecida:**
-- Limiar de encerramento: $P = 20$ ✓
-- Limiar de rendibilidade: $P = 30$
-
-Há uma pequena diferença. Verificando: se P=30, então q=10, e:
-$$CTM(10) = 100/10 + 0.5(10) + 20 = 10 + 5 + 20 = 35 \neq 30$$
+$$P = \frac{1}{2}20 + 20 = 30$$
 
 `r unhide()`
 

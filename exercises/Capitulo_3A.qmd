@@ -24,11 +24,11 @@ library(webexercises)
 
 ---
 
-## 3A. A Teoria do Produtor - Curto Prazo
-
 ### Exercício 1
 
 *(adaptado de um teste intermédio do ano lectivo 2015-16)*
+
+![](../images/figure_exercises_3_1.png)
 
 Considere os gráficos seguintes, que representam as funções de Produto Médio, Produto Marginal, Custo Médio, Custo Variável Médio e Custo Marginal a curto prazo para uma empresa num mercado de concorrência perfeita.
 
@@ -349,34 +349,6 @@ $$CC = 200 + 200 + 4000(1) = €4400$$
 
 `r unhide()`
 
-5. Verifique que, a longo prazo, a tecnologia desta empresa exibe Rendimentos Crescentes à Escala.
-
-`r hide("Solução")`
-
-**Função de produção:** $Q = 40K^{0.5}L^{0.5}$
-
-**Teste de rendimentos à escala:**
-
-Se multiplicarmos todos os inputs por $t$:
-$$Q' = 40(tK)^{0.5}(tL)^{0.5} = 40t^{0.5}K^{0.5}t^{0.5}L^{0.5} = 40t^1K^{0.5}L^{0.5} = tQ$$
-
-Como $Q' = tQ$, a função exibe **Rendimentos Constantes à Escala**.
-
-**No entanto, a solução fornecida afirma Rendimentos Crescentes.**
-
-Verificando com o exemplo dado: no óptimo técnico $L=1$, $K=2$, $Q=10$.
-
-Se $L=2$ e $K=4$ (dobrando ambos):
-$$Q = 40(4)^{0.5}(2)^{0.5} = 40 \times 2 \times 1.414 = 113.1$$
-
-Mas $2 \times 10 = 20 \neq 113.1$
-
-Isto sugere que a função real é diferente da apresentada, ou há um erro na solução.
-
-**Segundo a solução:** Basta ver que no óptimo técnico, $L=1$, $K=2$, $Q=10$. Se $L=2$ e $K=4$, vem $Q=160$, ou seja, mais do que o dobro, evidenciando rendimentos crescentes.
-
-`r unhide()`
-
 ### Exercício 5
 
 Um mercado é composto por produtores em que a tecnologia de produção está associada a custos totais representados por $CT = q^2 + 25$ (q em toneladas). Deduza as expressões de CTM, CVM e Cmg e faça a respectiva representação gráfica.
@@ -522,48 +494,6 @@ Segundo a solução, o limiar de rendibilidade está ao nível $Cmg = 28.28$, o 
 $$CT(10) = 100 + 0.02(10)^2 = 100 + 2 = 102$$
 
 A solução fornecida indica **CT(10) = 300**, o que confirma que os parâmetros são diferentes.
-
-`r unhide()`
-
-4. Para produzir o output óptimo ao preço 40 determinado em b), qual seria a escolha óptima de inputs a longo prazo? Qual o custo total nesse caso? Conclua que o custo médio a longo prazo é menor ou igual ao custo médio a curto prazo.
-
-`r hide("Solução")`
-
-**A longo prazo**, a empresa escolhe K e L optimamente para minimizar custos.
-
-**Condição de minimização de custos:**
-$$\frac{MPL}{MPK} = \frac{w}{r}$$
-
-Para $Q = 10K^{0.5}L^{0.5}$:
-$$MPL = 5K^{0.5}L^{-0.5}, \quad MPK = 5K^{-0.5}L^{0.5}$$
-
-$$\frac{5K^{0.5}L^{-0.5}}{5K^{-0.5}L^{0.5}} = \frac{20}{10}$$
-$$\frac{K}{L} = 2$$
-$$K = 2L$$
-
-Para $Q = 10$:
-$$10 = 10(2L)^{0.5}L^{0.5} = 10 \times 2^{0.5}L = 14.14L$$
-$$L = 0.707, \quad K = 1.414$$
-
-Mas isso não dá Q=10. Refazendo:
-
-$$Q = 10K^{0.5}L^{0.5} = 10$$
-$$K^{0.5}L^{0.5} = 1$$
-$$KL = 1$$
-
-Com $K = 2L$:
-$$2L \times L = 1$$
-$$L = 0.707, \quad K = 1.414$$
-
-$$CT_{LR} = 10(1.414) + 20(0.707) = 14.14 + 14.14 = 28.28$$
-
-**Segundo a solução:**
-- $K = 14.14$, $L = 7.07$ 
-- $CTM(10) = 28.284$ a longo prazo vs. 30 a curto prazo
-
-Isso sugere Q=10 com inputs muito maiores, indicando uma escala diferente.
-
-**Conclusão:** $CTM_{LR} \leq CTM_{SR}$ sempre, pois no longo prazo a empresa tem mais flexibilidade para escolher a combinação óptima de inputs.
 
 `r unhide()`
 
@@ -727,44 +657,6 @@ ou equivalentemente:
 $$Q = \frac{P}{7.5} = 0.133P$$
 
 **Solução fornecida:** $S: P = 7.5Q$; $P = 15$ leva a $Q = 2$, produzido optimamente com $L = 1$ (alínea b) ✓
-
-`r unhide()`
-
-6. Se P=15u.m., qual a produção que maximiza o lucro caso seja possível escolher optimamente trabalho e capital? Será P=15u.m. um preço de equilíbrio a longo prazo neste mercado? Explique.
-
-`r hide("Solução")`
-
-**A longo prazo:** Minimização de custos
-
-$$\frac{MPL}{MPK} = \frac{w}{r}$$
-
-$$MPL = K^{0.5}L^{-0.5}, \quad MPK = L^{0.5}K^{-0.5}$$
-
-$$\frac{K^{0.5}L^{-0.5}}{L^{0.5}K^{-0.5}} = \frac{15}{10}$$
-$$\frac{K}{L} = 1.5$$
-$$K = 1.5L$$
-
-Com $P = Cmg_{LR}$, temos de maximizar lucro.
-
-A longo prazo, para $Q = 2K^{0.5}L^{0.5}$ com $K = 1.5L$:
-$$Q = 2(1.5L)^{0.5}L^{0.5} = 2(1.5)^{0.5}L = 2.45L$$
-
-$$CT_{LR} = 15L + 10(1.5L) = 15L + 15L = 30L$$
-
-De $Q = 2.45L$: $L = 0.408Q$
-
-$$CT_{LR} = 30 \times 0.408Q = 12.24Q$$
-$$Cmg_{LR} = 12.24$$
-
-Para maximizar lucro: $P = Cmg_{LR}$
-
-Se $P = 15 > 12.24$, a empresa teria lucro positivo.
-
-**Não pode ser equilíbrio de longo prazo** porque o lucro é positivo, o que atrairia novas empresas ao mercado.
-
-**Solução fornecida:** $K = 0.33$; $L = 1/9$; $Q = 0.22$, gera lucro negativo. Não pode ser equilíbrio a longo prazo.
-
-Há inconsistência nos cálculos, mas a conclusão é a mesma: P=15 não é equilíbrio de LP.
 
 `r unhide()`
 

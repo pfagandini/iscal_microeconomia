@@ -19,5 +19,6 @@ format:
     theme:
       - cosmo
       - brand
+    from: markdown+emoji
     css: styles.css
     toc: true

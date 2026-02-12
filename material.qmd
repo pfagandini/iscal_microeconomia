@@ -8,9 +8,9 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 
 ### Capítulo I: Racionalidade e Vantagens do Comêrcio
 
-1. [Introdução](slides/01_Intro.qmd)
-2. [Escolhas Racionais](slides/02_Escolhas_Racionais.qmd)
-3. [FPP e Ventagens do Comêrcio](slides/03_FPP.qmd)
+1. [Introdução](slides/01_Intro.qmd) :page_facing_up: [PDF](PDF/01_Intro.pdf)
+2. [Escolhas Racionais](slides/02_Escolhas_Racionais.qmd) :page_facing_up: [PDF](PDF/02_Escolhas_Racionais.pdf)
+3. [FPP e Ventagens do Comêrcio](slides/03_FPP.qmd) :page_facing_up: [PDF](PDF/03_FPP.pdf)
 
 * [Exercícios](exercises/Capitulo_1.qmd)
 
@@ -20,20 +20,21 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 7. [Preferências e axiomas de racionalidade](slides/05_Preferencias_axiomas.qmd)
 8. [TMS e ótimo de consumo](slides/06_TMS_otimo.qmd)
 
-* [Exercícios](exercises/Capitulo_2.qmd)
 
 ### Capítulo III: Teoría da Produção - Curto Prazo
 
-* [Exercícios](exercises/Capitulo_3A.qmd)
+
 
 ### Capítulo IV: Equilíbrio de Mercado de Curto Prazo
 
-* [Exercícios](exercises/Capitulo_3B.qmd)
+
 
 ### Capítulo V: Produção e Equilíbrio de Mercado de Longo Prazo
 
-* [Exercícios](exercises/Capitulo_3C.qmd)
+
 
 ### Capítulo VI: Elasticidades e Intervenções dos Mercados
+
+
 
 ### Capítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos

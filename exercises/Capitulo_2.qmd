@@ -23,8 +23,6 @@ library(webexercises)
 
 ---
 
-## 2. A Teoria do consumidor e a procura
-
 ### Exercício 1
 
 O João é um consumidor racional e tem 150 por mês para gastar em frutas (Y, kg) e em legumes (X, kg) para a família. Cada kg de fruta custa PY=2 e cada kg de legumes custa PX=1. As preferências podem ser expressas pela função $U(X,Y) = XY$.
