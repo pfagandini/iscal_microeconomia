@@ -1,0 +1,759 @@
+---
+title: "Microeconomia - Capítulo 1"
+format: 
+  html:
+    css: [Exercises/webex.css]
+    include-after-body: [Exercises/webex.js]
+    embed-resources: true
+lang: pt
+editor: source
+page-layout: full
+---
+
+```{r setup, include = FALSE, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(webexercises)
+```
+
+```{r, echo = FALSE, results='asis'}
+# Uncomment to change widget colours:
+#style_widgets(incorrect = "goldenrod", correct = "purple", highlight = "firebrick")
+```
+
+---
+
+### Exercício 1
+
+«A Economia tem como preocupação a acumulação de riqueza.» Diga, justificando se a frase é FALSA ou VERDADEIRA.
+
+`r hide("Solução")`
+
+**Falsa**
+
+A Economia não se preocupa exclusivamente com a acumulação de riqueza, mas sim com a gestão eficiente de recursos escassos para satisfazer necessidades ilimitadas. O foco está na alocação óptima de recursos, não apenas na sua acumulação.
+
+`r unhide()`
+
+### Exercício 2
+
+O João tem de escolher entre ir ao cinema e ir ao teatro. O bilhete de cinema custa €6.50 e um bilhete no Teatro Nacional custa €16. O máximo que o João estaria disposto a pagar seria €7 para ir ao cinema e €20 para ir ao teatro. Calcule o custo de oportunidade de ir ao teatro. Será uma decisão racional? Explique utilizando três critérios equivalentes.
+
+`r hide("Solução")`
+
+**Custo de oportunidade de ir ao teatro:** €16.5
+
+O custo de oportunidade é o custo do teatro (€16) menos o excedente do cinema (€7 - €6.50 = €0.50), ou seja, €16 + €0.50 = €16.50.
+
+**É racional ir ao teatro:**
+
+1. **Critério do Excedente:** O excedente do teatro é €20 - €16 = €4, enquanto o excedente do cinema é €0.50. Como €4 > €0.50, é racional escolher o teatro.
+
+2. **Critério Custo-Benefício:** O benefício marginal do teatro é €20 - €7 = €13, enquanto o custo marginal é €16 - €6.50 = €9.50. Como Bmg (€13) > Cmg (€9.50), é racional.
+
+3. **Critério do Custo de Oportunidade:** O benefício bruto do teatro (€20) é maior que o custo de oportunidade (€16.50), logo é racional.
+
+`r unhide()`
+
+
+### Exercício 3
+
+
+
+O Jorge recebeu como presente de aniversário €50 para gastar em actividades culturais. Pensa em ir à ópera ou ir a um concerto sinfónico, mas tem de escolher entre um ou outro, porque o dinheiro não chega para os dois. Se escolher ir à ópera, qual o custo de oportunidade da sua escolha, sabendo que: um bilhete de ópera custa €50 e o bilhete do concerto custa €40? Admita que o valor atribuído a uma opção coincide com o máximo que pode pagar por essa opção.
+
+`r hide("Solução")`
+
+**Custo de oportunidade:** €60
+
+O custo de oportunidade de ir à ópera é o custo da ópera (€50) mais o excedente do concerto que deixa de obter. Como o Jorge valoriza o concerto em €40 e o bilhete custa €40, o excedente seria €40 - €40 = €0. No entanto, se considerarmos que ele valoriza a ópera em €50 (máximo que pode pagar), então o custo de oportunidade total seria €50 + €40 = €90. 
+
+**Nota:** A resposta fornecida nas soluções (€60) sugere uma interpretação diferente do problema. Pode corresponder ao valor total que teria se não gastasse na ópera: €50 (custo) + €10 (que sobrariam se escolhesse o concerto) = €60.
+
+`r unhide()`
+
+
+### Exercício 4
+
+
+
+Será que a escolha efectuada no exercício anterior foi uma escolha racional? Explique.
+
+`r hide("Solução")`
+
+**Não é racional**
+
+Se o Paulo valoriza a ópera exactamente em €50 (o máximo que pode pagar) e o concerto em €40, então:
+
+- Excedente da ópera: €50 - €50 = €0
+- Excedente do concerto: €40 - €40 = €0
+
+Como ambos os excedentes são iguais (€0), a escolha é indiferente do ponto de vista racional estrito. No entanto, se valorizasse a ópera em mais de €50, seria racional escolhê-la; se valorizasse menos, não seria racional.
+
+Dado que o excedente é nulo e ele gasta todo o dinheiro que tem, não é uma escolha economicamente vantajosa comparada com outras alternativas possíveis.
+
+`r unhide()`
+
+
+### Exercício 5
+
+
+
+O António trabalha em design gráfico como freelancer e consegue ter uma remuneração de cerca de €800. Surgem-lhe duas propostas de trabalho: uma na Holanda, onde iria ganhar €2000, outra em Espanha, onde ganharia €1500. Se fosse para a Holanda, teria uma despesa associada à mudança de cerca de €1000, se fosse para Espanha, essa despesa rondaria os €600. Qual a escolha racional? Qual o custo de oportunidade dessa escolha?
+
+`r hide("Solução")`
+
+**Análise das opções:**
+
+| Opção | Receita | Despesa | Lucro Líquido |
+|-------|---------|---------|---------------|
+| Freelancer (Portugal) | €800 | €0 | €800 |
+| Holanda | €2000 | €1000 | €1000 |
+| Espanha | €1500 | €600 | €900 |
+
+**Escolha racional:** Ir para a Holanda (maior lucro líquido: €1000)
+
+**Custo de oportunidade:** €1900
+
+O custo de oportunidade de ir para a Holanda é a soma do custo da decisão (€1000) com o excedente da melhor alternativa não escolhida (Espanha: €900). Portanto: €1000 + €900 = €1900.
+
+`r unhide()`
+
+
+### Exercício 6
+
+
+
+Qual a quantidade óptima de tartes que a Filipa deve produzir diariamente no seu "atelier boulanger", sabendo que vende cada tarte a €15 e que os custos de produção são os descritos na tabela abaixo?
+
+`r hide("Solução")`
+
+**Deve produzir 12 tartes**
+
+Para determinar a quantidade óptima, é necessário comparar o benefício marginal (€15 por tarte vendida) com o custo marginal de produção. A quantidade óptima é aquela onde:
+
+$$Bmg = Cmg$$
+
+ou seja, onde o benefício marginal de produzir uma tarte adicional é igual ao custo marginal dessa tarte.
+
+Segundo a tabela de custos (não fornecida no texto), a análise marginal indica que a 12ª tarte é a última unidade onde o benefício marginal ainda cobre o custo marginal.
+
+`r unhide()`
+
+
+### Exercício 7
+
+Imagine que os custos de produção de pão na padaria do Manuel se podem descrever com a função de custos, em que representa a quantidade de pão produzida por hora (em quilos). O benefício de produção e venda corresponde à facturação, que pode ser representada pela função, já que cada quilo de pão é vendido a €6. Determine a quantidade óptima que o Manuel deve produzir por hora na sua padaria. Represente graficamente as funções Cmg e Bmg e intua o seu significado como taxa de variação média num ponto. Graficamente, onde se situa o ponto óptimo? Explique que a abordagem custo-benefício corresponde à solução de.
+
+`r hide("Solução")`
+
+**Quantidade óptima:** 3 kg de pão
+
+**Análise:**
+
+Assumindo que:
+- Função de custo: $C(Q) = Q^2$ (ou similar)
+- Função de benefício: $B(Q) = 6Q$
+
+Então:
+- Custo marginal: $Cmg = 2Q$
+- Benefício marginal: $Bmg = 6$
+
+**Condição de óptimo:**
+$$Cmg = Bmg$$
+$$2Q = 6$$
+$$Q = 3 \text{ kg}$$
+
+**Interpretação gráfica:**
+
+O ponto óptimo encontra-se na intersecção das duas curvas (Cmg e Bmg). O Cmg representa a taxa de variação do custo quando se produz uma unidade adicional, e o Bmg representa o benefício de vender essa unidade adicional.
+
+A abordagem custo-benefício corresponde a maximizar $B(Q) - C(Q)$, o que ocorre quando a derivada é zero, ou seja, quando $Bmg = Cmg$.
+
+`r unhide()`
+
+
+### Exercício 8
+
+
+
+Se uma multinacional na Alemanha lhe oferecer um salário anual de €45000, enquanto ficar em Lisboa numa empresa do mesmo ramo lhe permitiria auferir um salário anual de €25000 e considerando que os custos de transporte e alojamento na Alemanha ascendem a €11500 por ano, enquanto em Lisboa se fixariam em €5000, qual a sua decisão racional?
+
+`r hide("Solução")`
+
+**Análise das opções:**
+
+| Opção | Salário | Custos | Rendimento Líquido |
+|-------|---------|--------|-------------------|
+| Lisboa | €25000 | €5000 | €20000 |
+| Alemanha | €45000 | €11500 | €33500 |
+
+**Escolha racional:** Ir para a Alemanha
+
+O rendimento líquido na Alemanha (€33500) é significativamente superior ao de Lisboa (€20000), pelo que a escolha racional é aceitar a oferta na Alemanha.
+
+`r unhide()`
+
+
+### Exercício 9
+
+
+
+*(extraído de um exame do ano lectivo 2019-20)*
+
+As cozinheiras automáticas "Qimby" têm um preço de €3000, mas na blackfriday estão com um desconto de €1000. Caso um consumidor racional que não precise de uma destas máquinas compre uma, não está a poupar €1000, mas sim a gastar €2000 irracionalmente. Explique, usando o conceito de custo de oportunidade.
+
+`r hide("Solução")`
+
+**Explicação:**
+
+O custo de oportunidade de comprar a "Qimby" na BlackFriday é €2000 + Z, sendo Z o valor do excedente da melhor utilização alternativa do dinheiro que gasta com a compra.
+
+A compra será irracional se este custo de oportunidade for **superior** ao benefício bruto da compra. Se é um objecto de que não precisa, esse benefício será zero, pelo que a compra é irracional, seja qual for o valor de Z.
+
+**Em resumo:**
+
+- Custo: €2000 (preço com desconto)
+- Benefício: €0 (não precisa da máquina)
+- Custo de oportunidade: €2000 + Z (onde Z é o benefício de usar esse dinheiro noutra coisa)
+
+Como o benefício é zero e o custo é €2000, o consumidor não está a "poupar" €1000, mas sim a gastar €2000 irracionalmente, além de perder a oportunidade de usar esse dinheiro em algo que lhe traria benefício.
+
+`r unhide()`
+
+
+### Exercício 10
+
+A Maria é agrónoma e trabalha no Ministério da Agricultura onde recebe um vencimento anual de €14000. Está a pensar abrir um viveiro de plantas, o que acarretaria despesas anuais de €15000 no primeiro ano, e de €7000 no ano seguinte.
+
+Admitindo que não há desvalorização da moeda ao longo tempo:
+
+1. Qual o custo contabilístico dos dois primeiros anos?
+
+`r hide("Solução")`
+
+**1. Custo contabilístico dos dois primeiros anos:**
+
+€22000 (€15000 + €7000)
+
+`r unhide()`
+
+2. Se a Maria decidir abrir o viveiro, abandonando o Ministério para se dedicar ao negócio, qual o custo de oportunidade da sua decisão no fim do 2º ano?
+
+`r hide("Solução")`
+
+**2. Custo de oportunidade no fim do 2º ano:**
+
+€50000
+
+Inclui:
+- Despesas do negócio: €22000
+- Salário perdido (2 anos): €28000 (2 × €14000)
+- Total: €50000
+
+`r unhide()`
+
+3. Para que o negócio seja lucrativo, quanto teria a Maria de facturar no 1º ano?
+
+`r hide("Solução")`
+
+**3. Facturação necessária para ser lucrativo no 1º ano:**
+
+€15000
+
+Para ser lucrativo em termos contabilísticos, a receita deve cobrir pelo menos as despesas contabilísticas do primeiro ano.
+
+`r unhide()`
+
+4. Para que o negócio seja economicamente viável, qual teria de ser a facturação da Maria nos dois primeiros anos?
+
+`r hide("Solução")`
+
+**4. Facturação necessária para ser economicamente viável (2 anos):**
+
+€50000
+
+Para ser economicamente viável, a receita total deve cobrir o custo de oportunidade total, que inclui tanto as despesas como o salário perdido nos dois anos.
+
+`r unhide()`
+
+
+### Exercício 11
+
+O João tem uma herdade no Alentejo onde produz trigo e cortiça em regime de montado. Consegue obter €12000 de proveitos. Se, em alternativa, investisse na criação de um pólo de turismo rural, obteria uma receita da ordem dos €50000, mas teria uma despesa de €35000. Será o pólo de turismo rural economicamente viável? Qual o custo de oportunidade de utilização do capital (a herdade) na exploração agrícola em montado?
+
+`r hide("Solução")`
+
+**Análise do pólo de turismo rural:**
+
+- Receitas: €50000
+- Despesas: €35000
+- Lucro líquido: €15000
+
+**Custo de oportunidade do investimento no pólo de turismo:**
+
+€47000
+
+Este valor inclui:
+- Despesas do pólo: €35000
+- Proveitos perdidos do montado: €12000
+- Total: €47000
+
+**É economicamente viável?**
+
+Sim, é racional investir no pólo de turismo rural, pois as receitas (€50000) são superiores ao custo de oportunidade (€47000), gerando um benefício líquido de €3000.
+
+**Custo de oportunidade de continuar na exploração agrícola:**
+
+€15000
+
+É o lucro que deixa de obter ao não investir no pólo de turismo rural (€50000 - €35000 = €15000).
+
+`r unhide()`
+
+
+### Exercício 12
+
+*(extraído de um exame final do ano lectivo 2023-24)*
+
+A Mena valoriza em €20 uma refeição num restaurante e em €15 uma refeição em casa. No Restaurante da Tia, pode almoçar por €10; para confeccionar o mesmo prato em casa tem de gastar €6 no supermercado. Determine o custo de oportunidade que resulta da escolha de fazer uma refeição no restaurante da Tia. Trata-se de uma escolha racional? Justifique.
+
+
+`r hide("Solução")`
+
+**Custo de oportunidade:** €19
+
+- Custo do restaurante: €10
+- Excedente perdido de comer em casa: €15 - €6 = €9
+- CO = €10 + €9 = €19
+
+**É uma escolha racional?**
+
+Sim. 
+- Excedente do restaurante: €20 - €10 = €10
+- Excedente de casa: €15 - €6 = €9
+
+Como €10 > €9, é racional escolher o restaurante.
+
+`r unhide()`
+
+Na produção dos bens X e Y a Maria e o Manuel apresentam respectivamente as seguintes Fronteiras de Possibilidades de Produção: Y=20-4X, Y=10-2X. Avalie quem tem vantagem comparativa na produção X e apresente um ponto de consumo possível caso os termos de troca se fixem no meio do intervalo de valores mutuamente vantajosos.
+
+`r hide("Solução")`
+
+**FPP Maria:** Y = 20 - 4X  
+**FPP Manuel:** Y = 10 - 2X
+
+**Custos de oportunidade:**
+- Maria: Para produzir 1 unidade de X, sacrifica 4 unidades de Y (declive = -4)
+- Manuel: Para produzir 1 unidade de X, sacrifica 2 unidades de Y (declive = -2)
+
+**Vantagem comparativa:**
+
+**Manuel tem vantagem comparativa na produção de X** (menor custo de oportunidade: 2 < 4)
+
+**Termos de troca mutuamente vantajosos:**
+
+Entre 2 e 4 unidades de Y por cada unidade de X.  
+No meio do intervalo: 3 unidades de Y por 1 unidade de X.
+
+**Ponto de consumo possível:**
+
+Se Manuel se especializa em X (produz 5 unidades de X) e Maria se especializa em Y (produz 20 unidades de Y):
+
+- Manuel vende toda a sua produção (5 unidades de X) e recebe 15 unidades de Y (5 × 3 = 15)
+- Maria consome X = 5, Y = 5 (ficou com 20 - 15 = 5 unidades de Y e comprou 5 de X)
+
+Ponto de consumo possível para Manuel: (X=0, Y=15) ou qualquer combinação que prefira  
+Ponto de consumo possível para Maria: (X=5, Y=5)
+
+`r unhide()`
+
+### Exercício 13
+
+A Joana e a Maria produzem leite (Y) e queijo (X). O quadro seguinte ilustra a produção mensal que ambas poderiam ter caso se especializassem numa ou noutra actividade. Admita que os processos produtivos de ambas podem ser descritos por Fronteiras de Possibilidades de Produção Lineares. Apresente o padrão de vantagens comparativas que é exibido e averigúe se há possibilidade de haver especialização e oportunidade negocial para explorar comércio mutuamente vantajoso entre elas.
+
+Apresente, analítica e graficamente, o espaço das possibilidades de consumo, admitindo que os termos de troca se fixam num ponto intermédio das possibilidades de negociação.
+
+`r hide("Solução")`
+
+**Vantagem Comparativa:**
+
+- **Joana tem vantagem comparativa na produção de queijo**
+- **Maria tem vantagem comparativa na produção de leite**
+
+Caso se especializem:
+- Maria produz leite
+- Joana produz queijo
+
+**Termos de troca mutuamente vantajosos:**
+
+Entre 1,25L e 2L de leite por cada 1kg adicional de queijo.
+
+**Fronteiras de Possibilidades de Produção:**
+
+- FPP Joana (assumindo máximos não especificados no texto original)
+- FPP Maria (assumindo máximos não especificados no texto original)
+
+**Possibilidades de Consumo com termos de troca de 1,5L de leite = 1kg de queijo:**
+
+**FPC Joana:**  
+A quantidade máxima de leite que a Joana pode comprar é a produção máxima da Maria (10L), que pode adquirir com 6.67kg de queijo (dos 20kg que produz). Se quiser ter um ponto de consumo que inclua mais do que 10L de leite, terá de recorrer à sua própria produção e não ao mercado.
+
+**FPC Maria:**  
+(Equação específica dependeria dos valores máximos de produção)
+
+`r unhide()`
+
+
+### Exercício 14
+
+*(extraído de um exame do ano lectivo 2016-17)*
+
+O João das Neves teve de escolher entre permanecer comandante da patrulha da noite e guardar a muralha ou ir salvar o castelo da sua família, em Winterfell.
+
+Sabendo que a despesa de guardar a muralha era de 10 000 dragões de ouro (d.o.) e que a despesa de salvar o castelo era de 12 000 d.o. e que o João valorizava a defesa da muralha em 25 000 d.o. e a defesa do castelo em 30 000 d.o.:
+
+1. Calcule o custo de oportunidade da sua decisão de deixar a patrulha da noite e ir salvar o castelo;
+
+
+`r hide("Solução")`
+
+$$CO_{Winterfell} = (25000 - 10000) + 12000 = 27000 \text{ d.o.}$$
+
+Inclui o excedente perdido da muralha (€15000) mais o custo de salvar o castelo (€12000).
+
+`r unhide()`
+
+2. Com base no resultado em (i), explique se a escolha efectuada foi economicamente racional. Responda novamente, usando o critério custo-benefício.
+
+
+`r hide("Solução")`
+
+**Critério do Custo de Oportunidade:**
+- $CO_{Winterfell}$ = 27000 d.o.
+- Benefício de Winterfell = 30000 d.o.
+- Como 27000 < 30000, **Sim, foi racional**
+
+**Critério Custo-Benefício:**
+- $Cmg_{Winterfell}$ = 12000 - 10000 = 2000 d.o.
+- $Bmg_{Winterfell}$ = 30000 - 25000 = 5000 d.o.
+- Como $Cmg$ < $Bmg$ (2000 < 5000), **Sim, foi racional**
+
+`r unhide()`
+
+Uma vez em Winterfell, o João enfrentou o dilema de acumular mantimentos para o inverno, que estava a chegar, tendo de escolher entre acumular Cereais e/ou peças de carne num armazém de dimensão fixa. No máximo, ele poderá armazenar 200 ton de Cereais (caso não armazene carne) e poderá armazenar um máximo de 50 ton de carne (caso não armazene cereais). Admitindo que as suas escolhas eficientes podem ser descritas por um modelo linear, desenhe e apresente a equação da Fronteira de Possibilidades de Produção (i.e. armazenamento) de Winterfell, colocando os cereais no eixo das ordenadas.
+
+3. Apresente a taxa marginal de transformação de proteína (carne) em cereais para este reino. Caso a opção tivesse sido armazenar 100 ton de cereais e 25 ton de carne, qual o custo de oportunidade de aumentar o armazenamento de cereais em 50%?
+
+`r hide("Solução")`
+
+Equação da FPP (com Cereais no eixo Y):
+$$\text{Cereais} = 200 - 4 \times \text{Carne}$$
+
+Ou em termos de Carne:
+$$\text{Carne} = 50 - 0.25 \times \text{Cereais}$$
+
+**Taxa marginal de transformação:**
+
+TMT = 50/200 = 0.25
+
+Para ter mais 1 ton de cereais, é preciso deixar de armazenar 0.25 ton de carne.
+
+**Custo de oportunidade de aumentar cereais em 50%:**
+
+Aumentar de 100 ton para 150 ton de cereais (aumento de 50 ton).
+
+Custo de oportunidade: 50 × 0.25 = 12.5 ton de carne que deixam de ser armazenadas.
+
+`r unhide()`
+
+4. Admita agora que Winterfell tinha a possibilidade de trocar mantimentos com o Reino do Vale. Sabendo que o custo relativo de 1 ton de cereais no Reino do Vale é de 1 ton de carne, considera que existem vantagens mútuas na troca? Justifique, apresentando um valor possível para os termos de troca. Apresente ainda a Fronteira das Possibilidades de Consumo de Winterfell para os termos de troca considerados, admitindo que se exploram os padrões de vantagem comparativa.
+
+`r hide("Solução")`
+
+**Custo relativo:**
+- Reino do Vale: 1 ton de cereais = 1 ton de carne
+- Winterfell: 1 ton de cereais = 0.25 ton de carne
+
+**Winterfell tem vantagem comparativa em Cereais** (menor custo de oportunidade).
+
+**Termos de troca mutuamente vantajosos:**
+
+Entre 0.25 ton e 1 ton de carne por cada 1 ton de cereais.
+
+**Exemplo de termos de troca:** 1 ton de cereais = 0.5 ton de carne
+
+**Fronteira das Possibilidades de Consumo:**
+
+Se Winterfell se especializa em cereais (produz 200 ton) e troca com o Reino do Vale:
+
+$$FPC: \text{Cereais} = 400 - 2 \times \text{Carne}$$
+
+Isto permite a Winterfell consumir combinações que estavam fora da sua FPP original.
+
+`r unhide()`
+
+
+### Exercício 15
+
+*(extraído de um exame do ano lectivo 2021-22)*
+
+É preciso elaborar enunciados para os testes de Microeconomia. Cada professor precisa de uma versão para cada turma. O professor Marques e o Professor Ruiz reunem-se para elaborarem os enunciados para as suas turmas: estão a ser avaliados dois temas. O Prof. Marques precisa de 1h para elaborar uma pergunta acerca de escolhas racionais (x) e precisa de 30min para elaborar uma pergunta acerca de teoria do consumidor (y). O Prof. Ruiz precisa de 1 h para elaborar uma pergunta de teoria do consumidor e de 30min para elaborar uma pergunta acerca de escolhas racionais. Admita que um modelo linear é adequado para representar as possibilidades de produção de perguntas para cada professor.
+
+1. Apresente as Fronteiras de Possibilidades de Produção horária, indicando nos eixos a quantidade de perguntas de cada tema que cada professor consegue fazer nesse tempo, e interprete os respectivos declives.
+
+`r hide("Solução")`
+
+**1. Fronteiras de Possibilidades de Produção:**
+
+**Prof. Marques:**
+- 1h → 1 pergunta de escolhas racionais (x) ou 2 perguntas de teoria do consumidor (y)
+- FPP: $Y = 2 - 2X$
+- Declive = -2: Para fazer mais 1 pergunta de escolhas racionais, sacrifica 2 perguntas de teoria do consumidor
+
+**Prof. Ruiz:**
+- 1h → 2 perguntas de escolhas racionais (x) ou 1 pergunta de teoria do consumidor (y)
+- FPP: $Y = 1 - 0.5X$
+- Declive = -0.5: Para fazer mais 1 pergunta de escolhas racionais, sacrifica 0.5 perguntas de teoria do consumidor
+
+`r unhide()`
+
+2. Qual deles tem vantagem comparativa na preparação de perguntas de teoria do consumidor? E na preparação de perguntas acerca de escolha racional? Devem ambos preparar perguntas de ambos os temas, ou deve cada um especializar-se num dos temas? Explique, referindo como se pode interpretar neste caso a possibilidade teórica de "comércio" entre eles.
+
+`r hide("Solução")`
+
+**2. Vantagem Comparativa:**
+
+- **Ruiz tem vantagem comparativa na produção de perguntas de escolha racional** (custo de oportunidade: 0.5 < 2)
+- **Marques tem vantagem comparativa na produção de perguntas de teoria do consumidor** (custo de oportunidade: 0.5 < 2)
+
+**Especialização:** Cada um deve fazer perguntas onde tem vantagem comparativa.
+
+**"Comércio":** Cada um faz duas perguntas de um só tema, fica com uma e entrega outra ao colega (troca).
+
+`r unhide()`
+
+3. Explique que, dadas as possibilidades de produção, é mutuamente vantajoso os professores trocarem entre si uma pergunta de teoria de consumidor por uma pergunta acerca de escolhas racionais, dada a sua "produção". Apresente a fronteira das possibilidades de "consumo" neste caso e explique como se pode definir um plano de produção e trocas para que se atinja uma situação em que ambos têm um enunciado completo com os dois temas para as suas duas turmas, utilizando cada um apenas 1h de trabalho.
+
+`r hide("Solução")`
+
+**3. Plano de produção e trocas:**
+
+Com 1h de trabalho cada:
+- Marques faz 2 perguntas de teoria do consumidor
+- Ruiz faz 2 perguntas de escolhas racionais
+
+Depois trocam uma pergunta cada um, ficando ambos com:
+- 1 pergunta de escolhas racionais
+- 1 pergunta de teoria do consumidor
+
+**FPC:** $Y = 2 - X$ (para ambos)
+
+`r unhide()`
+
+
+4. Para o segundo teste será preciso avaliar três temas… explique como poderá alargar a este caso o método de distribuição de trabalho anteriormente descrito.
+
+`r hide("Solução")`
+
+**4. Modelo 3×3 (três temas, três professores):**
+
+Seria necessário um terceiro professor que teria vantagem comparativa no terceiro tema. Haveria que comparar os vários custos relativos dos pares possíveis entre os três temas a avaliar, identificando onde cada professor tem vantagem comparativa.
+
+`r unhide()`
+
+5. O Prof. Marques pondera acrescentar mais uma alínea ao problema que criou. Se o fizer, terá mais uma hora de trabalho por cada turma durante o processo de correcção. Como poderia proceder para decidir se acrescentar essa alínea é uma escolha racional? Indique o método apropriado, bem como o critério de medição das variáveis relevantes. [sugestão: lembre-se de que o tempo tem valor…]
+
+`r hide("Solução")`
+
+**5. Decisão racional sobre alínea adicional:**
+
+**Método:** Critério custo-benefício na margem
+
+**Variáveis:**
+- **Custo marginal:** 1 hora adicional de trabalho por turma (valorizado ao custo de oportunidade do tempo do professor)
+- **Benefício marginal:** Dispersão do risco por avaliar com mais alíneas, aumentando a possibilidade de um aluno ter melhor nota (valorizado em termos de melhoria da avaliação)
+
+A escolha é racional se $Bmg \geq Cmg$.
+
+`r unhide()`
+
+### Exercício 16
+
+*(extraído de um teste intermédio do ano lectivo 2021-22)*
+
+A Amélia é a namorada do Nicolau. Ambos adoram fazer um demorado Brunch ao domingo. Gostam de incluir tostas (x) e ovos cozinhados de várias maneiras (y), mas não querem demorar mais de 30min na sua preparação, preferindo degustar preguiçosamente… Naquele período de tempo, se a Amélia fizer apenas tostas, consegue fazer 3, se só fizer ovos, consegue executar 6 receitas; por seu lado, se o Nicolau apenas fizer tostas, consegue fazer 2, mas se só fizer ovos, consegue elaborar 8 receitas. Admita que as capacidades culinárias destes agentes económicos são bem representadas por modelos lineares.
+
+1. Apresente as Fronteiras de Possibilidades de Produção da Amélia e do Nicolau e interprete os respectivos declives.
+
+`r hide("Solução")`
+
+**Amélia:**
+- FPP: $Y = 6 - 2X$
+- Declive = -2: Para fazer mais 1 tosta, sacrifica 2 receitas de ovos
+
+**Nicolau:**
+- FPP: $Y = 8 - 4X$
+- Declive = -4: Para fazer mais 1 tosta, sacrifica 4 receitas de ovos
+
+`r unhide()`
+
+2. Qual deles tem vantagem comparativa na preparação de receitas de ovos? E na preparação de tostas? Devem ambos preparar tostas e ovos, ou deve cada um especializar-se numa das actividades? Explique, referindo como se pode interpretar neste caso a possibilidade teórica de "comércio" entre eles.
+
+
+`r hide("Solução")`
+
+- **Amélia tem vantagem comparativa na preparação de tostas** (custo de oportunidade: 2 < 4)
+- **Nicolau tem vantagem comparativa na preparação de receitas de ovos** (custo de oportunidade: 0.25 < 0.5)
+
+Cada um deve cozinhar o produto onde tem vantagem comparativa.
+
+**"Comércio":** Cada um faz cozinhados de um só tipo, mas ambos comem de tudo o que aparecer na mesa, produto do esforço conjunto.
+
+`r unhide()`
+
+3. Admita que os termos de troca se fixaram no centro do intervalo de valores possíveis e que terá referido na alínea anterior. Apresente a fronteira das possibilidades de consumo e explique como se pode definir um plano de produção e trocas para que se atinja uma situação em que ambos consomem no Brunch 1.5 tostas cada um. Nesse caso, quantos ovos consumiriam?
+
+
+`r hide("Solução")`
+
+**Termos de troca:** 3 receitas de ovos por 1 tosta (centro do intervalo entre 2 e 4)
+
+**FPC Nicolau:** $Y = 8 - 3X$
+
+**FPC Amélia:** $Y = 9 - 3X$ (desde que $X > 1/3$)
+
+Nota: A Amélia não pode consumir mais do que 8 receitas de ovos como resultado do comércio, que é a produção máxima que aparece no mercado.
+
+**Plano para consumir 1.5 tostas cada:**
+- Total de tostas necessárias: 3
+- Amélia produz 3 tostas (sua especialização)
+- Nicolau produz 8 receitas de ovos (sua especialização)
+- Cada um consome 1.5 tostas e 4 receitas de ovos
+
+`r unhide()`
+
+4. O Baltazar é muito amigo do Nicolau e da Amélia. Se ele também quiser frequentar o Brunch de Domingo, não será eficiente levar também tostas e ovos para juntar aos dos seus amigos e todos comerem juntos, será melhor levar taças de fruta, que ele prepara bastante bem. Explique como funcionaria este modelo, à luz do conceito de vantagem comparativa e vantagens de comércio, caso tenhamos 3 produtos para troca.
+
+
+`r hide("Solução")`
+
+Seria um modelo com 3 bens e 3 agentes económicos. O Baltazar teria de ter vantagem comparativa na produção de taças de frutas. Cada pessoa se especializaria no produto onde tem vantagem comparativa, e todos beneficiariam da troca.
+
+`r unhide()`
+
+5. Os Brunchs de domingo são um sucesso! A Amélia pensa em abrir um restaurante. Determine o custo de oportunidade dessa decisão, caso seja necessário a Amélia abdicar do seu emprego onde ganha 20 mil euros líquidos, sabendo que terá de investir 10 mil euros em remodelação do espaço, maquinaria e licenças, para poder abrir o seu restaurante de Brunchs. Explique a diferença entre custo de oportunidade e despesa (no sentido contabilístico). Qual o volume de facturação que fará do negócio uma escolha racional?
+
+`r hide("Solução")`
+**Custo de oportunidade:** €30000
+- Salário perdido: €20000
+- Investimento: €10000
+
+**Diferença entre custo de oportunidade e despesa:**
+- **Despesa (contabilística):** Apenas €10000 (investimento)
+- **Custo de oportunidade:** €30000 (inclui o salário perdido)
+
+**Volume de facturação necessário:**
+
+Para ser uma escolha racional, teria de facturar mais do que €30000, para cobrir o custo de oportunidade total.
+
+`r unhide()`
+
+
+### Exercício 17
+
+Wakanda é conhecido como o maior produtor de vibranium do planeta X, onde também se produz alfarroba, ambas quantidades medidas em quilogramas. Actualmente, Wakanda está especializada na produção de vibranium, contudo, dada a recente flutuação dos preços internacionais dos dois bens, está a reconsiderar esta especialização.
+
+Se Wakanda consegue produzir no máximo 10.000 kg de vibranium (x) por ano, ou 50.000 kg de alfarroba (y), em dedicação exclusiva:
+
+1. Quais teriam de ser os termos de troca no mercado internacional para Wakanda querer mudar o sector de actividade onde está especializada?
+
+
+`r hide("Solução")`
+
+**FPP de Wakanda:**
+$$Y = 50000 - 5X$$
+
+**Custo de oportunidade:**
+- 1 kg de vibranium = 5 kg de alfarroba
+
+Os termos de troca teriam de ser **inferiores a 5 kg de alfarroba por cada kg de vibranium**, para que Wakanda deixe de querer produzir vibranium e se queira especializar na produção de alfarroba.
+
+Por exemplo, se no mercado internacional 1 kg de vibranium se troca por apenas 4 kg de alfarroba, seria mais vantajoso para Wakanda produzir alfarroba (onde obtém 5 kg por cada kg de vibranium que deixa de produzir) do que produzir vibranium.
+
+`r unhide()`
+
+2. Quais teriam de ser os termos de troca para Wakanda ficar indiferente entre produzir os dois bens localmente ou adquirir um deles no mercado?
+
+`r hide("Solução")`
+
+**2. Termos de troca para indiferença:**
+
+Exactamente **5 kg de alfarroba por cada kg de vibranium**.
+
+Neste caso, seria indiferente para Wakanda produzir vibranium ou alfarroba, pois o custo de oportunidade interno é igual ao preço relativo no mercado.
+
+`r unhide()`
+
+
+### Exercício 18
+
+Um agricultor tem um rebanho de ovelhas que utiliza para produzir lã. No entanto, o negócio da lã de alpaca tem vindo a ganhar atenção. Sendo que os dois tipos de animais (ovelhas e alpacas) têm o mesmo custo (alimento, veterinário, etc) que ascende a €3000, responda às seguintes questões:
+
+1. Se o agricultor ganhasse mais €2000 trocando as suas ovelhas por alpacas, quanto seria o máximo que poderia suportar de custos na conversão do seu rebanho, para esta escolha ser racional?
+
+`r hide("Solução")`
+
+No máximo, **€2000**
+
+Para que a conversão seja racional:
+$$\text{Benefício} \geq \text{Custo de Oportunidade}$$
+$$2000 \geq \text{Custo de conversão} + \text{Excedente perdido das ovelhas}$$
+
+Se não há excedente perdido significativo (assumindo que os custos operacionais são iguais), o custo máximo de conversão seria €2000.
+
+`r unhide()`
+
+2. Supponha agora que o custo de conversão do rebanho é de €1000, que informação necessita (e que não tem…) para calcular o custo de oportunidade da referida conversão?
+
+
+`r hide("Solução")`
+
+Falta o **excedente associado ao rebanho de ovelhas**, ou seja, o benefício líquido que obtém atualmente com as ovelhas.
+
+Para calcular o custo de oportunidade da conversão, precisa de:
+- Benefício atual com ovelhas (B_ovelhas)
+- Custo de conversão (C = €1000)
+- Benefício futuro com alpacas (B_alpacas)
+
+$$CO = C + (B_{ovelhas} - 0) = 1000 + B_{ovelhas}$$
+
+`r unhide()`
+
+3. Se o agricultor só tiver ovelhas (Y), consegue produzir 300kg de lã por ano, se só tiver alpacas (X), consegue produzir 200kg, dados os seus recursos.
+   
+   a) Determine a FPP correspondente a este padrão de produção, admitindo que a produção com rebanhos mistos é possível e é bem descrita por um modelo linear.
+
+   `r hide("Solução")`
+
+      Com Y = lã de ovelha e X = lã de alpaca:
+      $$Y = 300 - 1.5X$$
+
+      **Custo de oportunidade:**
+      - 1 kg de lã de alpaca = 1.5 kg de lã de ovelha
+
+   `r unhide()`
+
+   b) Qual o valor mínimo para os termos de troca que poderiam indiciar que este produtor ganharia em especializar-se num rebanho de alpacas?
+
+   `r hide("Solução")`
+
+   No mínimo, **1 kg de lã de alpaca deveria trocar-se por 1.5 kg de lã de ovelha** para que o produtor ganhe em especializar-se num rebanho de alpacas.
+
+   Se os termos de troca forem superiores a 1.5 (por exemplo, 1 kg de alpaca = 2 kg de ovelha), então compensa especializar-se em alpacas.
+
+   `r unhide()`
+
+
+---

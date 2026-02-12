@@ -14,6 +14,8 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 4. [Aula Prática 1](slides/aula_pratica_1.qmd)
 5. [Aula Prática 2](slides/aula_pratica_2.qmd)
 
+* [Exercícios](exercises/Capitulo_1.qmd)
+
 ### Capítulo II: Teoria do Consumidor e Procura
 
 6. [Restrição Orçametal](slides/04_Restricao_orcamental.qmd)[📄](slides/04_Restricao_orcamental.html)
@@ -30,3 +32,8 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 
 ### Capítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos
 
+<<<<<<< HEAD
+=======
+## Exercícios
+
+>>>>>>> b7a073a (add exercises chapter 1)
