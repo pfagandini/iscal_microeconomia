@@ -20,7 +20,11 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 7. [Preferências e axiomas de racionalidade](slides/05_Preferencias_axiomas.qmd)[📄](slides/05_Preferencias_axiomas_documento.html)
 8. [TMS e ótimo de consumo](slides/06_TMS_otimo.qmd)[📄](slides/06_TMS_otimo_documento.html)
 
+* [Exercícios](exercises/Capitulo_2.qmd)
+
 ### Capítulo III: Teoría da Produção - Curto Prazo
+
+
 
 ### Capítulo IV: Equilíbrio de Mercado de Curto Prazo
 
@@ -29,9 +33,3 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 ### Capítulo VI: Elasticidades e Intervenções dos Mercados
 
 ### Capítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos
-
-<<<<<<< HEAD
-=======
-## Exercícios
-
->>>>>>> b7a073a (add exercises chapter 1)
