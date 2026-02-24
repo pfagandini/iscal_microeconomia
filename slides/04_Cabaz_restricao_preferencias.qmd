@@ -1,0 +1,439 @@
+---
+title: "Microeconomia"
+subtitle: "Cabaz, Espaço e Restrição Orçamental, Preferências e Racionalidade"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 06_cabaz_restricao_preferencias-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+    echo: false
+    code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+## Onde Estamos no Modelo 🗺️
+
+```{r, engine='tikz', fig.align='center', out.width='50%'}
+\usetikzlibrary{positioning}
+\begin{tikzpicture}[thick, scale=0.9, every node/.style={scale=0.85}]
+  \node[rectangle, draw=blue!60, minimum width=3.5cm] (cons) {Consumidores};
+  \node[rectangle, draw=blue!80, fill=blue!10, minimum width=3.5cm, below=4mm of cons] (bc) {\textbf{Restricao Orcamental}};
+  \node[rectangle, draw=blue!80, fill=blue!10, minimum width=3.5cm, below=4mm of bc] (pref) {\textbf{Preferencias}};
+  \node[rectangle, draw=blue!60, minimum width=3.5cm, below=4mm of pref] (ut) {Utilidade};
+  \node[rectangle, draw=blue!60, minimum width=3.5cm, below=4mm of ut] (ch) {Escolha};
+  \node[rectangle, draw=blue!60, minimum width=3.5cm, below=4mm of ch] (id) {Procura Individual};
+  \node[rectangle, draw=blue!60, minimum width=3.5cm, below=4mm of id] (md) {Procura de Mercado};
+  \draw[thick,blue,->] (cons) -- (bc);
+  \draw[thick,blue,->] (bc) -- (pref);
+  \draw[thick,blue,->] (pref) -- (ut);
+  \draw[thick,blue,->] (ut) -- (ch);
+  \draw[thick,blue,->] (ch) -- (id);
+  \draw[thick,blue,->] (id) -- (md);
+\end{tikzpicture}
+```
+
+- Hoje: **Restrição Orçamental** e **Preferências**
+
+---
+
+# Cabaz e Espaço de Consumo 🛒
+
+## Cabaz de Bens
+
+::: {.callout-note title="Definição: Cabaz de Bens"}
+É composto por quantidades de vários bens. Quando se comparam cabazes, os bens são os mesmos, mas as quantidades de cada um variam.
+:::
+
+. . .
+
+**Exemplo:** Dois bens — bolachas de chocolate ($x$) e laranjas ($y$).
+
+- O cabaz $(3, 2)$ é composto por 3 bolachas e 2 laranjas.
+- Graficamente, é um ponto do espaço $(x, y)$.
+
+## Cabaz no Espaço de Consumo
+
+```{r, engine='tikz', fig.align='center', out.width='50%'}
+\begin{tikzpicture}[scale=1.1]
+  \draw[->] (-0.1,0) -- (4.5,0) node[below right]{$x$ (bolachas)};
+  \draw[->] (0,-0.1) -- (0,4.5) node[above left]{$y$ (laranjas)};
+  \draw[dashed, gray] (3,0) node[below]{$3$} -- (3,2) -- (0,2) node[left]{$2$};
+  \fill[blue!70!black] (3,2) circle (3pt);
+  \node[right=4pt] at (3,2) {$(3,\,2)$};
+\end{tikzpicture}
+```
+
+## Conjunto das Possibilidades de Consumo
+
+- É o conjunto de **todos os cabazes que podem ser adquiridos** com um dado orçamento.
+
+. . .
+
+- O conjunto de cabazes cuja despesa **esgota o orçamento** designa-se **Restrição Orçamental**.
+
+---
+
+# Restrição Orçamental 📊
+
+## O Problema do Consumidor
+
+De entre os cabazes disponíveis, encontrar a **escolha óptima**, dadas as variáveis exógenas:
+
+- Orçamento ($W$)
+- Preços de mercado ($p_x$, $p_y$)
+
+. . .
+
+O consumidor decide as **variáveis endógenas**: $X$ e $Y$.
+
+## Restrição Orçamental — Formulação
+
+$$X p_x + Y p_y = W$$
+
+. . .
+
+**Exemplo:** €10 para gastar em bolachas e laranjas.
+
+- Cada bolacha custa €0,25 → $p_x = 0{,}25$
+- Cada laranja custa €0,10 → $p_y = 0{,}10$
+
+. . .
+
+$$0{,}25\, X + 0{,}10\, Y = 10$$
+
+## Restrição Orçamental — Gráfico
+
+```{r, engine='tikz', fig.align='center', out.width='50%'}
+\begin{tikzpicture}[scale=0.85, every node/.style={scale=0.9}]
+  \draw[->] (-0.1,0) -- (2.7,0) node[below right]{$X$};
+  \draw[->] (0,-0.1) -- (0,5.8) node[above left]{$Y$};
+  \fill[blue!10] (0,0) -- (0,5) -- (2,0) -- cycle;
+  \draw[blue, thick] (0,5) node[left]{$100$} -- (2,0) node[below]{$40$};
+  \draw[->] (1.6,3.3) node[right, scale=0.75]{$0{,}25X+0{,}10Y=10$} -- (1.25,2.3);
+  \node[right, scale=0.65, align=left] at (0.05,0.9){Espaco das\\possibilidades\\de consumo};
+\end{tikzpicture}
+```
+
+- Também se escreve como $Y = 100 - 2{,}5X$
+
+## Declive da Restrição Orçamental
+
+$$X p_x + Y p_y = W \quad\Leftrightarrow\quad Y = {\color{red}{\frac{W}{p_y}}} - {\color{blue}{\frac{p_x}{p_y}}} X$$
+
+. . .
+
+- $\color{red}{\dfrac{W}{p_y}}$: **ordenada na origem** — máximo de $Y$ se $X=0$
+
+. . .
+
+- $\color{blue}{-\dfrac{p_x}{p_y}}$: **declive** — preço relativo de $X$ em termos de $Y$
+
+. . .
+
+**No exemplo:** $Y = {\color{red}{100}} - {\color{blue}{2,5}}\, X$
+
+## Efeito de Mudança de Preço
+
+```{r, engine='tikz', fig.align='center', out.width='75%'}
+\begin{tikzpicture}[scale=1.0, every node/.style={scale=0.82}]
+  % Grafico esquerda: aumento de px
+  \begin{scope}
+    \draw[->] (-0.1,0) -- (2.5,0) node[below right]{$X$};
+    \draw[->] (0,-0.1) -- (0,2.3) node[above left]{$Y$};
+    % W=5, px=3, py=3.5: Y-int=5/3.5=1.43, X-int=5/3=1.67
+    \draw[blue, thick] (0,1.43) node[left]{$\frac{W}{p_y}$} -- (1.67,0) node[below]{$\frac{W}{p_x}$};
+    % Aumento de px para 4: X-int=5/4=1.25
+    \draw[red, thick, dashed] (0,1.43) -- (1.25,0) node[below]{$\frac{W}{\hat{p}_x}$};
+    \draw[->, red] (1.55,0.25) to[bend left=25] (1.1,0.15);
+    \node[scale=0.85] at (1.2,2.0) {Aumento de $p_x$};
+  \end{scope}
+  % Grafico direita: diminuicao de py
+  \begin{scope}[xshift=3.8cm]
+    \draw[->] (-0.1,0) -- (2.5,0) node[below right]{$X$};
+    \draw[->] (0,-0.1) -- (0,2.5) node[above left]{$Y$};
+    % W=5, px=3, py=3.5: Y-int=1.43, X-int=1.67
+    \draw[blue, thick] (0,1.43) node[left]{$\frac{W}{p_y}$} -- (1.67,0) node[below]{$\frac{W}{p_x}$};
+    % Diminuicao de py para 2.5: Y-int=5/2.5=2.0
+    \draw[green!70!black, thick, dashed] (0,2.0) node[left]{$\frac{W}{\hat{p}_y}$} -- (1.67,0);
+    \draw[->, green!70!black] (0.3,1.5) to[bend right=25] (0.2,1.9);
+    \node[scale=0.85] at (1.2,2.3) {Diminuicao de $p_y$};
+  \end{scope}
+\end{tikzpicture}
+```
+
+- Mudança de $p_x$ → roda em torno do intercepto em $Y$
+- Mudança de $p_y$ → roda em torno do intercepto em $X$
+
+## Efeito de Mudança de Orçamento
+
+```{r, engine='tikz', fig.align='center', out.width='50%'}
+\begin{tikzpicture}[scale=1.0, every node/.style={scale=0.85}]
+  \draw[->] (-0.1,0) -- (2.8,0) node[below right]{$X$};
+  \draw[->] (0,-0.1) -- (0,2.6) node[above left]{$Y$};
+  % RO original: W=5, px=3, py=3.5
+  \draw[blue, thick] (0,1.43) -- (1.67,0);
+  % Aumento de W: W=6.5
+  \draw[green!70!black, thick, dashed] (0,1.86) node[left, scale=0.8]{$\frac{W'}{p_y}$} -- (2.17,0) node[below, scale=0.8]{$\frac{W'}{p_x}$};
+  % Diminuicao de W: W=3.5
+  \draw[red, thick, dashed] (0,1.0) node[left, scale=0.8]{$\frac{W''}{p_y}$} -- (1.17,0) node[below, scale=0.8]{$\frac{W''}{p_x}$};
+  \draw[->, thick, green!70!black] (0.9,1.0) -- (1.2,1.3);
+  \draw[->, thick, red] (0.9,1.0) -- (0.65,0.7);
+  \node[scale=0.8] at (0.9,1.0) [above right]{$W$};
+\end{tikzpicture}
+```
+
+- Alteração em $W$ → **translação paralela** — o declive $-p_x/p_y$ não muda
+
+---
+
+# Preferências e Racionalidade 🧠
+
+## O Problema da Escolha
+
+O espaço de consumo diz-nos **o que é possível** comprar.
+
+. . .
+
+Mas não nos diz **o que o consumidor prefere** — precisamos das suas **preferências**.
+
+. . .
+
+**Questão central:** De entre todos os cabazes acessíveis, qual é o melhor?
+
+## Axioma 1 — Desejabilidade
+
+::: {.callout-note title="Axioma 1: Desejabilidade (Não Saciedade)"}
+Consumir mais é melhor.
+:::
+
+. . .
+
+Se $A = (25, 30)$ contém mais de **ambos** os bens do que $B = (20, 20)$, então $A \succ B$.
+
+## Desejabilidade — Gráfico
+
+```{r, engine='tikz', fig.align='center', out.width='55%'}
+\begin{tikzpicture}[scale=0.9, every node/.style={scale=0.85}]
+  \fill[red!20] (0,0) -- (0,2) -- (2,2) -- (2,0) -- cycle;
+  \fill[blue!20] (2,2) -- (4,2) -- (4,4) -- (2,4) -- cycle;
+  \draw[->] (-0.1,0) -- (4.5,0) node[below]{$X$};
+  \draw[->] (0,-0.1) -- (0,4.5) node[left]{$Y$};
+  \fill (2,2) circle (2pt) node[above right]{$A$};
+  \node[align=center, scale=0.7, text width=2.8cm] at (1,1){Cabazes com \textbf{menos}\\ satisfacao do que $A$};
+  \node[align=center, scale=0.7, text width=2.8cm] at (3,3){Cabazes com \textbf{mais}\\ satisfacao do que $A$};
+\end{tikzpicture}
+```
+
+- E se um cabaz tiver **mais de um bem** e **menos do outro**?
+
+## Curva de Indiferença
+
+::: {.callout-note title="Definição: Curva de Indiferença"}
+Conjunto de todos os cabazes **indiferentes entre si**.
+:::
+
+. . .
+
+- Devido à desejabilidade, cabazes indiferentes têm sempre mais de um bem e menos do outro.
+
+. . .
+
+- No espaço $XY$, a curva de indiferença tem **inclinação negativa**.
+
+## Curva de Indiferença — Gráfico
+
+```{r, engine='tikz', fig.align='center', out.width='58%'}
+\begin{tikzpicture}[scale=0.95, every node/.style={scale=0.85},
+  declare function={i(\x)=4.5/\x;}]
+  \draw[->] (-0.1,0) -- (5.5,0) node[below]{$X$};
+  \draw[->] (0,-0.1) -- (0,5.5) node[left]{$Y$};
+  \draw[blue, thick, domain=0.95:4.8, samples=80, variable=\x] plot (\x,{i(\x)});
+  \draw[dotted] (0,{i(1.5)}) node[left]{$35$} -- (1.5,{i(1.5)}) -- (1.5,0) node[below]{$15$};
+  \fill (1.5,{i(1.5)}) circle (2pt) node[above right]{$A$};
+  \draw[dotted] (0,{i(2.25)}) node[left]{$20$} -- (2.25,{i(2.25)}) -- (2.25,0) node[below]{$20$};
+  \fill (2.25,{i(2.25)}) circle (2pt) node[above right]{$B$};
+  \draw[dotted] (0,{i(3)}) node[left]{$15$} -- (3,{i(3)}) -- (3,0) node[below]{$30$};
+  \fill (3,{i(3)}) circle (2pt) node[above right]{$C$};
+  \node at (1.3,{i(1.1)+0.4}){$U_1$};
+\end{tikzpicture}
+```
+
+$A$, $B$ e $C$ são cabazes **indiferentes** — pertencem à mesma curva $U_1$.
+
+## Mapa de Indiferenças
+
+```{r, engine='tikz', fig.align='center', out.width='58%'}
+\begin{tikzpicture}[scale=0.9, every node/.style={scale=0.8},
+  declare function={i(\x,\u)=\u/\x;}]
+  \draw[->] (-0.1,0) -- (5.5,0) node[below]{$X$};
+  \draw[->] (0,-0.1) -- (0,5.5) node[left]{$Y$};
+  \draw[domain=0.5:5, samples=80, variable=\x] plot (\x,{i(\x,1.5)}) node[right]{$U_1$};
+  \draw[blue, domain=1:5, samples=80, variable=\x] plot (\x,{i(\x,3)}) node[right]{$U_2$};
+  \draw[blue!60!cyan, domain=1.6:5, samples=80, variable=\x] plot (\x,{i(\x,5)}) node[right]{$U_3$};
+  \draw[->, thick, green!60!black] (0.8,0.8) -- (3.5,3.5) node[below right, scale=0.85]{Satisfação crescente};
+\end{tikzpicture}
+```
+
+## Axioma 2 — Completude
+
+::: {.callout-note title="Axioma 2: Preferências Completas"}
+Dados dois cabazes, o consumidor sabe sempre dizer qual a relação de preferências entre eles. Todos os cabazes pertencem a uma curva de indiferença.
+:::
+
+. . .
+
+- Quanto mais alta a curva onde se localiza um cabaz, maior a satisfação.
+
+## Axioma 3 — Transitividade
+
+::: {.callout-note title="Axioma 3: Preferências Transitivas"}
+Se $A$ é preferido a $B$, e $B$ é preferido a $C$, então $A$ é preferido a $C$.
+:::
+
+. . .
+
+Consequência directa: **as curvas de indiferença não se podem cruzar!**
+
+## Curvas de Indiferença Não se Cruzam
+
+```{r, engine='tikz', fig.align='center', out.width='75%'}
+\begin{tikzpicture}[scale=1.1, every node/.style={scale=0.85}]
+  % U1: y=2/x  and  U2: y=3/(x+0.5)  cross at C=(1,2)
+  % Proof: 2/x = 3/(x+0.5) => 2x+1=3x => x=1, y=2
+  % A=(2,1)   on U1: 2/2=1      OK
+  % D=(2,1.2) on U2: 3/2.5=1.2  OK  =>  D directly above A
+
+  \draw[->] (-0.1,0) -- (5.3,0) node[below]{$X$};
+  \draw[->] (0,-0.1) -- (0,5.3) node[left]{$Y$};
+
+  \draw[thick, domain=0.42:4.8, samples=120, variable=\x]
+    plot (\x, {2/\x}) node[right]{$U_1$};
+
+  \draw[thick, blue, domain=0.12:4.8, samples=120, variable=\x]
+    plot (\x, {3/(\x+0.5)}) node[right]{$U_2$};
+
+  \fill[red]  (1,2)   circle (3pt)   node[above right]{$C$};
+  \fill       (2,1)   circle (2.5pt) node[below right]{$A$};
+  \fill[blue] (2,1.2) circle (2.5pt) node[above right]{$D$};
+
+  \draw[<->, red!80, thick] (2.4,1.0) -- (2.4,1.2)
+    node[midway, right, scale=0.75]{mais $Y$};
+
+  \node[align=left, scale=0.85] at (3.3,4.8){$D \succ A$: mesmo $X$, mais $Y$};
+  \node[align=left, scale=0.85] at (3.3,4.2){$D \sim C$ (ambos em $U_2$)};
+  \node[align=left, scale=0.85] at (3.3,3.6){$C \sim A$ (ambos em $U_1$)};
+  \node[align=left, scale=0.85, red] at (3.3,3.0){$\Rightarrow D \sim A$?!\ Contradicao!};
+\end{tikzpicture}
+```
+
+## Curvas de Indiferença Não se Cruzam
+
+The logic of the diagram:
+
+- $C=(1,2)$ is the actual intersection — point on **both** curves simultaneously  
+- $A=(2,1)$ is on $U_1$ only; $D=(2,1.2)$ is on $U_2$ only — same $X$, $D$ has more $Y$  
+- Arrow makes the "$D \succ A$" visually immediate  
+- The contradiction is now geometrically clear: the curves really do cross
+
+## Racionalidade do Consumidor
+
+::: {.callout-note title="Preferências Racionais"}
+Em contexto de desejabilidade, as preferências são **racionais** se forem **completas** e **transitivas**.
+:::
+
+. . .
+
+Outras hipóteses da Teoria do Consumidor:
+
+- **Informação completa** sobre preços e características dos bens
+- **Continuidade** do espaço orçamental
+- **Independência** das escolhas entre consumidores
+
+---
+
+# Exercícios ✏️
+
+## Exercício 1 (Escolha Múltipla)
+
+O orçamento de um consumidor é $W = 60$€, $p_x = 3$€ e $p_y = 4$€. Qual é a equação da restrição orçamental na forma $Y = f(X)$?
+
+. . .
+
+**(A)** $Y = 20 - \dfrac{4}{3} X$ $\qquad$ **(B)** $Y = 15 - \dfrac{3}{4} X$
+
+**(C)** $Y = 15 - \dfrac{4}{3} X$ $\qquad$ **(D)** $Y = 20 - \dfrac{3}{4} X$
+
+. . .
+
+::: {.callout-tip title="Resposta: (B)"}
+$Y = \dfrac{60}{4} - \dfrac{3}{4} X = 15 - 0{,}75\, X$
+:::
+
+## Exercício 2 (Escolha Múltipla)
+
+Com preferências racionais e desejabilidade, qual afirmação é **verdadeira**?
+
+. . .
+
+**(A)** Dois cabazes são indiferentes mesmo que um tenha mais de ambos os bens.
+
+**(B)** As curvas de indiferença têm inclinação positiva.
+
+**(C)** Curvas mais afastadas da origem representam maior satisfação.
+
+**(D)** As curvas de indiferença podem cruzar-se se as preferências forem transitivas.
+
+. . .
+
+::: {.callout-tip title="Resposta: (C)"}
+Pela desejabilidade, cabazes com mais quantidade são preferidos — curvas mais afastadas da origem correspondem a maior satisfação.
+:::
+
+## Exercício 3 (Desenvolvimento)
+
+Um consumidor dispõe de €120 para gastar em $X$ (€4/un.) e $Y$ (€6/un.).
+
+**a)** Equação da restrição orçamental na forma $Y = f(X)$. Identifique declive e ordenada na origem.
+
+**b)** O preço de $X$ sobe para €6. O que acontece graficamente?
+
+**c)** O consumidor recebe um subsídio de €60 (lump-sum). Efeito sobre a restrição?
+
+. . .
+
+::: {.callout-tip title="Solução"}
+**a)** $4X + 6Y = 120 \Rightarrow Y = 20 - \tfrac{2}{3}X$. Declive: $-\tfrac{2}{3}$; Ordenada na origem: $20$.
+
+**b)** Com $p_x = 6$: $Y = 20 - X$. O intercepto em $Y$ mantém-se em $20$; o intercepto em $X$ passa de $30$ para $20$. A RO roda para dentro em torno de $(0,\,20)$.
+
+**c)** Com $W = 180$: $Y = 30 - \tfrac{2}{3}X$. Translação paralela para fora — o declive não muda.
+:::

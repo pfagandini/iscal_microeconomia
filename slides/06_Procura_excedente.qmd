@@ -1,0 +1,345 @@
+---
+title: "Microeconomia"
+subtitle: "Procura: Agregada, Linear. Excedente do Consumidor"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 08_procura_excedente-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+    echo: false
+    code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+## Recapitulação 🔄
+
+Nas aulas anteriores:
+
+- **Restrição Orçamental** e **Preferências**
+- **Função de Utilidade** — natureza ordinal
+- **1.ª Lei de Gossen**: utilidade marginal decrescente
+- **2.ª Lei de Gossen**: $|TMS| = p_x/p_y$ no óptimo
+- **Procura Individual**: via preço-consumo
+
+. . .
+
+Hoje: **Procura de mercado**, **modelos lineares** e **excedente do consumidor**
+
+---
+
+# Procura de Mercado (Agregada) 📊
+
+## Da Individual à de Mercado
+
+- Da determinação do óptimo deduz-se a **procura individual**
+
+. . .
+
+- **Por adição horizontal** das procuras individuais, obtém-se a **procura de mercado**:
+
+$$Q^D(P) = \sum_{i=1}^{n} Q^D_i(P)$$
+
+. . .
+
+- A procura de mercado herda **todas as propriedades** das procuras individuais.
+
+## Agregação Horizontal
+
+```{r, engine='tikz', fig.align='center', out.width='90%'}
+\begin{tikzpicture}[scale=0.72, every node/.style={scale=0.78}]
+  % Consumidor 1: Q1 = 4 - P (P_max=4, Q_max=4)
+  \begin{scope}
+    \draw[->] (-0.1,0) -- (4.8,0) node[below]{$Q$};
+    \draw[->] (0,-0.1) -- (0,4.8) node[above]{$P$};
+    \draw[blue, thick] (0,4) node[left]{$4$} -- (4,0) node[below]{$4$};
+    \node[blue] at (3.2,0.7){$D_1$};
+    \node at (2,-0.9){\small Consumidor 1};
+  \end{scope}
+  \node at (5.5,2.0){$+$};
+  % Consumidor 2: Q2 = 6 - 2P (P_max=3, Q_max=6)
+  \begin{scope}[xshift=6.2cm]
+    \draw[->] (-0.1,0) -- (4.8,0) node[below]{$Q$};
+    \draw[->] (0,-0.1) -- (0,4.8) node[above]{$P$};
+    \draw[blue, thick] (0,3) node[left]{$3$} -- (3,0) node[below]{$6$};
+    \node[blue] at (2.5,0.7){$D_2$};
+    \node at (1.5,-0.9){\small Consumidor 2};
+  \end{scope}
+  \node at (11.8,2.0){$=$};
+  % Mercado:
+  % Para P in (3,4): so D1 ativa -> Q = 4-P -> P = 4-Q (kink em Q=1, P=3)
+  % Para P <= 3: Q = (4-P)+(6-2P) = 10-3P -> P = 10/3 - Q/3 (kink em Q=1, P=3 ate Q=10, P=0)
+  \begin{scope}[xshift=12.8cm]
+    \draw[->] (-0.1,0) -- (4.8,0) node[below]{$Q$};
+    \draw[->] (0,-0.1) -- (0,4.8) node[above]{$P$};
+    % Segmento superior: P de 4 a 3, Q de 0 a 1 => P = 4-Q
+    \draw[green!70!black, thick] (0,4) node[left]{$4$} -- (1,3);
+    % Segmento inferior: P de 3 a 0, Q de 1 a 10 (escala: mostrar ate Q=4.5 => P=10/3-4.5/3=1.83)
+    \draw[green!70!black, thick] (1,3) -- (4.5,{10/3-4.5/3});
+    \draw (0,3) node[left]{$3$};
+    \fill (1,3) circle (2pt);
+    \node[green!70!black] at (3.5,0.7){$D^M$};
+    \node at (2.2,-0.9){\small Mercado};
+  \end{scope}
+\end{tikzpicture}
+```
+
+- Para $P > 3$: só $D_1$ activa — $Q = 4 - P$
+- Para $P \leq 3$: ambas activas — $Q = 10 - 3P$ (cotovelo em $P = 3$)
+
+## Propriedades da Procura de Mercado
+
+A procura de mercado herda as propriedades individuais:
+
+- **Inclinação negativa**: ao subir o preço, diminui a quantidade — *Lei da Procura*
+
+. . .
+
+- Desloca para **fora** se: rendimento aumenta (bem normal), preço de substituto sobe, preço de complemento desce
+
+. . .
+
+- Desloca para **dentro** se: rendimento diminui (bem normal), preço de substituto desce, preço de complemento sobe
+
+---
+
+# Modelos Lineares para a Procura 📐
+
+## Porquê Modelos Lineares?
+
+Para simplificação de cálculo, usa-se frequentemente a procura **linear**:
+
+. . .
+
+- **Forma directa** (quantidade em função do preço):
+$$Q = a - b \cdot P$$
+
+. . .
+
+- **Forma inversa** (preço em função da quantidade):
+$$P = \frac{a}{b} - \frac{1}{b} Q$$
+
+. . .
+
+::: {.callout-warning}
+Qualquer que seja a forma, representa-se **sempre** no espaço $(Q, P)$, com $P$ no eixo vertical — convenção de Marshall (1895).
+:::
+
+## Interpretação do Modelo Linear
+
+```{r, engine='tikz', fig.align='center', out.width='58%'}
+\begin{tikzpicture}[scale=0.9, every node/.style={scale=0.88},
+  declare function={d(\x)=4-\x;}]
+  \draw[->] (-0.1,0) -- (5.3,0) node[below right]{$Q$};
+  \draw[->] (0,-0.1) -- (0,5.3) node[above left]{$P$};
+  \draw[blue, thick, domain=0:4, variable=\x] plot (\x,{d(\x)});
+  \draw (0,4) node[left]{$\frac{a}{b}$};
+  \draw (4,0) node[below]{$a$};
+  \draw[dashed] (2,0) node[below]{$q_1$} -- (2,{d(2)}) -- (0,{d(2)}) node[left]{$p_1$};
+  \fill (2,{d(2)}) circle (2pt);
+  \node[blue] at (3.5,0.8){$D$};
+  \node[scale=0.8] at (3,3.3){$Q = a - b \cdot P$};
+\end{tikzpicture}
+```
+
+- $\frac{a}{b}$: preço máximo (choke price) — acima disto $Q^D = 0$
+- $a$: quantidade máxima — ao preço zero
+- Ao preço $p_1$, a quantidade óptima procurada é $q_1$
+
+## Deslocações da Procura Linear
+
+```{r, engine='tikz', fig.align='center', out.width='58%'}
+\begin{tikzpicture}[scale=0.9, every node/.style={scale=0.85},
+  declare function={d(\x)=4-\x; d2(\x)=5-\x; d3(\x)=2.5-\x;}]
+  \draw[->] (-0.1,0) -- (5.8,0) node[below right]{$Q$};
+  \draw[->] (0,-0.1) -- (0,5.8) node[above left]{$P$};
+  \draw[blue, thick, domain=0:4, variable=\x] plot (\x,{d(\x)});
+  \node[blue] at (3.5,0.8){$D$};
+  \draw[green!70!black, thick, dashed, domain=0:5, variable=\x] plot (\x,{d2(\x)});
+  \node[green!70!black] at (4.5,0.8){$D'$};
+  \draw[red, thick, dashed, domain=0:2.5, variable=\x] plot (\x,{d3(\x)});
+  \node[red] at (2,0.2){$D''$};
+  \draw[->, thick, green!70!black] (2,{d(2)}) -- (3,{d2(3)});
+  \draw[->, thick, red] (2,{d(2)}) -- (1,{d3(1)});
+  \node[green!70!black, scale=0.8] at (4,3.5){Aumento de $W$};
+  \node[green!70!black, scale=0.8] at (4,3.0){ou sub. mais caro};
+  \node[red, scale=0.8] at (0.8,2.0){Reducao de $W$};
+  \node[red, scale=0.8] at (0.8,1.5){ou sub. mais barato};
+\end{tikzpicture}
+```
+
+---
+
+# Excedente do Consumidor 💰
+
+## Preço de Reserva
+
+::: {.callout-note title="Preço de Reserva"}
+O **preço de reserva** é o máximo que o consumidor está disposto a pagar por uma unidade adicional do bem. É dado pela curva de **procura inversa** avaliada na quantidade em causa.
+:::
+
+. . .
+
+Da 1.ª Lei de Gossen: à medida que se consome mais, a $Umg$ decresce → o preço de reserva também decresce.
+
+. . .
+
+A curva de procura **é** a curva dos preços de reserva marginais.
+
+## Excedente do Consumidor
+
+::: {.callout-note title="Excedente do Consumidor"}
+Por unidade transacionada, é a diferença entre o **preço de reserva** e o **preço de mercado** efectivamente pago.
+
+O excedente total é a **área abaixo da curva de procura e acima do preço de mercado**.
+:::
+
+## Excedente do Consumidor — Gráfico
+
+```{r, engine='tikz', fig.align='center', out.width='60%'}
+\begin{tikzpicture}[scale=1.0, every node/.style={scale=0.9},
+  declare function={d(\x)=4-\x;}]
+  \draw[->] (-0.1,0) -- (5.3,0) node[below right]{$Q$};
+  \draw[->] (0,-0.1) -- (0,5.3) node[above left]{$P$};
+  \draw[blue, thick, domain=0:4, variable=\x] plot (\x,{d(\x)});
+  \node[blue] at (3.5,0.8){$D$};
+  \draw (0,4) node[left]{$\frac{a}{b}$};
+  \draw[dashed] (2,0) node[below]{$q_1$} -- (2,{d(2)}) -- (0,{d(2)}) node[left]{$p_1$};
+  \fill (2,{d(2)}) circle (2pt);
+  % Despesa
+  \fill[red!25] (0,0) -- (2,0) -- (2,{d(2)}) -- (0,{d(2)}) -- cycle;
+  \node[red!80!black, scale=0.75] at (1,0.9){Despesa\\$p_1 \times q_1$};
+  % Excedente
+  \fill[green!25] (0,{d(2)}) -- (0,4) -- (2,{d(2)}) -- cycle;
+  \node[green!70!black, scale=0.75] at (0.65,3.2){Excedente\\do Consumidor};
+\end{tikzpicture}
+```
+
+## Cálculo do Excedente do Consumidor
+
+Para procura inversa $P = \dfrac{a}{b} - \dfrac{1}{b} Q$, ao preço $p_1$:
+
+. . .
+
+$$EC = \frac{1}{2} \times q_1 \times \left(\frac{a}{b} - p_1\right)$$
+
+. . .
+
+**Exemplo:** $P = 10 - 2Q$, preço de mercado $p = 4$.
+
+- Quantidade: $Q = \dfrac{10-4}{2} = 3$
+- $EC = \dfrac{1}{2} \times 3 \times (10-4) = \dfrac{1}{2} \times 3 \times 6 = 9$
+
+## Variação do Excedente com o Preço
+
+```{r, engine='tikz', fig.align='center', out.width='58%'}
+\begin{tikzpicture}[scale=1.0, every node/.style={scale=0.88},
+  declare function={d(\x)=4-\x;}]
+  \draw[->] (-0.1,0) -- (5.3,0) node[below right]{$Q$};
+  \draw[->] (0,-0.1) -- (0,5.3) node[above left]{$P$};
+  \draw[blue, thick, domain=0:4, variable=\x] plot (\x,{d(\x)});
+  % EC ao preco alto p0=3 -> q0=1
+  \fill[green!20] (0,{d(1)}) -- (0,4) -- (1,{d(1)}) -- cycle;
+  % Ganho com descida de p0=3 para p1=1 -> q1=3
+  \fill[green!40] (0,{d(3)}) -- (0,{d(1)}) -- (1,{d(1)}) -- (1,{d(3)}) -- cycle;
+  \fill[green!40] (1,{d(3)}) -- (1,{d(1)}) -- (3,{d(3)}) -- cycle;
+  % Precos
+  \draw[dashed] (1,0) node[below]{$q_0$} -- (1,{d(1)}) -- (0,{d(1)}) node[left]{$p_0$};
+  \draw[dashed] (3,0) node[below]{$q_1$} -- (3,{d(3)}) -- (0,{d(3)}) node[left]{$p_1$};
+  % Anotacoes
+  \draw[<-, thick] (0.4,3.2) -- (-0.5,3.8) node[left, scale=0.75]{EC ao\\preco $p_0$};
+  \draw[<-, thick] (1.5,1.8) -- (3.5,3.5) node[right, scale=0.75]{Ganho de EC\\com $p_0 \to p_1$};
+\end{tikzpicture}
+```
+
+Quando o preço **desce** de $p_0$ para $p_1$, o excedente do consumidor **aumenta**.
+
+---
+
+# Exercícios ✏️
+
+## Exercício 1 (Escolha Múltipla)
+
+A procura de mercado é $Q^D = 120 - 4P$. Se o preço de mercado é $P = 10$, qual é o excedente do consumidor?
+
+. . .
+
+**(A)** $EC = 200$ $\quad$ **(B)** $EC = 800$ $\quad$ **(C)** $EC = 400$ $\quad$ **(D)** $EC = 1600$
+
+. . .
+
+::: {.callout-tip title="Resposta: (B)"}
+Procura inversa: $P = 30 - \tfrac{1}{4}Q$.
+
+$Q = 120 - 40 = 80$. Preço máximo: $30$.
+
+$EC = \tfrac{1}{2} \times 80 \times (30-10) = \tfrac{1}{2} \times 80 \times 20 = 800$.
+:::
+
+## Exercício 2 (Escolha Múltipla)
+
+Dois consumidores: $Q_1^D = 8 - 2P$ e $Q_2^D = 6 - P$. Qual é a procura de mercado para $P \leq 4$?
+
+. . .
+
+**(A)** $Q^D = 14 - 3P$ $\quad$ **(B)** $Q^D = 14 - 2P$
+
+**(C)** $Q^D = 6 - 3P$ $\quad$ **(D)** $Q^D = 8 - 3P$
+
+. . .
+
+::: {.callout-tip title="Resposta: (A)"}
+Para $P \leq 4$ (ambos activos): $Q^D = (8-2P) + (6-P) = 14 - 3P$.
+
+Para $P \in (4, 6]$: só $Q_2^D = 6-P$ activo. Para $P > 6$: $Q^D = 0$.
+:::
+
+## Exercício 3 (Desenvolvimento)
+
+A procura de mercado de um bem é $Q^D = 200 - 5P$.
+
+**a)** Escreva a equação da procura inversa.
+
+**b)** Se $P = 20$, calcule a quantidade transacionada e o excedente do consumidor.
+
+**c)** O preço desce para $P = 10$. Qual o novo excedente? Qual o ganho para os consumidores?
+
+. . .
+
+::: {.callout-tip title="Solução"}
+**a)** $P = 40 - \tfrac{Q}{5}$. Preço máximo: €40.
+
+**b)** $Q = 200 - 100 = 100$. $EC = \tfrac{1}{2} \times 100 \times (40-20) = 1000$.
+
+**c)** $Q = 200 - 50 = 150$. $EC = \tfrac{1}{2} \times 150 \times (40-10) = 2250$.
+
+Ganho: $2250 - 1000 = \mathbf{1250}$.
+:::

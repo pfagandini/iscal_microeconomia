@@ -1,0 +1,386 @@
+---
+title: "Microeconomia"
+subtitle: "Função de Utilidade, 2.ª Lei de Gossen, Procura Individual"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 07_utilidade_gossen_procura-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+    echo: false
+    code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+## Recapitulação 🔄
+
+Na aula anterior:
+
+- **Cabaz de bens** e espaço de consumo
+- **Restrição Orçamental**: $Xp_x + Yp_y = W$
+- **Preferências**: desejabilidade, completude, transitividade
+- **Curvas de indiferença**: inclinação negativa, não se cruzam
+
+. . .
+
+Hoje: **Função de utilidade**, **otimização** e **procura individual**
+
+---
+
+# Taxa Marginal de Substituição (TMS) 🔁
+
+## TMS — Definição
+
+::: {.callout-note title="Taxa Marginal de Substituição"}
+É a taxa à qual o consumidor está disposto a trocar um bem pelo outro ficando **indiferente**. Define-se como a quantidade de $Y$ de que está disposto a prescindir para ter mais uma unidade de $X$, mantendo a utilidade constante:
+$$TMS = \frac{\Delta Y}{\Delta X}\bigg|_{\Delta U = 0}$$
+:::
+
+. . .
+
+Ao longo da curva de indiferença convexa, $|TMS|$ é **decrescente** — valorizamos mais o bem que temos em menor quantidade.
+
+## TMS — Gráfico
+
+```{r, engine='tikz', fig.align='center', out.width='60%'}
+\begin{tikzpicture}[scale=0.95, every node/.style={scale=0.85},
+  declare function={i(\x)=4.5/\x;}]
+  \draw[->] (-0.1,0) -- (5.5,0) node[below]{$X$};
+  \draw[->] (0,-0.1) -- (0,5.5) node[left]{$Y$};
+  \draw[blue, thick, domain=0.95:4.8, samples=80, variable=\x] plot (\x,{i(\x)});
+  \draw[dotted] (0,{i(1.5)}) node[left]{$35$} -- (1.5,{i(1.5)}) -- (1.5,0) node[below]{$15$};
+  \fill (1.5,{i(1.5)}) circle (2pt) node[above right]{$A$};
+  \draw[dotted] (0,{i(3)}) node[left]{$15$} -- (3,{i(3)}) -- (3,0) node[below]{$30$};
+  \fill (3,{i(3)}) circle (2pt) node[above right]{$C$};
+  % Seta delta Y
+  \draw[orange, ->, thick] (1.5,{i(1.5)}) -- (1.5,{i(3)});
+  \node[orange, left, scale=0.8] at (1.5,{(i(1.5)+i(3))/2}){$\Delta Y < 0$};
+  % Seta delta X
+  \draw[orange, ->, thick] (1.5,{i(3)}) -- (3,{i(3)});
+  \node[orange, below, scale=0.8] at (2.25,{i(3)}){$\Delta X > 0$};
+  \node[scale=0.8] at (4,4.5){$TMS = \dfrac{\Delta Y}{\Delta X} \approx -1{,}3$};
+\end{tikzpicture}
+```
+
+---
+
+# Função de Utilidade 📈
+
+## Função de Utilidade — Definição
+
+::: {.callout-note title="Função de Utilidade"}
+Representação numérica da relação de preferência:
+$$U(A) > U(B) \;\Leftrightarrow\; A \text{ é preferido a } B$$
+$$U(A) = U(B) \;\Leftrightarrow\; A \text{ é indiferente a } B$$
+:::
+
+## Função de Utilidade — Natureza Ordinal
+
+A função de utilidade é uma **relação ordinal** — ordena cabazes, mas o valor por si só **não tem significado cardinal**.
+
+. . .
+
+**Consequência:** muitas funções utilidade expressam as mesmas preferências — basta preservar a ordenação.
+
+. . .
+
+**Exemplo:** $A(20,20) \succ B(10,10)$ — todas estas funções descrevem as mesmas preferências:
+$$U = x^{0{,}5}y^{0{,}5}, \quad U = 10x^{0{,}5}y^{0{,}5}, \quad U = 0{,}5(\ln x + \ln y)$$
+
+## Curvas de Indiferença e Função Utilidade
+
+Uma curva de indiferença é o conjunto de todos os cabazes com a **mesma utilidade** $\bar{U}$:
+
+$$\forall(x,y)\colon U(x,y) = \bar{U} \quad\Leftrightarrow\quad \Delta U = 0$$
+
+---
+
+# Utilidade Marginal e Leis de Gossen 📉
+
+## Utilidade Total e Utilidade Marginal
+
+- **Utilidade total** $U(x)$: satisfação ao consumir uma quantidade de um bem.
+
+. . .
+
+- **Utilidade marginal**: utilidade fornecida por **uma unidade adicional**:
+$$Umg_x = \frac{\Delta U}{\Delta X} = U'_x$$
+
+## Utilidade Total vs. Utilidade Marginal
+
+```{r, engine='tikz', fig.align='center', out.width='80%'}
+\begin{tikzpicture}[scale=0.78, every node/.style={scale=0.8},
+  declare function={f(\x)=4*\x^(0.4); g(\x)=1.6*\x^(-0.6);}]
+  % Grafico esquerdo: Utilidade Total
+  \begin{scope}
+    \draw[->] (0,-0.1) -- (0,4.3) node[left]{$U$};
+    \draw[->] (-0.1,0) -- (4.5,0) node[below]{$X$};
+    \draw[blue, thick, domain=0:4.3, samples=80, variable=\x] plot (\x,{f(\x)});
+    \draw[dashed] (0.8,0) node[below]{$x_0$} -- (0.8,{f(0.8)}) -- (0,{f(0.8)}) node[left]{$U(x_0)$};
+    \draw[dashed] (3,0) node[below]{$x_1$} -- (3,{f(3)}) -- (0,{f(3)}) node[left]{$U(x_1)$};
+    \node[blue] at (3.5,{f(3.8)+0.15}){$U(x)$};
+    \node at (2.2,-0.7){Utilidade Total};
+  \end{scope}
+  % Grafico direito: Utilidade Marginal
+  \begin{scope}[xshift=5.5cm]
+    \draw[->] (0,-0.1) -- (0,4.3) node[left]{$Umg_x$};
+    \draw[->] (-0.1,0) -- (4.5,0) node[below]{$X$};
+    \draw[red, thick, domain=0.2:4.3, samples=80, variable=\x] plot (\x,{g(\x)});
+    \draw[dashed] (0.8,0) node[below]{$x_0$} -- (0.8,{g(0.8)}) -- (0,{g(0.8)}) node[left, scale=0.8]{$Umg(x_0)$};
+    \draw[dashed] (3,0) node[below]{$x_1$} -- (3,{g(3)}) -- (0,{g(3)}) node[left, scale=0.8]{$Umg(x_1)$};
+    \node[red] at (3.5,{g(3.8)+0.15}){$Umg_x$};
+    \node at (2.2,-0.7){Utilidade Marginal};
+  \end{scope}
+\end{tikzpicture}
+```
+
+Aproximamo-nos do ponto de saciedade → $Umg \to 0$
+
+## 1.ª Lei de Gossen
+
+::: {.callout-important title="1.ª Lei de Gossen — Utilidade Marginal Decrescente"}
+Uma unidade adicional de um bem tem uma utilidade adicional **cada vez menor** à medida que o consumo aumenta — a **utilidade marginal é decrescente**.
+:::
+
+. . .
+
+**Preço de reserva:** máximo que o consumidor está disposto a pagar por mais uma unidade. À medida que consome mais, a disponibilidade a pagar diminui.
+
+## TMS e Utilidade Marginal
+
+Ao longo da curva de indiferença, $\Delta U = 0$:
+
+$$\Delta U = Umg_x \cdot \Delta X + Umg_y \cdot \Delta Y = 0$$
+
+. . .
+
+Isolando:
+
+$$\boxed{TMS = \frac{\Delta Y}{\Delta X} = -\frac{Umg_x}{Umg_y}}$$
+
+---
+
+# Escolha Óptima e 2.ª Lei de Gossen ⭐
+
+## Escolha Óptima do Consumidor
+
+::: {.callout-note title="Escolha Óptima"}
+É o ponto de consumo que maximiza a utilidade sujeito ao orçamento disponível:
+$$\max_{x,y} U(x,y) \quad \text{s.a.} \quad Xp_x + Yp_y = W$$
+:::
+
+## Escolha Óptima — Gráfico
+
+```{r, engine='tikz', fig.align='center', out.width='60%'}
+\begin{tikzpicture}[scale=0.9, every node/.style={scale=0.85},
+  declare function={ic(\x,\u)=\u/\x; bc(\x)=10/3.5-(3/3.5)*\x;}]
+  \draw[->] (-0.1,0) -- (5.5,0) node[below right]{$X$};
+  \draw[->] (0,-0.1) -- (0,5.5) node[above left]{$Y$};
+  % RO
+  \draw[blue, thick, domain=0:{10/3}, samples=2, variable=\x] plot (\x,{bc(\x)});
+  \node[blue, scale=0.8] at (2.8,0.6){RO};
+  % Curvas indiferenca
+  \draw[domain=0.9:5, samples=80, variable=\x] plot (\x,{ic(\x,1.5)}) node[right, scale=0.8]{$U_1$};
+  \draw[red, domain=1.3:5, samples=80, variable=\x] plot (\x,{ic(\x,2.5)}) node[right, scale=0.8]{$U^*$};
+  \draw[gray, dashed, domain=2.1:5, samples=80, variable=\x] plot (\x,{ic(\x,4.2)}) node[right, scale=0.8]{$U_3$ (inatingivel)};
+  % Optimo
+  % bc(x) = ic(x,u*) e declives iguais: -px/py = -u*/x^2 => u* = px/py * x^2
+  % bc: 10/3.5 - 3/3.5*x = u/x => solve: x=1.67, u=2.5
+  \fill[red] (1.67,{ic(1.67,2.5)}) circle (2.5pt);
+  \draw[dashed] (1.67,0) node[below]{$x^*$} -- (1.67,{ic(1.67,2.5)}) -- (0,{ic(1.67,2.5)}) node[left]{$y^*$};
+\end{tikzpicture}
+```
+
+## 2.ª Lei de Gossen
+
+No ponto óptimo, o declive da RO iguala o declive da curva de indiferença:
+
+$$-\frac{p_x}{p_y} = TMS = -\frac{Umg_x}{Umg_y}$$
+
+. . .
+
+::: {.callout-important title="2.ª Lei de Gossen"}
+No óptimo do consumidor:
+$$\left|TMS\right| = \frac{p_x}{p_y} \quad\Leftrightarrow\quad \frac{Umg_x}{Umg_y} = \frac{p_x}{p_y}$$
+:::
+
+## 2.ª Lei de Gossen — Interpretação
+
+$$\frac{Umg_x}{Umg_y} = \frac{p_x}{p_y}$$
+
+. . .
+
+- **Benefício marginal** de mais $X$: $\dfrac{Umg_x}{Umg_y}$ — quanto de $Y$ "vale" uma unidade de $X$
+
+. . .
+
+- **Custo marginal** de mais $X$: $\dfrac{p_x}{p_y}$ — quanto de $Y$ "custa" uma unidade de $X$
+
+. . .
+
+- No óptimo: **benefício marginal = custo marginal**
+
+## Exemplo Resolvido — Escolha Óptima
+
+Um consumidor tem €160, $p_x = 20$€ (camisas), $p_y = 30$€ (calças), $U(x,y) = xy^3$.
+
+. . .
+
+**Passo 1 — Calcular $|TMS|$:**
+$$Umg_x = y^3,\quad Umg_y = 3xy^2 \quad\Rightarrow\quad |TMS| = \frac{y}{3x}$$
+
+. . .
+
+**Passo 2 — 2.ª Lei de Gossen:**
+$$\frac{y}{3x} = \frac{20}{30} = \frac{2}{3} \quad\Rightarrow\quad y^* = 2x^*$$
+
+. . .
+
+**Passo 3 — Substituir na RO:**
+$$20x + 30(2x) = 160 \;\Rightarrow\; 80x = 160 \;\Rightarrow\; x^* = 2,\quad y^* = 4$$
+
+---
+
+# Procura Individual 📉
+
+## Dedução da Procura Individual
+
+Ao variar $p_x$ com $p_y$ e $W$ constantes, cada preço dá um óptimo diferente.
+
+. . .
+
+O lugar geométrico dos óptimos é a **Via Preço-Consumo**.
+
+## Via Preço-Consumo e Curva de Procura
+
+```{r, engine='tikz', fig.align='center', out.width='80%'}
+\begin{tikzpicture}[scale=0.72, every node/.style={scale=0.75},
+  declare function={bc(\x,\px)=5/3-(\px/3)*\x; ic(\x,\u)=\u/\x;}]
+  %--- Espaco XY (cima) ---
+  \draw[->] (-0.1,0) -- (7.5,0) node[below right]{$X$};
+  \draw[->] (0,-0.1) -- (0,2.5) node[above left]{$Y$};
+  % p_x=4
+  \draw[blue!80, domain=0:{5/4}, variable=\x] plot (\x,{bc(\x,4)});
+  \draw[domain=0.4:6, samples=80, variable=\x] plot (\x,{ic(\x,0.55)});
+  \fill[red] ({sqrt(0.55*3/4)},{sqrt(0.55*4/3)}) circle (2pt) node[above right, scale=0.8]{$p_x^0$};
+  % p_x=2.5
+  \draw[blue!80, domain=0:{5/2.5}, variable=\x] plot (\x,{bc(\x,2.5)});
+  \draw[domain=0.6:6, samples=80, variable=\x] plot (\x,{ic(\x,1.0)});
+  \fill[red] ({sqrt(1.0*3/2.5)},{sqrt(1.0*2.5/3)}) circle (2pt) node[above right, scale=0.8]{$p_x^1$};
+  % p_x=1.5
+  \draw[blue!80, domain=0:{5/1.5}, variable=\x] plot (\x,{bc(\x,1.5)});
+  \draw[domain=1:6, samples=80, variable=\x] plot (\x,{ic(\x,1.7)});
+  \fill[red] ({sqrt(1.7*3/1.5)},{sqrt(1.7*1.5/3)}) circle (2pt) node[above right, scale=0.8]{$p_x^2$};
+  % Via preco consumo
+  %\draw[orange, thick] plot[smooth, tension=0.7]
+    coordinates{(0.5,3.8) ({sqrt(0.55*3/4)},{sqrt(0.55*4/3)}) ({sqrt(1.0*3/2.5)},{sqrt(1.0*2.5/3)}) ({sqrt(1.7*3/1.5)},{sqrt(1.7*1.5/3)}) (6,0.5)}
+    node[right]{Via Preco-Consumo};
+  %--- Espaco QP (baixo) ---
+  \draw[->] (-0.1,-6.5) -- (7.5,-6.5) node[below right]{$X$};
+  \draw[->] (0,-7) -- (0,-1.5) node[above left]{$p_x$};
+  % Projecoes
+  \draw[dotted] ({sqrt(0.55*3/4)},{sqrt(0.55*4/3)}) -- ({sqrt(0.55*3/4)},-6.5);
+  \draw[dotted] ({sqrt(1.0*3/2.5)},{sqrt(1.0*2.5/3)}) -- ({sqrt(1.0*3/2.5)},-6.5);
+  \draw[dotted] ({sqrt(1.7*3/1.5)},{sqrt(1.7*1.5/3)}) -- ({sqrt(1.7*3/1.5)},-6.5);
+  \draw[dotted] (0,{4-6.5}) node[left]{$p_x^0$} -- ({sqrt(0.55*3/4)},{4-6.5});
+  \draw[dotted] (0,{2.5-6.5}) node[left]{$p_x^1$} -- ({sqrt(1.0*3/2.5)},{2.5-6.5});
+  \draw[dotted] (0,{1.5-6.5}) node[left]{$p_x^2$} -- ({sqrt(1.7*3/1.5)},{1.5-6.5});
+  \fill ({sqrt(0.55*3/4)},{4-6.5}) circle (2pt);
+  \fill ({sqrt(1.0*3/2.5)},{2.5-6.5}) circle (2pt);
+  \fill ({sqrt(1.7*3/1.5)},{1.5-6.5}) circle (2pt);
+  % Curva procura
+  \draw[green!70!black, thick] plot[smooth, tension=0.6]
+    coordinates{(0.3,{5-6.5}) ({sqrt(0.55*3/4)},{4-6.5}) ({sqrt(1.0*3/2.5)},{2.5-6.5}) ({sqrt(1.7*3/1.5)},{1.5-6.5}) (6,{0.8-6.5})}
+    node[right]{$D$};
+\end{tikzpicture}
+```
+
+---
+
+# Exercícios ✏️
+
+## Exercício 1 (Escolha Múltipla)
+
+Um consumidor tem $U(x,y) = x \cdot y$, $W = 100$€, $p_x = 5$€, $p_y = 4$€. Qual a quantidade óptima de $x$?
+
+. . .
+
+**(A)** $x^* = 5$ $\quad$ **(B)** $x^* = 10$ $\quad$ **(C)** $x^* = 20$ $\quad$ **(D)** $x^* = 8$
+
+. . .
+
+::: {.callout-tip title="Resposta: (B)"}
+$Umg_x = y$, $Umg_y = x$. 2.ª Lei: $\dfrac{y}{x} = \dfrac{5}{4} \Rightarrow y = \dfrac{5x}{4}$.
+
+RO: $5x + 4 \cdot \dfrac{5x}{4} = 10x = 100 \Rightarrow x^* = 10$.
+:::
+
+## Exercício 2 (Escolha Múltipla)
+
+Qual das afirmações sobre a 1.ª Lei de Gossen é **correcta**?
+
+. . .
+
+**(A)** A utilidade total diminui à medida que se consome mais.
+
+**(B)** A utilidade marginal é crescente com o consumo.
+
+**(C)** A utilidade marginal é decrescente com o consumo.
+
+**(D)** A utilidade marginal é constante.
+
+. . .
+
+::: {.callout-tip title="Resposta: (C)"}
+A 1.ª Lei de Gossen estabelece que cada unidade adicional acrescenta **menos** satisfação do que a anterior.
+:::
+
+## Exercício 3 (Desenvolvimento)
+
+Um consumidor tem $U(x,y) = x^2 y$, $W = 90$€, $p_x = 3$€, $p_y = 2$€.
+
+**a)** Calcule $Umg_x$ e $Umg_y$.
+
+**b)** Determine o cabaz óptimo $(x^*, y^*)$ pela 2.ª Lei de Gossen.
+
+**c)** Calcule o nível de utilidade no óptimo.
+
+. . .
+
+::: {.callout-tip title="Solução"}
+**a)** $Umg_x = 2xy$; $\quad Umg_y = x^2$.
+
+**b)** 2.ª Lei: $\dfrac{2xy}{x^2} = \dfrac{2y}{x} = \dfrac{3}{2} \Rightarrow y = \dfrac{3x}{4}$.
+
+RO: $3x + 2 \cdot \dfrac{3x}{4} = 3x + \dfrac{3x}{2} = \dfrac{9x}{2} = 90 \Rightarrow x^* = 20,\quad y^* = 15$.
+
+**c)** $U(20,15) = 400 \times 15 = 6000$.
+:::
