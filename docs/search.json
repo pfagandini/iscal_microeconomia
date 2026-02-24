@@ -2602,5 +2602,313 @@
     "title": "Microeconomia",
     "section": "6.3 Exercício 3 (Desenvolvimento)",
     "text": "6.3 Exercício 3 (Desenvolvimento)\nUm consumidor tem \\(U(x,y) = x^2 y\\), \\(W = 90\\)€, \\(p_x = 3\\)€, \\(p_y = 2\\)€.\na) Calcule \\(Umg_x\\) e \\(Umg_y\\).\nb) Determine o cabaz óptimo \\((x^*, y^*)\\) pela 2.ª Lei de Gossen.\nc) Calcule o nível de utilidade no óptimo.\n. . .\n\n\n\n\n\n\nTipSolução\n\n\n\na) \\(Umg_x = 2xy\\); \\(\\quad Umg_y = x^2\\).\nb) 2.ª Lei: \\(\\dfrac{2xy}{x^2} = \\dfrac{2y}{x} = \\dfrac{3}{2} \\Rightarrow y = \\dfrac{3x}{4}\\).\nRO: \\(3x + 2 \\cdot \\dfrac{3x}{4} = 3x + \\dfrac{3x}{2} = \\dfrac{9x}{2} = 90 \\Rightarrow x^* = 20,\\quad y^* = 15\\).\nc) \\(U(20,15) = 400 \\times 15 = 6000\\)."
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#onde-estamos-no-modelo",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#onde-estamos-no-modelo",
+    "title": "Microeconomia",
+    "section": "Onde Estamos no Modelo 🗺️",
+    "text": "Onde Estamos no Modelo 🗺️\n\n\nHoje: Restrição Orçamental e Preferências"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#cabaz-de-bens",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#cabaz-de-bens",
+    "title": "Microeconomia",
+    "section": "Cabaz de Bens",
+    "text": "Cabaz de Bens\n\n\n\n\n\n\n\nDefinição: Cabaz de Bens\n\n\nÉ composto por quantidades de vários bens. Quando se comparam cabazes, os bens são os mesmos, mas as quantidades de cada um variam.\n\n\n\n\n\nExemplo: Dois bens — bolachas de chocolate (\\(x\\)) e laranjas (\\(y\\)).\n\nO cabaz \\((3, 2)\\) é composto por 3 bolachas e 2 laranjas.\nGraficamente, é um ponto do espaço \\((x, y)\\)."
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#cabaz-no-espaço-de-consumo",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#cabaz-no-espaço-de-consumo",
+    "title": "Microeconomia",
+    "section": "Cabaz no Espaço de Consumo",
+    "text": "Cabaz no Espaço de Consumo"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#conjunto-das-possibilidades-de-consumo",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#conjunto-das-possibilidades-de-consumo",
+    "title": "Microeconomia",
+    "section": "Conjunto das Possibilidades de Consumo",
+    "text": "Conjunto das Possibilidades de Consumo\n\nÉ o conjunto de todos os cabazes que podem ser adquiridos com um dado orçamento.\n\n\n\nO conjunto de cabazes cuja despesa esgota o orçamento designa-se Restrição Orçamental."
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#o-problema-do-consumidor",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#o-problema-do-consumidor",
+    "title": "Microeconomia",
+    "section": "O Problema do Consumidor",
+    "text": "O Problema do Consumidor\nDe entre os cabazes disponíveis, encontrar a escolha óptima, dadas as variáveis exógenas:\n\nOrçamento (\\(W\\))\nPreços de mercado (\\(p_x\\), \\(p_y\\))\n\n\nO consumidor decide as variáveis endógenas: \\(X\\) e \\(Y\\)."
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#restrição-orçamental-formulação",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#restrição-orçamental-formulação",
+    "title": "Microeconomia",
+    "section": "Restrição Orçamental — Formulação",
+    "text": "Restrição Orçamental — Formulação\n\\[X p_x + Y p_y = W\\]\n\nExemplo: €10 para gastar em bolachas e laranjas.\n\nCada bolacha custa €0,25 → \\(p_x = 0{,}25\\)\nCada laranja custa €0,10 → \\(p_y = 0{,}10\\)\n\n\n\n\\[0{,}25\\, X + 0{,}10\\, Y = 10\\]"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#restrição-orçamental-gráfico",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#restrição-orçamental-gráfico",
+    "title": "Microeconomia",
+    "section": "Restrição Orçamental — Gráfico",
+    "text": "Restrição Orçamental — Gráfico\n\n\nTambém se escreve como \\(Y = 100 - 2{,}5X\\)"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#declive-da-restrição-orçamental",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#declive-da-restrição-orçamental",
+    "title": "Microeconomia",
+    "section": "Declive da Restrição Orçamental",
+    "text": "Declive da Restrição Orçamental\n\\[X p_x + Y p_y = W \\quad\\Leftrightarrow\\quad Y = {\\color{red}{\\frac{W}{p_y}}} - {\\color{blue}{\\frac{p_x}{p_y}}} X\\]\n\n\n\\(\\color{red}{\\dfrac{W}{p_y}}\\): ordenada na origem — máximo de \\(Y\\) se \\(X=0\\)\n\n\n\n\n\\(\\color{blue}{-\\dfrac{p_x}{p_y}}\\): declive — preço relativo de \\(X\\) em termos de \\(Y\\)\n\n\n\nNo exemplo: \\(Y = {\\color{red}{100}} - {\\color{blue}{2,5}}\\, X\\)"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#efeito-de-mudança-de-preço",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#efeito-de-mudança-de-preço",
+    "title": "Microeconomia",
+    "section": "Efeito de Mudança de Preço",
+    "text": "Efeito de Mudança de Preço\n\n\nMudança de \\(p_x\\) → roda em torno do intercepto em \\(Y\\)\nMudança de \\(p_y\\) → roda em torno do intercepto em \\(X\\)"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#efeito-de-mudança-de-orçamento",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#efeito-de-mudança-de-orçamento",
+    "title": "Microeconomia",
+    "section": "Efeito de Mudança de Orçamento",
+    "text": "Efeito de Mudança de Orçamento\n\n\nAlteração em \\(W\\) → translação paralela — o declive \\(-p_x/p_y\\) não muda"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#o-problema-da-escolha",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#o-problema-da-escolha",
+    "title": "Microeconomia",
+    "section": "O Problema da Escolha",
+    "text": "O Problema da Escolha\nO espaço de consumo diz-nos o que é possível comprar.\n\nMas não nos diz o que o consumidor prefere — precisamos das suas preferências.\n\n\nQuestão central: De entre todos os cabazes acessíveis, qual é o melhor?"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#axioma-1-desejabilidade",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#axioma-1-desejabilidade",
+    "title": "Microeconomia",
+    "section": "Axioma 1 — Desejabilidade",
+    "text": "Axioma 1 — Desejabilidade\n\n\n\n\n\n\n\nAxioma 1: Desejabilidade (Não Saciedade)\n\n\nConsumir mais é melhor.\n\n\n\n\n\nSe \\(A = (25, 30)\\) contém mais de ambos os bens do que \\(B = (20, 20)\\), então \\(A \\succ B\\)."
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#desejabilidade-gráfico",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#desejabilidade-gráfico",
+    "title": "Microeconomia",
+    "section": "Desejabilidade — Gráfico",
+    "text": "Desejabilidade — Gráfico\n\n\nE se um cabaz tiver mais de um bem e menos do outro?"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#curva-de-indiferença",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#curva-de-indiferença",
+    "title": "Microeconomia",
+    "section": "Curva de Indiferença",
+    "text": "Curva de Indiferença\n\n\n\n\n\n\n\nDefinição: Curva de Indiferença\n\n\nConjunto de todos os cabazes indiferentes entre si.\n\n\n\n\n\n\nDevido à desejabilidade, cabazes indiferentes têm sempre mais de um bem e menos do outro.\n\n\n\n\nNo espaço \\(XY\\), a curva de indiferença tem inclinação negativa."
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#curva-de-indiferença-gráfico",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#curva-de-indiferença-gráfico",
+    "title": "Microeconomia",
+    "section": "Curva de Indiferença — Gráfico",
+    "text": "Curva de Indiferença — Gráfico\n\n\\(A\\), \\(B\\) e \\(C\\) são cabazes indiferentes — pertencem à mesma curva \\(U_1\\)."
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#mapa-de-indiferenças",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#mapa-de-indiferenças",
+    "title": "Microeconomia",
+    "section": "Mapa de Indiferenças",
+    "text": "Mapa de Indiferenças"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#axioma-2-completude",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#axioma-2-completude",
+    "title": "Microeconomia",
+    "section": "Axioma 2 — Completude",
+    "text": "Axioma 2 — Completude\n\n\n\n\n\n\n\nAxioma 2: Preferências Completas\n\n\nDados dois cabazes, o consumidor sabe sempre dizer qual a relação de preferências entre eles. Todos os cabazes pertencem a uma curva de indiferença.\n\n\n\n\n\n\nQuanto mais alta a curva onde se localiza um cabaz, maior a satisfação."
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#axioma-3-transitividade",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#axioma-3-transitividade",
+    "title": "Microeconomia",
+    "section": "Axioma 3 — Transitividade",
+    "text": "Axioma 3 — Transitividade\n\n\n\n\n\n\n\nAxioma 3: Preferências Transitivas\n\n\nSe \\(A\\) é preferido a \\(B\\), e \\(B\\) é preferido a \\(C\\), então \\(A\\) é preferido a \\(C\\).\n\n\n\n\n\nConsequência directa: as curvas de indiferença não se podem cruzar!"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#curvas-de-indiferença-não-se-cruzam",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#curvas-de-indiferença-não-se-cruzam",
+    "title": "Microeconomia",
+    "section": "Curvas de Indiferença Não se Cruzam",
+    "text": "Curvas de Indiferença Não se Cruzam"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#curvas-de-indiferença-não-se-cruzam-1",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#curvas-de-indiferença-não-se-cruzam-1",
+    "title": "Microeconomia",
+    "section": "Curvas de Indiferença Não se Cruzam",
+    "text": "Curvas de Indiferença Não se Cruzam\nThe logic of the diagram:\n\n\\(C=(1,2)\\) is the actual intersection — point on both curves simultaneously\n\n\\(A=(2,1)\\) is on \\(U_1\\) only; \\(D=(2,1.2)\\) is on \\(U_2\\) only — same \\(X\\), \\(D\\) has more \\(Y\\)\n\nArrow makes the “\\(D \\succ A\\)” visually immediate\n\nThe contradiction is now geometrically clear: the curves really do cross"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#racionalidade-do-consumidor",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#racionalidade-do-consumidor",
+    "title": "Microeconomia",
+    "section": "Racionalidade do Consumidor",
+    "text": "Racionalidade do Consumidor\n\n\n\n\n\n\n\nPreferências Racionais\n\n\nEm contexto de desejabilidade, as preferências são racionais se forem completas e transitivas.\n\n\n\n\n\nOutras hipóteses da Teoria do Consumidor:\n\nInformação completa sobre preços e características dos bens\nContinuidade do espaço orçamental\nIndependência das escolhas entre consumidores"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#exercício-1-escolha-múltipla",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 (Escolha Múltipla)",
+    "text": "Exercício 1 (Escolha Múltipla)\nO orçamento de um consumidor é \\(W = 60\\)€, \\(p_x = 3\\)€ e \\(p_y = 4\\)€. Qual é a equação da restrição orçamental na forma \\(Y = f(X)\\)?\n\n(A) \\(Y = 20 - \\dfrac{4}{3} X\\) \\(\\qquad\\) (B) \\(Y = 15 - \\dfrac{3}{4} X\\)\n(C) \\(Y = 15 - \\dfrac{4}{3} X\\) \\(\\qquad\\) (D) \\(Y = 20 - \\dfrac{3}{4} X\\)\n\n\n\n\n\n\n\n\n\nResposta: (B)\n\n\n\\(Y = \\dfrac{60}{4} - \\dfrac{3}{4} X = 15 - 0{,}75\\, X\\)"
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#exercício-2-escolha-múltipla",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 (Escolha Múltipla)",
+    "text": "Exercício 2 (Escolha Múltipla)\nCom preferências racionais e desejabilidade, qual afirmação é verdadeira?\n\n(A) Dois cabazes são indiferentes mesmo que um tenha mais de ambos os bens.\n(B) As curvas de indiferença têm inclinação positiva.\n(C) Curvas mais afastadas da origem representam maior satisfação.\n(D) As curvas de indiferença podem cruzar-se se as preferências forem transitivas.\n\n\n\n\n\n\n\n\n\nResposta: (C)\n\n\nPela desejabilidade, cabazes com mais quantidade são preferidos — curvas mais afastadas da origem correspondem a maior satisfação."
+  },
+  {
+    "objectID": "slides/04_Cabaz_restricao_preferencias.html#exercício-3-desenvolvimento",
+    "href": "slides/04_Cabaz_restricao_preferencias.html#exercício-3-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício 3 (Desenvolvimento)",
+    "text": "Exercício 3 (Desenvolvimento)\nUm consumidor dispõe de €120 para gastar em \\(X\\) (€4/un.) e \\(Y\\) (€6/un.).\na) Equação da restrição orçamental na forma \\(Y = f(X)\\). Identifique declive e ordenada na origem.\nb) O preço de \\(X\\) sobe para €6. O que acontece graficamente?\nc) O consumidor recebe um subsídio de €60 (lump-sum). Efeito sobre a restrição?\n\n\n\n\n\n\n\n\nSolução\n\n\na) \\(4X + 6Y = 120 \\Rightarrow Y = 20 - \\tfrac{2}{3}X\\). Declive: \\(-\\tfrac{2}{3}\\); Ordenada na origem: \\(20\\).\nb) Com \\(p_x = 6\\): \\(Y = 20 - X\\). O intercepto em \\(Y\\) mantém-se em \\(20\\); o intercepto em \\(X\\) passa de \\(30\\) para \\(20\\). A RO roda para dentro em torno de \\((0,\\,20)\\).\nc) Com \\(W = 180\\): \\(Y = 30 - \\tfrac{2}{3}X\\). Translação paralela para fora — o declive não muda."
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#recapitulação",
+    "href": "slides/05_Utilidade_gossen_procura.html#recapitulação",
+    "title": "Microeconomia",
+    "section": "Recapitulação 🔄",
+    "text": "Recapitulação 🔄\nNa aula anterior:\n\nCabaz de bens e espaço de consumo\nRestrição Orçamental: \\(Xp_x + Yp_y = W\\)\nPreferências: desejabilidade, completude, transitividade\nCurvas de indiferença: inclinação negativa, não se cruzam\n\n\nHoje: Função de utilidade, otimização e procura individual"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#tms-definição",
+    "href": "slides/05_Utilidade_gossen_procura.html#tms-definição",
+    "title": "Microeconomia",
+    "section": "TMS — Definição",
+    "text": "TMS — Definição\n\n\n\n\n\n\n\nTaxa Marginal de Substituição\n\n\nÉ a taxa à qual o consumidor está disposto a trocar um bem pelo outro ficando indiferente. Define-se como a quantidade de \\(Y\\) de que está disposto a prescindir para ter mais uma unidade de \\(X\\), mantendo a utilidade constante: \\[TMS = \\frac{\\Delta Y}{\\Delta X}\\bigg|_{\\Delta U = 0}\\]\n\n\n\n\n\nAo longo da curva de indiferença convexa, \\(|TMS|\\) é decrescente — valorizamos mais o bem que temos em menor quantidade."
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#tms-gráfico",
+    "href": "slides/05_Utilidade_gossen_procura.html#tms-gráfico",
+    "title": "Microeconomia",
+    "section": "TMS — Gráfico",
+    "text": "TMS — Gráfico"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#função-de-utilidade-definição",
+    "href": "slides/05_Utilidade_gossen_procura.html#função-de-utilidade-definição",
+    "title": "Microeconomia",
+    "section": "Função de Utilidade — Definição",
+    "text": "Função de Utilidade — Definição\n\n\n\n\n\n\n\nFunção de Utilidade\n\n\nRepresentação numérica da relação de preferência: \\[U(A) &gt; U(B) \\;\\Leftrightarrow\\; A \\text{ é preferido a } B\\] \\[U(A) = U(B) \\;\\Leftrightarrow\\; A \\text{ é indiferente a } B\\]"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#função-de-utilidade-natureza-ordinal",
+    "href": "slides/05_Utilidade_gossen_procura.html#função-de-utilidade-natureza-ordinal",
+    "title": "Microeconomia",
+    "section": "Função de Utilidade — Natureza Ordinal",
+    "text": "Função de Utilidade — Natureza Ordinal\nA função de utilidade é uma relação ordinal — ordena cabazes, mas o valor por si só não tem significado cardinal.\n\nConsequência: muitas funções utilidade expressam as mesmas preferências — basta preservar a ordenação.\n\n\nExemplo: \\(A(20,20) \\succ B(10,10)\\) — todas estas funções descrevem as mesmas preferências: \\[U = x^{0{,}5}y^{0{,}5}, \\quad U = 10x^{0{,}5}y^{0{,}5}, \\quad U = 0{,}5(\\ln x + \\ln y)\\]"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#curvas-de-indiferença-e-função-utilidade",
+    "href": "slides/05_Utilidade_gossen_procura.html#curvas-de-indiferença-e-função-utilidade",
+    "title": "Microeconomia",
+    "section": "Curvas de Indiferença e Função Utilidade",
+    "text": "Curvas de Indiferença e Função Utilidade\nUma curva de indiferença é o conjunto de todos os cabazes com a mesma utilidade \\(\\bar{U}\\):\n\\[\\forall(x,y)\\colon U(x,y) = \\bar{U} \\quad\\Leftrightarrow\\quad \\Delta U = 0\\]"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#utilidade-total-e-utilidade-marginal",
+    "href": "slides/05_Utilidade_gossen_procura.html#utilidade-total-e-utilidade-marginal",
+    "title": "Microeconomia",
+    "section": "Utilidade Total e Utilidade Marginal",
+    "text": "Utilidade Total e Utilidade Marginal\n\nUtilidade total \\(U(x)\\): satisfação ao consumir uma quantidade de um bem.\n\n\n\nUtilidade marginal: utilidade fornecida por uma unidade adicional: \\[Umg_x = \\frac{\\Delta U}{\\Delta X} = U'_x\\]"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#utilidade-total-vs.-utilidade-marginal",
+    "href": "slides/05_Utilidade_gossen_procura.html#utilidade-total-vs.-utilidade-marginal",
+    "title": "Microeconomia",
+    "section": "Utilidade Total vs. Utilidade Marginal",
+    "text": "Utilidade Total vs. Utilidade Marginal\n\nAproximamo-nos do ponto de saciedade → \\(Umg \\to 0\\)"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#ª-lei-de-gossen",
+    "href": "slides/05_Utilidade_gossen_procura.html#ª-lei-de-gossen",
+    "title": "Microeconomia",
+    "section": "1.ª Lei de Gossen",
+    "text": "1.ª Lei de Gossen\n\n\n\n\n\n\n\n1.ª Lei de Gossen — Utilidade Marginal Decrescente\n\n\nUma unidade adicional de um bem tem uma utilidade adicional cada vez menor à medida que o consumo aumenta — a utilidade marginal é decrescente.\n\n\n\n\n\nPreço de reserva: máximo que o consumidor está disposto a pagar por mais uma unidade. À medida que consome mais, a disponibilidade a pagar diminui."
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#tms-e-utilidade-marginal",
+    "href": "slides/05_Utilidade_gossen_procura.html#tms-e-utilidade-marginal",
+    "title": "Microeconomia",
+    "section": "TMS e Utilidade Marginal",
+    "text": "TMS e Utilidade Marginal\nAo longo da curva de indiferença, \\(\\Delta U = 0\\):\n\\[\\Delta U = Umg_x \\cdot \\Delta X + Umg_y \\cdot \\Delta Y = 0\\]\n\nIsolando:\n\\[\\boxed{TMS = \\frac{\\Delta Y}{\\Delta X} = -\\frac{Umg_x}{Umg_y}}\\]"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#escolha-óptima-do-consumidor",
+    "href": "slides/05_Utilidade_gossen_procura.html#escolha-óptima-do-consumidor",
+    "title": "Microeconomia",
+    "section": "Escolha Óptima do Consumidor",
+    "text": "Escolha Óptima do Consumidor\n\n\n\n\n\n\n\nEscolha Óptima\n\n\nÉ o ponto de consumo que maximiza a utilidade sujeito ao orçamento disponível: \\[\\max_{x,y} U(x,y) \\quad \\text{s.a.} \\quad Xp_x + Yp_y = W\\]"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#escolha-óptima-gráfico",
+    "href": "slides/05_Utilidade_gossen_procura.html#escolha-óptima-gráfico",
+    "title": "Microeconomia",
+    "section": "Escolha Óptima — Gráfico",
+    "text": "Escolha Óptima — Gráfico"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#ª-lei-de-gossen-1",
+    "href": "slides/05_Utilidade_gossen_procura.html#ª-lei-de-gossen-1",
+    "title": "Microeconomia",
+    "section": "2.ª Lei de Gossen",
+    "text": "2.ª Lei de Gossen\nNo ponto óptimo, o declive da RO iguala o declive da curva de indiferença:\n\\[-\\frac{p_x}{p_y} = TMS = -\\frac{Umg_x}{Umg_y}\\]\n\n\n\n\n\n\n\n\n2.ª Lei de Gossen\n\n\nNo óptimo do consumidor: \\[\\left|TMS\\right| = \\frac{p_x}{p_y} \\quad\\Leftrightarrow\\quad \\frac{Umg_x}{Umg_y} = \\frac{p_x}{p_y}\\]"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#ª-lei-de-gossen-interpretação",
+    "href": "slides/05_Utilidade_gossen_procura.html#ª-lei-de-gossen-interpretação",
+    "title": "Microeconomia",
+    "section": "2.ª Lei de Gossen — Interpretação",
+    "text": "2.ª Lei de Gossen — Interpretação\n\\[\\frac{Umg_x}{Umg_y} = \\frac{p_x}{p_y}\\]\n\n\nBenefício marginal de mais \\(X\\): \\(\\dfrac{Umg_x}{Umg_y}\\) — quanto de \\(Y\\) “vale” uma unidade de \\(X\\)\n\n\n\n\nCusto marginal de mais \\(X\\): \\(\\dfrac{p_x}{p_y}\\) — quanto de \\(Y\\) “custa” uma unidade de \\(X\\)\n\n\n\n\nNo óptimo: benefício marginal = custo marginal"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#exemplo-resolvido-escolha-óptima",
+    "href": "slides/05_Utilidade_gossen_procura.html#exemplo-resolvido-escolha-óptima",
+    "title": "Microeconomia",
+    "section": "Exemplo Resolvido — Escolha Óptima",
+    "text": "Exemplo Resolvido — Escolha Óptima\nUm consumidor tem €160, \\(p_x = 20\\)€ (camisas), \\(p_y = 30\\)€ (calças), \\(U(x,y) = xy^3\\).\n\nPasso 1 — Calcular \\(|TMS|\\): \\[Umg_x = y^3,\\quad Umg_y = 3xy^2 \\quad\\Rightarrow\\quad |TMS| = \\frac{y}{3x}\\]\n\n\nPasso 2 — 2.ª Lei de Gossen: \\[\\frac{y}{3x} = \\frac{20}{30} = \\frac{2}{3} \\quad\\Rightarrow\\quad y^* = 2x^*\\]\n\n\nPasso 3 — Substituir na RO: \\[20x + 30(2x) = 160 \\;\\Rightarrow\\; 80x = 160 \\;\\Rightarrow\\; x^* = 2,\\quad y^* = 4\\]"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#dedução-da-procura-individual",
+    "href": "slides/05_Utilidade_gossen_procura.html#dedução-da-procura-individual",
+    "title": "Microeconomia",
+    "section": "Dedução da Procura Individual",
+    "text": "Dedução da Procura Individual\nAo variar \\(p_x\\) com \\(p_y\\) e \\(W\\) constantes, cada preço dá um óptimo diferente.\n\nO lugar geométrico dos óptimos é a Via Preço-Consumo."
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#via-preço-consumo-e-curva-de-procura",
+    "href": "slides/05_Utilidade_gossen_procura.html#via-preço-consumo-e-curva-de-procura",
+    "title": "Microeconomia",
+    "section": "Via Preço-Consumo e Curva de Procura",
+    "text": "Via Preço-Consumo e Curva de Procura"
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#exercício-1-escolha-múltipla",
+    "href": "slides/05_Utilidade_gossen_procura.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 (Escolha Múltipla)",
+    "text": "Exercício 1 (Escolha Múltipla)\nUm consumidor tem \\(U(x,y) = x \\cdot y\\), \\(W = 100\\)€, \\(p_x = 5\\)€, \\(p_y = 4\\)€. Qual a quantidade óptima de \\(x\\)?\n\n(A) \\(x^* = 5\\) \\(\\quad\\) (B) \\(x^* = 10\\) \\(\\quad\\) (C) \\(x^* = 20\\) \\(\\quad\\) (D) \\(x^* = 8\\)\n\n\n\n\n\n\n\n\n\nResposta: (B)\n\n\n\\(Umg_x = y\\), \\(Umg_y = x\\). 2.ª Lei: \\(\\dfrac{y}{x} = \\dfrac{5}{4} \\Rightarrow y = \\dfrac{5x}{4}\\).\nRO: \\(5x + 4 \\cdot \\dfrac{5x}{4} = 10x = 100 \\Rightarrow x^* = 10\\)."
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#exercício-2-escolha-múltipla",
+    "href": "slides/05_Utilidade_gossen_procura.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 (Escolha Múltipla)",
+    "text": "Exercício 2 (Escolha Múltipla)\nQual das afirmações sobre a 1.ª Lei de Gossen é correcta?\n\n(A) A utilidade total diminui à medida que se consome mais.\n(B) A utilidade marginal é crescente com o consumo.\n(C) A utilidade marginal é decrescente com o consumo.\n(D) A utilidade marginal é constante.\n\n\n\n\n\n\n\n\n\nResposta: (C)\n\n\nA 1.ª Lei de Gossen estabelece que cada unidade adicional acrescenta menos satisfação do que a anterior."
+  },
+  {
+    "objectID": "slides/05_Utilidade_gossen_procura.html#exercício-3-desenvolvimento",
+    "href": "slides/05_Utilidade_gossen_procura.html#exercício-3-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício 3 (Desenvolvimento)",
+    "text": "Exercício 3 (Desenvolvimento)\nUm consumidor tem \\(U(x,y) = x^2 y\\), \\(W = 90\\)€, \\(p_x = 3\\)€, \\(p_y = 2\\)€.\na) Calcule \\(Umg_x\\) e \\(Umg_y\\).\nb) Determine o cabaz óptimo \\((x^*, y^*)\\) pela 2.ª Lei de Gossen.\nc) Calcule o nível de utilidade no óptimo.\n\n\n\n\n\n\n\n\nSolução\n\n\na) \\(Umg_x = 2xy\\); \\(\\quad Umg_y = x^2\\).\nb) 2.ª Lei: \\(\\dfrac{2xy}{x^2} = \\dfrac{2y}{x} = \\dfrac{3}{2} \\Rightarrow y = \\dfrac{3x}{4}\\).\nRO: \\(3x + 2 \\cdot \\dfrac{3x}{4} = 3x + \\dfrac{3x}{2} = \\dfrac{9x}{2} = 90 \\Rightarrow x^* = 20,\\quad y^* = 15\\).\nc) \\(U(20,15) = 400 \\times 15 = 6000\\)."
   }
 ]
