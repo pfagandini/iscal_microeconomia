@@ -1,0 +1,481 @@
+---
+title: "Microeconomia"
+subtitle: "Aula 5: Preferências e Axiomas de Racionalidade"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 05_preferencias-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+    echo: false
+    code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(ggplot2)
+
+iscal_blue   <- "#003D7A"
+iscal_orange <- "#FF6B35"
+iscal_lb     <- "#0066CC"
+
+theme_iscal <- theme_minimal(base_size = 16) +
+  theme(
+    axis.title   = element_text(colour = iscal_blue, face = "bold", size = 14),
+    axis.text    = element_text(colour = "grey30", size = 12),
+    axis.line    = element_line(colour = "grey50"),
+    panel.grid   = element_blank(),
+    axis.ticks   = element_line(colour = "grey50"),
+    plot.margin  = margin(10, 10, 10, 10)
+  )
+
+# Helper: indifference curve y = U^2 / x  (Cobb-Douglas, alpha=0.5)
+ic_y <- function(x, U) U^2 / x
+```
+
+## Sumário {.nonincremental}
+
+- 🤔 A questão das preferências
+- ✅ Axioma 1 — Desejabilidade (não saciedade)
+- $\sim$ Curva de indiferença — definição e propriedades
+- 📚 Mapa de curvas de indiferença
+- ✅ Axioma 2 — Completude
+- ✅ Axioma 3 — Transitividade
+- 🔗 Racionalidade das preferências
+- 📝 Exercícios
+
+---
+
+## A Questão das Preferências
+
+O espaço de consumo diz **o que o consumidor pode comprar**.
+
+. . .
+
+Mas entre todos os cabazes acessíveis, **qual o preferido?**
+
+. . .
+
+> Para comparar cabazes com **mais de um bem**, precisamos de saber as **preferências** do consumidor.
+
+. . .
+
+Exemplo: o consumidor prefere $(25, 30)$ a $(30, 20)$?
+
+- O primeiro tem menos X mas mais Y — a resposta depende de **quanto o consumidor valoriza cada bem**.
+
+---
+
+## Axioma 1 — Desejabilidade {.nonincremental}
+
+::: {.callout-important appearance="simple"}
+**Desejabilidade (não saciedade):** consumir mais é sempre melhor, em relação a pelo menos um bem.
+:::
+
+Se $A = (x_A, y_A)$ e $B = (x_B, y_B)$ com $x_A \geq x_B$ **e** $y_A \geq y_B$ (e pelo menos uma desigualdade estrita), então $A \succ B$.
+
+---
+
+## Desejabilidade — Gráfico
+
+```{r}
+#| fig-height: 3.8
+#| fig-width: 4.5
+#| fig-align: center
+
+ggplot() +
+  # Zona inferior esquerda — menor satisfação
+  geom_rect(aes(xmin = 0, xmax = 3, ymin = 0, ymax = 3),
+            fill = "red3", alpha = 0.15) +
+  # Zona superior direita — maior satisfação
+  geom_rect(aes(xmin = 3, xmax = 6, ymin = 3, ymax = 6),
+            fill = "darkgreen", alpha = 0.15) +
+  # Ponto de referência A
+  geom_point(aes(x = 3, y = 3), colour = iscal_blue, size = 5) +
+  annotate("text", x = 2.8, y = 3.3, label = "A",
+           colour = iscal_blue, size = 6, fontface = "bold") +
+  # Rótulos das zonas
+  annotate("text", x = 1.5, y = 1.5,
+           label = "Menor\nsatisfação\ndo que A",
+           colour = "red3", size = 3.8, fontface = "bold") +
+  annotate("text", x = 4.5, y = 4.5,
+           label = "Maior\nsatisfação\ndo que A",
+           colour = "darkgreen", size = 3.8, fontface = "bold") +
+  scale_x_continuous(limits = c(0, 6.2), breaks = c(0, 3, 6),
+                     labels = c("0", "x", ""), name = "X") +
+  scale_y_continuous(limits = c(0, 6.2), breaks = c(0, 3, 6),
+                     labels = c("0", "y", ""), name = "Y") +
+  theme_iscal +
+  theme(axis.line.x = element_line(arrow = arrow(length = unit(0.2,"cm"))),
+        axis.line.y = element_line(arrow = arrow(length = unit(0.2,"cm"))))
+```
+
+---
+
+## E quando um cabaz tem mais de um bem e menos do outro?
+
+**Exemplo:** o consumidor prefere $(20, 30)$ ou $(30, 20)$?
+
+. . .
+
+A axioma da desejabilidade **não responde** a esta questão.
+
+. . .
+
+Precisamos de saber **quais os cabazes que lhe são indiferentes** — que lhe dão a mesma satisfação.
+
+> Quantas laranjas está disposto a abdicar para ter mais uma bolacha, ficando **indiferente**?
+
+---
+
+## Curva de Indiferença
+
+::: {.callout-note appearance="simple"}
+Uma **curva de indiferença** é o conjunto de todos os cabazes que proporcionam ao consumidor **o mesmo nível de satisfação**.
+:::
+
+. . .
+
+Consequência da desejabilidade:
+
+- Cabazes indiferentes não podem ter **mais de ambos** os bens (seria preferido)
+- Nem **menos de ambos** (seria preterido)
+- $\Rightarrow$ A curva de indiferença tem **inclinação negativa**
+
+---
+
+## Curva de Indiferença — Gráfico
+
+```{r}
+#| fig-height: 3.8
+#| fig-width: 4.8
+#| fig-align: center
+
+U0 <- 2
+xs <- seq(0.8, 5, length.out = 200)
+df_ic <- data.frame(x = xs, y = ic_y(xs, U0))
+
+# Pontos na curva
+pts <- data.frame(x = c(1.0, 2.0, 4.0),
+                  y = ic_y(c(1.0, 2.0, 4.0), U0),
+                  lbl = c("A", "B", "C"))
+
+ggplot(df_ic, aes(x, y)) +
+  geom_line(colour = iscal_blue, linewidth = 1.8) +
+  geom_point(data = pts, aes(x, y), colour = iscal_orange, size = 4) +
+  geom_text(data = pts, aes(x + 0.12, y + 0.15, label = lbl),
+            colour = iscal_blue, size = 5, fontface = "bold") +
+  # Dotted lines for point A
+  geom_segment(aes(x = 1.0, y = 0, xend = 1.0, yend = ic_y(1.0, U0)),
+               linetype = "dashed", colour = "grey60") +
+  geom_segment(aes(x = 0, y = ic_y(1.0, U0), xend = 1.0, yend = ic_y(1.0, U0)),
+               linetype = "dashed", colour = "grey60") +
+  annotate("text", x = 4.5, y = 4.5,
+           label = "U = constante\n(A ~ B ~ C)",
+           colour = iscal_blue, size = 3.8, fontface = "italic") +
+  scale_x_continuous(limits = c(0, 5.5), name = "X") +
+  scale_y_continuous(limits = c(0, 5.5), name = "Y") +
+  theme_iscal +
+  theme(axis.line.x = element_line(arrow = arrow(length = unit(0.2,"cm"))),
+        axis.line.y = element_line(arrow = arrow(length = unit(0.2,"cm"))))
+```
+
+*A, B e C são indiferentes entre si*
+
+---
+
+## Axioma 2 — Completude {.nonincremental}
+
+::: {.callout-important appearance="simple"}
+**Completude:** dados quaisquer dois cabazes, o consumidor sabe sempre dizer qual a relação de preferência entre eles.
+:::
+
+. . .
+
+**Consequências:**
+
+- Todo o cabaz pertence a alguma curva de indiferença
+- Quanto mais alta a curva, maior a satisfação (desejabilidade)
+- O espaço de consumo é coberto por um **mapa de curvas de indiferença**
+
+---
+
+## Mapa de Curvas de Indiferença
+
+```{r}
+#| fig-height: 4.0
+#| fig-width: 5.0
+#| fig-align: center
+
+xs <- seq(0.6, 5.5, length.out = 300)
+
+df_map <- rbind(
+  data.frame(x = xs, y = ic_y(xs, 1.2), curva = "U₁ (baixa)"),
+  data.frame(x = xs, y = ic_y(xs, 2.0), curva = "U₂"),
+  data.frame(x = xs, y = ic_y(xs, 2.8), curva = "U₃ (alta)")
+)
+df_map <- df_map[df_map$y >= 0.3 & df_map$y <= 5.5, ]
+
+cols <- c("U₁ (baixa)" = "grey60",
+          "U₂"         = iscal_lb,
+          "U₃ (alta)"  = iscal_blue)
+
+ggplot(df_map, aes(x, y, colour = curva)) +
+  geom_line(linewidth = 1.5) +
+  geom_segment(aes(x = 1.2, y = 0.8, xend = 2.8, yend = 2.4),
+               arrow = arrow(length = unit(0.3,"cm")),
+               colour = iscal_orange, linewidth = 1.2) +
+  annotate("text", x = 3.5, y = 3.2,
+           label = "Sentido crescente\nde satisfação",
+           colour = iscal_orange, size = 3.5) +
+  scale_colour_manual(values = cols, name = "") +
+  scale_x_continuous(limits = c(0, 5.8), name = "X") +
+  scale_y_continuous(limits = c(0, 5.8), name = "Y") +
+  theme_iscal +
+  theme(legend.position = "bottom",
+        legend.text = element_text(size = 11),
+        axis.line.x = element_line(arrow = arrow(length = unit(0.2,"cm"))),
+        axis.line.y = element_line(arrow = arrow(length = unit(0.2,"cm"))))
+```
+
+---
+
+## Axioma 3 — Transitividade {.nonincremental}
+
+::: {.callout-important appearance="simple"}
+**Transitividade:** se o cabaz A é preferido a B, e B é preferido a C, então A é preferido a C.
+:::
+
+$$A \succ B \;\text{ e }\; B \succ C \;\Rightarrow\; A \succ C$$
+
+. . .
+
+De igual modo para indiferença:
+
+$$A \sim B \;\text{ e }\; B \sim C \;\Rightarrow\; A \sim C$$
+
+. . .
+
+A transitividade **garante consistência** nas escolhas — sem ciclos de preferência.
+
+---
+
+## Consequência: Curvas de Indiferença Não se Podem Cruzar
+
+:::: {.columns}
+
+::: {.column width="52%"}
+
+```{R, engine='tikz'}
+#| echo: false
+#| fig-align: center
+
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[
+  scale = 0.88,
+  every node/.style = {scale = 0.88},
+  declare function = {
+    ica(\x) = 4 / \x;
+    icb(\x) = 6 / (\x + 1);
+  }
+]
+
+% Axes
+\draw[->] (-0.1, 0) -- (5.2, 0) node[below right] {$X$};
+\draw[->] (0, -0.1) -- (0, 5.2) node[above left]  {$Y$};
+
+% IC1: y = 4/x  — label U_1
+\draw[blue, thick, domain=0.82:5, samples=120, variable=\x]
+  plot (\x, {ica(\x)});
+\node[blue] at (0.75, 5.0) {$U_1$};
+
+% IC2: y = 6/(x+1)  — label U_2
+\draw[red!70!black, thick, domain=0.18:5, samples=120, variable=\x]
+  plot (\x, {icb(\x)});
+\node[red!70!black] at (4.6, 1.6) {$U_2$};
+
+% Crossing point C = (2, 2)
+\draw (2, 2) node[circle, fill, inner sep=2pt,
+  label={[xshift=4pt, yshift=2pt]above right:$C$}] {};
+
+% Point A on IC1 at x=3.5: y=4/3.5≈1.143
+\draw (3.5, {ica(3.5)}) node[blue, circle, fill, inner sep=2pt,
+  label={[blue, xshift=4pt]above right:$A$}] {};
+
+% Point D on IC2 at x=3.5: y=6/4.5≈1.333
+\draw (3.5, {icb(3.5)}) node[red!70!black, circle, fill, inner sep=2pt,
+  label={[red!70!black, xshift=4pt]above right:$D$}] {};
+
+% Vertical dashed line at x=3.5 between A and D
+\draw[dashed, gray] (3.5, {ica(3.5)}) -- (3.5, {icb(3.5)});
+
+% Point B on IC2 at x=1: y=3
+\draw (1, {icb(1)}) node[red!70!black, circle, fill, inner sep=2pt,
+  label={[red!70!black, xshift=4pt]above right:$B$}] {};
+
+% Dotted helpers for C
+\draw[dotted, gray] (0, 2)   node[left] {$2$} -- (2, 2);
+\draw[dotted, gray] (2, 0)   node[below]{$2$} -- (2, 2);
+
+\end{tikzpicture}
+```
+
+:::
+
+::: {.column width="48%"}
+
+Estas curvas de indiferença **não refletem** preferências transitivas.
+
+- $D \succ A$ — mesmo $X$, $D$ tem **mais** $Y$
+- $D \sim C$ — ambos em $U_2$
+- $C \sim A$ — ambos em $U_1$
+- Logo, pela transitividade: $D \sim A$ — **contradição!** 💥
+
+:::
+
+::::
+
+
+---
+
+## Racionalidade das Preferências {.nonincremental}
+
+::: {.callout-important appearance="simple"}
+Em contexto de desejabilidade, as preferências dizem-se **racionais** se forem **completas** e **transitivas**.
+:::
+
+. . .
+
+| Axioma | Significado |
+|--------|------------|
+| Desejabilidade | Mais é melhor |
+| Completude | O consumidor compara sempre quaisquer dois cabazes |
+| Transitividade | As escolhas são internamente consistentes |
+
+. . .
+
+Outras hipóteses necessárias na teoria do consumidor:
+
+- Informação completa
+- Continuidade do espaço orçamental
+- Independência das escolhas entre consumidores
+
+---
+
+## Curvas de Indiferença "Bem Comportadas"
+
+Uma curva de indiferença diz-se **bem comportada** se for:
+
+- **Convexa** em relação à origem — o consumidor prefere diversidade
+- **Com declive negativo** — desejabilidade
+- **Não se cruza** com outras CIs — transitividade
+
+. . .
+
+A convexidade reflete que o consumidor valoriza mais o bem de que dispõe em **menor quantidade**.
+
+---
+
+## 📋 Síntese {.nonincremental}
+
+| Axioma | Consequência gráfica |
+|--------|---------------------|
+| Desejabilidade | Curvas têm declive negativo; curvas mais altas → mais satisfação |
+| Completude | Todo o ponto pertence a uma curva de indiferença |
+| Transitividade | Curvas de indiferença nunca se cruzam |
+
+---
+
+## 📝 Escolha Múltipla — Q1
+
+**As preferências são consideradas "racionais" quando são:**
+
+. . .
+
+::: {.nonincremental}
+a) Completas e simétricas
+b) Transitivas e reflexivas
+c) Completas e transitivas
+d) Desejáveis e simétricas
+:::
+
+. . .
+
+**Resposta: C** Em contexto de desejabilidade, racionalidade = completitude + transitividade.
+
+---
+
+## 📝 Escolha Múltipla — Q2
+
+**Se o cabaz A se encontra numa curva de indiferença mais alta do que o cabaz B, então:**
+
+. . .
+
+::: {.nonincremental}
+a) A é mais barato que B
+b) B é preferido a A
+c) A é preferido a B
+d) A e B são indiferentes
+:::
+
+. . .
+
+**Resposta: C** Pela desejabilidade, curvas mais altas correspondem a maior satisfação → $A \succ B$.
+
+---
+
+## 📝 Exercício de Desenvolvimento
+
+::: {.nonincremental}
+Considera os cabazes: $A = (2, 6)$, $B = (4, 4)$, $C = (1, 3)$.
+
+**(a)** Usando apenas o axioma da desejabilidade, pode afirmar-se que $A \succ C$? Justifique.
+
+**(b)** Sabe-se que $A \sim B$ (A é indiferente a B). Se um consumidor afirmar que também $B \succ A$, qual axioma está a ser violado?
+
+**(c)** Um consumidor afirma que $A \succ B$, $B \succ C$ e $C \succ A$. Que axioma está a ser violado? Que implicação tem no gráfico das curvas de indiferença?
+:::
+
+---
+
+## 📝 Solução {.smaller}
+
+::: {.nonincremental}
+**(a)** Sim. $A = (2, 6)$ tem mais X do que $C = (1, 3)$ ($2 > 1$) **e** mais Y ($6 > 3$). Pela desejabilidade, $A \succ C$ — sem precisar de conhecer as preferências específicas. ✓
+
+**(b)** $A \sim B$ significa indiferença mútua. Afirmar $B \succ A$ (estritamente preferido) contradiz $A \sim B$. Viola o axioma da **completude** — as preferências têm de ser internamente consistentes; o consumidor deve ter uma única relação definida entre quaisquer dois cabazes. ✓
+
+**(c)** Viola o axioma da **transitividade**. De $A \succ B$ e $B \succ C$ deveria seguir-se $A \succ C$, mas o consumidor afirma $C \succ A$ — ciclo de preferência impossível.
+
+No gráfico, implicaria que as curvas de indiferença **se cruzam**, o que é inconsistente com preferências racionais. ✓
+:::

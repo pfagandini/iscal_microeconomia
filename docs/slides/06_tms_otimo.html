@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
-  <meta name="author" content="Paulo Fagandini">
+  <meta name="author" content="ISCAL - IPL">
   <title>Iscal - Microeconomia (Plano de Transição) – Microeconomia</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -128,336 +128,260 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Microeconomia</h1>
-  <p class="subtitle">Cabaz, Espaço e Restrição Orçamental</p>
+  <p class="subtitle">Aula 6: Taxa Marginal de Substituição e Ótimo de Consumo</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Paulo Fagandini 
+ISCAL - IPL 
 </div>
-        <p class="quarto-title-affiliation">
-            ISCAL-IPL
-          </p>
-    </div>
+</div>
 </div>
 
 </section>
-<section id="do-produtor-ao-consumidor" class="slide level2">
-<h2>Do Produtor ao Consumidor</h2>
-<p>Nas aulas anteriores estudámos a <strong>Fronteira das Possibilidades de Produção</strong> e os ganhos do comércio. Agora entramos no estudo do <strong>consumidor</strong>.</p>
-<p>O esquema geral do modelo micro começa pelo lado da procura:</p>
+<section id="sumário" class="slide level2 nonincremental">
+<h2>Sumário</h2>
 <ul>
-<li><strong>Consumidores</strong> → Restrição Orçamental → Preferências → Utilidade → Escolha → Procura</li>
+<li class="fragment">🔄 Revisão: restrição orçamental e curva de indiferença</li>
+<li class="fragment">📐 Taxa Marginal de Substituição — definição</li>
+<li class="fragment">📉 TMS decrescente e a sua interpretação</li>
+<li class="fragment">🎯 O ótimo de consumo — geometria</li>
+<li class="fragment">⚖️ Condição de ótimo: <span class="math inline">\(|TMS| = p_x/p_y\)</span></li>
+<li class="fragment">💡 Interpretação económica</li>
+<li class="fragment">📝 Exercícios</li>
 </ul>
 </section>
-<section id="cabaz-de-bens" class="slide level2">
-<h2>Cabaz de Bens</h2>
-<p>Um <strong>cabaz de bens</strong> é composto por quantidades de vários bens. Quando comparamos cabazes, os bens são os mesmos, mas as quantidades variam.</p>
+<section id="revisão-o-que-temos-até-agora" class="slide level2">
+<h2>Revisão — O que Temos até Agora</h2>
+<p><strong>Restrição Orçamental:</strong> o que o consumidor <strong>pode</strong> comprar</p>
+<p><span class="math display">\[X p_x + Y p_y = W \;\Longleftrightarrow\; Y = \frac{W}{p_y} - \frac{p_x}{p_y} X\]</span></p>
 <div class="fragment">
-<p>Admitamos dois bens: laranjas (<span class="math inline">\(Y\)</span>) e bolachas (<span class="math inline">\(X\)</span>).</p>
-<p>O cabaz <span class="math inline">\((3, 2)\)</span> é composto por 3 bolachas e 2 laranjas. Graficamente, é um <strong>ponto</strong> no espaço <span class="math inline">\((X, Y)\)</span>.</p>
-</div>
-</section>
-<section id="representação-gráfica-de-um-cabaz" class="slide level2">
-<h2>Representação Gráfica de um Cabaz</h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><p>Cada cabaz é um ponto no plano. O eixo horizontal mede a quantidade de <span class="math inline">\(X\)</span>, o vertical mede a quantidade de <span class="math inline">\(Y\)</span>.</p>
-</section>
-<section id="o-problema-do-consumidor" class="slide level2">
-<h2>O Problema do Consumidor</h2>
-<p>De entre todos os cabazes possíveis, o consumidor quer encontrar a <strong>escolha ótima</strong>, dadas as variáveis <strong>exógenas</strong> (que não controla):</p>
-<ul>
-<li class="fragment">Orçamento (<span class="math inline">\(W\)</span>)</li>
-<li class="fragment">Preços de mercado (<span class="math inline">\(p_X\)</span>, <span class="math inline">\(p_Y\)</span>)</li>
-</ul>
-<div class="fragment">
-<p>O consumidor decide as variáveis <strong>endógenas</strong>: as quantidades <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> que vai consumir.</p>
-</div>
-</section>
-<section id="espaço-das-possibilidades-de-consumo" class="slide level2">
-<h2>Espaço das Possibilidades de Consumo</h2>
-<p>É o <strong>conjunto de todos os cabazes</strong> que podem ser adquiridos com um dado orçamento.</p>
-<div class="fragment">
-<p>Um cabaz <span class="math inline">\((X, Y)\)</span> é acessível se a despesa total não exceder o orçamento:</p>
-<p><span class="math display">\[X \cdot p_X + Y \cdot p_Y \leq W\]</span></p>
+<p><strong>Curva de Indiferença:</strong> o que o consumidor <strong>valoriza</strong> da mesma forma</p>
+<p><span class="math display">\[\text{Conjunto de cabazes com a mesma satisfação}\]</span></p>
 </div>
 <div class="fragment">
-<p>O conjunto de cabazes cuja despesa <strong>esgota exatamente</strong> o orçamento designa-se <strong>Restrição Orçamental</strong>.</p>
+<p><strong>Problema do consumidor:</strong> encontrar o cabaz na restrição orçamental que está na <strong>curva de indiferença mais alta possível</strong>.</p>
 </div>
 </section>
-<section id="restrição-orçamental" class="slide level2">
-<h2>Restrição Orçamental</h2>
-<p>A restrição orçamental é dada por:</p>
-<p><span class="math display">\[X \cdot p_X + Y \cdot p_Y = W\]</span></p>
-<div class="fragment">
-<p><strong>Exemplo:</strong> €10 para gastar em bolachas e laranjas. Cada bolacha custa €0,25 e cada laranja custa €0,10.</p>
-<p><span class="math display">\[0{,}25 X + 0{,}10 Y = 10\]</span></p>
-</div>
-</section>
-<section id="representação-gráfica" class="slide level2">
-<h2>Representação Gráfica</h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><p>O triângulo azul claro é o <strong>espaço orçamental</strong>: todos os cabazes acessíveis. A linha azul é a <strong>restrição orçamental</strong>.</p>
-</section>
-<section id="interpretação-dos-intercetos" class="slide level2">
-<h2>Interpretação dos Intercetos</h2>
-<p>Se o consumidor gastar <strong>todo o orçamento</strong> num só bem:</p>
-<ul>
-<li class="fragment"><p>Apenas bolachas: <span class="math inline">\(X = \frac{W}{p_X} = \frac{10}{0{,}25} = 40\)</span></p></li>
-<li class="fragment"><p>Apenas laranjas: <span class="math inline">\(Y = \frac{W}{p_Y} = \frac{10}{0{,}10} = 100\)</span></p></li>
-</ul>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
+<section id="taxa-marginal-de-substituição-definição" class="slide level2">
+<h2>Taxa Marginal de Substituição — Definição</h2>
+<div class="callout callout-note callout-style-simple">
 <div class="callout-body">
-<div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Note</strong></p>
-</div>
 <div class="callout-content">
-<p>Os intercetos mostram a <strong>quantidade máxima</strong> de cada bem que o consumidor pode comprar se não consumir nada do outro.</p>
+<p>A <strong>Taxa Marginal de Substituição (TMS)</strong> entre <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> é a quantidade de <span class="math inline">\(Y\)</span> a que o consumidor está disposto a <strong>prescindir</strong> para obter <strong>uma unidade adicional de X</strong>, mantendo-se indiferente.</p>
 </div>
 </div>
 </div>
-</div>
-</section>
-<section id="forma-explícita-da-restrição-orçamental" class="slide level2">
-<h2>Forma Explícita da Restrição Orçamental</h2>
-<p>Podemos reescrever a restrição orçamental isolando <span class="math inline">\(Y\)</span>:</p>
-<p><span class="math display">\[X p_X + Y p_Y = W \quad \Leftrightarrow \quad Y = {\color{red}{\frac{W}{p_Y}}} - {\color{blue}{\frac{p_X}{p_Y}}} X\]</span></p>
+<p><span class="math display">\[TMS_{x,y} = \frac{\Delta Y}{\Delta X} \;\Bigg|_{\overline{U}} &lt; 0\]</span></p>
 <div class="fragment">
 <ul>
-<li class="fragment"><p><span class="math inline">\({\color{red}{\frac{W}{p_Y}}}\)</span>: <strong>ordenada na origem</strong> (interceto vertical)</p></li>
-<li class="fragment"><p><span class="math inline">\({\color{blue}-\frac{p_X}{p_Y}}\)</span>: <strong>declive</strong> da restrição orçamental</p></li>
+<li class="fragment">O sinal é <strong>negativo</strong> — abdicar de Y para obter X</li>
+<li class="fragment">Falamos frequentemente de <span class="math inline">\(|TMS|\)</span> para facilitar comparações</li>
+<li class="fragment">A TMS é o <strong>declive da curva de indiferença</strong> num ponto</li>
+</ul>
+</div>
+</section>
+<section id="tms-gráfico" class="slide level2">
+<h2>TMS — Gráfico</h2>
+
+<img data-src="06_tms_otimo_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center r-stretch" width="528"></section>
+<section id="tms-é-decrescente-em-valor-absoluto" class="slide level2">
+<h2>TMS é Decrescente (em Valor Absoluto)</h2>
+<p>Ao longo de uma curva de indiferença <strong>convexa</strong>, <span class="math inline">\(|TMS|\)</span> <strong>diminui</strong> à medida que <span class="math inline">\(X\)</span> aumenta.</p>
+<div class="fragment">
+<p><strong>Porquê?</strong></p>
+<ul>
+<li class="fragment">Quando o consumidor tem <strong>pouco X</strong> e <strong>muito Y</strong>, valoriza muito mais uma unidade adicional de X → dispõe-se a abdicar de muito Y</li>
+<li class="fragment">À medida que acumula <strong>mais X</strong>, cada unidade adicional vale <strong>menos</strong> — está mais próximo do ponto de saciedade</li>
+<li class="fragment">Logo, abdica de <strong>menos Y</strong> por cada unidade adicional de X</li>
 </ul>
 </div>
 <div class="fragment">
-<p>No exemplo: <span class="math inline">\(Y = {\color{red}{100}} - {\color{blue}{2,5}}\, X\)</span></p>
+<blockquote>
+<p>A TMS decrescente reflete a <strong>lei da utilidade marginal decrescente</strong> — veremos a ligação formal na Aula 7.</p>
+</blockquote>
 </div>
 </section>
-<section id="significado-económico-do-declive" class="slide level2">
-<h2>Significado Económico do Declive</h2>
-<p>O declive da restrição orçamental é <span class="math inline">\(-\frac{p_X}{p_Y}\)</span>.</p>
-<p>Em valor absoluto: <span class="math inline">\(\frac{p_X}{p_Y}\)</span> é o <strong>preço relativo</strong> do bem <span class="math inline">\(X\)</span> em termos do bem <span class="math inline">\(Y\)</span>.</p>
+<section id="tms-ao-longo-da-curva" class="slide level2">
+<h2>TMS ao Longo da Curva</h2>
+
+<img data-src="06_tms_otimo_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center r-stretch" width="528"><p><em>O declive das retas tangentes (em valor absoluto) vai diminuindo de A para C.</em></p>
+</section>
+<section id="o-ótimo-de-consumo-geometria" class="slide level2">
+<h2>O Ótimo de Consumo — Geometria</h2>
+<p><strong>O consumidor quer atingir a curva de indiferença mais alta possível, sem ultrapassar o orçamento.</strong></p>
 <div class="fragment">
-<p>No exemplo: <span class="math inline">\(\frac{0{,}25}{0{,}10} = 2{,}5\)</span></p>
-<p>Significa que cada bolacha “custa” 2,5 laranjas — para comprar mais uma bolacha, o consumidor prescinde de 2,5 laranjas.</p>
+<p>O ponto ótimo <span class="math inline">\(A^*\)</span> é aquele onde a <strong>restrição orçamental é tangente</strong> a uma curva de indiferença — o ponto de toque.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="06_tms_otimo_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center" width="432"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="condição-de-ótimo" class="slide level2">
+<h2>Condição de Ótimo</h2>
+<p>No ponto ótimo <span class="math inline">\(A^*\)</span>, a curva de indiferença é <strong>tangente</strong> à restrição orçamental.</p>
+<div class="fragment">
+<p>Dois declives iguais:</p>
+<ul>
+<li class="fragment">Declive da RO: <span class="math inline">\(-\dfrac{p_x}{p_y}\)</span></li>
+<li class="fragment">Declive da CI: <span class="math inline">\(TMS_{x,y}\)</span></li>
+</ul>
 </div>
 <div class="fragment">
-<p>É um <strong>custo de oportunidade</strong>, tal como na FPP!</p>
+<p><span class="math display">\[\boxed{|TMS_{x,y}| = \frac{p_x}{p_y}}\]</span></p>
 </div>
 </section>
-<section id="alterações-na-restrição-orçamental" class="slide level2">
-<h2>Alterações na Restrição Orçamental</h2>
-<p>O que acontece quando mudam os preços ou o orçamento?</p>
-<p>Vamos analisar três casos:</p>
-<ol type="1">
-<li>Aumento do preço de <span class="math inline">\(X\)</span></li>
-<li>Diminuição do preço de <span class="math inline">\(Y\)</span></li>
-<li>Alteração do orçamento <span class="math inline">\(W\)</span></li>
-</ol>
-</section>
-<section id="caso-1-aumento-do-preço-de-x" class="slide level2">
-<h2>Caso 1: Aumento do Preço de <span class="math inline">\(X\)</span></h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><p>O interceto vertical não muda (não depende de <span class="math inline">\(p_X\)</span>). O interceto horizontal diminui. A reta <strong>roda para dentro</strong>.</p>
-</section>
-<section id="caso-2-diminuição-do-preço-de-y" class="slide level2">
-<h2>Caso 2: Diminuição do Preço de <span class="math inline">\(Y\)</span></h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><p>O interceto horizontal não muda (não depende de <span class="math inline">\(p_Y\)</span>). O interceto vertical aumenta. A reta <strong>roda para fora</strong>.</p>
-</section>
-<section id="caso-3-alteração-do-orçamento" class="slide level2">
-<h2>Caso 3: Alteração do Orçamento</h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><p>O declive <span class="math inline">\(\frac{p_X}{p_Y}\)</span> não muda. A reta desloca-se <strong>paralelamente</strong>.</p>
-</section>
-<section id="resumo-das-alterações" class="slide level2">
-<h2>Resumo das Alterações</h2>
+<section id="interpretação-económica-da-condição-de-ótimo" class="slide level2">
+<h2>Interpretação Económica da Condição de Ótimo</h2>
+<p><span class="math display">\[|TMS| = \frac{p_x}{p_y}\]</span></p>
+<div class="fragment">
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th>Variação</th>
-<th style="text-align: center;">Interceto Vertical</th>
-<th style="text-align: center;">Interceto Horizontal</th>
-<th style="text-align: center;">Declive</th>
+<th>Lado</th>
+<th>Significado</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(p_X \uparrow\)</span></td>
-<td style="text-align: center;">Não muda</td>
-<td style="text-align: center;"><span class="math inline">\(\downarrow\)</span></td>
-<td style="text-align: center;">Muda</td>
+<td><span class="math inline">\(|TMS|\)</span></td>
+<td>Taxa a que o consumidor <strong>está disposto</strong> a trocar Y por X</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(p_Y \downarrow\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\uparrow\)</span></td>
-<td style="text-align: center;">Não muda</td>
-<td style="text-align: center;">Muda</td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\(W \uparrow\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\uparrow\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\uparrow\)</span></td>
-<td style="text-align: center;">Não muda</td>
+<td><span class="math inline">\(p_x/p_y\)</span></td>
+<td>Taxa a que o mercado <strong>permite</strong> trocar Y por X</td>
 </tr>
 </tbody>
 </table>
-<div class="fragment">
-<p><strong>Regra prática:</strong> se muda um preço, a reta <strong>roda</strong>; se muda o orçamento, a reta <strong>desloca-se</strong> paralelamente.</p>
-</div>
-</section>
-<section id="impostos-lump-sum" class="slide level2">
-<h2>Impostos Lump-Sum</h2>
-<p>Um imposto <em>lump-sum</em> é um montante fixo que o consumidor tem de pagar, independentemente do que consome.</p>
-<div class="fragment">
-<p>Se o imposto é <span class="math inline">\(T\)</span>, o orçamento disponível passa a ser:</p>
-<p><span class="math display">\[W' = W - T\]</span></p>
 </div>
 <div class="fragment">
-<p>A restrição orçamental com imposto:</p>
-<p><span class="math display">\[X p_X + Y p_Y = W - T\]</span></p>
-<p>O efeito é idêntico a uma <strong>redução do orçamento</strong>: deslocação paralela para dentro.</p>
-</div>
-</section>
-<section id="subsídios-lump-sum" class="slide level2">
-<h2>Subsídios Lump-Sum</h2>
-<p>Um subsídio <em>lump-sum</em> é um montante fixo que o consumidor recebe, independentemente do que consome.</p>
-<div class="fragment">
-<p>Se o subsídio é <span class="math inline">\(S\)</span>, o orçamento disponível passa a ser:</p>
-<p><span class="math display">\[W' = W + S\]</span></p>
-</div>
-<div class="fragment">
-<p>A restrição orçamental com subsídio:</p>
-<p><span class="math display">\[X p_X + Y p_Y = W + S\]</span></p>
-<p>Efeito: deslocação paralela <strong>para fora</strong>.</p>
-</div>
-</section>
-<section id="efeito-gráfico-de-imposto-e-subsídio-lump-sum" class="slide level2">
-<h2>Efeito Gráfico de Imposto e Subsídio Lump-Sum</h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><p>O declive não muda em nenhum dos casos — os preços relativos mantêm-se iguais.</p>
-</section>
-<section id="analogia-fpp-vs-restrição-orçamental" class="slide level2">
-<h2>Analogia: FPP vs Restrição Orçamental</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>FPP</th>
-<th>Restrição Orçamental</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Eixos</strong></td>
-<td>Quantidades produzidas</td>
-<td>Quantidades consumidas</td>
-</tr>
-<tr class="even">
-<td><strong>Linha</strong></td>
-<td>Produção máxima</td>
-<td>Despesa = Orçamento</td>
-</tr>
-<tr class="odd">
-<td><strong>Declive</strong></td>
-<td>Custo relativo de produção</td>
-<td>Preço relativo (<span class="math inline">\(p_X/p_Y\)</span>)</td>
-</tr>
-<tr class="even">
-<td><strong>Interior</strong></td>
-<td>Ineficiente</td>
-<td>Não gasta todo o W</td>
-</tr>
-</tbody>
-</table>
-<div class="fragment">
-<p>A FPP limita o que se pode <strong>produzir</strong>; a restrição orçamental limita o que se pode <strong>consumir</strong>.</p>
+<p><strong>Situações fora do ótimo:</strong></p>
+<ul>
+<li class="fragment">Se <span class="math inline">\(|TMS| &gt; p_x/p_y\)</span> → consumidor valoriza X mais do que o mercado cobra → deve comprar <strong>mais X</strong> e menos Y</li>
+<li class="fragment">Se <span class="math inline">\(|TMS| &lt; p_x/p_y\)</span> → consumidor valoriza X menos do que o mercado cobra → deve comprar <strong>menos X</strong> e mais Y</li>
+<li class="fragment">No ótimo: valorização subjetiva = preço de mercado ✓</li>
+</ul>
 </div>
 </section>
 <section id="exemplo-numérico" class="slide level2">
 <h2>Exemplo Numérico</h2>
-<p>Um consumidor tem um orçamento de €120. O preço de um livro é €20 e o preço de uma refeição é €15.</p>
+<p><strong>Dados:</strong> <span class="math inline">\(W = 40\)</span>, <span class="math inline">\(p_x = 2\)</span>, <span class="math inline">\(p_y = 4\)</span>. A TMS do consumidor num dado ponto <span class="math inline">\((X, Y)\)</span> é <span class="math inline">\(|TMS| = Y/X\)</span>.</p>
 <div class="fragment">
-<p>A restrição orçamental é:</p>
-<p><span class="math display">\[20X + 15Y = 120\]</span></p>
+<p><strong>Passo 1 — Condição de ótimo:</strong></p>
+<p><span class="math display">\[\frac{Y}{X} = \frac{p_x}{p_y} = \frac{2}{4} = \frac{1}{2} \;\Rightarrow\; Y = \frac{X}{2}\]</span></p>
 </div>
 <div class="fragment">
-<p>Em forma explícita:</p>
-<p><span class="math display">\[Y = 8 - \frac{4}{3}X\]</span></p>
+<p><strong>Passo 2 — Substituir na restrição orçamental:</strong></p>
+<p><span class="math display">\[2X + 4 \cdot \frac{X}{2} = 40 \;\Rightarrow\; 2X + 2X = 40 \;\Rightarrow\; X^* = 10\]</span></p>
 </div>
 <div class="fragment">
-<p>Intercetos: <span class="math inline">\(X_{max} = 6\)</span> livros; <span class="math inline">\(Y_{max} = 8\)</span> refeições. Declive: <span class="math inline">\(-\frac{4}{3}\)</span> (cada livro “custa” <span class="math inline">\(\frac{4}{3} \approx 1{,}33\)</span> refeições).</p>
+<p><span class="math display">\[Y^* = \frac{10}{2} = 5\]</span></p>
+</div>
+<div class="fragment">
+<p><strong>Verificação:</strong> <span class="math inline">\(2 \times 10 + 4 \times 5 = 20 + 20 = 40 = W\)</span> ✓ e <span class="math inline">\(|TMS|=5/10=1/2=p_x/p_y\)</span> ✓</p>
 </div>
 </section>
-<section id="exemplo-representação-gráfica" class="slide level2">
-<h2>Exemplo: Representação Gráfica</h2>
+<section id="ótimo-do-exemplo-gráfico" class="slide level2">
+<h2>Ótimo do Exemplo — Gráfico</h2>
 
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
-<section id="resumo-da-aula-4" class="slide level2">
-<h2>Resumo da Aula 4</h2>
+<img data-src="06_tms_otimo_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch" width="460"></section>
+<section id="síntese" class="slide level2 nonincremental">
+<h2>📋 Síntese</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Conceito</th>
+<th>Definição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TMS</td>
+<td>Taxa de troca subjetiva de Y por X ao longo da CI</td>
+</tr>
+<tr class="even">
+<td>TMS decrescente</td>
+<td>Quanto mais X se tem, menor o valor de mais uma unidade</td>
+</tr>
+<tr class="odd">
+<td>Ótimo</td>
+<td>Cabaz na CI mais alta que a RO permite atingir</td>
+</tr>
+<tr class="even">
+<td>Condição <span class="math inline">\(\|TMS\|=p_x/p_y\)</span></td>
+<td>Igualdade entre taxa subjetiva e taxa de mercado</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>Na <strong>Aula 7</strong> veremos:</p>
 <ul>
-<li class="fragment"><strong>Cabaz de bens</strong>: ponto no espaço <span class="math inline">\((X, Y)\)</span> com quantidades de cada bem</li>
-<li class="fragment"><strong>Espaço orçamental</strong>: conjunto de cabazes acessíveis (<span class="math inline">\(X p_X + Y p_Y \leq W\)</span>)</li>
-<li class="fragment"><strong>Restrição orçamental</strong>: <span class="math inline">\(X p_X + Y p_Y = W\)</span> — a fronteira do espaço</li>
-<li class="fragment"><strong>Declive</strong>: <span class="math inline">\(-\frac{p_X}{p_Y}\)</span> — preço relativo (custo de oportunidade)</li>
-<li class="fragment"><strong>Variações de preços</strong> rodam a reta; <strong>variações de orçamento</strong> deslocam-na</li>
-<li class="fragment"><strong>Impostos/subsídios lump-sum</strong> equivalem a alterar <span class="math inline">\(W\)</span></li>
+<li class="fragment">A função de utilidade como representação das preferências</li>
+<li class="fragment">A ligação entre TMS e utilidades marginais</li>
+<li class="fragment">As Leis de Gossen e o significado formal do ótimo</li>
 </ul>
+</div>
 </section>
-<section id="questão-de-escolha-múltipla-1" class="slide level2">
-<h2>Questão de Escolha Múltipla 1</h2>
-<p>Um consumidor tem um orçamento de €200. O preço do bem <span class="math inline">\(X\)</span> é €10 e o preço do bem <span class="math inline">\(Y\)</span> é €5. Qual é o declive da restrição orçamental (em valor absoluto)?</p>
+<section id="escolha-múltipla-q1" class="slide level2">
+<h2>📝 Escolha Múltipla — Q1</h2>
+<p><strong>A Taxa Marginal de Substituição (TMS) entre X e Y representa:</strong></p>
+<div class="fragment">
 <ol type="a">
-<li>0,5</li>
-<li>2</li>
-<li>10</li>
-<li>20</li>
+<li>O rácio dos preços de X e Y no mercado</li>
+<li>A quantidade de Y a que o consumidor abdica para ter mais uma unidade de X, ficando indiferente</li>
+<li>A derivada da função de utilidade em relação a X</li>
+<li>O declive da restrição orçamental</li>
 </ol>
+</div>
 <div class="fragment">
-<p><strong>Resposta: b)</strong> O declive em valor absoluto é <span class="math inline">\(\frac{p_X}{p_Y} = \frac{10}{5} = 2\)</span>.</p>
+<p><strong>Resposta: B</strong> A TMS mede a disponibilidade subjetiva para substituir Y por X, mantendo a satisfação constante — é o declive da CI.</p>
 </div>
 </section>
-<section id="questão-de-escolha-múltipla-2" class="slide level2">
-<h2>Questão de Escolha Múltipla 2</h2>
-<p>Se o preço do bem <span class="math inline">\(X\)</span> <strong>diminui</strong>, o que acontece à restrição orçamental?</p>
+<section id="escolha-múltipla-q2" class="slide level2">
+<h2>📝 Escolha Múltipla — Q2</h2>
+<p><strong>No ponto ótimo de consumo, qual a condição que se verifica?</strong></p>
+<div class="fragment">
 <ol type="a">
-<li>Desloca-se paralelamente para fora</li>
-<li>Roda sobre o interceto horizontal, expandindo-se</li>
-<li>Roda sobre o interceto vertical, expandindo-se</li>
-<li>Desloca-se paralelamente para dentro</li>
-</ol>
-<div class="fragment">
-<p><strong>Resposta: c)</strong> Quando <span class="math inline">\(p_X\)</span> diminui, o interceto vertical <span class="math inline">\(\frac{W}{p_Y}\)</span> não muda, mas o interceto horizontal <span class="math inline">\(\frac{W}{p_X}\)</span> aumenta. A reta roda sobre o ponto do eixo <span class="math inline">\(Y\)</span>.</p>
-</div>
-</section>
-<section id="exercício" class="slide level2">
-<h2>Exercício</h2>
-<p>Um consumidor dispõe de €60 para gastar em dois bens. O preço de <span class="math inline">\(X\)</span> é €3 e o preço de <span class="math inline">\(Y\)</span> é €2.</p>
-<ol type="1">
-<li>Escreva a restrição orçamental.</li>
-<li>Calcule os intercetos.</li>
-<li>Se o governo aplica um imposto <em>lump-sum</em> de €12, qual é a nova restrição orçamental?</li>
-</ol>
-<div class="fragment">
-<p><strong>Resolução:</strong></p>
-<ol type="1">
-<li class="fragment"><span class="math inline">\(3X + 2Y = 60\)</span></li>
-<li class="fragment"><span class="math inline">\(X_{max} = 20\)</span>; <span class="math inline">\(Y_{max} = 30\)</span></li>
-<li class="fragment"><span class="math inline">\(3X + 2Y = 48\)</span> → <span class="math inline">\(X_{max} = 16\)</span>; <span class="math inline">\(Y_{max} = 24\)</span>. O declive mantém-se: <span class="math inline">\(-\frac{3}{2}\)</span>.</li>
+<li>A TMS é máxima</li>
+<li><span class="math inline">\(|TMS| = p_x / p_y\)</span></li>
+<li>O consumidor gasta igual em ambos os bens</li>
+<li>A utilidade é mínima ao longo da restrição orçamental</li>
 </ol>
 </div>
+<div class="fragment">
+<p><strong>Resposta: B</strong> No ótimo, o declive da CI (TMS) iguala o declive da RO (<span class="math inline">\(-p_x/p_y\)</span>), garantindo que a valorização subjetiva coincide com a taxa de troca de mercado.</p>
+</div>
 </section>
-<section class="slide level2">
-
-<p><strong>Próxima aula:</strong> Preferências, Axiomas de Racionalidade</p>
+<section id="exercício-de-desenvolvimento" class="slide level2">
+<h2>📝 Exercício de Desenvolvimento</h2>
+<p>Um consumidor tem restrição orçamental <span class="math inline">\(3X + 6Y = 60\)</span>. A sua Taxa Marginal de Substituição (em valor absoluto) é <span class="math inline">\(|TMS| = 2Y/X\)</span>.</p>
+<p><strong>(a)</strong> Encontre o cabaz ótimo <span class="math inline">\((X^*, Y^*)\)</span>.</p>
+<p><strong>(b)</strong> Verifique que a condição de ótimo e o orçamento se satisfazem.</p>
+<p><strong>(c)</strong> Interprete economicamente o resultado: o que significa que <span class="math inline">\(|TMS| = p_x/p_y\)</span> neste ponto?</p>
+</section>
+<section id="solução" class="slide level2 smaller">
+<h2>📝 Solução</h2>
+<p><strong>(a)</strong> Condição de ótimo:</p>
+<p><span class="math display">\[|TMS| = \frac{p_x}{p_y} \;\Rightarrow\; \frac{2Y}{X} = \frac{3}{6} = \frac{1}{2} \;\Rightarrow\; 4Y = X\]</span></p>
+<p>Substituindo na RO:</p>
+<p><span class="math display">\[3(4Y) + 6Y = 60 \;\Rightarrow\; 12Y + 6Y = 60 \;\Rightarrow\; 18Y = 60 \;\Rightarrow\; Y^* = \frac{10}{3} \approx 3{,}33\]</span></p>
+<p><span class="math display">\[X^* = 4 \times \frac{10}{3} = \frac{40}{3} \approx 13{,}33\]</span></p>
+<p><strong>(b)</strong> Verificação orçamental: <span class="math inline">\(3 \times \frac{40}{3} + 6 \times \frac{10}{3} = 40 + 20 = 60\)</span> ✓</p>
+<p>Verificação da condição: <span class="math inline">\(|TMS| = \frac{2 \times 10/3}{40/3} = \frac{20/3}{40/3} = \frac{1}{2} = \frac{p_x}{p_y}\)</span> ✓</p>
+<p><strong>(c)</strong> No ótimo, o consumidor está disposto a trocar <span class="math inline">\(1/2\)</span> unidade de Y por cada unidade de X — exactamente o que o mercado oferece (uma unidade de X custa o mesmo que metade de uma unidade de Y, pois <span class="math inline">\(p_x/p_y=3/6=1/2\)</span>). Não há incentivo para reajustar o cabaz.</p>
 
 
 

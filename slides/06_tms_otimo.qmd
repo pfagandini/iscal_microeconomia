@@ -1,0 +1,497 @@
+---
+title: "Microeconomia"
+subtitle: "Aula 6: Taxa Marginal de Substituição e Ótimo de Consumo"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 06_tms_otimo-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+    echo: false
+    code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(ggplot2)
+
+iscal_blue   <- "#003D7A"
+iscal_orange <- "#FF6B35"
+iscal_lb     <- "#0066CC"
+
+theme_iscal <- theme_minimal(base_size = 16) +
+  theme(
+    axis.title   = element_text(colour = iscal_blue, face = "bold", size = 14),
+    axis.text    = element_text(colour = "grey30", size = 12),
+    axis.line    = element_line(colour = "grey50"),
+    panel.grid   = element_blank(),
+    axis.ticks   = element_line(colour = "grey50"),
+    plot.margin  = margin(10, 10, 10, 10)
+  )
+
+# Cobb-Douglas U = x^0.5 * y^0.5  →  y = U^2/x
+ic_y  <- function(x, U)  U^2 / x
+# BC: y = W/py - (px/py)*x
+bc_y  <- function(x, W, px, py)  W/py - (px/py)*x
+# Optimum (alpha = 0.5)
+opt   <- function(W, px, py) c(0.5*W/px, 0.5*W/py)
+```
+
+## Sumário {.nonincremental}
+
+- 🔄 Revisão: restrição orçamental e curva de indiferença
+- 📐 Taxa Marginal de Substituição — definição
+- 📉 TMS decrescente e a sua interpretação
+- 🎯 O ótimo de consumo — geometria
+- ⚖️ Condição de ótimo: $|TMS| = p_x/p_y$
+- 💡 Interpretação económica
+- 📝 Exercícios
+
+---
+
+## Revisão — O que Temos até Agora
+
+**Restrição Orçamental:** o que o consumidor **pode** comprar
+
+$$X p_x + Y p_y = W \;\Longleftrightarrow\; Y = \frac{W}{p_y} - \frac{p_x}{p_y} X$$
+
+. . .
+
+**Curva de Indiferença:** o que o consumidor **valoriza** da mesma forma
+
+$$\text{Conjunto de cabazes com a mesma satisfação}$$
+
+. . .
+
+**Problema do consumidor:** encontrar o cabaz na restrição orçamental que está na **curva de indiferença mais alta possível**.
+
+---
+
+## Taxa Marginal de Substituição — Definição
+
+::: {.callout-note appearance="simple"}
+A **Taxa Marginal de Substituição (TMS)** entre $X$ e $Y$ é a quantidade de $Y$ a que o consumidor está disposto a **prescindir** para obter **uma unidade adicional de X**, mantendo-se indiferente.
+:::
+
+$$TMS_{x,y} = \frac{\Delta Y}{\Delta X} \;\Bigg|_{\overline{U}} < 0$$
+
+. . .
+
+- O sinal é **negativo** — abdicar de Y para obter X
+- Falamos frequentemente de $|TMS|$ para facilitar comparações
+- A TMS é o **declive da curva de indiferença** num ponto
+
+---
+
+## TMS — Gráfico
+
+```{r}
+#| fig-height: 4.0
+#| fig-width: 5.5
+#| fig-align: center
+
+U0 <- 3
+xs <- seq(0.6, 6, length.out = 300)
+df_ic <- data.frame(x = xs, y = ic_y(xs, U0))
+df_ic <- df_ic[df_ic$y <= 6, ]
+
+xA <- 1.2; yA <- ic_y(xA, U0)
+xB <- 2.0; yB <- ic_y(xB, U0)
+xC <- 3.5; yC <- ic_y(xC, U0)
+
+ggplot(df_ic, aes(x, y)) +
+  geom_line(colour = iscal_blue, linewidth = 1.8) +
+  # Points A, B, C
+  geom_point(aes(x = xA, y = yA), colour = iscal_orange, size = 4) +
+  geom_point(aes(x = xB, y = yB), colour = iscal_orange, size = 4) +
+  geom_point(aes(x = xC, y = yC), colour = iscal_orange, size = 4) +
+  # Delta labels
+  annotate("segment", x = xB, y = yB, xend = xB, yend = yC,
+           arrow = arrow(ends = "both", length = unit(0.15,"cm")),
+           colour = "grey40", linewidth = 0.8) +
+  annotate("segment", x = xB, y = yC, xend = xC, yend = yC,
+           arrow = arrow(ends = "both", length = unit(0.15,"cm")),
+           colour = "grey40", linewidth = 0.8) +
+  annotate("text", x = (xB+xC)/2, y = yC - 0.4,
+           label = "Δx > 0", colour = "grey30", size = 3.5) +
+  annotate("text", x = xB - 0.35, y = (yB+yC)/2,
+           label = "Δy < 0", colour = "grey30", size = 3.5) +
+  # Labels A, B, C
+  annotate("text", x = xA - 0.15, y = yA + 0.2, label = "A",
+           colour = iscal_blue, size = 5, fontface = "bold") +
+  annotate("text", x = xB + 0.15, y = yB + 0.2, label = "B",
+           colour = iscal_blue, size = 5, fontface = "bold") +
+  annotate("text", x = xC + 0.15, y = yC + 0.2, label = "C",
+           colour = iscal_blue, size = 5, fontface = "bold") +
+  annotate("text", x = 4.8, y = 4.5,
+           label = "TMS == Delta*Y/Delta*X",
+           parse = TRUE, colour = iscal_blue, size = 4.5) +
+  scale_x_continuous(limits = c(0, 6), name = "X") +
+  scale_y_continuous(limits = c(0, 6), name = "Y") +
+  theme_iscal +
+  theme(axis.line.x = element_line(arrow = arrow(length = unit(0.2,"cm"))),
+        axis.line.y = element_line(arrow = arrow(length = unit(0.2,"cm"))))
+```
+
+---
+
+## TMS é Decrescente (em Valor Absoluto)
+
+Ao longo de uma curva de indiferença **convexa**, $|TMS|$ **diminui** à medida que $X$ aumenta.
+
+. . .
+
+**Porquê?**
+
+- Quando o consumidor tem **pouco X** e **muito Y**, valoriza muito mais uma unidade adicional de X → dispõe-se a abdicar de muito Y
+- À medida que acumula **mais X**, cada unidade adicional vale **menos** — está mais próximo do ponto de saciedade
+- Logo, abdica de **menos Y** por cada unidade adicional de X
+
+. . .
+
+> A TMS decrescente reflete a **lei da utilidade marginal decrescente** — veremos a ligação formal na Aula 7.
+
+---
+
+## TMS ao Longo da Curva
+
+```{r}
+#| fig-height: 4.0
+#| fig-width: 5.5
+#| fig-align: center
+
+U0 <- 3
+xs  <- seq(0.6, 6, length.out = 300)
+df_ic <- data.frame(x = xs, y = ic_y(xs, U0))
+df_ic <- df_ic[df_ic$y <= 6.5, ]
+
+# Three points to show decreasing |TMS|
+pts <- data.frame(x = c(1.0, 2.2, 4.5), label = c("A", "B", "C"))
+pts$y   <- ic_y(pts$x, U0)
+# |TMS| at each point: d(ic_y)/dx = -U^2/x^2; |TMS| = U^2/x^2
+pts$tms <- U0^2 / pts$x^2
+
+ggplot(df_ic, aes(x, y)) +
+  geom_line(colour = iscal_blue, linewidth = 1.8) +
+  geom_point(data = pts, aes(x, y), colour = iscal_orange, size = 4) +
+  # Tangent lines at each point (slope = -tms)
+  geom_abline(slope = -pts$tms[1],
+              intercept = pts$y[1] + pts$tms[1]*pts$x[1],
+              colour = "grey60", linewidth = 1, linetype = "dashed") +
+  geom_abline(slope = -pts$tms[2],
+              intercept = pts$y[2] + pts$tms[2]*pts$x[2],
+              colour = "grey60", linewidth = 1, linetype = "dashed") +
+  geom_abline(slope = -pts$tms[3],
+              intercept = pts$y[3] + pts$tms[3]*pts$x[3],
+              colour = "grey60", linewidth = 1, linetype = "dashed") +
+  # Annotations
+  annotate("text", x = pts$x[1] + 0.15, y = pts$y[1] + 0.25, label = "A",
+           colour = iscal_blue, size = 5, fontface = "bold") +
+  annotate("text", x = pts$x[2] + 0.15, y = pts$y[2] + 0.25, label = "B",
+           colour = iscal_blue, size = 5, fontface = "bold") +
+  annotate("text", x = pts$x[3] + 0.15, y = pts$y[3] + 0.25, label = "C",
+           colour = iscal_blue, size = 5, fontface = "bold") +
+  annotate("text", x = 1.0, y = 1.0,
+           label = sprintf("|TMS|_A = %.1f", pts$tms[1]),
+           colour = iscal_orange, size = 3.5) +
+  annotate("text", x = 2.8, y = 0.7,
+           label = sprintf("|TMS|_B = %.2f", pts$tms[2]),
+           colour = iscal_orange, size = 3.5) +
+  annotate("text", x = 4.3, y = 0.4,
+           label = sprintf("|TMS|_C = %.2f", pts$tms[3]),
+           colour = iscal_orange, size = 3.5) +
+  scale_x_continuous(limits = c(0, 6.5), name = "X") +
+  scale_y_continuous(limits = c(0, 6.5), name = "Y") +
+  coord_cartesian(xlim = c(0,6.5), ylim = c(0,6.5)) +
+  theme_iscal +
+  theme(axis.line.x = element_line(arrow = arrow(length = unit(0.2,"cm"))),
+        axis.line.y = element_line(arrow = arrow(length = unit(0.2,"cm"))))
+```
+
+*O declive das retas tangentes (em valor absoluto) vai diminuindo de A para C.*
+
+---
+
+## O Ótimo de Consumo — Geometria
+
+**O consumidor quer atingir a curva de indiferença mais alta possível, sem ultrapassar o orçamento.**
+
+. . .
+
+O ponto ótimo $A^*$ é aquele onde a **restrição orçamental é tangente** a uma curva de indiferença — o ponto de toque.
+
+```{r}
+#| fig-height: 3.2
+#| fig-width: 4.5
+#| fig-align: center
+
+W <- 10; px <- 3; py <- 3.5; alpha <- 0.5
+xstar <- alpha * W / px      # ≈ 1.667
+ystar <- alpha * W / py      # ≈ 1.429
+Ustar <- sqrt(xstar * ystar) # utility at optimum ≈ 1.543
+
+xs_ic <- seq(0.5, 4.5, length.out = 300)
+df_ic_opt  <- data.frame(x = xs_ic, y = ic_y(xs_ic, Ustar))
+df_ic_opt  <- df_ic_opt[df_ic_opt$y <= 5, ]
+df_ic_high <- data.frame(x = xs_ic, y = ic_y(xs_ic, Ustar + 0.5))
+df_ic_high <- df_ic_high[df_ic_high$y <= 5, ]
+df_ic_low  <- data.frame(x = xs_ic, y = ic_y(xs_ic, Ustar - 0.4))
+df_ic_low  <- df_ic_low[df_ic_low$y <= 5, ]
+
+df_bc <- data.frame(x = c(0, W/px), y = c(W/py, 0))
+
+ggplot() +
+  geom_line(data = df_ic_low,  aes(x, y), colour = "grey70", linewidth = 1, linetype = "dashed") +
+  geom_line(data = df_ic_opt,  aes(x, y), colour = iscal_lb, linewidth = 1.8) +
+  geom_line(data = df_ic_high, aes(x, y), colour = "grey70", linewidth = 1, linetype = "dashed") +
+  geom_line(data = df_bc,      aes(x, y), colour = iscal_blue, linewidth = 1.8) +
+  geom_point(aes(x = xstar, y = ystar), colour = iscal_orange, size = 5) +
+  geom_segment(aes(x = xstar, y = 0, xend = xstar, yend = ystar),
+               linetype = "dashed", colour = "grey50") +
+  geom_segment(aes(x = 0, y = ystar, xend = xstar, yend = ystar),
+               linetype = "dashed", colour = "grey50") +
+  annotate("text", x = xstar + 0.08, y = 0.08,
+           label = "x*", colour = iscal_orange, size = 5, fontface = "bold") +
+  annotate("text", x = 0.1, y = ystar + 0.12,
+           label = "y*", colour = iscal_orange, size = 5, fontface = "bold") +
+  annotate("text", x = xstar + 0.12, y = ystar + 0.18,
+           label = "A*", colour = iscal_orange, size = 5.5, fontface = "bold") +
+  scale_x_continuous(limits = c(0, 4.2), name = "X") +
+  scale_y_continuous(limits = c(0, 4.0), name = "Y") +
+  theme_iscal +
+  theme(axis.line.x = element_line(arrow = arrow(length = unit(0.2,"cm"))),
+        axis.line.y = element_line(arrow = arrow(length = unit(0.2,"cm"))))
+```
+
+---
+
+## Condição de Ótimo
+
+No ponto ótimo $A^*$, a curva de indiferença é **tangente** à restrição orçamental.
+
+. . .
+
+Dois declives iguais:
+
+- Declive da RO: $-\dfrac{p_x}{p_y}$
+- Declive da CI: $TMS_{x,y}$
+
+. . .
+
+$$\boxed{|TMS_{x,y}| = \frac{p_x}{p_y}}$$
+
+---
+
+## Interpretação Económica da Condição de Ótimo
+
+$$|TMS| = \frac{p_x}{p_y}$$
+
+. . .
+
+| Lado | Significado |
+|------|------------|
+| $|TMS|$ | Taxa a que o consumidor **está disposto** a trocar Y por X |
+| $p_x/p_y$ | Taxa a que o mercado **permite** trocar Y por X |
+
+. . .
+
+**Situações fora do ótimo:**
+
+- Se $|TMS| > p_x/p_y$ → consumidor valoriza X mais do que o mercado cobra → deve comprar **mais X** e menos Y
+- Se $|TMS| < p_x/p_y$ → consumidor valoriza X menos do que o mercado cobra → deve comprar **menos X** e mais Y
+- No ótimo: valorização subjetiva = preço de mercado ✓
+
+---
+
+## Exemplo Numérico
+
+**Dados:** $W = 40$, $p_x = 2$, $p_y = 4$. A TMS do consumidor num dado ponto $(X, Y)$ é $|TMS| = Y/X$.
+
+. . .
+
+**Passo 1 — Condição de ótimo:**
+
+$$\frac{Y}{X} = \frac{p_x}{p_y} = \frac{2}{4} = \frac{1}{2} \;\Rightarrow\; Y = \frac{X}{2}$$
+
+. . .
+
+**Passo 2 — Substituir na restrição orçamental:**
+
+$$2X + 4 \cdot \frac{X}{2} = 40 \;\Rightarrow\; 2X + 2X = 40 \;\Rightarrow\; X^* = 10$$
+
+. . .
+
+$$Y^* = \frac{10}{2} = 5$$
+
+. . .
+
+**Verificação:** $2 \times 10 + 4 \times 5 = 20 + 20 = 40 = W$ ✓ e $|TMS|=5/10=1/2=p_x/p_y$ ✓
+
+---
+
+## Ótimo do Exemplo — Gráfico
+
+```{r}
+#| fig-height: 4.0
+#| fig-width: 4.8
+#| fig-align: center
+
+W2 <- 40; px2 <- 2; py2 <- 4
+xopt <- 10; yopt <- 5
+# |TMS| = Y/X  means U = sqrt(XY)  (Cobb-Douglas), so ic: Y = U^2/X
+Uopt2 <- sqrt(xopt * yopt)   # = sqrt(50) ≈ 7.07
+
+xs2 <- seq(1, 22, length.out = 300)
+df_ic2_opt  <- data.frame(x = xs2, y = Uopt2^2 / xs2)
+df_ic2_opt  <- df_ic2_opt[df_ic2_opt$y >= 0.3 & df_ic2_opt$y <= 14, ]
+df_ic2_low  <- data.frame(x = xs2, y = (Uopt2 - 1.5)^2 / xs2)
+df_ic2_low  <- df_ic2_low[df_ic2_low$y >= 0.3 & df_ic2_low$y <= 14, ]
+df_bc2 <- data.frame(x = c(0, W2/px2), y = c(W2/py2, 0))
+
+ggplot() +
+  geom_line(data = df_ic2_low, aes(x, y), colour = "grey70",
+            linewidth = 1, linetype = "dashed") +
+  geom_line(data = df_ic2_opt, aes(x, y), colour = iscal_lb, linewidth = 1.8) +
+  geom_line(data = df_bc2,     aes(x, y), colour = iscal_blue, linewidth = 1.8) +
+  geom_point(aes(x = xopt, y = yopt), colour = iscal_orange, size = 5) +
+  geom_segment(aes(x = xopt, y = 0, xend = xopt, yend = yopt),
+               linetype = "dashed", colour = "grey50") +
+  geom_segment(aes(x = 0, y = yopt, xend = xopt, yend = yopt),
+               linetype = "dashed", colour = "grey50") +
+  annotate("text", x = xopt + 0.3, y = 0.4,
+           label = "x*=10", colour = iscal_orange, size = 4, fontface = "bold") +
+  annotate("text", x = 0.5, y = yopt + 0.4,
+           label = "y*=5", colour = iscal_orange, size = 4, fontface = "bold") +
+  annotate("text", x = xopt + 0.4, y = yopt + 0.5,
+           label = "A*", colour = iscal_orange, size = 5.5, fontface = "bold") +
+  scale_x_continuous(limits = c(0, 23), name = "X") +
+  scale_y_continuous(limits = c(0, 12), name = "Y") +
+  theme_iscal +
+  theme(axis.line.x = element_line(arrow = arrow(length = unit(0.2,"cm"))),
+        axis.line.y = element_line(arrow = arrow(length = unit(0.2,"cm"))))
+```
+
+---
+
+## 📋 Síntese {.nonincremental}
+
+| Conceito | Definição |
+|----------|-----------|
+| TMS | Taxa de troca subjetiva de Y por X ao longo da CI |
+| TMS decrescente | Quanto mais X se tem, menor o valor de mais uma unidade |
+| Ótimo | Cabaz na CI mais alta que a RO permite atingir |
+| Condição $\|TMS\|=p_x/p_y$ | Igualdade entre taxa subjetiva e taxa de mercado |
+
+. . .
+
+Na **Aula 7** veremos:
+
+- A função de utilidade como representação das preferências
+- A ligação entre TMS e utilidades marginais
+- As Leis de Gossen e o significado formal do ótimo
+
+---
+
+## 📝 Escolha Múltipla — Q1
+
+**A Taxa Marginal de Substituição (TMS) entre X e Y representa:**
+
+. . .
+
+::: {.nonincremental}
+a) O rácio dos preços de X e Y no mercado
+b) A quantidade de Y a que o consumidor abdica para ter mais uma unidade de X, ficando indiferente
+c) A derivada da função de utilidade em relação a X
+d) O declive da restrição orçamental
+:::
+
+. . .
+
+**Resposta: B** A TMS mede a disponibilidade subjetiva para substituir Y por X, mantendo a satisfação constante — é o declive da CI.
+
+---
+
+## 📝 Escolha Múltipla — Q2
+
+**No ponto ótimo de consumo, qual a condição que se verifica?**
+
+. . .
+
+::: {.nonincremental}
+a) A TMS é máxima
+b) $|TMS| = p_x / p_y$
+c) O consumidor gasta igual em ambos os bens
+d) A utilidade é mínima ao longo da restrição orçamental
+:::
+
+. . .
+
+**Resposta: B** No ótimo, o declive da CI (TMS) iguala o declive da RO ($-p_x/p_y$), garantindo que a valorização subjetiva coincide com a taxa de troca de mercado.
+
+---
+
+## 📝 Exercício de Desenvolvimento
+
+::: {.nonincremental}
+Um consumidor tem restrição orçamental $3X + 6Y = 60$. A sua Taxa Marginal de Substituição (em valor absoluto) é $|TMS| = 2Y/X$.
+
+**(a)** Encontre o cabaz ótimo $(X^*, Y^*)$.
+
+**(b)** Verifique que a condição de ótimo e o orçamento se satisfazem.
+
+**(c)** Interprete economicamente o resultado: o que significa que $|TMS| = p_x/p_y$ neste ponto?
+:::
+
+---
+
+## 📝 Solução {.smaller}
+
+::: {.nonincremental}
+
+**(a)** Condição de ótimo:
+
+$$|TMS| = \frac{p_x}{p_y} \;\Rightarrow\; \frac{2Y}{X} = \frac{3}{6} = \frac{1}{2} \;\Rightarrow\; 4Y = X$$
+
+Substituindo na RO:
+
+$$3(4Y) + 6Y = 60 \;\Rightarrow\; 12Y + 6Y = 60 \;\Rightarrow\; 18Y = 60 \;\Rightarrow\; Y^* = \frac{10}{3} \approx 3{,}33$$
+
+$$X^* = 4 \times \frac{10}{3} = \frac{40}{3} \approx 13{,}33$$
+
+**(b)** Verificação orçamental: $3 \times \frac{40}{3} + 6 \times \frac{10}{3} = 40 + 20 = 60$ ✓
+
+Verificação da condição: $|TMS| = \frac{2 \times 10/3}{40/3} = \frac{20/3}{40/3} = \frac{1}{2} = \frac{p_x}{p_y}$ ✓
+
+**(c)** No ótimo, o consumidor está disposto a trocar $1/2$ unidade de Y por cada unidade de X — exactamente o que o mercado oferece (uma unidade de X custa o mesmo que metade de uma unidade de Y, pois $p_x/p_y=3/6=1/2$). Não há incentivo para reajustar o cabaz.
+
+:::

@@ -174,17 +174,17 @@ Os intercetos mostram a **quantidade máxima** de cada bem que o consumidor pode
 
 Podemos reescrever a restrição orçamental isolando $Y$:
 
-$$X p_X + Y p_Y = W \quad \Leftrightarrow \quad Y = {\color{red}\frac{W}{p_Y}} - {\color{blue}\frac{p_X}{p_Y}} X$$
+$$X p_X + Y p_Y = W \quad \Leftrightarrow \quad Y = {\color{red}{\frac{W}{p_Y}}} - {\color{blue}{\frac{p_X}{p_Y}}} X$$
 
 . . .
 
-- ${\color{red}\frac{W}{p_Y}}$: **ordenada na origem** (interceto vertical)
+- ${\color{red}{\frac{W}{p_Y}}}$: **ordenada na origem** (interceto vertical)
 
-- ${\color{blue}-\frac{p_X}{p_Y}}$: **declive** da restrição orçamental
+- ${\color{blue}{-\frac{p_X}{p_Y}}}$: **declive** da restrição orçamental
 
 . . .
 
-No exemplo: $Y = {\color{red}100} - {\color{blue}2{,}5}\, X$
+No exemplo: $Y = {\color{red}{100}} - {\color{blue}{2,5}}\, X$
 
 ---
 

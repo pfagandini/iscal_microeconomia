@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
-  <meta name="author" content="Paulo Fagandini">
+  <meta name="author" content="ISCAL - IPL">
   <title>Iscal - Microeconomia (Plano de Transição) – Microeconomia</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -128,336 +128,303 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Microeconomia</h1>
-  <p class="subtitle">Cabaz, Espaço e Restrição Orçamental</p>
+  <p class="subtitle">Aula 5: Preferências e Axiomas de Racionalidade</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Paulo Fagandini 
+ISCAL - IPL 
 </div>
-        <p class="quarto-title-affiliation">
-            ISCAL-IPL
-          </p>
-    </div>
+</div>
 </div>
 
 </section>
-<section id="do-produtor-ao-consumidor" class="slide level2">
-<h2>Do Produtor ao Consumidor</h2>
-<p>Nas aulas anteriores estudámos a <strong>Fronteira das Possibilidades de Produção</strong> e os ganhos do comércio. Agora entramos no estudo do <strong>consumidor</strong>.</p>
-<p>O esquema geral do modelo micro começa pelo lado da procura:</p>
+<section id="sumário" class="slide level2 nonincremental">
+<h2>Sumário</h2>
 <ul>
-<li><strong>Consumidores</strong> → Restrição Orçamental → Preferências → Utilidade → Escolha → Procura</li>
+<li class="fragment">🤔 A questão das preferências</li>
+<li class="fragment">✅ Axioma 1 — Desejabilidade (não saciedade)</li>
+<li class="fragment"><span class="math inline">\(\sim\)</span> Curva de indiferença — definição e propriedades</li>
+<li class="fragment">📚 Mapa de curvas de indiferença</li>
+<li class="fragment">✅ Axioma 2 — Completude</li>
+<li class="fragment">✅ Axioma 3 — Transitividade</li>
+<li class="fragment">🔗 Racionalidade das preferências</li>
+<li class="fragment">📝 Exercícios</li>
 </ul>
 </section>
-<section id="cabaz-de-bens" class="slide level2">
-<h2>Cabaz de Bens</h2>
-<p>Um <strong>cabaz de bens</strong> é composto por quantidades de vários bens. Quando comparamos cabazes, os bens são os mesmos, mas as quantidades variam.</p>
+<section id="a-questão-das-preferências" class="slide level2">
+<h2>A Questão das Preferências</h2>
+<p>O espaço de consumo diz <strong>o que o consumidor pode comprar</strong>.</p>
 <div class="fragment">
-<p>Admitamos dois bens: laranjas (<span class="math inline">\(Y\)</span>) e bolachas (<span class="math inline">\(X\)</span>).</p>
-<p>O cabaz <span class="math inline">\((3, 2)\)</span> é composto por 3 bolachas e 2 laranjas. Graficamente, é um <strong>ponto</strong> no espaço <span class="math inline">\((X, Y)\)</span>.</p>
+<p>Mas entre todos os cabazes acessíveis, <strong>qual o preferido?</strong></p>
 </div>
-</section>
-<section id="representação-gráfica-de-um-cabaz" class="slide level2">
-<h2>Representação Gráfica de um Cabaz</h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><p>Cada cabaz é um ponto no plano. O eixo horizontal mede a quantidade de <span class="math inline">\(X\)</span>, o vertical mede a quantidade de <span class="math inline">\(Y\)</span>.</p>
-</section>
-<section id="o-problema-do-consumidor" class="slide level2">
-<h2>O Problema do Consumidor</h2>
-<p>De entre todos os cabazes possíveis, o consumidor quer encontrar a <strong>escolha ótima</strong>, dadas as variáveis <strong>exógenas</strong> (que não controla):</p>
+<div class="fragment">
+<blockquote>
+<p>Para comparar cabazes com <strong>mais de um bem</strong>, precisamos de saber as <strong>preferências</strong> do consumidor.</p>
+</blockquote>
+</div>
+<div class="fragment">
+<p>Exemplo: o consumidor prefere <span class="math inline">\((25, 30)\)</span> a <span class="math inline">\((30, 20)\)</span>?</p>
 <ul>
-<li class="fragment">Orçamento (<span class="math inline">\(W\)</span>)</li>
-<li class="fragment">Preços de mercado (<span class="math inline">\(p_X\)</span>, <span class="math inline">\(p_Y\)</span>)</li>
+<li class="fragment">O primeiro tem menos X mas mais Y — a resposta depende de <strong>quanto o consumidor valoriza cada bem</strong>.</li>
 </ul>
-<div class="fragment">
-<p>O consumidor decide as variáveis <strong>endógenas</strong>: as quantidades <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> que vai consumir.</p>
 </div>
 </section>
-<section id="espaço-das-possibilidades-de-consumo" class="slide level2">
-<h2>Espaço das Possibilidades de Consumo</h2>
-<p>É o <strong>conjunto de todos os cabazes</strong> que podem ser adquiridos com um dado orçamento.</p>
-<div class="fragment">
-<p>Um cabaz <span class="math inline">\((X, Y)\)</span> é acessível se a despesa total não exceder o orçamento:</p>
-<p><span class="math display">\[X \cdot p_X + Y \cdot p_Y \leq W\]</span></p>
-</div>
-<div class="fragment">
-<p>O conjunto de cabazes cuja despesa <strong>esgota exatamente</strong> o orçamento designa-se <strong>Restrição Orçamental</strong>.</p>
-</div>
-</section>
-<section id="restrição-orçamental" class="slide level2">
-<h2>Restrição Orçamental</h2>
-<p>A restrição orçamental é dada por:</p>
-<p><span class="math display">\[X \cdot p_X + Y \cdot p_Y = W\]</span></p>
-<div class="fragment">
-<p><strong>Exemplo:</strong> €10 para gastar em bolachas e laranjas. Cada bolacha custa €0,25 e cada laranja custa €0,10.</p>
-<p><span class="math display">\[0{,}25 X + 0{,}10 Y = 10\]</span></p>
-</div>
-</section>
-<section id="representação-gráfica" class="slide level2">
-<h2>Representação Gráfica</h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><p>O triângulo azul claro é o <strong>espaço orçamental</strong>: todos os cabazes acessíveis. A linha azul é a <strong>restrição orçamental</strong>.</p>
-</section>
-<section id="interpretação-dos-intercetos" class="slide level2">
-<h2>Interpretação dos Intercetos</h2>
-<p>Se o consumidor gastar <strong>todo o orçamento</strong> num só bem:</p>
-<ul>
-<li class="fragment"><p>Apenas bolachas: <span class="math inline">\(X = \frac{W}{p_X} = \frac{10}{0{,}25} = 40\)</span></p></li>
-<li class="fragment"><p>Apenas laranjas: <span class="math inline">\(Y = \frac{W}{p_Y} = \frac{10}{0{,}10} = 100\)</span></p></li>
-</ul>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
+<section id="axioma-1-desejabilidade" class="slide level2 nonincremental">
+<h2>Axioma 1 — Desejabilidade</h2>
+<div class="callout callout-important callout-style-simple">
 <div class="callout-body">
-<div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Note</strong></p>
+<div class="callout-content">
+<p><strong>Desejabilidade (não saciedade):</strong> consumir mais é sempre melhor, em relação a pelo menos um bem.</p>
+</div>
+</div>
+</div>
+<p>Se <span class="math inline">\(A = (x_A, y_A)\)</span> e <span class="math inline">\(B = (x_B, y_B)\)</span> com <span class="math inline">\(x_A \geq x_B\)</span> <strong>e</strong> <span class="math inline">\(y_A \geq y_B\)</span> (e pelo menos uma desigualdade estrita), então <span class="math inline">\(A \succ B\)</span>.</p>
+</section>
+<section id="desejabilidade-gráfico" class="slide level2">
+<h2>Desejabilidade — Gráfico</h2>
+
+<img data-src="05_preferencias_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center r-stretch" width="432"></section>
+<section id="e-quando-um-cabaz-tem-mais-de-um-bem-e-menos-do-outro" class="slide level2">
+<h2>E quando um cabaz tem mais de um bem e menos do outro?</h2>
+<p><strong>Exemplo:</strong> o consumidor prefere <span class="math inline">\((20, 30)\)</span> ou <span class="math inline">\((30, 20)\)</span>?</p>
+<div class="fragment">
+<p>A axioma da desejabilidade <strong>não responde</strong> a esta questão.</p>
+</div>
+<div class="fragment">
+<p>Precisamos de saber <strong>quais os cabazes que lhe são indiferentes</strong> — que lhe dão a mesma satisfação.</p>
+<blockquote>
+<p>Quantas laranjas está disposto a abdicar para ter mais uma bolacha, ficando <strong>indiferente</strong>?</p>
+</blockquote>
+</div>
+</section>
+<section id="curva-de-indiferença" class="slide level2">
+<h2>Curva de Indiferença</h2>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
 <div class="callout-content">
-<p>Os intercetos mostram a <strong>quantidade máxima</strong> de cada bem que o consumidor pode comprar se não consumir nada do outro.</p>
+<p>Uma <strong>curva de indiferença</strong> é o conjunto de todos os cabazes que proporcionam ao consumidor <strong>o mesmo nível de satisfação</strong>.</p>
 </div>
 </div>
 </div>
-</div>
-</section>
-<section id="forma-explícita-da-restrição-orçamental" class="slide level2">
-<h2>Forma Explícita da Restrição Orçamental</h2>
-<p>Podemos reescrever a restrição orçamental isolando <span class="math inline">\(Y\)</span>:</p>
-<p><span class="math display">\[X p_X + Y p_Y = W \quad \Leftrightarrow \quad Y = {\color{red}{\frac{W}{p_Y}}} - {\color{blue}{\frac{p_X}{p_Y}}} X\]</span></p>
 <div class="fragment">
+<p>Consequência da desejabilidade:</p>
 <ul>
-<li class="fragment"><p><span class="math inline">\({\color{red}{\frac{W}{p_Y}}}\)</span>: <strong>ordenada na origem</strong> (interceto vertical)</p></li>
-<li class="fragment"><p><span class="math inline">\({\color{blue}-\frac{p_X}{p_Y}}\)</span>: <strong>declive</strong> da restrição orçamental</p></li>
+<li class="fragment">Cabazes indiferentes não podem ter <strong>mais de ambos</strong> os bens (seria preferido)</li>
+<li class="fragment">Nem <strong>menos de ambos</strong> (seria preterido)</li>
+<li class="fragment"><span class="math inline">\(\Rightarrow\)</span> A curva de indiferença tem <strong>inclinação negativa</strong></li>
 </ul>
 </div>
+</section>
+<section id="curva-de-indiferença-gráfico" class="slide level2">
+<h2>Curva de Indiferença — Gráfico</h2>
+
+<img data-src="05_preferencias_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center r-stretch" width="460"><p><em>A, B e C são indiferentes entre si</em></p>
+</section>
+<section id="axioma-2-completude" class="slide level2 nonincremental">
+<h2>Axioma 2 — Completude</h2>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Completude:</strong> dados quaisquer dois cabazes, o consumidor sabe sempre dizer qual a relação de preferência entre eles.</p>
+</div>
+</div>
+</div>
 <div class="fragment">
-<p>No exemplo: <span class="math inline">\(Y = {\color{red}{100}} - {\color{blue}{2,5}}\, X\)</span></p>
+<p><strong>Consequências:</strong></p>
+<ul>
+<li class="fragment">Todo o cabaz pertence a alguma curva de indiferença</li>
+<li class="fragment">Quanto mais alta a curva, maior a satisfação (desejabilidade)</li>
+<li class="fragment">O espaço de consumo é coberto por um <strong>mapa de curvas de indiferença</strong></li>
+</ul>
 </div>
 </section>
-<section id="significado-económico-do-declive" class="slide level2">
-<h2>Significado Económico do Declive</h2>
-<p>O declive da restrição orçamental é <span class="math inline">\(-\frac{p_X}{p_Y}\)</span>.</p>
-<p>Em valor absoluto: <span class="math inline">\(\frac{p_X}{p_Y}\)</span> é o <strong>preço relativo</strong> do bem <span class="math inline">\(X\)</span> em termos do bem <span class="math inline">\(Y\)</span>.</p>
+<section id="mapa-de-curvas-de-indiferença" class="slide level2">
+<h2>Mapa de Curvas de Indiferença</h2>
+
+<img data-src="05_preferencias_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="480"></section>
+<section id="axioma-3-transitividade" class="slide level2 nonincremental">
+<h2>Axioma 3 — Transitividade</h2>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Transitividade:</strong> se o cabaz A é preferido a B, e B é preferido a C, então A é preferido a C.</p>
+</div>
+</div>
+</div>
+<p><span class="math display">\[A \succ B \;\text{ e }\; B \succ C \;\Rightarrow\; A \succ C\]</span></p>
 <div class="fragment">
-<p>No exemplo: <span class="math inline">\(\frac{0{,}25}{0{,}10} = 2{,}5\)</span></p>
-<p>Significa que cada bolacha “custa” 2,5 laranjas — para comprar mais uma bolacha, o consumidor prescinde de 2,5 laranjas.</p>
+<p>De igual modo para indiferença:</p>
+<p><span class="math display">\[A \sim B \;\text{ e }\; B \sim C \;\Rightarrow\; A \sim C\]</span></p>
 </div>
 <div class="fragment">
-<p>É um <strong>custo de oportunidade</strong>, tal como na FPP!</p>
+<p>A transitividade <strong>garante consistência</strong> nas escolhas — sem ciclos de preferência.</p>
 </div>
 </section>
-<section id="alterações-na-restrição-orçamental" class="slide level2">
-<h2>Alterações na Restrição Orçamental</h2>
-<p>O que acontece quando mudam os preços ou o orçamento?</p>
-<p>Vamos analisar três casos:</p>
-<ol type="1">
-<li>Aumento do preço de <span class="math inline">\(X\)</span></li>
-<li>Diminuição do preço de <span class="math inline">\(Y\)</span></li>
-<li>Alteração do orçamento <span class="math inline">\(W\)</span></li>
-</ol>
+<section id="consequência-curvas-de-indiferença-não-se-podem-cruzar" class="slide level2">
+<h2>Consequência: Curvas de Indiferença Não se Podem Cruzar</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="05_preferencias_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:48%;">
+<p>Estas curvas de indiferença <strong>não refletem</strong> preferências transitivas.</p>
+<ul>
+<li class="fragment"><span class="math inline">\(D \succ A\)</span> — mesmo <span class="math inline">\(X\)</span>, <span class="math inline">\(D\)</span> tem <strong>mais</strong> <span class="math inline">\(Y\)</span></li>
+<li class="fragment"><span class="math inline">\(D \sim C\)</span> — ambos em <span class="math inline">\(U_2\)</span></li>
+<li class="fragment"><span class="math inline">\(C \sim A\)</span> — ambos em <span class="math inline">\(U_1\)</span></li>
+<li class="fragment">Logo, pela transitividade: <span class="math inline">\(D \sim A\)</span> — <strong>contradição!</strong> 💥</li>
+</ul>
+</div></div>
 </section>
-<section id="caso-1-aumento-do-preço-de-x" class="slide level2">
-<h2>Caso 1: Aumento do Preço de <span class="math inline">\(X\)</span></h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><p>O interceto vertical não muda (não depende de <span class="math inline">\(p_X\)</span>). O interceto horizontal diminui. A reta <strong>roda para dentro</strong>.</p>
-</section>
-<section id="caso-2-diminuição-do-preço-de-y" class="slide level2">
-<h2>Caso 2: Diminuição do Preço de <span class="math inline">\(Y\)</span></h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><p>O interceto horizontal não muda (não depende de <span class="math inline">\(p_Y\)</span>). O interceto vertical aumenta. A reta <strong>roda para fora</strong>.</p>
-</section>
-<section id="caso-3-alteração-do-orçamento" class="slide level2">
-<h2>Caso 3: Alteração do Orçamento</h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><p>O declive <span class="math inline">\(\frac{p_X}{p_Y}\)</span> não muda. A reta desloca-se <strong>paralelamente</strong>.</p>
-</section>
-<section id="resumo-das-alterações" class="slide level2">
-<h2>Resumo das Alterações</h2>
+<section id="racionalidade-das-preferências" class="slide level2 nonincremental">
+<h2>Racionalidade das Preferências</h2>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Em contexto de desejabilidade, as preferências dizem-se <strong>racionais</strong> se forem <strong>completas</strong> e <strong>transitivas</strong>.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th>Variação</th>
-<th style="text-align: center;">Interceto Vertical</th>
-<th style="text-align: center;">Interceto Horizontal</th>
-<th style="text-align: center;">Declive</th>
+<th>Axioma</th>
+<th>Significado</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(p_X \uparrow\)</span></td>
-<td style="text-align: center;">Não muda</td>
-<td style="text-align: center;"><span class="math inline">\(\downarrow\)</span></td>
-<td style="text-align: center;">Muda</td>
+<td>Desejabilidade</td>
+<td>Mais é melhor</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(p_Y \downarrow\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\uparrow\)</span></td>
-<td style="text-align: center;">Não muda</td>
-<td style="text-align: center;">Muda</td>
+<td>Completude</td>
+<td>O consumidor compara sempre quaisquer dois cabazes</td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(W \uparrow\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\uparrow\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\uparrow\)</span></td>
-<td style="text-align: center;">Não muda</td>
+<td>Transitividade</td>
+<td>As escolhas são internamente consistentes</td>
 </tr>
 </tbody>
 </table>
+</div>
 <div class="fragment">
-<p><strong>Regra prática:</strong> se muda um preço, a reta <strong>roda</strong>; se muda o orçamento, a reta <strong>desloca-se</strong> paralelamente.</p>
+<p>Outras hipóteses necessárias na teoria do consumidor:</p>
+<ul>
+<li class="fragment">Informação completa</li>
+<li class="fragment">Continuidade do espaço orçamental</li>
+<li class="fragment">Independência das escolhas entre consumidores</li>
+</ul>
 </div>
 </section>
-<section id="impostos-lump-sum" class="slide level2">
-<h2>Impostos Lump-Sum</h2>
-<p>Um imposto <em>lump-sum</em> é um montante fixo que o consumidor tem de pagar, independentemente do que consome.</p>
+<section id="curvas-de-indiferença-bem-comportadas" class="slide level2">
+<h2>Curvas de Indiferença “Bem Comportadas”</h2>
+<p>Uma curva de indiferença diz-se <strong>bem comportada</strong> se for:</p>
+<ul>
+<li class="fragment"><strong>Convexa</strong> em relação à origem — o consumidor prefere diversidade</li>
+<li class="fragment"><strong>Com declive negativo</strong> — desejabilidade</li>
+<li class="fragment"><strong>Não se cruza</strong> com outras CIs — transitividade</li>
+</ul>
 <div class="fragment">
-<p>Se o imposto é <span class="math inline">\(T\)</span>, o orçamento disponível passa a ser:</p>
-<p><span class="math display">\[W' = W - T\]</span></p>
-</div>
-<div class="fragment">
-<p>A restrição orçamental com imposto:</p>
-<p><span class="math display">\[X p_X + Y p_Y = W - T\]</span></p>
-<p>O efeito é idêntico a uma <strong>redução do orçamento</strong>: deslocação paralela para dentro.</p>
-</div>
-</section>
-<section id="subsídios-lump-sum" class="slide level2">
-<h2>Subsídios Lump-Sum</h2>
-<p>Um subsídio <em>lump-sum</em> é um montante fixo que o consumidor recebe, independentemente do que consome.</p>
-<div class="fragment">
-<p>Se o subsídio é <span class="math inline">\(S\)</span>, o orçamento disponível passa a ser:</p>
-<p><span class="math display">\[W' = W + S\]</span></p>
-</div>
-<div class="fragment">
-<p>A restrição orçamental com subsídio:</p>
-<p><span class="math display">\[X p_X + Y p_Y = W + S\]</span></p>
-<p>Efeito: deslocação paralela <strong>para fora</strong>.</p>
+<p>A convexidade reflete que o consumidor valoriza mais o bem de que dispõe em <strong>menor quantidade</strong>.</p>
 </div>
 </section>
-<section id="efeito-gráfico-de-imposto-e-subsídio-lump-sum" class="slide level2">
-<h2>Efeito Gráfico de Imposto e Subsídio Lump-Sum</h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><p>O declive não muda em nenhum dos casos — os preços relativos mantêm-se iguais.</p>
-</section>
-<section id="analogia-fpp-vs-restrição-orçamental" class="slide level2">
-<h2>Analogia: FPP vs Restrição Orçamental</h2>
+<section id="síntese" class="slide level2 nonincremental">
+<h2>📋 Síntese</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 27%">
+<col style="width: 72%">
 </colgroup>
 <thead>
 <tr class="header">
-<th></th>
-<th>FPP</th>
-<th>Restrição Orçamental</th>
+<th>Axioma</th>
+<th>Consequência gráfica</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Eixos</strong></td>
-<td>Quantidades produzidas</td>
-<td>Quantidades consumidas</td>
+<td>Desejabilidade</td>
+<td>Curvas têm declive negativo; curvas mais altas → mais satisfação</td>
 </tr>
 <tr class="even">
-<td><strong>Linha</strong></td>
-<td>Produção máxima</td>
-<td>Despesa = Orçamento</td>
+<td>Completude</td>
+<td>Todo o ponto pertence a uma curva de indiferença</td>
 </tr>
 <tr class="odd">
-<td><strong>Declive</strong></td>
-<td>Custo relativo de produção</td>
-<td>Preço relativo (<span class="math inline">\(p_X/p_Y\)</span>)</td>
-</tr>
-<tr class="even">
-<td><strong>Interior</strong></td>
-<td>Ineficiente</td>
-<td>Não gasta todo o W</td>
+<td>Transitividade</td>
+<td>Curvas de indiferença nunca se cruzam</td>
 </tr>
 </tbody>
 </table>
-<div class="fragment">
-<p>A FPP limita o que se pode <strong>produzir</strong>; a restrição orçamental limita o que se pode <strong>consumir</strong>.</p>
-</div>
 </section>
-<section id="exemplo-numérico" class="slide level2">
-<h2>Exemplo Numérico</h2>
-<p>Um consumidor tem um orçamento de €120. O preço de um livro é €20 e o preço de uma refeição é €15.</p>
+<section id="escolha-múltipla-q1" class="slide level2">
+<h2>📝 Escolha Múltipla — Q1</h2>
+<p><strong>As preferências são consideradas “racionais” quando são:</strong></p>
 <div class="fragment">
-<p>A restrição orçamental é:</p>
-<p><span class="math display">\[20X + 15Y = 120\]</span></p>
-</div>
-<div class="fragment">
-<p>Em forma explícita:</p>
-<p><span class="math display">\[Y = 8 - \frac{4}{3}X\]</span></p>
-</div>
-<div class="fragment">
-<p>Intercetos: <span class="math inline">\(X_{max} = 6\)</span> livros; <span class="math inline">\(Y_{max} = 8\)</span> refeições. Declive: <span class="math inline">\(-\frac{4}{3}\)</span> (cada livro “custa” <span class="math inline">\(\frac{4}{3} \approx 1{,}33\)</span> refeições).</p>
-</div>
-</section>
-<section id="exemplo-representação-gráfica" class="slide level2">
-<h2>Exemplo: Representação Gráfica</h2>
-
-<img data-src="04_Restricao_Orcamental_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
-<section id="resumo-da-aula-4" class="slide level2">
-<h2>Resumo da Aula 4</h2>
-<ul>
-<li class="fragment"><strong>Cabaz de bens</strong>: ponto no espaço <span class="math inline">\((X, Y)\)</span> com quantidades de cada bem</li>
-<li class="fragment"><strong>Espaço orçamental</strong>: conjunto de cabazes acessíveis (<span class="math inline">\(X p_X + Y p_Y \leq W\)</span>)</li>
-<li class="fragment"><strong>Restrição orçamental</strong>: <span class="math inline">\(X p_X + Y p_Y = W\)</span> — a fronteira do espaço</li>
-<li class="fragment"><strong>Declive</strong>: <span class="math inline">\(-\frac{p_X}{p_Y}\)</span> — preço relativo (custo de oportunidade)</li>
-<li class="fragment"><strong>Variações de preços</strong> rodam a reta; <strong>variações de orçamento</strong> deslocam-na</li>
-<li class="fragment"><strong>Impostos/subsídios lump-sum</strong> equivalem a alterar <span class="math inline">\(W\)</span></li>
-</ul>
-</section>
-<section id="questão-de-escolha-múltipla-1" class="slide level2">
-<h2>Questão de Escolha Múltipla 1</h2>
-<p>Um consumidor tem um orçamento de €200. O preço do bem <span class="math inline">\(X\)</span> é €10 e o preço do bem <span class="math inline">\(Y\)</span> é €5. Qual é o declive da restrição orçamental (em valor absoluto)?</p>
 <ol type="a">
-<li>0,5</li>
-<li>2</li>
-<li>10</li>
-<li>20</li>
+<li>Completas e simétricas</li>
+<li>Transitivas e reflexivas</li>
+<li>Completas e transitivas</li>
+<li>Desejáveis e simétricas</li>
 </ol>
+</div>
 <div class="fragment">
-<p><strong>Resposta: b)</strong> O declive em valor absoluto é <span class="math inline">\(\frac{p_X}{p_Y} = \frac{10}{5} = 2\)</span>.</p>
+<p><strong>Resposta: C</strong> Em contexto de desejabilidade, racionalidade = completude + transitividade.</p>
 </div>
 </section>
-<section id="questão-de-escolha-múltipla-2" class="slide level2">
-<h2>Questão de Escolha Múltipla 2</h2>
-<p>Se o preço do bem <span class="math inline">\(X\)</span> <strong>diminui</strong>, o que acontece à restrição orçamental?</p>
+<section id="escolha-múltipla-q2" class="slide level2">
+<h2>📝 Escolha Múltipla — Q2</h2>
+<p><strong>Se o cabaz A se encontra numa curva de indiferença mais alta do que o cabaz B, então:</strong></p>
+<div class="fragment">
 <ol type="a">
-<li>Desloca-se paralelamente para fora</li>
-<li>Roda sobre o interceto horizontal, expandindo-se</li>
-<li>Roda sobre o interceto vertical, expandindo-se</li>
-<li>Desloca-se paralelamente para dentro</li>
-</ol>
-<div class="fragment">
-<p><strong>Resposta: c)</strong> Quando <span class="math inline">\(p_X\)</span> diminui, o interceto vertical <span class="math inline">\(\frac{W}{p_Y}\)</span> não muda, mas o interceto horizontal <span class="math inline">\(\frac{W}{p_X}\)</span> aumenta. A reta roda sobre o ponto do eixo <span class="math inline">\(Y\)</span>.</p>
-</div>
-</section>
-<section id="exercício" class="slide level2">
-<h2>Exercício</h2>
-<p>Um consumidor dispõe de €60 para gastar em dois bens. O preço de <span class="math inline">\(X\)</span> é €3 e o preço de <span class="math inline">\(Y\)</span> é €2.</p>
-<ol type="1">
-<li>Escreva a restrição orçamental.</li>
-<li>Calcule os intercetos.</li>
-<li>Se o governo aplica um imposto <em>lump-sum</em> de €12, qual é a nova restrição orçamental?</li>
-</ol>
-<div class="fragment">
-<p><strong>Resolução:</strong></p>
-<ol type="1">
-<li class="fragment"><span class="math inline">\(3X + 2Y = 60\)</span></li>
-<li class="fragment"><span class="math inline">\(X_{max} = 20\)</span>; <span class="math inline">\(Y_{max} = 30\)</span></li>
-<li class="fragment"><span class="math inline">\(3X + 2Y = 48\)</span> → <span class="math inline">\(X_{max} = 16\)</span>; <span class="math inline">\(Y_{max} = 24\)</span>. O declive mantém-se: <span class="math inline">\(-\frac{3}{2}\)</span>.</li>
+<li>A é mais barato que B</li>
+<li>B é preferido a A</li>
+<li>A é preferido a B</li>
+<li>A e B são indiferentes</li>
 </ol>
 </div>
+<div class="fragment">
+<p><strong>Resposta: C</strong> Pela desejabilidade, curvas mais altas correspondem a maior satisfação → <span class="math inline">\(A \succ B\)</span>.</p>
+</div>
 </section>
-<section class="slide level2">
-
-<p><strong>Próxima aula:</strong> Preferências, Axiomas de Racionalidade</p>
+<section id="exercício-de-desenvolvimento" class="slide level2">
+<h2>📝 Exercício de Desenvolvimento</h2>
+<p>Considera os cabazes: <span class="math inline">\(A = (2, 6)\)</span>, <span class="math inline">\(B = (4, 4)\)</span>, <span class="math inline">\(C = (1, 3)\)</span>.</p>
+<p><strong>(a)</strong> Usando apenas o axioma da desejabilidade, pode afirmar-se que <span class="math inline">\(A \succ C\)</span>? Justifique.</p>
+<p><strong>(b)</strong> Sabe-se que <span class="math inline">\(A \sim B\)</span> (A é indiferente a B). Se um consumidor afirmar que também <span class="math inline">\(B \succ A\)</span>, qual axioma está a ser violado?</p>
+<p><strong>(c)</strong> Um consumidor afirma que <span class="math inline">\(A \succ B\)</span>, <span class="math inline">\(B \succ C\)</span> e <span class="math inline">\(C \succ A\)</span>. Que axioma está a ser violado? Que implicação tem no gráfico das curvas de indiferença?</p>
+</section>
+<section id="solução" class="slide level2 smaller">
+<h2>📝 Solução</h2>
+<p><strong>(a)</strong> Sim. <span class="math inline">\(A = (2, 6)\)</span> tem mais X do que <span class="math inline">\(C = (1, 3)\)</span> (<span class="math inline">\(2 &gt; 1\)</span>) <strong>e</strong> mais Y (<span class="math inline">\(6 &gt; 3\)</span>). Pela desejabilidade, <span class="math inline">\(A \succ C\)</span> — sem precisar de conhecer as preferências específicas. ✓</p>
+<p><strong>(b)</strong> <span class="math inline">\(A \sim B\)</span> significa indiferença mútua. Afirmar <span class="math inline">\(B \succ A\)</span> (estritamente preferido) contradiz <span class="math inline">\(A \sim B\)</span>. Viola o axioma da <strong>completude</strong> — as preferências têm de ser internamente consistentes; o consumidor deve ter uma única relação definida entre quaisquer dois cabazes. ✓</p>
+<p><strong>(c)</strong> Viola o axioma da <strong>transitividade</strong>. De <span class="math inline">\(A \succ B\)</span> e <span class="math inline">\(B \succ C\)</span> deveria seguir-se <span class="math inline">\(A \succ C\)</span>, mas o consumidor afirma <span class="math inline">\(C \succ A\)</span> — ciclo de preferência impossível.</p>
+<p>No gráfico, implicaria que as curvas de indiferença <strong>se cruzam</strong>, o que é inconsistente com preferências racionais. ✓</p>
 
 
 
