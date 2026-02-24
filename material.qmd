@@ -14,9 +14,9 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 
 ### Capítulo II: Teoria do Consumidor e Procura
 
-6. [Restrição Orçamental e Preferências](slides/04_Cabaz_restricao_preferencias.qmd)
-7. [Utilidade e procura](slides/05_Utilidade_gossen_procura.qmd)
-8. [Procura agregada a excedente](slides/06_Procura_excedente.qmd)
+6. [Restrição Orçamental e Preferências](slides/04_Cabaz_restricao_preferencias.qmd) :page_facing_up: [PDF](PDF/04_RO_racionalidade.pdf)
+7. [Utilidade e procura](slides/05_Utilidade_gossen_procura.qmd) :page_facing_up: [PDF](PDF/05_TMS_Procura.pdf)
+8. [Procura agregada a excedente](slides/06_Procura_excedente.qmd) :page_facing_up: [PDF](PDF/06_Procura_Agregada_XD.pdf)
 
 
 ### Capítulo III: Teoría da Produção - Curto Prazo
