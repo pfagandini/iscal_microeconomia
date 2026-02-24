@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.25">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="ISCAL - IPL">
   <title>Iscal - Microeconomia (Plano de Transição) – Microeconomia</title>
@@ -128,7 +128,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Microeconomia</h1>
-  <p class="subtitle">Aula 6: Taxa Marginal de Substituição e Ótimo de Consumo</p>
+  <p class="subtitle">Aula 6: TMS, Ótimo de Consumo e Procura</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -142,12 +142,12 @@ ISCAL - IPL
 <section id="sumário" class="slide level2 nonincremental">
 <h2>Sumário</h2>
 <ul>
-<li class="fragment">🔄 Revisão: restrição orçamental e curva de indiferença</li>
-<li class="fragment">📐 Taxa Marginal de Substituição — definição</li>
+<li class="fragment">📐 Taxa Marginal de Substituição — definição e declive</li>
 <li class="fragment">📉 TMS decrescente e a sua interpretação</li>
-<li class="fragment">🎯 O ótimo de consumo — geometria</li>
-<li class="fragment">⚖️ Condição de ótimo: <span class="math inline">\(|TMS| = p_x/p_y\)</span></li>
-<li class="fragment">💡 Interpretação económica</li>
+<li class="fragment">🎯 O ótimo de consumo e condição <span class="math inline">\(|TMS| = p_x/p_y\)</span></li>
+<li class="fragment">🔗 Derivação da curva de procura marshalliana</li>
+<li class="fragment">📜 Lei da Procura e deslocamentos da curva</li>
+<li class="fragment">➕ Procura agregada — soma horizontal</li>
 <li class="fragment">📝 Exercícios</li>
 </ul>
 </section>
@@ -294,8 +294,8 @@ ISCAL - IPL
 <h2>Ótimo do Exemplo — Gráfico</h2>
 
 <img data-src="06_tms_otimo_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch" width="460"></section>
-<section id="síntese" class="slide level2 nonincremental">
-<h2>📋 Síntese</h2>
+<section id="síntese-ótimo-de-consumo" class="slide level2 nonincremental">
+<h2>📋 Síntese — Ótimo de Consumo</h2>
 <table class="caption-top">
 <colgroup>
 <col style="width: 47%">
@@ -317,71 +317,293 @@ ISCAL - IPL
 <td>Quanto mais X se tem, menor o valor de mais uma unidade</td>
 </tr>
 <tr class="odd">
-<td>Ótimo</td>
+<td>Ótimo <span class="math inline">\(A^*\)</span></td>
 <td>Cabaz na CI mais alta que a RO permite atingir</td>
 </tr>
 <tr class="even">
 <td>Condição <span class="math inline">\(\|TMS\|=p_x/p_y\)</span></td>
-<td>Igualdade entre taxa subjetiva e taxa de mercado</td>
+<td>Igualdade entre valorização subjetiva e taxa de mercado</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="da-escolha-ótima-à-procura" class="slide level2">
+<h2>Da Escolha Ótima à Procura 🔗</h2>
+<p>O ótimo <span class="math inline">\(A^*(p_x, p_y, W)\)</span> depende dos preços e do orçamento.</p>
 <div class="fragment">
-<p>Na <strong>Aula 7</strong> veremos:</p>
+<p><strong>Pergunta:</strong> se <span class="math inline">\(p_x\)</span> variar (<em>ceteris paribus</em>), o que acontece à quantidade ótima de <span class="math inline">\(X\)</span>?</p>
+</div>
+<div class="fragment">
+<p>A resposta é a <strong>curva de procura marshalliana</strong> — o conjunto dos pares <span class="math inline">\((p_x,\, x^*)\)</span> obtidos variando <span class="math inline">\(p_x\)</span> e recalculando o ótimo.</p>
+</div>
+<div class="fragment">
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Intuição:</strong> se o preço de X sobe, a RO roda para dentro → o novo ótimo tem, em geral, menos X.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="derivação-da-procura-gráfico" class="slide level2">
+<h2>Derivação da Procura — Gráfico</h2>
+
+<img data-src="06_tms_otimo_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="a-curva-de-procura-marshalliana" class="slide level2">
+<h2>A Curva de Procura Marshalliana</h2>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>A <strong>curva de procura (marshalliana)</strong> é o conjunto dos pares <span class="math inline">\((p_x,\, x^*)\)</span> de escolha ótima quando <span class="math inline">\(p_x\)</span> varia, mantendo fixos <span class="math inline">\(W\)</span>, <span class="math inline">\(p_y\)</span> e as preferências.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>Convenção gráfica (Marshall, 1895): representamos <span class="math inline">\(p_x\)</span> no eixo vertical e <span class="math inline">\(Q_x\)</span> no horizontal — ou seja, é a <strong>procura inversa</strong> que está no gráfico.</p>
+</div>
+<div class="fragment">
 <ul>
-<li class="fragment">A função de utilidade como representação das preferências</li>
-<li class="fragment">A ligação entre TMS e utilidades marginais</li>
-<li class="fragment">As Leis de Gossen e o significado formal do ótimo</li>
+<li class="fragment">Forma direta: <span class="math inline">\(Q_x = f(p_x)\)</span> — quantidade em função do preço</li>
+<li class="fragment">Forma inversa: <span class="math inline">\(P = g(Q_x)\)</span> — preço em função da quantidade</li>
+</ul>
+<p>São a mesma relação, vista de ângulos diferentes.</p>
+</div>
+</section>
+<section id="lei-da-procura" class="slide level2">
+<h2>Lei da Procura</h2>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Lei da Procura:</strong> entre a quantidade procurada de um bem e o seu preço existe uma <strong>relação negativa</strong>, <em>ceteris paribus</em>.</p>
+<p>Se o preço aumenta, a quantidade procurada diminui.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>O preço sobe → a RO roda para dentro → o ótimo move-se para menos <span class="math inline">\(X\)</span> → movimento <strong>ao longo</strong> da curva.</p>
+</div>
+<div class="fragment">
+<p><strong>Atenção:</strong> uma variação de preço provoca uma variação da <strong>quantidade procurada</strong> (movimento ao longo da curva), não uma variação da <strong>procura</strong> (deslocamento da curva).</p>
+</div>
+</section>
+<section id="lei-da-procura-gráfico" class="slide level2">
+<h2>Lei da Procura — Gráfico</h2>
+
+<img data-src="06_tms_otimo_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="o-que-desloca-a-curva-de-procura" class="slide level2">
+<h2>O que Desloca a Curva de Procura?</h2>
+<p>Uma variação de <span class="math inline">\(p_x\)</span> <strong>não</strong> desloca a curva — move um ponto ao longo dela. Os <strong>deslocamentos</strong> da curva ocorrem quando mudam variáveis exógenas:</p>
+<div class="fragment">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variável</th>
+<th>Efeito sobre <span class="math inline">\(D_x\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\uparrow W\)</span> (bem normal)</td>
+<td>Expansão → curva desloca para a direita</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\uparrow W\)</span> (bem inferior)</td>
+<td>Contração → curva desloca para a esquerda</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\uparrow p_{\text{substituto}}\)</span></td>
+<td>Expansão</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\uparrow p_{\text{complementar}}\)</span></td>
+<td>Contração</td>
+</tr>
+<tr class="odd">
+<td>Preferências favoráveis</td>
+<td>Expansão</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="deslocamento-vs.-movimento-ao-longo" class="slide level2">
+<h2>Deslocamento vs.&nbsp;Movimento ao Longo</h2>
+
+<img data-src="06_tms_otimo_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="modelos-lineares-para-a-procura" class="slide level2">
+<h2>Modelos Lineares para a Procura</h2>
+<p>Para simplificação, usamos com frequência modelos lineares:</p>
+<p><span class="math display">\[Q^D = a - b \cdot P \qquad \text{(forma direta)}\]</span></p>
+<p><span class="math display">\[P = \frac{a}{b} - \frac{1}{b} Q^D \qquad \text{(forma inversa)}\]</span></p>
+<div class="fragment">
+<p><strong>Interpretação dos parâmetros:</strong></p>
+<ul>
+<li class="fragment"><span class="math inline">\(a\)</span>: quantidade máxima procurada (ao preço zero)</li>
+<li class="fragment"><span class="math inline">\(a/b\)</span>: preço máximo que alguém paga (preço de reserva máximo)</li>
+<li class="fragment"><span class="math inline">\(b\)</span>: sensibilidade da quantidade ao preço (<span class="math inline">\(\Delta Q / \Delta P = -b\)</span>)</li>
 </ul>
 </div>
 </section>
+<section id="exemplo-procura-linear-individual" class="slide level2">
+<h2>Exemplo — Procura Linear Individual</h2>
+<p><strong>Procura individual de pão sem glúten:</strong> <span class="math inline">\(Q^D = 50 - 10P\)</span></p>
+
+<img data-src="06_tms_otimo_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Forma inversa: <span class="math inline">\(P = 5 - \dfrac{1}{10} Q^D\)</span></p>
+</section>
+<section id="procura-agregada-soma-horizontal" class="slide level2">
+<h2>Procura Agregada — Soma Horizontal</h2>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>A <strong>procura de mercado</strong> obtém-se pela <strong>soma horizontal</strong> das procuras individuais: para cada preço, somam-se as quantidades procuradas por todos os consumidores. <span class="math display">\[Q^D_M(P) = \sum_{i=1}^{n} Q^D_i(P)\]</span></p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><strong>Atenção:</strong> somam-se <strong>quantidades</strong> (horizontalmente), nunca preços!</p>
+</div>
+</section>
+<section id="soma-horizontal-exemplo" class="slide level2">
+<h2>Soma Horizontal — Exemplo</h2>
+<p>Dois consumidores idênticos: <span class="math inline">\(Q_1 = Q_2 = 50 - 10P\)</span></p>
+
+<img data-src="06_tms_otimo_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><ul>
+<li><span class="math inline">\(Q_M = 50 - 10P + 50 - 10P = 100 - 20P\)</span></li>
+<li>Inversa: <span class="math inline">\(P = 5 - \dfrac{1}{20}Q_M\)</span></li>
+<li>Ao preço <span class="math inline">\(P=3\)</span>: cada consumidor procura 20, mercado procura <strong>40</strong> ✓</li>
+</ul>
+</section>
+<section id="procura-agregada-com-consumidores-diferentes" class="slide level2 smaller">
+<h2>Procura Agregada com Consumidores Diferentes</h2>
+<p>Quando os consumidores têm procuras diferentes, o <strong>preço máximo</strong> que cada um paga difere — há um kink na procura agregada.</p>
+<div class="fragment">
+<p><strong>Exemplo:</strong> <span class="math inline">\(Q_A = 30 - 5P\)</span> (ativo para <span class="math inline">\(P \leq 6\)</span>) e <span class="math inline">\(Q_B = 20 - 4P\)</span> (ativo para <span class="math inline">\(P \leq 5\)</span>)</p>
+</div>
+<div class="fragment">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="06_tms_otimo_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Para <span class="math inline">\(P &gt; 5\)</span>: apenas <span class="math inline">\(A\)</span> está no mercado → <span class="math inline">\(Q_M = 30 - 5P\)</span></li>
+<li>Para <span class="math inline">\(P \leq 5\)</span>: ambos ativos → <span class="math inline">\(Q_M = 50 - 9P\)</span></li>
+<li><strong>Kink</strong> em <span class="math inline">\(P=5\)</span>, <span class="math inline">\(Q_M=5\)</span></li>
+</ul>
+</div>
+</section>
+<section id="síntese-final" class="slide level2 nonincremental">
+<h2>📋 Síntese Final</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Conceito</th>
+<th>Ideia-chave</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Curva de procura</td>
+<td>Pares <span class="math inline">\((p_x, x^*)\)</span> do ótimo do consumidor</td>
+</tr>
+<tr class="even">
+<td>Lei da Procura</td>
+<td><span class="math inline">\(\uparrow P \Rightarrow \downarrow Q^D\)</span> (<em>ceteris paribus</em>)</td>
+</tr>
+<tr class="odd">
+<td>Movimento ao longo</td>
+<td>Causado por variação de <span class="math inline">\(p_x\)</span></td>
+</tr>
+<tr class="even">
+<td>Deslocamento da curva</td>
+<td>Causado por <span class="math inline">\(\Delta W\)</span>, <span class="math inline">\(\Delta p_r\)</span>, <span class="math inline">\(\Delta\)</span> preferências</td>
+</tr>
+<tr class="odd">
+<td>Procura direta/inversa</td>
+<td><span class="math inline">\(Q=f(P)\)</span> / <span class="math inline">\(P=g(Q)\)</span> — a mesma relação</td>
+</tr>
+<tr class="even">
+<td>Procura de mercado</td>
+<td>Soma horizontal das individuais</td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="escolha-múltipla-q1" class="slide level2">
 <h2>📝 Escolha Múltipla — Q1</h2>
-<p><strong>A Taxa Marginal de Substituição (TMS) entre X e Y representa:</strong></p>
+<p><strong>Um aumento no rendimento do consumidor, mantendo os preços constantes, para um bem normal provoca:</strong></p>
 <div class="fragment">
 <ol type="a">
-<li>O rácio dos preços de X e Y no mercado</li>
-<li>A quantidade de Y a que o consumidor abdica para ter mais uma unidade de X, ficando indiferente</li>
-<li>A derivada da função de utilidade em relação a X</li>
-<li>O declive da restrição orçamental</li>
+<li>Um movimento ao longo da curva de procura para a esquerda</li>
+<li>Uma diminuição da quantidade procurada a qualquer preço</li>
+<li><strong>Um deslocamento da curva de procura para a direita</strong> ✅</li>
+<li>Nenhuma alteração na procura</li>
 </ol>
 </div>
 <div class="fragment">
-<p><strong>Resposta: B</strong> A TMS mede a disponibilidade subjetiva para substituir Y por X, mantendo a satisfação constante — é o declive da CI.</p>
+<p><strong>Justificação:</strong> A variação de rendimento é exógena ao preço — desloca a curva. Para um bem normal, mais rendimento implica mais procura a cada preço → deslocamento para a direita.</p>
 </div>
 </section>
 <section id="escolha-múltipla-q2" class="slide level2">
 <h2>📝 Escolha Múltipla — Q2</h2>
-<p><strong>No ponto ótimo de consumo, qual a condição que se verifica?</strong></p>
+<p><strong>A procura de mercado obtém-se a partir das procuras individuais através de:</strong></p>
 <div class="fragment">
 <ol type="a">
-<li>A TMS é máxima</li>
-<li><span class="math inline">\(|TMS| = p_x / p_y\)</span></li>
-<li>O consumidor gasta igual em ambos os bens</li>
-<li>A utilidade é mínima ao longo da restrição orçamental</li>
+<li>Soma vertical dos preços de reserva de cada consumidor</li>
+<li>Média das quantidades individuais para cada preço</li>
+<li><strong>Soma horizontal das quantidades individuais para cada preço</strong> ✅</li>
+<li>Multiplicação das quantidades individuais pelo número de consumidores</li>
 </ol>
 </div>
 <div class="fragment">
-<p><strong>Resposta: B</strong> No ótimo, o declive da CI (TMS) iguala o declive da RO (<span class="math inline">\(-p_x/p_y\)</span>), garantindo que a valorização subjetiva coincide com a taxa de troca de mercado.</p>
+<p><strong>Justificação:</strong> Para cada preço de mercado, somam-se as quantidades que cada consumidor deseja — é uma adição de quantidades (horizontal), não de preços.</p>
 </div>
 </section>
 <section id="exercício-de-desenvolvimento" class="slide level2">
 <h2>📝 Exercício de Desenvolvimento</h2>
-<p>Um consumidor tem restrição orçamental <span class="math inline">\(3X + 6Y = 60\)</span>. A sua Taxa Marginal de Substituição (em valor absoluto) é <span class="math inline">\(|TMS| = 2Y/X\)</span>.</p>
-<p><strong>(a)</strong> Encontre o cabaz ótimo <span class="math inline">\((X^*, Y^*)\)</span>.</p>
-<p><strong>(b)</strong> Verifique que a condição de ótimo e o orçamento se satisfazem.</p>
-<p><strong>(c)</strong> Interprete economicamente o resultado: o que significa que <span class="math inline">\(|TMS| = p_x/p_y\)</span> neste ponto?</p>
+<p>Dois consumidores têm as seguintes procuras individuais:</p>
+<ul>
+<li>Consumidor A: <span class="math inline">\(Q_A = 30 - 5P\)</span> (válida para <span class="math inline">\(P \leq 6\)</span>)</li>
+<li>Consumidor B: <span class="math inline">\(Q_B = 20 - 4P\)</span> (válida para <span class="math inline">\(P \leq 5\)</span>)</li>
+</ul>
+<p><strong>(a)</strong> Calcule a procura de mercado <span class="math inline">\(Q_M(P)\)</span>, indicando os intervalos de preço relevantes.</p>
+<p><strong>(b)</strong> Calcule as quantidades individuais e de mercado para <span class="math inline">\(P = 3\)</span>.</p>
+<p><strong>(c)</strong> Represente graficamente as três curvas de procura, assinalando o ponto de kink.</p>
 </section>
 <section id="solução" class="slide level2 smaller">
 <h2>📝 Solução</h2>
-<p><strong>(a)</strong> Condição de ótimo:</p>
-<p><span class="math display">\[|TMS| = \frac{p_x}{p_y} \;\Rightarrow\; \frac{2Y}{X} = \frac{3}{6} = \frac{1}{2} \;\Rightarrow\; 4Y = X\]</span></p>
-<p>Substituindo na RO:</p>
-<p><span class="math display">\[3(4Y) + 6Y = 60 \;\Rightarrow\; 12Y + 6Y = 60 \;\Rightarrow\; 18Y = 60 \;\Rightarrow\; Y^* = \frac{10}{3} \approx 3{,}33\]</span></p>
-<p><span class="math display">\[X^* = 4 \times \frac{10}{3} = \frac{40}{3} \approx 13{,}33\]</span></p>
-<p><strong>(b)</strong> Verificação orçamental: <span class="math inline">\(3 \times \frac{40}{3} + 6 \times \frac{10}{3} = 40 + 20 = 60\)</span> ✓</p>
-<p>Verificação da condição: <span class="math inline">\(|TMS| = \frac{2 \times 10/3}{40/3} = \frac{20/3}{40/3} = \frac{1}{2} = \frac{p_x}{p_y}\)</span> ✓</p>
-<p><strong>(c)</strong> No ótimo, o consumidor está disposto a trocar <span class="math inline">\(1/2\)</span> unidade de Y por cada unidade de X — exactamente o que o mercado oferece (uma unidade de X custa o mesmo que metade de uma unidade de Y, pois <span class="math inline">\(p_x/p_y=3/6=1/2\)</span>). Não há incentivo para reajustar o cabaz.</p>
+<p><strong>(a)</strong> Para <span class="math inline">\(P &gt; 5\)</span>: só o consumidor A está no mercado (B não procura nada): <span class="math display">\[Q_M = 30 - 5P, \quad P \in (5,\, 6]\]</span></p>
+<p>Para <span class="math inline">\(P \leq 5\)</span>: ambos ativos: <span class="math display">\[Q_M = Q_A + Q_B = (30 - 5P) + (20 - 4P) = 50 - 9P, \quad P \in [0,\, 5]\]</span></p>
+<p><strong>Kink</strong> (descontinuidade de inclinação) em <span class="math inline">\(P = 5\)</span>: <span class="math inline">\(Q_M = 50 - 9 \times 5 = 5\)</span> ✓</p>
+<p><strong>(b)</strong> Para <span class="math inline">\(P = 3\)</span>:</p>
+<p><span class="math display">\[Q_A = 30 - 5 \times 3 = 15 \qquad Q_B = 20 - 4 \times 3 = 8 \qquad Q_M = 15 + 8 = 23\]</span></p>
+<p>Ou pela fórmula agregada: <span class="math inline">\(Q_M = 50 - 9 \times 3 = 50 - 27 = 23\)</span> ✓</p>
+<p><strong>(c)</strong> O gráfico tem três curvas: <span class="math inline">\(D_A\)</span> (intercepta <span class="math inline">\(P=6\)</span>, <span class="math inline">\(Q=0\)</span> e <span class="math inline">\(P=0\)</span>, <span class="math inline">\(Q=30\)</span>), <span class="math inline">\(D_B\)</span> (intercepta <span class="math inline">\(P=5\)</span>, <span class="math inline">\(Q=0\)</span> e <span class="math inline">\(P=0\)</span>, <span class="math inline">\(Q=20\)</span>), e <span class="math inline">\(D_M\)</span> com kink em <span class="math inline">\((Q=5,\, P=5)\)</span>: segmento superior igual a <span class="math inline">\(D_A\)</span> e segmento inferior mais inclinado horizontalmente.</p>
 
 
 

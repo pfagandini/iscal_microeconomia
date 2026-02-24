@@ -1159,7 +1159,7 @@
     "href": "slides/06_tms_otimo.html#sumário",
     "title": "Microeconomia",
     "section": "Sumário",
-    "text": "Sumário\n\n🔄 Revisão: restrição orçamental e curva de indiferença\n📐 Taxa Marginal de Substituição — definição\n📉 TMS decrescente e a sua interpretação\n🎯 O ótimo de consumo — geometria\n⚖️ Condição de ótimo: \\(|TMS| = p_x/p_y\\)\n💡 Interpretação económica\n📝 Exercícios"
+    "text": "Sumário\n\n📐 Taxa Marginal de Substituição — definição e declive\n📉 TMS decrescente e a sua interpretação\n🎯 O ótimo de consumo e condição \\(|TMS| = p_x/p_y\\)\n🔗 Derivação da curva de procura marshalliana\n📜 Lei da Procura e deslocamentos da curva\n➕ Procura agregada — soma horizontal\n📝 Exercícios"
   },
   {
     "objectID": "slides/06_tms_otimo.html#revisão-o-que-temos-até-agora",
@@ -1243,28 +1243,28 @@
     "href": "slides/06_tms_otimo.html#escolha-múltipla-q1",
     "title": "Microeconomia",
     "section": "📝 Escolha Múltipla — Q1",
-    "text": "📝 Escolha Múltipla — Q1\nA Taxa Marginal de Substituição (TMS) entre X e Y representa:\n\n\nO rácio dos preços de X e Y no mercado\nA quantidade de Y a que o consumidor abdica para ter mais uma unidade de X, ficando indiferente\nA derivada da função de utilidade em relação a X\nO declive da restrição orçamental\n\n\n\nResposta: B A TMS mede a disponibilidade subjetiva para substituir Y por X, mantendo a satisfação constante — é o declive da CI."
+    "text": "📝 Escolha Múltipla — Q1\nUm aumento no rendimento do consumidor, mantendo os preços constantes, para um bem normal provoca:\n\n\nUm movimento ao longo da curva de procura para a esquerda\nUma diminuição da quantidade procurada a qualquer preço\nUm deslocamento da curva de procura para a direita ✅\nNenhuma alteração na procura\n\n\n\nJustificação: A variação de rendimento é exógena ao preço — desloca a curva. Para um bem normal, mais rendimento implica mais procura a cada preço → deslocamento para a direita."
   },
   {
     "objectID": "slides/06_tms_otimo.html#escolha-múltipla-q2",
     "href": "slides/06_tms_otimo.html#escolha-múltipla-q2",
     "title": "Microeconomia",
     "section": "📝 Escolha Múltipla — Q2",
-    "text": "📝 Escolha Múltipla — Q2\nNo ponto ótimo de consumo, qual a condição que se verifica?\n\n\nA TMS é máxima\n\\(|TMS| = p_x / p_y\\)\nO consumidor gasta igual em ambos os bens\nA utilidade é mínima ao longo da restrição orçamental\n\n\n\nResposta: B No ótimo, o declive da CI (TMS) iguala o declive da RO (\\(-p_x/p_y\\)), garantindo que a valorização subjetiva coincide com a taxa de troca de mercado."
+    "text": "📝 Escolha Múltipla — Q2\nA procura de mercado obtém-se a partir das procuras individuais através de:\n\n\nSoma vertical dos preços de reserva de cada consumidor\nMédia das quantidades individuais para cada preço\nSoma horizontal das quantidades individuais para cada preço ✅\nMultiplicação das quantidades individuais pelo número de consumidores\n\n\n\nJustificação: Para cada preço de mercado, somam-se as quantidades que cada consumidor deseja — é uma adição de quantidades (horizontal), não de preços."
   },
   {
     "objectID": "slides/06_tms_otimo.html#exercício-de-desenvolvimento",
     "href": "slides/06_tms_otimo.html#exercício-de-desenvolvimento",
     "title": "Microeconomia",
     "section": "📝 Exercício de Desenvolvimento",
-    "text": "📝 Exercício de Desenvolvimento\nUm consumidor tem restrição orçamental \\(3X + 6Y = 60\\). A sua Taxa Marginal de Substituição (em valor absoluto) é \\(|TMS| = 2Y/X\\).\n(a) Encontre o cabaz ótimo \\((X^*, Y^*)\\).\n(b) Verifique que a condição de ótimo e o orçamento se satisfazem.\n(c) Interprete economicamente o resultado: o que significa que \\(|TMS| = p_x/p_y\\) neste ponto?"
+    "text": "📝 Exercício de Desenvolvimento\nDois consumidores têm as seguintes procuras individuais:\n\nConsumidor A: \\(Q_A = 30 - 5P\\) (válida para \\(P \\leq 6\\))\nConsumidor B: \\(Q_B = 20 - 4P\\) (válida para \\(P \\leq 5\\))\n\n(a) Calcule a procura de mercado \\(Q_M(P)\\), indicando os intervalos de preço relevantes.\n(b) Calcule as quantidades individuais e de mercado para \\(P = 3\\).\n(c) Represente graficamente as três curvas de procura, assinalando o ponto de kink."
   },
   {
     "objectID": "slides/06_tms_otimo.html#solução",
     "href": "slides/06_tms_otimo.html#solução",
     "title": "Microeconomia",
     "section": "📝 Solução",
-    "text": "📝 Solução\n(a) Condição de ótimo:\n\\[|TMS| = \\frac{p_x}{p_y} \\;\\Rightarrow\\; \\frac{2Y}{X} = \\frac{3}{6} = \\frac{1}{2} \\;\\Rightarrow\\; 4Y = X\\]\nSubstituindo na RO:\n\\[3(4Y) + 6Y = 60 \\;\\Rightarrow\\; 12Y + 6Y = 60 \\;\\Rightarrow\\; 18Y = 60 \\;\\Rightarrow\\; Y^* = \\frac{10}{3} \\approx 3{,}33\\]\n\\[X^* = 4 \\times \\frac{10}{3} = \\frac{40}{3} \\approx 13{,}33\\]\n(b) Verificação orçamental: \\(3 \\times \\frac{40}{3} + 6 \\times \\frac{10}{3} = 40 + 20 = 60\\) ✓\nVerificação da condição: \\(|TMS| = \\frac{2 \\times 10/3}{40/3} = \\frac{20/3}{40/3} = \\frac{1}{2} = \\frac{p_x}{p_y}\\) ✓\n(c) No ótimo, o consumidor está disposto a trocar \\(1/2\\) unidade de Y por cada unidade de X — exactamente o que o mercado oferece (uma unidade de X custa o mesmo que metade de uma unidade de Y, pois \\(p_x/p_y=3/6=1/2\\)). Não há incentivo para reajustar o cabaz."
+    "text": "📝 Solução\n(a) Para \\(P &gt; 5\\): só o consumidor A está no mercado (B não procura nada): \\[Q_M = 30 - 5P, \\quad P \\in (5,\\, 6]\\]\nPara \\(P \\leq 5\\): ambos ativos: \\[Q_M = Q_A + Q_B = (30 - 5P) + (20 - 4P) = 50 - 9P, \\quad P \\in [0,\\, 5]\\]\nKink (descontinuidade de inclinação) em \\(P = 5\\): \\(Q_M = 50 - 9 \\times 5 = 5\\) ✓\n(b) Para \\(P = 3\\):\n\\[Q_A = 30 - 5 \\times 3 = 15 \\qquad Q_B = 20 - 4 \\times 3 = 8 \\qquad Q_M = 15 + 8 = 23\\]\nOu pela fórmula agregada: \\(Q_M = 50 - 9 \\times 3 = 50 - 27 = 23\\) ✓\n(c) O gráfico tem três curvas: \\(D_A\\) (intercepta \\(P=6\\), \\(Q=0\\) e \\(P=0\\), \\(Q=30\\)), \\(D_B\\) (intercepta \\(P=5\\), \\(Q=0\\) e \\(P=0\\), \\(Q=20\\)), e \\(D_M\\) com kink em \\((Q=5,\\, P=5)\\): segmento superior igual a \\(D_A\\) e segmento inferior mais inclinado horizontalmente."
   },
   {
     "objectID": "slides/06_tms_otimo-document.html",
@@ -1517,5 +1517,103 @@
     "title": "Microeconomia",
     "section": "18 📝 Solução",
     "text": "18 📝 Solução\n\n(a) Sim. \\(A = (2, 6)\\) tem mais X do que \\(C = (1, 3)\\) (\\(2 &gt; 1\\)) e mais Y (\\(6 &gt; 3\\)). Pela desejabilidade, \\(A \\succ C\\) — sem precisar de conhecer as preferências específicas. ✓\n(b) \\(A \\sim B\\) significa indiferença mútua. Afirmar \\(B \\succ A\\) (estritamente preferido) contradiz \\(A \\sim B\\). Viola o axioma da completude — as preferências têm de ser internamente consistentes; o consumidor deve ter uma única relação definida entre quaisquer dois cabazes. ✓\n(c) Viola o axioma da transitividade. De \\(A \\succ B\\) e \\(B \\succ C\\) deveria seguir-se \\(A \\succ C\\), mas o consumidor afirma \\(C \\succ A\\) — ciclo de preferência impossível.\nNo gráfico, implicaria que as curvas de indiferença se cruzam, o que é inconsistente com preferências racionais. ✓"
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#síntese-ótimo-de-consumo",
+    "href": "slides/06_tms_otimo.html#síntese-ótimo-de-consumo",
+    "title": "Microeconomia",
+    "section": "📋 Síntese — Ótimo de Consumo",
+    "text": "📋 Síntese — Ótimo de Consumo\n\n\n\n\n\n\n\nConceito\nDefinição\n\n\n\n\nTMS\nTaxa de troca subjetiva de Y por X ao longo da CI\n\n\nTMS decrescente\nQuanto mais X se tem, menor o valor de mais uma unidade\n\n\nÓtimo \\(A^*\\)\nCabaz na CI mais alta que a RO permite atingir\n\n\nCondição \\(\\|TMS\\|=p_x/p_y\\)\nIgualdade entre valorização subjetiva e taxa de mercado"
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#da-escolha-ótima-à-procura",
+    "href": "slides/06_tms_otimo.html#da-escolha-ótima-à-procura",
+    "title": "Microeconomia",
+    "section": "Da Escolha Ótima à Procura 🔗",
+    "text": "Da Escolha Ótima à Procura 🔗\nO ótimo \\(A^*(p_x, p_y, W)\\) depende dos preços e do orçamento.\n\nPergunta: se \\(p_x\\) variar (ceteris paribus), o que acontece à quantidade ótima de \\(X\\)?\n\n\nA resposta é a curva de procura marshalliana — o conjunto dos pares \\((p_x,\\, x^*)\\) obtidos variando \\(p_x\\) e recalculando o ótimo.\n\n\n\n\n\n\n\n\nIntuição: se o preço de X sobe, a RO roda para dentro → o novo ótimo tem, em geral, menos X."
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#derivação-da-procura-gráfico",
+    "href": "slides/06_tms_otimo.html#derivação-da-procura-gráfico",
+    "title": "Microeconomia",
+    "section": "Derivação da Procura — Gráfico",
+    "text": "Derivação da Procura — Gráfico"
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#a-curva-de-procura-marshalliana",
+    "href": "slides/06_tms_otimo.html#a-curva-de-procura-marshalliana",
+    "title": "Microeconomia",
+    "section": "A Curva de Procura Marshalliana",
+    "text": "A Curva de Procura Marshalliana\n\n\n\n\n\n\nA curva de procura (marshalliana) é o conjunto dos pares \\((p_x,\\, x^*)\\) de escolha ótima quando \\(p_x\\) varia, mantendo fixos \\(W\\), \\(p_y\\) e as preferências.\n\n\n\n\nConvenção gráfica (Marshall, 1895): representamos \\(p_x\\) no eixo vertical e \\(Q_x\\) no horizontal — ou seja, é a procura inversa que está no gráfico.\n\n\n\nForma direta: \\(Q_x = f(p_x)\\) — quantidade em função do preço\nForma inversa: \\(P = g(Q_x)\\) — preço em função da quantidade\n\nSão a mesma relação, vista de ângulos diferentes."
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#lei-da-procura",
+    "href": "slides/06_tms_otimo.html#lei-da-procura",
+    "title": "Microeconomia",
+    "section": "Lei da Procura",
+    "text": "Lei da Procura\n\n\n\n\n\n\nLei da Procura: entre a quantidade procurada de um bem e o seu preço existe uma relação negativa, ceteris paribus.\nSe o preço aumenta, a quantidade procurada diminui.\n\n\n\n\nO preço sobe → a RO roda para dentro → o ótimo move-se para menos \\(X\\) → movimento ao longo da curva.\n\n\nAtenção: uma variação de preço provoca uma variação da quantidade procurada (movimento ao longo da curva), não uma variação da procura (deslocamento da curva)."
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#lei-da-procura-gráfico",
+    "href": "slides/06_tms_otimo.html#lei-da-procura-gráfico",
+    "title": "Microeconomia",
+    "section": "Lei da Procura — Gráfico",
+    "text": "Lei da Procura — Gráfico"
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#o-que-desloca-a-curva-de-procura",
+    "href": "slides/06_tms_otimo.html#o-que-desloca-a-curva-de-procura",
+    "title": "Microeconomia",
+    "section": "O que Desloca a Curva de Procura?",
+    "text": "O que Desloca a Curva de Procura?\nUma variação de \\(p_x\\) não desloca a curva — move um ponto ao longo dela. Os deslocamentos da curva ocorrem quando mudam variáveis exógenas:\n\n\n\n\n\n\n\n\nVariável\nEfeito sobre \\(D_x\\)\n\n\n\n\n\\(\\uparrow W\\) (bem normal)\nExpansão → curva desloca para a direita\n\n\n\\(\\uparrow W\\) (bem inferior)\nContração → curva desloca para a esquerda\n\n\n\\(\\uparrow p_{\\text{substituto}}\\)\nExpansão\n\n\n\\(\\uparrow p_{\\text{complementar}}\\)\nContração\n\n\nPreferências favoráveis\nExpansão"
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#deslocamento-vs.-movimento-ao-longo",
+    "href": "slides/06_tms_otimo.html#deslocamento-vs.-movimento-ao-longo",
+    "title": "Microeconomia",
+    "section": "Deslocamento vs. Movimento ao Longo",
+    "text": "Deslocamento vs. Movimento ao Longo"
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#modelos-lineares-para-a-procura",
+    "href": "slides/06_tms_otimo.html#modelos-lineares-para-a-procura",
+    "title": "Microeconomia",
+    "section": "Modelos Lineares para a Procura",
+    "text": "Modelos Lineares para a Procura\nPara simplificação, usamos com frequência modelos lineares:\n\\[Q^D = a - b \\cdot P \\qquad \\text{(forma direta)}\\]\n\\[P = \\frac{a}{b} - \\frac{1}{b} Q^D \\qquad \\text{(forma inversa)}\\]\n\nInterpretação dos parâmetros:\n\n\\(a\\): quantidade máxima procurada (ao preço zero)\n\\(a/b\\): preço máximo que alguém paga (preço de reserva máximo)\n\\(b\\): sensibilidade da quantidade ao preço (\\(\\Delta Q / \\Delta P = -b\\))"
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#exemplo-procura-linear-individual",
+    "href": "slides/06_tms_otimo.html#exemplo-procura-linear-individual",
+    "title": "Microeconomia",
+    "section": "Exemplo — Procura Linear Individual",
+    "text": "Exemplo — Procura Linear Individual\nProcura individual de pão sem glúten: \\(Q^D = 50 - 10P\\)\n\nForma inversa: \\(P = 5 - \\dfrac{1}{10} Q^D\\)"
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#procura-agregada-soma-horizontal",
+    "href": "slides/06_tms_otimo.html#procura-agregada-soma-horizontal",
+    "title": "Microeconomia",
+    "section": "Procura Agregada — Soma Horizontal",
+    "text": "Procura Agregada — Soma Horizontal\n\n\n\n\n\n\nA procura de mercado obtém-se pela soma horizontal das procuras individuais: para cada preço, somam-se as quantidades procuradas por todos os consumidores. \\[Q^D_M(P) = \\sum_{i=1}^{n} Q^D_i(P)\\]\n\n\n\n\nAtenção: somam-se quantidades (horizontalmente), nunca preços!"
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#soma-horizontal-exemplo",
+    "href": "slides/06_tms_otimo.html#soma-horizontal-exemplo",
+    "title": "Microeconomia",
+    "section": "Soma Horizontal — Exemplo",
+    "text": "Soma Horizontal — Exemplo\nDois consumidores idênticos: \\(Q_1 = Q_2 = 50 - 10P\\)\n\n\n\\(Q_M = 50 - 10P + 50 - 10P = 100 - 20P\\)\nInversa: \\(P = 5 - \\dfrac{1}{20}Q_M\\)\nAo preço \\(P=3\\): cada consumidor procura 20, mercado procura 40 ✓"
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#procura-agregada-com-consumidores-diferentes",
+    "href": "slides/06_tms_otimo.html#procura-agregada-com-consumidores-diferentes",
+    "title": "Microeconomia",
+    "section": "Procura Agregada com Consumidores Diferentes",
+    "text": "Procura Agregada com Consumidores Diferentes\nQuando os consumidores têm procuras diferentes, o preço máximo que cada um paga difere — há um kink na procura agregada.\n\nExemplo: \\(Q_A = 30 - 5P\\) (ativo para \\(P \\leq 6\\)) e \\(Q_B = 20 - 4P\\) (ativo para \\(P \\leq 5\\))\n\n\n\n\n\n\n\n\n\n\n\n\nPara \\(P &gt; 5\\): apenas \\(A\\) está no mercado → \\(Q_M = 30 - 5P\\)\nPara \\(P \\leq 5\\): ambos ativos → \\(Q_M = 50 - 9P\\)\nKink em \\(P=5\\), \\(Q_M=5\\)"
+  },
+  {
+    "objectID": "slides/06_tms_otimo.html#síntese-final",
+    "href": "slides/06_tms_otimo.html#síntese-final",
+    "title": "Microeconomia",
+    "section": "📋 Síntese Final",
+    "text": "📋 Síntese Final\n\n\n\n\n\n\n\nConceito\nIdeia-chave\n\n\n\n\nCurva de procura\nPares \\((p_x, x^*)\\) do ótimo do consumidor\n\n\nLei da Procura\n\\(\\uparrow P \\Rightarrow \\downarrow Q^D\\) (ceteris paribus)\n\n\nMovimento ao longo\nCausado por variação de \\(p_x\\)\n\n\nDeslocamento da curva\nCausado por \\(\\Delta W\\), \\(\\Delta p_r\\), \\(\\Delta\\) preferências\n\n\nProcura direta/inversa\n\\(Q=f(P)\\) / \\(P=g(Q)\\) — a mesma relação\n\n\nProcura de mercado\nSoma horizontal das individuais"
   }
 ]

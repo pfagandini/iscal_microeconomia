@@ -1,6 +1,6 @@
 ---
 title: "Microeconomia"
-subtitle: "Aula 6: Taxa Marginal de Substituição e Ótimo de Consumo"
+subtitle: "Aula 6: TMS, Ótimo de Consumo e Procura"
 author: "ISCAL - IPL"
 date: ""
 format:
@@ -24,7 +24,7 @@ format:
     code-block-font-size: 0.75em
     progress: true
   html:
-    output-file: 06_tms_otimo-document.html
+    output-file: 06_tms_otimo_procura-document.html
     toc: true
     math:
       method: mathjax
@@ -43,6 +43,7 @@ execute:
 ```{r}
 #| label: setup
 #| include: false
+
 library(ggplot2)
 
 iscal_blue   <- "#003D7A"
@@ -69,12 +70,12 @@ opt   <- function(W, px, py) c(0.5*W/px, 0.5*W/py)
 
 ## Sumário {.nonincremental}
 
-- 🔄 Revisão: restrição orçamental e curva de indiferença
-- 📐 Taxa Marginal de Substituição — definição
+- 📐 Taxa Marginal de Substituição — definição e declive
 - 📉 TMS decrescente e a sua interpretação
-- 🎯 O ótimo de consumo — geometria
-- ⚖️ Condição de ótimo: $|TMS| = p_x/p_y$
-- 💡 Interpretação económica
+- 🎯 O ótimo de consumo e condição $|TMS| = p_x/p_y$
+- 🔗 Derivação da curva de procura marshalliana
+- 📜 Lei da Procura e deslocamentos da curva
+- ➕ Procura agregada — soma horizontal
 - 📝 Exercícios
 
 ---
@@ -136,15 +137,15 @@ ggplot(df_ic, aes(x, y)) +
   geom_point(aes(x = xB, y = yB), colour = iscal_orange, size = 4) +
   geom_point(aes(x = xC, y = yC), colour = iscal_orange, size = 4) +
   # Delta labels
-  annotate("segment", x = xB, y = yB, xend = xB, yend = yC,
+  annotate("segment", x = xA, y = yB, xend = xB, yend = yB,
            arrow = arrow(ends = "both", length = unit(0.15,"cm")),
            colour = "grey40", linewidth = 0.8) +
-  annotate("segment", x = xB, y = yC, xend = xC, yend = yC,
+  annotate("segment", x = xA, y = yA, xend = xA, yend = yB,
            arrow = arrow(ends = "both", length = unit(0.15,"cm")),
            colour = "grey40", linewidth = 0.8) +
-  annotate("text", x = (xB+xC)/2, y = yC - 0.4,
+  annotate("text", x = (xA+xB)/2, y = yB - 0.4,
            label = "Δx > 0", colour = "grey30", size = 3.5) +
-  annotate("text", x = xB - 0.35, y = (yB+yC)/2,
+  annotate("text", x = xA - 0.35, y = (yA+yB)/2,
            label = "Δy < 0", colour = "grey30", size = 3.5) +
   # Labels A, B, C
   annotate("text", x = xA - 0.15, y = yA + 0.2, label = "A",
@@ -403,73 +404,527 @@ ggplot() +
 
 ---
 
-## 📋 Síntese {.nonincremental}
+## 📋 Síntese — Ótimo de Consumo {.nonincremental}
 
 | Conceito | Definição |
 |----------|-----------|
 | TMS | Taxa de troca subjetiva de Y por X ao longo da CI |
 | TMS decrescente | Quanto mais X se tem, menor o valor de mais uma unidade |
-| Ótimo | Cabaz na CI mais alta que a RO permite atingir |
-| Condição $\|TMS\|=p_x/p_y$ | Igualdade entre taxa subjetiva e taxa de mercado |
+| Ótimo $A^*$ | Cabaz na CI mais alta que a RO permite atingir |
+| Condição $\|TMS\|=p_x/p_y$ | Igualdade entre valorização subjetiva e taxa de mercado |
+
+---
+
+## Da Escolha Ótima à Procura 🔗
+
+O ótimo $A^*(p_x, p_y, W)$ depende dos preços e do orçamento.
 
 . . .
 
-Na **Aula 7** veremos:
+**Pergunta:** se $p_x$ variar (*ceteris paribus*), o que acontece à quantidade ótima de $X$?
 
-- A função de utilidade como representação das preferências
-- A ligação entre TMS e utilidades marginais
-- As Leis de Gossen e o significado formal do ótimo
+. . .
+
+A resposta é a **curva de procura marshalliana** — o conjunto dos pares $(p_x,\, x^*)$ obtidos variando $p_x$ e recalculando o ótimo.
+
+. . .
+
+::: {.callout-note appearance="simple"}
+**Intuição:** se o preço de X sobe, a RO roda para dentro → o novo ótimo tem, em geral, menos X.
+:::
+
+---
+
+## Derivação da Procura — Gráfico
+
+```{r, engine='tikz'}
+#| echo: false
+#| fig-align: center
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[
+  scale = 0.78,
+  every node/.style = {scale = 0.78},
+  declare function = {
+    % CES demand for x: alpha=0.5, x*(w,px,py) = w/(2*px)
+    xopt(\w,\px,\py) = \w / (2*\px);
+    yopt(\w,\px,\py) = \w / (2*\py);
+    % Budget constraint
+    bc(\x,\w,\px,\py) = \w/\py - (\px/\py)*\x;
+    % Indifference curve y = U^2/x  (Cobb-Douglas, alpha=0.5)
+    icu(\x,\w,\px,\py) = (xopt(\w,\px,\py)*yopt(\w,\px,\py)) / \x;
+  }
+]
+
+\def\W{12}
+\def\Py{3}
+
+% ---- Upper panel: (X,Y) space ----
+\draw[->] (-0.1,0) -- (8.5,0) node[below right] {$X$};
+\draw[->] (0,-0.1) -- (0,5.5) node[above left]  {$Y$};
+
+% Three budget constraints (px = 4, 3, 2)
+\foreach \Px/\col in {4/blue!70, 3/blue, 2/blue!100}{
+  \draw[\col, thick, domain=0:{\W/\Px}, variable=\x, samples=60]
+    plot (\x, {bc(\x,\W,\Px,\Py)});
+}
+
+% Intercept labels on X axis
+\draw ({\W/4},0) node[below, blue!70] {\small $\tfrac{W}{p_x^0}$};
+\draw ({\W/3},0) node[below, blue]    {\small $\tfrac{W}{p_x^1}$};
+\draw ({\W/2},0) node[below, blue!100]{\small $\tfrac{W}{p_x^2}$};
+
+% Y-intercept label (same for all)
+\draw (0,{\W/\Py}) node[left] {\small $\tfrac{W}{p_y}$};
+
+% Three optimum points and their ICs
+\foreach \Px/\col in {4/red!60, 3/red, 2/red!100}{
+  \pgfmathsetmacro{\xo}{xopt(\W,\Px,\Py)}
+  \pgfmathsetmacro{\yo}{yopt(\W,\Px,\Py)}
+  \draw[\col, domain={0.15*\xo+0.35}:{min(8,3.5*\xo)}, variable=\x, samples=80, thick]
+    plot (\x, {(\xo*\yo)/\x});
+  \filldraw[\col] (\xo,\yo) circle (2.5pt);
+}
+
+% Price-consumption curve (for Cobb-Douglas y = W/(2py) = const)
+\draw[dashed, orange!80!black, thick]
+  ({xopt(\W,4,\Py)}, {yopt(\W,4,\Py)}) --
+  ({xopt(\W,2,\Py)}, {yopt(\W,2,\Py)})
+  node[right, black, scale=0.8] {Via Preço-Consumo};
+
+% ---- Lower panel: (X, p_x) space ----
+\begin{scope}[yshift=-6.5cm]
+  \draw[->] (-0.1,0) -- (8.5,0) node[below right] {$X$};
+  \draw[->] (0,-0.1) -- (0,5.5) node[above left]  {$p_x$};
+
+  % Dotted projections
+  \foreach \Px in {4,3,2}{
+    \pgfmathsetmacro{\xo}{xopt(\W,\Px,\Py)}
+    \draw[dotted, gray] (\xo, 5.5) -- (\xo, 0);
+    \draw[dotted, gray] (0, \Px) node[left] {\small $p_x=\Px$} -- (\xo, \Px);
+    \filldraw[red] (\xo, \Px) circle (2.5pt);
+  }
+
+  % Demand curve: x = W/(2p) => p = W/(2x)
+  \draw[green!60!black, thick, domain={max(0.1,\W/16)}:8, variable=\x, samples=120]
+    plot (\x, {\W/(2*\x)})
+    node[right, black, scale=0.85] {$D_x$};
+\end{scope}
+
+% Connecting arrow between panels
+\draw[->, thick, gray] (8.8, 0) -- (8.8, -6.5) node[midway, right, scale=0.8] {derivação};
+
+\end{tikzpicture}
+```
+
+---
+
+## A Curva de Procura Marshalliana
+
+::: {.callout-note appearance="simple"}
+A **curva de procura (marshalliana)** é o conjunto dos pares $(p_x,\, x^*)$ de escolha ótima quando $p_x$ varia, mantendo fixos $W$, $p_y$ e as preferências.
+:::
+
+. . .
+
+Convenção gráfica (Marshall, 1895): representamos $p_x$ no eixo vertical e $Q_x$ no horizontal — ou seja, é a **procura inversa** que está no gráfico.
+
+. . .
+
+- Forma direta: $Q_x = f(p_x)$ — quantidade em função do preço
+- Forma inversa: $P = g(Q_x)$ — preço em função da quantidade
+
+São a mesma relação, vista de ângulos diferentes.
+
+---
+
+## Lei da Procura
+
+::: {.callout-important appearance="simple"}
+**Lei da Procura:** entre a quantidade procurada de um bem e o seu preço existe uma **relação negativa**, *ceteris paribus*.
+
+Se o preço aumenta, a quantidade procurada diminui.
+:::
+
+. . .
+
+O preço sobe → a RO roda para dentro → o ótimo move-se para menos $X$ → movimento **ao longo** da curva.
+
+. . .
+
+**Atenção:** uma variação de preço provoca uma variação da **quantidade procurada** (movimento ao longo da curva), não uma variação da **procura** (deslocamento da curva).
+
+---
+
+## Lei da Procura — Gráfico
+
+```{r, engine='tikz'}
+#| echo: false
+#| fig-align: center
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[
+  scale = 0.9,
+  every node/.style = {scale = 0.9},
+  declare function = {d(\x) = 6 - 1.3*(\x^0.8);}
+]
+  \draw[->] (-0.1,0) -- (6.2,0) node[below right] {$Q_x$};
+  \draw[->] (0,-0.1) -- (0,6.2) node[above left]  {$p_x$};
+
+  \draw[blue, thick, domain=0.55:5.2, samples=100, variable=\x]
+    plot (\x, {d(\x)}) node[right] {$D$};
+
+  % Point a: Q=4, P≈2
+  \draw[dashed] (4,0) node[below]{$Q_1$} -- (4,{d(4)})
+    node[circle,fill,inner sep=2pt,label=above right:$a$]{} -- (0,{d(4)}) node[left]{$p_1$};
+
+  % Arrow: price falls from p1 to p2
+  \draw[red, thick, ->] (0,{d(4)}) -- (0,{d(3)});
+
+  % Point b: Q=3, P≈3
+  \draw[dashed] (3,0) node[below]{$Q_2$} -- (3,{d(3)})
+    node[circle,fill,inner sep=2pt,label=above right:$b$]{} -- (0,{d(3)}) node[left]{$p_2$};
+
+  % Movement arrows along curve
+  \draw[red, thick, ->] (4,{d(4)}) -- (3,{d(3)});
+
+  \node[align=left, scale=0.8] at (5.2,4.8)
+    {$p_2 < p_1$\\$\Rightarrow Q_2 > Q_1$};
+
+\end{tikzpicture}
+```
+
+---
+
+## O que Desloca a Curva de Procura?
+
+Uma variação de $p_x$ **não** desloca a curva — move um ponto ao longo dela. Os **deslocamentos** da curva ocorrem quando mudam variáveis exógenas:
+
+. . .
+
+| Variável | Efeito sobre $D_x$ |
+|----------|--------------------|
+| $\uparrow W$ (bem normal) | Expansão → curva desloca para a direita |
+| $\uparrow W$ (bem inferior) | Contração → curva desloca para a esquerda |
+| $\uparrow p_{\text{substituto}}$ | Expansão |
+| $\uparrow p_{\text{complementar}}$ | Contração |
+| Preferências favoráveis | Expansão |
+
+---
+
+## Deslocamento vs. Movimento ao Longo
+
+```{r, engine='tikz'}
+#| echo: false
+#| fig-align: center
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[
+  scale = 0.85,
+  every node/.style = {scale = 0.85},
+  declare function = {
+    d1(\x) = 5.5 - 1.3*(\x^0.8);
+    d2(\x) = 6.8 - 1.3*(\x^0.8);
+  }
+]
+  \draw[->] (-0.1,0) -- (6.2,0) node[below right] {$Q_x$};
+  \draw[->] (0,-0.1) -- (0,6.5) node[above left]  {$p_x$};
+
+  % Original demand
+  \draw[blue, thick, domain=0.55:5.2, samples=100, variable=\x]
+    plot (\x, {d1(\x)}) node[right] {$D$};
+
+  % New demand (shifted right)
+  \draw[red!80, thick, domain=0.55:5.8, samples=100, variable=\x, dashed]
+    plot (\x, {d2(\x)}) node[right] {$D'$};
+
+  % Point on D: reference
+  \draw[dashed, gray] (3,0) node[below]{$Q_0$} --
+    (3,{d1(3)}) node[circle,fill,blue,inner sep=2pt]{} -- (0,{d1(3)}) node[left]{$p_0$};
+
+  % Movement along D (price change): arrow
+  \draw[blue, thick, ->] (3,{d1(3)}) -- (4.2,{d1(4.2)});
+  \node[blue, scale=0.75] at (5.1,1.2) {Movimento ao longo:\\$\Delta p_x$ → $\Delta Q_x$};
+
+  % Shift arrow from D to D'
+  \draw[red!80, thick, ->] (2.8,{d1(2.8)}) -- (2.8,{d2(2.8)});
+  \draw[red!80, thick, ->] (3.5,{d1(3.5)}) -- (4.5,{d1(3.5)});
+  \node[red!80, scale=0.75] at (1.0,5.5) {Deslocamento:\\$\Delta W, \Delta p_r,\ldots$};
+
+\end{tikzpicture}
+```
+
+---
+
+## Modelos Lineares para a Procura
+
+Para simplificação, usamos com frequência modelos lineares:
+
+$$Q^D = a - b \cdot P \qquad \text{(forma direta)}$$
+
+$$P = \frac{a}{b} - \frac{1}{b} Q^D \qquad \text{(forma inversa)}$$
+
+. . .
+
+**Interpretação dos parâmetros:**
+
+- $a$: quantidade máxima procurada (ao preço zero)
+- $a/b$: preço máximo que alguém paga (preço de reserva máximo)
+- $b$: sensibilidade da quantidade ao preço ($\Delta Q / \Delta P = -b$)
+
+---
+
+## Exemplo — Procura Linear Individual
+
+**Procura individual de pão sem glúten:** $Q^D = 50 - 10P$
+
+```{r, engine='tikz'}
+#| echo: false
+#| fig-align: center
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[
+  scale = 0.85,
+  every node/.style = {scale = 0.85},
+  declare function = {d(\x) = 5 - \x;}
+]
+  \draw[->] (-0.1,0) -- (6.2,0) node[below right] {$Q$ (escala: ×10)};
+  \draw[->] (0,-0.1) -- (0,6.0) node[above left]  {$P$};
+
+  \draw[green!60!black, thick, domain=0:5, variable=\x]
+    plot (\x, {d(\x)}) node[above right] {$D$};
+
+  \draw (0,5) node[left]{$5$};
+  \draw (5,0) node[below]{$50$};
+
+  % Point at P=2, Q=30
+  \draw[dashed] (3,0) node[below]{$30$} -- (3,{d(3)})
+    node[circle,fill,inner sep=2pt]{} -- (0,{d(3)}) node[left]{$2$};
+
+  % Point at P=3, Q=20
+  \draw[dashed] (2,0) node[below]{$20$} -- (2,{d(2)})
+    node[circle,fill,inner sep=2pt]{} -- (0,{d(2)}) node[left]{$3$};
+
+  % Arrow movement
+  \draw[orange, thick, ->] (3,{d(3)}) -- (2,{d(2)});
+  \node[scale=0.75] at (5.0,3.5) {$\Delta P = +1$};
+  \node[scale=0.75] at (5.0,3.0) {$\Rightarrow \Delta Q = -10$};
+
+\end{tikzpicture}
+```
+
+Forma inversa: $P = 5 - \dfrac{1}{10} Q^D$
+
+---
+
+## Procura Agregada — Soma Horizontal
+
+::: {.callout-note appearance="simple"}
+A **procura de mercado** obtém-se pela **soma horizontal** das procuras individuais: para cada preço, somam-se as quantidades procuradas por todos os consumidores.
+$$Q^D_M(P) = \sum_{i=1}^{n} Q^D_i(P)$$
+:::
+
+. . .
+
+**Atenção:** somam-se **quantidades** (horizontalmente), nunca preços!
+
+---
+
+## Soma Horizontal — Exemplo
+
+Dois consumidores idênticos: $Q_1 = Q_2 = 50 - 10P$
+
+```{r, engine='tikz'}
+#| echo: false
+#| fig-align: center
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[
+  scale = 0.58,
+  every node/.style = {scale = 0.72},
+  declare function = {d(\x) = 5 - \x; dm(\x) = 5 - 0.5*\x;}
+]
+
+% --- Consumer 1 ---
+\begin{scope}[xshift=0cm]
+  \draw[->](-0.1,0)--(6.2,0) node[below right]{$Q$};
+  \draw[->](0,-0.1)--(0,6.0) node[above left]{$P$};
+  \draw[green!70!black,thick,domain=0:5,variable=\x] plot(\x,{d(\x)});
+  \draw(0,5)node[left]{5}; \draw(5,0)node[below]{50};
+  \draw[dashed](2,0)node[below]{20}--(2,{d(2)})node[circle,fill,inner sep=1.5pt]{}
+    --(0,{d(2)})node[left]{3};
+  \node at (3,-1.2) {Consumidor 1};
+  \node[green!70!black] at (4.2,1.5){$D_1$};
+\end{scope}
+
+% --- Consumer 2 ---
+\begin{scope}[xshift=7.5cm]
+  \draw[->](-0.1,0)--(6.2,0) node[below right]{$Q$};
+  \draw[->](0,-0.1)--(0,6.0) node[above left]{$P$};
+  \draw[red!80,thick,domain=0:5,variable=\x] plot(\x,{d(\x)});
+  \draw(0,5)node[left]{5}; \draw(5,0)node[below]{50};
+  \draw[dashed](2,0)node[below]{20}--(2,{d(2)})node[circle,fill,inner sep=1.5pt]{}
+    --(0,{d(2)})node[left]{3};
+  \node at (3,-1.2) {Consumidor 2};
+  \node[red!80] at (4.2,1.5){$D_2$};
+\end{scope}
+
+% Summation arrow
+\draw[->,very thick,gray] (14.0,2.5)--(15.5,2.5) node[midway,above,scale=0.9]{$+$};
+
+% --- Market ---
+\begin{scope}[xshift=16cm]
+  \draw[->](-0.1,0)--(11.2,0) node[below right]{$Q$};
+  \draw[->](0,-0.1)--(0,6.0) node[above left]{$P$};
+  \draw[blue,thick,domain=0:10,variable=\x] plot(\x,{dm(\x)});
+  \draw(0,5)node[left]{5}; \draw(10,0)node[below]{100};
+  \draw[dashed](4,0)node[below]{40}--(4,{dm(4)})node[circle,fill,inner sep=1.5pt]{}
+    --(0,{dm(4)})node[left]{3};
+  \node at (5,-1.2) {Mercado};
+  \node[blue] at (8.5,1.5){$D_M$};
+\end{scope}
+
+\end{tikzpicture}
+```
+
+::: {.nonincremental}
+- $Q_M = 50 - 10P + 50 - 10P = 100 - 20P$
+- Inversa: $P = 5 - \dfrac{1}{20}Q_M$
+- Ao preço $P=3$: cada consumidor procura 20, mercado procura **40** ✓
+:::
+
+---
+
+## Procura Agregada com Consumidores Diferentes {.smaller}
+
+Quando os consumidores têm procuras diferentes, o **preço máximo** que cada um paga difere — há um kink na procura agregada.
+
+. . .
+
+**Exemplo:** $Q_A = 30 - 5P$ (ativo para $P \leq 6$) e $Q_B = 20 - 4P$ (ativo para $P \leq 5$)
+
+. . .
+
+```{r,engine='tikz'}
+#| echo: false
+#| fig-align: center
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[
+  scale = 0.75,
+  every node/.style = {scale = 0.80},
+  declare function = {
+    da(\x) = 6 - \x/5;
+    db(\x) = 5 - \x/4;
+    dm1(\x) = 50/9 - \x/9;
+    dm2(\x) = 6 - \x/5;
+  }
+]
+  \draw[->] (-0.1,0) -- (12.5,0) node[below right] {$Q$};
+  \draw[->] (0,-0.1) -- (0,7.2)  node[above left]  {$P$};
+
+  % D_A (green)
+  \draw[green!60!black, thick, domain=0:6, variable=\x]
+    plot ({da(\x)*5}, \x);   % parametric: x = Q_A, y = P
+  % Since da(x)=6-x/5  <=>  Q=30-5P, plot as P=6-Q/5
+  \draw[green!60!black, thick, domain=0:30, variable=\x, samples=60]
+    plot (\x, {6 - \x/5}) node[right] {$D_A$};
+
+  % D_B (red)
+  \draw[red!80, thick, domain=0:20, variable=\x, samples=60]
+    plot (\x, {5 - \x/4}) node[right] {$D_B$};
+
+  % Market demand: kink at P=5 (Q=5), then lower segment P<=5
+  % Upper: P in (5,6]: only A active => Q=30-5P => P=6-Q/5, Q in [0,5]
+  \draw[blue, very thick, domain=0:5, variable=\x, samples=40]
+    plot (\x, {6 - \x/5});
+  % Lower: P<=5: Q=50-9P => P=50/9-Q/9, Q in [5,50]
+  \draw[blue, very thick, domain=5:50, variable=\x, samples=80]
+    plot (\x, {50/9 - \x/9}) node[right] {$D_M$};
+
+  % Kink point Q=5, P=5
+  \filldraw[blue] (5,5) circle (3pt);
+  \draw[dotted,gray] (5,0) node[below]{5} -- (5,5) -- (0,5) node[left]{5};
+
+  % Reference point P=3
+  \draw[dotted, gray] (0,3) node[left]{3} -- (23,3);
+  \draw[dotted, gray] (15,0) node[below]{$Q_A$=15} -- (15,3);
+  \draw[dotted, gray] (8,0)  node[below]{$Q_B$=8}  -- (8,3);
+  \draw[dotted, gray] (23,0) node[below]{$Q_M$=23} -- (23,3);
+  \filldraw[blue] (23,3) circle (2.5pt);
+
+  % Axis labels
+  \draw (0,6) node[left]{6};
+
+\end{tikzpicture}
+```
+
+::: {.nonincremental}
+- Para $P > 5$: apenas $A$ está no mercado → $Q_M = 30 - 5P$
+- Para $P \leq 5$: ambos ativos → $Q_M = 50 - 9P$
+- **Kink** em $P=5$, $Q_M=5$
+:::
+
+---
+
+## 📋 Síntese Final {.nonincremental}
+
+| Conceito | Ideia-chave |
+|----------|-------------|
+| Curva de procura | Pares $(p_x, x^*)$ do ótimo do consumidor |
+| Lei da Procura | $\uparrow P \Rightarrow \downarrow Q^D$ (*ceteris paribus*) |
+| Movimento ao longo | Causado por variação de $p_x$ |
+| Deslocamento da curva | Causado por $\Delta W$, $\Delta p_r$, $\Delta$ preferências |
+| Procura direta/inversa | $Q=f(P)$ / $P=g(Q)$ — a mesma relação |
+| Procura de mercado | Soma horizontal das individuais |
 
 ---
 
 ## 📝 Escolha Múltipla — Q1
 
-**A Taxa Marginal de Substituição (TMS) entre X e Y representa:**
+**Um aumento no rendimento do consumidor, mantendo os preços constantes, para um bem normal provoca:**
 
 . . .
 
 ::: {.nonincremental}
-a) O rácio dos preços de X e Y no mercado
-b) A quantidade de Y a que o consumidor abdica para ter mais uma unidade de X, ficando indiferente
-c) A derivada da função de utilidade em relação a X
-d) O declive da restrição orçamental
+a) Um movimento ao longo da curva de procura para a esquerda
+b) Uma diminuição da quantidade procurada a qualquer preço
+c) **Um deslocamento da curva de procura para a direita** ✅
+d) Nenhuma alteração na procura
 :::
 
 . . .
 
-**Resposta: B** A TMS mede a disponibilidade subjetiva para substituir Y por X, mantendo a satisfação constante — é o declive da CI.
+**Justificação:** A variação de rendimento é exógena ao preço — desloca a curva. Para um bem normal, mais rendimento implica mais procura a cada preço → deslocamento para a direita.
 
 ---
 
 ## 📝 Escolha Múltipla — Q2
 
-**No ponto ótimo de consumo, qual a condição que se verifica?**
+**A procura de mercado obtém-se a partir das procuras individuais através de:**
 
 . . .
 
 ::: {.nonincremental}
-a) A TMS é máxima
-b) $|TMS| = p_x / p_y$
-c) O consumidor gasta igual em ambos os bens
-d) A utilidade é mínima ao longo da restrição orçamental
+a) Soma vertical dos preços de reserva de cada consumidor
+b) Média das quantidades individuais para cada preço
+c) **Soma horizontal das quantidades individuais para cada preço** ✅
+d) Multiplicação das quantidades individuais pelo número de consumidores
 :::
 
 . . .
 
-**Resposta: B** No ótimo, o declive da CI (TMS) iguala o declive da RO ($-p_x/p_y$), garantindo que a valorização subjetiva coincide com a taxa de troca de mercado.
+**Justificação:** Para cada preço de mercado, somam-se as quantidades que cada consumidor deseja — é uma adição de quantidades (horizontal), não de preços.
 
 ---
 
 ## 📝 Exercício de Desenvolvimento
 
 ::: {.nonincremental}
-Um consumidor tem restrição orçamental $3X + 6Y = 60$. A sua Taxa Marginal de Substituição (em valor absoluto) é $|TMS| = 2Y/X$.
+Dois consumidores têm as seguintes procuras individuais:
 
-**(a)** Encontre o cabaz ótimo $(X^*, Y^*)$.
+- Consumidor A: $Q_A = 30 - 5P$ (válida para $P \leq 6$)
+- Consumidor B: $Q_B = 20 - 4P$ (válida para $P \leq 5$)
 
-**(b)** Verifique que a condição de ótimo e o orçamento se satisfazem.
+**(a)** Calcule a procura de mercado $Q_M(P)$, indicando os intervalos de preço relevantes.
 
-**(c)** Interprete economicamente o resultado: o que significa que $|TMS| = p_x/p_y$ neste ponto?
+**(b)** Calcule as quantidades individuais e de mercado para $P = 3$.
+
+**(c)** Represente graficamente as três curvas de procura, assinalando o ponto de kink.
 :::
 
 ---
@@ -478,20 +933,22 @@ Um consumidor tem restrição orçamental $3X + 6Y = 60$. A sua Taxa Marginal de
 
 ::: {.nonincremental}
 
-**(a)** Condição de ótimo:
+**(a)** Para $P > 5$: só o consumidor A está no mercado (B não procura nada):
+$$Q_M = 30 - 5P, \quad P \in (5,\, 6]$$
 
-$$|TMS| = \frac{p_x}{p_y} \;\Rightarrow\; \frac{2Y}{X} = \frac{3}{6} = \frac{1}{2} \;\Rightarrow\; 4Y = X$$
+Para $P \leq 5$: ambos ativos:
+$$Q_M = Q_A + Q_B = (30 - 5P) + (20 - 4P) = 50 - 9P, \quad P \in [0,\, 5]$$
 
-Substituindo na RO:
+**Kink** (descontinuidade de inclinação) em $P = 5$: $Q_M = 50 - 9 \times 5 = 5$ ✓
 
-$$3(4Y) + 6Y = 60 \;\Rightarrow\; 12Y + 6Y = 60 \;\Rightarrow\; 18Y = 60 \;\Rightarrow\; Y^* = \frac{10}{3} \approx 3{,}33$$
+**(b)** Para $P = 3$:
 
-$$X^* = 4 \times \frac{10}{3} = \frac{40}{3} \approx 13{,}33$$
+$$Q_A = 30 - 5 \times 3 = 15 \qquad Q_B = 20 - 4 \times 3 = 8 \qquad Q_M = 15 + 8 = 23$$
 
-**(b)** Verificação orçamental: $3 \times \frac{40}{3} + 6 \times \frac{10}{3} = 40 + 20 = 60$ ✓
+Ou pela fórmula agregada: $Q_M = 50 - 9 \times 3 = 50 - 27 = 23$ ✓
 
-Verificação da condição: $|TMS| = \frac{2 \times 10/3}{40/3} = \frac{20/3}{40/3} = \frac{1}{2} = \frac{p_x}{p_y}$ ✓
-
-**(c)** No ótimo, o consumidor está disposto a trocar $1/2$ unidade de Y por cada unidade de X — exactamente o que o mercado oferece (uma unidade de X custa o mesmo que metade de uma unidade de Y, pois $p_x/p_y=3/6=1/2$). Não há incentivo para reajustar o cabaz.
+**(c)** O gráfico tem três curvas: $D_A$ (intercepta $P=6$, $Q=0$ e $P=0$, $Q=30$), $D_B$ (intercepta $P=5$, $Q=0$ e $P=0$, $Q=20$), e $D_M$ com kink em $(Q=5,\, P=5)$: segmento superior igual a $D_A$ e segmento inferior mais inclinado horizontalmente.
 
 :::
+
+
