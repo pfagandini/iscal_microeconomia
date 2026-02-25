@@ -119,6 +119,12 @@ $link-color-hover: $iscal-dark-burgundy;
   background-color: $iscal-light-gray;
 }
 
+.reveal table thead th .math,
+.reveal table thead th mjx-container,
+.reveal table thead th .katex {
+  color: white !important;
+}
+
 // Highlighted boxes
 .highlight-box {
   background-color: lighten($iscal-burgundy, 55%);

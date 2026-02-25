@@ -33,6 +33,9 @@ format:
     embed-resources: false
     echo: false
     code-tools: false
+  beamer:
+    theme: default
+    classoption: handout
 editor: source
 execute:
   enabled: true
@@ -50,29 +53,56 @@ execute:
 
 ## Modelo de Produção
 
-```{=latex}
+```{r, engine='tikz'}
+\usetikzlibrary{arrows.meta, shadows}
 \begin{tikzpicture}[
-  scale = 0.9,
-  every node/.style = {scale = 0.9}
+  scale = 1,
+  every node/.style = {font=\sffamily}
 ]
-\onslide<1->{
-  \draw[->, >=latex, draw=green!60!white, fill=green!20!white, line width=10pt]
-    (0,0) to node[black]{$K$} (0,2);
-  \draw[->, >=latex, draw=green!60!white, fill=green!20!white, line width=10pt]
-    (1.5,0) to node[black]{$L$} (1.5,2);
-}
-\onslide<2->{
-  \draw[->, >=latex, green!60!black, line width=20pt]
-    (-0.5,3) to node[white]{\textbf{Inputs}} (2.5,3);
-}
-\onslide<3->{
-  \node[draw=blue!90!white, rectangle, fill=blue!70!white, inner sep=5mm, text=white]
-    at (5,3) {\Large Tecnologia};
-}
-\onslide<4->{
-  \draw[->, >=latex, blue!60!black, line width=20pt]
-    (7.5,3) to node[white]{\textbf{Output}} (10,3);
-}
+
+  % Input arrows (K and L)
+  \draw[-{Stealth[length=8pt]}, line width=6pt, color=teal!70]
+    (2.5, 1.2) -- (2.5, 2.8) node[midway, right=4pt, black, font=\sffamily\bfseries]{$K$};
+  \draw[-{Stealth[length=8pt]}, line width=6pt, color=teal!70]
+    (3.5, 1.2) -- (3.5, 2.8) node[midway, right=4pt, black, font=\sffamily\bfseries]{$L$};
+
+  % Labels under input arrows
+  \node[font=\sffamily\small, text=gray!70!black] at (2.25, 0.8) {Capital};
+  \node[font=\sffamily\small, text=gray!70!black] at (3.75, 0.8) {Trabalho};
+
+  % Inputs flow arrow
+  \draw[-{Stealth[length=10pt]}, line width=3pt, color=teal!60!black]
+    (2.5, 3.5) -- (4, 3.5)
+    node[midway, above=2pt, font=\sffamily\bfseries, text=teal!60!black]{Inputs};
+
+  % Technology box
+  \node[
+    draw=blue!50!violet, 
+    rectangle, 
+    rounded corners=6pt,
+    fill=blue!50!violet!80!black, 
+    inner sep=6mm, 
+    text=white,
+    font=\sffamily\Large\bfseries,
+    drop shadow={shadow xshift=1pt, shadow yshift=-1pt, opacity=0.3}
+  ] (tech) at (6, 3.5) {Tecnologia};
+
+  % Output flow arrow
+  \draw[-{Stealth[length=10pt]}, line width=3pt, color=orange!70!black]
+    (8, 3.5) -- (9.8, 3.5)
+    node[midway, above=2pt, font=\sffamily\bfseries, text=orange!70!black]{Output};
+
+  % Output icon/label
+  \node[
+    draw=orange!70!black,
+    rectangle,
+    rounded corners=4pt,
+    fill=orange!15,
+    inner sep=4mm,
+    font=\sffamily\bfseries,
+    text=orange!70!black
+  ] at (11, 3.5) {$Q$};
+
 \end{tikzpicture}
 ```
 
@@ -203,41 +233,33 @@ Uma "unidade de trabalho" pode ser uma pessoa, grupos de pessoas, ou uma unidade
 
 ---
 
-## Exemplo Numérico: APL e MPL
+## Exemplo Numérico: APL e MPL {.smaller}
 
-```{=latex}
-\footnotesize
-\renewcommand{\arraystretch}{1.15}
-\begin{tabular}{|c|c|c|c|}
-\hline
-\rowcolor{blue!15}
-$L$ & $F(K,L)$ & $APL$ & $MPL$ \\ \hline
-0 & 0 & --- & --- \\
-1 & 4 & 4.00 & 4 \\
-2 & 14 & 7.00 & 10 \\
-3 & 27 & 9.00 & 13 \\
-\rowcolor{yellow!60}
-4 & 43 & 10.75 & 16 \\
-5 & 58 & 11.60 & 15 \\
-6 & 72 & 12.00 & 14 \\
-7 & 81 & 11.57 & 9 \\
-8 & 86 & 10.75 & 5 \\
-9 & 78 & 8.67 & \textcolor{red}{$-8$} \\
-10 & 67 & 6.70 & \textcolor{red}{$-11$} \\ \hline
-\end{tabular}
-```
+| $L$ | $F(K,L)$ | $APL$ | $MPL$ |
+|:---:|:---:|:---:|:---:|
+| 0 | 0 | --- | --- |
+| 1 | 4 | 4.00 | 4 |
+| 2 | 14 | 7.00 | 10 |
+| 3 | 27 | 9.00 | 13 |
+| **4** | **43** | **10.75** | **16** |
+| 5 | 58 | 11.60 | 15 |
+| **6** | **72** | **12.00** | **14** |
+| 7 | 81 | 11.57 | 9 |
+| 8 | 86 | 10.75 | 5 |
+| 9 | 78 | 8.67 | -8 |
+| 10 | 67 | 6.70 | -11 |
 
 ::: {.fragment}
-- Linha amarela: MPL máximo (L=4, óptimo técnico de MPL)
-- Quando $MPL > APL$: APL está a crescer; quando $MPL < APL$: APL está a diminuir
+- MPL máximo: $L=4$
+- Quando $MPL > APL$: APL está a crescer; quando $MPL < APL$: APL está a diminuir. APL máximo $\to$ ótimo técnico.
 :::
 
 ---
 
 ## Curva de Produto Total
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
+#| fig-align: center
 \begin{tikzpicture}[
   scale = 0.55,
   every node/.style = {scale = 0.65},
@@ -247,36 +269,28 @@ $L$ & $F(K,L)$ & $APL$ & $MPL$ \\ \hline
 ]
 \draw[->] (-0.1,0) -- (7.5,0) node[right]{$L$};
 \draw[->] (0,-0.1) -- (0,6.5) node[left]{$F(K,L)$};
-
 \draw[blue, thick, domain=0:7, variable=\x, samples=100] plot (\x,{f(\x)});
-
 \draw[dashed] ({20/9},0) -- ({20/9},{f(20/9)});
 \draw[dashed] (4.89813,0) -- (4.89813,{f(4.89813)}) -- (0,{f(4.89813)})
   node[left]{\footnotesize Output máximo};
-
 \draw[blue,->] ({20/9},0) |- (0.5,-0.4)
   node[midway, xshift=-1.5cm, yshift=-0.6cm]
   {\parbox{2.8cm}{\centering\footnotesize Rend. marginais\\ crescentes}};
-
 \draw[blue,->] (4.89813,0) |- (6.5,-0.4)
   node[red, midway, xshift=1.5cm, yshift=-0.6cm]
   {\parbox{2.8cm}{\centering\footnotesize Rend. marginais\\ negativos}};
-
 \draw ({((20/9)+4.89813)/2},0)
   node[below, yshift=-0.5cm]
   {\parbox{3cm}{\centering\footnotesize Rend. marginais\\ decrescentes}};
-
 \draw(7,{f(7)}) node[right]{$f(L)$};
 \end{tikzpicture}
-\end{center}
 ```
 
 ---
 
 ## APL e MPL — Curva Geral
-
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
+\usetikzlibrary{arrows.meta}
 \begin{tikzpicture}[
   scale = 0.7,
   every node/.style = {scale = 0.7},
@@ -289,20 +303,17 @@ $L$ & $F(K,L)$ & $APL$ & $MPL$ \\ \hline
 ]
 \draw[->] (-0.1,0) -- (7.5,0) node[below]{$L$};
 \draw[->] (0,-0.6) -- (0,6.5) node[left]{};
-
 \draw[blue, thick, domain=0:7, variable=\x, samples=50] plot (\x,{f(\x)})
   node[right]{$f(L)$};
 \draw[red!70!black, thick, domain=0.15:7, variable=\x, samples=50] plot (\x,{apl(\x)})
   node[right]{$APL$};
 \draw[green!60!black, thick, domain=0:5.5, variable=\x, samples=50] plot (\x,{mpl(\x)})
   node[right]{$MPL$};
-
 \draw[dashed] ({20/9},0) -- ({20/9},{f(20/9)});
 \draw[dashed] (4.89813,0) -- (4.89813,{f(4.89813)}) -- (0,{f(4.89813)})
   node[left]{$Q_{max}$};
 \draw[dashed] ({10/3},0) -- ({10/3},{f(10/3)}) -- (0,{f(10/3)})
   node[left]{$Q_1$};
-
 \draw[->, thick, green!70!black] (0,-0.4) -- ({10/3},-0.4)
   node[black, midway, yshift=-0.3cm]{\footnotesize I};
 \draw[->, thick, blue!60!green] ({10/3},-0.4) -- (4.89813,-0.4)
@@ -310,9 +321,7 @@ $L$ & $F(K,L)$ & $APL$ & $MPL$ \\ \hline
 \draw[->, thick, blue!40!red] (4.89813,-0.4) -- (6.2,-0.4)
   node[black, midway, yshift=-0.3cm]{\footnotesize III};
 \end{tikzpicture}
-\end{center}
 ```
-
 ---
 
 ## As 3 Etapas do Processo Produtivo
@@ -384,39 +393,6 @@ Um aumento de $K$ **expande a curva de produto total** — efeito análogo ao de
 
 ---
 
-## Rendimentos à Escala
-
-Avaliam como o *output* se altera quando os *inputs* variam na **mesma proporção** ($\alpha > 1$):
-
-::: {.nonincremental}
-- $F(\alpha K,\alpha L) > \alpha F(K,L)$ → **Rendimentos Crescentes** à Escala
-  - Típicos de processos intensivos em capital (infraestruturas, redes...)
-- $F(\alpha K,\alpha L) = \alpha F(K,L)$ → **Rendimentos Constantes** à Escala
-  - Típicos de processos intensivos em trabalho (agricultura, artesanato...)
-- $F(\alpha K,\alpha L) < \alpha F(K,L)$ → **Rendimentos Decrescentes** à Escala
-:::
-
----
-
-## Funções Homogéneas
-
-::: {.callout-note appearance="minimal"}
-A função $F(K,L)$ é **homogénea de grau $i$** se:
-$$F(\alpha K, \alpha L) = \alpha^i \cdot F(K,L)$$
-:::
-
-::: {.fragment}
-**Exemplo:** $Q = 2KL$
-
-$$F(\alpha K, \alpha L) = 2(\alpha K)(\alpha L) = \alpha^2 \cdot 2KL = \alpha^2 F(K,L)$$
-:::
-
-::: {.fragment}
-→ Homogénea de grau 2 → **Rendimentos Crescentes** à Escala (porque $\alpha^2 > \alpha$ para $\alpha > 1$).
-:::
-
----
-
 ## Exercícios — Escolha Múltipla (1)
 
 **1.** A empresa A tem a função $Q = K^{0.5}L^{0.5}$ e a empresa B tem $Q = KL$. A curto prazo ($K=4$):
@@ -424,7 +400,7 @@ $$F(\alpha K, \alpha L) = 2(\alpha K)(\alpha L) = \alpha^2 \cdot 2KL = \alpha^2 
 ::: {.nonincremental}
 a) A empresa A tem MPL crescente e a empresa B tem MPL constante.
 b) A empresa A tem MPL decrescente e a empresa B tem MPL crescente.
-c) **A empresa A tem MPL decrescente e a empresa B tem MPL constante.** ✓
+c) A empresa A tem MPL decrescente e a empresa B tem MPL constante.
 d) Ambas têm MPL decrescente.
 :::
 
@@ -440,16 +416,20 @@ d) Ambas têm MPL decrescente.
 
 ::: {.nonincremental}
 a) Corresponde à Etapa I, onde APL está a crescer.
-b) Corresponde à Etapa III, onde o output é máximo.
-c) **Corresponde à Etapa II, onde $MPL \geq 0$ e APL está a decrescer.** ✓
+b) Corresponde à Etapa II, onde $MPL \geq 0$ e APL está a decrescer.
+c) Corresponde à Etapa III, onde o output é máximo.
 d) É onde o MPL é máximo.
+:::
+
+::: {.fragment .smaller}
+**Solução:** **b)**, por definição.
 :::
 
 ---
 
 ## Exercício de Desenvolvimento
 
-**Enunciado:** Considere a função de produção $Q = -L^3 + 30L^2 + 10L$, com $K=1$ fixo.
+**Enunciado:** Considere a função de produção $Q = -KL^3 + 30K^2L^2 + 10L$, com $K=1$ fixo.
 
 a) Calcule $MPL$ e $APL$. A partir de que valor de $L$ se verificam rendimentos marginais decrescentes?
 

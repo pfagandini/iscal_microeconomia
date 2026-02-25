@@ -1,0 +1,564 @@
+---
+title: "Microeconomia"
+subtitle: "Optimização do Produtor: Mercado Concorrencial"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 16_otimizacao_concorrencial-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+    echo: false
+    code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+## Optimização do Produtor: Mercado Concorrencial {.center}
+
+::: {.callout-note appearance="minimal"}
+**Objectivo:** Derivar a condição óptima de produção em concorrência perfeita ($P = Cmg$), identificar os limiares de rendibilidade e encerramento, e construir a curva de oferta individual.
+:::
+
+---
+
+## Estruturas de Mercado
+
+```{=latex}
+\footnotesize
+\renewcommand{\arraystretch}{2.2}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{\cellcolor{blue!10} \multirow{2}{*}{\parbox{2cm}{\centering Estruturas de Mercado}}} &
+\multicolumn{4}{c|}{\cellcolor{blue!10} N.º de vendedores} \\ \cline{3-6}
+\multicolumn{2}{|c|}{\cellcolor{blue!10}} &
+\cellcolor{blue!25} Muitos &
+\cellcolor{blue!25} Poucos &
+\cellcolor{blue!25} Dois &
+\cellcolor{blue!25} Um \\ \hline
+\cellcolor{blue!10} &
+\cellcolor{blue!25} Muitos &
+\cellcolor{green!25}\parbox{2.2cm}{\centering\textbf{Conc. Perfeita}} &
+Oligopólio & Duopólio &
+\cellcolor{yellow!30} Monopólio \\ \cline{2-6}
+\cellcolor{blue!10} &
+\cellcolor{blue!25} Poucos &
+Oligopsónio &
+\multicolumn{3}{c|}{\multirow{3}{*}{\parbox{4cm}{\centering Negociação Estratégica}}} \\ \cline{2-3}
+\cellcolor{blue!10} &
+\cellcolor{blue!25} Dois &
+Duopsónio &
+\multicolumn{3}{c|}{} \\ \cline{2-3}
+\cellcolor{blue!10}\multirow{-4}{*}{\parbox{1.5cm}{\centering N.º de compradores}} &
+\cellcolor{blue!25} Um &
+Monopsónio &
+\multicolumn{3}{c|}{} \\ \hline
+\end{tabular}
+```
+
+::: {.fragment}
+Nesta aula estudamos **Concorrência Perfeita** — a estrutura de mercado de referência.
+:::
+
+---
+
+## Hipóteses da Concorrência Perfeita
+
+::: {.nonincremental}
+- **Mercado atomizado:** cada empresa representa uma fracção ínfima do mercado — individualmente, ninguém influencia o preço
+- **Produto homogéneo:** os compradores são indiferentes entre fornecedores
+- ***Price takers*:** cada empresa toma o preço de mercado $P$ como dado (exógeno)
+- **Livre entrada e saída** do mercado
+- **Informação perfeita**
+:::
+
+::: {.fragment}
+::: {.callout-important appearance="minimal"}
+A hipótese-chave é que a empresa não tem poder de mercado: para ela, $P$ é uma constante.
+:::
+:::
+
+---
+
+## Maximização do Lucro
+
+$$\max_{Q_i} \Pi_i = RT - CT = P \cdot Q_i - CT(Q_i)$$
+
+::: {.fragment}
+**Condição de Primeira Ordem (CPO):**
+
+$$\frac{d\Pi_i}{dQ_i} = P - \frac{dCT}{dQ_i} = 0 \;\Rightarrow\; \boxed{P = Cmg}$$
+:::
+
+::: {.fragment}
+**Condição de Segunda Ordem (CSO):**
+
+$$\frac{d^2\Pi_i}{dQ_i^2} = -\frac{dCmg}{dQ_i} < 0 \;\Rightarrow\; Cmg \text{ crescente}$$
+:::
+
+::: {.fragment}
+A empresa produz onde $P = Cmg$ **na zona crescente** de $Cmg$ — que coincide com a Zona Económica de Exploração.
+:::
+
+---
+
+## Intuição: P = Cmg como Cmg = Bmg
+
+$$P = Cmg$$
+
+- $P$ é o benefício marginal de produzir uma unidade adicional (receita por unidade vendida)
+- $Cmg$ é o custo marginal de produzir essa unidade
+
+::: {.fragment}
+- Se $P > Cmg$: produzir mais aumenta o lucro → expandir
+- Se $P < Cmg$: produzir mais reduz o lucro → contrair
+- Se $P = Cmg$: lucro é máximo ✓
+:::
+
+::: {.fragment}
+::: {.callout-tip appearance="minimal"}
+É novamente o princípio fundamental da racionalidade: **benefício marginal = custo marginal**.
+:::
+:::
+
+---
+
+## Lucro Gráfico: caso P > CTM
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.82,
+  every node/.style = {scale = 0.72},
+  declare function = {
+    cv(\x) = \x - (1/4)*\x^2 + (1/25)*\x^3;
+    ct(\x) = cv(\x) + 1;
+    cmg(\x) = 1 - (1/2)*\x + (3/25)*\x^2;
+    ctm(\x) = ct(\x)/\x;
+    cvm(\x) = cv(\x)/\x;
+  }
+]
+\def\pp{4.5}
+\draw[->,thick] (-0.1,0) -- (5.4,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.1) -- (0,5.5) node[left]{$P,\;Cmg,\;CTM$};
+
+\onslide<1->{
+  \draw[red!70!black, thick, domain=0.15:5.2, variable=\x, samples=60]
+    plot (\x,{2*cmg(\x)}) node[right]{$Cmg$};
+  \draw[green!60!black, thick, domain=0.9:5.2, variable=\x, samples=60]
+    plot (\x,{2*ctm(\x)}) node[right]{$CTM$};
+  \draw[orange!80!black, thick, domain=0.15:5.2, variable=\x, samples=60]
+    plot (\x,{2*cvm(\x)}) node[right]{$CVM$};
+}
+\onslide<2->{
+  \draw[blue, thick, dashed] (0,{2*cmg(\pp)}) node[left]{$P^*$} -- (\pp,{2*cmg(\pp)});
+  \draw[dotted] (\pp,0) node[below]{$Q_i^*$} -- (\pp,{2*cmg(\pp)})
+    node[circle,fill,inner sep=1.5pt]{};
+}
+\onslide<3->{
+  \draw[dotted] (0,{2*ctm(\pp)}) node[left]{$CTM(Q_i^*)$} -- (\pp,{2*ctm(\pp)})
+    node[circle,fill,inner sep=1.5pt]{};
+}
+\onslide<4->{
+  \fill[blue!30, opacity=0.5]
+    (0,{2*ctm(\pp)}) rectangle (\pp,{2*cmg(\pp)});
+  \node at ({\pp/2},{(2*cmg(\pp)+2*ctm(\pp))/2}) {$\Pi > 0$};
+}
+\end{tikzpicture}
+\end{center}
+```
+
+::: {.fragment}
+$\Pi^* = Q_i^* \cdot (P^* - CTM(Q_i^*)) > 0$ quando $P^* > CTM$ ✓
+:::
+
+---
+
+## Lucro Gráfico: caso P < CTM mas P > CVM
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.82,
+  every node/.style = {scale = 0.72},
+  declare function = {
+    cv(\x) = \x - (1/4)*\x^2 + (1/25)*\x^3;
+    ct(\x) = cv(\x) + 1;
+    cmg(\x) = 1 - (1/2)*\x + (3/25)*\x^2;
+    ctm(\x) = ct(\x)/\x;
+    cvm(\x) = cv(\x)/\x;
+  }
+]
+\def\pp{3.5}
+\draw[->,thick] (-0.1,0) -- (5.4,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.1) -- (0,5.5) node[left]{$P,\;Cmg,\;CTM$};
+
+\draw[red!70!black, thick, domain=0.15:5.2, variable=\x, samples=60]
+  plot (\x,{2*cmg(\x)}) node[right]{$Cmg$};
+\draw[green!60!black, thick, domain=0.9:5.2, variable=\x, samples=60]
+  plot (\x,{2*ctm(\x)}) node[right]{$CTM$};
+\draw[orange!80!black, thick, domain=0.15:5.2, variable=\x, samples=60]
+  plot (\x,{2*cvm(\x)}) node[right]{$CVM$};
+
+\onslide<2->{
+  \draw[blue, thick, dashed] (0,{2*cmg(\pp)}) node[left]{$P^*$} -- (\pp,{2*cmg(\pp)});
+  \draw[dotted] (\pp,0) node[below]{$Q_i^*$} -- (\pp,{2*cmg(\pp)})
+    node[circle,fill,inner sep=1.5pt]{};
+  \draw[dotted] (0,{2*ctm(\pp)}) node[left]{$CTM$} -- (\pp,{2*ctm(\pp)});
+  \draw[dotted] (0,{2*cvm(\pp)}) node[left]{$CVM$} -- (\pp,{2*cvm(\pp)});
+}
+\onslide<3->{
+  \fill[red!25, opacity=0.6]
+    (0,{2*ctm(\pp)}) rectangle (\pp,{2*cmg(\pp)});
+  \node at ({\pp/2},{(2*cmg(\pp)+2*ctm(\pp))/2}) {$\Pi < 0$};
+}
+\onslide<4->{
+  % mostrar que P>CVM => prejudizo < CF => manter
+  \draw[<->] (\pp+0.2,{2*cvm(\pp)}) -- (\pp+0.2,{2*ctm(\pp)})
+    node[midway,right]{\footnotesize $= CFM$};
+  \draw[<->] (\pp+0.2,{2*cmg(\pp)}) -- (\pp+0.2,{2*cvm(\pp)})
+    node[midway,right]{\footnotesize $P - CVM > 0$};
+}
+\end{tikzpicture}
+\end{center}
+```
+
+::: {.fragment .smaller}
+$P > CVM$: a receita cobre os custos variáveis e parte dos fixos → prejuízo $< CF$ → **manter-se em funcionamento**
+:::
+
+---
+
+## Lucro e Prejuízo: Sistematização
+
+$$\Pi = Q_i \cdot (P - CTM) = Q_i \cdot (P - CVM - CFM)$$
+
+::: {.nonincremental}
+- $P > CTM$: **lucro positivo** — produzir ao nível $P = Cmg$
+- $CVM < P < CTM$: **prejuízo** $< CF$ — vale a pena continuar a produzir (cobrem-se os custos variáveis e parte dos fixos)
+- $P = CVM_{min}$: **limiar de encerramento** $P_0$ — indiferente entre produzir $Q_0$ e encerrar
+- $P < CVM_{min}$: **encerrar** — prejuízo $> CF$; encerrando perde-se apenas $CF$
+:::
+
+---
+
+## Os Dois Limiares
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.88,
+  every node/.style = {scale = 0.72},
+  declare function = {
+    cv(\x) = \x - (1/4)*\x^2 + (1/25)*\x^3;
+    ct(\x) = cv(\x) + 1;
+    cmg(\x) = 1 - (1/2)*\x + (3/25)*\x^2;
+    ctm(\x) = ct(\x)/\x;
+    cvm(\x) = cv(\x)/\x;
+  }
+]
+% mínimo CVM: Q=25/8=3.125
+% mínimo CTM: Q=3.93 (aprox)
+\def\penc{25/8}
+\def\prend{3.93}
+
+\draw[->,thick] (-0.1,0) -- (5.4,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.1) -- (0,5.5) node[left]{$P$};
+
+\draw[red!70!black, thick, domain=0.15:5.2, variable=\x, samples=60]
+  plot (\x,{2*cmg(\x)}) node[right]{$Cmg$};
+\draw[green!60!black, thick, domain=0.9:5.2, variable=\x, samples=60]
+  plot (\x,{2*ctm(\x)}) node[right]{$CTM$};
+\draw[orange!80!black, thick, domain=0.15:5.2, variable=\x, samples=60]
+  plot (\x,{2*cvm(\x)}) node[right]{$CVM$};
+
+% limiar de encerramento
+\draw[dotted] (0,{2*cvm(\penc)}) node[left]{\color{red}$P_0$ (enc.)} -- (\penc,{2*cvm(\penc)});
+\draw[dotted] (\penc,0) node[below]{$Q_0$} -- (\penc,{2*cvm(\penc)})
+  node[circle,fill=red,inner sep=2pt]{};
+
+% limiar de rendibilidade
+\draw[dotted] (0,{2*ctm(\prend)}) node[left]{\color{blue}$P_1$ (rend.)} -- (\prend,{2*ctm(\prend)});
+\draw[dotted] (\prend,0) node[below]{$Q_1$} -- (\prend,{2*ctm(\prend)})
+  node[circle,fill=blue,inner sep=2pt]{};
+
+\end{tikzpicture}
+\end{center}
+```
+
+::: {.fragment .smaller}
+- $P_0 = CVM_{min}$: **limiar de encerramento** — abaixo deste preço, a empresa fecha
+- $P_1 = CTM_{min}$: **limiar de rendibilidade** — acima deste preço, a empresa tem lucro $> 0$
+:::
+
+---
+
+## Curva de Oferta Individual
+
+A curva de oferta é o conjunto de pares $(Q, P)$ que constituem a escolha óptima para cada preço:
+
+$$S_i: \quad P = Cmg(Q_i) \quad \text{para } P \geq P_0 = CVM_{min}$$
+
+::: {.fragment}
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.82,
+  every node/.style = {scale = 0.72},
+  declare function = {
+    cmg(\x) = 1 - (1/2)*\x + (3/25)*\x^2;
+    cvm(\x) = (1 - (1/4)*\x + (1/25)*\x^2);
+  }
+]
+\def\penc{25/8}
+
+\draw[->,thick] (-0.1,0) -- (5.4,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.1) -- (0,5.5) node[left]{$P$};
+
+% parte inactiva (abaixo do limiar)
+\draw[red!70!black, opacity=0.25, thick, domain=0.15:\penc, variable=\x, samples=40]
+  plot (\x,{2*cmg(\x)});
+
+% curva de oferta (acima do limiar)
+\draw[red!70!black, very thick, domain=\penc:5.2, variable=\x, samples=40]
+  plot (\x,{2*cmg(\x)}) node[right]{$S_i = Cmg$};
+
+% eixo vertical abaixo do limiar (Q=0 para P<P0)
+\draw[red!70!black, very thick] (0,0) -- (0,{2*cvm(\penc)});
+
+% limiar
+\draw[dotted] (0,{2*cvm(\penc)}) node[left]{$P_0$} -- (\penc,{2*cvm(\penc)});
+\draw[dotted] (\penc,0) node[below]{$Q_0$} -- (\penc,{2*cvm(\penc)})
+  node[circle,fill=red!70!black,inner sep=2.5pt]{};
+
+\draw[orange!80!black, thick, domain=0.15:5.2, variable=\x, samples=40]
+  plot (\x,{2*cvm(\x)}) node[right]{$CVM$};
+\end{tikzpicture}
+\end{center}
+```
+:::
+
+---
+
+## Lei da Oferta
+
+A curva de oferta tem **inclinação positiva**: se $P$ sobe, $Q_i^*$ sobe — e vice-versa.
+
+::: {.fragment}
+**Porquê?** Na Zona Económica de Exploração, $Cmg$ é **crescente**. Para um preço mais alto, a igualdade $P = Cmg$ dá-se num nível de $Q$ mais elevado.
+:::
+
+::: {.fragment}
+**Fundamento último:** Lei dos Rendimentos Marginais Decrescentes $\Rightarrow$ $Cmg$ crescente $\Rightarrow$ curva de oferta positivamente inclinada.
+:::
+
+::: {.fragment}
+::: {.callout-note appearance="minimal"}
+A variação do **preço de venda** move ao longo da curva de oferta. A variação de **factores exógenos** (preço dos inputs, tecnologia) desloca a curva inteira.
+:::
+:::
+
+---
+
+## Determinantes da Oferta
+
+O preço de venda $P$ é o único factor que move ao longo da curva. Os restantes factores **deslocam** a curva:
+
+::: {.nonincremental}
+- **Preços dos factores** $w, r$ ↑ → custos sobem → oferta contrai (curva desloca para cima/esquerda)
+- **Tecnologia** $A$ melhora → custos descem → oferta expande (curva desloca para baixo/direita)
+- **Preço de materiais** $p_m$ ↑ → custos sobem → oferta contrai
+- **Número de empresas** ↑ → oferta de mercado expande
+:::
+
+---
+
+## Exemplo Resolvido
+
+**Dados:** $CT = Q^3 - 60Q^2 + 1200Q + 1000$
+
+a) Determine $Cmg$, $CVM$, $CTM$.
+b) Calcule os limiares de encerramento e rendibilidade.
+c) Identifique a curva de oferta.
+d) Se $P = 330.75$, a empresa produz ou encerra? Tem lucro ou prejuízo?
+
+---
+
+## Exemplo — Resolução (a) e (b)
+
+$$Cmg = 3Q^2 - 120Q + 1200$$
+$$CVM = Q^2 - 60Q + 1200 \qquad CTM = Q^2 - 60Q + 1200 + \tfrac{1000}{Q}$$
+
+::: {.fragment}
+**Limiar de encerramento** — mínimo de $CVM$ ($Cmg = CVM$):
+
+$$3Q^2 - 120Q + 1200 = Q^2 - 60Q + 1200 \;\Rightarrow\; 2Q^2 - 60Q = 0 \;\Rightarrow\; Q_0 = 30$$
+
+$$P_0 = CVM(30) = 900 - 1800 + 1200 = \mathbf{300}$$
+:::
+
+::: {.fragment}
+**Limiar de rendibilidade** — mínimo de $CTM$: por tentativas,
+
+$Q = 30.5\!:$ $CTM = (30.5)^2 - 60(30.5) + 1200 + \tfrac{1000}{30.5} = 930.25 - 1830 + 1200 + 32.79 \approx 333$
+
+$$P_1 \approx \mathbf{333}$$
+:::
+
+---
+
+## Exemplo — Resolução (c) e (d)
+
+**Curva de oferta:**
+
+$$S_i\!: \quad P = 3Q^2 - 120Q + 1200 \quad \text{para } P \geq 300$$
+
+::: {.fragment}
+**Para $P = 330.75$:** igualar $P = Cmg$:
+
+$$3Q^2 - 120Q + 1200 = 330.75 \;\Rightarrow\; 3Q^2 - 120Q + 869.25 = 0$$
+
+$$Q = \frac{120 \pm \sqrt{14400 - 4 \times 3 \times 869.25}}{6} = \frac{120 \pm \sqrt{14400 - 10431}}{6} = \frac{120 \pm \sqrt{3969}}{6} = \frac{120 \pm 63}{6}$$
+
+$Q_a = 9.5$ (zona decrescente de $Cmg$ — inválido); $\quad Q^* = \dfrac{120+63}{6} = 30.5$
+:::
+
+::: {.fragment}
+$CVM(30.5) = 930.25 - 1830 + 1200 = 300.25 < 330.75$ → produz
+
+$CTM(30.5) \approx 333 > 330.75$ → **prejuízo** (mas menor que $CF$) ✓
+:::
+
+---
+
+## Exercícios — Escolha Múltipla (1)
+
+**1.** Uma empresa em concorrência perfeita tem $Cmg = 2Q + 4$ e $CVM_{min} = 4$ (para $Q = 0$). Se o preço de mercado for $P = 14$, qual a produção óptima?
+
+::: {.nonincremental}
+a) $Q^* = 4$
+b) $Q^* = 5$  ✓
+c) $Q^* = 7$
+d) A empresa encerra.
+:::
+
+::: {.fragment .smaller}
+**Solução:** $P = Cmg \Rightarrow 14 = 2Q + 4 \Rightarrow Q^* = 5$.
+
+Verificação de encerramento: $P = 14 > CVM_{min} = 4$ → não encerra ✓
+:::
+
+---
+
+## Exercícios — Escolha Múltipla (2)
+
+**2.** Para uma empresa em concorrência perfeita com $CT = 2Q^2 + 6Q + 50$, qual o limiar de encerramento?
+
+::: {.nonincremental}
+a) $P_0 = 6$  ✓
+b) $P_0 = 10$
+c) $P_0 = 50$
+d) $P_0 = 56$
+:::
+
+::: {.fragment .smaller}
+**Solução:** $CV = 2Q^2 + 6Q$; $CVM = 2Q + 6$.
+
+$CVM$ é crescente para todo $Q > 0$ (é uma recta), logo o mínimo é em $Q \to 0$: $CVM_{min} = 6$.
+
+Verificação: $Cmg = 4Q + 6$. $Cmg = CVM \Rightarrow 4Q + 6 = 2Q + 6 \Rightarrow Q = 0$. $CVM(0) = 6$ ✓
+
+$P_0 = 6$.
+:::
+
+---
+
+## Exercício de Desenvolvimento
+
+**Enunciado:** Uma empresa em concorrência perfeita tem $CT = Q^3 - 9Q^2 + 30Q + 18$.
+
+a) Determine $Cmg$, $CVM$ e $CTM$.
+
+b) Calcule os limiares de encerramento e rendibilidade.
+
+c) Se $P = 12$, qual a produção óptima? Tem lucro ou prejuízo? Deve manter-se em funcionamento?
+
+d) Escreva a expressão da curva de oferta desta empresa.
+
+---
+
+## Solução — Desenvolvimento (a) e (b)
+
+$$Cmg = 3Q^2 - 18Q + 30, \quad CVM = Q^2 - 9Q + 30, \quad CTM = Q^2 - 9Q + 30 + \tfrac{18}{Q}$$
+
+::: {.fragment}
+**Limiar de encerramento** ($Cmg = CVM$):
+
+$$3Q^2 - 18Q + 30 = Q^2 - 9Q + 30 \;\Rightarrow\; 2Q^2 - 9Q = 0 \;\Rightarrow\; Q_0 = 4.5$$
+
+$$P_0 = CVM(4.5) = 20.25 - 40.5 + 30 = \mathbf{9.75}$$
+:::
+
+::: {.fragment}
+**Limiar de rendibilidade** ($Cmg = CTM$):
+
+$$3Q^2 - 18Q + 30 = Q^2 - 9Q + 30 + \tfrac{18}{Q} \;\Rightarrow\; 2Q^3 - 9Q^2 - 18 = 0$$
+
+Por tentativas: $Q = 4.87 \Rightarrow CTM(4.87) \approx 13.59$.
+
+$$P_1 \approx \mathbf{13.59}$$
+:::
+
+---
+
+## Solução — Desenvolvimento (c) e (d)
+
+**Para $P = 12$:** $P = Cmg \Rightarrow 3Q^2 - 18Q + 30 = 12 \Rightarrow 3Q^2 - 18Q + 18 = 0 \Rightarrow Q^2 - 6Q + 6 = 0$
+
+$$Q = \frac{6 \pm \sqrt{36 - 24}}{2} = \frac{6 \pm \sqrt{12}}{2} = 3 \pm \sqrt{3}$$
+
+$Q_a = 3 - \sqrt{3} \approx 1.27$ (zona decrescente de $Cmg$ — inválido)
+
+$Q^* = 3 + \sqrt{3} \approx 4.73$
+
+::: {.fragment}
+$CVM(4.73) = 22.37 - 42.57 + 30 = 9.80$
+
+$CTM(4.73) = 9.80 + 18/4.73 = 9.80 + 3.81 = 13.61$
+:::
+
+::: {.fragment}
+$P = 12 > P_0 = 9.75$ → **mantém-se em funcionamento** ✓
+
+$P = 12 < P_1 \approx 13.59$ → **tem prejuízo** (mas inferior a $CF = 18$) ✓
+:::
+
+::: {.fragment}
+**Curva de oferta:** $S_i\!: P = 3Q^2 - 18Q + 30$ para $P \geq 9.75$
+:::

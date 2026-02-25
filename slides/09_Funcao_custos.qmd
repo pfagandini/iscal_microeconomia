@@ -33,6 +33,9 @@ format:
     embed-resources: false
     echo: false
     code-tools: false
+  beamer:
+    theme: default
+    classoption: handout
 editor: source
 execute:
   enabled: true
@@ -84,28 +87,21 @@ $CV(0) = 0$ — se não se produz nada, não se contrata trabalho. Mas $CF > 0$ 
 
 ---
 
-## Exemplo: Da Função de Produção à Função de Custos
+## Exemplo: Da Função de Produção à Função de Custos {.smaller}
 
 Dados: custo de $K$ instalado $= 60$; salário por unidade de $L$ $= 250$
 
-```{=latex}
-\footnotesize
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\rowcolor{blue!15}
-$L$ & $Q$ & $CF$ & $CV$ & $CT$ \\ \hline
-0 & 0 & 60 & 0 & 60 \\
-1 & 20 & 60 & 250 & 310 \\
-2 & 50 & 60 & 500 & 560 \\
-3 & 85 & 60 & 750 & 810 \\
-4 & 114 & 60 & 1\,000 & 1\,060 \\
-5 & 140 & 60 & 1\,250 & 1\,310 \\
-6 & 159 & 60 & 1\,500 & 1\,560 \\
-7 & 169 & 60 & 1\,750 & 1\,810 \\
-8 & 164 & 60 & 2\,000 & 2\,060 \\ \hline
-\end{tabular}
-```
+| $L$ | $Q$ | $CF$ | $CV$ | $CT$ |
+|:---:|:---:|:----:|:----:|:----:|
+| 0 | 0 | 60 | 0 | 60 |
+| 1 | 20 | 60 | 250 | 310 |
+| 2 | 50 | 60 | 500 | 560 |
+| 3 | 85 | 60 | 750 | 810 |
+| 4 | 114 | 60 | 1 000 | 1 060 |
+| 5 | 140 | 60 | 1 250 | 1 310 |
+| 6 | 159 | 60 | 1 500 | 1 560 |
+| 7 | 169 | 60 | 1 750 | 1 810 |
+| 8 | 164 | 60 | 2 000 | 2 060 |
 
 ::: {.fragment}
 Note que a curva de $CT$ é paralela à de $CV$ — distam sempre $CF = 60$.
@@ -115,8 +111,7 @@ Note que a curva de $CT$ é paralela à de $CV$ — distam sempre $CF = 60$.
 
 ## Gráfico: CT, CV e CF
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
 \begin{tikzpicture}[
   scale = 0.85,
   every node/.style = {scale = 0.85},
@@ -129,23 +124,16 @@ Note que a curva de $CT$ é paralela à de $CV$ — distam sempre $CF = 60$.
 \draw[->, thick] (-0.1,0) -- (5.5,0) node[below]{$Q$};
 \draw[->, thick] (0,-0.1) -- (0,5.5) node[left]{};
 
-\onslide<1->{
   \draw[blue, thick, domain=0:5, variable=\x, samples=60] plot (\x,{cf(\x)})
     node[right]{$CF$};
   \draw[dotted] (0,1) -- (5,1);
-}
-\onslide<2->{
   \draw[red, thick, domain=0:5, variable=\x, samples=60] plot (\x,{cv(\x)})
     node[right]{$CV$};
-}
-\onslide<3->{
   \draw[blue!60!red, thick, domain=0:5, variable=\x, samples=60] plot (\x,{ct(\x)})
     node[right]{$CT$};
   \draw[<->, thin] (4.5,{cv(4.5)}) -- (4.5,{ct(4.5)})
     node[midway, right]{\footnotesize $CF$};
-}
 \end{tikzpicture}
-\end{center}
 ```
 
 ---
@@ -208,26 +196,19 @@ $$CTM = CFM + CVM \implies CTM > CVM \text{ sempre}$$
 
 ---
 
-## Tabela com Todos os Custos
+## Tabela com Todos os Custos {.smaller}
 
-```{=latex}
-\footnotesize
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline
-\rowcolor{blue!15}
-$L$ & $Q$ & $CT$ & $Cmg$ & $CVM$ & $CTM$ & Etapa \\ \hline
-0 & 0 & 60 & --- & --- & --- & \\
-1 & 20 & 310 & \cellcolor{yellow!60}12.50 & 12.50 & 15.50 & I \\
-2 & 50 & 560 & \cellcolor{yellow!60}8.33 & 10.00 & 11.20 & I \\
-3 & 85 & 810 & \cellcolor{yellow!60}7.14 & 8.82 & 9.53 & I \\
-4 & 114 & 1060 & \cellcolor{yellow!60}8.62 & \cellcolor{green!30}8.77 & 9.30 & I \\
-5 & 140 & 1310 & 9.62 & 8.93 & 9.36 & \textbf{II} \\
-6 & 159 & 1560 & 13.16 & 9.43 & 9.81 & \textbf{II} \\
-7 & 169 & 1810 & 25.00 & 10.36 & 10.71 & \textbf{II} \\
-\hline
-\end{tabular}
-```
+| $L$ | $Q$ | $CT$ | $Cmg$ | $CVM$ | $CTM$ | Etapa |
+|:---:|:---:|:----:|:-----:|:-----:|:-----:|:-----:|
+| 0 | 0 | 60 | --- | --- | --- | |
+| 1 | 20 | 310 | **12.50** | 12.50 | 15.50 | I |
+| 2 | 50 | 560 | **8.33** | 10.00 | 11.20 | I |
+| 3 | 85 | 810 | **7.14** | 8.82 | 9.53 | I |
+| 4 | 114 | 1 060 | **8.62** | ***8.77*** | 9.30 | I |
+| 5 | 140 | 1 310 | 9.62 | 8.93 | 9.36 | **II** |
+| 6 | 159 | 1 560 | 13.16 | 9.43 | 9.81 | **II** |
+| 7 | 169 | 1 810 | 25.00 | 10.36 | 10.71 | **II** |
+
 
 ::: {.fragment .smaller}
 - Amarelo: $Cmg$ decrescente (Etapa I)
@@ -239,8 +220,7 @@ $L$ & $Q$ & $CT$ & $Cmg$ & $CVM$ & $CTM$ & Etapa \\ \hline
 
 ## Geometria dos Custos Médios e Marginal
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
 \begin{tikzpicture}[
   scale = 0.8,
   every node/.style = {scale = 0.8},
@@ -257,19 +237,15 @@ $L$ & $Q$ & $CT$ & $Cmg$ & $CVM$ & $CTM$ & Etapa \\ \hline
 \draw[->, thick] (-0.1,0) -- (5.5,0) node[below]{$Q$};
 \draw[->, thick] (0,-0.1) -- (0,4) node[left]{};
 
-\onslide<1->{
   \draw[blue!40!black, thick, domain=0.25:5, variable=\x, samples=60] plot (\x,{cfm(\x)})
     node[right]{$CFM$};
-}
-\onslide<2->{
+
   \draw[red, thick, domain=0.5:5, variable=\x, samples=60] plot (\x,{cvm(\x)})
     node[right]{$CVM$};
-}
-\onslide<3->{
+
   \draw[blue!60!red, thick, domain=0.4:5, variable=\x, samples=60] plot (\x,{ctm(\x)})
     node[right]{$CTM$};
-}
-\onslide<4->{
+
   \draw[green!60!black, thick, domain=0.2:5, variable=\x, samples=60] plot (\x,{cmg(\x)})
     node[right]{$Cmg$};
   % mínimo CVM: cmg=cvm -> 1-(1/2)x+(3/25)x^2 = 1-(1/4)x+(1/25)x^3/x
@@ -280,14 +256,13 @@ $L$ & $Q$ & $CT$ & $Cmg$ & $CVM$ & $CTM$ & Etapa \\ \hline
   % ct = cv+1; cmg = ct'/1; ctm = ct/x; cmg=ctm -> approx x=4.2
   \draw[dotted] (4.25,0) node[below]{\footnotesize $Q_{CTM_{min}}$}
     -- (4.25,{ctm(4.25)});
-}
+
 \end{tikzpicture}
-\end{center}
 ```
 
 ---
 
-## Propriedades Fundamentais
+## Propriedades Fundamentais {.smaller}
 
 **1.** $Cmg$ intersecta $CVM$ no **mínimo de $CVM$**
 
@@ -309,12 +284,12 @@ $L$ & $Q$ & $CT$ & $Cmg$ & $CVM$ & $CTM$ & Etapa \\ \hline
 
 ---
 
-## Exemplo Analítico Completo
+## Exemplo Analítico Completo {.smaller}
 
 Dada $CT = Q^3 - 6Q^2 + 15Q + 10$:
 
 ::: {.fragment}
-$$CF = 10 \quad \text{(termo independente)}$$
+$$CF = 10 \quad \text{(termo constante)}$$
 $$CV = Q^3 - 6Q^2 + 15Q$$
 :::
 
@@ -338,9 +313,6 @@ Para $CT = Q^3 - 6Q^2 + 15Q + 10$:
 $$3Q^2 - 12Q + 15 = Q^2 - 6Q + 15$$
 $$2Q^2 - 6Q = 0 \implies Q(2Q - 6) = 0 \implies Q_{CVM_{min}} = 3$$
 
-::: {.fragment}
-$CVM_{min} = 9 - 18 + 15 = 6$; confirmação: $Cmg(3) = 27 - 36 + 15 = 6$ ✓
-:::
 
 ::: {.fragment}
 **Mínimo de $CTM$:** onde $Cmg = CTM$, ou $\frac{dCTM}{dQ} = 0$:
@@ -358,15 +330,13 @@ Numericamente: $Q_{CTM_{min}} \approx 3.47$; $CTM_{min} \approx 9.10$
 
 ::: {.nonincremental}
 a) $Cmg = 2Q^2 + 8Q$
-b) $Cmg = 4Q + 8$  ✓
+b) $Cmg = 4Q + 8$
 c) $Cmg = 2Q + 8$
 d) $Cmg = 4Q$
 :::
 
 ::: {.fragment .smaller}
-**Solução:** $Cmg = \frac{dCT}{dQ} = 4Q + 8$.
-
-Verificação: $CV = 2Q^2 + 8Q$; $\frac{dCV}{dQ} = 4Q + 8$ — o mesmo resultado ✓
+**Solução: B ** $Cmg = \frac{dCT}{dQ} = 4Q + 8$.
 :::
 
 ---
@@ -378,12 +348,12 @@ Verificação: $CV = 2Q^2 + 8Q$; $\frac{dCV}{dQ} = 4Q + 8$ — o mesmo resultado
 ::: {.nonincremental}
 a) O $CFM$ é sempre decrescente com $Q$.
 b) O $Cmg$ intersecta o $CVM$ no mínimo do $CVM$.
-c) **O $CTM$ intersecta o $CVM$ no mínimo do $CVM$.** ✓ (é falsa)
+c) O $CTM$ intersecta o $CVM$ no mínimo do $CVM$.
 d) O $Cmg$ é independente do custo fixo.
 :::
 
 ::: {.fragment .smaller}
-**Solução:** A afirmação **c)** é falsa. Quem intersecta $CVM$ no mínimo é o $Cmg$, não o $CTM$. O $CTM$ é sempre maior que o $CVM$ e intersecta o $Cmg$ no **seu próprio mínimo**.
+**Solução: C** A afirmação **c)** é falsa. Quem intersecta $CVM$ no mínimo é o $Cmg$, não o $CTM$. O $CTM$ é sempre maior que o $CVM$ e intersecta o $Cmg$ no **seu próprio mínimo**.
 :::
 
 ---
@@ -400,7 +370,7 @@ c) Determine a produção no mínimo de $CTM$. Confirme que $Cmg = CTM$ nesse po
 
 ---
 
-## Solução — Desenvolvimento (a)
+## Solução — Desenvolvimento (a) {.smaller}
 
 $$CT = Q^3 - 9Q^2 + 30Q + 18$$
 
@@ -419,7 +389,7 @@ $$CTM = \frac{CT}{Q} = Q^2 - 9Q + 30 + \frac{18}{Q}$$
 
 ---
 
-## Solução — Desenvolvimento (b) e (c)
+## Solução — Desenvolvimento (b) e (c) {.smaller}
 
 **Mínimo de $CVM$** ($Cmg = CVM$):
 $$3Q^2 - 18Q + 30 = Q^2 - 9Q + 30$$
@@ -428,7 +398,7 @@ $$2Q^2 - 9Q = 0 \implies Q(2Q - 9) = 0 \implies Q_{CVM_{min}} = 4.5$$
 ::: {.fragment}
 $CVM(4.5) = 20.25 - 40.5 + 30 = 9.75$
 
-$Cmg(4.5) = 3(20.25) - 18(4.5) + 30 = 60.75 - 81 + 30 = 9.75$ ✓
+$Cmg(4.5) = 3(20.25) - 18(4.5) + 30 = 60.75 - 81 + 30 = 9.75$
 :::
 
 ::: {.fragment}
@@ -436,5 +406,5 @@ $Cmg(4.5) = 3(20.25) - 18(4.5) + 30 = 60.75 - 81 + 30 = 9.75$ ✓
 
 $$\frac{dCTM}{dQ} = 2Q - 9 - \frac{18}{Q^2} = 0 \implies 2Q^3 - 9Q^2 - 18 = 0$$
 
-Numericamente: $Q_{CTM_{min}} \approx 4.87$; $CTM(4.87) \approx 13.59$; $Cmg(4.87) \approx 13.50$ ✓
+Numericamente: $Q_{CTM_{min}} \approx 4.87$; $CTM(4.87) \approx 13.59$; $Cmg(4.87) \approx 13.50$
 :::

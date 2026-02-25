@@ -1,0 +1,417 @@
+---
+title: "Microeconomia"
+subtitle: "Geometria dos Custos"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 15_geometria_custos-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+    echo: false
+    code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+## Geometria dos Custos {.center}
+
+::: {.callout-note appearance="minimal"}
+**Objectivo:** Compreender as relações geométricas entre as curvas de custo — como os declives e os raios de origem das curvas de $CT$ e $CV$ se relacionam com $Cmg$, $CVM$ e $CTM$ — e sistematizar as correspondências entre produção e custos.
+:::
+
+---
+
+## Ponte entre Produção e Custos
+
+Já estabelecemos duas relações fundamentais:
+
+$$Cmg = \frac{w}{MPL} \qquad CVM = \frac{w}{APL}$$
+
+::: {.fragment}
+Isto implica uma **simetria total** entre as curvas de produto e as curvas de custo:
+:::
+
+::: {.fragment}
+| Produção | | Custo |
+|---|---|---|
+| $MPL$ crescente | $\Rightarrow$ | $Cmg$ decrescente |
+| $MPL$ máximo | $\Rightarrow$ | $Cmg$ mínimo |
+| $MPL$ decrescente | $\Rightarrow$ | $Cmg$ crescente |
+| $APL$ máximo (óptimo técnico) | $\Rightarrow$ | $CVM$ mínimo |
+:::
+
+---
+
+## Derivação das Relações
+
+$$Cmg = \frac{\Delta CT}{\Delta Q} = \frac{\Delta CV}{\Delta Q} = \frac{\Delta CV}{\Delta L}\cdot\frac{\Delta L}{\Delta Q} = \frac{w}{MPL}$$
+
+::: {.fragment}
+$$CVM = \frac{CV}{Q} = \frac{wL}{Q} = \frac{w}{(Q/L)} = \frac{w}{APL}$$
+:::
+
+::: {.fragment}
+::: {.callout-tip appearance="minimal"}
+A geometria das curvas de custo é um **espelho invertido** da geometria das curvas de produto: onde o produto tem máximo, o custo tem mínimo — e vice-versa.
+:::
+:::
+
+---
+
+## Cmg é o Declive da Tangente a CV
+
+$Cmg$ num dado ponto é o **declive da recta tangente** à curva $CV$ nesse ponto:
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.88,
+  every node/.style = {scale = 0.78},
+  declare function = {
+    cv(\x) = \x - (1/4)*\x^2 + (1/25)*\x^3;
+    cmg(\x) = 1 - (1/2)*\x + (3/25)*\x^2;
+    tgt(\x,\a) = cv(\a) + cmg(\a)*(\x - \a);
+  }
+]
+\draw[->,thick] (-0.1,0) -- (5.6,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.1) -- (0,5.2) node[left]{$CV$};
+\draw[red, thick, domain=0:5.3, variable=\x, samples=60] plot (\x,{cv(\x)})
+  node[right]{$CV$};
+\onslide<2->{
+  \draw[blue, domain=0.2:3.7, variable=\x] plot (\x,{tgt(\x,25/12)});
+  \draw[fill=blue] (25/12,{cv(25/12)}) circle (2.5pt);
+  \draw[blue](3.7,{tgt(3.7,25/12)}) node[right]{\footnotesize tangente em $Q_1$: declive $= Cmg_{min}$};
+  \draw[dotted] (25/12,0) node[below]{\footnotesize $Q_1$} -- (25/12,{cv(25/12)});
+}
+\onslide<3->{
+  \draw[green!60!black, domain=3.1:5.4, variable=\x] plot (\x,{tgt(\x,4.5)});
+  \draw[fill=green!60!black] (4.5,{cv(4.5)}) circle (2.5pt);
+  \draw[green!60!black](5.4,{tgt(5.4,4.5)}) node[right]{\footnotesize declive $= Cmg > Cmg_{min}$};
+  \draw[dotted] (4.5,0) node[below]{\footnotesize $Q_2$} -- (4.5,{cv(4.5)});
+}
+\end{tikzpicture}
+\end{center}
+```
+
+---
+
+## CVM é o Declive do Raio de Origem a CV
+
+$CVM(Q) = CV(Q)/Q$ é o **declive do segmento** que une a origem ao ponto $(Q, CV)$:
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.88,
+  every node/.style = {scale = 0.78},
+  declare function = {
+    cv(\x) = \x - (1/4)*\x^2 + (1/25)*\x^3;
+  }
+]
+\draw[->,thick] (-0.1,0) -- (5.6,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.1) -- (0,4.5) node[left]{$CV$};
+\draw[red, thick, domain=0:5.3, variable=\x, samples=60] plot (\x,{cv(\x)})
+  node[right]{$CV$};
+\onslide<2->{
+  \draw[blue, thick] (0,0) -- (25/8,{cv(25/8)});
+  \draw[fill=blue] (25/8,{cv(25/8)}) circle (2.5pt);
+  \draw[dotted] (25/8,0) node[below]{\footnotesize $Q_{CVM_{min}}$} -- (25/8,{cv(25/8)});
+  \draw[blue](25/8,{cv(25/8)}) node[above right]{\footnotesize raio tangente: $CVM_{min}$};
+}
+\onslide<3->{
+  \draw[green!60!black] (0,0) -- (1.5,{cv(1.5)});
+  \draw[fill=green!60!black] (1.5,{cv(1.5)}) circle (2.5pt);
+  \draw[green!60!black](1.5,{cv(1.5)}) node[above right]{\footnotesize declive raio $> CVM_{min}$};
+}
+\end{tikzpicture}
+\end{center}
+```
+
+::: {.fragment}
+O mínimo de $CVM$ ocorre onde o **raio de origem é tangente** à curva $CV$. Nesse ponto, raio e tangente coincidem $\Rightarrow$ $Cmg = CVM$.
+:::
+
+---
+
+## CTM é o Declive do Raio de Origem a CT
+
+Analogamente, $CTM(Q) = CT(Q)/Q$ é o **declive do raio de origem** à curva $CT$:
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.88,
+  every node/.style = {scale = 0.78},
+  declare function = {
+    cv(\x) = \x - (1/4)*\x^2 + (1/25)*\x^3;
+    ct(\x) = cv(\x) + 1;
+  }
+]
+\draw[->,thick] (-0.1,0) -- (5.6,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.1) -- (0,5.3) node[left]{$CT$};
+\draw[blue!60!red, thick, domain=0:5.3, variable=\x, samples=60] plot (\x,{ct(\x)})
+  node[right]{$CT$};
+\draw[gray, dashed] (0,1) -- (5.2,1) node[right]{\footnotesize $CF$};
+\onslide<2->{
+  \draw[green!60!black, thick] (0,0) -- (3.93,{ct(3.93)});
+  \draw[fill=green!60!black] (3.93,{ct(3.93)}) circle (2.5pt);
+  \draw[dotted] (3.93,0) node[below]{\footnotesize $Q_{CTM_{min}}$} -- (3.93,{ct(3.93)});
+  \draw[green!60!black](3.93,{ct(3.93)}) node[above right]{\footnotesize raio tangente: $CTM_{min}$};
+}
+\onslide<3->{
+  \draw[red!60!black] (0,0) -- (2,{ct(2)});
+  \draw[fill=red!60!black] (2,{ct(2)}) circle (2.5pt);
+  \draw[red!60!black](2,{ct(2)}) node[above right]{\footnotesize declive raio $> CTM_{min}$};
+}
+\end{tikzpicture}
+\end{center}
+```
+
+---
+
+## Diagrama Duplo: CT/CV acima, Custos Médios abaixo
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.60,
+  every node/.style = {scale = 0.63},
+  declare function = {
+    cv(\x) = \x - (1/4)*\x^2 + (1/25)*\x^3;
+    ct(\x) = cv(\x) + 1;
+    cmg(\x) = 1 - (1/2)*\x + (3/25)*\x^2;
+    ctm(\x) = ct(\x)/\x;
+    cvm(\x) = cv(\x)/\x;
+  }
+]
+% --- painel superior ---
+\draw[->,thick] (-0.1,0) -- (5.6,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.1) -- (0,5.5) node[left]{$CT,CV$};
+\draw[blue, thick, domain=0:5.3, variable=\x, samples=60] plot (\x,{cv(\x)}) node[right]{$CV$};
+\draw[blue!50!red, thick, domain=0:5.3, variable=\x, samples=60] plot (\x,{ct(\x)}) node[right]{$CT$};
+\draw[gray, dashed] (0,1) -- (5.3,1) node[right]{\tiny $CF$};
+\draw[dotted,gray] (25/12,0) -- (25/12,{ct(25/12)});
+\draw[dotted,gray] (25/8,0)  -- (25/8,{ct(25/8)});
+\draw[dotted,gray] (3.93,0)  -- (3.93,{ct(3.93)});
+
+% --- painel inferior ---
+\draw[->,thick] (-0.1,-5.5) -- (5.6,-5.5) node[below]{$Q$};
+\draw[->,thick] (0,-5.6) -- (0,-1.5) node[left]{$Cmg,CTM,CVM$};
+\draw[red, thick, domain=0.2:5.3, variable=\x, samples=60]
+  plot (\x,{2*cmg(\x)-5.5}) node[right]{$Cmg$};
+\draw[orange!80!black, thick, domain=0.3:5.3, variable=\x, samples=60]
+  plot (\x,{2*cvm(\x)-5.5}) node[right]{$CVM$};
+\draw[green!60!black, thick, domain=0.88:5.3, variable=\x, samples=60]
+  plot (\x,{2*ctm(\x)-5.5}) node[right]{$CTM$};
+
+% linhas de referência
+\draw[dotted,gray] (25/12,-5.5) -- (25/12,{2*cmg(25/12)-5.5})
+  node[above]{\tiny $Cmg_{min}$};
+\draw[dotted,gray] (25/8,-5.5) -- (25/8,{2*cvm(25/8)-5.5})
+  node[above]{\tiny $CVM_{min}$};
+\draw[dotted,gray] (3.93,-5.5) -- (3.93,{2*ctm(3.93)-5.5})
+  node[above]{\tiny $CTM_{min}$};
+\end{tikzpicture}
+\end{center}
+```
+
+---
+
+## 4 Correspondências Fundamentais
+
+::: {.nonincremental}
+1. $MPL$ **máximo** $\;\Leftrightarrow\;$ $Cmg$ **mínimo** — ponto de inflexão em ambas as curvas
+
+2. $APL$ **máximo** (óptimo técnico) $\;\Leftrightarrow\;$ $CVM$ **mínimo**
+
+3. $Cmg$ intersecta $CVM$ no **mínimo de $CVM$** $\;(Cmg = CVM)$
+
+4. $Cmg$ intersecta $CTM$ no **mínimo de $CTM$** $\;(Cmg = CTM)$, e $Q_{CTM_{min}} > Q_{CVM_{min}}$ sempre
+:::
+
+---
+
+## Porquê Cmg intersecta CVM no mínimo?
+
+Raciocínio pela média:
+
+- $Cmg < CVM$: a última unidade custa **menos** que a média $\Rightarrow$ média **desce**
+- $Cmg > CVM$: a última unidade custa **mais** que a média $\Rightarrow$ média **sobe**
+- $Cmg = CVM$: a média está no seu **ponto de viragem** $\Rightarrow$ mínimo
+
+::: {.fragment}
+::: {.callout-tip appearance="minimal"}
+**Analogia:** numa série de notas de teste, se a nota seguinte for abaixo da média actual, a média desce; se for acima, sobe. A nota que iguala a média é indiferente — é o ponto de mínimo (ou máximo) da média.
+:::
+:::
+
+---
+
+## CFM, CVM e CTM quando Q → ∞
+
+$$CTM = CFM + CVM = \frac{CF}{Q} + CVM$$
+
+Quando $Q \to +\infty$: $\;CFM \to 0\;$ e portanto $\;CTM \to CVM$.
+
+::: {.fragment}
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.72,
+  every node/.style = {scale = 0.75},
+  declare function = {
+    cv(\x) = \x - (1/4)*\x^2 + (1/25)*\x^3;
+    ct(\x) = cv(\x) + 1;
+    ctm(\x) = ct(\x)/\x;
+    cvm(\x) = cv(\x)/\x;
+    cfm(\x) = 1/\x;
+  }
+]
+\draw[->,thick] (-0.1,0) -- (6.2,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.1) -- (0,4.5) node[left]{};
+\draw[green!60!black, thick, domain=0.5:6, variable=\x, samples=60]
+  plot (\x,{ctm(\x)}) node[right]{$CTM$};
+\draw[orange!80!black, thick, domain=0.3:6, variable=\x, samples=60]
+  plot (\x,{cvm(\x)}) node[right]{$CVM$};
+\draw[gray!70!black, thick, domain=0.25:6, variable=\x, samples=60]
+  plot (\x,{cfm(\x)}) node[right]{$CFM$};
+\draw[<->, thin, blue] (2,{ctm(2)}) -- (2,{cvm(2)})
+  node[midway,right]{\footnotesize $CFM(2)$};
+\draw[<->, thin, blue] (5,{ctm(5)}) -- (5,{cvm(5)})
+  node[midway,right]{\footnotesize $CFM(5)$};
+\end{tikzpicture}
+\end{center}
+```
+:::
+
+---
+
+## Exercícios — Escolha Múltipla (1)
+
+**1.** Para a função $CT = Q^3 - 12Q^2 + 60Q + 20$, o mínimo do Custo Marginal ocorre em:
+
+::: {.nonincremental}
+a) $Q = 3$
+b) **$Q = 4$** ✓
+c) $Q = 6$
+d) $Q = 12$
+:::
+
+::: {.fragment .smaller}
+**Solução:** $Cmg = 3Q^2 - 24Q + 60$.
+
+Mínimo: $dCmg/dQ = 6Q - 24 = 0 \Rightarrow Q = 4$.
+
+$Cmg(4) = 48 - 96 + 60 = 12$.
+
+Condição de 2.ª ordem: $d^2Cmg/dQ^2 = 6 > 0$ → mínimo ✓
+:::
+
+---
+
+## Exercícios — Escolha Múltipla (2)
+
+**2.** Qual das seguintes afirmações é **verdadeira**?
+
+::: {.nonincremental}
+a) O $CTM$ intersecta o $CVM$ no mínimo do $CVM$.
+b) O mínimo de $CTM$ ocorre sempre para $Q$ menor do que o mínimo de $CVM$.
+c) **O $CFM$ é sempre decrescente e tende para zero quando $Q$ aumenta.** ✓
+d) O $Cmg$ é sempre crescente.
+:::
+
+::: {.fragment .smaller}
+**Solução:**
+
+- a) Falsa — é o $Cmg$ que intersecta $CVM$ no seu mínimo.
+- b) Falsa — o mínimo de $CTM$ ocorre para $Q$ **maior** que o de $CVM$.
+- **c) Verdadeira** — $CFM = CF/Q$ é decrescente em $Q$; $\lim_{Q\to\infty} CFM = 0$.
+- d) Falsa — $Cmg$ decresce na Etapa I e cresce na Etapa II.
+:::
+
+---
+
+## Exercício de Desenvolvimento
+
+**Enunciado:** Seja $CT = \dfrac{1}{3}Q^3 - 5Q^2 + 30Q + 48$.
+
+a) Identifique $CF$, $CV$, $Cmg$, $CVM$ e $CTM$.
+
+b) Encontre o mínimo de $Cmg$ e o mínimo de $CVM$. Confirme que $Cmg = CVM$ no mínimo de $CVM$.
+
+c) Verifique que o mínimo de $CTM$ ocorre para um valor de $Q$ superior ao mínimo de $CVM$.
+
+---
+
+## Solução — Desenvolvimento (a) e (b)
+
+$$CF = 48, \qquad CV = \tfrac{1}{3}Q^3 - 5Q^2 + 30Q$$
+
+$$Cmg = Q^2 - 10Q + 30, \quad CVM = \tfrac{1}{3}Q^2 - 5Q + 30, \quad CTM = \tfrac{1}{3}Q^2 - 5Q + 30 + \tfrac{48}{Q}$$
+
+::: {.fragment}
+**Mínimo de $Cmg$:** $dCmg/dQ = 2Q - 10 = 0 \;\Rightarrow\; Q = 5$; $\quad Cmg(5) = 25 - 50 + 30 = 5$
+:::
+
+::: {.fragment}
+**Mínimo de $CVM$** — igualar $Cmg = CVM$:
+
+$$Q^2 - 10Q + 30 = \tfrac{1}{3}Q^2 - 5Q + 30 \;\Rightarrow\; \tfrac{2}{3}Q^2 - 5Q = 0 \;\Rightarrow\; Q\!\left(\tfrac{2}{3}Q - 5\right) = 0 \;\Rightarrow\; Q_{CVM_{min}} = 7.5$$
+
+$CVM(7.5) = \tfrac{1}{3}(56.25) - 37.5 + 30 = 18.75 - 37.5 + 30 = 11.25$
+
+$Cmg(7.5) = 56.25 - 75 + 30 = 11.25$ ✓
+:::
+
+---
+
+## Solução — Desenvolvimento (c)
+
+**Mínimo de $CTM$:** $dCTM/dQ = 0$:
+
+$$\frac{2}{3}Q - 5 - \frac{48}{Q^2} = 0 \quad\Rightarrow\quad \frac{2}{3}Q^3 - 5Q^2 - 48 = 0$$
+
+::: {.fragment}
+Por tentativas:
+
+$Q = 8\!:$ $\tfrac{2}{3}(512) - 5(64) - 48 = 341.3 - 320 - 48 = -26.7 < 0$
+
+$Q = 8.5\!:$ $\tfrac{2}{3}(614.1) - 5(72.25) - 48 = 409.4 - 361.3 - 48 \approx 0.1 \approx 0$ ✓
+
+$\Rightarrow Q_{CTM_{min}} \approx 8.5$
+:::
+
+::: {.fragment}
+$CTM(8.5) = \tfrac{1}{3}(72.25) - 42.5 + 30 + \tfrac{48}{8.5} \approx 24.08 - 42.5 + 30 + 5.65 \approx 17.23$
+
+$Cmg(8.5) = 72.25 - 85 + 30 = 17.25$ ✓
+
+**Conclusão:** $Q_{CTM_{min}} \approx 8.5 > Q_{CVM_{min}} = 7.5$ ✓
+:::

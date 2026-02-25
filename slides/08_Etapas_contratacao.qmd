@@ -33,6 +33,9 @@ format:
     embed-resources: false
     echo: false
     code-tools: false
+  beamer:
+    theme: default
+    classoption: handout
 editor: source
 execute:
   enabled: true
@@ -40,7 +43,7 @@ execute:
   echo: false
 ---
 
-## Etapas do Processo Produtivo {.center}
+## Revisão: Etapas do Processo Produtivo {.center}
 
 ::: {.callout-note appearance="minimal"}
 **Objectivo:** Identificar as três etapas do processo produtivo, compreender a Zona Económica de Exploração, e derivar a Lei da Contratação como condição óptima do produtor.
@@ -66,8 +69,8 @@ Relação fundamental entre as duas medidas:
 
 ## As 3 Etapas — Diagrama Geral
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
+
 \begin{tikzpicture}[
   scale = 0.75,
   every node/.style = {scale = 0.75},
@@ -103,7 +106,7 @@ Relação fundamental entre as duas medidas:
 \draw[->, thick, red!60!black] (4.89813,-0.45) -- (6.3,-0.45)
   node[black, midway, yshift=-0.3cm]{\footnotesize \textbf{III}};
 \end{tikzpicture}
-\end{center}
+
 ```
 
 ---
@@ -157,25 +160,11 @@ Nenhuma empresa racional opera na Etapa III — estaria a pagar trabalhadores pa
 
 ## Resumo das 3 Etapas
 
-```{=latex}
-\footnotesize
-\renewcommand{\arraystretch}{1.6}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\rowcolor{blue!15}
-\textbf{Etapa} & \textbf{Intervalo (L)} & \textbf{MPL} & \textbf{APL} & \textbf{Output} \\
-\hline
-\rowcolor{green!10}
-\textbf{I} & $[0,\; L_1[$ & $> APL$ & crescente & crescente \\
-\hline
-\rowcolor{yellow!20}
-\textbf{II} (ZEE) & $[L_1,\; L_{max}]$ & $\geq 0$, $< APL$ & decrescente & crescente \\
-\hline
-\rowcolor{red!10}
-\textbf{III} & $]L_{max},\; +\infty[$ & $< 0$ & decrescente & decrescente \\
-\hline
-\end{tabular}
-```
+| **Etapa** | **Intervalo (L)** | **MPL** | **APL** | **Output** |
+|:---------:|:-----------------:|:-------:|:-------:|:----------:|
+| **I** | $[0,\; L_1[$ | $> APL$ | crescente | crescente |
+| **II** (ZEE) | $[L_1,\; L_{max}]$ | $\geq 0$, $< APL$ | decrescente | crescente |
+| **III** | $]L_{max},\; +\infty[$ | $< 0$ | decrescente | decrescente |
 
 ::: {.fragment}
 **ZEE = Zona Económica de Exploração** → Etapa II: onde o produtor racional opera.
@@ -183,31 +172,22 @@ Nenhuma empresa racional opera na Etapa III — estaria a pagar trabalhadores pa
 
 ---
 
-## Exemplo Numérico — Tabela Completa
+## Exemplo Numérico — Tabela Completa {.smaller}
 
-```{=latex}
-\footnotesize
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\rowcolor{blue!15}
-$L$ & $Q=F(K,L)$ & $APL$ & $MPL$ & Etapa \\ \hline
-0 & 0 & --- & --- & \\
-1 & 4 & 4.00 & 4 & I \\
-2 & 14 & 7.00 & 10 & I \\
-3 & 27 & 9.00 & 13 & I \\
-\rowcolor{yellow!50}
-4 & 43 & 10.75 & 16 & I (máx MPL) \\
-5 & 58 & 11.60 & 15 & I \\
-\rowcolor{green!20}
-6 & 72 & 12.00 & 14 & \textbf{II} (óptimo técnico: APL máx) \\
-7 & 81 & 11.57 & 9 & II \\
-8 & 86 & 10.75 & 5 & II \\
-\rowcolor{orange!30}
-9 & 86 & 9.56 & 0 & II→III ($Q_{max}$) \\
-10 & 78 & 7.80 & \textcolor{red}{$-8$} & \textcolor{red}{III} \\ \hline
-\end{tabular}
-```
+| $L$ | $Q=F(K,L)$ | $APL$ | $MPL$ | Etapa |
+|:---:|:----------:|:-----:|:-----:|:------|
+| 0 | 0 | --- | --- | |
+| 1 | 4 | 4.00 | 4 | I |
+| 2 | 14 | 7.00 | 10 | I |
+| 3 | 27 | 9.00 | 13 | I |
+| **4** | **43** | **10.75** | **16** | **I (máx MPL)** |
+| 5 | 58 | 11.60 | 15 | I |
+| **6** | **72** | **12.00** | **14** | **II (óptimo técnico: APL máx)** |
+| 7 | 81 | 11.57 | 9 | II |
+| 8 | 86 | 10.75 | 5 | II |
+| **9** | **86** | **9.56** | **0** | **II→III ($Q_{max}$)** |
+| 10 | 78 | 7.80 | $-8$ | III |
+
 
 ::: {.fragment .smaller}
 *Nota: a tabela usa valores arredondados para ilustração; os pontos de fronteira exactos são calculados analiticamente.*
@@ -305,8 +285,8 @@ Trabalhadores mais produtivos (maior $MPL$) justificam salários mais elevados �
 
 ## Verificação Gráfica
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
+
 \begin{tikzpicture}[
   scale = 0.75,
   every node/.style = {scale = 0.75},
@@ -319,7 +299,7 @@ Trabalhadores mais produtivos (maior $MPL$) justificam salários mais elevados �
 \draw[->] (0,-0.1) -- (0,6) node[left]{$P \cdot MPL,\; W$};
 
 % VMPL = P*MPL
-\draw[blue, thick, domain=0.5:7.5, variable=\x, samples=60]
+\draw[blue, thick, domain=1:7.5, variable=\x, samples=60]
   plot (\x, {min(vmpl(\x)/10, 5.5)}) node[right]{$P \cdot MPL$};
 
 % salário W=20, escalado /10 para caber
@@ -330,7 +310,7 @@ Trabalhadores mais produtivos (maior $MPL$) justificam salários mais elevados �
 \draw[green!60!black, fill=green!60!black] (6.25,2) circle (3pt)
   node[above right]{\footnotesize Óptimo};
 \end{tikzpicture}
-\end{center}
+
 ```
 
 ::: {.fragment}
@@ -344,16 +324,15 @@ A curva $P \cdot MPL$ é decrescente (por causa dos rendimentos marginais decres
 **1.** Uma empresa tem $Q = 4L^{0.5}$, $P = 5$ e $W = 10$. Qual a quantidade óptima de trabalho a contratar?
 
 ::: {.nonincremental}
-a) **$L^* = 1$** ✓
+a) $L^* = 1$
 b) $L^* = 4$
 c) $L^* = 9$
 d) $L^* = 16$
 :::
 
 ::: {.fragment .smaller}
-**Solução:** $MPL = 2L^{-0.5}$. Lei da contratação: $P \cdot MPL = W \Rightarrow 5 \times 2L^{-0.5} = 10 \Rightarrow L^{-0.5} = 1 \Rightarrow L^{0.5} = 1 \Rightarrow L^* = 1$.
+**Solução: A** $MPL = 2L^{-0.5}$. Lei da contratação: $P \cdot MPL = W \Rightarrow 5 \times 2L^{-0.5} = 10 \Rightarrow L^{-0.5} = 1 \Rightarrow L^* = 1$.
 
-Verificação: $P \cdot MPL = 5 \times 2 \times 1^{-0.5} = 10 = W$ ✓
 :::
 
 ---
@@ -365,19 +344,19 @@ Verificação: $P \cdot MPL = 5 \times 2 \times 1^{-0.5} = 10 = W$ ✓
 ::: {.nonincremental}
 a) Reduzir o output — está a produzir demasiado.
 b) Manter a produção — já está no óptimo.
-c) **Contratar mais trabalho** — o benefício marginal supera o custo marginal. ✓
+c) Contratar mais trabalho — o benefício marginal supera o custo marginal. 
 d) Aumentar o preço de venda.
 :::
 
 ::: {.fragment .smaller}
-**Solução:** Se $P \cdot MPL > W$, cada trabalhador adicional gera mais receita do que custa. A empresa deve contratar mais até $P \cdot MPL = W$.
+**Solução: C** Se $P \cdot MPL > W$, cada trabalhador adicional gera mais receita do que custa. A empresa deve contratar mais até $P \cdot MPL = W$.
 :::
 
 ---
 
 ## Exercício de Desenvolvimento
 
-**Enunciado:** A empresa ALFA tem a função de produção $Q = -L^3 + 12L^2 + 60L$, com $K=1$ fixo. O preço de venda é $P = 2$ u.m. e o salário unitário é $W = 168$ u.m.
+**Enunciado:** A empresa ALFA tem a função de produção $Q = -KL^3 + 12L^2 + 60LK^3$, com $K=1$ fixo. O preço de venda é $P = 2$ u.m. e o salário unitário é $W = 168$ u.m.
 
 a) Calcule $MPL$ e $APL$. Delimite as três etapas do processo produtivo.
 
@@ -387,15 +366,15 @@ c) Verifique que $L^*$ se encontra na Zona Económica de Exploração.
 
 ---
 
-## Solução — Desenvolvimento (a)
+## Solução — Desenvolvimento (a) {.smaller}
 
 $$MPL = -3L^2 + 24L + 60$$
 $$APL = -L^2 + 12L + 60$$
 
 ::: {.fragment}
 **Etapa I → II** ($MPL = APL$):
-$$-3L^2 + 24L + 60 = -L^2 + 12L + 60 \implies -2L^2 + 12L = 0 \implies L(L-6)=0$$
-$$\implies L_1 = 6$$
+$$-3L^2 + 24L + 60 = -L^2 + 12L + 60 \implies -2L^2 + 12L = 0 $$
+$$\implies L(L-6)=0\implies L_1 = 6$$
 :::
 
 ::: {.fragment}
@@ -412,7 +391,7 @@ $$\implies L_{max} = 10$$
 
 ---
 
-## Solução — Desenvolvimento (b) e (c)
+## Solução — Desenvolvimento (b) e (c) {.smaller}
 
 **Lei da Contratação:** $P \cdot MPL = W$
 
