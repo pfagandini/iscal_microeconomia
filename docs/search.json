@@ -2910,5 +2910,362 @@
     "title": "Microeconomia",
     "section": "Exercício 3 (Desenvolvimento)",
     "text": "Exercício 3 (Desenvolvimento)\nUm consumidor tem \\(U(x,y) = x^2 y\\), \\(W = 90\\)€, \\(p_x = 3\\)€, \\(p_y = 2\\)€.\na) Calcule \\(Umg_x\\) e \\(Umg_y\\).\nb) Determine o cabaz óptimo \\((x^*, y^*)\\) pela 2.ª Lei de Gossen.\nc) Calcule o nível de utilidade no óptimo.\n\n\n\n\n\n\n\n\nSolução\n\n\na) \\(Umg_x = 2xy\\); \\(\\quad Umg_y = x^2\\).\nb) 2.ª Lei: \\(\\dfrac{2xy}{x^2} = \\dfrac{2y}{x} = \\dfrac{3}{2} \\Rightarrow y = \\dfrac{3x}{4}\\).\nRO: \\(3x + 2 \\cdot \\dfrac{3x}{4} = 3x + \\dfrac{3x}{2} = \\dfrac{9x}{2} = 90 \\Rightarrow x^* = 20,\\quad y^* = 15\\).\nc) \\(U(20,15) = 400 \\times 15 = 6000\\)."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#teoria-do-produtor",
+    "href": "slides/07_Producao_cp_lp.html#teoria-do-produtor",
+    "title": "Microeconomia",
+    "section": "Teoria do Produtor",
+    "text": "Teoria do Produtor\n\n\n\nObjectivo: Compreender como as empresas transformam inputs em output, a diferença entre curto e longo prazo, e as propriedades da função de produção."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#modelo-de-produção",
+    "href": "slides/07_Producao_cp_lp.html#modelo-de-produção",
+    "title": "Microeconomia",
+    "section": "Modelo de Produção",
+    "text": "Modelo de Produção\n\nUma unidade produtiva contrata inputs no mercado de fatores e, usando uma tecnologia, transforma-os em output."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#escolhas-da-empresa",
+    "href": "slides/07_Producao_cp_lp.html#escolhas-da-empresa",
+    "title": "Microeconomia",
+    "section": "Escolhas da Empresa",
+    "text": "Escolhas da Empresa\nSão escolhas da empresa:\n\nQuantidade de cada input a contratar, em função dos respetivos preços de mercado.\nQuantidade de output a produzir, em função das condições de mercado e da tecnologia disponível."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#linguagem",
+    "href": "slides/07_Producao_cp_lp.html#linguagem",
+    "title": "Microeconomia",
+    "section": "Linguagem",
+    "text": "Linguagem\n\\[F(K,L)=Q \\quad \\text{(Função de Produção)}\\]\n\nRelação entre quantidade de inputs e quantidade de output que a partir deles se obtém, dada uma tecnologia.\n\n\n\\[CT = C(Q) \\quad \\text{(Função de Custos)}\\]\n\n\nRelação entre custos de contratação de inputs e quantidade de output produzido, dada uma tecnologia."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#função-de-produção",
+    "href": "slides/07_Producao_cp_lp.html#função-de-produção",
+    "title": "Microeconomia",
+    "section": "Função de Produção",
+    "text": "Função de Produção\n\nUma função de produção mostra o produto máximo que se pode obter através de combinações alternativas de fatores produtivos, dada uma certa tecnologia.\nPressupõe-se eficiência na utilização de recursos.\nNotação: \\(F(K,L) = Q\\), em que \\(K\\) é o capital e \\(L\\) é o trabalho."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#curto-prazo-vs.-longo-prazo",
+    "href": "slides/07_Producao_cp_lp.html#curto-prazo-vs.-longo-prazo",
+    "title": "Microeconomia",
+    "section": "Curto Prazo vs. Longo Prazo",
+    "text": "Curto Prazo vs. Longo Prazo\n\nUma empresa tem de decidir: quantidade a produzir, localização, equipamentos a instalar, pessoal a contratar…\n\n\n\nEstas decisões são tomadas em períodos de tempo diferentes: é mais rápido contratar trabalhadores do que adquirir instalações."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#curto-prazo-conceito",
+    "href": "slides/07_Producao_cp_lp.html#curto-prazo-conceito",
+    "title": "Microeconomia",
+    "section": "Curto Prazo (conceito)",
+    "text": "Curto Prazo (conceito)\n\n\n\nO Curto Prazo é um período de tempo suficientemente curto para que a empresa não consiga modificar a quantidade contratada de, pelo menos, um fator produtivo (fator fixo).\n\n\n\n\nNormalmente, considera-se que o Capital (\\(K\\)) está fixo a curto prazo."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#longo-prazo-conceito",
+    "href": "slides/07_Producao_cp_lp.html#longo-prazo-conceito",
+    "title": "Microeconomia",
+    "section": "Longo Prazo (conceito)",
+    "text": "Longo Prazo (conceito)\n\n\n\nO Longo Prazo é um período de tempo suficientemente longo para que a quantidade contratada de todos os fatores produtivos possa ser alterada.\n\n\n\n\n\nÉ neste contexto que se enquadram as planificações de produção para o futuro: área de produção, linhas de produto, maquinaria/tecnologia…"
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#quanto-tempo-tem-o-tempo",
+    "href": "slides/07_Producao_cp_lp.html#quanto-tempo-tem-o-tempo",
+    "title": "Microeconomia",
+    "section": "“Quanto Tempo tem o Tempo?”",
+    "text": "“Quanto Tempo tem o Tempo?”\n\nLongo Prazo e Curto Prazo são apenas conceitos.\nA duração necessária depende do sector de atividade.\n\n\n\nUm mês pode ser suficiente para substituir toda a maquinaria de uma fábrica têxtil, mas não para o fazer numa fábrica de microcomponentes eletrónicos. O “longo prazo” pode demorar mais nalguns sectores do que noutros."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#fatores-fixos-e-variáveis",
+    "href": "slides/07_Producao_cp_lp.html#fatores-fixos-e-variáveis",
+    "title": "Microeconomia",
+    "section": "Fatores Fixos e Variáveis",
+    "text": "Fatores Fixos e Variáveis\n\n\n\n\nCurto Prazo\nLongo Prazo\n\n\n\n\nCapital (\\(K\\))\nFixo (\\(\\bar{K}\\))\nVariável\n\n\nTrabalho (\\(L\\))\nVariável\nVariável\n\n\n\n\nNos modelos seguintes, considera-se \\(L\\) variável e \\(K\\) fixo a curto prazo: \\[F(\\bar{K}, L) = f(L) \\quad \\text{(curva de produto total)}\\]"
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#produto-marginal-do-trabalho-mpl",
+    "href": "slides/07_Producao_cp_lp.html#produto-marginal-do-trabalho-mpl",
+    "title": "Microeconomia",
+    "section": "Produto Marginal do Trabalho (MPL)",
+    "text": "Produto Marginal do Trabalho (MPL)\nTraduz a forma como a produção se altera (\\(\\Delta Q\\)) quando o input variável se altera (\\(\\Delta L\\)):\n\\[Pmg = MPL = \\frac{\\Delta Q}{\\Delta L}\\]\n\nÉ a variação do produto total quando se adiciona uma unidade adicional de trabalho, cæteris paribus (mantendo \\(K\\) constante)."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#produto-médio-do-trabalho-apl",
+    "href": "slides/07_Producao_cp_lp.html#produto-médio-do-trabalho-apl",
+    "title": "Microeconomia",
+    "section": "Produto Médio do Trabalho (APL)",
+    "text": "Produto Médio do Trabalho (APL)\nÉ a quantidade produzida, em média, por cada unidade de trabalho contratada:\n\\[PMe = APL = \\frac{Q}{L}\\]\n\nUma “unidade de trabalho” pode ser uma pessoa, grupos de pessoas, ou uma unidade de tempo (horas, dias…)."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#exemplo-numérico-apl-e-mpl",
+    "href": "slides/07_Producao_cp_lp.html#exemplo-numérico-apl-e-mpl",
+    "title": "Microeconomia",
+    "section": "Exemplo Numérico: APL e MPL",
+    "text": "Exemplo Numérico: APL e MPL\n\n\nLinha amarela: MPL máximo (L=4, óptimo técnico de MPL)\nQuando \\(MPL &gt; APL\\): APL está a crescer; quando \\(MPL &lt; APL\\): APL está a diminuir"
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#curva-de-produto-total",
+    "href": "slides/07_Producao_cp_lp.html#curva-de-produto-total",
+    "title": "Microeconomia",
+    "section": "Curva de Produto Total",
+    "text": "Curva de Produto Total"
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#apl-e-mpl-curva-geral",
+    "href": "slides/07_Producao_cp_lp.html#apl-e-mpl-curva-geral",
+    "title": "Microeconomia",
+    "section": "APL e MPL — Curva Geral",
+    "text": "APL e MPL — Curva Geral"
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#as-3-etapas-do-processo-produtivo",
+    "href": "slides/07_Producao_cp_lp.html#as-3-etapas-do-processo-produtivo",
+    "title": "Microeconomia",
+    "section": "As 3 Etapas do Processo Produtivo",
+    "text": "As 3 Etapas do Processo Produtivo\n\n\n\n\n\n\n\n\nEtapa\nIntervalo\nCaracterística\n\n\n\n\nI\n\\([0,\\, Q_1]\\)\n\\(MPL &gt; APL\\); APL crescente\n\n\nII\n\\([Q_1,\\, Q_{max}]\\)\n\\(MPL &lt; APL\\); APL decrescente; \\(MPL \\geq 0\\)\n\n\nIII\n\\(Q &gt; Q_{max}\\)\n\\(MPL &lt; 0\\); produção decresce\n\n\n\n\n\n\n\nA Zona Económica de Exploração é a Etapa II — é aqui que se situam as escolhas óptimas de produção."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#exemplos-de-funções-de-produção",
+    "href": "slides/07_Producao_cp_lp.html#exemplos-de-funções-de-produção",
+    "title": "Microeconomia",
+    "section": "Exemplos de Funções de Produção",
+    "text": "Exemplos de Funções de Produção\nFunções de produção podem ter formas analíticas muito diversas:\n\n\\(Q = 2KL\\) → a curto prazo (\\(K=2\\)): \\(Q = 4L\\)\n\\(Q = K^{0.25}L^{0.5}\\) → a curto prazo (\\(K=16\\)): \\(Q = 2L^{0.5}\\)\n\\(Q = K^{0.5}L^{0.5}\\) → a curto prazo (\\(K=4\\)): \\(Q = 2L^{0.5}\\)\n\\(Q = -K^3L^3 + 30K^4L^2 + 10K^5L\\) → a curto prazo (\\(K=1\\)): \\(Q = -L^3 + 30L^2 + 10L\\)\n\n\nCada expressão representa um diferente modelo de tecnologia."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#produção-a-longo-prazo-efeito-de-uparrow-k",
+    "href": "slides/07_Producao_cp_lp.html#produção-a-longo-prazo-efeito-de-uparrow-k",
+    "title": "Microeconomia",
+    "section": "Produção a Longo Prazo: Efeito de \\(\\uparrow K\\)",
+    "text": "Produção a Longo Prazo: Efeito de \\(\\uparrow K\\)\n\nUm aumento de \\(K\\) expande a curva de produto total — efeito análogo ao de um progresso tecnológico."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#rendimentos-à-escala",
+    "href": "slides/07_Producao_cp_lp.html#rendimentos-à-escala",
+    "title": "Microeconomia",
+    "section": "Rendimentos à Escala",
+    "text": "Rendimentos à Escala\nAvaliam como o output se altera quando os inputs variam na mesma proporção (\\(\\alpha &gt; 1\\)):\n\n\\(F(\\alpha K,\\alpha L) &gt; \\alpha F(K,L)\\) → Rendimentos Crescentes à Escala\n\nTípicos de processos intensivos em capital (infraestruturas, redes…)\n\n\\(F(\\alpha K,\\alpha L) = \\alpha F(K,L)\\) → Rendimentos Constantes à Escala\n\nTípicos de processos intensivos em trabalho (agricultura, artesanato…)\n\n\\(F(\\alpha K,\\alpha L) &lt; \\alpha F(K,L)\\) → Rendimentos Decrescentes à Escala"
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#funções-homogéneas",
+    "href": "slides/07_Producao_cp_lp.html#funções-homogéneas",
+    "title": "Microeconomia",
+    "section": "Funções Homogéneas",
+    "text": "Funções Homogéneas\n\n\n\nA função \\(F(K,L)\\) é homogénea de grau \\(i\\) se: \\[F(\\alpha K, \\alpha L) = \\alpha^i \\cdot F(K,L)\\]\n\n\n\n\nExemplo: \\(Q = 2KL\\)\n\\[F(\\alpha K, \\alpha L) = 2(\\alpha K)(\\alpha L) = \\alpha^2 \\cdot 2KL = \\alpha^2 F(K,L)\\]\n\n\n→ Homogénea de grau 2 → Rendimentos Crescentes à Escala (porque \\(\\alpha^2 &gt; \\alpha\\) para \\(\\alpha &gt; 1\\))."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#exercícios-escolha-múltipla-1",
+    "href": "slides/07_Producao_cp_lp.html#exercícios-escolha-múltipla-1",
+    "title": "Microeconomia",
+    "section": "Exercícios — Escolha Múltipla (1)",
+    "text": "Exercícios — Escolha Múltipla (1)\n1. A empresa A tem a função \\(Q = K^{0.5}L^{0.5}\\) e a empresa B tem \\(Q = KL\\). A curto prazo (\\(K=4\\)):\n\nA empresa A tem MPL crescente e a empresa B tem MPL constante.\nA empresa A tem MPL decrescente e a empresa B tem MPL crescente.\nA empresa A tem MPL decrescente e a empresa B tem MPL constante. ✓\nAmbas têm MPL decrescente.\n\n\nSolução: A (\\(K=4\\)): \\(Q=2L^{0.5}\\), \\(MPL = L^{-0.5}\\) → decresce com \\(L\\). B (\\(K=4\\)): \\(Q=4L\\), \\(MPL = 4\\) → constante. Resposta: c)."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#exercícios-escolha-múltipla-2",
+    "href": "slides/07_Producao_cp_lp.html#exercícios-escolha-múltipla-2",
+    "title": "Microeconomia",
+    "section": "Exercícios — Escolha Múltipla (2)",
+    "text": "Exercícios — Escolha Múltipla (2)\n2. Qual das seguintes afirmações sobre a Zona Económica de Exploração é correta?\n\nCorresponde à Etapa I, onde APL está a crescer.\nCorresponde à Etapa III, onde o output é máximo.\nCorresponde à Etapa II, onde \\(MPL \\geq 0\\) e APL está a decrescer. ✓\nÉ onde o MPL é máximo."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#exercício-de-desenvolvimento",
+    "href": "slides/07_Producao_cp_lp.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício de Desenvolvimento",
+    "text": "Exercício de Desenvolvimento\nEnunciado: Considere a função de produção \\(Q = -L^3 + 30L^2 + 10L\\), com \\(K=1\\) fixo.\n\nCalcule \\(MPL\\) e \\(APL\\). A partir de que valor de \\(L\\) se verificam rendimentos marginais decrescentes?\nDelimite as três etapas do processo produtivo e identifique a Zona Económica de Exploração."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#solução-desenvolvimento-a",
+    "href": "slides/07_Producao_cp_lp.html#solução-desenvolvimento-a",
+    "title": "Microeconomia",
+    "section": "Solução — Desenvolvimento (a)",
+    "text": "Solução — Desenvolvimento (a)\n\\[MPL = \\frac{dQ}{dL} = -3L^2 + 60L + 10\\]\n\\[APL = \\frac{Q}{L} = -L^2 + 30L + 10\\]\n\nRendimentos marginais decrescentes quando \\(\\frac{d(MPL)}{dL} &lt; 0\\): \\[\\frac{d(MPL)}{dL} = -6L + 60 = 0 \\Rightarrow L = 10\\]\nPara \\(L &gt; 10\\): rendimentos marginais decrescentes."
+  },
+  {
+    "objectID": "slides/07_Producao_cp_lp.html#solução-desenvolvimento-b",
+    "href": "slides/07_Producao_cp_lp.html#solução-desenvolvimento-b",
+    "title": "Microeconomia",
+    "section": "Solução — Desenvolvimento (b)",
+    "text": "Solução — Desenvolvimento (b)\nEtapa I → II: \\(MPL = APL\\)\n\\[-3L^2 + 60L + 10 = -L^2 + 30L + 10\\] \\[-2L^2 + 30L = 0 \\Rightarrow L(-2L + 30) = 0 \\Rightarrow L = 15\\]\n\nEtapa II → III: \\(MPL = 0\\)\n\\[-3L^2 + 60L + 10 = 0 \\Rightarrow L \\approx 20.16\\]\n\n\n\nEtapa\nIntervalo em \\(L\\)\n\n\n\n\nI\n\\([0,\\; 15[\\)\n\n\nII (Zona Econ.)\n\\([15,\\; 20.16]\\)\n\n\nIII\n\\(]20.16,\\; +\\infty[\\)"
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html",
+    "href": "slides/12_producao_cp_lp-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Objectivo: Compreender como as empresas transformam inputs em output, a diferença entre curto e longo prazo, e as propriedades da função de produção."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#teoria-do-produtor",
+    "href": "slides/12_producao_cp_lp-document.html#teoria-do-produtor",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Objectivo: Compreender como as empresas transformam inputs em output, a diferença entre curto e longo prazo, e as propriedades da função de produção."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#modelo-de-produção",
+    "href": "slides/12_producao_cp_lp-document.html#modelo-de-produção",
+    "title": "Microeconomia",
+    "section": "2 Modelo de Produção",
+    "text": "2 Modelo de Produção\n\nUma unidade produtiva contrata inputs no mercado de fatores e, usando uma tecnologia, transforma-os em output."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#escolhas-da-empresa",
+    "href": "slides/12_producao_cp_lp-document.html#escolhas-da-empresa",
+    "title": "Microeconomia",
+    "section": "3 Escolhas da Empresa",
+    "text": "3 Escolhas da Empresa\nSão escolhas da empresa:\n\nQuantidade de cada input a contratar, em função dos respetivos preços de mercado.\nQuantidade de output a produzir, em função das condições de mercado e da tecnologia disponível."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#linguagem",
+    "href": "slides/12_producao_cp_lp-document.html#linguagem",
+    "title": "Microeconomia",
+    "section": "4 Linguagem",
+    "text": "4 Linguagem\n\\[F(K,L)=Q \\quad \\text{(Função de Produção)}\\]\n\nRelação entre quantidade de inputs e quantidade de output que a partir deles se obtém, dada uma tecnologia.\n\n\n\\[CT = C(Q) \\quad \\text{(Função de Custos)}\\]\n\n\nRelação entre custos de contratação de inputs e quantidade de output produzido, dada uma tecnologia."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#função-de-produção",
+    "href": "slides/12_producao_cp_lp-document.html#função-de-produção",
+    "title": "Microeconomia",
+    "section": "5 Função de Produção",
+    "text": "5 Função de Produção\n\nUma função de produção mostra o produto máximo que se pode obter através de combinações alternativas de fatores produtivos, dada uma certa tecnologia.\nPressupõe-se eficiência na utilização de recursos.\nNotação: \\(F(K,L) = Q\\), em que \\(K\\) é o capital e \\(L\\) é o trabalho."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#curto-prazo-vs.-longo-prazo",
+    "href": "slides/12_producao_cp_lp-document.html#curto-prazo-vs.-longo-prazo",
+    "title": "Microeconomia",
+    "section": "6 Curto Prazo vs. Longo Prazo",
+    "text": "6 Curto Prazo vs. Longo Prazo\n\nUma empresa tem de decidir: quantidade a produzir, localização, equipamentos a instalar, pessoal a contratar…\n\n\n\nEstas decisões são tomadas em períodos de tempo diferentes: é mais rápido contratar trabalhadores do que adquirir instalações."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#curto-prazo-conceito",
+    "href": "slides/12_producao_cp_lp-document.html#curto-prazo-conceito",
+    "title": "Microeconomia",
+    "section": "7 Curto Prazo (conceito)",
+    "text": "7 Curto Prazo (conceito)\n\n\n\n\n\n\nO Curto Prazo é um período de tempo suficientemente curto para que a empresa não consiga modificar a quantidade contratada de, pelo menos, um fator produtivo (fator fixo).\n\n\n\n\nNormalmente, considera-se que o Capital (\\(K\\)) está fixo a curto prazo."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#longo-prazo-conceito",
+    "href": "slides/12_producao_cp_lp-document.html#longo-prazo-conceito",
+    "title": "Microeconomia",
+    "section": "8 Longo Prazo (conceito)",
+    "text": "8 Longo Prazo (conceito)\n\n\n\n\n\n\nO Longo Prazo é um período de tempo suficientemente longo para que a quantidade contratada de todos os fatores produtivos possa ser alterada.\n\n\n\n\n\nÉ neste contexto que se enquadram as planificações de produção para o futuro: área de produção, linhas de produto, maquinaria/tecnologia…"
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#quanto-tempo-tem-o-tempo",
+    "href": "slides/12_producao_cp_lp-document.html#quanto-tempo-tem-o-tempo",
+    "title": "Microeconomia",
+    "section": "9 “Quanto Tempo tem o Tempo?”",
+    "text": "9 “Quanto Tempo tem o Tempo?”\n\nLongo Prazo e Curto Prazo são apenas conceitos.\nA duração necessária depende do sector de atividade.\n\n\n\nUm mês pode ser suficiente para substituir toda a maquinaria de uma fábrica têxtil, mas não para o fazer numa fábrica de microcomponentes eletrónicos. O “longo prazo” pode demorar mais nalguns sectores do que noutros."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#fatores-fixos-e-variáveis",
+    "href": "slides/12_producao_cp_lp-document.html#fatores-fixos-e-variáveis",
+    "title": "Microeconomia",
+    "section": "10 Fatores Fixos e Variáveis",
+    "text": "10 Fatores Fixos e Variáveis\n\n\n\n\nCurto Prazo\nLongo Prazo\n\n\n\n\nCapital (\\(K\\))\nFixo (\\(\\bar{K}\\))\nVariável\n\n\nTrabalho (\\(L\\))\nVariável\nVariável\n\n\n\n\nNos modelos seguintes, considera-se \\(L\\) variável e \\(K\\) fixo a curto prazo: \\[F(\\bar{K}, L) = f(L) \\quad \\text{(curva de produto total)}\\]"
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#produto-marginal-do-trabalho-mpl",
+    "href": "slides/12_producao_cp_lp-document.html#produto-marginal-do-trabalho-mpl",
+    "title": "Microeconomia",
+    "section": "11 Produto Marginal do Trabalho (MPL)",
+    "text": "11 Produto Marginal do Trabalho (MPL)\nTraduz a forma como a produção se altera (\\(\\Delta Q\\)) quando o input variável se altera (\\(\\Delta L\\)):\n\\[Pmg = MPL = \\frac{\\Delta Q}{\\Delta L}\\]\n\nÉ a variação do produto total quando se adiciona uma unidade adicional de trabalho, cæteris paribus (mantendo \\(K\\) constante)."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#produto-médio-do-trabalho-apl",
+    "href": "slides/12_producao_cp_lp-document.html#produto-médio-do-trabalho-apl",
+    "title": "Microeconomia",
+    "section": "12 Produto Médio do Trabalho (APL)",
+    "text": "12 Produto Médio do Trabalho (APL)\nÉ a quantidade produzida, em média, por cada unidade de trabalho contratada:\n\\[PMe = APL = \\frac{Q}{L}\\]\n\nUma “unidade de trabalho” pode ser uma pessoa, grupos de pessoas, ou uma unidade de tempo (horas, dias…)."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#exemplo-numérico-apl-e-mpl",
+    "href": "slides/12_producao_cp_lp-document.html#exemplo-numérico-apl-e-mpl",
+    "title": "Microeconomia",
+    "section": "13 Exemplo Numérico: APL e MPL",
+    "text": "13 Exemplo Numérico: APL e MPL\n\n\nLinha amarela: MPL máximo (L=4, óptimo técnico de MPL)\nQuando \\(MPL &gt; APL\\): APL está a crescer; quando \\(MPL &lt; APL\\): APL está a diminuir"
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#curva-de-produto-total",
+    "href": "slides/12_producao_cp_lp-document.html#curva-de-produto-total",
+    "title": "Microeconomia",
+    "section": "14 Curva de Produto Total",
+    "text": "14 Curva de Produto Total"
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#apl-e-mpl-curva-geral",
+    "href": "slides/12_producao_cp_lp-document.html#apl-e-mpl-curva-geral",
+    "title": "Microeconomia",
+    "section": "15 APL e MPL — Curva Geral",
+    "text": "15 APL e MPL — Curva Geral"
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#as-3-etapas-do-processo-produtivo",
+    "href": "slides/12_producao_cp_lp-document.html#as-3-etapas-do-processo-produtivo",
+    "title": "Microeconomia",
+    "section": "16 As 3 Etapas do Processo Produtivo",
+    "text": "16 As 3 Etapas do Processo Produtivo\n\n\n\n\n\n\n\n\nEtapa\nIntervalo\nCaracterística\n\n\n\n\nI\n\\([0,\\, Q_1]\\)\n\\(MPL &gt; APL\\); APL crescente\n\n\nII\n\\([Q_1,\\, Q_{max}]\\)\n\\(MPL &lt; APL\\); APL decrescente; \\(MPL \\geq 0\\)\n\n\nIII\n\\(Q &gt; Q_{max}\\)\n\\(MPL &lt; 0\\); produção decresce\n\n\n\n\n\n\n\n\n\n\nA Zona Económica de Exploração é a Etapa II — é aqui que se situam as escolhas óptimas de produção."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#exemplos-de-funções-de-produção",
+    "href": "slides/12_producao_cp_lp-document.html#exemplos-de-funções-de-produção",
+    "title": "Microeconomia",
+    "section": "17 Exemplos de Funções de Produção",
+    "text": "17 Exemplos de Funções de Produção\nFunções de produção podem ter formas analíticas muito diversas:\n\n\\(Q = 2KL\\) → a curto prazo (\\(K=2\\)): \\(Q = 4L\\)\n\\(Q = K^{0.25}L^{0.5}\\) → a curto prazo (\\(K=16\\)): \\(Q = 2L^{0.5}\\)\n\\(Q = K^{0.5}L^{0.5}\\) → a curto prazo (\\(K=4\\)): \\(Q = 2L^{0.5}\\)\n\\(Q = -K^3L^3 + 30K^4L^2 + 10K^5L\\) → a curto prazo (\\(K=1\\)): \\(Q = -L^3 + 30L^2 + 10L\\)\n\n\nCada expressão representa um diferente modelo de tecnologia."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#produção-a-longo-prazo-efeito-de-uparrow-k",
+    "href": "slides/12_producao_cp_lp-document.html#produção-a-longo-prazo-efeito-de-uparrow-k",
+    "title": "Microeconomia",
+    "section": "18 Produção a Longo Prazo: Efeito de \\(\\uparrow K\\)",
+    "text": "18 Produção a Longo Prazo: Efeito de \\(\\uparrow K\\)\n\nUm aumento de \\(K\\) expande a curva de produto total — efeito análogo ao de um progresso tecnológico."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#rendimentos-à-escala",
+    "href": "slides/12_producao_cp_lp-document.html#rendimentos-à-escala",
+    "title": "Microeconomia",
+    "section": "19 Rendimentos à Escala",
+    "text": "19 Rendimentos à Escala\nAvaliam como o output se altera quando os inputs variam na mesma proporção (\\(\\alpha &gt; 1\\)):\n\n\n\\(F(\\alpha K,\\alpha L) &gt; \\alpha F(K,L)\\) → Rendimentos Crescentes à Escala\n\nTípicos de processos intensivos em capital (infraestruturas, redes…)\n\n\\(F(\\alpha K,\\alpha L) = \\alpha F(K,L)\\) → Rendimentos Constantes à Escala\n\nTípicos de processos intensivos em trabalho (agricultura, artesanato…)\n\n\\(F(\\alpha K,\\alpha L) &lt; \\alpha F(K,L)\\) → Rendimentos Decrescentes à Escala"
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#funções-homogéneas",
+    "href": "slides/12_producao_cp_lp-document.html#funções-homogéneas",
+    "title": "Microeconomia",
+    "section": "20 Funções Homogéneas",
+    "text": "20 Funções Homogéneas\n\n\n\n\n\n\nA função \\(F(K,L)\\) é homogénea de grau \\(i\\) se: \\[F(\\alpha K, \\alpha L) = \\alpha^i \\cdot F(K,L)\\]\n\n\n\n\nExemplo: \\(Q = 2KL\\)\n\\[F(\\alpha K, \\alpha L) = 2(\\alpha K)(\\alpha L) = \\alpha^2 \\cdot 2KL = \\alpha^2 F(K,L)\\]\n\n\n→ Homogénea de grau 2 → Rendimentos Crescentes à Escala (porque \\(\\alpha^2 &gt; \\alpha\\) para \\(\\alpha &gt; 1\\))."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#exercícios-escolha-múltipla-1",
+    "href": "slides/12_producao_cp_lp-document.html#exercícios-escolha-múltipla-1",
+    "title": "Microeconomia",
+    "section": "21 Exercícios — Escolha Múltipla (1)",
+    "text": "21 Exercícios — Escolha Múltipla (1)\n1. A empresa A tem a função \\(Q = K^{0.5}L^{0.5}\\) e a empresa B tem \\(Q = KL\\). A curto prazo (\\(K=4\\)):\n\n\nA empresa A tem MPL crescente e a empresa B tem MPL constante.\nA empresa A tem MPL decrescente e a empresa B tem MPL crescente.\nA empresa A tem MPL decrescente e a empresa B tem MPL constante. ✓\nAmbas têm MPL decrescente.\n\n\n\nSolução: A (\\(K=4\\)): \\(Q=2L^{0.5}\\), \\(MPL = L^{-0.5}\\) → decresce com \\(L\\). B (\\(K=4\\)): \\(Q=4L\\), \\(MPL = 4\\) → constante. Resposta: c)."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#exercícios-escolha-múltipla-2",
+    "href": "slides/12_producao_cp_lp-document.html#exercícios-escolha-múltipla-2",
+    "title": "Microeconomia",
+    "section": "22 Exercícios — Escolha Múltipla (2)",
+    "text": "22 Exercícios — Escolha Múltipla (2)\n2. Qual das seguintes afirmações sobre a Zona Económica de Exploração é correta?\n\n\nCorresponde à Etapa I, onde APL está a crescer.\nCorresponde à Etapa III, onde o output é máximo.\nCorresponde à Etapa II, onde \\(MPL \\geq 0\\) e APL está a decrescer. ✓\nÉ onde o MPL é máximo."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#exercício-de-desenvolvimento",
+    "href": "slides/12_producao_cp_lp-document.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "23 Exercício de Desenvolvimento",
+    "text": "23 Exercício de Desenvolvimento\nEnunciado: Considere a função de produção \\(Q = -L^3 + 30L^2 + 10L\\), com \\(K=1\\) fixo.\n\nCalcule \\(MPL\\) e \\(APL\\). A partir de que valor de \\(L\\) se verificam rendimentos marginais decrescentes?\nDelimite as três etapas do processo produtivo e identifique a Zona Económica de Exploração."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#solução-desenvolvimento-a",
+    "href": "slides/12_producao_cp_lp-document.html#solução-desenvolvimento-a",
+    "title": "Microeconomia",
+    "section": "24 Solução — Desenvolvimento (a)",
+    "text": "24 Solução — Desenvolvimento (a)\n\\[MPL = \\frac{dQ}{dL} = -3L^2 + 60L + 10\\]\n\\[APL = \\frac{Q}{L} = -L^2 + 30L + 10\\]\n\nRendimentos marginais decrescentes quando \\(\\frac{d(MPL)}{dL} &lt; 0\\): \\[\\frac{d(MPL)}{dL} = -6L + 60 = 0 \\Rightarrow L = 10\\]\nPara \\(L &gt; 10\\): rendimentos marginais decrescentes."
+  },
+  {
+    "objectID": "slides/12_producao_cp_lp-document.html#solução-desenvolvimento-b",
+    "href": "slides/12_producao_cp_lp-document.html#solução-desenvolvimento-b",
+    "title": "Microeconomia",
+    "section": "25 Solução — Desenvolvimento (b)",
+    "text": "25 Solução — Desenvolvimento (b)\nEtapa I → II: \\(MPL = APL\\)\n\\[-3L^2 + 60L + 10 = -L^2 + 30L + 10\\] \\[-2L^2 + 30L = 0 \\Rightarrow L(-2L + 30) = 0 \\Rightarrow L = 15\\]\n\nEtapa II → III: \\(MPL = 0\\)\n\\[-3L^2 + 60L + 10 = 0 \\Rightarrow L \\approx 20.16\\]\n\n\n\nEtapa\nIntervalo em \\(L\\)\n\n\n\n\nI\n\\([0,\\; 15[\\)\n\n\nII (Zona Econ.)\n\\([15,\\; 20.16]\\)\n\n\nIII\n\\(]20.16,\\; +\\infty[\\)"
   }
 ]

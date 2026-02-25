@@ -1,0 +1,492 @@
+---
+title: "Microeconomia"
+subtitle: "Produção: Curto vs. Longo Prazo, Função de Produção"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 12_producao_cp_lp-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+    echo: false
+    code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+## Teoria do Produtor {.center}
+
+::: {.callout-note appearance="minimal"}
+**Objectivo:** Compreender como as empresas transformam *inputs* em *output*, a diferença entre curto e longo prazo, e as propriedades da função de produção.
+:::
+
+---
+
+## Modelo de Produção
+
+```{=latex}
+\begin{tikzpicture}[
+  scale = 0.9,
+  every node/.style = {scale = 0.9}
+]
+\onslide<1->{
+  \draw[->, >=latex, draw=green!60!white, fill=green!20!white, line width=10pt]
+    (0,0) to node[black]{$K$} (0,2);
+  \draw[->, >=latex, draw=green!60!white, fill=green!20!white, line width=10pt]
+    (1.5,0) to node[black]{$L$} (1.5,2);
+}
+\onslide<2->{
+  \draw[->, >=latex, green!60!black, line width=20pt]
+    (-0.5,3) to node[white]{\textbf{Inputs}} (2.5,3);
+}
+\onslide<3->{
+  \node[draw=blue!90!white, rectangle, fill=blue!70!white, inner sep=5mm, text=white]
+    at (5,3) {\Large Tecnologia};
+}
+\onslide<4->{
+  \draw[->, >=latex, blue!60!black, line width=20pt]
+    (7.5,3) to node[white]{\textbf{Output}} (10,3);
+}
+\end{tikzpicture}
+```
+
+::: {.fragment}
+Uma unidade produtiva contrata *inputs* no mercado de fatores e, usando uma tecnologia, transforma-os em *output*.
+:::
+
+---
+
+## Escolhas da Empresa
+
+São escolhas da empresa:
+
+- Quantidade de cada *input* a contratar, em função dos respetivos preços de mercado.
+- Quantidade de *output* a produzir, em função das condições de mercado e da tecnologia disponível.
+
+---
+
+## Linguagem
+
+$$F(K,L)=Q \quad \text{(Função de Produção)}$$
+
+::: {.fragment}
+Relação entre quantidade de *inputs* e quantidade de *output* que a partir deles se obtém, dada uma tecnologia.
+:::
+
+::: {.fragment}
+$$CT = C(Q) \quad \text{(Função de Custos)}$$
+:::
+
+::: {.fragment}
+Relação entre custos de contratação de *inputs* e quantidade de *output* produzido, dada uma tecnologia.
+:::
+
+---
+
+## Função de Produção
+
+- Uma função de produção mostra o **produto máximo** que se pode obter através de combinações alternativas de fatores produtivos, dada uma certa tecnologia.
+
+- Pressupõe-se eficiência na utilização de recursos.
+
+- Notação: $F(K,L) = Q$, em que $K$ é o capital e $L$ é o trabalho.
+
+---
+
+## Curto Prazo vs. Longo Prazo
+
+- Uma empresa tem de decidir: quantidade a produzir, localização, equipamentos a instalar, pessoal a contratar...
+
+::: {.fragment}
+- Estas decisões são tomadas em **períodos de tempo diferentes**: é mais rápido contratar trabalhadores do que adquirir instalações.
+:::
+
+---
+
+## Curto Prazo (conceito)
+
+::: {.callout-important appearance="minimal"}
+O **Curto Prazo** é um período de tempo suficientemente curto para que a empresa **não consiga modificar** a quantidade contratada de, pelo menos, um fator produtivo (fator fixo).
+:::
+
+::: {.fragment}
+Normalmente, considera-se que o **Capital ($K$) está fixo** a curto prazo.
+:::
+
+---
+
+## Longo Prazo (conceito)
+
+::: {.callout-important appearance="minimal"}
+O **Longo Prazo** é um período de tempo suficientemente longo para que a quantidade contratada de **todos os fatores produtivos** possa ser alterada.
+:::
+
+::: {.fragment}
+- É neste contexto que se enquadram as planificações de produção para o futuro: área de produção, linhas de produto, maquinaria/tecnologia...
+:::
+
+---
+
+## "Quanto Tempo tem o Tempo?"
+
+- Longo Prazo e Curto Prazo são apenas **conceitos**.
+
+- A duração necessária depende do **sector de atividade**.
+
+::: {.fragment}
+> Um mês pode ser suficiente para substituir toda a maquinaria de uma fábrica têxtil, mas não para o fazer numa fábrica de microcomponentes eletrónicos. O "longo prazo" pode *demorar mais* nalguns sectores do que noutros.
+:::
+
+---
+
+## Fatores Fixos e Variáveis
+
+| | Curto Prazo | Longo Prazo |
+|---|---|---|
+| **Capital** ($K$) | Fixo ($\bar{K}$) | Variável |
+| **Trabalho** ($L$) | Variável | Variável |
+
+::: {.fragment}
+Nos modelos seguintes, considera-se $L$ variável e $K$ fixo a curto prazo:
+$$F(\bar{K}, L) = f(L) \quad \text{(curva de produto total)}$$
+:::
+
+---
+
+## Produto Marginal do Trabalho (MPL)
+
+Traduz a forma como a produção se altera ($\Delta Q$) quando o *input* variável se altera ($\Delta L$):
+
+$$Pmg = MPL = \frac{\Delta Q}{\Delta L}$$
+
+::: {.fragment}
+É a variação do produto total quando se adiciona **uma unidade adicional de trabalho**, *cæteris paribus* (mantendo $K$ constante).
+:::
+
+---
+
+## Produto Médio do Trabalho (APL)
+
+É a quantidade produzida, **em média**, por cada unidade de trabalho contratada:
+
+$$PMe = APL = \frac{Q}{L}$$
+
+::: {.fragment}
+Uma "unidade de trabalho" pode ser uma pessoa, grupos de pessoas, ou uma unidade de tempo (horas, dias...).
+:::
+
+---
+
+## Exemplo Numérico: APL e MPL
+
+```{=latex}
+\footnotesize
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{blue!15}
+$L$ & $F(K,L)$ & $APL$ & $MPL$ \\ \hline
+0 & 0 & --- & --- \\
+1 & 4 & 4.00 & 4 \\
+2 & 14 & 7.00 & 10 \\
+3 & 27 & 9.00 & 13 \\
+\rowcolor{yellow!60}
+4 & 43 & 10.75 & 16 \\
+5 & 58 & 11.60 & 15 \\
+6 & 72 & 12.00 & 14 \\
+7 & 81 & 11.57 & 9 \\
+8 & 86 & 10.75 & 5 \\
+9 & 78 & 8.67 & \textcolor{red}{$-8$} \\
+10 & 67 & 6.70 & \textcolor{red}{$-11$} \\ \hline
+\end{tabular}
+```
+
+::: {.fragment}
+- Linha amarela: MPL máximo (L=4, óptimo técnico de MPL)
+- Quando $MPL > APL$: APL está a crescer; quando $MPL < APL$: APL está a diminuir
+:::
+
+---
+
+## Curva de Produto Total
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.55,
+  every node/.style = {scale = 0.65},
+  declare function = {
+    f(\x) = 1*(\x/2) + 2*(\x/2)^2 - 0.6*(\x/2)^3;
+  }
+]
+\draw[->] (-0.1,0) -- (7.5,0) node[right]{$L$};
+\draw[->] (0,-0.1) -- (0,6.5) node[left]{$F(K,L)$};
+
+\draw[blue, thick, domain=0:7, variable=\x, samples=100] plot (\x,{f(\x)});
+
+\draw[dashed] ({20/9},0) -- ({20/9},{f(20/9)});
+\draw[dashed] (4.89813,0) -- (4.89813,{f(4.89813)}) -- (0,{f(4.89813)})
+  node[left]{\footnotesize Output máximo};
+
+\draw[blue,->] ({20/9},0) |- (0.5,-0.4)
+  node[midway, xshift=-1.5cm, yshift=-0.6cm]
+  {\parbox{2.8cm}{\centering\footnotesize Rend. marginais\\ crescentes}};
+
+\draw[blue,->] (4.89813,0) |- (6.5,-0.4)
+  node[red, midway, xshift=1.5cm, yshift=-0.6cm]
+  {\parbox{2.8cm}{\centering\footnotesize Rend. marginais\\ negativos}};
+
+\draw ({((20/9)+4.89813)/2},0)
+  node[below, yshift=-0.5cm]
+  {\parbox{3cm}{\centering\footnotesize Rend. marginais\\ decrescentes}};
+
+\draw(7,{f(7)}) node[right]{$f(L)$};
+\end{tikzpicture}
+\end{center}
+```
+
+---
+
+## APL e MPL — Curva Geral
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.7,
+  every node/.style = {scale = 0.7},
+  declare function = {
+    f(\x) = 1*(\x/2) + 2*(\x/2)^2 - 0.6*(\x/2)^3;
+    apl(\x) = f(\x)/\x;
+    mpl(\x) = 1/2 + \x - 0.225*\x^2;
+    tgt(\x) = apl(10/3)*\x;
+  }
+]
+\draw[->] (-0.1,0) -- (7.5,0) node[below]{$L$};
+\draw[->] (0,-0.6) -- (0,6.5) node[left]{};
+
+\draw[blue, thick, domain=0:7, variable=\x, samples=50] plot (\x,{f(\x)})
+  node[right]{$f(L)$};
+\draw[red!70!black, thick, domain=0.15:7, variable=\x, samples=50] plot (\x,{apl(\x)})
+  node[right]{$APL$};
+\draw[green!60!black, thick, domain=0:5.5, variable=\x, samples=50] plot (\x,{mpl(\x)})
+  node[right]{$MPL$};
+
+\draw[dashed] ({20/9},0) -- ({20/9},{f(20/9)});
+\draw[dashed] (4.89813,0) -- (4.89813,{f(4.89813)}) -- (0,{f(4.89813)})
+  node[left]{$Q_{max}$};
+\draw[dashed] ({10/3},0) -- ({10/3},{f(10/3)}) -- (0,{f(10/3)})
+  node[left]{$Q_1$};
+
+\draw[->, thick, green!70!black] (0,-0.4) -- ({10/3},-0.4)
+  node[black, midway, yshift=-0.3cm]{\footnotesize I};
+\draw[->, thick, blue!60!green] ({10/3},-0.4) -- (4.89813,-0.4)
+  node[black, midway, yshift=-0.3cm]{\footnotesize II};
+\draw[->, thick, blue!40!red] (4.89813,-0.4) -- (6.2,-0.4)
+  node[black, midway, yshift=-0.3cm]{\footnotesize III};
+\end{tikzpicture}
+\end{center}
+```
+
+---
+
+## As 3 Etapas do Processo Produtivo
+
+| Etapa | Intervalo | Característica |
+|-------|-----------|----------------|
+| **I** | $[0,\, Q_1]$ | $MPL > APL$; APL crescente |
+| **II** | $[Q_1,\, Q_{max}]$ | $MPL < APL$; APL decrescente; $MPL \geq 0$ |
+| **III** | $Q > Q_{max}$ | $MPL < 0$; produção decresce |
+
+::: {.fragment}
+::: {.callout-tip appearance="minimal"}
+A **Zona Económica de Exploração** é a **Etapa II** — é aqui que se situam as escolhas óptimas de produção.
+:::
+:::
+
+---
+
+## Exemplos de Funções de Produção
+
+Funções de produção podem ter formas analíticas muito diversas:
+
+- $Q = 2KL$ → a curto prazo ($K=2$): $Q = 4L$
+- $Q = K^{0.25}L^{0.5}$ → a curto prazo ($K=16$): $Q = 2L^{0.5}$
+- $Q = K^{0.5}L^{0.5}$ → a curto prazo ($K=4$): $Q = 2L^{0.5}$
+- $Q = -K^3L^3 + 30K^4L^2 + 10K^5L$ → a curto prazo ($K=1$): $Q = -L^3 + 30L^2 + 10L$
+
+::: {.fragment}
+Cada expressão representa um **diferente modelo de tecnologia**.
+:::
+
+---
+
+## Produção a Longo Prazo: Efeito de $\uparrow K$
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.65,
+  every node/.style = {scale = 0.65},
+  declare function = {
+    f(\x) = 1*(\x/2) + 2*(\x/2)^2 - 0.6*(\x/2)^3;
+    g(\x) = 0.6*f(\x*1.2);
+  }
+]
+\draw[->] (-0.1,0) -- (7.5,0) node[below]{$L$};
+\draw[->] (0,-0.1) -- (0,6.5) node[left]{$F(K,L)$};
+
+\draw[thick, red!60!blue, domain=0:5, variable=\x, samples=50] plot (\x,{g(\x)})
+  node[right]{$K_0$};
+\draw[dashed] ({4.89813/1.2},0) -- ({4.89813/1.2},{g(4.89813/1.2)})
+  -- (0,{g(4.89813/1.2)}) node[left]{$Q_{max}^{K_0}$};
+
+\onslide<2->{
+  \draw[thick, green!60!black, domain=0:6, variable=\x, samples=50] plot (\x,{f(\x)})
+    node[right]{$K_1 > K_0$};
+  \draw[dashed] (4.89813,0) -- (4.89813,{f(4.89813)})
+    -- (0,{f(4.89813)}) node[left]{$Q_{max}^{K_1}$};
+  \draw[->, thick] (2.5,2.5) -- (3.5,3.5)
+    node[midway, above left]{\footnotesize $K$ aumenta};
+}
+\end{tikzpicture}
+\end{center}
+```
+
+::: {.fragment}
+Um aumento de $K$ **expande a curva de produto total** — efeito análogo ao de um progresso tecnológico.
+:::
+
+---
+
+## Rendimentos à Escala
+
+Avaliam como o *output* se altera quando os *inputs* variam na **mesma proporção** ($\alpha > 1$):
+
+::: {.nonincremental}
+- $F(\alpha K,\alpha L) > \alpha F(K,L)$ → **Rendimentos Crescentes** à Escala
+  - Típicos de processos intensivos em capital (infraestruturas, redes...)
+- $F(\alpha K,\alpha L) = \alpha F(K,L)$ → **Rendimentos Constantes** à Escala
+  - Típicos de processos intensivos em trabalho (agricultura, artesanato...)
+- $F(\alpha K,\alpha L) < \alpha F(K,L)$ → **Rendimentos Decrescentes** à Escala
+:::
+
+---
+
+## Funções Homogéneas
+
+::: {.callout-note appearance="minimal"}
+A função $F(K,L)$ é **homogénea de grau $i$** se:
+$$F(\alpha K, \alpha L) = \alpha^i \cdot F(K,L)$$
+:::
+
+::: {.fragment}
+**Exemplo:** $Q = 2KL$
+
+$$F(\alpha K, \alpha L) = 2(\alpha K)(\alpha L) = \alpha^2 \cdot 2KL = \alpha^2 F(K,L)$$
+:::
+
+::: {.fragment}
+→ Homogénea de grau 2 → **Rendimentos Crescentes** à Escala (porque $\alpha^2 > \alpha$ para $\alpha > 1$).
+:::
+
+---
+
+## Exercícios — Escolha Múltipla (1)
+
+**1.** A empresa A tem a função $Q = K^{0.5}L^{0.5}$ e a empresa B tem $Q = KL$. A curto prazo ($K=4$):
+
+::: {.nonincremental}
+a) A empresa A tem MPL crescente e a empresa B tem MPL constante.
+b) A empresa A tem MPL decrescente e a empresa B tem MPL crescente.
+c) **A empresa A tem MPL decrescente e a empresa B tem MPL constante.** ✓
+d) Ambas têm MPL decrescente.
+:::
+
+::: {.fragment .smaller}
+**Solução:** A ($K=4$): $Q=2L^{0.5}$, $MPL = L^{-0.5}$ → decresce com $L$. B ($K=4$): $Q=4L$, $MPL = 4$ → constante. Resposta: **c)**.
+:::
+
+---
+
+## Exercícios — Escolha Múltipla (2)
+
+**2.** Qual das seguintes afirmações sobre a Zona Económica de Exploração é **correta**?
+
+::: {.nonincremental}
+a) Corresponde à Etapa I, onde APL está a crescer.
+b) Corresponde à Etapa III, onde o output é máximo.
+c) **Corresponde à Etapa II, onde $MPL \geq 0$ e APL está a decrescer.** ✓
+d) É onde o MPL é máximo.
+:::
+
+---
+
+## Exercício de Desenvolvimento
+
+**Enunciado:** Considere a função de produção $Q = -L^3 + 30L^2 + 10L$, com $K=1$ fixo.
+
+a) Calcule $MPL$ e $APL$. A partir de que valor de $L$ se verificam rendimentos marginais decrescentes?
+
+b) Delimite as três etapas do processo produtivo e identifique a Zona Económica de Exploração.
+
+---
+
+## Solução — Desenvolvimento (a)
+
+$$MPL = \frac{dQ}{dL} = -3L^2 + 60L + 10$$
+
+$$APL = \frac{Q}{L} = -L^2 + 30L + 10$$
+
+::: {.fragment}
+Rendimentos marginais decrescentes quando $\frac{d(MPL)}{dL} < 0$:
+$$\frac{d(MPL)}{dL} = -6L + 60 = 0 \Rightarrow L = 10$$
+
+Para $L > 10$: rendimentos marginais **decrescentes**.
+:::
+
+---
+
+## Solução — Desenvolvimento (b)
+
+**Etapa I → II:** $MPL = APL$
+
+$$-3L^2 + 60L + 10 = -L^2 + 30L + 10$$
+$$-2L^2 + 30L = 0 \Rightarrow L(-2L + 30) = 0 \Rightarrow L = 15$$
+
+::: {.fragment}
+**Etapa II → III:** $MPL = 0$
+
+$$-3L^2 + 60L + 10 = 0 \Rightarrow L \approx 20.16$$
+
+| Etapa | Intervalo em $L$ |
+|-------|-----------------|
+| I | $[0,\; 15[$ |
+| II (Zona Econ.) | $[15,\; 20.16]$ |
+| III | $]20.16,\; +\infty[$ |
+:::
