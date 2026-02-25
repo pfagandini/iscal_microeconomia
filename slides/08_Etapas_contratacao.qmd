@@ -1,0 +1,432 @@
+---
+title: "Microeconomia"
+subtitle: "Etapas do Processo Produtivo e Lei da Contratação"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 13_etapas_contratacao-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+    echo: false
+    code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+## Etapas do Processo Produtivo {.center}
+
+::: {.callout-note appearance="minimal"}
+**Objectivo:** Identificar as três etapas do processo produtivo, compreender a Zona Económica de Exploração, e derivar a Lei da Contratação como condição óptima do produtor.
+:::
+
+---
+
+## Recapitulação: APL e MPL
+
+A curto prazo, com $K = \bar{K}$ fixo e $L$ variável:
+
+$$MPL = \frac{\Delta Q}{\Delta L} \qquad APL = \frac{Q}{L}$$
+
+::: {.fragment}
+Relação fundamental entre as duas medidas:
+
+- Quando $MPL > APL$ → $APL$ está a **crescer**
+- Quando $MPL = APL$ → $APL$ está no seu **máximo** (óptimo técnico)
+- Quando $MPL < APL$ → $APL$ está a **decrescer**
+:::
+
+---
+
+## As 3 Etapas — Diagrama Geral
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.75,
+  every node/.style = {scale = 0.75},
+  declare function = {
+    f(\x) = 1*(\x/2) + 2*(\x/2)^2 - 0.6*(\x/2)^3;
+    apl(\x) = f(\x)/\x;
+    mpl(\x) = 1/2 + \x - 0.225*\x^2;
+  }
+]
+\draw[->] (-0.1,0) -- (7.5,0) node[below]{$L$};
+\draw[->] (0,-0.6) -- (0,6.5) node[left]{};
+
+\draw[blue, thick, domain=0:7, variable=\x, samples=50] plot (\x,{f(\x)})
+  node[right]{$f(L)$};
+\draw[red!70!black, thick, domain=0.15:7, variable=\x, samples=50] plot (\x,{apl(\x)})
+  node[right]{$APL$};
+\draw[green!60!black, thick, domain=0:5.5, variable=\x, samples=50] plot (\x,{mpl(\x)})
+  node[right]{$MPL$};
+
+% pontos de referência
+\draw[dashed] ({20/9},0) node[below]{\footnotesize $L_{MPL_{max}}$}
+  -- ({20/9},{f(20/9)});
+\draw[dashed] ({10/3},0) node[below]{\footnotesize $L_1$}
+  -- ({10/3},{f(10/3)}) -- (0,{f(10/3)}) node[left]{$Q_1$};
+\draw[dashed] (4.89813,0) node[below]{\footnotesize $L_{max}$}
+  -- (4.89813,{f(4.89813)}) -- (0,{f(4.89813)}) node[left]{$Q_{max}$};
+
+% etapas
+\draw[->, thick, green!70!black] (0,-0.45) -- ({10/3},-0.45)
+  node[black, midway, yshift=-0.3cm]{\footnotesize \textbf{I}};
+\draw[->, thick, blue!50!green] ({10/3},-0.45) -- (4.89813,-0.45)
+  node[black, midway, yshift=-0.3cm]{\footnotesize \textbf{II}};
+\draw[->, thick, red!60!black] (4.89813,-0.45) -- (6.3,-0.45)
+  node[black, midway, yshift=-0.3cm]{\footnotesize \textbf{III}};
+\end{tikzpicture}
+\end{center}
+```
+
+---
+
+## Etapa I — Rendimentos Marginais Crescentes
+
+**Intervalo:** $L \in [0,\, L_1[$ onde $L_1$ é o ponto em que $MPL = APL$
+
+- $MPL$ está a crescer (até ao ponto de inflexão) e depois decresce, mas mantém-se acima de $APL$
+- $APL$ está **sempre a crescer**
+- A empresa ainda não está a aproveitar ao máximo a combinação de fatores
+
+::: {.fragment}
+::: {.callout-warning appearance="minimal"}
+A empresa **não se deve fixar** na Etapa I — está a produzir abaixo do óptimo técnico, onde a produtividade média ainda pode aumentar.
+:::
+:::
+
+---
+
+## Etapa II — Zona Económica de Exploração
+
+**Intervalo:** $L \in [L_1,\, L_{max}]$ onde $MPL = APL$ até $MPL = 0$
+
+- $APL$ está **a decrescer** (mas $APL > 0$)
+- $MPL \geq 0$: cada trabalhador adicional ainda contribui positivamente para o output
+- É aqui que se situam **todas as escolhas óptimas de produção**
+
+::: {.fragment}
+::: {.callout-tip appearance="minimal"}
+A **Zona Económica de Exploração** coincide com a Etapa II: entre o óptimo técnico ($Q_1$, máximo de $APL$) e o máximo de produção ($Q_{max}$, $MPL = 0$).
+:::
+:::
+
+---
+
+## Etapa III — Rendimentos Marginais Negativos
+
+**Intervalo:** $L > L_{max}$ onde $MPL = 0$
+
+- $MPL < 0$: cada trabalhador adicional **reduz** o output total
+- O produto total está a **diminuir**
+
+::: {.fragment}
+::: {.callout-important appearance="minimal"}
+Nenhuma empresa racional opera na Etapa III — estaria a pagar trabalhadores para **reduzir** a sua produção.
+:::
+:::
+
+---
+
+## Resumo das 3 Etapas
+
+```{=latex}
+\footnotesize
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\rowcolor{blue!15}
+\textbf{Etapa} & \textbf{Intervalo (L)} & \textbf{MPL} & \textbf{APL} & \textbf{Output} \\
+\hline
+\rowcolor{green!10}
+\textbf{I} & $[0,\; L_1[$ & $> APL$ & crescente & crescente \\
+\hline
+\rowcolor{yellow!20}
+\textbf{II} (ZEE) & $[L_1,\; L_{max}]$ & $\geq 0$, $< APL$ & decrescente & crescente \\
+\hline
+\rowcolor{red!10}
+\textbf{III} & $]L_{max},\; +\infty[$ & $< 0$ & decrescente & decrescente \\
+\hline
+\end{tabular}
+```
+
+::: {.fragment}
+**ZEE = Zona Económica de Exploração** → Etapa II: onde o produtor racional opera.
+:::
+
+---
+
+## Exemplo Numérico — Tabela Completa
+
+```{=latex}
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\rowcolor{blue!15}
+$L$ & $Q=F(K,L)$ & $APL$ & $MPL$ & Etapa \\ \hline
+0 & 0 & --- & --- & \\
+1 & 4 & 4.00 & 4 & I \\
+2 & 14 & 7.00 & 10 & I \\
+3 & 27 & 9.00 & 13 & I \\
+\rowcolor{yellow!50}
+4 & 43 & 10.75 & 16 & I (máx MPL) \\
+5 & 58 & 11.60 & 15 & I \\
+\rowcolor{green!20}
+6 & 72 & 12.00 & 14 & \textbf{II} (óptimo técnico: APL máx) \\
+7 & 81 & 11.57 & 9 & II \\
+8 & 86 & 10.75 & 5 & II \\
+\rowcolor{orange!30}
+9 & 86 & 9.56 & 0 & II→III ($Q_{max}$) \\
+10 & 78 & 7.80 & \textcolor{red}{$-8$} & \textcolor{red}{III} \\ \hline
+\end{tabular}
+```
+
+::: {.fragment .smaller}
+*Nota: a tabela usa valores arredondados para ilustração; os pontos de fronteira exactos são calculados analiticamente.*
+:::
+
+---
+
+## Objectivo da Empresa: Maximizar o Lucro
+
+A empresa quer maximizar:
+
+$$\Pi = \underbrace{P \times Q}_{\text{Receita Total}} - \underbrace{W \times L}_{\text{Custo Variável}} - \underbrace{r \times \bar{K}}_{\text{Custo Fixo}}$$
+
+::: {.fragment}
+A curto prazo, $K$ é fixo. A variável de controlo é $L$. Maximizar $\Pi$ em ordem a $L$:
+
+$$\frac{\partial \Pi}{\partial L} = 0$$
+:::
+
+---
+
+## Derivação da Condição Óptima
+
+$$\frac{\partial \Pi}{\partial L} = P \cdot \frac{\partial Q}{\partial L} - W = 0$$
+
+::: {.fragment}
+Ou seja:
+$$P \cdot MPL = W$$
+:::
+
+::: {.fragment}
+::: {.callout-note appearance="minimal"}
+**Lei da Contratação:** A empresa deve contratar trabalho até ao ponto em que o **valor do produto marginal do trabalho** ($P \times MPL$) iguala o **salário** ($W$).
+:::
+:::
+
+---
+
+## Lei da Contratação — Intuição
+
+$$\underbrace{P \times MPL}_{\text{Benefício Marginal de contratar L}} = \underbrace{W}_{\text{Custo Marginal de contratar L}}$$
+
+- Se $P \cdot MPL > W$: vale a pena contratar **mais** um trabalhador (receita adicional supera o custo)
+- Se $P \cdot MPL < W$: o último trabalhador **custa mais** do que produz — deve-se reduzir $L$
+- Se $P \cdot MPL = W$: condição óptima ✓
+
+::: {.fragment}
+::: {.callout-tip appearance="minimal"}
+É a aplicação directa do princípio **Cmg = Bmg** ao mercado de factores!
+:::
+:::
+
+---
+
+## Exemplo Resolvido
+
+**Dados:** $Q = K^{0.5}L^{0.5}$, $\bar{K} = 100$, $P = 10$, $W = 20$
+
+::: {.fragment}
+A curto prazo: $Q = 10L^{0.5}$
+
+$MPL = \frac{dQ}{dL} = 5 L^{-0.5}$
+:::
+
+::: {.fragment}
+Condição óptima: $P \cdot MPL = W$
+
+$$10 \times 5L^{-0.5} = 20$$
+$$50 L^{-0.5} = 20 \implies L^{0.5} = \frac{50}{20} = 2.5 \implies L^* = 6.25$$
+:::
+
+::: {.fragment}
+Output óptimo: $Q^* = 10 \times \sqrt{6.25} = 10 \times 2.5 = 25$
+:::
+
+---
+
+## A Relação Produtividade–Salário
+
+Da condição óptima $P \cdot MPL = W$, podemos escrever:
+
+$$MPL = \frac{W}{P}$$
+
+::: {.fragment}
+Esta expressão diz-nos que o **produto marginal do trabalho** na escolha óptima é igual ao **salário real** $W/P$.
+:::
+
+::: {.fragment}
+::: {.callout-important appearance="minimal"}
+Trabalhadores mais produtivos (maior $MPL$) justificam salários mais elevados — ou, a preços mais altos, justifica-se contratar mais trabalho. A Lei da Contratação liga diretamente **produtividade e remuneração**.
+:::
+:::
+
+---
+
+## Verificação Gráfica
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.75,
+  every node/.style = {scale = 0.75},
+  declare function = {
+    mpl(\x) = 5*\x^(-0.5);
+    vmpl(\x) = 10*5*\x^(-0.5);
+  }
+]
+\draw[->] (-0.1,0) -- (8,0) node[below]{$L$};
+\draw[->] (0,-0.1) -- (0,6) node[left]{$P \cdot MPL,\; W$};
+
+% VMPL = P*MPL
+\draw[blue, thick, domain=0.5:7.5, variable=\x, samples=60]
+  plot (\x, {min(vmpl(\x)/10, 5.5)}) node[right]{$P \cdot MPL$};
+
+% salário W=20, escalado /10 para caber
+\draw[red, thick, dashed] (0,2) -- (7.5,2) node[right]{$W$};
+
+% ponto óptimo L*=6.25
+\draw[dotted, thick] (6.25,0) node[below]{$L^*=6.25$} -- (6.25,2);
+\draw[green!60!black, fill=green!60!black] (6.25,2) circle (3pt)
+  node[above right]{\footnotesize Óptimo};
+\end{tikzpicture}
+\end{center}
+```
+
+::: {.fragment}
+A curva $P \cdot MPL$ é decrescente (por causa dos rendimentos marginais decrescentes). A empresa contrata $L^*$ onde essa curva cruza o salário $W$.
+:::
+
+---
+
+## Exercícios — Escolha Múltipla (1)
+
+**1.** Uma empresa tem $Q = 4L^{0.5}$, $P = 5$ e $W = 10$. Qual a quantidade óptima de trabalho a contratar?
+
+::: {.nonincremental}
+a) **$L^* = 1$** ✓
+b) $L^* = 4$
+c) $L^* = 9$
+d) $L^* = 16$
+:::
+
+::: {.fragment .smaller}
+**Solução:** $MPL = 2L^{-0.5}$. Lei da contratação: $P \cdot MPL = W \Rightarrow 5 \times 2L^{-0.5} = 10 \Rightarrow L^{-0.5} = 1 \Rightarrow L^{0.5} = 1 \Rightarrow L^* = 1$.
+
+Verificação: $P \cdot MPL = 5 \times 2 \times 1^{-0.5} = 10 = W$ ✓
+:::
+
+---
+
+## Exercícios — Escolha Múltipla (2)
+
+**2.** A empresa está a operar com $P \cdot MPL > W$. O que deve fazer para maximizar o lucro?
+
+::: {.nonincremental}
+a) Reduzir o output — está a produzir demasiado.
+b) Manter a produção — já está no óptimo.
+c) **Contratar mais trabalho** — o benefício marginal supera o custo marginal. ✓
+d) Aumentar o preço de venda.
+:::
+
+::: {.fragment .smaller}
+**Solução:** Se $P \cdot MPL > W$, cada trabalhador adicional gera mais receita do que custa. A empresa deve contratar mais até $P \cdot MPL = W$.
+:::
+
+---
+
+## Exercício de Desenvolvimento
+
+**Enunciado:** A empresa ALFA tem a função de produção $Q = -L^3 + 12L^2 + 60L$, com $K=1$ fixo. O preço de venda é $P = 2$ u.m. e o salário unitário é $W = 168$ u.m.
+
+a) Calcule $MPL$ e $APL$. Delimite as três etapas do processo produtivo.
+
+b) Aplique a Lei da Contratação para encontrar $L^*$ e $Q^*$.
+
+c) Verifique que $L^*$ se encontra na Zona Económica de Exploração.
+
+---
+
+## Solução — Desenvolvimento (a)
+
+$$MPL = -3L^2 + 24L + 60$$
+$$APL = -L^2 + 12L + 60$$
+
+::: {.fragment}
+**Etapa I → II** ($MPL = APL$):
+$$-3L^2 + 24L + 60 = -L^2 + 12L + 60 \implies -2L^2 + 12L = 0 \implies L(L-6)=0$$
+$$\implies L_1 = 6$$
+:::
+
+::: {.fragment}
+**Etapa II → III** ($MPL = 0$):
+$$-3L^2 + 24L + 60 = 0 \implies L^2 - 8L - 20 = 0 \implies (L-10)(L+2) = 0$$
+$$\implies L_{max} = 10$$
+
+| Etapa | Intervalo | 
+|-------|-----------|
+| I | $[0,\; 6[$ |
+| II (ZEE) | $[6,\; 10]$ |
+| III | $]10,\; +\infty[$ |
+:::
+
+---
+
+## Solução — Desenvolvimento (b) e (c)
+
+**Lei da Contratação:** $P \cdot MPL = W$
+
+$$2 \times (-3L^2 + 24L + 60) = 168$$
+$$-3L^2 + 24L + 60 = 84$$
+$$-3L^2 + 24L - 24 = 0 \implies L^2 - 8L + 8 = 0$$
+$$L = \frac{8 \pm \sqrt{64 - 32}}{2} = \frac{8 \pm \sqrt{32}}{2} = 4 \pm 2\sqrt{2}$$
+
+::: {.fragment}
+$L_1 = 4 - 2\sqrt{2} \approx 1.17$ (Etapa I — não é óptimo)
+
+$L_2 = 4 + 2\sqrt{2} \approx 6.83$ (Etapa II ✓)
+
+$L^* \approx 6.83$; $Q^* = -(6.83)^3 + 12(6.83)^2 + 60(6.83) \approx 650.5$ u.
+
+**$L^* \approx 6.83 \in [6, 10]$ → está na ZEE** ✓
+:::

@@ -1,0 +1,440 @@
+---
+title: "Microeconomia"
+subtitle: "Função de Custos: Fixo, Variável, Médio e Marginal"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 14_funcao_custos-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+    echo: false
+    code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+## Função de Custos {.center}
+
+::: {.callout-note appearance="minimal"}
+**Objectivo:** Derivar e interpretar as componentes da função de custos a curto prazo — fixo, variável, médio e marginal — e compreender as suas relações geométricas e analíticas.
+:::
+
+---
+
+## Do Processo Produtivo aos Custos
+
+O objectivo da empresa é maximizar o lucro:
+
+$$\Pi = \text{Receitas Totais} - \text{Custos Totais}$$
+
+::: {.fragment}
+Para isso, é necessário conhecer a função de custos: como variam os custos com o nível de produção $Q$.
+:::
+
+::: {.fragment}
+A curto prazo, com $K$ fixo e $L$ variável, os custos dividem-se em duas componentes muito distintas.
+:::
+
+---
+
+## Custo Fixo e Custo Variável
+
+$$CT = C(Q) = CF + CV(Q)$$
+
+::: {.fragment}
+- **Custo Fixo ($CF$):** não depende da quantidade produzida — é o custo dos fatores fixos ($K$). Existe mesmo que $Q = 0$.
+:::
+
+::: {.fragment}
+- **Custo Variável ($CV$):** depende da quantidade produzida — é o custo do trabalho contratado ($W \times L$). Aumenta com $Q$.
+:::
+
+::: {.fragment}
+::: {.callout-tip appearance="minimal"}
+$CV(0) = 0$ — se não se produz nada, não se contrata trabalho. Mas $CF > 0$ mesmo com $Q = 0$.
+:::
+:::
+
+---
+
+## Exemplo: Da Função de Produção à Função de Custos
+
+Dados: custo de $K$ instalado $= 60$; salário por unidade de $L$ $= 250$
+
+```{=latex}
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\rowcolor{blue!15}
+$L$ & $Q$ & $CF$ & $CV$ & $CT$ \\ \hline
+0 & 0 & 60 & 0 & 60 \\
+1 & 20 & 60 & 250 & 310 \\
+2 & 50 & 60 & 500 & 560 \\
+3 & 85 & 60 & 750 & 810 \\
+4 & 114 & 60 & 1\,000 & 1\,060 \\
+5 & 140 & 60 & 1\,250 & 1\,310 \\
+6 & 159 & 60 & 1\,500 & 1\,560 \\
+7 & 169 & 60 & 1\,750 & 1\,810 \\
+8 & 164 & 60 & 2\,000 & 2\,060 \\ \hline
+\end{tabular}
+```
+
+::: {.fragment}
+Note que a curva de $CT$ é paralela à de $CV$ — distam sempre $CF = 60$.
+:::
+
+---
+
+## Gráfico: CT, CV e CF
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.85,
+  every node/.style = {scale = 0.85},
+  declare function = {
+    cv(\x) = \x - (1/4)*\x^2 + (1/25)*\x^3;
+    cf(\x) = 1;
+    ct(\x) = cv(\x) + cf(\x);
+  }
+]
+\draw[->, thick] (-0.1,0) -- (5.5,0) node[below]{$Q$};
+\draw[->, thick] (0,-0.1) -- (0,5.5) node[left]{};
+
+\onslide<1->{
+  \draw[blue, thick, domain=0:5, variable=\x, samples=60] plot (\x,{cf(\x)})
+    node[right]{$CF$};
+  \draw[dotted] (0,1) -- (5,1);
+}
+\onslide<2->{
+  \draw[red, thick, domain=0:5, variable=\x, samples=60] plot (\x,{cv(\x)})
+    node[right]{$CV$};
+}
+\onslide<3->{
+  \draw[blue!60!red, thick, domain=0:5, variable=\x, samples=60] plot (\x,{ct(\x)})
+    node[right]{$CT$};
+  \draw[<->, thin] (4.5,{cv(4.5)}) -- (4.5,{ct(4.5)})
+    node[midway, right]{\footnotesize $CF$};
+}
+\end{tikzpicture}
+\end{center}
+```
+
+---
+
+## Custo Marginal
+
+É a variação do custo total quando se produz **uma unidade adicional** de output:
+
+$$Cmg = \frac{\Delta CT}{\Delta Q} = \frac{dCT}{dQ}$$
+
+::: {.fragment}
+Como $CF$ é constante, $\Delta CF = 0$, portanto:
+
+$$Cmg = \frac{\Delta CV}{\Delta Q} = \frac{dCV}{dQ}$$
+:::
+
+::: {.fragment}
+::: {.callout-important appearance="minimal"}
+O custo marginal é **independente do custo fixo** — pode calcular-se a partir de $CT$ ou de $CV$ com o mesmo resultado.
+:::
+:::
+
+---
+
+## Custo Marginal e MPL
+
+Existe uma relação inversa entre $Cmg$ e $MPL$. Se o salário por unidade de $L$ é $W$:
+
+$$Cmg = \frac{W}{MPL}$$
+
+::: {.fragment}
+- Na Etapa I (MPL crescente) → $Cmg$ é **decrescente**
+- No óptimo técnico (APL máximo) → $Cmg = CVM$ (mínimo de $CVM$)
+- Na Etapa II (MPL decrescente, $MPL > 0$) → $Cmg$ é **crescente**
+:::
+
+::: {.fragment}
+::: {.callout-tip appearance="minimal"}
+A Lei dos Rendimentos Marginais Decrescentes implica que o $Cmg$ é crescente na Zona Económica de Exploração — **fundamento da Lei da Oferta**.
+:::
+:::
+
+---
+
+## Custos Médios
+
+Dividem o custo por unidade produzida:
+
+::: {.nonincremental}
+- **Custo Fixo Médio:** $CFM = \dfrac{CF}{Q}$ — sempre decrescente (o custo fixo dilui-se por mais unidades)
+
+- **Custo Variável Médio:** $CVM = \dfrac{CV}{Q}$ — forma em $U$; mínimo onde $Cmg = CVM$
+
+- **Custo Total Médio:** $CTM = \dfrac{CT}{Q} = CFM + CVM$ — forma em $U$; mínimo onde $Cmg = CTM$
+:::
+
+::: {.fragment}
+$$CTM = CFM + CVM \implies CTM > CVM \text{ sempre}$$
+:::
+
+---
+
+## Tabela com Todos os Custos
+
+```{=latex}
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\rowcolor{blue!15}
+$L$ & $Q$ & $CT$ & $Cmg$ & $CVM$ & $CTM$ & Etapa \\ \hline
+0 & 0 & 60 & --- & --- & --- & \\
+1 & 20 & 310 & \cellcolor{yellow!60}12.50 & 12.50 & 15.50 & I \\
+2 & 50 & 560 & \cellcolor{yellow!60}8.33 & 10.00 & 11.20 & I \\
+3 & 85 & 810 & \cellcolor{yellow!60}7.14 & 8.82 & 9.53 & I \\
+4 & 114 & 1060 & \cellcolor{yellow!60}8.62 & \cellcolor{green!30}8.77 & 9.30 & I \\
+5 & 140 & 1310 & 9.62 & 8.93 & 9.36 & \textbf{II} \\
+6 & 159 & 1560 & 13.16 & 9.43 & 9.81 & \textbf{II} \\
+7 & 169 & 1810 & 25.00 & 10.36 & 10.71 & \textbf{II} \\
+\hline
+\end{tabular}
+```
+
+::: {.fragment .smaller}
+- Amarelo: $Cmg$ decrescente (Etapa I)
+- Verde: $CVM$ próximo do mínimo (onde $Cmg \approx CVM$)
+- $CTM$ está sempre acima de $CVM$ (diferença = $CFM$)
+:::
+
+---
+
+## Geometria dos Custos Médios e Marginal
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  scale = 0.8,
+  every node/.style = {scale = 0.8},
+  declare function = {
+    cv(\x) = \x - (1/4)*\x^2 + (1/25)*\x^3;
+    cf(\x) = 1;
+    ct(\x) = cv(\x) + cf(\x);
+    cmg(\x) = 1 - (1/2)*\x + (3/25)*\x^2;
+    ctm(\x) = ct(\x)/\x;
+    cvm(\x) = cv(\x)/\x;
+    cfm(\x) = cf(\x)/\x;
+  }
+]
+\draw[->, thick] (-0.1,0) -- (5.5,0) node[below]{$Q$};
+\draw[->, thick] (0,-0.1) -- (0,4) node[left]{};
+
+\onslide<1->{
+  \draw[blue!40!black, thick, domain=0.25:5, variable=\x, samples=60] plot (\x,{cfm(\x)})
+    node[right]{$CFM$};
+}
+\onslide<2->{
+  \draw[red, thick, domain=0.5:5, variable=\x, samples=60] plot (\x,{cvm(\x)})
+    node[right]{$CVM$};
+}
+\onslide<3->{
+  \draw[blue!60!red, thick, domain=0.4:5, variable=\x, samples=60] plot (\x,{ctm(\x)})
+    node[right]{$CTM$};
+}
+\onslide<4->{
+  \draw[green!60!black, thick, domain=0.2:5, variable=\x, samples=60] plot (\x,{cmg(\x)})
+    node[right]{$Cmg$};
+  % mínimo CVM: cmg=cvm -> 1-(1/2)x+(3/25)x^2 = 1-(1/4)x+(1/25)x^3/x
+  % aproximado: x=25/8=3.125
+  \draw[dotted] ({25/8},0) node[below]{\footnotesize $Q_{CVM_{min}}$}
+    -- ({25/8},{cvm(25/8)});
+  % mínimo CTM: cmg=ctm, maior que 25/8
+  % ct = cv+1; cmg = ct'/1; ctm = ct/x; cmg=ctm -> approx x=4.2
+  \draw[dotted] (4.25,0) node[below]{\footnotesize $Q_{CTM_{min}}$}
+    -- (4.25,{ctm(4.25)});
+}
+\end{tikzpicture}
+\end{center}
+```
+
+---
+
+## Propriedades Fundamentais
+
+**1.** $Cmg$ intersecta $CVM$ no **mínimo de $CVM$**
+
+- Se $Cmg < CVM$: o custo da última unidade é inferior à média → $CVM$ desce
+- Se $Cmg > CVM$: o custo da última unidade é superior à média → $CVM$ sobe
+- Se $Cmg = CVM$: estamos no mínimo de $CVM$
+
+::: {.fragment}
+**2.** $Cmg$ intersecta $CTM$ no **mínimo de $CTM$** (pelo mesmo raciocínio)
+:::
+
+::: {.fragment}
+**3.** $CTM > CVM$ sempre (a diferença é o $CFM > 0$)
+:::
+
+::: {.fragment}
+**4.** $CFM$ é sempre decrescente e tende para 0 → $CTM$ converge para $CVM$ quando $Q \to \infty$
+:::
+
+---
+
+## Exemplo Analítico Completo
+
+Dada $CT = Q^3 - 6Q^2 + 15Q + 10$:
+
+::: {.fragment}
+$$CF = 10 \quad \text{(termo independente)}$$
+$$CV = Q^3 - 6Q^2 + 15Q$$
+:::
+
+::: {.fragment}
+$$Cmg = \frac{dCT}{dQ} = 3Q^2 - 12Q + 15$$
+:::
+
+::: {.fragment}
+$$CVM = \frac{CV}{Q} = Q^2 - 6Q + 15$$
+$$CTM = \frac{CT}{Q} = Q^2 - 6Q + 15 + \frac{10}{Q}$$
+:::
+
+---
+
+## Mínimo de CVM e CTM
+
+Para $CT = Q^3 - 6Q^2 + 15Q + 10$:
+
+**Mínimo de $CVM$:** onde $Cmg = CVM$:
+
+$$3Q^2 - 12Q + 15 = Q^2 - 6Q + 15$$
+$$2Q^2 - 6Q = 0 \implies Q(2Q - 6) = 0 \implies Q_{CVM_{min}} = 3$$
+
+::: {.fragment}
+$CVM_{min} = 9 - 18 + 15 = 6$; confirmação: $Cmg(3) = 27 - 36 + 15 = 6$ ✓
+:::
+
+::: {.fragment}
+**Mínimo de $CTM$:** onde $Cmg = CTM$, ou $\frac{dCTM}{dQ} = 0$:
+
+$$\frac{dCTM}{dQ} = 2Q - 6 - \frac{10}{Q^2} = 0$$
+
+Numericamente: $Q_{CTM_{min}} \approx 3.47$; $CTM_{min} \approx 9.10$
+:::
+
+---
+
+## Exercícios — Escolha Múltipla (1)
+
+**1.** Para a função $CT = 2Q^2 + 8Q + 50$, qual é o Custo Marginal?
+
+::: {.nonincremental}
+a) $Cmg = 2Q^2 + 8Q$
+b) $Cmg = 4Q + 8$  ✓
+c) $Cmg = 2Q + 8$
+d) $Cmg = 4Q$
+:::
+
+::: {.fragment .smaller}
+**Solução:** $Cmg = \frac{dCT}{dQ} = 4Q + 8$.
+
+Verificação: $CV = 2Q^2 + 8Q$; $\frac{dCV}{dQ} = 4Q + 8$ — o mesmo resultado ✓
+:::
+
+---
+
+## Exercícios — Escolha Múltipla (2)
+
+**2.** Para qual das seguintes afirmações sobre custos a curto prazo a afirmação é **falsa**?
+
+::: {.nonincremental}
+a) O $CFM$ é sempre decrescente com $Q$.
+b) O $Cmg$ intersecta o $CVM$ no mínimo do $CVM$.
+c) **O $CTM$ intersecta o $CVM$ no mínimo do $CVM$.** ✓ (é falsa)
+d) O $Cmg$ é independente do custo fixo.
+:::
+
+::: {.fragment .smaller}
+**Solução:** A afirmação **c)** é falsa. Quem intersecta $CVM$ no mínimo é o $Cmg$, não o $CTM$. O $CTM$ é sempre maior que o $CVM$ e intersecta o $Cmg$ no **seu próprio mínimo**.
+:::
+
+---
+
+## Exercício de Desenvolvimento
+
+**Enunciado:** Uma empresa tem a função de custos totais $CT = Q^3 - 9Q^2 + 30Q + 18$.
+
+a) Identifique $CF$, $CV(Q)$, $CVM(Q)$, $CTM(Q)$ e $Cmg(Q)$.
+
+b) Determine a produção no mínimo de $CVM$ e o respectivo valor mínimo. Confirme que $Cmg = CVM$ nesse ponto.
+
+c) Determine a produção no mínimo de $CTM$. Confirme que $Cmg = CTM$ nesse ponto.
+
+---
+
+## Solução — Desenvolvimento (a)
+
+$$CT = Q^3 - 9Q^2 + 30Q + 18$$
+
+::: {.fragment}
+$$CF = 18 \qquad CV = Q^3 - 9Q^2 + 30Q$$
+:::
+
+::: {.fragment}
+$$Cmg = 3Q^2 - 18Q + 30$$
+:::
+
+::: {.fragment}
+$$CVM = \frac{CV}{Q} = Q^2 - 9Q + 30$$
+$$CTM = \frac{CT}{Q} = Q^2 - 9Q + 30 + \frac{18}{Q}$$
+:::
+
+---
+
+## Solução — Desenvolvimento (b) e (c)
+
+**Mínimo de $CVM$** ($Cmg = CVM$):
+$$3Q^2 - 18Q + 30 = Q^2 - 9Q + 30$$
+$$2Q^2 - 9Q = 0 \implies Q(2Q - 9) = 0 \implies Q_{CVM_{min}} = 4.5$$
+
+::: {.fragment}
+$CVM(4.5) = 20.25 - 40.5 + 30 = 9.75$
+
+$Cmg(4.5) = 3(20.25) - 18(4.5) + 30 = 60.75 - 81 + 30 = 9.75$ ✓
+:::
+
+::: {.fragment}
+**Mínimo de $CTM$** ($Cmg = CTM$, ou $\frac{dCTM}{dQ}=0$):
+
+$$\frac{dCTM}{dQ} = 2Q - 9 - \frac{18}{Q^2} = 0 \implies 2Q^3 - 9Q^2 - 18 = 0$$
+
+Numericamente: $Q_{CTM_{min}} \approx 4.87$; $CTM(4.87) \approx 13.59$; $Cmg(4.87) \approx 13.50$ ✓
+:::

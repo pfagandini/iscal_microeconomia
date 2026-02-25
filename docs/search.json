@@ -501,7 +501,7 @@
     "href": "material.html#slides",
     "title": "Material",
     "section": "Slides",
-    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
+    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\nConceitos\nEtapas Processo Produtivo e Regra da Contratação\nFunção de Custos\n\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
   },
   {
     "objectID": "exercises/Capitulo_3C.html#c.-teoria-do-produtor-e-equilíbrio---longo-prazo",
@@ -3267,5 +3267,537 @@
     "title": "Microeconomia",
     "section": "25 Solução — Desenvolvimento (b)",
     "text": "25 Solução — Desenvolvimento (b)\nEtapa I → II: \\(MPL = APL\\)\n\\[-3L^2 + 60L + 10 = -L^2 + 30L + 10\\] \\[-2L^2 + 30L = 0 \\Rightarrow L(-2L + 30) = 0 \\Rightarrow L = 15\\]\n\nEtapa II → III: \\(MPL = 0\\)\n\\[-3L^2 + 60L + 10 = 0 \\Rightarrow L \\approx 20.16\\]\n\n\n\nEtapa\nIntervalo em \\(L\\)\n\n\n\n\nI\n\\([0,\\; 15[\\)\n\n\nII (Zona Econ.)\n\\([15,\\; 20.16]\\)\n\n\nIII\n\\(]20.16,\\; +\\infty[\\)"
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#etapas-do-processo-produtivo",
+    "href": "slides/08_Etapas_contratacao.html#etapas-do-processo-produtivo",
+    "title": "Microeconomia",
+    "section": "Etapas do Processo Produtivo",
+    "text": "Etapas do Processo Produtivo\n\n\n\nObjectivo: Identificar as três etapas do processo produtivo, compreender a Zona Económica de Exploração, e derivar a Lei da Contratação como condição óptima do produtor."
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#recapitulação-apl-e-mpl",
+    "href": "slides/08_Etapas_contratacao.html#recapitulação-apl-e-mpl",
+    "title": "Microeconomia",
+    "section": "Recapitulação: APL e MPL",
+    "text": "Recapitulação: APL e MPL\nA curto prazo, com \\(K = \\bar{K}\\) fixo e \\(L\\) variável:\n\\[MPL = \\frac{\\Delta Q}{\\Delta L} \\qquad APL = \\frac{Q}{L}\\]\n\nRelação fundamental entre as duas medidas:\n\nQuando \\(MPL &gt; APL\\) → \\(APL\\) está a crescer\nQuando \\(MPL = APL\\) → \\(APL\\) está no seu máximo (óptimo técnico)\nQuando \\(MPL &lt; APL\\) → \\(APL\\) está a decrescer"
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#as-3-etapas-diagrama-geral",
+    "href": "slides/08_Etapas_contratacao.html#as-3-etapas-diagrama-geral",
+    "title": "Microeconomia",
+    "section": "As 3 Etapas — Diagrama Geral",
+    "text": "As 3 Etapas — Diagrama Geral"
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#etapa-i-rendimentos-marginais-crescentes",
+    "href": "slides/08_Etapas_contratacao.html#etapa-i-rendimentos-marginais-crescentes",
+    "title": "Microeconomia",
+    "section": "Etapa I — Rendimentos Marginais Crescentes",
+    "text": "Etapa I — Rendimentos Marginais Crescentes\nIntervalo: \\(L \\in [0,\\, L_1[\\) onde \\(L_1\\) é o ponto em que \\(MPL = APL\\)\n\n\\(MPL\\) está a crescer (até ao ponto de inflexão) e depois decresce, mas mantém-se acima de \\(APL\\)\n\\(APL\\) está sempre a crescer\nA empresa ainda não está a aproveitar ao máximo a combinação de fatores\n\n\n\n\n\nA empresa não se deve fixar na Etapa I — está a produzir abaixo do óptimo técnico, onde a produtividade média ainda pode aumentar."
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#etapa-ii-zona-económica-de-exploração",
+    "href": "slides/08_Etapas_contratacao.html#etapa-ii-zona-económica-de-exploração",
+    "title": "Microeconomia",
+    "section": "Etapa II — Zona Económica de Exploração",
+    "text": "Etapa II — Zona Económica de Exploração\nIntervalo: \\(L \\in [L_1,\\, L_{max}]\\) onde \\(MPL = APL\\) até \\(MPL = 0\\)\n\n\\(APL\\) está a decrescer (mas \\(APL &gt; 0\\))\n\\(MPL \\geq 0\\): cada trabalhador adicional ainda contribui positivamente para o output\nÉ aqui que se situam todas as escolhas óptimas de produção\n\n\n\n\n\nA Zona Económica de Exploração coincide com a Etapa II: entre o óptimo técnico (\\(Q_1\\), máximo de \\(APL\\)) e o máximo de produção (\\(Q_{max}\\), \\(MPL = 0\\))."
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#etapa-iii-rendimentos-marginais-negativos",
+    "href": "slides/08_Etapas_contratacao.html#etapa-iii-rendimentos-marginais-negativos",
+    "title": "Microeconomia",
+    "section": "Etapa III — Rendimentos Marginais Negativos",
+    "text": "Etapa III — Rendimentos Marginais Negativos\nIntervalo: \\(L &gt; L_{max}\\) onde \\(MPL = 0\\)\n\n\\(MPL &lt; 0\\): cada trabalhador adicional reduz o output total\nO produto total está a diminuir\n\n\n\n\n\nNenhuma empresa racional opera na Etapa III — estaria a pagar trabalhadores para reduzir a sua produção."
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#resumo-das-3-etapas",
+    "href": "slides/08_Etapas_contratacao.html#resumo-das-3-etapas",
+    "title": "Microeconomia",
+    "section": "Resumo das 3 Etapas",
+    "text": "Resumo das 3 Etapas\n\nZEE = Zona Económica de Exploração → Etapa II: onde o produtor racional opera."
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#exemplo-numérico-tabela-completa",
+    "href": "slides/08_Etapas_contratacao.html#exemplo-numérico-tabela-completa",
+    "title": "Microeconomia",
+    "section": "Exemplo Numérico — Tabela Completa",
+    "text": "Exemplo Numérico — Tabela Completa\n\nNota: a tabela usa valores arredondados para ilustração; os pontos de fronteira exactos são calculados analiticamente."
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#objectivo-da-empresa-maximizar-o-lucro",
+    "href": "slides/08_Etapas_contratacao.html#objectivo-da-empresa-maximizar-o-lucro",
+    "title": "Microeconomia",
+    "section": "Objectivo da Empresa: Maximizar o Lucro",
+    "text": "Objectivo da Empresa: Maximizar o Lucro\nA empresa quer maximizar:\n\\[\\Pi = \\underbrace{P \\times Q}_{\\text{Receita Total}} - \\underbrace{W \\times L}_{\\text{Custo Variável}} - \\underbrace{r \\times \\bar{K}}_{\\text{Custo Fixo}}\\]\n\nA curto prazo, \\(K\\) é fixo. A variável de controlo é \\(L\\). Maximizar \\(\\Pi\\) em ordem a \\(L\\):\n\\[\\frac{\\partial \\Pi}{\\partial L} = 0\\]"
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#derivação-da-condição-óptima",
+    "href": "slides/08_Etapas_contratacao.html#derivação-da-condição-óptima",
+    "title": "Microeconomia",
+    "section": "Derivação da Condição Óptima",
+    "text": "Derivação da Condição Óptima\n\\[\\frac{\\partial \\Pi}{\\partial L} = P \\cdot \\frac{\\partial Q}{\\partial L} - W = 0\\]\n\nOu seja: \\[P \\cdot MPL = W\\]\n\n\n\n\n\nLei da Contratação: A empresa deve contratar trabalho até ao ponto em que o valor do produto marginal do trabalho (\\(P \\times MPL\\)) iguala o salário (\\(W\\))."
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#lei-da-contratação-intuição",
+    "href": "slides/08_Etapas_contratacao.html#lei-da-contratação-intuição",
+    "title": "Microeconomia",
+    "section": "Lei da Contratação — Intuição",
+    "text": "Lei da Contratação — Intuição\n\\[\\underbrace{P \\times MPL}_{\\text{Benefício Marginal de contratar L}} = \\underbrace{W}_{\\text{Custo Marginal de contratar L}}\\]\n\nSe \\(P \\cdot MPL &gt; W\\): vale a pena contratar mais um trabalhador (receita adicional supera o custo)\nSe \\(P \\cdot MPL &lt; W\\): o último trabalhador custa mais do que produz — deve-se reduzir \\(L\\)\nSe \\(P \\cdot MPL = W\\): condição óptima ✓\n\n\n\n\n\nÉ a aplicação directa do princípio Cmg = Bmg ao mercado de factores!"
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#exemplo-resolvido",
+    "href": "slides/08_Etapas_contratacao.html#exemplo-resolvido",
+    "title": "Microeconomia",
+    "section": "Exemplo Resolvido",
+    "text": "Exemplo Resolvido\nDados: \\(Q = K^{0.5}L^{0.5}\\), \\(\\bar{K} = 100\\), \\(P = 10\\), \\(W = 20\\)\n\nA curto prazo: \\(Q = 10L^{0.5}\\)\n\\(MPL = \\frac{dQ}{dL} = 5 L^{-0.5}\\)\n\n\nCondição óptima: \\(P \\cdot MPL = W\\)\n\\[10 \\times 5L^{-0.5} = 20\\] \\[50 L^{-0.5} = 20 \\implies L^{0.5} = \\frac{50}{20} = 2.5 \\implies L^* = 6.25\\]\n\n\nOutput óptimo: \\(Q^* = 10 \\times \\sqrt{6.25} = 10 \\times 2.5 = 25\\)"
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#a-relação-produtividadesalário",
+    "href": "slides/08_Etapas_contratacao.html#a-relação-produtividadesalário",
+    "title": "Microeconomia",
+    "section": "A Relação Produtividade–Salário",
+    "text": "A Relação Produtividade–Salário\nDa condição óptima \\(P \\cdot MPL = W\\), podemos escrever:\n\\[MPL = \\frac{W}{P}\\]\n\nEsta expressão diz-nos que o produto marginal do trabalho na escolha óptima é igual ao salário real \\(W/P\\).\n\n\n\n\n\nTrabalhadores mais produtivos (maior \\(MPL\\)) justificam salários mais elevados — ou, a preços mais altos, justifica-se contratar mais trabalho. A Lei da Contratação liga diretamente produtividade e remuneração."
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#verificação-gráfica",
+    "href": "slides/08_Etapas_contratacao.html#verificação-gráfica",
+    "title": "Microeconomia",
+    "section": "Verificação Gráfica",
+    "text": "Verificação Gráfica\n\nA curva \\(P \\cdot MPL\\) é decrescente (por causa dos rendimentos marginais decrescentes). A empresa contrata \\(L^*\\) onde essa curva cruza o salário \\(W\\)."
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#exercícios-escolha-múltipla-1",
+    "href": "slides/08_Etapas_contratacao.html#exercícios-escolha-múltipla-1",
+    "title": "Microeconomia",
+    "section": "Exercícios — Escolha Múltipla (1)",
+    "text": "Exercícios — Escolha Múltipla (1)\n1. Uma empresa tem \\(Q = 4L^{0.5}\\), \\(P = 5\\) e \\(W = 10\\). Qual a quantidade óptima de trabalho a contratar?\n\n\\(L^* = 1\\) ✓\n\\(L^* = 4\\)\n\\(L^* = 9\\)\n\\(L^* = 16\\)\n\n\nSolução: \\(MPL = 2L^{-0.5}\\). Lei da contratação: \\(P \\cdot MPL = W \\Rightarrow 5 \\times 2L^{-0.5} = 10 \\Rightarrow L^{-0.5} = 1 \\Rightarrow L^{0.5} = 1 \\Rightarrow L^* = 1\\).\nVerificação: \\(P \\cdot MPL = 5 \\times 2 \\times 1^{-0.5} = 10 = W\\) ✓"
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#exercícios-escolha-múltipla-2",
+    "href": "slides/08_Etapas_contratacao.html#exercícios-escolha-múltipla-2",
+    "title": "Microeconomia",
+    "section": "Exercícios — Escolha Múltipla (2)",
+    "text": "Exercícios — Escolha Múltipla (2)\n2. A empresa está a operar com \\(P \\cdot MPL &gt; W\\). O que deve fazer para maximizar o lucro?\n\nReduzir o output — está a produzir demasiado.\nManter a produção — já está no óptimo.\nContratar mais trabalho — o benefício marginal supera o custo marginal. ✓\nAumentar o preço de venda.\n\n\nSolução: Se \\(P \\cdot MPL &gt; W\\), cada trabalhador adicional gera mais receita do que custa. A empresa deve contratar mais até \\(P \\cdot MPL = W\\)."
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#exercício-de-desenvolvimento",
+    "href": "slides/08_Etapas_contratacao.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício de Desenvolvimento",
+    "text": "Exercício de Desenvolvimento\nEnunciado: A empresa ALFA tem a função de produção \\(Q = -L^3 + 12L^2 + 60L\\), com \\(K=1\\) fixo. O preço de venda é \\(P = 2\\) u.m. e o salário unitário é \\(W = 168\\) u.m.\n\nCalcule \\(MPL\\) e \\(APL\\). Delimite as três etapas do processo produtivo.\nAplique a Lei da Contratação para encontrar \\(L^*\\) e \\(Q^*\\).\nVerifique que \\(L^*\\) se encontra na Zona Económica de Exploração."
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#solução-desenvolvimento-a",
+    "href": "slides/08_Etapas_contratacao.html#solução-desenvolvimento-a",
+    "title": "Microeconomia",
+    "section": "Solução — Desenvolvimento (a)",
+    "text": "Solução — Desenvolvimento (a)\n\\[MPL = -3L^2 + 24L + 60\\] \\[APL = -L^2 + 12L + 60\\]\n\nEtapa I → II (\\(MPL = APL\\)): \\[-3L^2 + 24L + 60 = -L^2 + 12L + 60 \\implies -2L^2 + 12L = 0 \\implies L(L-6)=0\\] \\[\\implies L_1 = 6\\]\n\n\nEtapa II → III (\\(MPL = 0\\)): \\[-3L^2 + 24L + 60 = 0 \\implies L^2 - 8L - 20 = 0 \\implies (L-10)(L+2) = 0\\] \\[\\implies L_{max} = 10\\]\n\n\n\nEtapa\nIntervalo\n\n\n\n\nI\n\\([0,\\; 6[\\)\n\n\nII (ZEE)\n\\([6,\\; 10]\\)\n\n\nIII\n\\(]10,\\; +\\infty[\\)"
+  },
+  {
+    "objectID": "slides/08_Etapas_contratacao.html#solução-desenvolvimento-b-e-c",
+    "href": "slides/08_Etapas_contratacao.html#solução-desenvolvimento-b-e-c",
+    "title": "Microeconomia",
+    "section": "Solução — Desenvolvimento (b) e (c)",
+    "text": "Solução — Desenvolvimento (b) e (c)\nLei da Contratação: \\(P \\cdot MPL = W\\)\n\\[2 \\times (-3L^2 + 24L + 60) = 168\\] \\[-3L^2 + 24L + 60 = 84\\] \\[-3L^2 + 24L - 24 = 0 \\implies L^2 - 8L + 8 = 0\\] \\[L = \\frac{8 \\pm \\sqrt{64 - 32}}{2} = \\frac{8 \\pm \\sqrt{32}}{2} = 4 \\pm 2\\sqrt{2}\\]\n\n\\(L_1 = 4 - 2\\sqrt{2} \\approx 1.17\\) (Etapa I — não é óptimo)\n\\(L_2 = 4 + 2\\sqrt{2} \\approx 6.83\\) (Etapa II ✓)\n\\(L^* \\approx 6.83\\); \\(Q^* = -(6.83)^3 + 12(6.83)^2 + 60(6.83) \\approx 650.5\\) u.\n\\(L^* \\approx 6.83 \\in [6, 10]\\) → está na ZEE ✓"
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html",
+    "href": "slides/13_etapas_contratacao-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Objectivo: Identificar as três etapas do processo produtivo, compreender a Zona Económica de Exploração, e derivar a Lei da Contratação como condição óptima do produtor."
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#etapas-do-processo-produtivo",
+    "href": "slides/13_etapas_contratacao-document.html#etapas-do-processo-produtivo",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Objectivo: Identificar as três etapas do processo produtivo, compreender a Zona Económica de Exploração, e derivar a Lei da Contratação como condição óptima do produtor."
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#recapitulação-apl-e-mpl",
+    "href": "slides/13_etapas_contratacao-document.html#recapitulação-apl-e-mpl",
+    "title": "Microeconomia",
+    "section": "2 Recapitulação: APL e MPL",
+    "text": "2 Recapitulação: APL e MPL\nA curto prazo, com \\(K = \\bar{K}\\) fixo e \\(L\\) variável:\n\\[MPL = \\frac{\\Delta Q}{\\Delta L} \\qquad APL = \\frac{Q}{L}\\]\n\nRelação fundamental entre as duas medidas:\n\nQuando \\(MPL &gt; APL\\) → \\(APL\\) está a crescer\nQuando \\(MPL = APL\\) → \\(APL\\) está no seu máximo (óptimo técnico)\nQuando \\(MPL &lt; APL\\) → \\(APL\\) está a decrescer"
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#as-3-etapas-diagrama-geral",
+    "href": "slides/13_etapas_contratacao-document.html#as-3-etapas-diagrama-geral",
+    "title": "Microeconomia",
+    "section": "3 As 3 Etapas — Diagrama Geral",
+    "text": "3 As 3 Etapas — Diagrama Geral"
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#etapa-i-rendimentos-marginais-crescentes",
+    "href": "slides/13_etapas_contratacao-document.html#etapa-i-rendimentos-marginais-crescentes",
+    "title": "Microeconomia",
+    "section": "4 Etapa I — Rendimentos Marginais Crescentes",
+    "text": "4 Etapa I — Rendimentos Marginais Crescentes\nIntervalo: \\(L \\in [0,\\, L_1[\\) onde \\(L_1\\) é o ponto em que \\(MPL = APL\\)\n\n\\(MPL\\) está a crescer (até ao ponto de inflexão) e depois decresce, mas mantém-se acima de \\(APL\\)\n\\(APL\\) está sempre a crescer\nA empresa ainda não está a aproveitar ao máximo a combinação de fatores\n\n\n\n\n\n\n\n\nA empresa não se deve fixar na Etapa I — está a produzir abaixo do óptimo técnico, onde a produtividade média ainda pode aumentar."
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#etapa-ii-zona-económica-de-exploração",
+    "href": "slides/13_etapas_contratacao-document.html#etapa-ii-zona-económica-de-exploração",
+    "title": "Microeconomia",
+    "section": "5 Etapa II — Zona Económica de Exploração",
+    "text": "5 Etapa II — Zona Económica de Exploração\nIntervalo: \\(L \\in [L_1,\\, L_{max}]\\) onde \\(MPL = APL\\) até \\(MPL = 0\\)\n\n\\(APL\\) está a decrescer (mas \\(APL &gt; 0\\))\n\\(MPL \\geq 0\\): cada trabalhador adicional ainda contribui positivamente para o output\nÉ aqui que se situam todas as escolhas óptimas de produção\n\n\n\n\n\n\n\n\nA Zona Económica de Exploração coincide com a Etapa II: entre o óptimo técnico (\\(Q_1\\), máximo de \\(APL\\)) e o máximo de produção (\\(Q_{max}\\), \\(MPL = 0\\))."
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#etapa-iii-rendimentos-marginais-negativos",
+    "href": "slides/13_etapas_contratacao-document.html#etapa-iii-rendimentos-marginais-negativos",
+    "title": "Microeconomia",
+    "section": "6 Etapa III — Rendimentos Marginais Negativos",
+    "text": "6 Etapa III — Rendimentos Marginais Negativos\nIntervalo: \\(L &gt; L_{max}\\) onde \\(MPL = 0\\)\n\n\\(MPL &lt; 0\\): cada trabalhador adicional reduz o output total\nO produto total está a diminuir\n\n\n\n\n\n\n\n\nNenhuma empresa racional opera na Etapa III — estaria a pagar trabalhadores para reduzir a sua produção."
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#resumo-das-3-etapas",
+    "href": "slides/13_etapas_contratacao-document.html#resumo-das-3-etapas",
+    "title": "Microeconomia",
+    "section": "7 Resumo das 3 Etapas",
+    "text": "7 Resumo das 3 Etapas\n\nZEE = Zona Económica de Exploração → Etapa II: onde o produtor racional opera."
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#exemplo-numérico-tabela-completa",
+    "href": "slides/13_etapas_contratacao-document.html#exemplo-numérico-tabela-completa",
+    "title": "Microeconomia",
+    "section": "8 Exemplo Numérico — Tabela Completa",
+    "text": "8 Exemplo Numérico — Tabela Completa\n\nNota: a tabela usa valores arredondados para ilustração; os pontos de fronteira exactos são calculados analiticamente."
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#objectivo-da-empresa-maximizar-o-lucro",
+    "href": "slides/13_etapas_contratacao-document.html#objectivo-da-empresa-maximizar-o-lucro",
+    "title": "Microeconomia",
+    "section": "9 Objectivo da Empresa: Maximizar o Lucro",
+    "text": "9 Objectivo da Empresa: Maximizar o Lucro\nA empresa quer maximizar:\n\\[\\Pi = \\underbrace{P \\times Q}_{\\text{Receita Total}} - \\underbrace{W \\times L}_{\\text{Custo Variável}} - \\underbrace{r \\times \\bar{K}}_{\\text{Custo Fixo}}\\]\n\nA curto prazo, \\(K\\) é fixo. A variável de controlo é \\(L\\). Maximizar \\(\\Pi\\) em ordem a \\(L\\):\n\\[\\frac{\\partial \\Pi}{\\partial L} = 0\\]"
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#derivação-da-condição-óptima",
+    "href": "slides/13_etapas_contratacao-document.html#derivação-da-condição-óptima",
+    "title": "Microeconomia",
+    "section": "10 Derivação da Condição Óptima",
+    "text": "10 Derivação da Condição Óptima\n\\[\\frac{\\partial \\Pi}{\\partial L} = P \\cdot \\frac{\\partial Q}{\\partial L} - W = 0\\]\n\nOu seja: \\[P \\cdot MPL = W\\]\n\n\n\n\n\n\n\n\nLei da Contratação: A empresa deve contratar trabalho até ao ponto em que o valor do produto marginal do trabalho (\\(P \\times MPL\\)) iguala o salário (\\(W\\))."
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#lei-da-contratação-intuição",
+    "href": "slides/13_etapas_contratacao-document.html#lei-da-contratação-intuição",
+    "title": "Microeconomia",
+    "section": "11 Lei da Contratação — Intuição",
+    "text": "11 Lei da Contratação — Intuição\n\\[\\underbrace{P \\times MPL}_{\\text{Benefício Marginal de contratar L}} = \\underbrace{W}_{\\text{Custo Marginal de contratar L}}\\]\n\nSe \\(P \\cdot MPL &gt; W\\): vale a pena contratar mais um trabalhador (receita adicional supera o custo)\nSe \\(P \\cdot MPL &lt; W\\): o último trabalhador custa mais do que produz — deve-se reduzir \\(L\\)\nSe \\(P \\cdot MPL = W\\): condição óptima ✓\n\n\n\n\n\n\n\n\nÉ a aplicação directa do princípio Cmg = Bmg ao mercado de factores!"
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#exemplo-resolvido",
+    "href": "slides/13_etapas_contratacao-document.html#exemplo-resolvido",
+    "title": "Microeconomia",
+    "section": "12 Exemplo Resolvido",
+    "text": "12 Exemplo Resolvido\nDados: \\(Q = K^{0.5}L^{0.5}\\), \\(\\bar{K} = 100\\), \\(P = 10\\), \\(W = 20\\)\n\nA curto prazo: \\(Q = 10L^{0.5}\\)\n\\(MPL = \\frac{dQ}{dL} = 5 L^{-0.5}\\)\n\n\nCondição óptima: \\(P \\cdot MPL = W\\)\n\\[10 \\times 5L^{-0.5} = 20\\] \\[50 L^{-0.5} = 20 \\implies L^{0.5} = \\frac{50}{20} = 2.5 \\implies L^* = 6.25\\]\n\n\nOutput óptimo: \\(Q^* = 10 \\times \\sqrt{6.25} = 10 \\times 2.5 = 25\\)"
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#a-relação-produtividadesalário",
+    "href": "slides/13_etapas_contratacao-document.html#a-relação-produtividadesalário",
+    "title": "Microeconomia",
+    "section": "13 A Relação Produtividade–Salário",
+    "text": "13 A Relação Produtividade–Salário\nDa condição óptima \\(P \\cdot MPL = W\\), podemos escrever:\n\\[MPL = \\frac{W}{P}\\]\n\nEsta expressão diz-nos que o produto marginal do trabalho na escolha óptima é igual ao salário real \\(W/P\\).\n\n\n\n\n\n\n\n\nTrabalhadores mais produtivos (maior \\(MPL\\)) justificam salários mais elevados — ou, a preços mais altos, justifica-se contratar mais trabalho. A Lei da Contratação liga diretamente produtividade e remuneração."
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#verificação-gráfica",
+    "href": "slides/13_etapas_contratacao-document.html#verificação-gráfica",
+    "title": "Microeconomia",
+    "section": "14 Verificação Gráfica",
+    "text": "14 Verificação Gráfica\n\nA curva \\(P \\cdot MPL\\) é decrescente (por causa dos rendimentos marginais decrescentes). A empresa contrata \\(L^*\\) onde essa curva cruza o salário \\(W\\)."
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#exercícios-escolha-múltipla-1",
+    "href": "slides/13_etapas_contratacao-document.html#exercícios-escolha-múltipla-1",
+    "title": "Microeconomia",
+    "section": "15 Exercícios — Escolha Múltipla (1)",
+    "text": "15 Exercícios — Escolha Múltipla (1)\n1. Uma empresa tem \\(Q = 4L^{0.5}\\), \\(P = 5\\) e \\(W = 10\\). Qual a quantidade óptima de trabalho a contratar?\n\n\n\\(L^* = 1\\) ✓\n\\(L^* = 4\\)\n\\(L^* = 9\\)\n\\(L^* = 16\\)\n\n\n\nSolução: \\(MPL = 2L^{-0.5}\\). Lei da contratação: \\(P \\cdot MPL = W \\Rightarrow 5 \\times 2L^{-0.5} = 10 \\Rightarrow L^{-0.5} = 1 \\Rightarrow L^{0.5} = 1 \\Rightarrow L^* = 1\\).\nVerificação: \\(P \\cdot MPL = 5 \\times 2 \\times 1^{-0.5} = 10 = W\\) ✓"
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#exercícios-escolha-múltipla-2",
+    "href": "slides/13_etapas_contratacao-document.html#exercícios-escolha-múltipla-2",
+    "title": "Microeconomia",
+    "section": "16 Exercícios — Escolha Múltipla (2)",
+    "text": "16 Exercícios — Escolha Múltipla (2)\n2. A empresa está a operar com \\(P \\cdot MPL &gt; W\\). O que deve fazer para maximizar o lucro?\n\n\nReduzir o output — está a produzir demasiado.\nManter a produção — já está no óptimo.\nContratar mais trabalho — o benefício marginal supera o custo marginal. ✓\nAumentar o preço de venda.\n\n\n\nSolução: Se \\(P \\cdot MPL &gt; W\\), cada trabalhador adicional gera mais receita do que custa. A empresa deve contratar mais até \\(P \\cdot MPL = W\\)."
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#exercício-de-desenvolvimento",
+    "href": "slides/13_etapas_contratacao-document.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "17 Exercício de Desenvolvimento",
+    "text": "17 Exercício de Desenvolvimento\nEnunciado: A empresa ALFA tem a função de produção \\(Q = -L^3 + 12L^2 + 60L\\), com \\(K=1\\) fixo. O preço de venda é \\(P = 2\\) u.m. e o salário unitário é \\(W = 168\\) u.m.\n\nCalcule \\(MPL\\) e \\(APL\\). Delimite as três etapas do processo produtivo.\nAplique a Lei da Contratação para encontrar \\(L^*\\) e \\(Q^*\\).\nVerifique que \\(L^*\\) se encontra na Zona Económica de Exploração."
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#solução-desenvolvimento-a",
+    "href": "slides/13_etapas_contratacao-document.html#solução-desenvolvimento-a",
+    "title": "Microeconomia",
+    "section": "18 Solução — Desenvolvimento (a)",
+    "text": "18 Solução — Desenvolvimento (a)\n\\[MPL = -3L^2 + 24L + 60\\] \\[APL = -L^2 + 12L + 60\\]\n\nEtapa I → II (\\(MPL = APL\\)): \\[-3L^2 + 24L + 60 = -L^2 + 12L + 60 \\implies -2L^2 + 12L = 0 \\implies L(L-6)=0\\] \\[\\implies L_1 = 6\\]\n\n\nEtapa II → III (\\(MPL = 0\\)): \\[-3L^2 + 24L + 60 = 0 \\implies L^2 - 8L - 20 = 0 \\implies (L-10)(L+2) = 0\\] \\[\\implies L_{max} = 10\\]\n\n\n\nEtapa\nIntervalo\n\n\n\n\nI\n\\([0,\\; 6[\\)\n\n\nII (ZEE)\n\\([6,\\; 10]\\)\n\n\nIII\n\\(]10,\\; +\\infty[\\)"
+  },
+  {
+    "objectID": "slides/13_etapas_contratacao-document.html#solução-desenvolvimento-b-e-c",
+    "href": "slides/13_etapas_contratacao-document.html#solução-desenvolvimento-b-e-c",
+    "title": "Microeconomia",
+    "section": "19 Solução — Desenvolvimento (b) e (c)",
+    "text": "19 Solução — Desenvolvimento (b) e (c)\nLei da Contratação: \\(P \\cdot MPL = W\\)\n\\[2 \\times (-3L^2 + 24L + 60) = 168\\] \\[-3L^2 + 24L + 60 = 84\\] \\[-3L^2 + 24L - 24 = 0 \\implies L^2 - 8L + 8 = 0\\] \\[L = \\frac{8 \\pm \\sqrt{64 - 32}}{2} = \\frac{8 \\pm \\sqrt{32}}{2} = 4 \\pm 2\\sqrt{2}\\]\n\n\\(L_1 = 4 - 2\\sqrt{2} \\approx 1.17\\) (Etapa I — não é óptimo)\n\\(L_2 = 4 + 2\\sqrt{2} \\approx 6.83\\) (Etapa II ✓)\n\\(L^* \\approx 6.83\\); \\(Q^* = -(6.83)^3 + 12(6.83)^2 + 60(6.83) \\approx 650.5\\) u.\n\\(L^* \\approx 6.83 \\in [6, 10]\\) → está na ZEE ✓"
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#função-de-custos",
+    "href": "slides/09_Funcao_custos.html#função-de-custos",
+    "title": "Microeconomia",
+    "section": "Função de Custos",
+    "text": "Função de Custos\n\n\n\nObjectivo: Derivar e interpretar as componentes da função de custos a curto prazo — fixo, variável, médio e marginal — e compreender as suas relações geométricas e analíticas."
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#do-processo-produtivo-aos-custos",
+    "href": "slides/09_Funcao_custos.html#do-processo-produtivo-aos-custos",
+    "title": "Microeconomia",
+    "section": "Do Processo Produtivo aos Custos",
+    "text": "Do Processo Produtivo aos Custos\nO objectivo da empresa é maximizar o lucro:\n\\[\\Pi = \\text{Receitas Totais} - \\text{Custos Totais}\\]\n\nPara isso, é necessário conhecer a função de custos: como variam os custos com o nível de produção \\(Q\\).\n\n\nA curto prazo, com \\(K\\) fixo e \\(L\\) variável, os custos dividem-se em duas componentes muito distintas."
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#custo-fixo-e-custo-variável",
+    "href": "slides/09_Funcao_custos.html#custo-fixo-e-custo-variável",
+    "title": "Microeconomia",
+    "section": "Custo Fixo e Custo Variável",
+    "text": "Custo Fixo e Custo Variável\n\\[CT = C(Q) = CF + CV(Q)\\]\n\n\nCusto Fixo (\\(CF\\)): não depende da quantidade produzida — é o custo dos fatores fixos (\\(K\\)). Existe mesmo que \\(Q = 0\\).\n\n\n\n\nCusto Variável (\\(CV\\)): depende da quantidade produzida — é o custo do trabalho contratado (\\(W \\times L\\)). Aumenta com \\(Q\\).\n\n\n\n\n\n\n\\(CV(0) = 0\\) — se não se produz nada, não se contrata trabalho. Mas \\(CF &gt; 0\\) mesmo com \\(Q = 0\\)."
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#exemplo-da-função-de-produção-à-função-de-custos",
+    "href": "slides/09_Funcao_custos.html#exemplo-da-função-de-produção-à-função-de-custos",
+    "title": "Microeconomia",
+    "section": "Exemplo: Da Função de Produção à Função de Custos",
+    "text": "Exemplo: Da Função de Produção à Função de Custos\nDados: custo de \\(K\\) instalado \\(= 60\\); salário por unidade de \\(L\\) \\(= 250\\)\n\nNote que a curva de \\(CT\\) é paralela à de \\(CV\\) — distam sempre \\(CF = 60\\)."
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#gráfico-ct-cv-e-cf",
+    "href": "slides/09_Funcao_custos.html#gráfico-ct-cv-e-cf",
+    "title": "Microeconomia",
+    "section": "Gráfico: CT, CV e CF",
+    "text": "Gráfico: CT, CV e CF"
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#custo-marginal",
+    "href": "slides/09_Funcao_custos.html#custo-marginal",
+    "title": "Microeconomia",
+    "section": "Custo Marginal",
+    "text": "Custo Marginal\nÉ a variação do custo total quando se produz uma unidade adicional de output:\n\\[Cmg = \\frac{\\Delta CT}{\\Delta Q} = \\frac{dCT}{dQ}\\]\n\nComo \\(CF\\) é constante, \\(\\Delta CF = 0\\), portanto:\n\\[Cmg = \\frac{\\Delta CV}{\\Delta Q} = \\frac{dCV}{dQ}\\]\n\n\n\n\n\nO custo marginal é independente do custo fixo — pode calcular-se a partir de \\(CT\\) ou de \\(CV\\) com o mesmo resultado."
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#custo-marginal-e-mpl",
+    "href": "slides/09_Funcao_custos.html#custo-marginal-e-mpl",
+    "title": "Microeconomia",
+    "section": "Custo Marginal e MPL",
+    "text": "Custo Marginal e MPL\nExiste uma relação inversa entre \\(Cmg\\) e \\(MPL\\). Se o salário por unidade de \\(L\\) é \\(W\\):\n\\[Cmg = \\frac{W}{MPL}\\]\n\n\nNa Etapa I (MPL crescente) → \\(Cmg\\) é decrescente\nNo óptimo técnico (APL máximo) → \\(Cmg = CVM\\) (mínimo de \\(CVM\\))\nNa Etapa II (MPL decrescente, \\(MPL &gt; 0\\)) → \\(Cmg\\) é crescente\n\n\n\n\n\n\nA Lei dos Rendimentos Marginais Decrescentes implica que o \\(Cmg\\) é crescente na Zona Económica de Exploração — fundamento da Lei da Oferta."
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#custos-médios",
+    "href": "slides/09_Funcao_custos.html#custos-médios",
+    "title": "Microeconomia",
+    "section": "Custos Médios",
+    "text": "Custos Médios\nDividem o custo por unidade produzida:\n\nCusto Fixo Médio: \\(CFM = \\dfrac{CF}{Q}\\) — sempre decrescente (o custo fixo dilui-se por mais unidades)\nCusto Variável Médio: \\(CVM = \\dfrac{CV}{Q}\\) — forma em \\(U\\); mínimo onde \\(Cmg = CVM\\)\nCusto Total Médio: \\(CTM = \\dfrac{CT}{Q} = CFM + CVM\\) — forma em \\(U\\); mínimo onde \\(Cmg = CTM\\)\n\n\n\\[CTM = CFM + CVM \\implies CTM &gt; CVM \\text{ sempre}\\]"
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#tabela-com-todos-os-custos",
+    "href": "slides/09_Funcao_custos.html#tabela-com-todos-os-custos",
+    "title": "Microeconomia",
+    "section": "Tabela com Todos os Custos",
+    "text": "Tabela com Todos os Custos\n\n\nAmarelo: \\(Cmg\\) decrescente (Etapa I)\nVerde: \\(CVM\\) próximo do mínimo (onde \\(Cmg \\approx CVM\\))\n\\(CTM\\) está sempre acima de \\(CVM\\) (diferença = \\(CFM\\))"
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#geometria-dos-custos-médios-e-marginal",
+    "href": "slides/09_Funcao_custos.html#geometria-dos-custos-médios-e-marginal",
+    "title": "Microeconomia",
+    "section": "Geometria dos Custos Médios e Marginal",
+    "text": "Geometria dos Custos Médios e Marginal"
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#propriedades-fundamentais",
+    "href": "slides/09_Funcao_custos.html#propriedades-fundamentais",
+    "title": "Microeconomia",
+    "section": "Propriedades Fundamentais",
+    "text": "Propriedades Fundamentais\n1. \\(Cmg\\) intersecta \\(CVM\\) no mínimo de \\(CVM\\)\n\nSe \\(Cmg &lt; CVM\\): o custo da última unidade é inferior à média → \\(CVM\\) desce\nSe \\(Cmg &gt; CVM\\): o custo da última unidade é superior à média → \\(CVM\\) sobe\nSe \\(Cmg = CVM\\): estamos no mínimo de \\(CVM\\)\n\n\n2. \\(Cmg\\) intersecta \\(CTM\\) no mínimo de \\(CTM\\) (pelo mesmo raciocínio)\n\n\n3. \\(CTM &gt; CVM\\) sempre (a diferença é o \\(CFM &gt; 0\\))\n\n\n4. \\(CFM\\) é sempre decrescente e tende para 0 → \\(CTM\\) converge para \\(CVM\\) quando \\(Q \\to \\infty\\)"
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#exemplo-analítico-completo",
+    "href": "slides/09_Funcao_custos.html#exemplo-analítico-completo",
+    "title": "Microeconomia",
+    "section": "Exemplo Analítico Completo",
+    "text": "Exemplo Analítico Completo\nDada \\(CT = Q^3 - 6Q^2 + 15Q + 10\\):\n\n\\[CF = 10 \\quad \\text{(termo independente)}\\] \\[CV = Q^3 - 6Q^2 + 15Q\\]\n\n\n\\[Cmg = \\frac{dCT}{dQ} = 3Q^2 - 12Q + 15\\]\n\n\n\\[CVM = \\frac{CV}{Q} = Q^2 - 6Q + 15\\] \\[CTM = \\frac{CT}{Q} = Q^2 - 6Q + 15 + \\frac{10}{Q}\\]"
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#mínimo-de-cvm-e-ctm",
+    "href": "slides/09_Funcao_custos.html#mínimo-de-cvm-e-ctm",
+    "title": "Microeconomia",
+    "section": "Mínimo de CVM e CTM",
+    "text": "Mínimo de CVM e CTM\nPara \\(CT = Q^3 - 6Q^2 + 15Q + 10\\):\nMínimo de \\(CVM\\): onde \\(Cmg = CVM\\):\n\\[3Q^2 - 12Q + 15 = Q^2 - 6Q + 15\\] \\[2Q^2 - 6Q = 0 \\implies Q(2Q - 6) = 0 \\implies Q_{CVM_{min}} = 3\\]\n\n\\(CVM_{min} = 9 - 18 + 15 = 6\\); confirmação: \\(Cmg(3) = 27 - 36 + 15 = 6\\) ✓\n\n\nMínimo de \\(CTM\\): onde \\(Cmg = CTM\\), ou \\(\\frac{dCTM}{dQ} = 0\\):\n\\[\\frac{dCTM}{dQ} = 2Q - 6 - \\frac{10}{Q^2} = 0\\]\nNumericamente: \\(Q_{CTM_{min}} \\approx 3.47\\); \\(CTM_{min} \\approx 9.10\\)"
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#exercícios-escolha-múltipla-1",
+    "href": "slides/09_Funcao_custos.html#exercícios-escolha-múltipla-1",
+    "title": "Microeconomia",
+    "section": "Exercícios — Escolha Múltipla (1)",
+    "text": "Exercícios — Escolha Múltipla (1)\n1. Para a função \\(CT = 2Q^2 + 8Q + 50\\), qual é o Custo Marginal?\n\n\\(Cmg = 2Q^2 + 8Q\\)\n\\(Cmg = 4Q + 8\\) ✓\n\\(Cmg = 2Q + 8\\)\n\\(Cmg = 4Q\\)\n\n\nSolução: \\(Cmg = \\frac{dCT}{dQ} = 4Q + 8\\).\nVerificação: \\(CV = 2Q^2 + 8Q\\); \\(\\frac{dCV}{dQ} = 4Q + 8\\) — o mesmo resultado ✓"
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#exercícios-escolha-múltipla-2",
+    "href": "slides/09_Funcao_custos.html#exercícios-escolha-múltipla-2",
+    "title": "Microeconomia",
+    "section": "Exercícios — Escolha Múltipla (2)",
+    "text": "Exercícios — Escolha Múltipla (2)\n2. Para qual das seguintes afirmações sobre custos a curto prazo a afirmação é falsa?\n\nO \\(CFM\\) é sempre decrescente com \\(Q\\).\nO \\(Cmg\\) intersecta o \\(CVM\\) no mínimo do \\(CVM\\).\nO \\(CTM\\) intersecta o \\(CVM\\) no mínimo do \\(CVM\\). ✓ (é falsa)\nO \\(Cmg\\) é independente do custo fixo.\n\n\nSolução: A afirmação c) é falsa. Quem intersecta \\(CVM\\) no mínimo é o \\(Cmg\\), não o \\(CTM\\). O \\(CTM\\) é sempre maior que o \\(CVM\\) e intersecta o \\(Cmg\\) no seu próprio mínimo."
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#exercício-de-desenvolvimento",
+    "href": "slides/09_Funcao_custos.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício de Desenvolvimento",
+    "text": "Exercício de Desenvolvimento\nEnunciado: Uma empresa tem a função de custos totais \\(CT = Q^3 - 9Q^2 + 30Q + 18\\).\n\nIdentifique \\(CF\\), \\(CV(Q)\\), \\(CVM(Q)\\), \\(CTM(Q)\\) e \\(Cmg(Q)\\).\nDetermine a produção no mínimo de \\(CVM\\) e o respectivo valor mínimo. Confirme que \\(Cmg = CVM\\) nesse ponto.\nDetermine a produção no mínimo de \\(CTM\\). Confirme que \\(Cmg = CTM\\) nesse ponto."
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#solução-desenvolvimento-a",
+    "href": "slides/09_Funcao_custos.html#solução-desenvolvimento-a",
+    "title": "Microeconomia",
+    "section": "Solução — Desenvolvimento (a)",
+    "text": "Solução — Desenvolvimento (a)\n\\[CT = Q^3 - 9Q^2 + 30Q + 18\\]\n\n\\[CF = 18 \\qquad CV = Q^3 - 9Q^2 + 30Q\\]\n\n\n\\[Cmg = 3Q^2 - 18Q + 30\\]\n\n\n\\[CVM = \\frac{CV}{Q} = Q^2 - 9Q + 30\\] \\[CTM = \\frac{CT}{Q} = Q^2 - 9Q + 30 + \\frac{18}{Q}\\]"
+  },
+  {
+    "objectID": "slides/09_Funcao_custos.html#solução-desenvolvimento-b-e-c",
+    "href": "slides/09_Funcao_custos.html#solução-desenvolvimento-b-e-c",
+    "title": "Microeconomia",
+    "section": "Solução — Desenvolvimento (b) e (c)",
+    "text": "Solução — Desenvolvimento (b) e (c)\nMínimo de \\(CVM\\) (\\(Cmg = CVM\\)): \\[3Q^2 - 18Q + 30 = Q^2 - 9Q + 30\\] \\[2Q^2 - 9Q = 0 \\implies Q(2Q - 9) = 0 \\implies Q_{CVM_{min}} = 4.5\\]\n\n\\(CVM(4.5) = 20.25 - 40.5 + 30 = 9.75\\)\n\\(Cmg(4.5) = 3(20.25) - 18(4.5) + 30 = 60.75 - 81 + 30 = 9.75\\) ✓\n\n\nMínimo de \\(CTM\\) (\\(Cmg = CTM\\), ou \\(\\frac{dCTM}{dQ}=0\\)):\n\\[\\frac{dCTM}{dQ} = 2Q - 9 - \\frac{18}{Q^2} = 0 \\implies 2Q^3 - 9Q^2 - 18 = 0\\]\nNumericamente: \\(Q_{CTM_{min}} \\approx 4.87\\); \\(CTM(4.87) \\approx 13.59\\); \\(Cmg(4.87) \\approx 13.50\\) ✓"
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html",
+    "href": "slides/14_funcao_custos-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Objectivo: Derivar e interpretar as componentes da função de custos a curto prazo — fixo, variável, médio e marginal — e compreender as suas relações geométricas e analíticas."
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#função-de-custos",
+    "href": "slides/14_funcao_custos-document.html#função-de-custos",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Objectivo: Derivar e interpretar as componentes da função de custos a curto prazo — fixo, variável, médio e marginal — e compreender as suas relações geométricas e analíticas."
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#do-processo-produtivo-aos-custos",
+    "href": "slides/14_funcao_custos-document.html#do-processo-produtivo-aos-custos",
+    "title": "Microeconomia",
+    "section": "2 Do Processo Produtivo aos Custos",
+    "text": "2 Do Processo Produtivo aos Custos\nO objectivo da empresa é maximizar o lucro:\n\\[\\Pi = \\text{Receitas Totais} - \\text{Custos Totais}\\]\n\nPara isso, é necessário conhecer a função de custos: como variam os custos com o nível de produção \\(Q\\).\n\n\nA curto prazo, com \\(K\\) fixo e \\(L\\) variável, os custos dividem-se em duas componentes muito distintas."
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#custo-fixo-e-custo-variável",
+    "href": "slides/14_funcao_custos-document.html#custo-fixo-e-custo-variável",
+    "title": "Microeconomia",
+    "section": "3 Custo Fixo e Custo Variável",
+    "text": "3 Custo Fixo e Custo Variável\n\\[CT = C(Q) = CF + CV(Q)\\]\n\n\nCusto Fixo (\\(CF\\)): não depende da quantidade produzida — é o custo dos fatores fixos (\\(K\\)). Existe mesmo que \\(Q = 0\\).\n\n\n\n\nCusto Variável (\\(CV\\)): depende da quantidade produzida — é o custo do trabalho contratado (\\(W \\times L\\)). Aumenta com \\(Q\\).\n\n\n\n\n\n\n\n\n\n\\(CV(0) = 0\\) — se não se produz nada, não se contrata trabalho. Mas \\(CF &gt; 0\\) mesmo com \\(Q = 0\\)."
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#exemplo-da-função-de-produção-à-função-de-custos",
+    "href": "slides/14_funcao_custos-document.html#exemplo-da-função-de-produção-à-função-de-custos",
+    "title": "Microeconomia",
+    "section": "4 Exemplo: Da Função de Produção à Função de Custos",
+    "text": "4 Exemplo: Da Função de Produção à Função de Custos\nDados: custo de \\(K\\) instalado \\(= 60\\); salário por unidade de \\(L\\) \\(= 250\\)\n\nNote que a curva de \\(CT\\) é paralela à de \\(CV\\) — distam sempre \\(CF = 60\\)."
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#gráfico-ct-cv-e-cf",
+    "href": "slides/14_funcao_custos-document.html#gráfico-ct-cv-e-cf",
+    "title": "Microeconomia",
+    "section": "5 Gráfico: CT, CV e CF",
+    "text": "5 Gráfico: CT, CV e CF"
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#custo-marginal",
+    "href": "slides/14_funcao_custos-document.html#custo-marginal",
+    "title": "Microeconomia",
+    "section": "6 Custo Marginal",
+    "text": "6 Custo Marginal\nÉ a variação do custo total quando se produz uma unidade adicional de output:\n\\[Cmg = \\frac{\\Delta CT}{\\Delta Q} = \\frac{dCT}{dQ}\\]\n\nComo \\(CF\\) é constante, \\(\\Delta CF = 0\\), portanto:\n\\[Cmg = \\frac{\\Delta CV}{\\Delta Q} = \\frac{dCV}{dQ}\\]\n\n\n\n\n\n\n\n\nO custo marginal é independente do custo fixo — pode calcular-se a partir de \\(CT\\) ou de \\(CV\\) com o mesmo resultado."
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#custo-marginal-e-mpl",
+    "href": "slides/14_funcao_custos-document.html#custo-marginal-e-mpl",
+    "title": "Microeconomia",
+    "section": "7 Custo Marginal e MPL",
+    "text": "7 Custo Marginal e MPL\nExiste uma relação inversa entre \\(Cmg\\) e \\(MPL\\). Se o salário por unidade de \\(L\\) é \\(W\\):\n\\[Cmg = \\frac{W}{MPL}\\]\n\n\nNa Etapa I (MPL crescente) → \\(Cmg\\) é decrescente\nNo óptimo técnico (APL máximo) → \\(Cmg = CVM\\) (mínimo de \\(CVM\\))\nNa Etapa II (MPL decrescente, \\(MPL &gt; 0\\)) → \\(Cmg\\) é crescente\n\n\n\n\n\n\n\n\n\nA Lei dos Rendimentos Marginais Decrescentes implica que o \\(Cmg\\) é crescente na Zona Económica de Exploração — fundamento da Lei da Oferta."
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#custos-médios",
+    "href": "slides/14_funcao_custos-document.html#custos-médios",
+    "title": "Microeconomia",
+    "section": "8 Custos Médios",
+    "text": "8 Custos Médios\nDividem o custo por unidade produzida:\n\n\nCusto Fixo Médio: \\(CFM = \\dfrac{CF}{Q}\\) — sempre decrescente (o custo fixo dilui-se por mais unidades)\nCusto Variável Médio: \\(CVM = \\dfrac{CV}{Q}\\) — forma em \\(U\\); mínimo onde \\(Cmg = CVM\\)\nCusto Total Médio: \\(CTM = \\dfrac{CT}{Q} = CFM + CVM\\) — forma em \\(U\\); mínimo onde \\(Cmg = CTM\\)\n\n\n\n\\[CTM = CFM + CVM \\implies CTM &gt; CVM \\text{ sempre}\\]"
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#tabela-com-todos-os-custos",
+    "href": "slides/14_funcao_custos-document.html#tabela-com-todos-os-custos",
+    "title": "Microeconomia",
+    "section": "9 Tabela com Todos os Custos",
+    "text": "9 Tabela com Todos os Custos\n\n\nAmarelo: \\(Cmg\\) decrescente (Etapa I)\nVerde: \\(CVM\\) próximo do mínimo (onde \\(Cmg \\approx CVM\\))\n\\(CTM\\) está sempre acima de \\(CVM\\) (diferença = \\(CFM\\))"
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#geometria-dos-custos-médios-e-marginal",
+    "href": "slides/14_funcao_custos-document.html#geometria-dos-custos-médios-e-marginal",
+    "title": "Microeconomia",
+    "section": "10 Geometria dos Custos Médios e Marginal",
+    "text": "10 Geometria dos Custos Médios e Marginal"
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#propriedades-fundamentais",
+    "href": "slides/14_funcao_custos-document.html#propriedades-fundamentais",
+    "title": "Microeconomia",
+    "section": "11 Propriedades Fundamentais",
+    "text": "11 Propriedades Fundamentais\n1. \\(Cmg\\) intersecta \\(CVM\\) no mínimo de \\(CVM\\)\n\nSe \\(Cmg &lt; CVM\\): o custo da última unidade é inferior à média → \\(CVM\\) desce\nSe \\(Cmg &gt; CVM\\): o custo da última unidade é superior à média → \\(CVM\\) sobe\nSe \\(Cmg = CVM\\): estamos no mínimo de \\(CVM\\)\n\n\n2. \\(Cmg\\) intersecta \\(CTM\\) no mínimo de \\(CTM\\) (pelo mesmo raciocínio)\n\n\n3. \\(CTM &gt; CVM\\) sempre (a diferença é o \\(CFM &gt; 0\\))\n\n\n4. \\(CFM\\) é sempre decrescente e tende para 0 → \\(CTM\\) converge para \\(CVM\\) quando \\(Q \\to \\infty\\)"
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#exemplo-analítico-completo",
+    "href": "slides/14_funcao_custos-document.html#exemplo-analítico-completo",
+    "title": "Microeconomia",
+    "section": "12 Exemplo Analítico Completo",
+    "text": "12 Exemplo Analítico Completo\nDada \\(CT = Q^3 - 6Q^2 + 15Q + 10\\):\n\n\\[CF = 10 \\quad \\text{(termo independente)}\\] \\[CV = Q^3 - 6Q^2 + 15Q\\]\n\n\n\\[Cmg = \\frac{dCT}{dQ} = 3Q^2 - 12Q + 15\\]\n\n\n\\[CVM = \\frac{CV}{Q} = Q^2 - 6Q + 15\\] \\[CTM = \\frac{CT}{Q} = Q^2 - 6Q + 15 + \\frac{10}{Q}\\]"
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#mínimo-de-cvm-e-ctm",
+    "href": "slides/14_funcao_custos-document.html#mínimo-de-cvm-e-ctm",
+    "title": "Microeconomia",
+    "section": "13 Mínimo de CVM e CTM",
+    "text": "13 Mínimo de CVM e CTM\nPara \\(CT = Q^3 - 6Q^2 + 15Q + 10\\):\nMínimo de \\(CVM\\): onde \\(Cmg = CVM\\):\n\\[3Q^2 - 12Q + 15 = Q^2 - 6Q + 15\\] \\[2Q^2 - 6Q = 0 \\implies Q(2Q - 6) = 0 \\implies Q_{CVM_{min}} = 3\\]\n\n\\(CVM_{min} = 9 - 18 + 15 = 6\\); confirmação: \\(Cmg(3) = 27 - 36 + 15 = 6\\) ✓\n\n\nMínimo de \\(CTM\\): onde \\(Cmg = CTM\\), ou \\(\\frac{dCTM}{dQ} = 0\\):\n\\[\\frac{dCTM}{dQ} = 2Q - 6 - \\frac{10}{Q^2} = 0\\]\nNumericamente: \\(Q_{CTM_{min}} \\approx 3.47\\); \\(CTM_{min} \\approx 9.10\\)"
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#exercícios-escolha-múltipla-1",
+    "href": "slides/14_funcao_custos-document.html#exercícios-escolha-múltipla-1",
+    "title": "Microeconomia",
+    "section": "14 Exercícios — Escolha Múltipla (1)",
+    "text": "14 Exercícios — Escolha Múltipla (1)\n1. Para a função \\(CT = 2Q^2 + 8Q + 50\\), qual é o Custo Marginal?\n\n\n\\(Cmg = 2Q^2 + 8Q\\)\n\\(Cmg = 4Q + 8\\) ✓\n\\(Cmg = 2Q + 8\\)\n\\(Cmg = 4Q\\)\n\n\n\nSolução: \\(Cmg = \\frac{dCT}{dQ} = 4Q + 8\\).\nVerificação: \\(CV = 2Q^2 + 8Q\\); \\(\\frac{dCV}{dQ} = 4Q + 8\\) — o mesmo resultado ✓"
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#exercícios-escolha-múltipla-2",
+    "href": "slides/14_funcao_custos-document.html#exercícios-escolha-múltipla-2",
+    "title": "Microeconomia",
+    "section": "15 Exercícios — Escolha Múltipla (2)",
+    "text": "15 Exercícios — Escolha Múltipla (2)\n2. Para qual das seguintes afirmações sobre custos a curto prazo a afirmação é falsa?\n\n\nO \\(CFM\\) é sempre decrescente com \\(Q\\).\nO \\(Cmg\\) intersecta o \\(CVM\\) no mínimo do \\(CVM\\).\nO \\(CTM\\) intersecta o \\(CVM\\) no mínimo do \\(CVM\\). ✓ (é falsa)\nO \\(Cmg\\) é independente do custo fixo.\n\n\n\nSolução: A afirmação c) é falsa. Quem intersecta \\(CVM\\) no mínimo é o \\(Cmg\\), não o \\(CTM\\). O \\(CTM\\) é sempre maior que o \\(CVM\\) e intersecta o \\(Cmg\\) no seu próprio mínimo."
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#exercício-de-desenvolvimento",
+    "href": "slides/14_funcao_custos-document.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "16 Exercício de Desenvolvimento",
+    "text": "16 Exercício de Desenvolvimento\nEnunciado: Uma empresa tem a função de custos totais \\(CT = Q^3 - 9Q^2 + 30Q + 18\\).\n\nIdentifique \\(CF\\), \\(CV(Q)\\), \\(CVM(Q)\\), \\(CTM(Q)\\) e \\(Cmg(Q)\\).\nDetermine a produção no mínimo de \\(CVM\\) e o respectivo valor mínimo. Confirme que \\(Cmg = CVM\\) nesse ponto.\nDetermine a produção no mínimo de \\(CTM\\). Confirme que \\(Cmg = CTM\\) nesse ponto."
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#solução-desenvolvimento-a",
+    "href": "slides/14_funcao_custos-document.html#solução-desenvolvimento-a",
+    "title": "Microeconomia",
+    "section": "17 Solução — Desenvolvimento (a)",
+    "text": "17 Solução — Desenvolvimento (a)\n\\[CT = Q^3 - 9Q^2 + 30Q + 18\\]\n\n\\[CF = 18 \\qquad CV = Q^3 - 9Q^2 + 30Q\\]\n\n\n\\[Cmg = 3Q^2 - 18Q + 30\\]\n\n\n\\[CVM = \\frac{CV}{Q} = Q^2 - 9Q + 30\\] \\[CTM = \\frac{CT}{Q} = Q^2 - 9Q + 30 + \\frac{18}{Q}\\]"
+  },
+  {
+    "objectID": "slides/14_funcao_custos-document.html#solução-desenvolvimento-b-e-c",
+    "href": "slides/14_funcao_custos-document.html#solução-desenvolvimento-b-e-c",
+    "title": "Microeconomia",
+    "section": "18 Solução — Desenvolvimento (b) e (c)",
+    "text": "18 Solução — Desenvolvimento (b) e (c)\nMínimo de \\(CVM\\) (\\(Cmg = CVM\\)): \\[3Q^2 - 18Q + 30 = Q^2 - 9Q + 30\\] \\[2Q^2 - 9Q = 0 \\implies Q(2Q - 9) = 0 \\implies Q_{CVM_{min}} = 4.5\\]\n\n\\(CVM(4.5) = 20.25 - 40.5 + 30 = 9.75\\)\n\\(Cmg(4.5) = 3(20.25) - 18(4.5) + 30 = 60.75 - 81 + 30 = 9.75\\) ✓\n\n\nMínimo de \\(CTM\\) (\\(Cmg = CTM\\), ou \\(\\frac{dCTM}{dQ}=0\\)):\n\\[\\frac{dCTM}{dQ} = 2Q - 9 - \\frac{18}{Q^2} = 0 \\implies 2Q^3 - 9Q^2 - 18 = 0\\]\nNumericamente: \\(Q_{CTM_{min}} \\approx 4.87\\); \\(CTM(4.87) \\approx 13.59\\); \\(Cmg(4.87) \\approx 13.50\\) ✓"
   }
 ]
