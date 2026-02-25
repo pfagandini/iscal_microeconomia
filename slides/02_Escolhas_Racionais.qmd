@@ -32,6 +32,10 @@ format:
       method: mathjax
     number-sections: true
     embed-resources: false
+
+  beamer:
+    theme: default
+    classoption: handout
 editor: source
 execute:
   enabled: true

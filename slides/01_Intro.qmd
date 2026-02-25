@@ -32,6 +32,10 @@ format:
     math: 
       method: mathjax
 
+  beamer:
+    theme: default
+    classoption: handout
+
 editor: source
 execute:
   enabled: true

@@ -501,7 +501,7 @@
     "href": "material.html#slides",
     "title": "Material",
     "section": "Slides",
-    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução 📄 PDF\nEscolhas Racionais 📄 PDF\nFPP e Ventagens do Comêrcio 📄 PDF\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências 📄 PDF\nUtilidade e procura 📄 PDF\nProcura agregada a excedente 📄 PDF\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
+    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
   },
   {
     "objectID": "exercises/Capitulo_3C.html#c.-teoria-do-produtor-e-equilíbrio---longo-prazo",
@@ -2426,7 +2426,7 @@
     "href": "slides/06_cabaz_restricao_preferencias-document.html#curvas-de-indiferença-não-se-cruzam-1",
     "title": "Microeconomia",
     "section": "3.10 Curvas de Indiferença Não se Cruzam",
-    "text": "3.10 Curvas de Indiferença Não se Cruzam\nThe logic of the diagram:\n\n\\(C=(1,2)\\) is the actual intersection — point on both curves simultaneously\n\n\\(A=(2,1)\\) is on \\(U_1\\) only; \\(D=(2,1.2)\\) is on \\(U_2\\) only — same \\(X\\), \\(D\\) has more \\(Y\\)\n\nArrow makes the “\\(D \\succ A\\)” visually immediate\n\nThe contradiction is now geometrically clear: the curves really do cross"
+    "text": "3.10 Curvas de Indiferença Não se Cruzam\nA lógica do gráfico:\n\n\\(C=(1,2)\\) é a intersecção, um ponto nas duas curvas\n\n\\(A=(2,1)\\) está só em \\(U_1\\); \\(D=(2,1.2)\\) está só em \\(U_2\\) — o mesmo \\(X\\), mas \\(D\\) tem mais \\(Y\\)\n\nA seta “\\(D \\succ A\\)” evidencia esta relação\n\nA contradição é evidente: As CI cruzam-se!"
   },
   {
     "objectID": "slides/06_cabaz_restricao_preferencias-document.html#racionalidade-do-consumidor",
@@ -2741,7 +2741,7 @@
     "href": "slides/04_Cabaz_restricao_preferencias.html#curvas-de-indiferença-não-se-cruzam-1",
     "title": "Microeconomia",
     "section": "Curvas de Indiferença Não se Cruzam",
-    "text": "Curvas de Indiferença Não se Cruzam\nThe logic of the diagram:\n\n\\(C=(1,2)\\) is the actual intersection — point on both curves simultaneously\n\n\\(A=(2,1)\\) is on \\(U_1\\) only; \\(D=(2,1.2)\\) is on \\(U_2\\) only — same \\(X\\), \\(D\\) has more \\(Y\\)\n\nArrow makes the “\\(D \\succ A\\)” visually immediate\n\nThe contradiction is now geometrically clear: the curves really do cross"
+    "text": "Curvas de Indiferença Não se Cruzam\nA lógica do gráfico:\n\n\\(C=(1,2)\\) é a intersecção, um ponto nas duas curvas\n\n\\(A=(2,1)\\) está só em \\(U_1\\); \\(D=(2,1.2)\\) está só em \\(U_2\\) — o mesmo \\(X\\), mas \\(D\\) tem mais \\(Y\\)\n\nA seta “\\(D \\succ A\\)” evidencia esta relação\n\nA contradição é evidente: As CI cruzam-se!"
   },
   {
     "objectID": "slides/04_Cabaz_restricao_preferencias.html#racionalidade-do-consumidor",

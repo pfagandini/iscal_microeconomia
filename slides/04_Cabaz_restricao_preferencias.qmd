@@ -33,6 +33,9 @@ format:
     embed-resources: false
     echo: false
     code-tools: false
+  beamer:
+    theme: default
+    classoption: handout
 editor: source
 execute:
   enabled: true
@@ -357,12 +360,12 @@ Consequência directa: **as curvas de indiferença não se podem cruzar!**
 
 ## Curvas de Indiferença Não se Cruzam
 
-The logic of the diagram:
+A lógica do gráfico:
 
-- $C=(1,2)$ is the actual intersection — point on **both** curves simultaneously  
-- $A=(2,1)$ is on $U_1$ only; $D=(2,1.2)$ is on $U_2$ only — same $X$, $D$ has more $Y$  
-- Arrow makes the "$D \succ A$" visually immediate  
-- The contradiction is now geometrically clear: the curves really do cross
+- $C=(1,2)$ é a intersecção, um ponto nas **duas** curvas  
+- $A=(2,1)$ está só em $U_1$; $D=(2,1.2)$ está só em $U_2$ — o mesmo $X$, mas $D$ tem mais $Y$  
+- A seta "$D \succ A$" evidencia esta relação  
+- A contradição é evidente: As CI cruzam-se!
 
 ## Racionalidade do Consumidor
 
