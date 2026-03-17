@@ -1,0 +1,474 @@
+---
+title: "Microeconomia"
+subtitle: "Do Consumidor ao Produtor: Porquê Estudar Empresas?"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: motivacao_produtor-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+    echo: false
+    code-tools: false
+  beamer:
+    theme: default
+    classoption: handout
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+## Até agora... :books:
+
+::: {.nonincremental}
+- Estudámos **o lado da procura**: como é que os consumidores fazem escolhas
+- Vimos que os consumidores maximizam a utilidade sujeita a uma restrição orçamental
+- Derivámos a **curva da procura** a partir dessas escolhas
+:::
+
+. . .
+
+::: {.callout-important}
+## A grande questão
+Mas... **de onde vêm os bens que os consumidores compram?** :thinking:
+:::
+
+## O Outro Lado do Mercado :handshake:
+
+No mercado existem dois agentes fundamentais:
+
+. . .
+
+::: {.columns}
+::: {.column width="48%"}
+::: {.callout-note}
+## Consumidores (já vimos!)
+- Maximizam **utilidade**
+- Sujeitos a uma **restrição orçamental**
+- Geram a **procura**
+:::
+:::
+
+::: {.column width="48%"}
+::: {.callout-tip}
+## Produtores (vamos ver!)
+- Maximizam **lucro**
+- Sujeitos a uma **tecnologia** e a **custos**
+- Geram a **oferta**
+:::
+:::
+:::
+
+## Paralelo: Consumidor vs. Produtor :balance_scale:
+
+| | **Consumidor** | **Produtor** |
+|---|---|---|
+| Objetivo | Maximizar utilidade | Maximizar lucro |
+| Restrição | Orçamento ($W$) | Tecnologia e custos |
+| Escolhe | Cabaz $(x, y)$ | Quantidade $Q$ e inputs |
+| Gera | Curva da Procura | Curva da Oferta |
+| Regra de ouro | $\frac{UMg_x}{p_x} = \frac{UMg_y}{p_y}$ | $Cmg = Bmg$ (de novo!) |
+
+. . .
+
+:point_right: O princípio **custo marginal = benefício marginal** reaparece!
+
+
+## Porquê estudar as empresas? :factory:
+
+As empresas estão em todo o lado. Todos os dias interagimos com dezenas delas.
+
+. . .
+
+Pensem no vosso dia de hoje:
+
+. . .
+
+- :alarm_clock: O **despertador** do telemóvel (Apple? Samsung? Xiaomi?)
+- :coffee: O **café** da manhã (Delta? Nespresso? Do café da esquina?)
+- :bus: O **transporte** para o ISCAL (Carris? Metro? Uber? Bolt?)
+- :sandwich: O **almoço** (cantina? restaurante? take-away?)
+
+. . .
+
+Cada uma destas coisas foi produzida por uma empresa que tomou **decisões económicas**.
+
+
+## Caso 1: A Padaria do Bairro :bread:
+
+Imaginemos a **Padaria São José**, no centro de Lisboa.
+
+. . .
+
+A D. Maria, a dona, acorda todos os dias às 4h da manhã. Ela tem de decidir:
+
+. . .
+
+- **Quantos pães** fazer hoje?
+- **Quantos empregados** chamar?
+- Deve comprar um **forno novo** (maior)?
+- Qual o **preço** a cobrar por cada pão?
+
+. . .
+
+Cada uma destas decisões é uma **decisão de produção** que vamos aprender a modelar. (Bom, o preço *not really*)
+
+
+## Caso 1: O Dilema da D. Maria :thinking:
+
+A D. Maria tem **1 forno** e pode contratar de 0 a 5 ajudantes.
+
+. . .
+
+| Ajudantes | Pães por dia |
+|:---------:|:------------:|
+| 0 | 0 |
+| 1 | 80 |
+| 2 | 200 |
+| 3 | 280 |
+| 4 | 320 |
+| 5 | 330 |
+
+. . .
+
+:point_right: O que acontece à produção à medida que se adicionam ajudantes?
+
+
+## Caso 1: Observações Importantes :bulb:
+
+::: {.nonincremental}
+- O **1.º ajudante** acrescenta **80** pães
+- O **2.º ajudante** acrescenta **120** pães (mais que o 1.º!)
+- O **3.º ajudante** acrescenta **80** pães
+- O **4.º ajudante** acrescenta **40** pães
+- O **5.º ajudante** acrescenta apenas **10** pães
+:::
+
+. . .
+
+:warning: A partir de certo ponto, cada ajudante adicional **contribui menos**!
+
+. . .
+
+Isto tem um nome: **Lei dos Rendimentos Marginais Decrescentes**
+
+(Vamos formalizar isto na próxima aula.)
+
+
+## Caso 1: E o Preço do Pão? :euro:
+
+A D. Maria vende cada pão a **€0,80**. Cada ajudante custa **€60/dia**.
+
+. . .
+
+Quanto **vale** cada ajudante adicional?
+
+::: {.nonincremental}
+| Ajudante | Pães extra | Receita extra | Custo extra | Compensa? |
+|:--------:|:----------:|:-------------:|:-----------:|:---------:|
+| 1.º | 80 | €64 | €60 | :white_check_mark: |
+| 2.º | 120 | €96 | €60 | :white_check_mark: |
+| 3.º | 80 | €64 | €60 | :white_check_mark: |
+| 4.º | 40 | €32 | €60 | :x: |
+| 5.º | 10 | €8 | €60 | :x: |
+:::
+
+
+## Caso 1: A Decisão Ótima :dart:
+
+:point_right: A D. Maria deve contratar **3 ajudantes**: é o último para o qual a receita extra supera o custo extra.
+
+. . .
+
+A decisão ótima envolve comparar o **custo marginal** com o **benefício marginal** — o mesmo princípio que já conhecem!
+
+. . .
+
+::: {.callout-note}
+## Antevisão
+Nas próximas aulas vamos formalizar esta ideia com **funções de produção** e **funções de custo**, e obter resultados analíticos em vez de tabelas.
+:::
+
+
+## Caso 2: Starbucks vs. Café da Esquina :coffee:
+
+Pensem na diferença entre uma **Starbucks** e o **café do Sr. Manuel**:
+
+. . .
+
+| | **Sr. Manuel** | **Starbucks** |
+|---|---|---|
+| Escala | 1 loja | Milhares de lojas |
+| Funcionários | 1–2 | Centenas de milhares |
+| Compras | Pequenas quantidades | Enormes quantidades |
+| Custo por café | Mais alto | Mais baixo |
+
+. . .
+
+:point_right: A Starbucks beneficia de **economias de escala**: quanto mais produz, menor o custo por unidade.
+
+. . .
+
+Vamos ver quando e porquê isto acontece!
+
+## Caso 3: A Fábrica de Gelados :icecream:
+
+Uma pequena fábrica de gelados tem de decidir como organizar a sua produção.
+
+. . .
+
+::: {.callout-note}
+## Decisões de curto prazo (fábrica já instalada)
+- Quantos trabalhadores contratar?
+- Quantas horas de trabalho por dia?
+- Quantos gelados produzir?
+:::
+
+. . .
+
+::: {.callout-tip}
+## Decisões de longo prazo (tudo pode mudar)
+- Mudar para uma fábrica maior?
+- Investir em máquinas novas?
+- Abrir uma segunda unidade?
+:::
+
+. . .
+
+:point_right: A distinção entre **curto prazo** e **longo prazo** será fundamental.
+
+
+## Caso 4: Porque Fecham Restaurantes? :closed_book:
+
+Em Lisboa, abrem e fecham restaurantes todos os meses.
+
+. . .
+
+Já se perguntaram **porquê**?
+
+. . .
+
+::: {.nonincremental}
+- Se o preço que cobram não cobre os custos, têm **prejuízo**
+- Mas mesmo com prejuízo, alguns continuam abertos durante algum tempo...
+- ...porque já pagaram a renda e o equipamento (**custos fixos**) e só comparam o preço com os **custos variáveis**
+:::
+
+. . .
+
+Vamos aprender quando é que faz sentido uma empresa **continuar a produzir com prejuízo** e quando deve **encerrar**.
+
+
+## Caso 5: A Pandemia e os Custos Fixos :mask:
+
+Durante a pandemia de COVID-19, muitas empresas enfrentaram uma situação extrema.
+
+. . .
+
+::: {.nonincremental}
+- Restaurantes com **rendas** a pagar mas **sem clientes**
+- Ginásios com **equipamento** parado
+- Companhias aéreas com **aviões** estacionados
+:::
+
+. . .
+
+Estas empresas tinham **custos fixos elevados** que não desapareciam por não produzir.
+
+. . .
+
+:point_right: A teoria do produtor ajuda-nos a perceber as **decisões de encerramento temporário** vs. **encerramento definitivo**.
+
+
+## O Mapa da Viagem :world_map:
+
+Nas próximas semanas vamos percorrer este caminho:
+
+. . .
+
+::: {.nonincremental}
+1. :gear: **Função de produção** — como é que inputs se transformam em output?
+2. :chart_with_downwards_trend: **Etapas da produção** — onde é eficiente produzir?
+3. :euro: **Custos** — fixos, variáveis, médios, marginais
+4. :dart: **Otimização** — quanto produzir para maximizar lucro?
+5. :chart_with_upwards_trend: **Curva da oferta** — como nasce a oferta a partir dos custos?
+6. :balance_scale: **Equilíbrio de mercado** — oferta encontra procura
+:::
+
+
+## Inputs e Outputs :gear:
+
+A ideia central da produção é simples:
+
+$$\text{Inputs} \xrightarrow{\text{Tecnologia}} \text{Output}$$
+
+. . .
+
+::: {.columns}
+::: {.column width="48%"}
+**Inputs (fatores de produção):**
+
+::: {.nonincremental}
+- **Trabalho** ($L$) — horas de trabalho
+- **Capital** ($K$) — máquinas, edifícios
+- Matérias-primas, energia...
+:::
+:::
+
+::: {.column width="48%"}
+**Output:**
+
+::: {.nonincremental}
+- A **quantidade produzida** ($Q$)
+- Bens ou serviços
+:::
+:::
+:::
+
+. . .
+
+A **função de produção** $Q = f(K, L)$ resume a tecnologia disponível.
+
+
+## Exemplo: O Mundo à Nossa Volta :globe_showing_Europe_Africa:
+
+::: {.nonincremental}
+| Empresa | Inputs | Output |
+|---------|--------|--------|
+| Padaria | Farinha, forno, padeiro | Pão |
+| Hospital | Médicos, equipamento, camas | Serviços de saúde |
+| ISCAL | Professores, salas, computadores | Formação académica |
+| Uber | Motoristas, carros, app | Serviço de transporte |
+| Netflix | Servidores, conteúdo, programadores | Streaming |
+:::
+
+. . .
+
+:point_right: Em todos os casos, a empresa **combina inputs** para **produzir algo de valor**.
+
+
+## O Princípio que Já Conhecem :recycle:
+
+Lembram-se do princípio fundamental da decisão racional?
+
+. . .
+
+$$\text{Continuar enquanto } Bmg \geq Cmg$$
+
+. . .
+
+Na teoria do consumidor:
+
+::: {.nonincremental}
+- $Bmg$ = utilidade marginal do bem
+- $Cmg$ = preço do bem
+:::
+
+. . .
+
+Na teoria do produtor:
+
+::: {.nonincremental}
+- $Bmg$ = receita da unidade adicional (preço de venda)
+- $Cmg$ = custo de produzir essa unidade adicional
+:::
+
+. . .
+
+:point_right: O mesmo raciocínio, aplicado a um problema diferente!
+
+
+## Um Número para Pensar :bar_chart:
+
+Em Portugal, existem mais de **1,3 milhões de empresas** (dados INE).
+
+. . .
+
+::: {.nonincremental}
+- Cerca de **96%** são **microempresas** (menos de 10 trabalhadores)
+- As PME representam **99,9%** do total
+- Apenas **0,1%** são grandes empresas
+:::
+
+. . .
+
+::: {.callout-important}
+A esmagadora maioria das empresas em Portugal enfrenta exatamente os problemas da "Padaria da D. Maria" — decisões de pequena escala, com recursos limitados.
+:::
+
+
+## O Que Vamos Aprender a Fazer :pencil:
+
+No final desta parte da matéria, vão saber:
+
+. . .
+
+::: {.nonincremental}
+- :white_check_mark: Determinar a quantidade ótima de produção
+- :white_check_mark: Calcular custos e identificar se há lucro ou prejuízo
+- :white_check_mark: Decidir se uma empresa deve produzir ou encerrar
+- :white_check_mark: Derivar a curva de oferta a partir da estrutura de custos
+- :white_check_mark: Encontrar o equilíbrio de mercado (oferta + procura)
+- :white_check_mark: Analisar o impacto de impostos e subsídios
+:::
+
+## Para Pensar Antes da Próxima Aula :brain:
+
+Deixo-vos com duas perguntas para reflexão:
+
+. . .
+
+::: {.callout-tip}
+## Pergunta 1
+Se uma empresa está a ter **prejuízo**, deve fechar imediatamente? Porquê ou porquê não?
+:::
+
+. . .
+
+::: {.callout-tip}
+## Pergunta 2
+Porque é que um café em Lisboa cobra **€1,20** por uma bica, mas um café no aeroporto cobra **€3,50** pela mesma bica? A resposta tem a ver com **custos**, **concorrência**, ou ambos?
+:::
+
+
+## Resumo :memo:
+
+::: {.nonincremental}
+- Passamos do **consumidor** (procura) para o **produtor** (oferta)
+- As empresas tomam decisões sob restrições de **tecnologia** e **custos**
+- O princípio $Cmg = Bmg$ mantém-se como regra de ouro
+- Vamos distinguir decisões de **curto prazo** e **longo prazo**
+- A **curva de oferta** nasce das decisões ótimas do produtor
+:::
+
+. . .
+
+::: {.callout-important}
+## Próximas aulas
+:point_right: **Função de produção**, curto prazo vs. longo prazo, e as etapas do processo produtivo.
+:::

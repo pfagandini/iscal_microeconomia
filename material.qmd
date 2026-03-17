@@ -38,3 +38,8 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 
 
 ### Capítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos
+
+
+## Outro Material
+
+* [Bridge Produtor](slides/motivacao_produtor.qmd)
