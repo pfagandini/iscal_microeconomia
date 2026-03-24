@@ -4246,7 +4246,7 @@
     "href": "slides/10_Geometria_custos.html#cvm-é-o-declive-do-raio-de-origem-a-cv",
     "title": "Microeconomia",
     "section": "CVM é o Declive do Raio de Origem a CV",
-    "text": "CVM é o Declive do Raio de Origem a CV\n\\(CVM(Q) = CV(Q)/Q\\) é o declive do segmento que une a origem ao ponto \\((Q, CV)\\):\n\nO mínimo de \\(CVM\\) ocorre onde o raio de origem é tangente à curva \\(CV\\). Nesse ponto, raio e tangente coincidem \\(\\Rightarrow\\) \\(Cmg = CVM\\)."
+    "text": "CVM é o Declive do Raio de Origem a CV\n\\(CVM(Q) = CV(Q)/Q\\) é o declive do segmento que une a origem ao ponto \\((Q, CV)\\):\n\n\nO mínimo de \\(CVM\\) ocorre onde o raio de origem é tangente à curva \\(CV\\). Nesse ponto, raio e tangente coincidem \\(\\Rightarrow\\) \\(Cmg = CVM\\)."
   },
   {
     "objectID": "slides/10_Geometria_custos.html#ctm-é-o-declive-do-raio-de-origem-a-ct",
@@ -4281,21 +4281,21 @@
     "href": "slides/10_Geometria_custos.html#cfm-cvm-e-ctm-quando-q",
     "title": "Microeconomia",
     "section": "CFM, CVM e CTM quando Q → ∞",
-    "text": "CFM, CVM e CTM quando Q → ∞\n\\[CTM = CFM + CVM = \\frac{CF}{Q} + CVM\\]\nQuando \\(Q \\to +\\infty\\): \\(\\;CFM \\to 0\\;\\) e portanto \\(\\;CTM \\to CVM\\)."
+    "text": "CFM, CVM e CTM quando Q → ∞\n\n\\[CTM = CFM + CVM = \\frac{CF}{Q} + CVM\\]\nQuando \\(Q \\to +\\infty\\): \\(\\;CFM \\to 0\\;\\) e portanto \\(\\;CTM \\to CVM\\)."
   },
   {
     "objectID": "slides/10_Geometria_custos.html#exercícios-escolha-múltipla-1",
     "href": "slides/10_Geometria_custos.html#exercícios-escolha-múltipla-1",
     "title": "Microeconomia",
     "section": "Exercícios — Escolha Múltipla (1)",
-    "text": "Exercícios — Escolha Múltipla (1)\n1. Para a função \\(CT = Q^3 - 12Q^2 + 60Q + 20\\), o mínimo do Custo Marginal ocorre em:\n\n\\(Q = 3\\)\n\\(Q = 4\\) ✓\n\\(Q = 6\\)\n\\(Q = 12\\)\n\n\nSolução: \\(Cmg = 3Q^2 - 24Q + 60\\).\nMínimo: \\(dCmg/dQ = 6Q - 24 = 0 \\Rightarrow Q = 4\\).\n\\(Cmg(4) = 48 - 96 + 60 = 12\\).\nCondição de 2.ª ordem: \\(d^2Cmg/dQ^2 = 6 &gt; 0\\) → mínimo ✓"
+    "text": "Exercícios — Escolha Múltipla (1)\n1. Para a função \\(CT = Q^3 - 12Q^2 + 60Q + 20\\), o mínimo do Custo Marginal ocorre em:\n\n\\(Q = 3\\)\n\\(Q = 4\\)\n\\(Q = 6\\)\n\\(Q = 12\\)\n\n\nSolução: \\(Cmg = 3Q^2 - 24Q + 60\\).\nMínimo: \\(dCmg/dQ = 6Q - 24 = 0 \\Rightarrow Q = 4\\).\n\\(Cmg(4) = 48 - 96 + 60 = 12\\).\nCondição de 2.ª ordem: \\(d^2Cmg/dQ^2 = 6 &gt; 0\\) → mínimo ✓"
   },
   {
     "objectID": "slides/10_Geometria_custos.html#exercícios-escolha-múltipla-2",
     "href": "slides/10_Geometria_custos.html#exercícios-escolha-múltipla-2",
     "title": "Microeconomia",
     "section": "Exercícios — Escolha Múltipla (2)",
-    "text": "Exercícios — Escolha Múltipla (2)\n2. Qual das seguintes afirmações é verdadeira?\n\nO \\(CTM\\) intersecta o \\(CVM\\) no mínimo do \\(CVM\\).\nO mínimo de \\(CTM\\) ocorre sempre para \\(Q\\) menor do que o mínimo de \\(CVM\\).\nO \\(CFM\\) é sempre decrescente e tende para zero quando \\(Q\\) aumenta. ✓\nO \\(Cmg\\) é sempre crescente.\n\n\nSolução:\n\n\nFalsa — é o \\(Cmg\\) que intersecta \\(CVM\\) no seu mínimo.\n\n\nFalsa — o mínimo de \\(CTM\\) ocorre para \\(Q\\) maior que o de \\(CVM\\).\n\nc) Verdadeira — \\(CFM = CF/Q\\) é decrescente em \\(Q\\); \\(\\lim_{Q\\to\\infty} CFM = 0\\).\n\nFalsa — \\(Cmg\\) decresce na Etapa I e cresce na Etapa II."
+    "text": "Exercícios — Escolha Múltipla (2)\n2. Qual das seguintes afirmações é verdadeira?\n\nO \\(CTM\\) intersecta o \\(CVM\\) no mínimo do \\(CVM\\).\nO mínimo de \\(CTM\\) ocorre sempre para \\(Q\\) menor do que o mínimo de \\(CVM\\).\nO \\(CFM\\) é sempre decrescente e tende para zero quando \\(Q\\) aumenta.\nO \\(Cmg\\) é sempre crescente.\n\n\nSolução:\n\n\nFalsa — é o \\(Cmg\\) que intersecta \\(CVM\\) no seu mínimo.\n\n\nFalsa — o mínimo de \\(CTM\\) ocorre para \\(Q\\) maior que o de \\(CVM\\).\n\nc) Verdadeira — \\(CFM = CF/Q\\) é decrescente em \\(Q\\); \\(\\lim_{Q\\to\\infty} CFM = 0\\).\n\nFalsa — \\(Cmg\\) decresce na Etapa I e cresce na Etapa II."
   },
   {
     "objectID": "slides/10_Geometria_custos.html#exercício-de-desenvolvimento",

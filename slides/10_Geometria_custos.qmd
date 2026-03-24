@@ -89,8 +89,8 @@ A geometria das curvas de custo é um **espelho invertido** da geometria das cur
 
 $Cmg$ num dado ponto é o **declive da recta tangente** à curva $CV$ nesse ponto:
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
+
 \begin{tikzpicture}[
   scale = 0.88,
   every node/.style = {scale = 0.78},
@@ -104,20 +104,18 @@ $Cmg$ num dado ponto é o **declive da recta tangente** à curva $CV$ nesse pont
 \draw[->,thick] (0,-0.1) -- (0,5.2) node[left]{$CV$};
 \draw[red, thick, domain=0:5.3, variable=\x, samples=60] plot (\x,{cv(\x)})
   node[right]{$CV$};
-\onslide<2->{
+
   \draw[blue, domain=0.2:3.7, variable=\x] plot (\x,{tgt(\x,25/12)});
   \draw[fill=blue] (25/12,{cv(25/12)}) circle (2.5pt);
   \draw[blue](3.7,{tgt(3.7,25/12)}) node[right]{\footnotesize tangente em $Q_1$: declive $= Cmg_{min}$};
   \draw[dotted] (25/12,0) node[below]{\footnotesize $Q_1$} -- (25/12,{cv(25/12)});
-}
-\onslide<3->{
   \draw[green!60!black, domain=3.1:5.4, variable=\x] plot (\x,{tgt(\x,4.5)});
   \draw[fill=green!60!black] (4.5,{cv(4.5)}) circle (2.5pt);
   \draw[green!60!black](5.4,{tgt(5.4,4.5)}) node[right]{\footnotesize declive $= Cmg > Cmg_{min}$};
   \draw[dotted] (4.5,0) node[below]{\footnotesize $Q_2$} -- (4.5,{cv(4.5)});
-}
+
 \end{tikzpicture}
-\end{center}
+
 ```
 
 ---
@@ -126,8 +124,8 @@ $Cmg$ num dado ponto é o **declive da recta tangente** à curva $CV$ nesse pont
 
 $CVM(Q) = CV(Q)/Q$ é o **declive do segmento** que une a origem ao ponto $(Q, CV)$:
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
+
 \begin{tikzpicture}[
   scale = 0.88,
   every node/.style = {scale = 0.78},
@@ -139,19 +137,16 @@ $CVM(Q) = CV(Q)/Q$ é o **declive do segmento** que une a origem ao ponto $(Q, C
 \draw[->,thick] (0,-0.1) -- (0,4.5) node[left]{$CV$};
 \draw[red, thick, domain=0:5.3, variable=\x, samples=60] plot (\x,{cv(\x)})
   node[right]{$CV$};
-\onslide<2->{
+
   \draw[blue, thick] (0,0) -- (25/8,{cv(25/8)});
   \draw[fill=blue] (25/8,{cv(25/8)}) circle (2.5pt);
   \draw[dotted] (25/8,0) node[below]{\footnotesize $Q_{CVM_{min}}$} -- (25/8,{cv(25/8)});
   \draw[blue](25/8,{cv(25/8)}) node[above right]{\footnotesize raio tangente: $CVM_{min}$};
-}
-\onslide<3->{
   \draw[green!60!black] (0,0) -- (1.5,{cv(1.5)});
   \draw[fill=green!60!black] (1.5,{cv(1.5)}) circle (2.5pt);
   \draw[green!60!black](1.5,{cv(1.5)}) node[above right]{\footnotesize declive raio $> CVM_{min}$};
-}
+
 \end{tikzpicture}
-\end{center}
 ```
 
 ::: {.fragment}
@@ -164,8 +159,8 @@ O mínimo de $CVM$ ocorre onde o **raio de origem é tangente** à curva $CV$. N
 
 Analogamente, $CTM(Q) = CT(Q)/Q$ é o **declive do raio de origem** à curva $CT$:
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
+
 \begin{tikzpicture}[
   scale = 0.88,
   every node/.style = {scale = 0.78},
@@ -179,27 +174,27 @@ Analogamente, $CTM(Q) = CT(Q)/Q$ é o **declive do raio de origem** à curva $CT
 \draw[blue!60!red, thick, domain=0:5.3, variable=\x, samples=60] plot (\x,{ct(\x)})
   node[right]{$CT$};
 \draw[gray, dashed] (0,1) -- (5.2,1) node[right]{\footnotesize $CF$};
-\onslide<2->{
+
   \draw[green!60!black, thick] (0,0) -- (3.93,{ct(3.93)});
   \draw[fill=green!60!black] (3.93,{ct(3.93)}) circle (2.5pt);
   \draw[dotted] (3.93,0) node[below]{\footnotesize $Q_{CTM_{min}}$} -- (3.93,{ct(3.93)});
   \draw[green!60!black](3.93,{ct(3.93)}) node[above right]{\footnotesize raio tangente: $CTM_{min}$};
-}
-\onslide<3->{
+
+
   \draw[red!60!black] (0,0) -- (2,{ct(2)});
   \draw[fill=red!60!black] (2,{ct(2)}) circle (2.5pt);
   \draw[red!60!black](2,{ct(2)}) node[above right]{\footnotesize declive raio $> CTM_{min}$};
-}
+
 \end{tikzpicture}
-\end{center}
+
 ```
 
 ---
 
 ## Diagrama Duplo: CT/CV acima, Custos Médios abaixo
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
+
 \begin{tikzpicture}[
   scale = 0.60,
   every node/.style = {scale = 0.63},
@@ -239,7 +234,7 @@ Analogamente, $CTM(Q) = CT(Q)/Q$ é o **declive do raio de origem** à curva $CT
 \draw[dotted,gray] (3.93,-5.5) -- (3.93,{2*ctm(3.93)-5.5})
   node[above]{\tiny $CTM_{min}$};
 \end{tikzpicture}
-\end{center}
+
 ```
 
 ---
@@ -276,15 +271,18 @@ Raciocínio pela média:
 
 ## CFM, CVM e CTM quando Q → ∞
 
+::: {.small}
 $$CTM = CFM + CVM = \frac{CF}{Q} + CVM$$
 
 Quando $Q \to +\infty$: $\;CFM \to 0\;$ e portanto $\;CTM \to CVM$.
+:::
 
 ::: {.fragment}
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
+
 \begin{tikzpicture}[
   scale = 0.72,
+  font=\tiny,
   every node/.style = {scale = 0.75},
   declare function = {
     cv(\x) = \x - (1/4)*\x^2 + (1/25)*\x^3;
@@ -307,7 +305,7 @@ Quando $Q \to +\infty$: $\;CFM \to 0\;$ e portanto $\;CTM \to CVM$.
 \draw[<->, thin, blue] (5,{ctm(5)}) -- (5,{cvm(5)})
   node[midway,right]{\footnotesize $CFM(5)$};
 \end{tikzpicture}
-\end{center}
+
 ```
 :::
 
@@ -319,7 +317,7 @@ Quando $Q \to +\infty$: $\;CFM \to 0\;$ e portanto $\;CTM \to CVM$.
 
 ::: {.nonincremental}
 a) $Q = 3$
-b) **$Q = 4$** ✓
+b) $Q = 4$
 c) $Q = 6$
 d) $Q = 12$
 :::
@@ -343,7 +341,7 @@ Condição de 2.ª ordem: $d^2Cmg/dQ^2 = 6 > 0$ → mínimo ✓
 ::: {.nonincremental}
 a) O $CTM$ intersecta o $CVM$ no mínimo do $CVM$.
 b) O mínimo de $CTM$ ocorre sempre para $Q$ menor do que o mínimo de $CVM$.
-c) **O $CFM$ é sempre decrescente e tende para zero quando $Q$ aumenta.** ✓
+c) O $CFM$ é sempre decrescente e tende para zero quando $Q$ aumenta.
 d) O $Cmg$ é sempre crescente.
 :::
 
