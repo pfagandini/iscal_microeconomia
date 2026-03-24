@@ -33,6 +33,13 @@ format:
     embed-resources: false
     echo: false
     code-tools: false
+beamer:
+    theme: default
+    classoption: handout
+    header-includes:
+      - \usepackage{colortbl}
+      - \usepackage{multirow}
+      - \usepackage{array}
 editor: source
 execute:
   enabled: true

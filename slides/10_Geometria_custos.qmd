@@ -33,6 +33,9 @@ format:
     embed-resources: false
     echo: false
     code-tools: false
+  beamer:
+    theme: default
+    classoption: handout
 editor: source
 execute:
   enabled: true
