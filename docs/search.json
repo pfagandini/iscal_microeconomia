@@ -3602,7 +3602,7 @@
     "href": "slides/09_Funcao_custos.html#tabela-com-todos-os-custos",
     "title": "Microeconomia",
     "section": "Tabela com Todos os Custos",
-    "text": "Tabela com Todos os Custos\n\n\n\n\\(L\\)\n\\(Q\\)\n\\(CT\\)\n\\(Cmg\\)\n\\(CVM\\)\n\\(CTM\\)\nEtapa\n\n\n\n\n0\n0\n60\n—\n—\n—\n\n\n\n1\n20\n310\n12.50\n12.50\n15.50\nI\n\n\n2\n50\n560\n8.33\n10.00\n11.20\nI\n\n\n3\n85\n810\n7.14\n8.82\n9.53\nI\n\n\n4\n114\n1 060\n8.62\n8.77\n9.30\nI\n\n\n5\n140\n1 310\n9.62\n8.93\n9.36\nII\n\n\n6\n159\n1 560\n13.16\n9.43\n9.81\nII\n\n\n7\n169\n1 810\n25.00\n10.36\n10.71\nII\n\n\n\n\n\nAmarelo: \\(Cmg\\) decrescente (Etapa I)\nVerde: \\(CVM\\) próximo do mínimo (onde \\(Cmg \\approx CVM\\))\n\\(CTM\\) está sempre acima de \\(CVM\\) (diferença = \\(CFM\\))"
+    "text": "Tabela com Todos os Custos\n\n\n\n\\(L\\)\n\\(Q\\)\n\\(CT\\)\n\\(Cmg\\)\n\\(CVM\\)\n\\(CTM\\)\nEtapa\n\n\n\n\n0\n0\n60\n—\n—\n—\n\n\n\n1\n20\n310\n12.50\n12.50\n15.50\nI\n\n\n2\n50\n560\n8.33\n10.00\n11.20\nI\n\n\n3\n85\n810\n7.14\n8.82\n9.53\nI\n\n\n4\n114\n1 060\n8.62\n8.77\n9.30\nI\n\n\n5\n140\n1 310\n9.62\n8.93\n9.36\nII\n\n\n6\n159\n1 560\n13.16\n9.43\n9.81\nII\n\n\n7\n169\n1 810\n25.00\n10.36\n10.71\nII\n\n\n\n\n\n\\(Cmg\\) decrescente (Etapa I)\n\\(CVM\\) próximo do mínimo (onde \\(Cmg \\approx CVM\\))\n\\(CTM\\) está sempre acima de \\(CVM\\) (diferença = \\(CFM\\))"
   },
   {
     "objectID": "slides/09_Funcao_custos.html#geometria-dos-custos-médios-e-marginal",

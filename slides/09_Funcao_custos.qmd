@@ -211,8 +211,8 @@ $$CTM = CFM + CVM \implies CTM > CVM \text{ sempre}$$
 
 
 ::: {.fragment .smaller}
-- Amarelo: $Cmg$ decrescente (Etapa I)
-- Verde: $CVM$ próximo do mínimo (onde $Cmg \approx CVM$)
+- $Cmg$ decrescente (Etapa I)
+- $CVM$ próximo do mínimo (onde $Cmg \approx CVM$)
 - $CTM$ está sempre acima de $CVM$ (diferença = $CFM$)
 :::
 
@@ -223,6 +223,7 @@ $$CTM = CFM + CVM \implies CTM > CVM \text{ sempre}$$
 ```{r, engine='tikz'}
 \begin{tikzpicture}[
   scale = 0.8,
+  font=\tiny,
   every node/.style = {scale = 0.8},
   declare function = {
     cv(\x) = \x - (1/4)*\x^2 + (1/25)*\x^3;
@@ -237,7 +238,7 @@ $$CTM = CFM + CVM \implies CTM > CVM \text{ sempre}$$
 \draw[->, thick] (-0.1,0) -- (5.5,0) node[below]{$Q$};
 \draw[->, thick] (0,-0.1) -- (0,4) node[left]{};
 
-  \draw[blue!40!black, thick, domain=0.25:5, variable=\x, samples=60] plot (\x,{cfm(\x)})
+  \draw[blue!40!black, dashed, thick, domain=0.25:5, variable=\x, samples=60] plot (\x,{cfm(\x)})
     node[right]{$CFM$};
 
   \draw[red, thick, domain=0.5:5, variable=\x, samples=60] plot (\x,{cvm(\x)})
@@ -248,14 +249,18 @@ $$CTM = CFM + CVM \implies CTM > CVM \text{ sempre}$$
 
   \draw[green!60!black, thick, domain=0.2:5, variable=\x, samples=60] plot (\x,{cmg(\x)})
     node[right]{$Cmg$};
+
   % mínimo CVM: cmg=cvm -> 1-(1/2)x+(3/25)x^2 = 1-(1/4)x+(1/25)x^3/x
   % aproximado: x=25/8=3.125
-  \draw[dotted] ({25/8},0) node[below]{\footnotesize $Q_{CVM_{min}}$}
+
+  \draw[dotted] ({25/8},0) node[below left]{\footnotesize $Q_{CVM_{min}}$}
     -- ({25/8},{cvm(25/8)});
+
   % mínimo CTM: cmg=ctm, maior que 25/8
   % ct = cv+1; cmg = ct'/1; ctm = ct/x; cmg=ctm -> approx x=4.2
-  \draw[dotted] (4.25,0) node[below]{\footnotesize $Q_{CTM_{min}}$}
-    -- (4.25,{ctm(4.25)});
+
+  \draw[dotted] (3.93,0) node[below right]{\footnotesize $Q_{CTM_{min}}$}
+    -- (3.93,{ctm(3.93)});
 
 \end{tikzpicture}
 ```
