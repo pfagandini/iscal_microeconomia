@@ -24,6 +24,8 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 7. [Conceitos](slides/07_Producao_cp_lp.qmd)
 8. [Etapas Processo Produtivo e Regra da Contratação](slides/08_Etapas_contratacao.qmd)
 9. [Função de Custos](slides/09_Funcao_custos.qmd)
+10. [Geometria de Custos](slides/10_Geometria_custos.qmd)
+11. [Otimização num mercado concorrencial](slides/11_Otimizacao_concorrencial.qmd)
 
 ### Capítulo IV: Equilíbrio de Mercado de Curto Prazo
 

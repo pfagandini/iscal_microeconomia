@@ -501,7 +501,7 @@
     "href": "material.html#slides",
     "title": "Material",
     "section": "Slides",
-    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\nConceitos\nEtapas Processo Produtivo e Regra da Contratação\nFunção de Custos\n\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
+    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\nConceitos\nEtapas Processo Produtivo e Regra da Contratação\nFunção de Custos\nGeometria de Custos\nOtimização num mercado concorrencial\n\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
   },
   {
     "objectID": "exercises/Capitulo_3C.html#c.-teoria-do-produtor-e-equilíbrio---longo-prazo",
@@ -4464,5 +4464,166 @@
     "title": "Microeconomia",
     "section": "Resumo 📝",
     "text": "Resumo 📝\n\nPassamos do consumidor (procura) para o produtor (oferta)\nAs empresas tomam decisões sob restrições de tecnologia e custos\nO princípio \\(Cmg = Bmg\\) mantém-se como regra de ouro\nVamos distinguir decisões de curto prazo e longo prazo\nA curva de oferta nasce das decisões ótimas do produtor\n\n\n\n\n\n\n\n\nPróximas aulas\n\n\n👉 Função de produção, curto prazo vs. longo prazo, e as etapas do processo produtivo."
+  },
+  {
+    "objectID": "material.html#outro-material",
+    "href": "material.html#outro-material",
+    "title": "Material",
+    "section": "Outro Material",
+    "text": "Outro Material\n\nBridge Produtor"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html",
+    "href": "slides/motivacao_produtor-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Estudámos o lado da procura: como é que os consumidores fazem escolhas\nVimos que os consumidores maximizam a utilidade sujeita a uma restrição orçamental\nDerivámos a curva da procura a partir dessas escolhas\n\n\n. . .\n\n\n\n\n\n\nImportantA grande questão\n\n\n\nMas… de onde vêm os bens que os consumidores compram? 🤔"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#até-agora",
+    "href": "slides/motivacao_produtor-document.html#até-agora",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Estudámos o lado da procura: como é que os consumidores fazem escolhas\nVimos que os consumidores maximizam a utilidade sujeita a uma restrição orçamental\nDerivámos a curva da procura a partir dessas escolhas\n\n\n. . .\n\n\n\n\n\n\nImportantA grande questão\n\n\n\nMas… de onde vêm os bens que os consumidores compram? 🤔"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#o-outro-lado-do-mercado",
+    "href": "slides/motivacao_produtor-document.html#o-outro-lado-do-mercado",
+    "title": "Microeconomia",
+    "section": "2 O Outro Lado do Mercado 🤝",
+    "text": "2 O Outro Lado do Mercado 🤝\nNo mercado existem dois agentes fundamentais:\n. . .\n\n\n\n\n\n\n\n\nNoteConsumidores (já vimos!)\n\n\n\n\nMaximizam utilidade\nSujeitos a uma restrição orçamental\nGeram a procura\n\n\n\n\n\n\n\n\n\n\nTipProdutores (vamos ver!)\n\n\n\n\nMaximizam lucro\nSujeitos a uma tecnologia e a custos\nGeram a oferta"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#paralelo-consumidor-vs.-produtor",
+    "href": "slides/motivacao_produtor-document.html#paralelo-consumidor-vs.-produtor",
+    "title": "Microeconomia",
+    "section": "3 Paralelo: Consumidor vs. Produtor ⚖️",
+    "text": "3 Paralelo: Consumidor vs. Produtor ⚖️\n\n\n\n\n\n\n\n\n\nConsumidor\nProdutor\n\n\n\n\nObjetivo\nMaximizar utilidade\nMaximizar lucro\n\n\nRestrição\nOrçamento (\\(W\\))\nTecnologia e custos\n\n\nEscolhe\nCabaz \\((x, y)\\)\nQuantidade \\(Q\\) e inputs\n\n\nGera\nCurva da Procura\nCurva da Oferta\n\n\nRegra de ouro\n\\(\\frac{UMg_x}{p_x} = \\frac{UMg_y}{p_y}\\)\n\\(Cmg = Bmg\\) (de novo!)\n\n\n\n. . .\n👉 O princípio custo marginal = benefício marginal reaparece!"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#porquê-estudar-as-empresas",
+    "href": "slides/motivacao_produtor-document.html#porquê-estudar-as-empresas",
+    "title": "Microeconomia",
+    "section": "4 Porquê estudar as empresas? 🏭",
+    "text": "4 Porquê estudar as empresas? 🏭\nAs empresas estão em todo o lado. Todos os dias interagimos com dezenas delas.\n. . .\nPensem no vosso dia de hoje:\n. . .\n\n⏰ O despertador do telemóvel (Apple? Samsung? Xiaomi?)\n☕ O café da manhã (Delta? Nespresso? Do café da esquina?)\n🚌 O transporte para o ISCAL (Carris? Metro? Uber? Bolt?)\n🥪 O almoço (cantina? restaurante? take-away?)\n\n. . .\nCada uma destas coisas foi produzida por uma empresa que tomou decisões económicas."
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#caso-1-a-padaria-do-bairro",
+    "href": "slides/motivacao_produtor-document.html#caso-1-a-padaria-do-bairro",
+    "title": "Microeconomia",
+    "section": "5 Caso 1: A Padaria do Bairro 🍞",
+    "text": "5 Caso 1: A Padaria do Bairro 🍞\nImaginemos a Padaria São José, no centro de Lisboa.\n. . .\nA D. Maria, a dona, acorda todos os dias às 4h da manhã. Ela tem de decidir:\n. . .\n\nQuantos pães fazer hoje?\nQuantos empregados chamar?\nDeve comprar um forno novo (maior)?\nQual o preço a cobrar por cada pão?\n\n. . .\nCada uma destas decisões é uma decisão de produção que vamos aprender a modelar. (Bom, o preço not really)"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#caso-1-o-dilema-da-d.-maria",
+    "href": "slides/motivacao_produtor-document.html#caso-1-o-dilema-da-d.-maria",
+    "title": "Microeconomia",
+    "section": "6 Caso 1: O Dilema da D. Maria 🤔",
+    "text": "6 Caso 1: O Dilema da D. Maria 🤔\nA D. Maria tem 1 forno e pode contratar de 0 a 5 ajudantes.\n. . .\n\n\n\nAjudantes\nPães por dia\n\n\n\n\n0\n0\n\n\n1\n80\n\n\n2\n200\n\n\n3\n280\n\n\n4\n320\n\n\n5\n330\n\n\n\n. . .\n👉 O que acontece à produção à medida que se adicionam ajudantes?"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#caso-1-observações-importantes",
+    "href": "slides/motivacao_produtor-document.html#caso-1-observações-importantes",
+    "title": "Microeconomia",
+    "section": "7 Caso 1: Observações Importantes 💡",
+    "text": "7 Caso 1: Observações Importantes 💡\n\n\nO 1.º ajudante acrescenta 80 pães\nO 2.º ajudante acrescenta 120 pães (mais que o 1.º!)\nO 3.º ajudante acrescenta 80 pães\nO 4.º ajudante acrescenta 40 pães\nO 5.º ajudante acrescenta apenas 10 pães\n\n\n. . .\n⚠️ A partir de certo ponto, cada ajudante adicional contribui menos!\n. . .\nIsto tem um nome: Lei dos Rendimentos Marginais Decrescentes\n(Vamos formalizar isto na próxima aula.)"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#caso-1-e-o-preço-do-pão",
+    "href": "slides/motivacao_produtor-document.html#caso-1-e-o-preço-do-pão",
+    "title": "Microeconomia",
+    "section": "8 Caso 1: E o Preço do Pão? 💶",
+    "text": "8 Caso 1: E o Preço do Pão? 💶\nA D. Maria vende cada pão a €0,80. Cada ajudante custa €60/dia.\n. . .\nQuanto vale cada ajudante adicional?\n\n\n\n\nAjudante\nPães extra\nReceita extra\nCusto extra\nCompensa?\n\n\n\n\n1.º\n80\n€64\n€60\n✅\n\n\n2.º\n120\n€96\n€60\n✅\n\n\n3.º\n80\n€64\n€60\n✅\n\n\n4.º\n40\n€32\n€60\n❌\n\n\n5.º\n10\n€8\n€60\n❌"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#caso-1-a-decisão-ótima",
+    "href": "slides/motivacao_produtor-document.html#caso-1-a-decisão-ótima",
+    "title": "Microeconomia",
+    "section": "9 Caso 1: A Decisão Ótima 🎯",
+    "text": "9 Caso 1: A Decisão Ótima 🎯\n👉 A D. Maria deve contratar 3 ajudantes: é o último para o qual a receita extra supera o custo extra.\n. . .\nA decisão ótima envolve comparar o custo marginal com o benefício marginal — o mesmo princípio que já conhecem!\n. . .\n\n\n\n\n\n\nNoteAntevisão\n\n\n\nNas próximas aulas vamos formalizar esta ideia com funções de produção e funções de custo, e obter resultados analíticos em vez de tabelas."
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#caso-2-starbucks-vs.-café-da-esquina",
+    "href": "slides/motivacao_produtor-document.html#caso-2-starbucks-vs.-café-da-esquina",
+    "title": "Microeconomia",
+    "section": "10 Caso 2: Starbucks vs. Café da Esquina ☕",
+    "text": "10 Caso 2: Starbucks vs. Café da Esquina ☕\nPensem na diferença entre uma Starbucks e o café do Sr. Manuel:\n. . .\n\n\n\n\nSr. Manuel\nStarbucks\n\n\n\n\nEscala\n1 loja\nMilhares de lojas\n\n\nFuncionários\n1–2\nCentenas de milhares\n\n\nCompras\nPequenas quantidades\nEnormes quantidades\n\n\nCusto por café\nMais alto\nMais baixo\n\n\n\n. . .\n👉 A Starbucks beneficia de economias de escala: quanto mais produz, menor o custo por unidade.\n. . .\nVamos ver quando e porquê isto acontece!"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#caso-3-a-fábrica-de-gelados",
+    "href": "slides/motivacao_produtor-document.html#caso-3-a-fábrica-de-gelados",
+    "title": "Microeconomia",
+    "section": "11 Caso 3: A Fábrica de Gelados 🍦",
+    "text": "11 Caso 3: A Fábrica de Gelados 🍦\nUma pequena fábrica de gelados tem de decidir como organizar a sua produção.\n. . .\n\n\n\n\n\n\nNoteDecisões de curto prazo (fábrica já instalada)\n\n\n\n\nQuantos trabalhadores contratar?\nQuantas horas de trabalho por dia?\nQuantos gelados produzir?\n\n\n\n. . .\n\n\n\n\n\n\nTipDecisões de longo prazo (tudo pode mudar)\n\n\n\n\nMudar para uma fábrica maior?\nInvestir em máquinas novas?\nAbrir uma segunda unidade?\n\n\n\n. . .\n👉 A distinção entre curto prazo e longo prazo será fundamental."
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#caso-4-porque-fecham-restaurantes",
+    "href": "slides/motivacao_produtor-document.html#caso-4-porque-fecham-restaurantes",
+    "title": "Microeconomia",
+    "section": "12 Caso 4: Porque Fecham Restaurantes? 📕",
+    "text": "12 Caso 4: Porque Fecham Restaurantes? 📕\nEm Lisboa, abrem e fecham restaurantes todos os meses.\n. . .\nJá se perguntaram porquê?\n. . .\n\n\nSe o preço que cobram não cobre os custos, têm prejuízo\nMas mesmo com prejuízo, alguns continuam abertos durante algum tempo…\n…porque já pagaram a renda e o equipamento (custos fixos) e só comparam o preço com os custos variáveis\n\n\n. . .\nVamos aprender quando é que faz sentido uma empresa continuar a produzir com prejuízo e quando deve encerrar."
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#caso-5-a-pandemia-e-os-custos-fixos",
+    "href": "slides/motivacao_produtor-document.html#caso-5-a-pandemia-e-os-custos-fixos",
+    "title": "Microeconomia",
+    "section": "13 Caso 5: A Pandemia e os Custos Fixos 😷",
+    "text": "13 Caso 5: A Pandemia e os Custos Fixos 😷\nDurante a pandemia de COVID-19, muitas empresas enfrentaram uma situação extrema.\n. . .\n\n\nRestaurantes com rendas a pagar mas sem clientes\nGinásios com equipamento parado\nCompanhias aéreas com aviões estacionados\n\n\n. . .\nEstas empresas tinham custos fixos elevados que não desapareciam por não produzir.\n. . .\n👉 A teoria do produtor ajuda-nos a perceber as decisões de encerramento temporário vs. encerramento definitivo."
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#o-mapa-da-viagem",
+    "href": "slides/motivacao_produtor-document.html#o-mapa-da-viagem",
+    "title": "Microeconomia",
+    "section": "14 O Mapa da Viagem 🗺️",
+    "text": "14 O Mapa da Viagem 🗺️\nNas próximas semanas vamos percorrer este caminho:\n. . .\n\n\n⚙️ Função de produção — como é que inputs se transformam em output?\n📉 Etapas da produção — onde é eficiente produzir?\n💶 Custos — fixos, variáveis, médios, marginais\n🎯 Otimização — quanto produzir para maximizar lucro?\n📈 Curva da oferta — como nasce a oferta a partir dos custos?\n⚖️ Equilíbrio de mercado — oferta encontra procura"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#inputs-e-outputs",
+    "href": "slides/motivacao_produtor-document.html#inputs-e-outputs",
+    "title": "Microeconomia",
+    "section": "15 Inputs e Outputs ⚙️",
+    "text": "15 Inputs e Outputs ⚙️\nA ideia central da produção é simples:\n\\[\\text{Inputs} \\xrightarrow{\\text{Tecnologia}} \\text{Output}\\]\n. . .\n\n\nInputs (fatores de produção):\n\n\nTrabalho (\\(L\\)) — horas de trabalho\nCapital (\\(K\\)) — máquinas, edifícios\nMatérias-primas, energia…\n\n\n\nOutput:\n\n\nA quantidade produzida (\\(Q\\))\nBens ou serviços\n\n\n\n\n. . .\nA função de produção \\(Q = f(K, L)\\) resume a tecnologia disponível."
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#exemplo-o-mundo-à-nossa-volta-globe_showing_europe_africa",
+    "href": "slides/motivacao_produtor-document.html#exemplo-o-mundo-à-nossa-volta-globe_showing_europe_africa",
+    "title": "Microeconomia",
+    "section": "16 Exemplo: O Mundo à Nossa Volta :globe_showing_Europe_Africa:",
+    "text": "16 Exemplo: O Mundo à Nossa Volta :globe_showing_Europe_Africa:\n\n\n\n\nEmpresa\nInputs\nOutput\n\n\n\n\nPadaria\nFarinha, forno, padeiro\nPão\n\n\nHospital\nMédicos, equipamento, camas\nServiços de saúde\n\n\nISCAL\nProfessores, salas, computadores\nFormação académica\n\n\nUber\nMotoristas, carros, app\nServiço de transporte\n\n\nNetflix\nServidores, conteúdo, programadores\nStreaming\n\n\n\n\n. . .\n👉 Em todos os casos, a empresa combina inputs para produzir algo de valor."
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#o-princípio-que-já-conhecem",
+    "href": "slides/motivacao_produtor-document.html#o-princípio-que-já-conhecem",
+    "title": "Microeconomia",
+    "section": "17 O Princípio que Já Conhecem ♻️",
+    "text": "17 O Princípio que Já Conhecem ♻️\nLembram-se do princípio fundamental da decisão racional?\n. . .\n\\[\\text{Continuar enquanto } Bmg \\geq Cmg\\]\n. . .\nNa teoria do consumidor:\n\n\n\\(Bmg\\) = utilidade marginal do bem\n\\(Cmg\\) = preço do bem\n\n\n. . .\nNa teoria do produtor:\n\n\n\\(Bmg\\) = receita da unidade adicional (preço de venda)\n\\(Cmg\\) = custo de produzir essa unidade adicional\n\n\n. . .\n👉 O mesmo raciocínio, aplicado a um problema diferente!"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#um-número-para-pensar",
+    "href": "slides/motivacao_produtor-document.html#um-número-para-pensar",
+    "title": "Microeconomia",
+    "section": "18 Um Número para Pensar 📊",
+    "text": "18 Um Número para Pensar 📊\nEm Portugal, existem mais de 1,3 milhões de empresas (dados INE).\n. . .\n\n\nCerca de 96% são microempresas (menos de 10 trabalhadores)\nAs PME representam 99,9% do total\nApenas 0,1% são grandes empresas\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nA esmagadora maioria das empresas em Portugal enfrenta exatamente os problemas da “Padaria da D. Maria” — decisões de pequena escala, com recursos limitados."
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#o-que-vamos-aprender-a-fazer",
+    "href": "slides/motivacao_produtor-document.html#o-que-vamos-aprender-a-fazer",
+    "title": "Microeconomia",
+    "section": "19 O Que Vamos Aprender a Fazer 📝",
+    "text": "19 O Que Vamos Aprender a Fazer 📝\nNo final desta parte da matéria, vão saber:\n. . .\n\n\n✅ Determinar a quantidade ótima de produção\n✅ Calcular custos e identificar se há lucro ou prejuízo\n✅ Decidir se uma empresa deve produzir ou encerrar\n✅ Derivar a curva de oferta a partir da estrutura de custos\n✅ Encontrar o equilíbrio de mercado (oferta + procura)\n✅ Analisar o impacto de impostos e subsídios"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#para-pensar-antes-da-próxima-aula",
+    "href": "slides/motivacao_produtor-document.html#para-pensar-antes-da-próxima-aula",
+    "title": "Microeconomia",
+    "section": "20 Para Pensar Antes da Próxima Aula 🧠",
+    "text": "20 Para Pensar Antes da Próxima Aula 🧠\nDeixo-vos com duas perguntas para reflexão:\n. . .\n\n\n\n\n\n\nTipPergunta 1\n\n\n\nSe uma empresa está a ter prejuízo, deve fechar imediatamente? Porquê ou porquê não?\n\n\n. . .\n\n\n\n\n\n\nTipPergunta 2\n\n\n\nPorque é que um café em Lisboa cobra €1,20 por uma bica, mas um café no aeroporto cobra €3,50 pela mesma bica? A resposta tem a ver com custos, concorrência, ou ambos?"
+  },
+  {
+    "objectID": "slides/motivacao_produtor-document.html#resumo",
+    "href": "slides/motivacao_produtor-document.html#resumo",
+    "title": "Microeconomia",
+    "section": "21 Resumo 📝",
+    "text": "21 Resumo 📝\n\n\nPassamos do consumidor (procura) para o produtor (oferta)\nAs empresas tomam decisões sob restrições de tecnologia e custos\nO princípio \\(Cmg = Bmg\\) mantém-se como regra de ouro\nVamos distinguir decisões de curto prazo e longo prazo\nA curva de oferta nasce das decisões ótimas do produtor\n\n\n. . .\n\n\n\n\n\n\nImportantPróximas aulas\n\n\n\n👉 Função de produção, curto prazo vs. longo prazo, e as etapas do processo produtivo."
   }
 ]
