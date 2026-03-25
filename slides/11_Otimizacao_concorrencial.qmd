@@ -158,8 +158,7 @@ $$P = Cmg$$
 
 ## Lucro Gráfico: caso P > CTM
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
 \begin{tikzpicture}[
   scale = 0.82,
   every node/.style = {scale = 0.72},
@@ -175,30 +174,23 @@ $$P = Cmg$$
 \draw[->,thick] (-0.1,0) -- (5.4,0) node[below]{$Q$};
 \draw[->,thick] (0,-0.1) -- (0,5.5) node[left]{$P,\;Cmg,\;CTM$};
 
-\onslide<1->{
   \draw[red!70!black, thick, domain=0.15:5.2, variable=\x, samples=60]
     plot (\x,{2*cmg(\x)}) node[right]{$Cmg$};
   \draw[green!60!black, thick, domain=0.9:5.2, variable=\x, samples=60]
     plot (\x,{2*ctm(\x)}) node[right]{$CTM$};
   \draw[orange!80!black, thick, domain=0.15:5.2, variable=\x, samples=60]
     plot (\x,{2*cvm(\x)}) node[right]{$CVM$};
-}
-\onslide<2->{
   \draw[blue, thick, dashed] (0,{2*cmg(\pp)}) node[left]{$P^*$} -- (\pp,{2*cmg(\pp)});
   \draw[dotted] (\pp,0) node[below]{$Q_i^*$} -- (\pp,{2*cmg(\pp)})
     node[circle,fill,inner sep=1.5pt]{};
-}
-\onslide<3->{
   \draw[dotted] (0,{2*ctm(\pp)}) node[left]{$CTM(Q_i^*)$} -- (\pp,{2*ctm(\pp)})
     node[circle,fill,inner sep=1.5pt]{};
-}
-\onslide<4->{
   \fill[blue!30, opacity=0.5]
     (0,{2*ctm(\pp)}) rectangle (\pp,{2*cmg(\pp)});
   \node at ({\pp/2},{(2*cmg(\pp)+2*ctm(\pp))/2}) {$\Pi > 0$};
-}
+
 \end{tikzpicture}
-\end{center}
+
 ```
 
 ::: {.fragment}
@@ -209,8 +201,7 @@ $\Pi^* = Q_i^* \cdot (P^* - CTM(Q_i^*)) > 0$ quando $P^* > CTM$ ✓
 
 ## Lucro Gráfico: caso P < CTM mas P > CVM
 
-```{=latex}
-\begin{center}
+```{r,engine='tikz'}
 \begin{tikzpicture}[
   scale = 0.82,
   every node/.style = {scale = 0.72},
@@ -233,27 +224,21 @@ $\Pi^* = Q_i^* \cdot (P^* - CTM(Q_i^*)) > 0$ quando $P^* > CTM$ ✓
 \draw[orange!80!black, thick, domain=0.15:5.2, variable=\x, samples=60]
   plot (\x,{2*cvm(\x)}) node[right]{$CVM$};
 
-\onslide<2->{
   \draw[blue, thick, dashed] (0,{2*cmg(\pp)}) node[left]{$P^*$} -- (\pp,{2*cmg(\pp)});
   \draw[dotted] (\pp,0) node[below]{$Q_i^*$} -- (\pp,{2*cmg(\pp)})
     node[circle,fill,inner sep=1.5pt]{};
   \draw[dotted] (0,{2*ctm(\pp)}) node[left]{$CTM$} -- (\pp,{2*ctm(\pp)});
   \draw[dotted] (0,{2*cvm(\pp)}) node[left]{$CVM$} -- (\pp,{2*cvm(\pp)});
-}
-\onslide<3->{
   \fill[red!25, opacity=0.6]
     (0,{2*ctm(\pp)}) rectangle (\pp,{2*cmg(\pp)});
   \node at ({\pp/2},{(2*cmg(\pp)+2*ctm(\pp))/2}) {$\Pi < 0$};
-}
-\onslide<4->{
   % mostrar que P>CVM => prejudizo < CF => manter
   \draw[<->] (\pp+0.2,{2*cvm(\pp)}) -- (\pp+0.2,{2*ctm(\pp)})
     node[midway,right]{\footnotesize $= CFM$};
   \draw[<->] (\pp+0.2,{2*cmg(\pp)}) -- (\pp+0.2,{2*cvm(\pp)})
     node[midway,right]{\footnotesize $P - CVM > 0$};
-}
+
 \end{tikzpicture}
-\end{center}
 ```
 
 ::: {.fragment .smaller}
@@ -277,8 +262,8 @@ $$\Pi = Q_i \cdot (P - CTM) = Q_i \cdot (P - CVM - CFM)$$
 
 ## Os Dois Limiares
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
+
 \begin{tikzpicture}[
   scale = 0.88,
   every node/.style = {scale = 0.72},
@@ -316,7 +301,7 @@ $$\Pi = Q_i \cdot (P - CTM) = Q_i \cdot (P - CVM - CFM)$$
   node[circle,fill=blue,inner sep=2pt]{};
 
 \end{tikzpicture}
-\end{center}
+
 ```
 
 ::: {.fragment .smaller}
@@ -332,9 +317,9 @@ A curva de oferta é o conjunto de pares $(Q, P)$ que constituem a escolha ópti
 
 $$S_i: \quad P = Cmg(Q_i) \quad \text{para } P \geq P_0 = CVM_{min}$$
 
-::: {.fragment}
-```{=latex}
-\begin{center}
+## Curva de Oferta Individual
+
+```{r, engine='tikz'}
 \begin{tikzpicture}[
   scale = 0.82,
   every node/.style = {scale = 0.72},
@@ -367,9 +352,8 @@ $$S_i: \quad P = Cmg(Q_i) \quad \text{para } P \geq P_0 = CVM_{min}$$
 \draw[orange!80!black, thick, domain=0.15:5.2, variable=\x, samples=40]
   plot (\x,{2*cvm(\x)}) node[right]{$CVM$};
 \end{tikzpicture}
-\end{center}
+
 ```
-:::
 
 ---
 
