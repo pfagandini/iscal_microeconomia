@@ -3861,14 +3861,14 @@
     "href": "slides/16_otimizacao_concorrencial-document.html#lucro-gráfico-caso-p-ctm",
     "title": "Microeconomia",
     "section": "6 Lucro Gráfico: caso P > CTM",
-    "text": "6 Lucro Gráfico: caso P &gt; CTM\n\n\\(\\Pi^* = Q_i^* \\cdot (P^* - CTM(Q_i^*)) &gt; 0\\) quando \\(P^* &gt; CTM\\) ✓"
+    "text": "6 Lucro Gráfico: caso P &gt; CTM\n\n\n\n\n\n\n\n\n\n\n\\(\\Pi^* = Q_i^* \\cdot (P^* - CTM(Q_i^*)) &gt; 0\\) quando \\(P^* &gt; CTM\\) ✓"
   },
   {
     "objectID": "slides/16_otimizacao_concorrencial-document.html#lucro-gráfico-caso-p-ctm-mas-p-cvm",
     "href": "slides/16_otimizacao_concorrencial-document.html#lucro-gráfico-caso-p-ctm-mas-p-cvm",
     "title": "Microeconomia",
     "section": "7 Lucro Gráfico: caso P < CTM mas P > CVM",
-    "text": "7 Lucro Gráfico: caso P &lt; CTM mas P &gt; CVM\n\n\\(P &gt; CVM\\): a receita cobre os custos variáveis e parte dos fixos → prejuízo \\(&lt; CF\\) → manter-se em funcionamento"
+    "text": "7 Lucro Gráfico: caso P &lt; CTM mas P &gt; CVM\n\n\n\n\n\n\n\n\n\n\n\\(P &gt; CVM\\): a receita cobre os custos variáveis e parte dos fixos → prejuízo \\(&lt; CF\\) → manter-se em funcionamento"
   },
   {
     "objectID": "slides/16_otimizacao_concorrencial-document.html#lucro-e-prejuízo-sistematização",
@@ -3882,7 +3882,7 @@
     "href": "slides/16_otimizacao_concorrencial-document.html#os-dois-limiares",
     "title": "Microeconomia",
     "section": "9 Os Dois Limiares",
-    "text": "9 Os Dois Limiares\n\n\n\\(P_0 = CVM_{min}\\): limiar de encerramento — abaixo deste preço, a empresa fecha\n\\(P_1 = CTM_{min}\\): limiar de rendibilidade — acima deste preço, a empresa tem lucro \\(&gt; 0\\)"
+    "text": "9 Os Dois Limiares\n\n\n\n\n\n\n\n\n\n\n\n\\(P_0 = CVM_{min}\\): limiar de encerramento — abaixo deste preço, a empresa fecha\n\\(P_1 = CTM_{min}\\): limiar de rendibilidade — acima deste preço, a empresa tem lucro \\(&gt; 0\\)"
   },
   {
     "objectID": "slides/16_otimizacao_concorrencial-document.html#curva-de-oferta-individual",
@@ -3895,71 +3895,71 @@
     "objectID": "slides/16_otimizacao_concorrencial-document.html#lei-da-oferta",
     "href": "slides/16_otimizacao_concorrencial-document.html#lei-da-oferta",
     "title": "Microeconomia",
-    "section": "11 Lei da Oferta",
-    "text": "11 Lei da Oferta\nA curva de oferta tem inclinação positiva: se \\(P\\) sobe, \\(Q_i^*\\) sobe — e vice-versa.\n\nPorquê? Na Zona Económica de Exploração, \\(Cmg\\) é crescente. Para um preço mais alto, a igualdade \\(P = Cmg\\) dá-se num nível de \\(Q\\) mais elevado.\n\n\nFundamento último: Lei dos Rendimentos Marginais Decrescentes \\(\\Rightarrow\\) \\(Cmg\\) crescente \\(\\Rightarrow\\) curva de oferta positivamente inclinada.\n\n\n\n\n\n\n\n\nA variação do preço de venda move ao longo da curva de oferta. A variação de factores exógenos (preço dos inputs, tecnologia) desloca a curva inteira."
+    "section": "12 Lei da Oferta",
+    "text": "12 Lei da Oferta\nA curva de oferta tem inclinação positiva: se \\(P\\) sobe, \\(Q_i^*\\) sobe — e vice-versa.\n\nPorquê? Na Zona Económica de Exploração, \\(Cmg\\) é crescente. Para um preço mais alto, a igualdade \\(P = Cmg\\) dá-se num nível de \\(Q\\) mais elevado.\n\n\nFundamento último: Lei dos Rendimentos Marginais Decrescentes \\(\\Rightarrow\\) \\(Cmg\\) crescente \\(\\Rightarrow\\) curva de oferta positivamente inclinada.\n\n\n\n\n\n\n\n\nA variação do preço de venda move ao longo da curva de oferta. A variação de factores exógenos (preço dos inputs, tecnologia) desloca a curva inteira."
   },
   {
     "objectID": "slides/16_otimizacao_concorrencial-document.html#determinantes-da-oferta",
     "href": "slides/16_otimizacao_concorrencial-document.html#determinantes-da-oferta",
     "title": "Microeconomia",
-    "section": "12 Determinantes da Oferta",
-    "text": "12 Determinantes da Oferta\nO preço de venda \\(P\\) é o único factor que move ao longo da curva. Os restantes factores deslocam a curva:\n\n\nPreços dos factores \\(w, r\\) ↑ → custos sobem → oferta contrai (curva desloca para cima/esquerda)\nTecnologia \\(A\\) melhora → custos descem → oferta expande (curva desloca para baixo/direita)\nPreço de materiais \\(p_m\\) ↑ → custos sobem → oferta contrai\nNúmero de empresas ↑ → oferta de mercado expande"
+    "section": "13 Determinantes da Oferta",
+    "text": "13 Determinantes da Oferta\nO preço de venda \\(P\\) é o único factor que move ao longo da curva. Os restantes factores deslocam a curva:\n\n\nPreços dos factores \\(w, r\\) ↑ → custos sobem → oferta contrai (curva desloca para cima/esquerda)\nTecnologia \\(A\\) melhora → custos descem → oferta expande (curva desloca para baixo/direita)\nPreço de materiais \\(p_m\\) ↑ → custos sobem → oferta contrai\nNúmero de empresas ↑ → oferta de mercado expande"
   },
   {
     "objectID": "slides/16_otimizacao_concorrencial-document.html#exemplo-resolvido",
     "href": "slides/16_otimizacao_concorrencial-document.html#exemplo-resolvido",
     "title": "Microeconomia",
-    "section": "13 Exemplo Resolvido",
-    "text": "13 Exemplo Resolvido\nDados: \\(CT = Q^3 - 60Q^2 + 1200Q + 1000\\)\n\nDetermine \\(Cmg\\), \\(CVM\\), \\(CTM\\).\nCalcule os limiares de encerramento e rendibilidade.\nIdentifique a curva de oferta.\nSe \\(P = 330.75\\), a empresa produz ou encerra? Tem lucro ou prejuízo?"
+    "section": "14 Exemplo Resolvido",
+    "text": "14 Exemplo Resolvido\nDados: \\(CT = Q^3 - 60Q^2 + 1200Q + 1000\\)\n\nDetermine \\(Cmg\\), \\(CVM\\), \\(CTM\\).\nCalcule os limiares de encerramento e rendibilidade.\nIdentifique a curva de oferta.\nSe \\(P = 330.75\\), a empresa produz ou encerra? Tem lucro ou prejuízo?"
   },
   {
     "objectID": "slides/16_otimizacao_concorrencial-document.html#exemplo-resolução-a-e-b",
     "href": "slides/16_otimizacao_concorrencial-document.html#exemplo-resolução-a-e-b",
     "title": "Microeconomia",
-    "section": "14 Exemplo — Resolução (a) e (b)",
-    "text": "14 Exemplo — Resolução (a) e (b)\n\\[Cmg = 3Q^2 - 120Q + 1200\\] \\[CVM = Q^2 - 60Q + 1200 \\qquad CTM = Q^2 - 60Q + 1200 + \\tfrac{1000}{Q}\\]\n\nLimiar de encerramento — mínimo de \\(CVM\\) (\\(Cmg = CVM\\)):\n\\[3Q^2 - 120Q + 1200 = Q^2 - 60Q + 1200 \\;\\Rightarrow\\; 2Q^2 - 60Q = 0 \\;\\Rightarrow\\; Q_0 = 30\\]\n\\[P_0 = CVM(30) = 900 - 1800 + 1200 = \\mathbf{300}\\]\n\n\nLimiar de rendibilidade — mínimo de \\(CTM\\): por tentativas,\n\\(Q = 30.5\\!:\\) \\(CTM = (30.5)^2 - 60(30.5) + 1200 + \\tfrac{1000}{30.5} = 930.25 - 1830 + 1200 + 32.79 \\approx 333\\)\n\\[P_1 \\approx \\mathbf{333}\\]"
+    "section": "15 Exemplo — Resolução (a) e (b)",
+    "text": "15 Exemplo — Resolução (a) e (b)\n\\[Cmg = 3Q^2 - 120Q + 1200\\] \\[CVM = Q^2 - 60Q + 1200 \\qquad CTM = Q^2 - 60Q + 1200 + \\tfrac{1000}{Q}\\]\n\nLimiar de encerramento — mínimo de \\(CVM\\) (\\(Cmg = CVM\\)):\n\\[3Q^2 - 120Q + 1200 = Q^2 - 60Q + 1200 \\;\\Rightarrow\\; 2Q^2 - 60Q = 0 \\;\\Rightarrow\\; Q_0 = 30\\]\n\\[P_0 = CVM(30) = 900 - 1800 + 1200 = \\mathbf{300}\\]\n\n\nLimiar de rendibilidade — mínimo de \\(CTM\\): por tentativas,\n\\(Q = 30.5\\!:\\) \\(CTM = (30.5)^2 - 60(30.5) + 1200 + \\tfrac{1000}{30.5} = 930.25 - 1830 + 1200 + 32.79 \\approx 333\\)\n\\[P_1 \\approx \\mathbf{333}\\]"
   },
   {
     "objectID": "slides/16_otimizacao_concorrencial-document.html#exemplo-resolução-c-e-d",
     "href": "slides/16_otimizacao_concorrencial-document.html#exemplo-resolução-c-e-d",
     "title": "Microeconomia",
-    "section": "15 Exemplo — Resolução (c) e (d)",
-    "text": "15 Exemplo — Resolução (c) e (d)\nCurva de oferta:\n\\[S_i\\!: \\quad P = 3Q^2 - 120Q + 1200 \\quad \\text{para } P \\geq 300\\]\n\nPara \\(P = 330.75\\): igualar \\(P = Cmg\\):\n\\[3Q^2 - 120Q + 1200 = 330.75 \\;\\Rightarrow\\; 3Q^2 - 120Q + 869.25 = 0\\]\n\\[Q = \\frac{120 \\pm \\sqrt{14400 - 4 \\times 3 \\times 869.25}}{6} = \\frac{120 \\pm \\sqrt{14400 - 10431}}{6} = \\frac{120 \\pm \\sqrt{3969}}{6} = \\frac{120 \\pm 63}{6}\\]\n\\(Q_a = 9.5\\) (zona decrescente de \\(Cmg\\) — inválido); \\(\\quad Q^* = \\dfrac{120+63}{6} = 30.5\\)\n\n\n\\(CVM(30.5) = 930.25 - 1830 + 1200 = 300.25 &lt; 330.75\\) → produz\n\\(CTM(30.5) \\approx 333 &gt; 330.75\\) → prejuízo (mas menor que \\(CF\\)) ✓"
+    "section": "16 Exemplo — Resolução (c) e (d)",
+    "text": "16 Exemplo — Resolução (c) e (d)\nCurva de oferta:\n\\[S_i\\!: \\quad P = 3Q^2 - 120Q + 1200 \\quad \\text{para } P \\geq 300\\]\n\nPara \\(P = 330.75\\): igualar \\(P = Cmg\\):\n\\[3Q^2 - 120Q + 1200 = 330.75 \\;\\Rightarrow\\; 3Q^2 - 120Q + 869.25 = 0\\]\n\\[Q = \\frac{120 \\pm \\sqrt{14400 - 4 \\times 3 \\times 869.25}}{6} = \\frac{120 \\pm \\sqrt{14400 - 10431}}{6} = \\frac{120 \\pm \\sqrt{3969}}{6} = \\frac{120 \\pm 63}{6}\\]\n\\(Q_a = 9.5\\) (zona decrescente de \\(Cmg\\) — inválido); \\(\\quad Q^* = \\dfrac{120+63}{6} = 30.5\\)\n\n\n\\(CVM(30.5) = 930.25 - 1830 + 1200 = 300.25 &lt; 330.75\\) → produz\n\\(CTM(30.5) \\approx 333 &gt; 330.75\\) → prejuízo (mas menor que \\(CF\\)) ✓"
   },
   {
     "objectID": "slides/16_otimizacao_concorrencial-document.html#exercícios-escolha-múltipla-1",
     "href": "slides/16_otimizacao_concorrencial-document.html#exercícios-escolha-múltipla-1",
     "title": "Microeconomia",
-    "section": "16 Exercícios — Escolha Múltipla (1)",
-    "text": "16 Exercícios — Escolha Múltipla (1)\n1. Uma empresa em concorrência perfeita tem \\(Cmg = 2Q + 4\\) e \\(CVM_{min} = 4\\) (para \\(Q = 0\\)). Se o preço de mercado for \\(P = 14\\), qual a produção óptima?\n\n\n\\(Q^* = 4\\)\n\\(Q^* = 5\\) ✓\n\\(Q^* = 7\\)\nA empresa encerra.\n\n\n\nSolução: \\(P = Cmg \\Rightarrow 14 = 2Q + 4 \\Rightarrow Q^* = 5\\).\nVerificação de encerramento: \\(P = 14 &gt; CVM_{min} = 4\\) → não encerra ✓"
+    "section": "17 Exercícios — Escolha Múltipla (1)",
+    "text": "17 Exercícios — Escolha Múltipla (1)\n1. Uma empresa em concorrência perfeita tem \\(Cmg = 2Q + 4\\) e \\(CVM_{min} = 4\\) (para \\(Q = 0\\)). Se o preço de mercado for \\(P = 14\\), qual a produção óptima?\n\n\n\\(Q^* = 4\\)\n\\(Q^* = 5\\) ✓\n\\(Q^* = 7\\)\nA empresa encerra.\n\n\n\nSolução: \\(P = Cmg \\Rightarrow 14 = 2Q + 4 \\Rightarrow Q^* = 5\\).\nVerificação de encerramento: \\(P = 14 &gt; CVM_{min} = 4\\) → não encerra ✓"
   },
   {
     "objectID": "slides/16_otimizacao_concorrencial-document.html#exercícios-escolha-múltipla-2",
     "href": "slides/16_otimizacao_concorrencial-document.html#exercícios-escolha-múltipla-2",
     "title": "Microeconomia",
-    "section": "17 Exercícios — Escolha Múltipla (2)",
-    "text": "17 Exercícios — Escolha Múltipla (2)\n2. Para uma empresa em concorrência perfeita com \\(CT = 2Q^2 + 6Q + 50\\), qual o limiar de encerramento?\n\n\n\\(P_0 = 6\\) ✓\n\\(P_0 = 10\\)\n\\(P_0 = 50\\)\n\\(P_0 = 56\\)\n\n\n\nSolução: \\(CV = 2Q^2 + 6Q\\); \\(CVM = 2Q + 6\\).\n\\(CVM\\) é crescente para todo \\(Q &gt; 0\\) (é uma recta), logo o mínimo é em \\(Q \\to 0\\): \\(CVM_{min} = 6\\).\nVerificação: \\(Cmg = 4Q + 6\\). \\(Cmg = CVM \\Rightarrow 4Q + 6 = 2Q + 6 \\Rightarrow Q = 0\\). \\(CVM(0) = 6\\) ✓\n\\(P_0 = 6\\)."
+    "section": "18 Exercícios — Escolha Múltipla (2)",
+    "text": "18 Exercícios — Escolha Múltipla (2)\n2. Para uma empresa em concorrência perfeita com \\(CT = 2Q^2 + 6Q + 50\\), qual o limiar de encerramento?\n\n\n\\(P_0 = 6\\) ✓\n\\(P_0 = 10\\)\n\\(P_0 = 50\\)\n\\(P_0 = 56\\)\n\n\n\nSolução: \\(CV = 2Q^2 + 6Q\\); \\(CVM = 2Q + 6\\).\n\\(CVM\\) é crescente para todo \\(Q &gt; 0\\) (é uma recta), logo o mínimo é em \\(Q \\to 0\\): \\(CVM_{min} = 6\\).\nVerificação: \\(Cmg = 4Q + 6\\). \\(Cmg = CVM \\Rightarrow 4Q + 6 = 2Q + 6 \\Rightarrow Q = 0\\). \\(CVM(0) = 6\\) ✓\n\\(P_0 = 6\\)."
   },
   {
     "objectID": "slides/16_otimizacao_concorrencial-document.html#exercício-de-desenvolvimento",
     "href": "slides/16_otimizacao_concorrencial-document.html#exercício-de-desenvolvimento",
     "title": "Microeconomia",
-    "section": "18 Exercício de Desenvolvimento",
-    "text": "18 Exercício de Desenvolvimento\nEnunciado: Uma empresa em concorrência perfeita tem \\(CT = Q^3 - 9Q^2 + 30Q + 18\\).\n\nDetermine \\(Cmg\\), \\(CVM\\) e \\(CTM\\).\nCalcule os limiares de encerramento e rendibilidade.\nSe \\(P = 12\\), qual a produção óptima? Tem lucro ou prejuízo? Deve manter-se em funcionamento?\nEscreva a expressão da curva de oferta desta empresa."
+    "section": "19 Exercício de Desenvolvimento",
+    "text": "19 Exercício de Desenvolvimento\nEnunciado: Uma empresa em concorrência perfeita tem \\(CT = Q^3 - 9Q^2 + 30Q + 18\\).\n\nDetermine \\(Cmg\\), \\(CVM\\) e \\(CTM\\).\nCalcule os limiares de encerramento e rendibilidade.\nSe \\(P = 12\\), qual a produção óptima? Tem lucro ou prejuízo? Deve manter-se em funcionamento?\nEscreva a expressão da curva de oferta desta empresa."
   },
   {
     "objectID": "slides/16_otimizacao_concorrencial-document.html#solução-desenvolvimento-a-e-b",
     "href": "slides/16_otimizacao_concorrencial-document.html#solução-desenvolvimento-a-e-b",
     "title": "Microeconomia",
-    "section": "19 Solução — Desenvolvimento (a) e (b)",
-    "text": "19 Solução — Desenvolvimento (a) e (b)\n\\[Cmg = 3Q^2 - 18Q + 30, \\quad CVM = Q^2 - 9Q + 30, \\quad CTM = Q^2 - 9Q + 30 + \\tfrac{18}{Q}\\]\n\nLimiar de encerramento (\\(Cmg = CVM\\)):\n\\[3Q^2 - 18Q + 30 = Q^2 - 9Q + 30 \\;\\Rightarrow\\; 2Q^2 - 9Q = 0 \\;\\Rightarrow\\; Q_0 = 4.5\\]\n\\[P_0 = CVM(4.5) = 20.25 - 40.5 + 30 = \\mathbf{9.75}\\]\n\n\nLimiar de rendibilidade (\\(Cmg = CTM\\)):\n\\[3Q^2 - 18Q + 30 = Q^2 - 9Q + 30 + \\tfrac{18}{Q} \\;\\Rightarrow\\; 2Q^3 - 9Q^2 - 18 = 0\\]\nPor tentativas: \\(Q = 4.87 \\Rightarrow CTM(4.87) \\approx 13.59\\).\n\\[P_1 \\approx \\mathbf{13.59}\\]"
+    "section": "20 Solução — Desenvolvimento (a) e (b)",
+    "text": "20 Solução — Desenvolvimento (a) e (b)\n\\[Cmg = 3Q^2 - 18Q + 30, \\quad CVM = Q^2 - 9Q + 30, \\quad CTM = Q^2 - 9Q + 30 + \\tfrac{18}{Q}\\]\n\nLimiar de encerramento (\\(Cmg = CVM\\)):\n\\[3Q^2 - 18Q + 30 = Q^2 - 9Q + 30 \\;\\Rightarrow\\; 2Q^2 - 9Q = 0 \\;\\Rightarrow\\; Q_0 = 4.5\\]\n\\[P_0 = CVM(4.5) = 20.25 - 40.5 + 30 = \\mathbf{9.75}\\]\n\n\nLimiar de rendibilidade (\\(Cmg = CTM\\)):\n\\[3Q^2 - 18Q + 30 = Q^2 - 9Q + 30 + \\tfrac{18}{Q} \\;\\Rightarrow\\; 2Q^3 - 9Q^2 - 18 = 0\\]\nPor tentativas: \\(Q = 4.87 \\Rightarrow CTM(4.87) \\approx 13.59\\).\n\\[P_1 \\approx \\mathbf{13.59}\\]"
   },
   {
     "objectID": "slides/16_otimizacao_concorrencial-document.html#solução-desenvolvimento-c-e-d",
     "href": "slides/16_otimizacao_concorrencial-document.html#solução-desenvolvimento-c-e-d",
     "title": "Microeconomia",
-    "section": "20 Solução — Desenvolvimento (c) e (d)",
-    "text": "20 Solução — Desenvolvimento (c) e (d)\nPara \\(P = 12\\): \\(P = Cmg \\Rightarrow 3Q^2 - 18Q + 30 = 12 \\Rightarrow 3Q^2 - 18Q + 18 = 0 \\Rightarrow Q^2 - 6Q + 6 = 0\\)\n\\[Q = \\frac{6 \\pm \\sqrt{36 - 24}}{2} = \\frac{6 \\pm \\sqrt{12}}{2} = 3 \\pm \\sqrt{3}\\]\n\\(Q_a = 3 - \\sqrt{3} \\approx 1.27\\) (zona decrescente de \\(Cmg\\) — inválido)\n\\(Q^* = 3 + \\sqrt{3} \\approx 4.73\\)\n\n\\(CVM(4.73) = 22.37 - 42.57 + 30 = 9.80\\)\n\\(CTM(4.73) = 9.80 + 18/4.73 = 9.80 + 3.81 = 13.61\\)\n\n\n\\(P = 12 &gt; P_0 = 9.75\\) → mantém-se em funcionamento ✓\n\\(P = 12 &lt; P_1 \\approx 13.59\\) → tem prejuízo (mas inferior a \\(CF = 18\\)) ✓\n\n\nCurva de oferta: \\(S_i\\!: P = 3Q^2 - 18Q + 30\\) para \\(P \\geq 9.75\\)"
+    "section": "21 Solução — Desenvolvimento (c) e (d)",
+    "text": "21 Solução — Desenvolvimento (c) e (d)\nPara \\(P = 12\\): \\(P = Cmg \\Rightarrow 3Q^2 - 18Q + 30 = 12 \\Rightarrow 3Q^2 - 18Q + 18 = 0 \\Rightarrow Q^2 - 6Q + 6 = 0\\)\n\\[Q = \\frac{6 \\pm \\sqrt{36 - 24}}{2} = \\frac{6 \\pm \\sqrt{12}}{2} = 3 \\pm \\sqrt{3}\\]\n\\(Q_a = 3 - \\sqrt{3} \\approx 1.27\\) (zona decrescente de \\(Cmg\\) — inválido)\n\\(Q^* = 3 + \\sqrt{3} \\approx 4.73\\)\n\n\\(CVM(4.73) = 22.37 - 42.57 + 30 = 9.80\\)\n\\(CTM(4.73) = 9.80 + 18/4.73 = 9.80 + 3.81 = 13.61\\)\n\n\n\\(P = 12 &gt; P_0 = 9.75\\) → mantém-se em funcionamento ✓\n\\(P = 12 &lt; P_1 \\approx 13.59\\) → tem prejuízo (mas inferior a \\(CF = 18\\)) ✓\n\n\nCurva de oferta: \\(S_i\\!: P = 3Q^2 - 18Q + 30\\) para \\(P \\geq 9.75\\)"
   },
   {
     "objectID": "slides/15_geometria_custos-document.html",
@@ -4625,5 +4625,12 @@
     "title": "Microeconomia",
     "section": "Curva de Oferta Individual",
     "text": "Curva de Oferta Individual"
+  },
+  {
+    "objectID": "slides/16_otimizacao_concorrencial-document.html#curva-de-oferta-individual-1",
+    "href": "slides/16_otimizacao_concorrencial-document.html#curva-de-oferta-individual-1",
+    "title": "Microeconomia",
+    "section": "11 Curva de Oferta Individual",
+    "text": "11 Curva de Oferta Individual"
   }
 ]
