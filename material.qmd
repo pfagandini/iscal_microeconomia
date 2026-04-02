@@ -29,11 +29,12 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 
 ### Capítulo IV: Equilíbrio de Mercado de Curto Prazo
 
-
+12. [Oferta](slides/12_Oferta.qmd)
+13. [Equilíbrio de Curto Prazo](slides/13_Eq_cp.qmd)
 
 ### Capítulo V: Produção e Equilíbrio de Mercado de Longo Prazo
 
-
+14. [Longo Prazo](slides/14_Lp_isoquanta.qmd)
 
 ### Capítulo VI: Elasticidades e Intervenções dos Mercados
 

@@ -1,0 +1,628 @@
+---
+title: "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total"
+subtitle: "Microeconomia — Licenciatura em Contabilidade e Administração"
+author: "ISCAL - IPL"
+date: today
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    incremental: false
+    self-contained: false
+    toc: false
+    from: markdown+emoji
+    mathjax: true
+engine: knitr
+---
+
+## O que é o Equilíbrio de Mercado?
+
+O mercado de **concorrência perfeita** está em equilíbrio quando:
+
+. . .
+
+- Os **consumidores** compram exactamente a quantidade que desejavam adquirir ao preço vigente
+- Os **produtores** vendem exactamente a quantidade que planeavam oferecer
+- Não existe incentivo para nenhum agente alterar o seu comportamento
+
+. . .
+
+::: {.callout-important}
+**Condição de equilíbrio:** $Q_d(p^*) = Q_s(p^*)$
+
+Ao preço de equilíbrio $p^*$, a quantidade procurada iguala a quantidade oferecida.
+:::
+
+---
+
+## Equilíbrio de Mercado: geometria
+
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 4.2
+#| out-width: "65%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+# Qd = 18 - 2P -> P = 9 - Q/2 (demand inverse)
+# Qs = 2P - 2  -> P = 1 + Q/2 (supply inverse)
+# Eq: P*=5, Q*=8  (verified)
+
+s_inv <- function(q) 1 + q/2
+d_inv <- function(q) 9 - q/2
+Q_eq <- 8; P_eq <- 5
+
+Q_vals <- seq(0, 10, by = 0.05)
+df <- data.frame(
+  Q = Q_vals,
+  S = s_inv(Q_vals),
+  D = d_inv(Q_vals)
+)
+
+ggplot(df, aes(x = Q)) +
+  geom_line(aes(y = D), colour = "#27ae60", linewidth = 1.2) +
+  geom_line(aes(y = S), colour = "#2980b9", linewidth = 1.2) +
+  geom_point(aes(x = Q_eq, y = P_eq), size = 3.5, colour = "red") +
+  geom_segment(aes(x = 0, xend = Q_eq, y = P_eq, yend = P_eq),
+               linetype = "dashed", colour = "grey40") +
+  geom_segment(aes(x = Q_eq, xend = Q_eq, y = 0, yend = P_eq),
+               linetype = "dashed", colour = "grey40") +
+  annotate("text", x = 10.2, y = d_inv(10), label = "D", colour = "#27ae60", size = 4.5) +
+  annotate("text", x = 10.2, y = s_inv(10), label = "S", colour = "#2980b9", size = 4.5) +
+  annotate("text", x = Q_eq + 0.2, y = P_eq + 0.3,
+           label = "E", colour = "red", size = 4.5, fontface = "bold") +
+  annotate("text", x = -0.3, y = P_eq, label = expression(p^"*"), size = 4, hjust = 1) +
+  annotate("text", x = Q_eq, y = -0.25, label = expression(Q^"*"), size = 4, vjust = 1) +
+  coord_cartesian(xlim = c(0, 11), ylim = c(0, 10)) +
+  labs(x = "Q", y = "P") +
+  theme_minimal(base_size = 12)
+```
+
+O ponto **E** é o equilíbrio: a "mão invisível" de Adam Smith (1776) conduz os agentes até aqui.
+
+---
+
+## A Mão Invisível e a Eficiência
+
+> *"Cada indivíduo não pretende promover o interesse público, nem sabe em que medida o está a promover. Ele é conduzido por uma mão invisível a promover um fim que não fazia parte dos seus planos."*
+> — Adam Smith, *A Riqueza das Nações*, 1776
+
+. . .
+
+Em mercados concorrenciais, **sem falhas de mercado**:
+
+- O equilíbrio resulta do ajustamento automático do preço
+- É gerado por decisões descentralizadas e racionais
+- O resultado é **eficiente**: o excedente total é máximo
+
+---
+
+## Desequilíbrio: Excesso de Oferta
+
+Quando $p > p^*$: a quantidade oferecida excede a procurada — há **excesso de oferta**.
+
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 3.8
+#| out-width: "62%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+s_inv <- function(q) 1 + q/2
+d_inv <- function(q) 9 - q/2
+Q_eq <- 8; P_eq <- 5
+P_high <- 7  # above equilibrium
+
+# At P=7: Qs = 2*7-2=12, Qd=18-2*7=4
+Q_s_high <- 12; Q_d_high <- 4
+
+Q_vals <- seq(0, 14, by = 0.05)
+df <- data.frame(Q=Q_vals, S=s_inv(Q_vals), D=d_inv(Q_vals))
+
+ggplot(df, aes(x=Q)) +
+  geom_line(aes(y=D), colour="#27ae60", linewidth=1.1) +
+  geom_line(aes(y=S), colour="#2980b9", linewidth=1.1) +
+  geom_hline(yintercept=P_high, linetype="dashed", colour="grey50") +
+  # excess supply bracket
+  geom_segment(aes(x=Q_d_high, xend=Q_s_high, y=P_high+0.4, yend=P_high+0.4),
+               colour="#c0392b", linewidth=1.2,
+               arrow=arrow(ends="both", length=unit(0.2,"cm"))) +
+  geom_point(aes(x=Q_d_high, y=P_high), size=3, colour="#27ae60") +
+  geom_point(aes(x=Q_s_high, y=P_high), size=3, colour="#2980b9") +
+  geom_segment(aes(x=0, xend=Q_eq, y=P_eq, yend=P_eq),
+               linetype="dotted", colour="grey60") +
+  # price arrow downward
+  annotate("segment", x=Q_eq, xend=Q_eq, y=P_high-0.1, yend=P_eq+0.1,
+           colour="#c0392b", linewidth=1.2,
+           arrow=arrow(length=unit(0.25,"cm"))) +
+  annotate("text", x=-0.4, y=P_high, label=expression(p[1]), size=3.8, hjust=1) +
+  annotate("text", x=-0.4, y=P_eq, label=expression(p^"*"), size=3.8, hjust=1) +
+  annotate("text", x=Q_d_high, y=-0.3, label=expression(q[d]), size=3.5, vjust=1) +
+  annotate("text", x=Q_s_high, y=-0.3, label=expression(q[s]), size=3.5, vjust=1) +
+  annotate("text", x=(Q_d_high+Q_s_high)/2, y=P_high+0.9,
+           label="Excesso de Oferta", colour="#c0392b", size=3.5) +
+  annotate("text", x=10.8, y=d_inv(10.5)+0.2, label="D", colour="#27ae60", size=4) +
+  annotate("text", x=10.8, y=s_inv(10.5)+0.2, label="S", colour="#2980b9", size=4) +
+  coord_cartesian(xlim=c(0,13), ylim=c(0,10)) +
+  labs(x="Q", y="P") +
+  theme_minimal(base_size=11)
+```
+
+$p_1 > p^* \Rightarrow q_s > q_d$ → produtores não conseguem escoar a produção → **preço desce** até $p^*$.
+
+---
+
+## Desequilíbrio: Excesso de Procura
+
+Quando $p < p^*$: a quantidade procurada excede a oferecida — há **excesso de procura**.
+
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 3.8
+#| out-width: "62%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+s_inv <- function(q) 1 + q/2
+d_inv <- function(q) 9 - q/2
+Q_eq <- 8; P_eq <- 5
+P_low <- 3  # below equilibrium
+
+# At P=3: Qs=2*3-2=4, Qd=18-2*3=12
+Q_s_low <- 4; Q_d_low <- 12
+
+Q_vals <- seq(0, 14, by=0.05)
+df <- data.frame(Q=Q_vals, S=s_inv(Q_vals), D=d_inv(Q_vals))
+
+ggplot(df, aes(x=Q)) +
+  geom_line(aes(y=D), colour="#27ae60", linewidth=1.1) +
+  geom_line(aes(y=S), colour="#2980b9", linewidth=1.1) +
+  geom_hline(yintercept=P_low, linetype="dashed", colour="grey50") +
+  geom_segment(aes(x=Q_s_low, xend=Q_d_low, y=P_low-0.4, yend=P_low-0.4),
+               colour="#c0392b", linewidth=1.2,
+               arrow=arrow(ends="both", length=unit(0.2,"cm"))) +
+  geom_point(aes(x=Q_s_low, y=P_low), size=3, colour="#2980b9") +
+  geom_point(aes(x=Q_d_low, y=P_low), size=3, colour="#27ae60") +
+  geom_segment(aes(x=0, xend=Q_eq, y=P_eq, yend=P_eq),
+               linetype="dotted", colour="grey60") +
+  annotate("segment", x=Q_eq, xend=Q_eq, y=P_low+0.1, yend=P_eq-0.1,
+           colour="#c0392b", linewidth=1.2,
+           arrow=arrow(length=unit(0.25,"cm"))) +
+  annotate("text", x=-0.4, y=P_low, label=expression(p[2]), size=3.8, hjust=1) +
+  annotate("text", x=-0.4, y=P_eq, label=expression(p^"*"), size=3.8, hjust=1) +
+  annotate("text", x=Q_s_low, y=-0.3, label=expression(q[s]), size=3.5, vjust=1) +
+  annotate("text", x=Q_d_low, y=-0.3, label=expression(q[d]), size=3.5, vjust=1) +
+  annotate("text", x=(Q_s_low+Q_d_low)/2, y=P_low-1.0,
+           label="Excesso de Procura", colour="#c0392b", size=3.5) +
+  annotate("text", x=10.8, y=d_inv(10.5)+0.2, label="D", colour="#27ae60", size=4) +
+  annotate("text", x=10.8, y=s_inv(10.5)+0.2, label="S", colour="#2980b9", size=4) +
+  coord_cartesian(xlim=c(0,13), ylim=c(0,10)) +
+  labs(x="Q", y="P") +
+  theme_minimal(base_size=11)
+```
+
+$p_2 < p^* \Rightarrow q_d > q_s$ → consumidores não encontram o bem → **preço sobe** até $p^*$.
+
+---
+
+## Dinâmicas: Expansão da Procura
+
+O que acontece quando a procura **aumenta** (desloca-se para a direita)?
+
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 3.8
+#| out-width: "62%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+s_inv  <- function(q) 1 + q/2
+d_inv  <- function(q) 9 - q/2
+d2_inv <- function(q) 11 - q/2   # parallel shift: new demand Qd'=22-2P -> P=11-Q/2
+# New eq: Qs=Qd' -> 2P-2=22-2P -> P*=6, Q*=10 (verified)
+Q_eq  <- 8;  P_eq  <- 5
+Q_eq2 <- 10; P_eq2 <- 6
+
+Q_vals <- seq(0, 14, by=0.05)
+df <- data.frame(Q=Q_vals,
+                 S  = s_inv(Q_vals),
+                 D  = d_inv(Q_vals),
+                 D2 = d2_inv(Q_vals))
+
+ggplot(df, aes(x=Q)) +
+  geom_line(aes(y=S),  colour="#2980b9",  linewidth=1.1) +
+  geom_line(aes(y=D),  colour="#27ae60",  linewidth=1.1) +
+  geom_line(aes(y=D2), colour="#e74c3c",  linewidth=1.1, linetype="solid") +
+  # old equilibrium
+  geom_segment(aes(x=0, xend=Q_eq, y=P_eq, yend=P_eq),
+               linetype="dashed", colour="grey50") +
+  geom_segment(aes(x=Q_eq, xend=Q_eq, y=0, yend=P_eq),
+               linetype="dashed", colour="grey50") +
+  geom_point(aes(x=Q_eq, y=P_eq), size=3, colour="#27ae60") +
+  # new equilibrium
+  geom_segment(aes(x=0, xend=Q_eq2, y=P_eq2, yend=P_eq2),
+               linetype="dashed", colour="#e74c3c") +
+  geom_segment(aes(x=Q_eq2, xend=Q_eq2, y=0, yend=P_eq2),
+               linetype="dashed", colour="#e74c3c") +
+  geom_point(aes(x=Q_eq2, y=P_eq2), size=3.5, colour="red") +
+  # demand shift arrow
+  annotate("segment", x=6, xend=7.8, y=d_inv(6)+0.3, yend=d2_inv(7.8)+0.3,
+           colour="#e74c3c", linewidth=1,
+           arrow=arrow(length=unit(0.2,"cm"))) +
+  annotate("text", x=-0.4, y=P_eq,  label=expression(p[0]), size=3.8, hjust=1) +
+  annotate("text", x=-0.4, y=P_eq2, label=expression(p^"*'"), size=3.8, hjust=1) +
+  annotate("text", x=Q_eq,  y=-0.3, label=expression(Q[0]), size=3.5, vjust=1) +
+  annotate("text", x=Q_eq2, y=-0.3, label=expression(Q^"*'"), size=3.5, vjust=1) +
+  annotate("text", x=11.5, y=d_inv(11)+0.2,  label="D",  colour="#27ae60", size=4) +
+  annotate("text", x=11.5, y=d2_inv(11)+0.2, label="D'", colour="#e74c3c", size=4) +
+  annotate("text", x=11.5, y=s_inv(11)+0.2,  label="S",  colour="#2980b9", size=4) +
+  coord_cartesian(xlim=c(0,13), ylim=c(0,12)) +
+  labs(x="Q", y="P") +
+  theme_minimal(base_size=11)
+```
+
+$D \uparrow$ → excesso de procura ao preço antigo → preço **sobe** → quantidade de equilíbrio **aumenta**.
+
+---
+
+## Dinâmicas: Expansão da Oferta
+
+O que acontece quando a oferta **aumenta** (desloca-se para a direita)?
+
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 3.8
+#| out-width: "62%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+# Original: Qs=2P-2 -> P_inv=1+Q/2, Qd=18-2P -> P_inv=9-Q/2. Eq: P*=5, Q*=8
+# Supply expands: Qs'=2P+2 -> P_inv=-1+Q/2... but supply intercept at P=0 is Q=2 (Qs'=0 when P=-1, below zero)
+# In terms of inverse: P = (Q-2)/2 = -1 + Q/2
+# New eq: Qs'=Qd -> 2P+2=18-2P -> 4P=16 -> P*'=4, Q*'=10 (verified)
+s_inv  <- function(q) 1 + q/2
+s2_inv <- function(q) -1 + q/2
+d_inv  <- function(q) 9 - q/2
+Q_eq  <- 8;  P_eq  <- 5
+Q_eq2 <- 10; P_eq2 <- 4
+
+Q_vals <- seq(2, 14, by=0.05)   # s2 only defined for Q>=2 (P>=0)
+Q_vals_s <- seq(0, 14, by=0.05)
+df  <- data.frame(Q=Q_vals_s, S=s_inv(Q_vals_s), D=d_inv(Q_vals_s))
+df2 <- data.frame(Q=Q_vals,   S2=s2_inv(Q_vals))
+
+ggplot() +
+  geom_line(data=df,  aes(x=Q, y=D),  colour="#27ae60", linewidth=1.1) +
+  geom_line(data=df,  aes(x=Q, y=S),  colour="#2980b9", linewidth=1.1) +
+  geom_line(data=df2, aes(x=Q, y=S2), colour="#8e44ad", linewidth=1.1) +
+  geom_segment(aes(x=0, xend=Q_eq, y=P_eq, yend=P_eq),
+               linetype="dashed", colour="grey50") +
+  geom_segment(aes(x=Q_eq, xend=Q_eq, y=0, yend=P_eq),
+               linetype="dashed", colour="grey50") +
+  geom_point(aes(x=Q_eq, y=P_eq), size=3, colour="#2980b9") +
+  geom_segment(aes(x=0, xend=Q_eq2, y=P_eq2, yend=P_eq2),
+               linetype="dashed", colour="#8e44ad") +
+  geom_segment(aes(x=Q_eq2, xend=Q_eq2, y=0, yend=P_eq2),
+               linetype="dashed", colour="#8e44ad") +
+  geom_point(aes(x=Q_eq2, y=P_eq2), size=3.5, colour="red") +
+  annotate("segment", x=5, xend=6.8, y=s_inv(5)+0.3, yend=s2_inv(6.8)+0.3,
+           colour="#8e44ad", linewidth=1,
+           arrow=arrow(length=unit(0.2,"cm"))) +
+  annotate("text", x=-0.4, y=P_eq,  label=expression(p[0]),  size=3.8, hjust=1) +
+  annotate("text", x=-0.4, y=P_eq2, label=expression(p^"*'"), size=3.8, hjust=1) +
+  annotate("text", x=Q_eq,  y=-0.3, label=expression(Q[0]),   size=3.5, vjust=1) +
+  annotate("text", x=Q_eq2, y=-0.3, label=expression(Q^"*'"), size=3.5, vjust=1) +
+  annotate("text", x=12.5, y=d_inv(12)+0.2,   label="D",  colour="#27ae60", size=4) +
+  annotate("text", x=12.5, y=s_inv(12)+0.2,   label="S",  colour="#2980b9", size=4) +
+  annotate("text", x=12.5, y=s2_inv(12)+0.2,  label="S'", colour="#8e44ad", size=4) +
+  coord_cartesian(xlim=c(0,13), ylim=c(0,10)) +
+  labs(x="Q", y="P") +
+  theme_minimal(base_size=11)
+```
+
+$S \uparrow$ → excesso de oferta ao preço antigo → preço **desce** → quantidade de equilíbrio **aumenta**.
+
+---
+
+## Resumo das Dinâmicas
+
+| Alteração | Efeito sobre $P^*$ | Efeito sobre $Q^*$ |
+|---|:---:|:---:|
+| $\uparrow$ Procura | $\uparrow$ | $\uparrow$ |
+| $\downarrow$ Procura | $\downarrow$ | $\downarrow$ |
+| $\uparrow$ Oferta | $\downarrow$ | $\uparrow$ |
+| $\downarrow$ Oferta | $\uparrow$ | $\downarrow$ |
+| $\uparrow$ Procura **e** $\uparrow$ Oferta | **?** | $\uparrow$ |
+| $\uparrow$ Procura **e** $\downarrow$ Oferta | $\uparrow$ | **?** |
+
+. . .
+
+Quando **dois choques** ocorrem simultaneamente, o efeito num dos preços ou quantidades pode ser indeterminado — depende da *magnitude relativa* dos choques.
+
+---
+
+## Empresa vs. Mercado no Curto Prazo
+
+No equilíbrio, o preço $p^*$ é formado pela interacção de **todos** os agentes. Cada empresa $i$ toma-o como dado e optimiza individualmente.
+
+::: {.columns}
+::: {.column width="48%"}
+**A empresa $i$**
+
+- Enfrenta procura horizontal $D_i: p = p^*$
+- Produz onde $p^* = CMg_i$ (parte ascendente)
+- A curva $CMg_i$ ascendente é a sua oferta individual
+:::
+::: {.column width="48%"}
+**O mercado**
+
+- $D$ e $S$ determinam $p^*$ e $Q^*$
+- $Q^* = \sum_i q_i^*$ (soma das escolhas individuais)
+- Cada empresa é *price-taker*
+:::
+:::
+
+. . .
+
+::: {.callout-note}
+No curto prazo, o número de empresas é fixo. O preço de equilíbrio pode ser tal que as empresas tenham lucro, prejuízo, ou resultado nulo — dependendo de $p^*$ vs $CTM$.
+:::
+
+---
+
+## Excedente Económico Total
+
+::: {.callout-note}
+## Excedente Económico Total (EE)
+$$EE = EC + EP$$
+
+O excedente total mede o **valor gerado pelas trocas** no mercado — o ganho mútuo que consumidores e produtores obtêm ao transaccionarem, em vez de não o fazerem.
+:::
+
+. . .
+
+```{r}
+#| echo: false
+#| fig-width: 6.5
+#| fig-height: 3.8
+#| out-width: "62%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+s_inv <- function(q) 1 + q/2
+d_inv <- function(q) 9 - q/2
+Q_eq <- 8; P_eq <- 5
+# CS: (1/2)*(9-5)*8 = 16; PS: (1/2)*(5-1)*8 = 16; Total=32
+
+Q_vals <- seq(0, 10, by=0.05)
+df <- data.frame(Q=Q_vals, S=s_inv(Q_vals), D=d_inv(Q_vals))
+
+# CS polygon: (0,9), (8,5), (0,5)
+cs_poly <- data.frame(x=c(0,Q_eq,0), y=c(d_inv(0),P_eq,P_eq))
+# PS polygon: (0,1), (8,5), (0,5)
+ps_poly <- data.frame(x=c(0,Q_eq,0), y=c(s_inv(0),P_eq,P_eq))
+
+ggplot() +
+  geom_polygon(data=cs_poly, aes(x=x,y=y), fill="#27ae60", alpha=0.35) +
+  geom_polygon(data=ps_poly, aes(x=x,y=y), fill="#2980b9", alpha=0.35) +
+  geom_line(data=df, aes(x=Q,y=D), colour="#27ae60", linewidth=1.2) +
+  geom_line(data=df, aes(x=Q,y=S), colour="#2980b9", linewidth=1.2) +
+  geom_segment(aes(x=0,xend=Q_eq,y=P_eq,yend=P_eq), linetype="dashed", colour="grey40") +
+  geom_segment(aes(x=Q_eq,xend=Q_eq,y=0,yend=P_eq), linetype="dashed", colour="grey40") +
+  geom_point(aes(x=Q_eq,y=P_eq), size=3.5, colour="red") +
+  annotate("text", x=10.3, y=d_inv(10), label="D", colour="#27ae60", size=4) +
+  annotate("text", x=10.3, y=s_inv(10), label="S", colour="#2980b9", size=4) +
+  annotate("text", x=-0.35, y=P_eq,      label=expression(p^"*"), size=4, hjust=1) +
+  annotate("text", x=-0.35, y=d_inv(0),  label="9",  size=3.5, hjust=1) +
+  annotate("text", x=-0.35, y=s_inv(0),  label="1",  size=3.5, hjust=1) +
+  annotate("text", x=Q_eq,  y=-0.3,      label="8",  size=3.5, vjust=1) +
+  annotate("text", x=2.2, y=7, label="EC = 16", colour="#27ae60", size=4, fontface="bold") +
+  annotate("text", x=2.2, y=3, label="EP = 16", colour="#2980b9", size=4, fontface="bold") +
+  coord_cartesian(xlim=c(0,11), ylim=c(0,10)) +
+  labs(x="Q", y="P") +
+  theme_minimal(base_size=11)
+```
+
+---
+
+## Excedente Total e Eficiência
+
+O excedente total é **máximo** no equilíbrio concorrencial — qualquer outra quantidade transaccionada reduz-o.
+
+. . .
+
+::: {.columns}
+::: {.column width="50%"}
+**Quantidade abaixo de $Q^*$** ($Q < Q^*$):
+
+- Há trocas mutuamente benéficas que não ocorrem
+- Produz-se *menos* do que seria desejável
+- Perda de eficiência (*deadweight loss*)
+:::
+::: {.column width="50%"}
+**Quantidade acima de $Q^*$** ($Q > Q^*$):
+
+- Produzem-se unidades cujo custo excede o benefício
+- O valor para o consumidor é inferior ao custo de produção
+- Também há perda de eficiência
+:::
+:::
+
+. . .
+
+::: {.callout-important}
+A concorrência perfeita **maximiza o excedente total** — por isso se diz que é a estrutura de mercado **eficiente**, na ausência de falhas de mercado.
+:::
+
+---
+
+## Excedente após um Choque de Procura
+
+Quando a procura se expande de $D$ para $D'$, o novo equilíbrio gera mais excedente total.
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 4
+#| out-width: "100%"
+
+library(ggplot2)
+library(patchwork)
+
+s_inv  <- function(q) 1 + q/2
+d_inv  <- function(q) 9 - q/2
+d2_inv <- function(q) 11 - q/2
+# Old: P*=5, Q*=8. CS=16, PS=16, EE=32
+# New: P*=6, Q*=10. CS=(1/2)*(11-6)*10=25, PS=(1/2)*(6-1)*10=25, EE=50
+
+make_surplus <- function(d_fn, s_fn, Q_eq, P_eq, d_label, title_str) {
+  Q_vals <- seq(0, Q_eq+4, by=0.05)
+  df <- data.frame(Q=Q_vals, D=d_fn(Q_vals), S=s_fn(Q_vals))
+  P_d_int <- d_fn(0)
+  P_s_int <- s_fn(0)
+  cs_poly <- data.frame(x=c(0,Q_eq,0), y=c(P_d_int,P_eq,P_eq))
+  ps_poly <- data.frame(x=c(0,Q_eq,0), y=c(P_s_int,P_eq,P_eq))
+  CS_val  <- 0.5*(P_d_int-P_eq)*Q_eq
+  PS_val  <- 0.5*(P_eq-P_s_int)*Q_eq
+  ggplot() +
+    geom_polygon(data=cs_poly, aes(x=x,y=y), fill="#27ae60", alpha=0.35) +
+    geom_polygon(data=ps_poly, aes(x=x,y=y), fill="#2980b9", alpha=0.35) +
+    geom_line(data=subset(df, D>=0), aes(x=Q,y=D), colour="#27ae60", linewidth=1.1) +
+    geom_line(data=df, aes(x=Q,y=S), colour="#2980b9", linewidth=1.1) +
+    geom_segment(aes(x=0,xend=Q_eq,y=P_eq,yend=P_eq), linetype="dashed", colour="grey40") +
+    geom_segment(aes(x=Q_eq,xend=Q_eq,y=0,yend=P_eq), linetype="dashed", colour="grey40") +
+    geom_point(aes(x=Q_eq,y=P_eq), size=3, colour="red") +
+    annotate("text", x=Q_eq+3.5, y=d_fn(Q_eq+3), label=d_label, colour="#27ae60", size=3.5) +
+    annotate("text", x=Q_eq+3.5, y=s_fn(Q_eq+3), label="S", colour="#2980b9", size=3.5) +
+    annotate("text", x=-0.4, y=P_eq, label=paste0("p*=",P_eq), size=3, hjust=1) +
+    annotate("text", x=Q_eq, y=-0.4, label=paste0("Q*=",Q_eq), size=3, vjust=1) +
+    annotate("text", x=1.5, y=P_d_int*0.78,
+             label=paste0("EC=",CS_val), colour="#27ae60", size=3.2, fontface="bold") +
+    annotate("text", x=1.5, y=P_s_int + (P_eq-P_s_int)*0.3,
+             label=paste0("EP=",PS_val), colour="#2980b9", size=3.2, fontface="bold") +
+    labs(title=title_str, x="Q", y="P",
+         subtitle=paste0("EE = ", CS_val+PS_val)) +
+    coord_cartesian(xlim=c(0,Q_eq+4), ylim=c(0,13)) +
+    theme_minimal(base_size=10) +
+    theme(plot.title=element_text(size=10,face="bold"),
+          plot.subtitle=element_text(size=9,colour="#c0392b"))
+}
+
+p1 <- make_surplus(d_inv,  s_inv, 8,  5, "D",  "Antes do choque")
+p2 <- make_surplus(d2_inv, s_inv, 10, 6, "D'", "Após expansão da procura")
+p1 + p2
+```
+
+A expansão da procura beneficia **ambos** os lados do mercado: EC e EP aumentam.
+
+---
+
+## Exercícios
+
+### Exercício 1 (Escolha Múltipla)
+
+Num mercado, a oferta de um bem **reduz-se** (a curva desloca-se para a esquerda). *Ceteris paribus*, o que acontece ao equilíbrio?
+
+**(A)** O preço sobe e a quantidade de equilíbrio aumenta.
+
+**(B)** O preço desce e a quantidade de equilíbrio aumenta.
+
+**(C)** O preço sobe e a quantidade de equilíbrio diminui.
+
+**(D)** O preço desce e a quantidade de equilíbrio diminui.
+
+. . .
+
+::: {.callout-tip}
+## Solução
+**Resposta: (C)**  
+Redução da oferta → curva $S$ desloca para a esquerda → excesso de procura ao preço anterior → preço sobe. Com preço mais alto e procura inalterada, a quantidade transaccionada **diminui**.
+:::
+
+---
+
+## Exercícios
+
+### Exercício 2 (Escolha Múltipla)
+
+Num mercado em equilíbrio com $p^* = 10$ e $Q^* = 20$. A curva de procura é linear com ordenada na origem $P = 20 - \frac{Q}{2}$ e a oferta tem ordenada na origem $P = 2$ (no eixo dos preços). Qual o excedente económico total?
+
+**(A)** 100
+
+**(B)** 160
+
+**(C)** 180
+
+**(D)** 200
+
+. . .
+
+::: {.callout-tip}
+## Solução
+**Resposta: (C)**  
+$EC = \tfrac{1}{2}(20 - 10)\times 20 = 100$  
+$EP = \tfrac{1}{2}(10 - 2)\times 20 = 80$  
+$EE = EC + EP = 180$
+:::
+
+---
+
+## Exercício 3 (Desenvolvimento)
+
+O mercado de um bem tem as equações:
+$$Q_d = 18 - 2P \qquad Q_s = 2P - 2$$
+
+**a)** Calcule o preço e a quantidade de equilíbrio.
+
+**b)** Calcule o excedente do consumidor (EC), excedente do produtor (EP) e o excedente total (EE).
+
+**c)** A procura expande-se para $Q_d' = 22 - 2P$. Determine o novo equilíbrio e os novos excedentes. Quem ganha mais com esta expansão?
+
+**d)** Utilizando a tabela de dinâmicas, explique o que aconteceria se, simultaneamente, a procura expandisse e a oferta contraísse.
+
+. . .
+
+::: {.callout-tip}
+## Solução
+
+**a)** $18 - 2P = 2P - 2 \Rightarrow 4P = 20 \Rightarrow P^* = 5$, $Q^* = 8$.
+
+**b)** Interceptos: procura $P=9$, oferta $P=1$.  
+$EC = \tfrac{1}{2}(9-5)\times 8 = 16$ $\quad$ $EP = \tfrac{1}{2}(5-1)\times 8 = 16$ $\quad$ $EE = 32$.
+
+**c)** $22 - 2P = 2P - 2 \Rightarrow 4P = 24 \Rightarrow P^{*\prime} = 6$, $Q^{*\prime} = 10$.  
+Novo intercepto da procura: $Q_d'=0 \Rightarrow P=11$.  
+$EC' = \tfrac{1}{2}(11-6)\times 10 = 25$ $\quad$ $EP' = \tfrac{1}{2}(6-1)\times 10 = 25$ $\quad$ $EE' = 50$.  
+Ambos ganham igual ($+9$ cada). O excedente total aumentou $+18$.
+
+**d)** Procura $\uparrow$ e oferta $\downarrow$: o preço sobe inequivocamente ($\uparrow P$). O efeito na quantidade é **indeterminado** — depende da magnitude relativa dos dois choques.
+:::
+
+---
+
+## Síntese
+
+::: {.incremental}
+- O **equilíbrio** ocorre onde $Q_d = Q_s$; ao preço $p^*$ nenhum agente quer desviar-se.
+- O ajustamento é automático: excesso de oferta faz o preço descer; excesso de procura faz-o subir.
+- Deslocações da curva $D$ ou $S$ alteram o equilíbrio — o sentido depende da direcção do choque.
+- Com dois choques simultâneos, um dos efeitos ($P^*$ ou $Q^*$) pode ser indeterminado.
+- O **excedente total** $EE = EC + EP$ é máximo no equilíbrio concorrencial.
+- Qualquer quantidade diferente de $Q^*$ implica perda de eficiência (*deadweight loss*).
+- A expansão da procura ou da oferta beneficia ambos os lados do mercado — o EE aumenta.
+:::

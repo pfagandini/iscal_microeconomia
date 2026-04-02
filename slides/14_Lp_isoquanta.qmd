@@ -1,0 +1,620 @@
+---
+title: "Otimização de Longo Prazo e Isoquanta"
+subtitle: "Microeconomia — Licenciatura em Contabilidade e Administração"
+author: "ISCAL - IPL"
+date: today
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    incremental: false
+    self-contained: false
+    toc: false
+    from: markdown+emoji
+    mathjax: true
+engine: knitr
+---
+
+## Curto Prazo vs. Longo Prazo
+
+No **curto prazo**, pelo menos um factor produtivo é fixo (tipicamente o capital $K$), dando origem a custos fixos.
+
+. . .
+
+No **longo prazo**, **todos** os factores são variáveis — a empresa pode escolher livremente a combinação de capital $K$ e trabalho $L$:
+
+- Não existem custos fixos
+- A empresa tem mais graus de liberdade
+- Pode sempre alcançar custos médios iguais ou menores do que no curto prazo
+
+. . .
+
+::: {.callout-important}
+**Problema do produtor a longo prazo:** encontrar a combinação $(K, L)$ que minimiza o custo de produzir uma dada quantidade $Q^*$.
+:::
+
+---
+
+## O Problema de Optimização de Longo Prazo
+
+$$\min_{K,\, L} \; rK + wL \qquad \text{sujeito a} \quad F(K,L) = Q^*$$
+
+onde $r$ é o custo unitário do capital e $w$ o custo unitário do trabalho.
+
+. . .
+
+| Símbolo | Significado |
+|---|---|
+| $r$ | Custo de aluguer/uso do capital (taxa de juro, amortização) |
+| $w$ | Salário (custo do trabalho) |
+| $rK + wL$ | Custo total a minimizar |
+| $F(K,L) = Q^*$ | Restrição: produzir exactamente $Q^*$ |
+
+. . .
+
+A restrição $F(K,L) = Q^*$ define todas as combinações $(K,L)$ que produzem $Q^*$ — a **isoquanta**.
+
+---
+
+## Isoquanta: definição
+
+::: {.callout-note}
+## Isoquanta
+Curva que representa todas as combinações de capital $K$ e trabalho $L$ que permitem obter a **mesma quantidade** produzida $Q^*$.
+
+$$\{(K, L) : F(K, L) = Q^*\}$$
+
+É uma **curva de nível** da função de produção ao nível $Q^*$.
+:::
+
+. . .
+
+Para funções da família $F(K,L) = A K^a L^b$, a isoquanta é uma **hipérbole** no espaço $(L, K)$.
+
+Isoquantas mais afastadas da origem correspondem a níveis de produção **mais elevados**.
+
+---
+
+## Isoquantas: geometria
+
+```{r}
+#| echo: false
+#| fig-width: 5.5
+#| fig-height: 4.5
+#| out-width: "60%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+# Q = K^0.5 * L^0.5  ->  K = Q^2 / L
+# For Q=4, 6, 8
+L_vals <- seq(0.3, 8, by = 0.02)
+
+iq <- function(L, Q) Q^2 / L
+
+df1 <- data.frame(L=L_vals, K=iq(L_vals, 4),  label="Q = 16")
+df2 <- data.frame(L=L_vals, K=iq(L_vals, 6),  label="Q = 36")
+df3 <- data.frame(L=L_vals, K=iq(L_vals, 8),  label="Q = 64")
+df  <- rbind(df1, df2, df3)
+
+ggplot(df, aes(x=L, y=K, colour=label, group=label)) +
+  geom_line(linewidth=1.1) +
+  scale_colour_manual(values=c("Q = 16"="#2980b9",
+                                "Q = 36"="#27ae60",
+                                "Q = 64"="#c0392b")) +
+  annotate("text", x=7.8, y=iq(7.8,4)+0.3,  label=expression(Q^"*"),   colour="#2980b9", size=3.8) +
+  annotate("text", x=7.8, y=iq(7.8,6)+0.3,  label=expression(Q^"**"),  colour="#27ae60", size=3.8) +
+  annotate("text", x=7.8, y=iq(7.8,8)+0.3,  label=expression(Q^"***"), colour="#c0392b", size=3.8) +
+  coord_cartesian(xlim=c(0,9), ylim=c(0,9)) +
+  labs(x="L (Trabalho)", y="K (Capital)") +
+  theme_minimal(base_size=12) +
+  theme(legend.position="none")
+```
+
+Ao longo de cada isoquanta, $K$ e $L$ são **substituíveis** — reduzir um factor obriga a aumentar o outro para manter $Q^*$.
+
+---
+
+## Taxa Marginal de Substituição Técnica (TMST)
+
+A inclinação da isoquanta mede a **taxa a que a empresa troca $L$ por $K$** mantendo a produção constante:
+
+$$TMST_{L,K} = -\frac{dK}{dL}\bigg|_{Q=Q^*} = \frac{PMg_L}{PMg_K}$$
+
+. . .
+
+- A TMST é **decrescente** ao longo da isoquanta (lei dos rendimentos marginais decrescentes)
+- Quando se tem muito $K$ e pouco $L$, o trabalho é muito produtivo → troca-se muito $K$ por uma unidade de $L$
+- Conforme se substitui $K$ por $L$, a TMST diminui
+
+. . .
+
+::: {.callout-note}
+A TMST é análoga ao $TMS$ do consumidor — aqui avalia a substituição de factores em vez de bens de consumo.
+:::
+
+---
+
+## Isocusto: definição
+
+::: {.callout-note}
+## Isocusto
+Recta formada por todas as combinações de $K$ e $L$ com o **mesmo custo total** $\overline{CT}$:
+
+$$\overline{CT} = rK + wL \quad \Longleftrightarrow \quad K = \frac{\overline{CT}}{r} - \frac{w}{r} L$$
+:::
+
+. . .
+
+::: {.columns}
+::: {.column width="50%"}
+**Interceptos:**
+
+- Eixo $K$ ($L=0$): $K = \dfrac{\overline{CT}}{r}$
+- Eixo $L$ ($K=0$): $L = \dfrac{\overline{CT}}{w}$
+
+**Inclinação:** $-\dfrac{w}{r}$ (razão dos preços dos factores)
+:::
+::: {.column width="50%"}
+Isocustos **mais afastados** da origem correspondem a custos totais **mais elevados**.
+
+A inclinação é **constante** — os preços dos factores são dados para a empresa.
+:::
+:::
+
+---
+
+## Isocusto: geometria
+
+```{r}
+#| echo: false
+#| fig-width: 5.5
+#| fig-height: 4.5
+#| out-width: "60%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+# r=4, w=9. Isocosts for CT=36, 72, 108
+# K = CT/r - (w/r)*L = CT/4 - (9/4)*L
+ic <- function(L, CT, r=4, w=9) CT/r - (w/r)*L
+
+L_max <- function(CT, w=9) CT/w
+
+# Only plot positive K region
+L_vals_36  <- seq(0, L_max(36),  by=0.01)
+L_vals_72  <- seq(0, L_max(72),  by=0.01)
+L_vals_108 <- seq(0, L_max(108), by=0.01)
+
+df36  <- data.frame(L=L_vals_36,  K=ic(L_vals_36,  36),  CT="CT = 36")
+df72  <- data.frame(L=L_vals_72,  K=ic(L_vals_72,  72),  CT="CT = 72")
+df108 <- data.frame(L=L_vals_108, K=ic(L_vals_108, 108), CT="CT = 108")
+df    <- rbind(df36, df72, df108)
+
+ggplot(df, aes(x=L, y=K, colour=CT, group=CT)) +
+  geom_line(linewidth=1.1) +
+  scale_colour_manual(values=c("CT = 36" ="#2980b9",
+                                "CT = 72" ="#27ae60",
+                                "CT = 108"="#c0392b")) +
+  annotate("text", x=L_max(36) +0.1,  y=0.2, label="CT=36",  colour="#2980b9", size=3.5, hjust=0) +
+  annotate("text", x=L_max(72) +0.1,  y=0.2, label="CT=72",  colour="#27ae60", size=3.5, hjust=0) +
+  annotate("text", x=L_max(108)+0.1,  y=0.2, label="CT=108", colour="#c0392b", size=3.5, hjust=0) +
+  coord_cartesian(xlim=c(0,14), ylim=c(0,30)) +
+  labs(x="L (Trabalho)", y="K (Capital)") +
+  theme_minimal(base_size=12) +
+  theme(legend.position="none")
+```
+
+Isocustos paralelos: mesma inclinação $-w/r$, diferentes níveis de custo.
+
+---
+
+## A Condição de Óptimo
+
+O mínimo de custo para produzir $Q^*$ ocorre no ponto onde a **isoquanta é tangente ao isocusto**:
+
+$$TMST_{L,K} = \frac{w}{r} \qquad \Longleftrightarrow \qquad \frac{PMg_L}{PMg_K} = \frac{w}{r}$$
+
+. . .
+
+**Interpretação:** no óptimo, o "valor" marginal de cada euro gasto em $L$ iguala o de cada euro gasto em $K$:
+
+$$\frac{PMg_L}{w} = \frac{PMg_K}{r}$$
+
+. . .
+
+::: {.callout-important}
+Se $\dfrac{PMg_L}{w} > \dfrac{PMg_K}{r}$: o trabalho é relativamente mais produtivo por euro → convém substituir $K$ por $L$.
+
+Só no óptimo é que a empresa não tem incentivo a realocar factores.
+:::
+
+---
+
+## Exemplo Resolvido
+
+$F(K,L) = K^{0{,}5} L^{0{,}5}$, $Q^* = 100$, $r = w = 5$.
+
+**Passo 1 — Isoquanta:** $100 = K^{0.5}L^{0.5}$ $\Rightarrow$ $KL = 10\,000$ $\Rightarrow$ $K = \dfrac{10\,000}{L}$
+
+. . .
+
+**Passo 2 — Substituir na função custo:**
+$$CT(L) = 5 \cdot \frac{10\,000}{L} + 5L = \frac{50\,000}{L} + 5L$$
+
+. . .
+
+**Passo 3 — CPO:**
+$$\frac{dCT}{dL} = -\frac{50\,000}{L^2} + 5 = 0 \;\Rightarrow\; L^2 = 10\,000 \;\Rightarrow\; L^* = 100$$
+
+. . .
+
+**Resultado:** $L^* = 100$, $K^* = 100$, $CT^* = 500 + 500 = 1\,000$.
+
+Verificação da condição de óptimo: $TMST = K/L = 1 = w/r = 5/5 = 1$ ✓
+
+---
+
+## Isoquanta + Isocusto: o óptimo graficamente
+
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 4.5
+#| out-width: "65%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+# Scaled: K'=K/20, L'=L/20. At optimum K'=L'=5. Q'=K'^0.5*L'^0.5=5
+# Isoquant: K'=25/L'. Isocost CT*=1000 -> K'=50-L' (since r=w=5, CT/r=200/20=...)
+# Let's just work in original units but scaled to ~0-10 range:
+# K/20 and L/20. Isoquant: (K/20)*(L/20) = Q^2/400 where Q=100 -> =25 -> K'L'=25 -> K'=25/L'
+# Isocost CT=1000: K'+L'=1000/(5*20)=10 -> K'=10-L'. Intercepts at 10,10.
+# Higher isocost CT=1100: K'+L'=11
+# Lower isocost CT=900: K'+L'=9
+
+L_vals <- seq(0.5, 9.5, by=0.02)
+iq_fun <- function(L) 25/L
+ic_fun <- function(L, a) a - L
+
+df_iq  <- data.frame(L=L_vals, K=iq_fun(L_vals))
+df_ic1 <- data.frame(L=seq(0,9, by=0.01),  K=ic_fun(seq(0,9, by=0.01), 9))
+df_ic2 <- data.frame(L=seq(0,10,by=0.01),  K=ic_fun(seq(0,10,by=0.01),10))
+df_ic3 <- data.frame(L=seq(0,11,by=0.01),  K=ic_fun(seq(0,11,by=0.01),11))
+
+# Tangency: K'=L'=5
+L_opt <- 5; K_opt <- 5
+
+ggplot() +
+  # lower isocost (below optimal, dashed)
+  geom_line(data=subset(df_ic1, K>=0), aes(x=L, y=K),
+            colour="#95a5a6", linewidth=0.8, linetype="dashed") +
+  # optimal isocost
+  geom_line(data=subset(df_ic2, K>=0), aes(x=L, y=K),
+            colour="#27ae60", linewidth=1.2) +
+  # higher isocost (above optimal, dashed)
+  geom_line(data=subset(df_ic3, K>=0), aes(x=L, y=K),
+            colour="#95a5a6", linewidth=0.8, linetype="dashed") +
+  # isoquant
+  geom_line(data=subset(df_iq, K<=10 & L<=10), aes(x=L, y=K),
+            colour="#2980b9", linewidth=1.3) +
+  # tangency point
+  geom_point(aes(x=L_opt, y=K_opt), size=4, colour="red") +
+  # dashed lines to axes
+  geom_segment(aes(x=0, xend=L_opt, y=K_opt, yend=K_opt),
+               linetype="dashed", colour="grey40") +
+  geom_segment(aes(x=L_opt, xend=L_opt, y=0, yend=K_opt),
+               linetype="dashed", colour="grey40") +
+  # other isoquant points
+  geom_point(aes(x=1.25, y=iq_fun(1.25)), size=2.5, colour="#2980b9") +
+  geom_point(aes(x=8.0,  y=iq_fun(8.0)),  size=2.5, colour="#2980b9") +
+  annotate("text", x=9.6, y=iq_fun(9.5)+0.2, label=expression(Q^"*"),
+           colour="#2980b9", size=4) +
+  annotate("text", x=10.2, y=ic_fun(10,10)+0.1, label=expression(CT^"*"),
+           colour="#27ae60", size=3.8, hjust=0) +
+  annotate("text", x=-0.3, y=K_opt, label="K*", size=3.8, hjust=1) +
+  annotate("text", x=L_opt, y=-0.3, label="L*", size=3.8, vjust=1) +
+  annotate("text", x=1.6, y=8.5, label="a", size=3.5, colour="#2980b9") +
+  annotate("text", x=7.8, y=3.8, label="b", size=3.5, colour="#2980b9") +
+  coord_cartesian(xlim=c(0,11), ylim=c(0,11)) +
+  labs(x="L (Trabalho)", y="K (Capital)") +
+  theme_minimal(base_size=12)
+```
+
+Os pontos $a$ e $b$ também produzem $Q^*$, mas com **custo maior** — estão sobre isocustos superiores.
+
+---
+
+## Custos de Longo Prazo são Menores
+
+No curto prazo, $K$ está fixo em $K_1 \neq K^*$: a empresa não pode ajustar o capital.
+
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 4.2
+#| out-width: "65%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+L_vals <- seq(0.5, 9.5, by=0.02)
+iq_fun  <- function(L) 25/L
+ic_fun  <- function(L, a) a - L
+
+L_opt <- 5; K_opt <- 5
+# Short-run: K fixed at K1=8 (above optimal)
+K1 <- 8
+# At K1=8 on isoquant: L_sr = 25/8 = 3.125
+L_sr <- 25/K1
+# Isocost through (L_sr, K1): K+L = 3.125+8 = 11.125
+CT_sr <- L_sr + K1
+
+df_iq   <- data.frame(L=L_vals, K=iq_fun(L_vals))
+df_ic_opt <- data.frame(L=seq(0,10,0.01), K=ic_fun(seq(0,10,0.01), 10))
+df_ic_sr  <- data.frame(L=seq(0,CT_sr,0.01), K=ic_fun(seq(0,CT_sr,0.01), CT_sr))
+
+ggplot() +
+  geom_line(data=subset(df_ic_opt, K>=0), aes(x=L,y=K),
+            colour="#27ae60", linewidth=1.1, linetype="dashed") +
+  geom_line(data=subset(df_ic_sr, K>=0), aes(x=L,y=K),
+            colour="#c0392b", linewidth=1.1, linetype="dashed") +
+  geom_line(data=subset(df_iq, K<=11 & L<=11), aes(x=L,y=K),
+            colour="#2980b9", linewidth=1.3) +
+  # fixed K1 line
+  geom_hline(yintercept=K1, linetype="dotted", colour="grey50", linewidth=0.9) +
+  # optimal point (LP)
+  geom_point(aes(x=L_opt, y=K_opt), size=3.5, colour="#27ae60") +
+  # SR point
+  geom_point(aes(x=L_sr, y=K1), size=3.5, colour="#c0392b") +
+  geom_segment(aes(x=0, xend=L_opt, y=K_opt, yend=K_opt),
+               linetype="dashed", colour="grey50") +
+  geom_segment(aes(x=L_opt, xend=L_opt, y=0, yend=K_opt),
+               linetype="dashed", colour="grey50") +
+  geom_segment(aes(x=0, xend=L_sr, y=K1, yend=K1),
+               linetype="dashed", colour="grey50") +
+  geom_segment(aes(x=L_sr, xend=L_sr, y=0, yend=K1),
+               linetype="dashed", colour="grey50") +
+  annotate("text", x=-0.3, y=K_opt, label="K*",  size=3.5, hjust=1, colour="#27ae60") +
+  annotate("text", x=-0.3, y=K1,    label=expression(K[1]), size=3.5, hjust=1, colour="#c0392b") +
+  annotate("text", x=L_opt, y=-0.35, label="L*",  size=3.5, vjust=1, colour="#27ae60") +
+  annotate("text", x=L_sr,  y=-0.35, label=expression(L[1]), size=3.5, vjust=1, colour="#c0392b") +
+  annotate("text", x=8, y=7.5, label="LP: CT*\n(óptimo)", colour="#27ae60", size=3.2) +
+  annotate("text", x=8, y=9.8, label="CP: CT > CT*", colour="#c0392b", size=3.2) +
+  annotate("text", x=10.2, y=iq_fun(10), label=expression(Q^"*"),
+           colour="#2980b9", size=4, hjust=0) +
+  coord_cartesian(xlim=c(0,12), ylim=c(0,12)) +
+  labs(x="L (Trabalho)", y="K (Capital)") +
+  theme_minimal(base_size=12)
+```
+
+**No LP**, a empresa minimiza custos em $(L^*, K^*)$. **No CP** com $K = K_1$ fixo, atinge a mesma isoquanta mas com custo superior.
+
+---
+
+## Custo Médio de Longo Prazo
+
+Cada ponto da curva $CM_{LP}$ é o **mínimo do $CTM$ de curto prazo** para o nível de capital óptimo correspondente a cada $Q$:
+
+```{r}
+#| echo: false
+#| fig-width: 7
+#| fig-height: 3.8
+#| out-width: "75%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+# Family of short-run CTM curves, each tangent to the LP envelope
+# CTM_i(Q) = (Q - shift)^2 * 0.3 + level + base
+# LP envelope: CM_LP(Q) = (Q-3)^2 * 0.2 + 0.5
+
+Q_vals <- seq(0.2, 6, by=0.02)
+cm_lp <- function(q) 0.2*(q-3)^2 + 0.5
+
+# SR CTM curves tangent to LP at different Q points
+sr_ctm <- function(q, q0) {
+  0.35*(q - q0)^2 + cm_lp(q0)
+}
+
+# Tangency points at Q=1, 2, 3, 4, 5
+q_tangents <- c(1, 2, 3, 4, 5)
+colours <- c("#e74c3c","#e67e22","#27ae60","#2980b9","#8e44ad")
+
+p <- ggplot()
+for(i in seq_along(q_tangents)) {
+  q0 <- q_tangents[i]
+  df_sr <- data.frame(Q=Q_vals, CTM=sr_ctm(Q_vals, q0))
+  # Only plot in region where SR is close to LP (to avoid clutter)
+  df_sr_vis <- subset(df_sr, Q >= q0-1.5 & Q <= q0+1.5 & CTM <= 3)
+  p <- p + geom_line(data=df_sr_vis, aes(x=Q, y=CTM),
+                     colour=colours[i], linewidth=0.8, linetype="dashed")
+}
+
+df_lp <- data.frame(Q=Q_vals, CM=cm_lp(Q_vals))
+
+p <- p +
+  geom_line(data=df_lp, aes(x=Q, y=CM), colour="black", linewidth=1.5) +
+  annotate("text", x=6.1, y=cm_lp(6)+0.05, label=expression(CM[LP]),
+           size=4, hjust=0, fontface="bold") +
+  coord_cartesian(xlim=c(0,6.3), ylim=c(0,3)) +
+  labs(x="Q", y="Custo Médio") +
+  theme_minimal(base_size=12)
+p
+```
+
+A curva $CM_{LP}$ é o **envelope inferior** de todas as curvas de custo médio de curto prazo.
+
+---
+
+## Economias e Deseconomias de Escala
+
+```{r}
+#| echo: false
+#| fig-width: 7
+#| fig-height: 4
+#| out-width: "72%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+Q_vals <- seq(0.3, 5.7, by=0.02)
+cm_lp  <- function(q) 0.3*(q-3)^2 + 0.5
+Q_eme  <- 3   # minimum efficient scale
+
+df <- data.frame(Q=Q_vals, CM=cm_lp(Q_vals))
+
+ggplot(df, aes(x=Q, y=CM)) +
+  geom_line(colour="#2980b9", linewidth=1.4) +
+  geom_vline(xintercept=Q_eme, linetype="dashed", colour="grey40") +
+  # shade economies of scale region
+  geom_ribbon(data=subset(df, Q<=Q_eme),
+              aes(ymin=0, ymax=CM), fill="#27ae60", alpha=0.12) +
+  # shade diseconomies of scale region
+  geom_ribbon(data=subset(df, Q>=Q_eme),
+              aes(ymin=0, ymax=CM), fill="#c0392b", alpha=0.12) +
+  geom_point(aes(x=Q_eme, y=cm_lp(Q_eme)), size=4, colour="black") +
+  annotate("text", x=Q_eme, y=-0.07, label=expression(Q^"EME"),
+           size=3.8, vjust=1) +
+  annotate("text", x=1.5, y=0.2,
+           label="Economias\nde Escala", colour="#27ae60", size=3.5) +
+  annotate("text", x=4.5, y=0.2,
+           label="Deseconomias\nde Escala", colour="#c0392b", size=3.5) +
+  annotate("segment", x=0.5, xend=Q_eme-0.15,
+           y=cm_lp(0.5)+0.2, yend=cm_lp(Q_eme-0.1)+0.1,
+           arrow=arrow(length=unit(0.2,"cm")), colour="#27ae60") +
+  annotate("segment", x=5.5, xend=Q_eme+0.15,
+           y=cm_lp(5.5)+0.2, yend=cm_lp(Q_eme+0.1)+0.1,
+           arrow=arrow(length=unit(0.2,"cm")), colour="#c0392b") +
+  coord_cartesian(xlim=c(0,6.2), ylim=c(0,3.5)) +
+  labs(x="Q", y=expression(CM[LP])) +
+  theme_minimal(base_size=12)
+```
+
+| Zona | Condição | Significado |
+|---|---|---|
+| Economias de escala | $CM_{LP}$ decrescente | Crescer reduz o custo médio |
+| Escala Mínima Eficiente (EME) | Mínimo de $CM_{LP}$ | Dimensão óptima da empresa |
+| Deseconomias de escala | $CM_{LP}$ crescente | Crescer aumenta o custo médio |
+
+---
+
+## Custos Económicos vs. Contabilísticos
+
+::: {.callout-note}
+Os custos usados na análise económica são **custos de oportunidade** — incluem não apenas despesas de caixa, mas também o valor das alternativas a que se renuncia.
+:::
+
+. . .
+
+Consequências importantes:
+
+- O **lucro económico** é sempre $\leq$ o lucro contabilístico
+- Uma empresa com lucro contabilístico nulo pode ter lucro económico **negativo** (se o capital poderia render mais noutro uso)
+- No equilíbrio de longo prazo concorrencial, o lucro económico é **zero** — mas a empresa tem um lucro contabilístico normal (cobre o custo de oportunidade do capital)
+
+. . .
+
+::: {.callout-important}
+$\Pi_{econ} = RT - CT_{econ}$ onde $CT_{econ}$ inclui o custo de oportunidade de **todos** os factores, incluindo o capital próprio do empresário.
+:::
+
+---
+
+## Exercícios
+
+### Exercício 1 (Escolha Múltipla)
+
+Uma empresa tem $F(K,L) = 2K^{0.5}L^{0.5}$, $r = w = 2$, e pretende produzir $Q^* = 20$. Qual a combinação óptima $(K^*, L^*)$ e o custo mínimo?
+
+**(A)** $K^*=5,\ L^*=5,\ CT^*=20$
+
+**(B)** $K^*=10,\ L^*=10,\ CT^*=40$
+
+**(C)** $K^*=20,\ L^*=20,\ CT^*=80$
+
+**(D)** $K^*=10,\ L^*=5,\ CT^*=30$
+
+. . .
+
+::: {.callout-tip}
+## Solução
+**Resposta: (B)**  
+Isoquanta: $2\sqrt{KL}=20 \Rightarrow \sqrt{KL}=10 \Rightarrow KL=100 \Rightarrow K=100/L$.  
+$CT(L) = 200/L + 2L$; CPO: $-200/L^2+2=0 \Rightarrow L^*=10$, $K^*=10$.  
+$CT^*=2(10)+2(10)=40$. Verificação: $2\sqrt{100}=20$ ✓
+:::
+
+---
+
+## Exercícios
+
+### Exercício 2 (Escolha Múltipla)
+
+Qual das seguintes afirmações sobre o longo prazo é **correcta**?
+
+**(A)** No longo prazo os custos fixos são constantes.
+
+**(B)** O $CM_{LP}$ é sempre superior ao $CTM$ de curto prazo.
+
+**(C)** O $CM_{LP}$ é o envelope inferior dos $CTM$ de curto prazo.
+
+**(D)** No longo prazo a empresa não tem grau de liberdade para escolher $K$.
+
+. . .
+
+::: {.callout-tip}
+## Solução
+**Resposta: (C)**  
+No LP não há custos fixos → (A) falsa. O $CM_{LP} \leq CTM_{CP}$ em qualquer ponto → (B) falsa. No LP a empresa **escolhe** $K$ livremente → (D) falsa. A curva $CM_{LP}$ tangencia cada $CTM_{CP}$ pelo baixo — é o seu envelope inferior → **(C) correcta**.
+:::
+
+---
+
+## Exercício 3 (Desenvolvimento)
+
+Uma empresa tem $F(K,L) = KL$, com $r = 4$ e $w = 9$. Pretende produzir $Q^* = 36$.
+
+**a)** Escreva a equação da isoquanta e determine a combinação óptima $(K^*, L^*)$.
+
+**b)** Calcule o custo mínimo $CT^*$ e escreva a equação do isocusto óptimo.
+
+**c)** Verifique a condição de óptimo $TMST = w/r$.
+
+**d)** Se no curto prazo o capital está fixo em $K_1 = 12 \neq K^*$, qual seria $L_1$ e $CT_1$? Compare com $CT^*$.
+
+. . .
+
+::: {.callout-tip}
+## Solução
+
+**a)** Isoquanta: $KL = 36 \Rightarrow K = 36/L$.  
+$CT(L) = 4(36/L) + 9L = 144/L + 9L$.  
+CPO: $-144/L^2 + 9 = 0 \Rightarrow L^* = 4$, $K^* = 9$.
+
+**b)** $CT^* = 4(9) + 9(4) = 36 + 36 = 72$. Isocusto: $72 = 4K + 9L$, i.e. $K = 18 - \tfrac{9}{4}L$.
+
+**c)** $TMST = K/L = 9/4$ e $w/r = 9/4$ ✓
+
+**d)** $K_1=12$: isoquanta $\Rightarrow L_1 = 36/12 = 3$. $CT_1 = 4(12)+9(3) = 48+27 = 75 > 72 = CT^*$. O CP tem custo superior, como esperado.
+:::
+
+---
+
+## Síntese
+
+::: {.incremental}
+- No **longo prazo** todos os factores são variáveis — o problema é minimizar $rK+wL$ sujeito a $F(K,L)=Q^*$.
+- A **isoquanta** mostra todas as combinações $(K,L)$ que produzem $Q^*$ — é análoga à curva de indiferença do consumidor.
+- O **isocusto** representa combinações de igual custo; a sua inclinação é $-w/r$.
+- O **óptimo** ocorre na tangência isoquanta-isocusto: $TMST = w/r$, ou equivalentemente $PMg_L/w = PMg_K/r$.
+- Os **custos de LP são sempre $\leq$ custos de CP** — no LP a empresa tem mais flexibilidade.
+- A curva $CM_{LP}$ é o **envelope inferior** das curvas $CTM$ de CP.
+- Há **economias de escala** quando $CM_{LP}$ é decrescente; **deseconomias** quando é crescente.
+- O mínimo de $CM_{LP}$ é a **Escala Mínima Eficiente (EME)**.
+:::

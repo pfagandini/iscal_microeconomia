@@ -1,0 +1,527 @@
+---
+title: "Oferta, Limiar de Encerramento e Excedente do Produtor"
+subtitle: "Microeconomia — Licenciatura em Contabilidade e Administração"
+author: "ISCAL - IPL"
+date: today
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    incremental: false
+    self-contained: false
+    toc: false
+    from: markdown+emoji
+    mathjax: true
+engine: knitr
+---
+
+## Revisão: A Escolha Óptima do Produtor
+
+No mercado de **concorrência perfeita**, a empresa $i$ toma o preço $p$ como dado e resolve:
+
+$$\max_{Q_i} \Pi = p Q_i - CV(Q_i) - CF$$
+
+A condição de primeira ordem (CPO) dá:
+
+$$\frac{d\Pi}{dQ_i} = 0 \iff p = CMg(Q_i)$$
+
+A condição de segunda ordem (CSO) exige que $CMg$ seja **crescente** no ponto óptimo.
+
+. . .
+
+::: {.callout-important}
+**A quantidade óptima situa-se na parte *ascendente* da curva $CMg$.**
+:::
+
+---
+
+## Rendibilidade: Lucro vs Prejuízo
+
+O lucro pode ser reescrito em termos de custos médios:
+
+$$\Pi = pQ - CT = Q(p - CTM)$$
+
+| Condição | Resultado |
+|---|---|
+| $p > CTM$ | $\Pi > 0$ — Lucro |
+| $p = CTM$ | $\Pi = 0$ — Ponto de equilíbrio (*break-even*) |
+| $CVM \leq p < CTM$ | $\Pi < 0$ — Prejuízo, mas a empresa **produz** |
+| $p < CVM$ | $\Pi < 0$ — Empresa deve **encerrar** |
+
+. . .
+
+A questão central: mesmo com prejuízo, quando vale a pena **continuar a produzir**?
+
+---
+
+## Decisão de Encerramento: a lógica
+
+**No curto prazo**, os custos fixos são irrecuperáveis (*sunk costs*): a empresa paga-os independentemente de produzir ou não.
+
+A decisão relevante é comparar:
+
+- **Produzir:** $\Pi = RT - CV - CF$
+- **Encerrar (Q=0):** $\Pi = -CF$
+
+. . .
+
+A empresa produz se produzir for *menos mau* do que encerrar:
+
+$$RT - CV - CF \geq -CF$$
+$$RT \geq CV$$
+$$p \geq CVM$$
+
+. . .
+
+::: {.callout-important}
+**Limiar de encerramento:** a empresa fecha se $p < CVM_{min}$.  
+Enquanto $p \geq CVM_{min}$, compensa produzir mesmo com prejuízo.
+:::
+
+---
+
+## Os Três Cenários de Rendibilidade
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 4.5
+#| out-width: "100%"
+
+library(ggplot2)
+library(patchwork)
+
+# Q range extended to 8 so cmg=2.5 (at q≈6.19) is reachable
+Q_vals <- seq(0.3, 8, by = 0.02)
+
+cv  <- function(q) q - (1/4)*q^2 + (1/25)*q^3
+cf  <- 1
+ct  <- function(q) cv(q) + cf
+cmg <- function(q) 1 - (1/2)*q + (3/25)*q^2
+cvm <- function(q) cv(q)/q
+ctm <- function(q) ct(q)/q
+
+# Shutdown threshold: min CVM at Q=25/8=3.125, CVM=39/64≈0.609
+Q_shut <- 25/8
+p_shut <- cvm(Q_shut)
+
+# For p_star producing a solution in ascending part of CMg (q > 25/12 ≈ 2.08):
+#   p=2.5  -> q ≈ 6.19  (use interval c(2.5, 8))
+#   p=1.4  -> q ≈ 4.85  (use interval c(2.5, 7))
+# For p < p_shut (shutdown): firm produces Q=0, no uniroot needed.
+
+make_plot_active <- function(p_star, title_str, highlight_col, q_interval) {
+  Q_opt <- uniroot(function(q) cmg(q) - p_star, q_interval)$root
+  df <- data.frame(Q = Q_vals, CMg = cmg(Q_vals), CTM = ctm(Q_vals), CVM = cvm(Q_vals))
+  ggplot(df, aes(x = Q)) +
+    geom_line(aes(y = CMg), colour = "#c0392b", linewidth = 0.9) +
+    geom_line(aes(y = CTM), colour = "#27ae60", linewidth = 0.9) +
+    geom_line(aes(y = CVM), colour = "#e67e22", linewidth = 0.9) +
+    geom_hline(yintercept = p_star, colour = "#2980b9", linewidth = 0.9) +
+    annotate("rect",
+             xmin = 0, xmax = Q_opt,
+             ymin = min(p_star, ctm(Q_opt)), ymax = max(p_star, ctm(Q_opt)),
+             fill = highlight_col, alpha = 0.3) +
+    annotate("segment", x = Q_opt, xend = Q_opt, y = 0, yend = p_star,
+             linetype = "dashed", colour = "grey40") +
+    annotate("text", x = 8.2, y = cmg(8), label = "CMg", colour = "#c0392b", hjust=0, size=3) +
+    annotate("text", x = 8.2, y = ctm(8), label = "CTM", colour = "#27ae60", hjust=0, size=3) +
+    annotate("text", x = 8.2, y = cvm(8), label = "CVM", colour = "#e67e22", hjust=0, size=3) +
+    annotate("text", x = 0.2, y = p_star + 0.1,
+             label = paste0("p = ", round(p_star, 2)), colour = "#2980b9", hjust=0, size=3) +
+    coord_cartesian(xlim = c(0, 8.5), ylim = c(0, 3.5)) +
+    labs(title = title_str, x = "Q", y = "€/unidade") +
+    theme_minimal(base_size = 10) +
+    theme(plot.title = element_text(size = 9, face = "bold"))
+}
+
+make_plot_shutdown <- function(p_star, title_str) {
+  df <- data.frame(Q = Q_vals, CMg = cmg(Q_vals), CTM = ctm(Q_vals), CVM = cvm(Q_vals))
+  ggplot(df, aes(x = Q)) +
+    geom_line(aes(y = CMg), colour = "#c0392b", linewidth = 0.9) +
+    geom_line(aes(y = CTM), colour = "#27ae60", linewidth = 0.9) +
+    geom_line(aes(y = CVM), colour = "#e67e22", linewidth = 0.9) +
+    geom_hline(yintercept = p_star, colour = "#2980b9", linewidth = 0.9) +
+    # mark shutdown threshold
+    geom_hline(yintercept = p_shut, colour = "#e67e22", linewidth = 0.7, linetype = "dotted") +
+    annotate("text", x = 8.2, y = cmg(8), label = "CMg", colour = "#c0392b", hjust=0, size=3) +
+    annotate("text", x = 8.2, y = ctm(8), label = "CTM", colour = "#27ae60", hjust=0, size=3) +
+    annotate("text", x = 8.2, y = cvm(8), label = "CVM", colour = "#e67e22", hjust=0, size=3) +
+    annotate("text", x = 0.2, y = p_star + 0.08,
+             label = paste0("p = ", round(p_star, 2)), colour = "#2980b9", hjust=0, size=3) +
+    annotate("text", x = 4, y = p_shut + 0.1,
+             label = expression(CVM[min]), colour = "#e67e22", size=2.8) +
+    annotate("text", x = 4, y = 1.8, label = "Q = 0\n(encerra)", colour = "#c0392b",
+             size = 3, fontface = "bold") +
+    coord_cartesian(xlim = c(0, 8.5), ylim = c(0, 3.5)) +
+    labs(title = title_str, x = "Q", y = "€/unidade") +
+    theme_minimal(base_size = 10) +
+    theme(plot.title = element_text(size = 9, face = "bold"))
+}
+
+p1 <- make_plot_active(2.5, "Lucro (p > CTM)",                      "#2980b9", c(2.5, 8))
+p2 <- make_plot_active(1.4, "Prejuízo, mas produz\n(CVM ≤ p < CTM)", "#e67e22", c(2.5, 7))
+p3 <- make_plot_shutdown(p_shut * 0.85, "Encerra\n(p < CVMₘᵢₙ)")
+
+p1 + p2 + p3
+```
+
+---
+
+## Limiar de Encerramento: geometria
+
+O **limiar de encerramento** é o preço mínimo que justifica produzir: $p_{enc} = CVM_{min}$, onde $CMg = CVM$.
+
+::: {.columns}
+::: {.column width="55%"}
+```{r}
+#| echo: false
+#| fig-width: 5
+#| fig-height: 4
+#| out-width: "100%"
+
+library(ggplot2)
+Q_vals <- seq(0.35, 5.2, by = 0.01)
+cmg <- function(q) 1 - (1/2)*q + (3/25)*q^2
+cv  <- function(q) q - (1/4)*q^2 + (1/25)*q^3
+cvm <- function(q) cv(q)/q
+ctm <- function(q) (cv(q) + 1)/q
+Q_shut <- 25/8; p_shut <- cvm(Q_shut)
+
+df <- data.frame(Q=Q_vals, CMg=cmg(Q_vals), CVM=cvm(Q_vals), CTM=ctm(Q_vals))
+
+ggplot(df, aes(x=Q)) +
+  geom_line(aes(y=CMg), colour="#c0392b", linewidth=1) +
+  geom_line(aes(y=CVM), colour="#e67e22", linewidth=1) +
+  geom_line(aes(y=CTM), colour="#27ae60", linewidth=1) +
+  geom_point(aes(x=Q_shut, y=p_shut), size=3, colour="black") +
+  geom_segment(aes(x=0, xend=Q_shut, y=p_shut, yend=p_shut),
+               linetype="dashed", colour="grey40") +
+  geom_segment(aes(x=Q_shut, xend=Q_shut, y=0, yend=p_shut),
+               linetype="dashed", colour="grey40") +
+  annotate("text", x=5.3, y=cmg(5.2)+0.05, label="CMg", colour="#c0392b", size=3.5) +
+  annotate("text", x=5.3, y=cvm(5.2)+0.05, label="CVM", colour="#e67e22", size=3.5) +
+  annotate("text", x=5.3, y=ctm(5.2)+0.05, label="CTM", colour="#27ae60", size=3.5) +
+  annotate("text", x=-0.15, y=p_shut, label=expression(p[enc]), size=3.5, hjust=1) +
+  annotate("text", x=Q_shut, y=-0.05, label=expression(Q[enc]), size=3.5, vjust=1) +
+  coord_cartesian(xlim=c(0,5.5), ylim=c(0,3)) +
+  labs(x="Q", y="€/unidade") +
+  theme_minimal(base_size=11) +
+  theme(axis.title=element_text(size=10))
+```
+:::
+::: {.column width="45%"}
+**No mínimo de $CVM$:**
+
+- $CMg = CVM$ (propriedade algébrica)
+- Se $p < p_{enc}$: encerra ($Q=0$)
+- Se $p = p_{enc}$: indiferente
+- Se $p > p_{enc}$: produz em $CMg = p$
+
+**Nota:** No curto prazo a empresa pode ter **prejuízo** e continuar a operar, desde que cubra os custos variáveis.
+:::
+:::
+
+---
+
+## A Curva de Oferta Individual
+
+No mercado concorrencial, a **curva de oferta individual** é a curva $CMg$ **acima** do limiar de encerramento.
+
+$$S_i(p) = \begin{cases} Q_i^* : p = CMg(Q_i^*), \ CMg \text{ crescente} & \text{se } p \geq CVM_{min} \\ 0 & \text{se } p < CVM_{min} \end{cases}$$
+
+. . .
+
+```{r}
+#| echo: false
+#| fig-width: 7
+#| fig-height: 3.8
+#| out-width: "70%"
+#| fig-align: "center"
+
+library(ggplot2)
+Q_vals <- seq(0.35, 5.2, by=0.01)
+cmg <- function(q) 1 - (1/2)*q + (3/25)*q^2
+cv  <- function(q) q - (1/4)*q^2 + (1/25)*q^3
+cvm <- function(q) cv(q)/q
+Q_shut <- 25/8; p_shut <- cvm(Q_shut)
+
+df <- data.frame(Q=Q_vals, CMg=cmg(Q_vals), CVM=cvm(Q_vals))
+df_supply <- subset(df, Q >= Q_shut)
+
+ggplot() +
+  geom_line(data=df, aes(x=Q, y=CVM), colour="#e67e22", linewidth=1) +
+  geom_line(data=subset(df, Q < Q_shut), aes(x=Q, y=CMg),
+            colour="#c0392b", linewidth=1, linetype="dashed") +
+  geom_line(data=df_supply, aes(x=Q, y=CMg),
+            colour="#c0392b", linewidth=1.4) +
+  geom_segment(aes(x=0, xend=0, y=0, yend=p_shut),
+               colour="#2980b9", linewidth=1.4) +
+  geom_point(aes(x=Q_shut, y=p_shut), size=3.5, colour="black") +
+  geom_segment(aes(x=0, xend=Q_shut, y=p_shut, yend=p_shut),
+               linetype="dashed", colour="grey50") +
+  annotate("text", x=5.3, y=cmg(5.2)+0.05, label=expression(S[i]==CMg),
+           colour="#c0392b", size=3.5) +
+  annotate("text", x=5.3, y=cvm(5.2)+0.05, label="CVM", colour="#e67e22", size=3.5) +
+  annotate("text", x=-0.1, y=p_shut/2, label=expression(Q[i]==0),
+           colour="#2980b9", size=3, hjust=1) +
+  annotate("text", x=-0.1, y=p_shut, label=expression(p[enc]), size=3.5, hjust=1) +
+  coord_cartesian(xlim=c(0,5.5), ylim=c(0,2.8)) +
+  labs(x="Q", y="P") +
+  theme_minimal(base_size=11)
+```
+
+---
+
+## Oferta de Mercado
+
+A oferta de mercado agrega as ofertas individuais de todas as $n$ empresas:
+
+$$Q_S(p) = \sum_{i=1}^{n} Q_i^S(p)$$
+
+Se todas as $n$ empresas forem idênticas com oferta individual $Q_i^S(p)$:
+
+$$Q_S = n \cdot Q_i^S(p)$$
+
+. . .
+
+**Exemplo:** Se cada empresa tem $CMg = 2 + Q_i$ (logo $Q_i^S = p - 2$, para $p \geq 2$) e existem $n = 2$ empresas:
+
+$$Q_S = 2(p-2) = 2p - 4 \quad (p \geq 2)$$
+
+Na forma inversa: $P = 2 + \frac{Q}{2}$ — a curva de oferta de mercado tem **menor inclinação** que a individual.
+
+---
+
+## Determinantes da Oferta
+
+A curva de oferta desloca-se quando se alteram variáveis **exógenas** à empresa:
+
+| Variável | Efeito sobre a oferta |
+|---|---|
+| Tecnologia $A$ (melhor) | $\uparrow$ oferta (desloc. p/ direita) |
+| Custo do capital $r$ (sobe) | $\downarrow$ oferta |
+| Salário $w$ (sobe) | $\downarrow$ oferta |
+| Preço de matérias-primas $p_m$ (sobe) | $\downarrow$ oferta |
+| Preço de bens intermédios $p_i$ (sobe) | $\downarrow$ oferta |
+
+. . .
+
+::: {.callout-note}
+Uma alteração do **preço de venda** $p$ **não** desloca a curva — apenas move a empresa ao longo da mesma curva de oferta.
+:::
+
+---
+
+## Excedente do Produtor: definição
+
+::: {.callout-note}
+## Excedente do Produtor (EP)
+O excedente do produtor é a diferença entre o que o produtor **recebe** e o mínimo que estaria disposto a **aceitar** por cada unidade produzida.
+
+Graficamente: **área acima da curva de oferta até ao preço de mercado.**
+:::
+
+. . .
+
+Para a curva de oferta linear $P = a + bQ$, ao preço de equilíbrio $p^*$ e quantidade $Q^*$:
+
+$$EP = \frac{1}{2}(p^* - a) \cdot Q^*$$
+
+. . .
+
+**Relação com o lucro:**
+
+$$\Pi = RT - CV - CF = EP - CF$$
+
+O excedente do produtor é o lucro **mais** os custos fixos — ou seja, a contribuição da actividade para cobrir os custos fixos e gerar lucro.
+
+---
+
+## Excedente do Produtor: geometria
+
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 4
+#| out-width: "60%"
+#| fig-align: "center"
+
+library(ggplot2)
+
+# s(Q) = 1 + Q/2  -> P at Q: supply
+# d(Q) = 5 - 3Q/2 -> P at Q: demand
+# Equilibrium: Q*=2, P*=2  (verified)
+# Demand intercept: P=5 (at Q=0)
+# Supply intercept: P=1 (at Q=0)
+
+Q_eq <- 2; P_eq <- 2
+Q_d_int <- 10/3  # Qd=0 -> P=5, but for plot domain of d: d(Q)=0 -> 5-3Q/2=0 -> Q=10/3
+s_fun <- function(q) 1 + q/2
+d_fun <- function(q) 5 - 1.5*q
+
+Q_vals <- seq(0, 3.5, by=0.01)
+df <- data.frame(Q=Q_vals, S=s_fun(Q_vals), D=d_fun(Q_vals))
+
+# EP area: polygon above supply, below p*, from 0 to Q*
+ep_poly <- data.frame(
+  x = c(0, Q_eq, 0),
+  y = c(s_fun(0), P_eq, P_eq)
+)
+# CS area
+cs_poly <- data.frame(
+  x = c(0, Q_eq, 0),
+  y = c(P_eq, P_eq, d_fun(0))
+)
+
+ggplot() +
+  geom_polygon(data=ep_poly, aes(x=x, y=y), fill="#2980b9", alpha=0.3) +
+  geom_polygon(data=cs_poly, aes(x=x, y=y), fill="#27ae60", alpha=0.3) +
+  geom_line(data=subset(df, Q<=Q_d_int), aes(x=Q, y=D),
+            colour="#27ae60", linewidth=1.2) +
+  geom_line(data=df, aes(x=Q, y=S), colour="#2980b9", linewidth=1.2) +
+  geom_segment(aes(x=0, xend=Q_eq, y=P_eq, yend=P_eq),
+               linetype="dashed", colour="grey40") +
+  geom_segment(aes(x=Q_eq, xend=Q_eq, y=0, yend=P_eq),
+               linetype="dashed", colour="grey40") +
+  annotate("text", x=3.55, y=d_fun(3.4)+0.1, label="D", colour="#27ae60", size=4) +
+  annotate("text", x=3.55, y=s_fun(3.4)+0.1, label="S", colour="#2980b9", size=4) +
+  annotate("text", x=-0.1, y=P_eq, label=expression(p^"*"), size=4, hjust=1) +
+  annotate("text", x=Q_eq, y=-0.1, label=expression(Q^"*"), size=4, vjust=1) +
+  annotate("text", x=-0.1, y=s_fun(0), label="a", size=3.5, hjust=1) +
+  annotate("text", x=0.7, y=1.55, label="EP", colour="#2980b9", size=4, fontface="bold") +
+  annotate("text", x=0.7, y=3.0, label="EC", colour="#27ae60", size=4, fontface="bold") +
+  coord_cartesian(xlim=c(0,3.8), ylim=c(0,5.5)) +
+  labs(x="Q", y="P") +
+  theme_minimal(base_size=11)
+```
+
+O excedente total = $EC + EP$ representa o **ganho total** das trocas no mercado.
+
+---
+
+## Excedente do Produtor vs Lucro
+
+**Importante:** numa curva de oferta linear com ordenada na origem $a$ (= $CVM_{min}$):
+
+$$EP = \frac{1}{2}(p^* - a) Q^* = RT - CV$$
+
+$$\Pi = EP - CF$$
+
+. . .
+
+| | Sem CF | Com CF (CP) |
+|---|---|---|
+| $p > CTM$ | — | $\Pi > 0$, empresa opera |
+| $CVM \leq p < CTM$ | — | $\Pi < 0$, EP > 0, empresa opera |
+| $p = CVM_{min}$ | EP = 0 | $\Pi = -CF$, limiar encerramento |
+| $p < CVM_{min}$ | EP < 0 | Empresa encerra |
+
+. . .
+
+::: {.callout-important}
+No longo prazo, os custos fixos desaparecem (todos os factores são variáveis). Então **EP = lucro económico** de longo prazo.
+:::
+
+---
+
+## Exercícios
+
+### Exercício 1 (Escolha Múltipla)
+
+Uma empresa concorrencial tem $CVM_{min} = 4€$ e $CTM_{min} = 7€$. O preço de mercado é $p = 5€$. Qual das seguintes afirmações é **correcta**?
+
+**(A)** A empresa encerra imediatamente, pois tem prejuízo.
+
+**(B)** A empresa produz, pois o preço cobre os custos variáveis, mas tem prejuízo a curto prazo.
+
+**(C)** A empresa tem lucro positivo.
+
+**(D)** O excedente do produtor é negativo.
+
+. . .
+
+::: {.callout-tip}
+## Solução
+**Resposta: (B)**  
+$p = 5 > CVM_{min} = 4$ → a empresa produz (o preço cobre os custos variáveis).  
+$p = 5 < CTM_{min} = 7$ → há prejuízo a curto prazo.  
+O EP = $RT - CV > 0$, mas $\Pi = EP - CF < 0$.
+:::
+
+---
+
+## Exercícios
+
+### Exercício 2 (Escolha Múltipla)
+
+Num mercado com 4 empresas idênticas, cada uma com $CMg_i = Q_i$ (e limiar de encerramento em $p=0$). A procura de mercado é $Q_d = 20 - P$. Qual o preço de equilíbrio?
+
+**(A)** $P^* = 2$
+
+**(B)** $P^* = 4$
+
+**(C)** $P^* = 6$
+
+**(D)** $P^* = 8$
+
+. . .
+
+::: {.callout-tip}
+## Solução
+**Resposta: (B)**  
+Da oferta individual: $P = CMg_i = Q_i \Rightarrow Q_i^S = P$.  
+Oferta de mercado: $Q_S = 4P$.  
+Equilíbrio: $4P = 20 - P \Rightarrow 5P = 20 \Rightarrow P^* = 4$.  
+Quantidade: $Q^* = 20 - 4 = 16$. Verificação: $Q_S = 4 \times 4 = 16$ ✓
+:::
+
+---
+
+## Exercício 3 (Desenvolvimento)
+
+O mercado de um bem tem as seguintes equações (com $P$ em €, $Q$ em milhares de unidades):
+
+$$Q_d = 24 - 2P \qquad Q_s = 2P - 4 \quad (P \geq 2)$$
+
+**a)** Determine o preço e a quantidade de equilíbrio.
+
+**b)** Calcule o Excedente do Consumidor (EC) e o Excedente do Produtor (EP).
+
+**c)** Qual o excedente económico total? O que representa?
+
+**d)** O preço mínimo da curva de oferta é $P_{min} = 2€$. O que representa economicamente este valor?
+
+. . .
+
+::: {.callout-tip}
+## Solução
+
+**a)** Equilíbrio: $24 - 2P = 2P - 4 \Rightarrow 28 = 4P \Rightarrow P^* = 7€$, $Q^* = 24-14 = 10$.
+
+**b)** Intercepto da procura: $Q_d=0 \Rightarrow P=12$. Intercepto da oferta: $P=2$.  
+$EC = \tfrac{1}{2}(12-7)\times 10 = 25$ (mil €) $\quad EP = \tfrac{1}{2}(7-2)\times 10 = 25$ (mil €)
+
+**c)** $EE = EC + EP = 50$ mil €. Representa o valor total gerado pelas trocas voluntárias neste mercado.
+
+**d)** $P_{min} = 2€$ é o **limiar de encerramento** — abaixo deste preço nenhuma empresa produz.
+:::
+
+---
+
+## Síntese
+
+::: {.incremental}
+- A empresa maximiza $\Pi$ produzindo onde $p = CMg$ (parte ascendente).
+- A **rendibilidade** depende de $p$ vs $CTM$: lucro se $p > CTM$, prejuízo se $p < CTM$.
+- Mesmo com prejuízo, a empresa **não encerra** enquanto $p \geq CVM_{min}$ — os custos fixos são irrecuperáveis.
+- O **limiar de encerramento** é $p_{enc} = CVM_{min}$ (mínimo da curva $CVM$).
+- A **curva de oferta individual** = curva $CMg$ acima de $p_{enc}$.
+- A **oferta de mercado** = soma das ofertas individuais.
+- O **excedente do produtor** é a área acima da oferta até ao preço: $EP = RT - CV$.
+- Relação fundamental: $\Pi = EP - CF$.
+:::

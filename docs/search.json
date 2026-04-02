@@ -501,7 +501,7 @@
     "href": "material.html#slides",
     "title": "Material",
     "section": "Slides",
-    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\nConceitos\nEtapas Processo Produtivo e Regra da Contratação\nFunção de Custos\n\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
+    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\nConceitos\nEtapas Processo Produtivo e Regra da Contratação\nFunção de Custos\nGeometria de Custos\nOtimização num mercado concorrencial\n\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\nOferta\nEquilíbrio de Curto Prazo\n\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\nLongo Prazo\n\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
   },
   {
     "objectID": "exercises/Capitulo_3C.html#c.-teoria-do-produtor-e-equilíbrio---longo-prazo",
@@ -3735,7 +3735,7 @@
     "href": "slides/14_funcao_custos-document.html#tabela-com-todos-os-custos",
     "title": "Microeconomia",
     "section": "9 Tabela com Todos os Custos",
-    "text": "9 Tabela com Todos os Custos\n\n\n\n\\(L\\)\n\\(Q\\)\n\\(CT\\)\n\\(Cmg\\)\n\\(CVM\\)\n\\(CTM\\)\nEtapa\n\n\n\n\n0\n0\n60\n—\n—\n—\n\n\n\n1\n20\n310\n12.50\n12.50\n15.50\nI\n\n\n2\n50\n560\n8.33\n10.00\n11.20\nI\n\n\n3\n85\n810\n7.14\n8.82\n9.53\nI\n\n\n4\n114\n1 060\n8.62\n8.77\n9.30\nI\n\n\n5\n140\n1 310\n9.62\n8.93\n9.36\nII\n\n\n6\n159\n1 560\n13.16\n9.43\n9.81\nII\n\n\n7\n169\n1 810\n25.00\n10.36\n10.71\nII\n\n\n\n\n\nAmarelo: \\(Cmg\\) decrescente (Etapa I)\nVerde: \\(CVM\\) próximo do mínimo (onde \\(Cmg \\approx CVM\\))\n\\(CTM\\) está sempre acima de \\(CVM\\) (diferença = \\(CFM\\))"
+    "text": "9 Tabela com Todos os Custos\n\n\n\n\\(L\\)\n\\(Q\\)\n\\(CT\\)\n\\(Cmg\\)\n\\(CVM\\)\n\\(CTM\\)\nEtapa\n\n\n\n\n0\n0\n60\n—\n—\n—\n\n\n\n1\n20\n310\n12.50\n12.50\n15.50\nI\n\n\n2\n50\n560\n8.33\n10.00\n11.20\nI\n\n\n3\n85\n810\n7.14\n8.82\n9.53\nI\n\n\n4\n114\n1 060\n8.62\n8.77\n9.30\nI\n\n\n5\n140\n1 310\n9.62\n8.93\n9.36\nII\n\n\n6\n159\n1 560\n13.16\n9.43\n9.81\nII\n\n\n7\n169\n1 810\n25.00\n10.36\n10.71\nII\n\n\n\n\n\n\\(Cmg\\) decrescente (Etapa I)\n\\(CVM\\) próximo do mínimo (onde \\(Cmg \\approx CVM\\))\n\\(CTM\\) está sempre acima de \\(CVM\\) (diferença = \\(CFM\\))"
   },
   {
     "objectID": "slides/14_funcao_custos-document.html#geometria-dos-custos-médios-e-marginal",
@@ -4632,5 +4632,355 @@
     "title": "Microeconomia",
     "section": "11 Curva de Oferta Individual",
     "text": "11 Curva de Oferta Individual"
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#curto-prazo-vs.-longo-prazo",
+    "href": "slides/14_Lp_isoquanta.html#curto-prazo-vs.-longo-prazo",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Curto Prazo vs. Longo Prazo",
+    "text": "Curto Prazo vs. Longo Prazo\nNo curto prazo, pelo menos um factor produtivo é fixo (tipicamente o capital \\(K\\)), dando origem a custos fixos.\n\nNo longo prazo, todos os factores são variáveis — a empresa pode escolher livremente a combinação de capital \\(K\\) e trabalho \\(L\\):\n\nNão existem custos fixos\nA empresa tem mais graus de liberdade\nPode sempre alcançar custos médios iguais ou menores do que no curto prazo\n\n\n\n\n\n\n\n\n\nImportant\n\n\nProblema do produtor a longo prazo: encontrar a combinação \\((K, L)\\) que minimiza o custo de produzir uma dada quantidade \\(Q^*\\)."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#o-problema-de-optimização-de-longo-prazo",
+    "href": "slides/14_Lp_isoquanta.html#o-problema-de-optimização-de-longo-prazo",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "O Problema de Optimização de Longo Prazo",
+    "text": "O Problema de Optimização de Longo Prazo\n\\[\\min_{K,\\, L} \\; rK + wL \\qquad \\text{sujeito a} \\quad F(K,L) = Q^*\\]\nonde \\(r\\) é o custo unitário do capital e \\(w\\) o custo unitário do trabalho.\n\n\n\n\nSímbolo\nSignificado\n\n\n\n\n\\(r\\)\nCusto de aluguer/uso do capital (taxa de juro, amortização)\n\n\n\\(w\\)\nSalário (custo do trabalho)\n\n\n\\(rK + wL\\)\nCusto total a minimizar\n\n\n\\(F(K,L) = Q^*\\)\nRestrição: produzir exactamente \\(Q^*\\)\n\n\n\n\n\nA restrição \\(F(K,L) = Q^*\\) define todas as combinações \\((K,L)\\) que produzem \\(Q^*\\) — a isoquanta."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#isoquanta-definição",
+    "href": "slides/14_Lp_isoquanta.html#isoquanta-definição",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Isoquanta: definição",
+    "text": "Isoquanta: definição\n\n\n\n\n\n\nIsoquanta\n\n\nCurva que representa todas as combinações de capital \\(K\\) e trabalho \\(L\\) que permitem obter a mesma quantidade produzida \\(Q^*\\).\n\\[\\{(K, L) : F(K, L) = Q^*\\}\\]\nÉ uma curva de nível da função de produção ao nível \\(Q^*\\).\n\n\n\n\nPara funções da família \\(F(K,L) = A K^a L^b\\), a isoquanta é uma hipérbole no espaço \\((L, K)\\).\nIsoquantas mais afastadas da origem correspondem a níveis de produção mais elevados."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#isoquantas-geometria",
+    "href": "slides/14_Lp_isoquanta.html#isoquantas-geometria",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Isoquantas: geometria",
+    "text": "Isoquantas: geometria\n\nAo longo de cada isoquanta, \\(K\\) e \\(L\\) são substituíveis — reduzir um factor obriga a aumentar o outro para manter \\(Q^*\\)."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#taxa-marginal-de-substituição-técnica-tmst",
+    "href": "slides/14_Lp_isoquanta.html#taxa-marginal-de-substituição-técnica-tmst",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Taxa Marginal de Substituição Técnica (TMST)",
+    "text": "Taxa Marginal de Substituição Técnica (TMST)\nA inclinação da isoquanta mede a taxa a que a empresa troca \\(L\\) por \\(K\\) mantendo a produção constante:\n\\[TMST_{L,K} = -\\frac{dK}{dL}\\bigg|_{Q=Q^*} = \\frac{PMg_L}{PMg_K}\\]\n\n\nA TMST é decrescente ao longo da isoquanta (lei dos rendimentos marginais decrescentes)\nQuando se tem muito \\(K\\) e pouco \\(L\\), o trabalho é muito produtivo → troca-se muito \\(K\\) por uma unidade de \\(L\\)\nConforme se substitui \\(K\\) por \\(L\\), a TMST diminui\n\n\n\n\n\n\n\n\n\nNote\n\n\nA TMST é análoga ao \\(TMS\\) do consumidor — aqui avalia a substituição de factores em vez de bens de consumo."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#isocusto-definição",
+    "href": "slides/14_Lp_isoquanta.html#isocusto-definição",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Isocusto: definição",
+    "text": "Isocusto: definição\n\n\n\n\n\n\nIsocusto\n\n\nRecta formada por todas as combinações de \\(K\\) e \\(L\\) com o mesmo custo total \\(\\overline{CT}\\):\n\\[\\overline{CT} = rK + wL \\quad \\Longleftrightarrow \\quad K = \\frac{\\overline{CT}}{r} - \\frac{w}{r} L\\]\n\n\n\n\n\n\nInterceptos:\n\nEixo \\(K\\) (\\(L=0\\)): \\(K = \\dfrac{\\overline{CT}}{r}\\)\nEixo \\(L\\) (\\(K=0\\)): \\(L = \\dfrac{\\overline{CT}}{w}\\)\n\nInclinação: \\(-\\dfrac{w}{r}\\) (razão dos preços dos factores)\n\nIsocustos mais afastados da origem correspondem a custos totais mais elevados.\nA inclinação é constante — os preços dos factores são dados para a empresa."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#isocusto-geometria",
+    "href": "slides/14_Lp_isoquanta.html#isocusto-geometria",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Isocusto: geometria",
+    "text": "Isocusto: geometria\n\nIsocustos paralelos: mesma inclinação \\(-w/r\\), diferentes níveis de custo."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#a-condição-de-óptimo",
+    "href": "slides/14_Lp_isoquanta.html#a-condição-de-óptimo",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "A Condição de Óptimo",
+    "text": "A Condição de Óptimo\nO mínimo de custo para produzir \\(Q^*\\) ocorre no ponto onde a isoquanta é tangente ao isocusto:\n\\[TMST_{L,K} = \\frac{w}{r} \\qquad \\Longleftrightarrow \\qquad \\frac{PMg_L}{PMg_K} = \\frac{w}{r}\\]\n\nInterpretação: no óptimo, o “valor” marginal de cada euro gasto em \\(L\\) iguala o de cada euro gasto em \\(K\\):\n\\[\\frac{PMg_L}{w} = \\frac{PMg_K}{r}\\]\n\n\n\n\n\n\n\n\nImportant\n\n\nSe \\(\\dfrac{PMg_L}{w} &gt; \\dfrac{PMg_K}{r}\\): o trabalho é relativamente mais produtivo por euro → convém substituir \\(K\\) por \\(L\\).\nSó no óptimo é que a empresa não tem incentivo a realocar factores."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#exemplo-resolvido",
+    "href": "slides/14_Lp_isoquanta.html#exemplo-resolvido",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Exemplo Resolvido",
+    "text": "Exemplo Resolvido\n\\(F(K,L) = K^{0{,}5} L^{0{,}5}\\), \\(Q^* = 100\\), \\(r = w = 5\\).\nPasso 1 — Isoquanta: \\(100 = K^{0.5}L^{0.5}\\) \\(\\Rightarrow\\) \\(KL = 10\\,000\\) \\(\\Rightarrow\\) \\(K = \\dfrac{10\\,000}{L}\\)\n\nPasso 2 — Substituir na função custo: \\[CT(L) = 5 \\cdot \\frac{10\\,000}{L} + 5L = \\frac{50\\,000}{L} + 5L\\]\n\n\nPasso 3 — CPO: \\[\\frac{dCT}{dL} = -\\frac{50\\,000}{L^2} + 5 = 0 \\;\\Rightarrow\\; L^2 = 10\\,000 \\;\\Rightarrow\\; L^* = 100\\]\n\n\nResultado: \\(L^* = 100\\), \\(K^* = 100\\), \\(CT^* = 500 + 500 = 1\\,000\\).\nVerificação da condição de óptimo: \\(TMST = K/L = 1 = w/r = 5/5 = 1\\) ✓"
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#isoquanta-isocusto-o-óptimo-graficamente",
+    "href": "slides/14_Lp_isoquanta.html#isoquanta-isocusto-o-óptimo-graficamente",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Isoquanta + Isocusto: o óptimo graficamente",
+    "text": "Isoquanta + Isocusto: o óptimo graficamente\n\nOs pontos \\(a\\) e \\(b\\) também produzem \\(Q^*\\), mas com custo maior — estão sobre isocustos superiores."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#custos-de-longo-prazo-são-menores",
+    "href": "slides/14_Lp_isoquanta.html#custos-de-longo-prazo-são-menores",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Custos de Longo Prazo são Menores",
+    "text": "Custos de Longo Prazo são Menores\nNo curto prazo, \\(K\\) está fixo em \\(K_1 \\neq K^*\\): a empresa não pode ajustar o capital.\n\nNo LP, a empresa minimiza custos em \\((L^*, K^*)\\). No CP com \\(K = K_1\\) fixo, atinge a mesma isoquanta mas com custo superior."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#custo-médio-de-longo-prazo",
+    "href": "slides/14_Lp_isoquanta.html#custo-médio-de-longo-prazo",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Custo Médio de Longo Prazo",
+    "text": "Custo Médio de Longo Prazo\nCada ponto da curva \\(CM_{LP}\\) é o mínimo do \\(CTM\\) de curto prazo para o nível de capital óptimo correspondente a cada \\(Q\\):\n\nA curva \\(CM_{LP}\\) é o envelope inferior de todas as curvas de custo médio de curto prazo."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#economias-e-deseconomias-de-escala",
+    "href": "slides/14_Lp_isoquanta.html#economias-e-deseconomias-de-escala",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Economias e Deseconomias de Escala",
+    "text": "Economias e Deseconomias de Escala\n\n\n\n\n\n\n\n\n\nZona\nCondição\nSignificado\n\n\n\n\nEconomias de escala\n\\(CM_{LP}\\) decrescente\nCrescer reduz o custo médio\n\n\nEscala Mínima Eficiente (EME)\nMínimo de \\(CM_{LP}\\)\nDimensão óptima da empresa\n\n\nDeseconomias de escala\n\\(CM_{LP}\\) crescente\nCrescer aumenta o custo médio"
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#custos-económicos-vs.-contabilísticos",
+    "href": "slides/14_Lp_isoquanta.html#custos-económicos-vs.-contabilísticos",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Custos Económicos vs. Contabilísticos",
+    "text": "Custos Económicos vs. Contabilísticos\n\n\n\n\n\n\nNote\n\n\nOs custos usados na análise económica são custos de oportunidade — incluem não apenas despesas de caixa, mas também o valor das alternativas a que se renuncia.\n\n\n\n\nConsequências importantes:\n\nO lucro económico é sempre \\(\\leq\\) o lucro contabilístico\nUma empresa com lucro contabilístico nulo pode ter lucro económico negativo (se o capital poderia render mais noutro uso)\nNo equilíbrio de longo prazo concorrencial, o lucro económico é zero — mas a empresa tem um lucro contabilístico normal (cobre o custo de oportunidade do capital)\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\\(\\Pi_{econ} = RT - CT_{econ}\\) onde \\(CT_{econ}\\) inclui o custo de oportunidade de todos os factores, incluindo o capital próprio do empresário."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#exercícios",
+    "href": "slides/14_Lp_isoquanta.html#exercícios",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Exercícios",
+    "text": "Exercícios\nExercício 1 (Escolha Múltipla)\nUma empresa tem \\(F(K,L) = 2K^{0.5}L^{0.5}\\), \\(r = w = 2\\), e pretende produzir \\(Q^* = 20\\). Qual a combinação óptima \\((K^*, L^*)\\) e o custo mínimo?\n(A) \\(K^*=5,\\ L^*=5,\\ CT^*=20\\)\n(B) \\(K^*=10,\\ L^*=10,\\ CT^*=40\\)\n(C) \\(K^*=20,\\ L^*=20,\\ CT^*=80\\)\n(D) \\(K^*=10,\\ L^*=5,\\ CT^*=30\\)\n. . .\n\n\n\n\n\n\nSolução\n\n\nResposta: (B)\nIsoquanta: \\(2\\sqrt{KL}=20 \\Rightarrow \\sqrt{KL}=10 \\Rightarrow KL=100 \\Rightarrow K=100/L\\).\n\\(CT(L) = 200/L + 2L\\); CPO: \\(-200/L^2+2=0 \\Rightarrow L^*=10\\), \\(K^*=10\\).\n\\(CT^*=2(10)+2(10)=40\\). Verificação: \\(2\\sqrt{100}=20\\) ✓"
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#exercícios-1",
+    "href": "slides/14_Lp_isoquanta.html#exercícios-1",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Exercícios",
+    "text": "Exercícios\nExercício 2 (Escolha Múltipla)\nQual das seguintes afirmações sobre o longo prazo é correcta?\n(A) No longo prazo os custos fixos são constantes.\n(B) O \\(CM_{LP}\\) é sempre superior ao \\(CTM\\) de curto prazo.\n(C) O \\(CM_{LP}\\) é o envelope inferior dos \\(CTM\\) de curto prazo.\n(D) No longo prazo a empresa não tem grau de liberdade para escolher \\(K\\).\n. . .\n\n\n\n\n\n\nSolução\n\n\nResposta: (C)\nNo LP não há custos fixos → (A) falsa. O \\(CM_{LP} \\leq CTM_{CP}\\) em qualquer ponto → (B) falsa. No LP a empresa escolhe \\(K\\) livremente → (D) falsa. A curva \\(CM_{LP}\\) tangencia cada \\(CTM_{CP}\\) pelo baixo — é o seu envelope inferior → (C) correcta."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#exercício-3-desenvolvimento",
+    "href": "slides/14_Lp_isoquanta.html#exercício-3-desenvolvimento",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Exercício 3 (Desenvolvimento)",
+    "text": "Exercício 3 (Desenvolvimento)\nUma empresa tem \\(F(K,L) = KL\\), com \\(r = 4\\) e \\(w = 9\\). Pretende produzir \\(Q^* = 36\\).\na) Escreva a equação da isoquanta e determine a combinação óptima \\((K^*, L^*)\\).\nb) Calcule o custo mínimo \\(CT^*\\) e escreva a equação do isocusto óptimo.\nc) Verifique a condição de óptimo \\(TMST = w/r\\).\nd) Se no curto prazo o capital está fixo em \\(K_1 = 12 \\neq K^*\\), qual seria \\(L_1\\) e \\(CT_1\\)? Compare com \\(CT^*\\).\n\n\n\n\n\n\n\nSolução\n\n\na) Isoquanta: \\(KL = 36 \\Rightarrow K = 36/L\\).\n\\(CT(L) = 4(36/L) + 9L = 144/L + 9L\\).\nCPO: \\(-144/L^2 + 9 = 0 \\Rightarrow L^* = 4\\), \\(K^* = 9\\).\nb) \\(CT^* = 4(9) + 9(4) = 36 + 36 = 72\\). Isocusto: \\(72 = 4K + 9L\\), i.e. \\(K = 18 - \\tfrac{9}{4}L\\).\nc) \\(TMST = K/L = 9/4\\) e \\(w/r = 9/4\\) ✓\nd) \\(K_1=12\\): isoquanta \\(\\Rightarrow L_1 = 36/12 = 3\\). \\(CT_1 = 4(12)+9(3) = 48+27 = 75 &gt; 72 = CT^*\\). O CP tem custo superior, como esperado."
+  },
+  {
+    "objectID": "slides/14_Lp_isoquanta.html#síntese",
+    "href": "slides/14_Lp_isoquanta.html#síntese",
+    "title": "Otimização de Longo Prazo e Isoquanta",
+    "section": "Síntese",
+    "text": "Síntese\n\nNo longo prazo todos os factores são variáveis — o problema é minimizar \\(rK+wL\\) sujeito a \\(F(K,L)=Q^*\\).\nA isoquanta mostra todas as combinações \\((K,L)\\) que produzem \\(Q^*\\) — é análoga à curva de indiferença do consumidor.\nO isocusto representa combinações de igual custo; a sua inclinação é \\(-w/r\\).\nO óptimo ocorre na tangência isoquanta-isocusto: \\(TMST = w/r\\), ou equivalentemente \\(PMg_L/w = PMg_K/r\\).\nOs custos de LP são sempre \\(\\leq\\) custos de CP — no LP a empresa tem mais flexibilidade.\nA curva \\(CM_{LP}\\) é o envelope inferior das curvas \\(CTM\\) de CP.\nHá economias de escala quando \\(CM_{LP}\\) é decrescente; deseconomias quando é crescente.\nO mínimo de \\(CM_{LP}\\) é a Escala Mínima Eficiente (EME)."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#o-que-é-o-equilíbrio-de-mercado",
+    "href": "slides/13_Eq_cp.html#o-que-é-o-equilíbrio-de-mercado",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "O que é o Equilíbrio de Mercado?",
+    "text": "O que é o Equilíbrio de Mercado?\nO mercado de concorrência perfeita está em equilíbrio quando:\n\n\nOs consumidores compram exactamente a quantidade que desejavam adquirir ao preço vigente\nOs produtores vendem exactamente a quantidade que planeavam oferecer\nNão existe incentivo para nenhum agente alterar o seu comportamento\n\n\n\n\n\n\n\n\n\nImportant\n\n\nCondição de equilíbrio: \\(Q_d(p^*) = Q_s(p^*)\\)\nAo preço de equilíbrio \\(p^*\\), a quantidade procurada iguala a quantidade oferecida."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#equilíbrio-de-mercado-geometria",
+    "href": "slides/13_Eq_cp.html#equilíbrio-de-mercado-geometria",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Equilíbrio de Mercado: geometria",
+    "text": "Equilíbrio de Mercado: geometria\n\nO ponto E é o equilíbrio: a “mão invisível” de Adam Smith (1776) conduz os agentes até aqui."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#a-mão-invisível-e-a-eficiência",
+    "href": "slides/13_Eq_cp.html#a-mão-invisível-e-a-eficiência",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "A Mão Invisível e a Eficiência",
+    "text": "A Mão Invisível e a Eficiência\n\n“Cada indivíduo não pretende promover o interesse público, nem sabe em que medida o está a promover. Ele é conduzido por uma mão invisível a promover um fim que não fazia parte dos seus planos.” — Adam Smith, A Riqueza das Nações, 1776\n\n\nEm mercados concorrenciais, sem falhas de mercado:\n\nO equilíbrio resulta do ajustamento automático do preço\nÉ gerado por decisões descentralizadas e racionais\nO resultado é eficiente: o excedente total é máximo"
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#desequilíbrio-excesso-de-oferta",
+    "href": "slides/13_Eq_cp.html#desequilíbrio-excesso-de-oferta",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Desequilíbrio: Excesso de Oferta",
+    "text": "Desequilíbrio: Excesso de Oferta\nQuando \\(p &gt; p^*\\): a quantidade oferecida excede a procurada — há excesso de oferta.\n\n\\(p_1 &gt; p^* \\Rightarrow q_s &gt; q_d\\) → produtores não conseguem escoar a produção → preço desce até \\(p^*\\)."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#desequilíbrio-excesso-de-procura",
+    "href": "slides/13_Eq_cp.html#desequilíbrio-excesso-de-procura",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Desequilíbrio: Excesso de Procura",
+    "text": "Desequilíbrio: Excesso de Procura\nQuando \\(p &lt; p^*\\): a quantidade procurada excede a oferecida — há excesso de procura.\n\n\\(p_2 &lt; p^* \\Rightarrow q_d &gt; q_s\\) → consumidores não encontram o bem → preço sobe até \\(p^*\\)."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#dinâmicas-expansão-da-procura",
+    "href": "slides/13_Eq_cp.html#dinâmicas-expansão-da-procura",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Dinâmicas: Expansão da Procura",
+    "text": "Dinâmicas: Expansão da Procura\nO que acontece quando a procura aumenta (desloca-se para a direita)?\n\n\\(D \\uparrow\\) → excesso de procura ao preço antigo → preço sobe → quantidade de equilíbrio aumenta."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#dinâmicas-expansão-da-oferta",
+    "href": "slides/13_Eq_cp.html#dinâmicas-expansão-da-oferta",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Dinâmicas: Expansão da Oferta",
+    "text": "Dinâmicas: Expansão da Oferta\nO que acontece quando a oferta aumenta (desloca-se para a direita)?\n\n\\(S \\uparrow\\) → excesso de oferta ao preço antigo → preço desce → quantidade de equilíbrio aumenta."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#resumo-das-dinâmicas",
+    "href": "slides/13_Eq_cp.html#resumo-das-dinâmicas",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Resumo das Dinâmicas",
+    "text": "Resumo das Dinâmicas\n\n\n\nAlteração\nEfeito sobre \\(P^*\\)\nEfeito sobre \\(Q^*\\)\n\n\n\n\n\\(\\uparrow\\) Procura\n\\(\\uparrow\\)\n\\(\\uparrow\\)\n\n\n\\(\\downarrow\\) Procura\n\\(\\downarrow\\)\n\\(\\downarrow\\)\n\n\n\\(\\uparrow\\) Oferta\n\\(\\downarrow\\)\n\\(\\uparrow\\)\n\n\n\\(\\downarrow\\) Oferta\n\\(\\uparrow\\)\n\\(\\downarrow\\)\n\n\n\\(\\uparrow\\) Procura e \\(\\uparrow\\) Oferta\n?\n\\(\\uparrow\\)\n\n\n\\(\\uparrow\\) Procura e \\(\\downarrow\\) Oferta\n\\(\\uparrow\\)\n?\n\n\n\n\nQuando dois choques ocorrem simultaneamente, o efeito num dos preços ou quantidades pode ser indeterminado — depende da magnitude relativa dos choques."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#empresa-vs.-mercado-no-curto-prazo",
+    "href": "slides/13_Eq_cp.html#empresa-vs.-mercado-no-curto-prazo",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Empresa vs. Mercado no Curto Prazo",
+    "text": "Empresa vs. Mercado no Curto Prazo\nNo equilíbrio, o preço \\(p^*\\) é formado pela interacção de todos os agentes. Cada empresa \\(i\\) toma-o como dado e optimiza individualmente.\n\n\nA empresa \\(i\\)\n\nEnfrenta procura horizontal \\(D_i: p = p^*\\)\nProduz onde \\(p^* = CMg_i\\) (parte ascendente)\nA curva \\(CMg_i\\) ascendente é a sua oferta individual\n\n\nO mercado\n\n\\(D\\) e \\(S\\) determinam \\(p^*\\) e \\(Q^*\\)\n\\(Q^* = \\sum_i q_i^*\\) (soma das escolhas individuais)\nCada empresa é price-taker\n\n\n\n\n\n\n\n\n\nNote\n\n\nNo curto prazo, o número de empresas é fixo. O preço de equilíbrio pode ser tal que as empresas tenham lucro, prejuízo, ou resultado nulo — dependendo de \\(p^*\\) vs \\(CTM\\)."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#excedente-económico-total",
+    "href": "slides/13_Eq_cp.html#excedente-económico-total",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Excedente Económico Total",
+    "text": "Excedente Económico Total\n\n\n\n\n\n\nExcedente Económico Total (EE)\n\n\n\\[EE = EC + EP\\]\nO excedente total mede o valor gerado pelas trocas no mercado — o ganho mútuo que consumidores e produtores obtêm ao transaccionarem, em vez de não o fazerem."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#excedente-total-e-eficiência",
+    "href": "slides/13_Eq_cp.html#excedente-total-e-eficiência",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Excedente Total e Eficiência",
+    "text": "Excedente Total e Eficiência\nO excedente total é máximo no equilíbrio concorrencial — qualquer outra quantidade transaccionada reduz-o.\n\n\n\nQuantidade abaixo de \\(Q^*\\) (\\(Q &lt; Q^*\\)):\n\nHá trocas mutuamente benéficas que não ocorrem\nProduz-se menos do que seria desejável\nPerda de eficiência (deadweight loss)\n\n\nQuantidade acima de \\(Q^*\\) (\\(Q &gt; Q^*\\)):\n\nProduzem-se unidades cujo custo excede o benefício\nO valor para o consumidor é inferior ao custo de produção\nTambém há perda de eficiência\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nA concorrência perfeita maximiza o excedente total — por isso se diz que é a estrutura de mercado eficiente, na ausência de falhas de mercado."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#excedente-após-um-choque-de-procura",
+    "href": "slides/13_Eq_cp.html#excedente-após-um-choque-de-procura",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Excedente após um Choque de Procura",
+    "text": "Excedente após um Choque de Procura\nQuando a procura se expande de \\(D\\) para \\(D'\\), o novo equilíbrio gera mais excedente total.\n\nA expansão da procura beneficia ambos os lados do mercado: EC e EP aumentam."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#exercícios",
+    "href": "slides/13_Eq_cp.html#exercícios",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Exercícios",
+    "text": "Exercícios\nExercício 1 (Escolha Múltipla)\nNum mercado, a oferta de um bem reduz-se (a curva desloca-se para a esquerda). Ceteris paribus, o que acontece ao equilíbrio?\n(A) O preço sobe e a quantidade de equilíbrio aumenta.\n(B) O preço desce e a quantidade de equilíbrio aumenta.\n(C) O preço sobe e a quantidade de equilíbrio diminui.\n(D) O preço desce e a quantidade de equilíbrio diminui.\n. . .\n\n\n\n\n\n\nSolução\n\n\nResposta: (C)\nRedução da oferta → curva \\(S\\) desloca para a esquerda → excesso de procura ao preço anterior → preço sobe. Com preço mais alto e procura inalterada, a quantidade transaccionada diminui."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#exercícios-1",
+    "href": "slides/13_Eq_cp.html#exercícios-1",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Exercícios",
+    "text": "Exercícios\nExercício 2 (Escolha Múltipla)\nNum mercado em equilíbrio com \\(p^* = 10\\) e \\(Q^* = 20\\). A curva de procura é linear com ordenada na origem \\(P = 20 - \\frac{Q}{2}\\) e a oferta tem ordenada na origem \\(P = 2\\) (no eixo dos preços). Qual o excedente económico total?\n(A) 100\n(B) 160\n(C) 180\n(D) 200\n. . .\n\n\n\n\n\n\nSolução\n\n\nResposta: (C)\n\\(EC = \\tfrac{1}{2}(20 - 10)\\times 20 = 100\\)\n\\(EP = \\tfrac{1}{2}(10 - 2)\\times 20 = 80\\)\n\\(EE = EC + EP = 180\\)"
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#exercício-3-desenvolvimento",
+    "href": "slides/13_Eq_cp.html#exercício-3-desenvolvimento",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Exercício 3 (Desenvolvimento)",
+    "text": "Exercício 3 (Desenvolvimento)\nO mercado de um bem tem as equações: \\[Q_d = 18 - 2P \\qquad Q_s = 2P - 2\\]\na) Calcule o preço e a quantidade de equilíbrio.\nb) Calcule o excedente do consumidor (EC), excedente do produtor (EP) e o excedente total (EE).\nc) A procura expande-se para \\(Q_d' = 22 - 2P\\). Determine o novo equilíbrio e os novos excedentes. Quem ganha mais com esta expansão?\nd) Utilizando a tabela de dinâmicas, explique o que aconteceria se, simultaneamente, a procura expandisse e a oferta contraísse.\n\n\n\n\n\n\n\nSolução\n\n\na) \\(18 - 2P = 2P - 2 \\Rightarrow 4P = 20 \\Rightarrow P^* = 5\\), \\(Q^* = 8\\).\nb) Interceptos: procura \\(P=9\\), oferta \\(P=1\\).\n\\(EC = \\tfrac{1}{2}(9-5)\\times 8 = 16\\) \\(\\quad\\) \\(EP = \\tfrac{1}{2}(5-1)\\times 8 = 16\\) \\(\\quad\\) \\(EE = 32\\).\nc) \\(22 - 2P = 2P - 2 \\Rightarrow 4P = 24 \\Rightarrow P^{*\\prime} = 6\\), \\(Q^{*\\prime} = 10\\).\nNovo intercepto da procura: \\(Q_d'=0 \\Rightarrow P=11\\).\n\\(EC' = \\tfrac{1}{2}(11-6)\\times 10 = 25\\) \\(\\quad\\) \\(EP' = \\tfrac{1}{2}(6-1)\\times 10 = 25\\) \\(\\quad\\) \\(EE' = 50\\).\nAmbos ganham igual (\\(+9\\) cada). O excedente total aumentou \\(+18\\).\nd) Procura \\(\\uparrow\\) e oferta \\(\\downarrow\\): o preço sobe inequivocamente (\\(\\uparrow P\\)). O efeito na quantidade é indeterminado — depende da magnitude relativa dos dois choques."
+  },
+  {
+    "objectID": "slides/13_Eq_cp.html#síntese",
+    "href": "slides/13_Eq_cp.html#síntese",
+    "title": "Equilíbrio de Curto Prazo, Dinâmicas e Excedente Total",
+    "section": "Síntese",
+    "text": "Síntese\n\nO equilíbrio ocorre onde \\(Q_d = Q_s\\); ao preço \\(p^*\\) nenhum agente quer desviar-se.\nO ajustamento é automático: excesso de oferta faz o preço descer; excesso de procura faz-o subir.\nDeslocações da curva \\(D\\) ou \\(S\\) alteram o equilíbrio — o sentido depende da direcção do choque.\nCom dois choques simultâneos, um dos efeitos (\\(P^*\\) ou \\(Q^*\\)) pode ser indeterminado.\nO excedente total \\(EE = EC + EP\\) é máximo no equilíbrio concorrencial.\nQualquer quantidade diferente de \\(Q^*\\) implica perda de eficiência (deadweight loss).\nA expansão da procura ou da oferta beneficia ambos os lados do mercado — o EE aumenta."
+  },
+  {
+    "objectID": "slides/12_Oferta.html#revisão-a-escolha-óptima-do-produtor",
+    "href": "slides/12_Oferta.html#revisão-a-escolha-óptima-do-produtor",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Revisão: A Escolha Óptima do Produtor",
+    "text": "Revisão: A Escolha Óptima do Produtor\nNo mercado de concorrência perfeita, a empresa \\(i\\) toma o preço \\(p\\) como dado e resolve:\n\\[\\max_{Q_i} \\Pi = p Q_i - CV(Q_i) - CF\\]\nA condição de primeira ordem (CPO) dá:\n\\[\\frac{d\\Pi}{dQ_i} = 0 \\iff p = CMg(Q_i)\\]\nA condição de segunda ordem (CSO) exige que \\(CMg\\) seja crescente no ponto óptimo.\n\n\n\n\n\n\n\nImportant\n\n\nA quantidade óptima situa-se na parte ascendente da curva \\(CMg\\)."
+  },
+  {
+    "objectID": "slides/12_Oferta.html#rendibilidade-lucro-vs-prejuízo",
+    "href": "slides/12_Oferta.html#rendibilidade-lucro-vs-prejuízo",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Rendibilidade: Lucro vs Prejuízo",
+    "text": "Rendibilidade: Lucro vs Prejuízo\nO lucro pode ser reescrito em termos de custos médios:\n\\[\\Pi = pQ - CT = Q(p - CTM)\\]\n\n\n\nCondição\nResultado\n\n\n\n\n\\(p &gt; CTM\\)\n\\(\\Pi &gt; 0\\) — Lucro\n\n\n\\(p = CTM\\)\n\\(\\Pi = 0\\) — Ponto de equilíbrio (break-even)\n\n\n\\(CVM \\leq p &lt; CTM\\)\n\\(\\Pi &lt; 0\\) — Prejuízo, mas a empresa produz\n\n\n\\(p &lt; CVM\\)\n\\(\\Pi &lt; 0\\) — Empresa deve encerrar\n\n\n\n\nA questão central: mesmo com prejuízo, quando vale a pena continuar a produzir?"
+  },
+  {
+    "objectID": "slides/12_Oferta.html#decisão-de-encerramento-a-lógica",
+    "href": "slides/12_Oferta.html#decisão-de-encerramento-a-lógica",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Decisão de Encerramento: a lógica",
+    "text": "Decisão de Encerramento: a lógica\nNo curto prazo, os custos fixos são irrecuperáveis (sunk costs): a empresa paga-os independentemente de produzir ou não.\nA decisão relevante é comparar:\n\nProduzir: \\(\\Pi = RT - CV - CF\\)\nEncerrar (Q=0): \\(\\Pi = -CF\\)\n\n\nA empresa produz se produzir for menos mau do que encerrar:\n\\[RT - CV - CF \\geq -CF\\] \\[RT \\geq CV\\] \\[p \\geq CVM\\]\n\n\n\n\n\n\n\n\nImportant\n\n\nLimiar de encerramento: a empresa fecha se \\(p &lt; CVM_{min}\\).\nEnquanto \\(p \\geq CVM_{min}\\), compensa produzir mesmo com prejuízo."
+  },
+  {
+    "objectID": "slides/12_Oferta.html#os-três-cenários-de-rendibilidade",
+    "href": "slides/12_Oferta.html#os-três-cenários-de-rendibilidade",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Os Três Cenários de Rendibilidade",
+    "text": "Os Três Cenários de Rendibilidade"
+  },
+  {
+    "objectID": "slides/12_Oferta.html#limiar-de-encerramento-geometria",
+    "href": "slides/12_Oferta.html#limiar-de-encerramento-geometria",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Limiar de Encerramento: geometria",
+    "text": "Limiar de Encerramento: geometria\nO limiar de encerramento é o preço mínimo que justifica produzir: \\(p_{enc} = CVM_{min}\\), onde \\(CMg = CVM\\).\n\n\n\n\n\n\n\n\n\n\n\n\nNo mínimo de \\(CVM\\):\n\n\\(CMg = CVM\\) (propriedade algébrica)\nSe \\(p &lt; p_{enc}\\): encerra (\\(Q=0\\))\nSe \\(p = p_{enc}\\): indiferente\nSe \\(p &gt; p_{enc}\\): produz em \\(CMg = p\\)\n\nNota: No curto prazo a empresa pode ter prejuízo e continuar a operar, desde que cubra os custos variáveis."
+  },
+  {
+    "objectID": "slides/12_Oferta.html#a-curva-de-oferta-individual",
+    "href": "slides/12_Oferta.html#a-curva-de-oferta-individual",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "A Curva de Oferta Individual",
+    "text": "A Curva de Oferta Individual\nNo mercado concorrencial, a curva de oferta individual é a curva \\(CMg\\) acima do limiar de encerramento.\n\\[S_i(p) = \\begin{cases} Q_i^* : p = CMg(Q_i^*), \\ CMg \\text{ crescente} & \\text{se } p \\geq CVM_{min} \\\\ 0 & \\text{se } p &lt; CVM_{min} \\end{cases}\\]"
+  },
+  {
+    "objectID": "slides/12_Oferta.html#oferta-de-mercado",
+    "href": "slides/12_Oferta.html#oferta-de-mercado",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Oferta de Mercado",
+    "text": "Oferta de Mercado\nA oferta de mercado agrega as ofertas individuais de todas as \\(n\\) empresas:\n\\[Q_S(p) = \\sum_{i=1}^{n} Q_i^S(p)\\]\nSe todas as \\(n\\) empresas forem idênticas com oferta individual \\(Q_i^S(p)\\):\n\\[Q_S = n \\cdot Q_i^S(p)\\]\n\nExemplo: Se cada empresa tem \\(CMg = 2 + Q_i\\) (logo \\(Q_i^S = p - 2\\), para \\(p \\geq 2\\)) e existem \\(n = 2\\) empresas:\n\\[Q_S = 2(p-2) = 2p - 4 \\quad (p \\geq 2)\\]\nNa forma inversa: \\(P = 2 + \\frac{Q}{2}\\) — a curva de oferta de mercado tem menor inclinação que a individual."
+  },
+  {
+    "objectID": "slides/12_Oferta.html#determinantes-da-oferta",
+    "href": "slides/12_Oferta.html#determinantes-da-oferta",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Determinantes da Oferta",
+    "text": "Determinantes da Oferta\nA curva de oferta desloca-se quando se alteram variáveis exógenas à empresa:\n\n\n\nVariável\nEfeito sobre a oferta\n\n\n\n\nTecnologia \\(A\\) (melhor)\n\\(\\uparrow\\) oferta (desloc. p/ direita)\n\n\nCusto do capital \\(r\\) (sobe)\n\\(\\downarrow\\) oferta\n\n\nSalário \\(w\\) (sobe)\n\\(\\downarrow\\) oferta\n\n\nPreço de matérias-primas \\(p_m\\) (sobe)\n\\(\\downarrow\\) oferta\n\n\nPreço de bens intermédios \\(p_i\\) (sobe)\n\\(\\downarrow\\) oferta\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nUma alteração do preço de venda \\(p\\) não desloca a curva — apenas move a empresa ao longo da mesma curva de oferta."
+  },
+  {
+    "objectID": "slides/12_Oferta.html#excedente-do-produtor-definição",
+    "href": "slides/12_Oferta.html#excedente-do-produtor-definição",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Excedente do Produtor: definição",
+    "text": "Excedente do Produtor: definição\n\n\n\n\n\n\nExcedente do Produtor (EP)\n\n\nO excedente do produtor é a diferença entre o que o produtor recebe e o mínimo que estaria disposto a aceitar por cada unidade produzida.\nGraficamente: área acima da curva de oferta até ao preço de mercado.\n\n\n\n\nPara a curva de oferta linear \\(P = a + bQ\\), ao preço de equilíbrio \\(p^*\\) e quantidade \\(Q^*\\):\n\\[EP = \\frac{1}{2}(p^* - a) \\cdot Q^*\\]\n\n\nRelação com o lucro:\n\\[\\Pi = RT - CV - CF = EP - CF\\]\nO excedente do produtor é o lucro mais os custos fixos — ou seja, a contribuição da actividade para cobrir os custos fixos e gerar lucro."
+  },
+  {
+    "objectID": "slides/12_Oferta.html#excedente-do-produtor-geometria",
+    "href": "slides/12_Oferta.html#excedente-do-produtor-geometria",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Excedente do Produtor: geometria",
+    "text": "Excedente do Produtor: geometria\n\nO excedente total = \\(EC + EP\\) representa o ganho total das trocas no mercado."
+  },
+  {
+    "objectID": "slides/12_Oferta.html#excedente-do-produtor-vs-lucro",
+    "href": "slides/12_Oferta.html#excedente-do-produtor-vs-lucro",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Excedente do Produtor vs Lucro",
+    "text": "Excedente do Produtor vs Lucro\nImportante: numa curva de oferta linear com ordenada na origem \\(a\\) (= \\(CVM_{min}\\)):\n\\[EP = \\frac{1}{2}(p^* - a) Q^* = RT - CV\\]\n\\[\\Pi = EP - CF\\]\n\n\n\n\n\nSem CF\nCom CF (CP)\n\n\n\n\n\\(p &gt; CTM\\)\n—\n\\(\\Pi &gt; 0\\), empresa opera\n\n\n\\(CVM \\leq p &lt; CTM\\)\n—\n\\(\\Pi &lt; 0\\), EP &gt; 0, empresa opera\n\n\n\\(p = CVM_{min}\\)\nEP = 0\n\\(\\Pi = -CF\\), limiar encerramento\n\n\n\\(p &lt; CVM_{min}\\)\nEP &lt; 0\nEmpresa encerra\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nNo longo prazo, os custos fixos desaparecem (todos os factores são variáveis). Então EP = lucro económico de longo prazo."
+  },
+  {
+    "objectID": "slides/12_Oferta.html#exercícios",
+    "href": "slides/12_Oferta.html#exercícios",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Exercícios",
+    "text": "Exercícios\nExercício 1 (Escolha Múltipla)\nUma empresa concorrencial tem \\(CVM_{min} = 4€\\) e \\(CTM_{min} = 7€\\). O preço de mercado é \\(p = 5€\\). Qual das seguintes afirmações é correcta?\n(A) A empresa encerra imediatamente, pois tem prejuízo.\n(B) A empresa produz, pois o preço cobre os custos variáveis, mas tem prejuízo a curto prazo.\n(C) A empresa tem lucro positivo.\n(D) O excedente do produtor é negativo.\n. . .\n\n\n\n\n\n\nSolução\n\n\nResposta: (B)\n\\(p = 5 &gt; CVM_{min} = 4\\) → a empresa produz (o preço cobre os custos variáveis).\n\\(p = 5 &lt; CTM_{min} = 7\\) → há prejuízo a curto prazo.\nO EP = \\(RT - CV &gt; 0\\), mas \\(\\Pi = EP - CF &lt; 0\\)."
+  },
+  {
+    "objectID": "slides/12_Oferta.html#exercícios-1",
+    "href": "slides/12_Oferta.html#exercícios-1",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Exercícios",
+    "text": "Exercícios\nExercício 2 (Escolha Múltipla)\nNum mercado com 4 empresas idênticas, cada uma com \\(CMg_i = Q_i\\) (e limiar de encerramento em \\(p=0\\)). A procura de mercado é \\(Q_d = 20 - P\\). Qual o preço de equilíbrio?\n(A) \\(P^* = 2\\)\n(B) \\(P^* = 4\\)\n(C) \\(P^* = 6\\)\n(D) \\(P^* = 8\\)\n. . .\n\n\n\n\n\n\nSolução\n\n\nResposta: (B)\nDa oferta individual: \\(P = CMg_i = Q_i \\Rightarrow Q_i^S = P\\).\nOferta de mercado: \\(Q_S = 4P\\).\nEquilíbrio: \\(4P = 20 - P \\Rightarrow 5P = 20 \\Rightarrow P^* = 4\\).\nQuantidade: \\(Q^* = 20 - 4 = 16\\). Verificação: \\(Q_S = 4 \\times 4 = 16\\) ✓"
+  },
+  {
+    "objectID": "slides/12_Oferta.html#exercício-3-desenvolvimento",
+    "href": "slides/12_Oferta.html#exercício-3-desenvolvimento",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Exercício 3 (Desenvolvimento)",
+    "text": "Exercício 3 (Desenvolvimento)\nO mercado de um bem tem as seguintes equações (com \\(P\\) em €, \\(Q\\) em milhares de unidades):\n\\[Q_d = 24 - 2P \\qquad Q_s = 2P - 4 \\quad (P \\geq 2)\\]\na) Determine o preço e a quantidade de equilíbrio.\nb) Calcule o Excedente do Consumidor (EC) e o Excedente do Produtor (EP).\nc) Qual o excedente económico total? O que representa?\nd) O preço mínimo da curva de oferta é \\(P_{min} = 2€\\). O que representa economicamente este valor?\n\n\n\n\n\n\n\nSolução\n\n\na) Equilíbrio: \\(24 - 2P = 2P - 4 \\Rightarrow 28 = 4P \\Rightarrow P^* = 7€\\), \\(Q^* = 24-14 = 10\\).\nb) Intercepto da procura: \\(Q_d=0 \\Rightarrow P=12\\). Intercepto da oferta: \\(P=2\\).\n\\(EC = \\tfrac{1}{2}(12-7)\\times 10 = 25\\) (mil €) \\(\\quad EP = \\tfrac{1}{2}(7-2)\\times 10 = 25\\) (mil €)\nc) \\(EE = EC + EP = 50\\) mil €. Representa o valor total gerado pelas trocas voluntárias neste mercado.\nd) \\(P_{min} = 2€\\) é o limiar de encerramento — abaixo deste preço nenhuma empresa produz."
+  },
+  {
+    "objectID": "slides/12_Oferta.html#síntese",
+    "href": "slides/12_Oferta.html#síntese",
+    "title": "Oferta, Limiar de Encerramento e Excedente do Produtor",
+    "section": "Síntese",
+    "text": "Síntese\n\nA empresa maximiza \\(\\Pi\\) produzindo onde \\(p = CMg\\) (parte ascendente).\nA rendibilidade depende de \\(p\\) vs \\(CTM\\): lucro se \\(p &gt; CTM\\), prejuízo se \\(p &lt; CTM\\).\nMesmo com prejuízo, a empresa não encerra enquanto \\(p \\geq CVM_{min}\\) — os custos fixos são irrecuperáveis.\nO limiar de encerramento é \\(p_{enc} = CVM_{min}\\) (mínimo da curva \\(CVM\\)).\nA curva de oferta individual = curva \\(CMg\\) acima de \\(p_{enc}\\).\nA oferta de mercado = soma das ofertas individuais.\nO excedente do produtor é a área acima da oferta até ao preço: \\(EP = RT - CV\\).\nRelação fundamental: \\(\\Pi = EP - CF\\)."
+  },
+  {
+    "objectID": "material.html#outro-material",
+    "href": "material.html#outro-material",
+    "title": "Material",
+    "section": "Outro Material",
+    "text": "Outro Material\n\nBridge Produtor"
   }
 ]
