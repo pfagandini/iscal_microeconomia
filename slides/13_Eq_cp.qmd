@@ -355,7 +355,7 @@ Quando **dois choques** ocorrem simultaneamente, o efeito num dos preços ou qua
 
 ---
 
-## Empresa vs. Mercado no Curto Prazo
+## Empresa vs. Mercado no Curto Prazo {.smaller}
 
 No equilíbrio, o preço $p^*$ é formado pela interacção de **todos** os agentes. Cada empresa $i$ toma-o como dado e optimiza individualmente.
 
@@ -440,7 +440,7 @@ ggplot() +
 
 ---
 
-## Excedente Total e Eficiência
+## Excedente Total e Eficiência   {.smaller}
 
 O excedente total é **máximo** no equilíbrio concorrencial — qualquer outra quantidade transaccionada reduz-o.
 
@@ -532,7 +532,7 @@ A expansão da procura beneficia **ambos** os lados do mercado: EC e EP aumentam
 
 ---
 
-## Exercícios
+## Exercícios   {.smaller}
 
 ### Exercício 1 (Escolha Múltipla)
 
@@ -546,9 +546,9 @@ Num mercado, a oferta de um bem **reduz-se** (a curva desloca-se para a esquerda
 
 **(D)** O preço desce e a quantidade de equilíbrio diminui.
 
-. . .
 
-::: {.callout-tip}
+
+::: {.callout-tip .fragment}
 ## Solução
 **Resposta: (C)**  
 Redução da oferta → curva $S$ desloca para a esquerda → excesso de procura ao preço anterior → preço sobe. Com preço mais alto e procura inalterada, a quantidade transaccionada **diminui**.
@@ -556,7 +556,7 @@ Redução da oferta → curva $S$ desloca para a esquerda → excesso de procura
 
 ---
 
-## Exercícios
+## Exercícios   {.smaller}
 
 ### Exercício 2 (Escolha Múltipla)
 
@@ -570,9 +570,7 @@ Num mercado em equilíbrio com $p^* = 10$ e $Q^* = 20$. A curva de procura é li
 
 **(D)** 200
 
-. . .
-
-::: {.callout-tip}
+::: {.callout-tip  .fragment}
 ## Solução
 **Resposta: (C)**  
 $EC = \tfrac{1}{2}(20 - 10)\times 20 = 100$  
@@ -582,10 +580,9 @@ $EE = EC + EP = 180$
 
 ---
 
-## Exercício 3 (Desenvolvimento)
+## Exercício 3 (Desenvolvimento)   {.smaller}
 
-O mercado de um bem tem as equações:
-$$Q_d = 18 - 2P \qquad Q_s = 2P - 2$$
+O mercado de um bem tem as equações $Q_d = 18 - 2P \qquad Q_s = 2P - 2$
 
 **a)** Calcule o preço e a quantidade de equilíbrio.
 
@@ -595,9 +592,8 @@ $$Q_d = 18 - 2P \qquad Q_s = 2P - 2$$
 
 **d)** Utilizando a tabela de dinâmicas, explique o que aconteceria se, simultaneamente, a procura expandisse e a oferta contraísse.
 
-. . .
 
-::: {.callout-tip}
+::: {.callout-tip .fragment}
 ## Solução
 
 **a)** $18 - 2P = 2P - 2 \Rightarrow 4P = 20 \Rightarrow P^* = 5$, $Q^* = 8$.
@@ -615,7 +611,7 @@ Ambos ganham igual ($+9$ cada). O excedente total aumentou $+18$.
 
 ---
 
-## Síntese
+## Síntese   {.smaller}
 
 ::: {.incremental}
 - O **equilíbrio** ocorre onde $Q_d = Q_s$; ao preço $p^*$ nenhum agente quer desviar-se.
