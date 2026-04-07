@@ -19,7 +19,7 @@ format:
 engine: knitr
 ---
 
-## Curto Prazo vs. Longo Prazo
+## Curto Prazo vs. Longo Prazo {.smaller}
 
 No **curto prazo**, pelo menos um factor produtivo é fixo (tipicamente o capital $K$), dando origem a custos fixos.
 
@@ -119,7 +119,7 @@ Ao longo de cada isoquanta, $K$ e $L$ são **substituíveis** — reduzir um fac
 
 ---
 
-## Taxa Marginal de Substituição Técnica (TMST)
+## Taxa Marginal de Substituição Técnica (TMST) {.smaller}
 
 A inclinação da isoquanta mede a **taxa a que a empresa troca $L$ por $K$** mantendo a produção constante:
 
@@ -139,7 +139,7 @@ A TMST é análoga ao $TMS$ do consumidor — aqui avalia a substituição de fa
 
 ---
 
-## Isocusto: definição
+## Isocusto: definição {.smaller}
 
 ::: {.callout-note}
 ## Isocusto
@@ -213,7 +213,7 @@ Isocustos paralelos: mesma inclinação $-w/r$, diferentes níveis de custo.
 
 ---
 
-## A Condição de Óptimo
+## A Condição de Óptimo {.smaller}
 
 O mínimo de custo para produzir $Q^*$ ocorre no ponto onde a **isoquanta é tangente ao isocusto**:
 
@@ -311,7 +311,7 @@ ggplot() +
   geom_segment(aes(x=L_opt, xend=L_opt, y=0, yend=K_opt),
                linetype="dashed", colour="grey40") +
   # other isoquant points
-  geom_point(aes(x=1.25, y=iq_fun(1.25)), size=2.5, colour="#2980b9") +
+  geom_point(aes(x=3.2, y=iq_fun(3.2)), size=2.5, colour="#2980b9") +
   geom_point(aes(x=8.0,  y=iq_fun(8.0)),  size=2.5, colour="#2980b9") +
   annotate("text", x=9.6, y=iq_fun(9.5)+0.2, label=expression(Q^"*"),
            colour="#2980b9", size=4) +
@@ -319,7 +319,7 @@ ggplot() +
            colour="#27ae60", size=3.8, hjust=0) +
   annotate("text", x=-0.3, y=K_opt, label="K*", size=3.8, hjust=1) +
   annotate("text", x=L_opt, y=-0.3, label="L*", size=3.8, vjust=1) +
-  annotate("text", x=1.6, y=8.5, label="a", size=3.5, colour="#2980b9") +
+  annotate("text", x=2.6, y=8.5, label="a", size=3.5, colour="#2980b9") +
   annotate("text", x=7.8, y=3.8, label="b", size=3.5, colour="#2980b9") +
   coord_cartesian(xlim=c(0,11), ylim=c(0,11)) +
   labs(x="L (Trabalho)", y="K (Capital)") +
@@ -384,8 +384,8 @@ ggplot() +
   annotate("text", x=-0.3, y=K1,    label=expression(K[1]), size=3.5, hjust=1, colour="#c0392b") +
   annotate("text", x=L_opt, y=-0.35, label="L*",  size=3.5, vjust=1, colour="#27ae60") +
   annotate("text", x=L_sr,  y=-0.35, label=expression(L[1]), size=3.5, vjust=1, colour="#c0392b") +
-  annotate("text", x=8, y=7.5, label="LP: CT*\n(óptimo)", colour="#27ae60", size=3.2) +
-  annotate("text", x=8, y=9.8, label="CP: CT > CT*", colour="#c0392b", size=3.2) +
+  annotate("text", x=6, y=1.5, label="LP: CT*\n(óptimo)", colour="#27ae60", size=3.2) +
+  annotate("text", x=8, y=4.8, label="CP: CT > CT*", colour="#c0392b", size=3.2) +
   annotate("text", x=10.2, y=iq_fun(10), label=expression(Q^"*"),
            colour="#2980b9", size=4, hjust=0) +
   coord_cartesian(xlim=c(0,12), ylim=c(0,12)) +
@@ -504,7 +504,7 @@ ggplot(df, aes(x=Q, y=CM)) +
 
 ---
 
-## Custos Económicos vs. Contabilísticos
+## Custos Económicos vs. Contabilísticos {.smaller}
 
 ::: {.callout-note}
 Os custos usados na análise económica são **custos de oportunidade** — incluem não apenas despesas de caixa, mas também o valor das alternativas a que se renuncia.
@@ -526,7 +526,7 @@ $\Pi_{econ} = RT - CT_{econ}$ onde $CT_{econ}$ inclui o custo de oportunidade de
 
 ---
 
-## Exercícios
+## Exercícios {.smaller}
 
 ### Exercício 1 (Escolha Múltipla)
 
@@ -540,9 +540,7 @@ Uma empresa tem $F(K,L) = 2K^{0.5}L^{0.5}$, $r = w = 2$, e pretende produzir $Q^
 
 **(D)** $K^*=10,\ L^*=5,\ CT^*=30$
 
-. . .
-
-::: {.callout-tip}
+::: {.callout-tip .fragment}
 ## Solução
 **Resposta: (B)**  
 Isoquanta: $2\sqrt{KL}=20 \Rightarrow \sqrt{KL}=10 \Rightarrow KL=100 \Rightarrow K=100/L$.  
@@ -552,7 +550,7 @@ $CT^*=2(10)+2(10)=40$. Verificação: $2\sqrt{100}=20$ ✓
 
 ---
 
-## Exercícios
+## Exercícios {.smaller}
 
 ### Exercício 2 (Escolha Múltipla)
 
@@ -566,9 +564,7 @@ Qual das seguintes afirmações sobre o longo prazo é **correcta**?
 
 **(D)** No longo prazo a empresa não tem grau de liberdade para escolher $K$.
 
-. . .
-
-::: {.callout-tip}
+::: {.callout-tip .fragment}
 ## Solução
 **Resposta: (C)**  
 No LP não há custos fixos → (A) falsa. O $CM_{LP} \leq CTM_{CP}$ em qualquer ponto → (B) falsa. No LP a empresa **escolhe** $K$ livremente → (D) falsa. A curva $CM_{LP}$ tangencia cada $CTM_{CP}$ pelo baixo — é o seu envelope inferior → **(C) correcta**.
@@ -576,7 +572,7 @@ No LP não há custos fixos → (A) falsa. O $CM_{LP} \leq CTM_{CP}$ em qualquer
 
 ---
 
-## Exercício 3 (Desenvolvimento)
+## Exercício 3 (Desenvolvimento) {.smaller}
 
 Uma empresa tem $F(K,L) = KL$, com $r = 4$ e $w = 9$. Pretende produzir $Q^* = 36$.
 
@@ -588,9 +584,8 @@ Uma empresa tem $F(K,L) = KL$, com $r = 4$ e $w = 9$. Pretende produzir $Q^* = 3
 
 **d)** Se no curto prazo o capital está fixo em $K_1 = 12 \neq K^*$, qual seria $L_1$ e $CT_1$? Compare com $CT^*$.
 
-. . .
 
-::: {.callout-tip}
+::: {.callout-tip .fragment}
 ## Solução
 
 **a)** Isoquanta: $KL = 36 \Rightarrow K = 36/L$.  
@@ -606,7 +601,7 @@ CPO: $-144/L^2 + 9 = 0 \Rightarrow L^* = 4$, $K^* = 9$.
 
 ---
 
-## Síntese
+## Síntese {.smaller}
 
 ::: {.incremental}
 - No **longo prazo** todos os factores são variáveis — o problema é minimizar $rK+wL$ sujeito a $F(K,L)=Q^*$.

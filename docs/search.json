@@ -4736,14 +4736,14 @@
     "href": "slides/14_Lp_isoquanta.html#exercícios",
     "title": "Otimização de Longo Prazo e Isoquanta",
     "section": "Exercícios",
-    "text": "Exercícios\nExercício 1 (Escolha Múltipla)\nUma empresa tem \\(F(K,L) = 2K^{0.5}L^{0.5}\\), \\(r = w = 2\\), e pretende produzir \\(Q^* = 20\\). Qual a combinação óptima \\((K^*, L^*)\\) e o custo mínimo?\n(A) \\(K^*=5,\\ L^*=5,\\ CT^*=20\\)\n(B) \\(K^*=10,\\ L^*=10,\\ CT^*=40\\)\n(C) \\(K^*=20,\\ L^*=20,\\ CT^*=80\\)\n(D) \\(K^*=10,\\ L^*=5,\\ CT^*=30\\)\n. . .\n\n\n\n\n\n\nSolução\n\n\nResposta: (B)\nIsoquanta: \\(2\\sqrt{KL}=20 \\Rightarrow \\sqrt{KL}=10 \\Rightarrow KL=100 \\Rightarrow K=100/L\\).\n\\(CT(L) = 200/L + 2L\\); CPO: \\(-200/L^2+2=0 \\Rightarrow L^*=10\\), \\(K^*=10\\).\n\\(CT^*=2(10)+2(10)=40\\). Verificação: \\(2\\sqrt{100}=20\\) ✓"
+    "text": "Exercícios\nExercício 1 (Escolha Múltipla)\nUma empresa tem \\(F(K,L) = 2K^{0.5}L^{0.5}\\), \\(r = w = 2\\), e pretende produzir \\(Q^* = 20\\). Qual a combinação óptima \\((K^*, L^*)\\) e o custo mínimo?\n(A) \\(K^*=5,\\ L^*=5,\\ CT^*=20\\)\n(B) \\(K^*=10,\\ L^*=10,\\ CT^*=40\\)\n(C) \\(K^*=20,\\ L^*=20,\\ CT^*=80\\)\n(D) \\(K^*=10,\\ L^*=5,\\ CT^*=30\\)\n\n\n\n\n\n\n\nSolução\n\n\nResposta: (B)\nIsoquanta: \\(2\\sqrt{KL}=20 \\Rightarrow \\sqrt{KL}=10 \\Rightarrow KL=100 \\Rightarrow K=100/L\\).\n\\(CT(L) = 200/L + 2L\\); CPO: \\(-200/L^2+2=0 \\Rightarrow L^*=10\\), \\(K^*=10\\).\n\\(CT^*=2(10)+2(10)=40\\). Verificação: \\(2\\sqrt{100}=20\\) ✓"
   },
   {
     "objectID": "slides/14_Lp_isoquanta.html#exercícios-1",
     "href": "slides/14_Lp_isoquanta.html#exercícios-1",
     "title": "Otimização de Longo Prazo e Isoquanta",
     "section": "Exercícios",
-    "text": "Exercícios\nExercício 2 (Escolha Múltipla)\nQual das seguintes afirmações sobre o longo prazo é correcta?\n(A) No longo prazo os custos fixos são constantes.\n(B) O \\(CM_{LP}\\) é sempre superior ao \\(CTM\\) de curto prazo.\n(C) O \\(CM_{LP}\\) é o envelope inferior dos \\(CTM\\) de curto prazo.\n(D) No longo prazo a empresa não tem grau de liberdade para escolher \\(K\\).\n. . .\n\n\n\n\n\n\nSolução\n\n\nResposta: (C)\nNo LP não há custos fixos → (A) falsa. O \\(CM_{LP} \\leq CTM_{CP}\\) em qualquer ponto → (B) falsa. No LP a empresa escolhe \\(K\\) livremente → (D) falsa. A curva \\(CM_{LP}\\) tangencia cada \\(CTM_{CP}\\) pelo baixo — é o seu envelope inferior → (C) correcta."
+    "text": "Exercícios\nExercício 2 (Escolha Múltipla)\nQual das seguintes afirmações sobre o longo prazo é correcta?\n(A) No longo prazo os custos fixos são constantes.\n(B) O \\(CM_{LP}\\) é sempre superior ao \\(CTM\\) de curto prazo.\n(C) O \\(CM_{LP}\\) é o envelope inferior dos \\(CTM\\) de curto prazo.\n(D) No longo prazo a empresa não tem grau de liberdade para escolher \\(K\\).\n\n\n\n\n\n\n\nSolução\n\n\nResposta: (C)\nNo LP não há custos fixos → (A) falsa. O \\(CM_{LP} \\leq CTM_{CP}\\) em qualquer ponto → (B) falsa. No LP a empresa escolhe \\(K\\) livremente → (D) falsa. A curva \\(CM_{LP}\\) tangencia cada \\(CTM_{CP}\\) pelo baixo — é o seu envelope inferior → (C) correcta."
   },
   {
     "objectID": "slides/14_Lp_isoquanta.html#exercício-3-desenvolvimento",
