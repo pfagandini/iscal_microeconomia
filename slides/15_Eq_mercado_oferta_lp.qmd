@@ -1,0 +1,774 @@
+---
+title: "Microeconomia"
+subtitle: "Equilíbrio de Mercado e Oferta de Longo Prazo"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 21_eq_mercado_oferta_lp-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+  beamer:
+    theme: default
+    classoption: handout
+echo: false
+code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tibble)
+```
+
+# Revisão: Curto Prazo vs. Longo Prazo
+
+## O que muda no longo prazo?
+
+::: {.callout-note title="Longo Prazo"}
+No longo prazo, **todos** os fatores produtivos são variáveis — não existem custos fixos. A empresa tem acesso a todas as combinações de $K$ e $L$, e pode ajustar a sua escala de produção.
+:::
+
+. . .
+
+Consequência fundamental:
+
+- Os custos médios de longo prazo são sempre **menores ou iguais** aos custos médios de curto prazo.
+- A empresa escolhe a combinação $(K, L)$ que minimiza o custo para cada nível de produção.
+
+## Custos de Longo Prazo: Intuição Gráfica
+
+```{r lp-envelope, fig.width=7, fig.height=4}
+q_seq <- seq(0.3, 5, length.out = 300)
+
+# Several short-run CTM curves (parabolas tangent to the LP envelope)
+# LP curve: CML(q) = (q - 2.5)^2 + 1  (min at q=2.5, value=1)
+cml <- function(q) (q - 2.5)^2 + 1
+
+# SR curves: each tangent to LP at a different q0
+# CTM_SR(q; q0) = CML(q0) + 0.8*(q - q0)^2 + a small vertical shift so they stay above LP
+sr_curve <- function(q, q0) {
+  base <- cml(q0)
+  base + 1.2 * (q - q0)^2
+}
+
+df_lp <- tibble(q = q_seq, cost = cml(q_seq), type = "CM LP")
+
+centers <- c(0.8, 1.5, 2.5, 3.5, 4.2)
+df_sr <- bind_rows(lapply(centers, function(q0) {
+  tibble(q = q_seq, cost = sr_curve(q_seq, q0), type = paste0("CM CP (K fixo)"))
+}))
+
+# Keep SR curves only near their tangency point to avoid clutter
+df_sr_clip <- df_sr %>%
+  group_by(type) %>%
+  mutate(idx = row_number()) %>%
+  ungroup()
+
+# Instead: plot all SR together, clipped
+df_sr_list <- lapply(centers, function(q0) {
+  tibble(q = q_seq, cost = sr_curve(q_seq, q0), grp = paste0("SR_", q0))
+})
+
+tangency_pts <- tibble(
+  q = centers,
+  cost = cml(centers)
+)
+
+ggplot() +
+  lapply(df_sr_list, function(d) {
+    geom_line(data = d %>% filter(cost <= 6), aes(x = q, y = cost, group = grp),
+              color = "steelblue", alpha = 0.45, linewidth = 0.7)
+  }) +
+  geom_line(data = df_lp, aes(x = q, y = cost), color = "#A40027",
+            linewidth = 1.4) +
+  geom_point(data = tangency_pts, aes(x = q, y = cost),
+             color = "#A40027", size = 2.5) +
+  annotate("text", x = 4.6, y = cml(4.6) + 0.3, label = "CM[LP]",
+           parse = TRUE, color = "#A40027", size = 4) +
+  annotate("text", x = 4.6, y = sr_curve(4.6, 4.2) + 0.3,
+           label = "CM[CP]", parse = TRUE, color = "steelblue", size = 3.5) +
+  annotate("text", x = 2.5, y = 0.4,
+           label = "Escala Mínima Eficiente", color = "gray30", size = 3) +
+  geom_segment(aes(x = 2.5, xend = 2.5, y = 0.6, yend = cml(2.5) - 0.05),
+               arrow = arrow(length = unit(0.2, "cm")), color = "gray30") +
+  scale_x_continuous(breaks = NULL) +
+  scale_y_continuous(breaks = NULL, limits = c(0, 6)) +
+  labs(x = "Q", y = "Custo Médio") +
+  theme_classic(base_size = 13) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.25, "cm"),
+                                               type = "closed")))
+```
+
+::: {.nonincremental}
+- Cada curva azul: custo médio de curto prazo (capital fixado)
+- Curva vermelha: **envelope** de longo prazo — o mínimo possível para cada $Q$
+:::
+
+## Economias e Deseconomias de Escala
+
+::: {.callout-note title="Definições"}
+- **Economias de escala**: $CM_{LP}$ decrescente — escalar a produção reduz o custo médio.
+- **Deseconomias de escala**: $CM_{LP}$ crescente — crescer aumenta o custo médio.
+- **Escala Mínima Eficiente (EME)**: o nível de $Q$ que minimiza $CM_{LP}$.
+:::
+
+. . .
+
+A EME influencia a **estrutura do mercado**:
+
+- EME pequena → mercado comporta muitas empresas pequenas (ex.: restaurantes, cabeleireiros)
+- EME grande → mercado tende para poucas empresas grandes (ex.: automóvel, aviação)
+
+# Equilíbrio de Curto Prazo — Recapitulação
+
+## Equilíbrio de Mercado em CP
+
+::: {.callout-tip title="Recapitulação"}
+No curto prazo, o número de empresas no mercado está **fixo**. O equilíbrio determina-se pela interação entre a procura do mercado e a oferta agregada das empresas existentes.
+:::
+
+. . .
+
+Condição de equilíbrio do mercado em CP:
+
+$$Q_D(P^*) = Q_S(P^*)$$
+
+. . .
+
+Condição de otimização de cada empresa (tomadora de preço):
+
+$$P^* = Cmg_{CP}(q^*)$$
+
+. . .
+
+Neste equilíbrio, o lucro individual pode ser **positivo, nulo ou negativo**.
+
+## O Lucro em CP como Sinal de Mercado
+
+```{r sr-profit, fig.width=7, fig.height=4}
+q_seq <- seq(0.1, 5, length.out = 300)
+cf <- 1
+cv <- function(q) q - 0.5*q^2 + 0.12*q^3
+ct <- function(q) cv(q) + cf
+cmg <- function(q) 1 - q + 0.36*q^2
+ctm <- function(q) ct(q)/q
+cvm <- function(q) cv(q)/q
+
+# Find q* where cmg = P = 2.4
+P_star <- 2.4
+# cmg(q) = 1 - q + 0.36q^2 = 2.4 => 0.36q^2 - q - 1.4 = 0
+q_star <- (1 + sqrt(1 + 4*0.36*1.4))/(2*0.36)
+
+df <- tibble(
+  q = q_seq,
+  cmg = cmg(q_seq),
+  ctm = ctm(q_seq),
+  cvm = cvm(q_seq)
+) %>% filter(cmg <= 5, ctm <= 5, cvm <= 5, ctm > 0)
+
+ctm_at_q <- ctm(q_star)
+
+# Profit rectangle
+rect <- tibble(
+  xmin = 0, xmax = q_star,
+  ymin = ctm_at_q, ymax = P_star
+)
+
+ggplot() +
+  geom_rect(data = rect,
+            aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+            fill = "green", alpha = 0.25) +
+  geom_line(data = df, aes(x = q, y = cmg), color = "#A40027", linewidth = 1.1) +
+  geom_line(data = df, aes(x = q, y = ctm), color = "steelblue", linewidth = 1.1) +
+  geom_line(data = df %>% filter(q >= 0.55), aes(x = q, y = cvm),
+            color = "darkgreen", linewidth = 1.0, linetype = "dashed") +
+  geom_hline(yintercept = P_star, color = "gray30", linewidth = 1, linetype = "dotted") +
+  geom_segment(aes(x = q_star, xend = q_star, y = 0, yend = P_star),
+               linetype = "dashed", color = "gray50") +
+  annotate("text", x = 4.8, y = cmg(4.8) + 0.2, label = "Cmg", color = "#A40027", size = 4) +
+  annotate("text", x = 4.8, y = ctm(4.8) + 0.2, label = "CTM", color = "steelblue", size = 4) +
+  annotate("text", x = 4.8, y = cvm(4.8) - 0.2, label = "CVM", color = "darkgreen", size = 3.5) +
+  annotate("text", x = 0.15, y = P_star + 0.12, label = "P*", color = "gray30", size = 4) +
+  annotate("text", x = q_star + 0.1, y = 0.12, label = "q*", color = "gray30", size = 4) +
+  annotate("text", x = q_star/2, y = (P_star + ctm_at_q)/2,
+           label = "Π > 0", color = "darkgreen", size = 4.5, fontface = "bold") +
+  scale_x_continuous(breaks = NULL, limits = c(0, 5.2)) +
+  scale_y_continuous(breaks = NULL, limits = c(0, 5)) +
+  labs(x = "q", y = "P, Cmg, CTM") +
+  theme_classic(base_size = 13) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.25, "cm"), type = "closed")))
+```
+
+. . .
+
+Se $\Pi > 0$: o mercado é **atrativo** para novos produtores → entram empresas.
+
+Se $\Pi < 0$: algumas empresas saem (após cobrir custos fixos irrecuperáveis).
+
+# Dinâmica de Longo Prazo
+
+## Entrada de Empresas: Mecanismo
+
+::: {.callout-important title="Mecanismo de Ajustamento"}
+O mercado em concorrência perfeita ajusta-se automaticamente através da entrada e saída de empresas:
+
+- $\Pi > 0$ → entrada de empresas → oferta expande → $P$ desce → $\Pi$ diminui
+- $\Pi < 0$ → saída de empresas → oferta contrai → $P$ sobe → $\Pi$ aumenta
+:::
+
+. . .
+
+Este processo continua até que **nenhuma empresa tenha incentivo para entrar nem sair**.
+
+## Entrada de Empresas: Efeito no Mercado
+
+```{r entry-market, fig.width=8, fig.height=4.2}
+library(ggplot2)
+library(dplyr)
+library(patchwork)
+
+# Individual firm panel
+q_i <- seq(0.1, 3.8, length.out = 200)
+cf_i <- 1
+cmg_i <- function(q) 1 - q + 0.36*q^2
+ctm_i <- function(q) (q - 0.5*q^2 + 0.12*q^3 + cf_i)/q
+
+P0 <- 2.4
+q0 <- (1 + sqrt(1 + 4*0.36*1.4))/(2*0.36)
+ctm0 <- ctm_i(q0)
+
+P1 <- 1.85
+q1_firm <- (1 + sqrt(1 + 4*0.36*(P1-1)))/(2*0.36)
+ctm1 <- ctm_i(q1_firm)
+
+df_firm <- tibble(q = q_i, cmg = cmg_i(q_i), ctm = ctm_i(q_i)) %>%
+  filter(cmg <= 4, ctm <= 4)
+
+p1 <- ggplot() +
+  geom_line(data = df_firm, aes(x = q, y = cmg), color = "#A40027", linewidth = 1) +
+  geom_line(data = df_firm, aes(x = q, y = ctm), color = "steelblue", linewidth = 1) +
+  geom_hline(yintercept = P0, color = "gray40", linetype = "dashed") +
+  geom_hline(yintercept = P1, color = "#A40027", linetype = "dashed") +
+  geom_segment(aes(x = q0, xend = q0, y = 0, yend = P0),
+               linetype = "dotted", color = "gray60") +
+  geom_segment(aes(x = q1_firm, xend = q1_firm, y = 0, yend = P1),
+               linetype = "dotted", color = "gray60") +
+  annotate("text", x = 0.1, y = P0 + 0.1, label = "p", hjust = 0,
+           color = "gray40", size = 3.5) +
+  annotate("text", x = 0.1, y = P1 + 0.1, label = "p'", hjust = 0,
+           color = "#A40027", size = 3.5) +
+  annotate("text", x = q0, y = -0.12, label = "q[i]", parse = TRUE,
+           color = "gray40", size = 3) +
+  annotate("text", x = q1_firm, y = -0.12, label = "q[i]'", parse = TRUE,
+           color = "#A40027", size = 3) +
+  annotate("text", x = 3.5, y = cmg_i(3.5) + 0.1, label = "Cmg",
+           color = "#A40027", size = 3.5) +
+  annotate("text", x = 3.5, y = ctm_i(3.5) + 0.1, label = "CTM",
+           color = "steelblue", size = 3.5) +
+  scale_x_continuous(breaks = NULL, limits = c(0, 4)) +
+  scale_y_continuous(breaks = NULL, limits = c(0, 4)) +
+  labs(x = "q", y = "P", title = "A empresa i") +
+  theme_classic(base_size = 11) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.2, "cm"), type = "closed")),
+        plot.title = element_text(hjust = 0.5))
+
+# Market panel
+Q_seq <- seq(0.5, 10, length.out = 300)
+demand_mkt <- function(Q) 6 - 0.4*Q
+supply0 <- function(Q) 0.5 + 0.35*Q
+supply1 <- function(Q) 0.5 + 0.22*Q  # expanded supply after entry
+
+# equilibria
+Q0_mkt <- (6 - 0.5)/(0.4 + 0.35)
+Q1_mkt <- (6 - 0.5)/(0.4 + 0.22)
+
+df_mkt <- tibble(
+  Q = Q_seq,
+  D = demand_mkt(Q_seq),
+  S0 = supply0(Q_seq),
+  S1 = supply1(Q_seq)
+) %>% filter(D >= 0, D <= 5, S0 <= 5, S1 <= 5)
+
+p2 <- ggplot(df_mkt) +
+  geom_line(aes(x = Q, y = D), color = "steelblue", linewidth = 1) +
+  geom_line(aes(x = Q, y = S0), color = "gray50", linewidth = 1) +
+  geom_line(aes(x = Q, y = S1), color = "#A40027", linewidth = 1) +
+  geom_hline(yintercept = P0, color = "gray40", linetype = "dashed") +
+  geom_hline(yintercept = P1, color = "#A40027", linetype = "dashed") +
+  annotate("text", x = 0.3, y = P0 + 0.1, label = "p", hjust = 0,
+           color = "gray40", size = 3.5) +
+  annotate("text", x = 0.3, y = P1 + 0.1, label = "p'", hjust = 0,
+           color = "#A40027", size = 3.5) +
+  annotate("text", x = 9.5, y = demand_mkt(9.5) + 0.15, label = "D",
+           color = "steelblue", size = 3.5) +
+  annotate("text", x = 9.5, y = supply0(9.5) + 0.15, label = "S",
+           color = "gray50", size = 3.5) +
+  annotate("text", x = 9.5, y = supply1(9.5) + 0.15, label = "S'",
+           color = "#A40027", size = 3.5) +
+  annotate("text", x = 7, y = 3.5,
+           label = "Entram empresas\n→ S expande\n→ P desce",
+           color = "#A40027", size = 3, hjust = 0) +
+  geom_segment(aes(x = 6.5, xend = 6, y = 3.3, yend = 3.1),
+               arrow = arrow(length = unit(0.15, "cm")), color = "#A40027") +
+  scale_x_continuous(breaks = NULL, limits = c(0, 10.5)) +
+  scale_y_continuous(breaks = NULL, limits = c(0, 5)) +
+  labs(x = "Q", y = "P", title = "O mercado") +
+  theme_classic(base_size = 11) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.2, "cm"), type = "closed")),
+        plot.title = element_text(hjust = 0.5))
+
+p1 + p2
+```
+
+::: {.nonincremental}
+- Entram empresas → oferta expande ($S \to S'$) → $p$ desce → $q_i$ de cada empresa desce
+- No total, há mais produto no mercado, mas o lucro individual diminui
+:::
+
+## Condição de Equilíbrio de Longo Prazo
+
+A entrada/saída de empresas cessa quando $\Pi = 0$.
+
+. . .
+
+Em concorrência perfeita, o equilíbrio de longo prazo verifica:
+
+$$\boxed{P^* = Cmg_{LP} = CM_{LP}}$$
+
+. . .
+
+Interpretação:
+
+- $P^* = Cmg_{LP}$: a empresa está a maximizar o lucro (condição de otimização)
+- $P^* = CM_{LP}$: o lucro económico é nulo (condição de entrada/saída livre)
+- Estas duas condições em simultâneo implicam que a empresa opera na **Escala Mínima Eficiente**
+
+## Equilíbrio de Longo Prazo: Gráfico
+
+```{r lp-eq, fig.width=8, fig.height=4.2}
+q_seq <- seq(0.3, 5, length.out = 300)
+
+cmg_lp <- function(q) 3*q^2 - 12*q + 15   # LP Cmg
+ctm_lp <- function(q) q^2 - 6*q + 15        # LP CM = CT_LP/q where CT_LP=q^3-6q^2+15q
+# min CM at q=3, CM(3)=6; Cmg(3)=6 ✓
+
+q_star_lp <- 3
+p_star_lp <- 6
+
+df_firm_lp <- tibble(
+  q = q_seq,
+  cmg = cmg_lp(q_seq),
+  ctm = ctm_lp(q_seq)
+) %>% filter(cmg <= 8, ctm <= 8, ctm > 0)
+
+p_firm <- ggplot(df_firm_lp) +
+  geom_line(aes(x = q, y = cmg), color = "#A40027", linewidth = 1.1) +
+  geom_line(aes(x = q, y = ctm), color = "steelblue", linewidth = 1.1) +
+  geom_hline(yintercept = p_star_lp, color = "gray30", linewidth = 1, linetype = "dotted") +
+  geom_segment(aes(x = q_star_lp, xend = q_star_lp, y = 0, yend = p_star_lp),
+               linetype = "dashed", color = "gray50") +
+  geom_point(aes(x = q_star_lp, y = p_star_lp), color = "#A40027", size = 3) +
+  annotate("text", x = 0.2, y = p_star_lp + 0.3, label = "p*",
+           color = "gray30", size = 4) +
+  annotate("text", x = q_star_lp + 0.15, y = 0.3, label = "q[LP]^'*'",
+           parse = TRUE, color = "gray30", size = 3.5) +
+  annotate("text", x = 4.8, y = cmg_lp(4.8) + 0.3, label = "Cmg[LP]",
+           parse = TRUE, color = "#A40027", size = 3.5) +
+  annotate("text", x = 4.8, y = ctm_lp(4.8) + 0.3, label = "CM[LP]",
+           parse = TRUE, color = "steelblue", size = 3.5) +
+  annotate("text", x = q_star_lp/2, y = p_star_lp/2,
+           label = "Π = 0", color = "gray40", size = 4, fontface = "bold") +
+  scale_x_continuous(breaks = NULL, limits = c(0.3, 5.2)) +
+  scale_y_continuous(breaks = NULL, limits = c(0, 8)) +
+  labs(x = "q", y = "P, Cmg, CM", title = "A empresa i") +
+  theme_classic(base_size = 11) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.2, "cm"), type = "closed")),
+        plot.title = element_text(hjust = 0.5))
+
+# Market panel - horizontal LP supply at p*
+Q_mkt <- seq(0, 12, length.out = 200)
+demand_mkt2 <- function(Q) 12 - 0.5*Q
+Q_eq_mkt <- (12 - p_star_lp)/0.5  # = 12
+
+df_mkt2 <- tibble(
+  Q = Q_mkt,
+  D = demand_mkt2(Q_mkt)
+) %>% filter(D >= 0)
+
+p_market <- ggplot() +
+  geom_line(data = df_mkt2, aes(x = Q, y = D), color = "steelblue", linewidth = 1.1) +
+  geom_segment(aes(x = 0, xend = 12.5, y = p_star_lp, yend = p_star_lp),
+               color = "#A40027", linewidth = 1.3) +
+  geom_segment(aes(x = Q_eq_mkt, xend = Q_eq_mkt, y = 0, yend = p_star_lp),
+               linetype = "dashed", color = "gray50") +
+  geom_point(aes(x = Q_eq_mkt, y = p_star_lp), color = "#A40027", size = 3) +
+  annotate("text", x = 0.3, y = p_star_lp + 0.3, label = "p*",
+           color = "#A40027", size = 4) +
+  annotate("text", x = Q_eq_mkt + 0.3, y = 0.3,
+           label = "Σq[LP]^'*'", parse = TRUE, color = "gray30", size = 3.5) +
+  annotate("text", x = 12.5, y = p_star_lp + 0.3, label = "S[LP]",
+           parse = TRUE, color = "#A40027", size = 4) +
+  annotate("text", x = 11.5, y = demand_mkt2(11.5) + 0.3, label = "D",
+           color = "steelblue", size = 4) +
+  scale_x_continuous(breaks = NULL, limits = c(0, 13)) +
+  scale_y_continuous(breaks = NULL, limits = c(0, 12.5)) +
+  labs(x = "Q", y = "P", title = "O mercado") +
+  theme_classic(base_size = 11) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.2, "cm"), type = "closed")),
+        plot.title = element_text(hjust = 0.5))
+
+p_firm + p_market
+```
+
+## Oferta de Longo Prazo do Mercado
+
+::: {.callout-note title="Curva de Oferta de LP em Concorrência Perfeita"}
+Com livre entrada e saída, a curva de oferta de longo prazo do mercado é **horizontal** ao nível de $P^* = CM_{LP,\min}$.
+:::
+
+. . .
+
+Porquê horizontal?
+
+- Sempre que $P > P^*$: entram empresas → oferta aumenta → $P$ desce até $P^*$
+- Sempre que $P < P^*$: saem empresas → oferta diminui → $P$ sobe até $P^*$
+- Portanto, no LP, o mercado só está em equilíbrio com $P = P^*$
+
+. . .
+
+A quantidade total de mercado é determinada exclusivamente pela **procura** — o número de empresas ajusta-se para satisfazê-la ao preço $P^*$.
+
+## Excedente Total no Longo Prazo
+
+::: {.callout-tip title="Excedente no LP"}
+No equilíbrio de longo prazo em concorrência perfeita:
+
+- **Excedente do produtor = 0** (lucro económico nulo)
+- **Todo o excedente económico do mercado é Excedente do Consumidor**
+:::
+
+. . .
+
+Isto é uma propriedade notável da concorrência perfeita: no longo prazo, os consumidores capturam todo o ganho gerado pela atividade económica.
+
+# Ajustamento de Longo Prazo: Choque na Procura
+
+## Passo a Passo: Expansão da Procura
+
+::: {.nonincremental}
+Suponha que o mercado está inicialmente em equilíbrio de LP. Ocorre um **aumento permanente da procura**.
+:::
+
+. . .
+
+**Passo 1 — CP imediato:**
+
+A oferta está fixa (número de empresas fixo). O novo equilíbrio de CP tem $P' > P^*$ e $q_i' > q_i^*$. Surge $\Pi > 0$.
+
+. . .
+
+**Passo 2 — Ajustamento LP:**
+
+$\Pi > 0$ atrai novas empresas. A oferta expande progressivamente. O preço desce.
+
+. . .
+
+**Passo 3 — Novo equilíbrio LP:**
+
+O processo termina quando $P = P^*$ novamente (se a tecnologia não se alterar e os preços dos fatores são constantes). A quantidade total no mercado é maior, mas cada empresa individual produz $q_i^*$ (o mesmo de antes).
+
+## Ajustamento LP: Gráfico
+
+```{r adjustment, fig.width=8, fig.height=4.2}
+q_seq <- seq(0.3, 5, length.out = 200)
+Q_seq <- seq(0, 15, length.out = 300)
+
+cmg_lp2 <- function(q) 3*q^2 - 12*q + 15
+ctm_lp2 <- function(q) q^2 - 6*q + 15
+p_star2 <- 6
+q_star2 <- 3
+
+# Market demand curves
+D0 <- function(Q) 12 - 0.5*Q      # initial: eq at Q=12, P=6
+D1 <- function(Q) 16 - 0.5*Q      # shifted up: new CP eq
+
+Q0 <- 12
+Q_cp_new <- (16 - p_star2)/0.5 + 2  # rough SR eq
+P_cp <- 8   # approximate SR price
+
+# SR supply: n=4 firms (Q=n*q, Cmg=P)
+# At P=8: 3q^2-12q+15=8 => 3q^2-12q+7=0 => q=(12+sqrt(144-84))/6=(12+sqrt(60))/6
+q_cp <- (12 + sqrt(60))/6
+Q_cp_total <- 4 * q_cp  # n=4 firms
+
+# LP supply line at P=6
+# New LP eq with D1: Q_LP_new = (16-6)/0.5 = 20
+Q_lp_new <- (16 - p_star2)/0.5
+
+df_mkt_adj <- tibble(
+  Q = Q_seq,
+  D0_val = D0(Q_seq),
+  D1_val = D1(Q_seq)
+) %>% filter(D0_val >= 0, D1_val >= 0)
+
+p_m <- ggplot(df_mkt_adj) +
+  # LP supply line
+  geom_segment(aes(x = 0, xend = 22, y = p_star2, yend = p_star2),
+               color = "#A40027", linewidth = 1.2) +
+  geom_line(aes(x = Q, y = D0_val), color = "steelblue", linewidth = 1, linetype = "dashed") +
+  geom_line(aes(x = Q, y = D1_val), color = "steelblue", linewidth = 1.2) +
+  # Equilibria
+  geom_segment(aes(x = Q0, xend = Q0, y = 0, yend = p_star2),
+               linetype = "dotted", color = "gray50") +
+  geom_segment(aes(x = Q_lp_new, xend = Q_lp_new, y = 0, yend = p_star2),
+               linetype = "dotted", color = "gray50") +
+  geom_point(aes(x = Q0, y = p_star2), color = "gray50", size = 2.5) +
+  geom_point(aes(x = Q_lp_new, y = p_star2), color = "#A40027", size = 2.5) +
+  # CP temporary equilibrium (higher P)
+  geom_segment(aes(x = 0, xend = 22, y = P_cp, yend = P_cp),
+               color = "orange", linewidth = 0.8, linetype = "dashed") +
+  geom_point(aes(x = Q_cp_total, y = P_cp), color = "orange", size = 2.5) +
+  annotate("text", x = 0.4, y = p_star2 + 0.35, label = "p*",
+           color = "#A40027", size = 3.5) +
+  annotate("text", x = 0.4, y = P_cp + 0.35, label = "p^\"'\"[CP]",
+           parse = TRUE, color = "orange", size = 3.5) +
+  annotate("text", x = Q0 + 0.3, y = 0.4, label = "Q[0]",
+           parse = TRUE, color = "gray50", size = 3) +
+  annotate("text", x = Q_lp_new + 0.3, y = 0.4, label = "Q[LP]^\"'\"",
+           parse = TRUE, color = "#A40027", size = 3) +
+  annotate("text", x = 21, y = p_star2 + 0.35, label = "S[LP]",
+           parse = TRUE, color = "#A40027", size = 3.5) +
+  annotate("text", x = 19, y = D1(19) + 0.4, label = "D'", color = "steelblue", size = 3.5) +
+  annotate("text", x = 19, y = D0(19) - 0.4, label = "D", color = "steelblue", size = 3.5,
+           alpha = 0.6) +
+  annotate("segment", x = 13, xend = 13, y = P_cp - 0.2, yend = p_star2 + 0.2,
+           arrow = arrow(ends = "last", length = unit(0.2, "cm")), color = "#A40027") +
+  annotate("text", x = 13.8, y = (P_cp + p_star2)/2,
+           label = "Ajustamento LP", color = "#A40027", size = 3, hjust = 0) +
+  scale_x_continuous(breaks = NULL, limits = c(0, 22)) +
+  scale_y_continuous(breaks = NULL, limits = c(0, 13)) +
+  labs(x = "Q", y = "P", title = "Mercado: ajustamento após choque na procura") +
+  theme_classic(base_size = 11) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.2, "cm"), type = "closed")),
+        plot.title = element_text(hjust = 0.5))
+
+p_m
+```
+
+::: {.nonincremental}
+- Após choque, CP: $P$ sobe, $\Pi > 0$ (ponto laranja)
+- LP: entrada de empresas → $P$ regressa a $P^*$, mais empresas no mercado (ponto vermelho)
+:::
+
+# Exercícios
+
+## Exercício 1 — Escolha Múltipla
+
+**Uma empresa em mercado concorrencial tem função de custo total de LP:**
+$$CT_{LP}(q) = q^3 - 6q^2 + 15q$$
+
+**Qual é o preço de equilíbrio de longo prazo neste mercado?**
+
+::: {.nonincremental}
+A) $P^* = 3$
+
+B) $P^* = 6$
+
+C) $P^* = 9$
+
+D) $P^* = 15$
+:::
+
+## Exercício 1 — Solução {visibility="uncounted"}
+
+**Resolução:**
+
+$$CM_{LP} = \frac{CT_{LP}}{q} = q^2 - 6q + 15$$
+
+. . .
+
+Mínimo de $CM_{LP}$: $\frac{d\,CM_{LP}}{dq} = 2q - 6 = 0 \Rightarrow q^* = 3$
+
+. . .
+
+$$CM_{LP}(3) = 9 - 18 + 15 = \mathbf{6}$$
+
+Confirmação: $Cmg_{LP} = 3q^2 - 12q + 15 \Rightarrow Cmg_{LP}(3) = 27 - 36 + 15 = 6$ ✓
+
+. . .
+
+No LP, $P^* = CM_{LP,\min} = Cmg_{LP}(q^*)$
+
+**Resposta: B) $P^* = 6$**
+
+## Exercício 2 — Escolha Múltipla
+
+**Continuando o exercício anterior** ($CT_{LP} = q^3 - 6q^2 + 15q$, $P^* = 6$)**. A procura de mercado é $Q_D = 120 - 10P$. Quantas empresas existem no equilíbrio de LP?**
+
+::: {.nonincremental}
+A) 10 empresas
+
+B) 15 empresas
+
+C) 20 empresas
+
+D) 60 empresas
+:::
+
+## Exercício 2 — Solução {visibility="uncounted"}
+
+**Resolução:**
+
+Quantidade procurada ao preço de equilíbrio $P^* = 6$:
+$$Q_D = 120 - 10 \times 6 = 60$$
+
+. . .
+
+Cada empresa produz $q^* = 3$ no LP.
+
+. . .
+
+Número de empresas:
+$$n^* = \frac{Q_D}{q^*} = \frac{60}{3} = \mathbf{20 \text{ empresas}}$$
+
+. . .
+
+**Resposta: C) 20 empresas**
+
+## Exercício 3 — Desenvolvimento
+
+**Considere um mercado em concorrência perfeita com livre entrada e saída.**
+
+A procura de mercado é $Q_D = 60 - 5P$.
+
+Cada empresa tem função de custo total de LP:
+$$CT_{LP}(q) = q^3 - 6q^2 + 12q$$
+
+**(a)** Determine o preço de equilíbrio de LP, $P^*$, a quantidade produzida por cada empresa, $q^*$, e o número de empresas no mercado, $n^*$.
+
+**(b)** Suponha que a procura aumenta para $Q_D' = 75 - 5P$. Descreva o processo de ajustamento e determine o novo equilíbrio de LP.
+
+**(c)** Calcule o Excedente do Consumidor nos dois equilíbrios e comente o resultado.
+
+## Exercício 3 — Resolução (a) {visibility="uncounted"}
+
+**Alínea (a): Equilíbrio LP inicial**
+
+$$CM_{LP} = \frac{CT_{LP}}{q} = q^2 - 6q + 12$$
+
+. . .
+
+Mínimo de $CM_{LP}$: $\displaystyle\frac{d\,CM_{LP}}{dq} = 2q - 6 = 0 \Rightarrow q^* = 3$
+
+. . .
+
+$$P^* = CM_{LP}(3) = 9 - 18 + 12 = 3$$
+
+Confirmação: $Cmg_{LP}(q) = 3q^2 - 12q + 12 \Rightarrow Cmg_{LP}(3) = 27 - 36 + 12 = 3$ ✓
+
+. . .
+
+Quantidade de mercado: $Q^* = Q_D(P^*) = 60 - 5 \times 3 = 45$
+
+. . .
+
+Número de empresas: $\displaystyle n^* = \frac{Q^*}{q^*} = \frac{45}{3} = \mathbf{15 \text{ empresas}}$
+
+## Exercício 3 — Resolução (b) {visibility="uncounted"}
+
+**Alínea (b): Choque na procura**
+
+A tecnologia não se altera → $P^*$ **mantém-se igual a 3** no novo equilíbrio LP.
+
+. . .
+
+**Processo de ajustamento:**
+
+1. No curto prazo (n = 15 fixo): o preço sobe acima de 3, surgem lucros positivos.
+2. Os lucros positivos atraem novas empresas ao mercado.
+3. A oferta expande, o preço desce progressivamente.
+4. O processo termina quando $P$ regressa a $P^* = 3$ e $\Pi = 0$.
+
+. . .
+
+**Novo equilíbrio LP:**
+
+$$Q'^* = Q_D'(P^*) = 75 - 5 \times 3 = 60$$
+
+$$n'^* = \frac{60}{3} = \mathbf{20 \text{ empresas}}$$
+
+Entraram **5 novas empresas**; cada empresa continua a produzir $q^* = 3$.
+
+## Exercício 3 — Resolução (c) {visibility="uncounted"}
+
+**Alínea (c): Excedente do Consumidor**
+
+Da procura $Q_D = 60 - 5P$: inversa $P = 12 - \frac{Q}{5}$
+
+$\Rightarrow$ preço máximo: $P_{max} = 12$ (quando $Q = 0$)
+
+. . .
+
+**EC inicial** (equilíbrio com $P^* = 3$, $Q^* = 45$):
+
+$$EC_0 = \frac{(12 - 3) \times 45}{2} = \frac{9 \times 45}{2} = \mathbf{202{,}5}$$
+
+. . .
+
+**EC após choque** ($P^* = 3$ mantém-se, $Q'^* = 60$):
+
+$$EC_1 = \frac{(12 - 3) \times 60}{2} = \frac{9 \times 60}{2} = \mathbf{270}$$
+
+. . .
+
+::: {.callout-tip title="Comentário"}
+O preço não se altera no LP (oferta horizontal), pelo que todo o benefício do aumento da procura é capturado pelos **consumidores** — o EC aumenta de 202,5 para 270. O excedente do produtor permanece nulo.
+:::
+
+# Síntese
+
+## Resumo: Equilíbrio de LP em Concorrência Perfeita
+
+| | **Curto Prazo** | **Longo Prazo** |
+|---|---|---|
+| Número de empresas | Fixo | Variável (entrada/saída livre) |
+| Condição de otimização | $P = Cmg_{CP}$ | $P = Cmg_{LP}$ |
+| Lucro económico | Pode ser $\neq 0$ | $\Pi = 0$ |
+| Preço de equilíbrio | Pode variar | $P^* = CM_{LP,\min}$ |
+| Curva de oferta | Crescente | Horizontal |
+| Excedente do produtor | Positivo | Zero |
+
+. . .
+
+::: {.callout-important title="Mensagem-chave"}
+A concorrência perfeita com livre entrada/saída é o único regime de mercado em que, a longo prazo, os consumidores capturam todo o excedente económico e os recursos são afetos à Escala Mínima Eficiente.
+:::

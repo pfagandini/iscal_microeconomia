@@ -35,10 +35,14 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 ### Capítulo V: Produção e Equilíbrio de Mercado de Longo Prazo
 
 14. [Longo Prazo](slides/14_Lp_isoquanta.qmd)
+15. [Equilíbrio de Longo Prazo](slides/15_Eq_mercado_oferta_lp.qmd)
 
 ### Capítulo VI: Elasticidades e Intervenções dos Mercados
 
-
+16. [Elasticidade da Procura](slides/16_elasticidades_procura.qmd)
+17. [Elasticidade da Oferta](slides/17_elasticidade_oferta.qmd)
+18. [Impostos](slides/18_impostos_elasticidade.qmd)
+19. [Subsídios](slides/19_subsidios.qmd)
 
 ### Capítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos
 

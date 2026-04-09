@@ -1,0 +1,511 @@
+---
+title: "Subsídios"
+subtitle: "Microeconomia — Plano de Transição"
+author: "ISCAL - IPL"
+format:
+  revealjs:
+    theme: [default, ../font_adjust.scss, ../iscal_theme.scss]
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    self-contained: false
+    from: markdown+emoji
+    incremental: true
+    toc: true
+    toc-depth: 1
+    number-sections: true
+    math: mathjax
+    engine: knitr
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+```
+
+# Revisão: Equilíbrio e Excedente
+
+## Equilíbrio sem intervenção
+
+Num mercado competitivo sem intervenção do Estado, o equilíbrio $E^*=(Q^*, P^*)$ maximiza o excedente económico total.
+
+::: {.callout-note}
+**Excedente Económico** = Excedente do Consumidor + Excedente do Produtor
+
+$$XE = XC + XP$$
+
+O excedente económico é máximo no equilíbrio competitivo (sem falhas de mercado).
+:::
+
+## Excedente no equilíbrio
+
+```{r fig-excedente-eq, echo=FALSE, fig.width=6, fig.height=4, fig.align='center'}
+ggplot() +
+  # Supply and demand
+  geom_abline(slope = -1, intercept = 100, color = "steelblue", linewidth = 1.2) +
+  geom_abline(slope = 1/3, intercept = 0, color = "tomato", linewidth = 1.2) +
+  # Equilibrium point
+  geom_point(aes(x = 75, y = 25), size = 3, color = "black") +
+  # Shading XC
+  geom_polygon(aes(x = c(0, 0, 75), y = c(25, 100, 25)),
+               fill = "steelblue", alpha = 0.25) +
+  # Shading XP
+  geom_polygon(aes(x = c(0, 75, 75), y = c(0, 0, 25)),
+               fill = "tomato", alpha = 0.25) +
+  # Dashed lines
+  geom_segment(aes(x = 75, y = 0, xend = 75, yend = 25), linetype = "dashed") +
+  geom_segment(aes(x = 0, y = 25, xend = 75, yend = 25), linetype = "dashed") +
+  # Labels
+  annotate("text", x = 20, y = 60, label = "XC", size = 5, color = "steelblue") +
+  annotate("text", x = 20, y = 10, label = "XP", size = 5, color = "tomato") +
+  annotate("text", x = 90, y = 15, label = "D", size = 5, color = "steelblue") +
+  annotate("text", x = 90, y = 35, label = "S", size = 5, color = "tomato") +
+  annotate("text", x = 78, y = 28, label = expression(E^"*"), size = 5) +
+  scale_x_continuous(limits = c(0, 105), breaks = c(0, 75, 100),
+                     labels = c("0", expression(Q^"*"~"= 75"), "100")) +
+  scale_y_continuous(limits = c(0, 105), breaks = c(0, 25, 100),
+                     labels = c("0", expression(P^"*"~"= 25"), "100")) +
+  labs(x = "Q", y = "P") +
+  theme_minimal(base_size = 13)
+```
+
+::: {.nonincremental}
+- $Q^*=75$, $P^*=25$
+- $XC = \frac{(100-25)\times 75}{2} = 2812{,}5$ u.m.
+- $XP = \frac{25 \times 75}{2} = 937{,}5$ u.m.
+- $XE^* = 3750$ u.m.
+:::
+
+# O Subsídio Específico
+
+## O que é um subsídio específico?
+
+::: {.callout-note}
+**Subsídio Específico** ($S$): O Estado paga aos produtores (ou consumidores) uma quantia fixa por cada unidade transaccionada.
+
+A condição de equilíbrio com subsídio fica:
+
+$$P_D = P_S - S$$
+
+onde $P_D$ é o preço pago pelo consumidor e $P_S$ é o preço recebido pelo produtor.
+:::
+
+- O subsídio cria um **cunha** entre o preço do consumidor e o preço do produtor
+- Ao contrário do imposto ($P_D = P_S + I$), o subsídio **baixa** o preço para o consumidor e **sobe** o preço para o produtor
+- São distorcionários: alteram os incentivos e afastam a quantidade do óptimo competitivo $Q^*$
+
+## Sistema de equilíbrio com subsídio $S$
+
+O novo equilíbrio resolve o sistema:
+
+$$\begin{cases} Q_D = f_D(P_D) \\ Q_S = f_S(P_S) \\ Q_D = Q_S \\ P_D = P_S - S \end{cases}$$
+
+- $S$ é uma constante (valor fixo por unidade)
+- O Estado entrega o subsídio ao produtor: o consumidor paga $P_D < P^*$ e o produtor recebe $P_S > P^*$
+
+## Exemplo: $Q_D = 100 - P$, $Q_S = 3P$
+
+::: {.nonincremental}
+**Sem intervenção:** $P^* = 25$, $Q^* = 75$
+
+**Com subsídio $S = 10$ u.m.:**
+
+$$\begin{cases} Q_D = 100 - P_D \\ Q_S = 3P_S \\ Q_D = Q_S \\ P_D = P_S - 10 \end{cases}$$
+
+Substituindo: $100 - P_D = 3P_S = 3(P_D + 10)$
+
+$100 - P_D = 3P_D + 30 \Rightarrow 4P_D = 70 \Rightarrow P_D = 17{,}5$
+
+$P_S = 17{,}5 + 10 = 27{,}5$ e $Q_I = 3 \times 27{,}5 = 82{,}5$
+:::
+
+## Efeito gráfico do subsídio
+
+```{r fig-subsidio-grafico, echo=FALSE, fig.width=6.5, fig.height=4.5, fig.align='center'}
+ggplot() +
+  # Original supply and demand
+  geom_abline(slope = -1, intercept = 100, color = "steelblue", linewidth = 1.2) +
+  geom_abline(slope = 1/3, intercept = 0, color = "tomato", linewidth = 1.2) +
+  # Shifted supply S' (seen by consumer, price is PD = PS - 10, so QS=3(PD+10)=3PD+30)
+  # Inverse: PD = QS/3 - 10, i.e., slope same, intercept shifts down by 10
+  geom_abline(slope = 1/3, intercept = -10, color = "tomato", linetype = "dashed",
+              linewidth = 1.2) +
+  # Original equilibrium
+  geom_point(aes(x = 75, y = 25), size = 3, color = "black") +
+  geom_segment(aes(x = 75, y = 0, xend = 75, yend = 25), linetype = "dotted") +
+  geom_segment(aes(x = 0, y = 25, xend = 75, yend = 25), linetype = "dotted") +
+  # New equilibrium points
+  geom_point(aes(x = 82.5, y = 17.5), size = 3, color = "steelblue") +
+  geom_point(aes(x = 82.5, y = 27.5), size = 3, color = "tomato") +
+  geom_segment(aes(x = 82.5, y = 0, xend = 82.5, yend = 27.5), linetype = "dashed",
+               color = "gray40") +
+  geom_segment(aes(x = 0, y = 17.5, xend = 82.5, yend = 17.5), linetype = "dashed",
+               color = "steelblue") +
+  geom_segment(aes(x = 0, y = 27.5, xend = 82.5, yend = 27.5), linetype = "dashed",
+               color = "tomato") +
+  # Arrow showing subsidy wedge
+  annotate("segment", x = 85, y = 17.5, xend = 85, yend = 27.5,
+           arrow = arrow(ends = "both", length = unit(0.15, "cm")),
+           color = "darkgreen", linewidth = 1) +
+  annotate("text", x = 90, y = 22.5, label = "S = 10", size = 4, color = "darkgreen") +
+  # Labels
+  annotate("text", x = 97, y = 6, label = "D", size = 5, color = "steelblue") +
+  annotate("text", x = 97, y = 38, label = "S", size = 5, color = "tomato") +
+  annotate("text", x = 97, y = 28, label = "S'", size = 5, color = "tomato") +
+  annotate("text", x = 77, y = 29, label = expression(E^"*"), size = 4) +
+  scale_x_continuous(limits = c(0, 105),
+                     breaks = c(0, 75, 82.5),
+                     labels = c("0", "75", "82,5")) +
+  scale_y_continuous(limits = c(-12, 105),
+                     breaks = c(0, 17.5, 25, 27.5),
+                     labels = c("0", expression(P[D]~"=17,5"), "25",
+                                expression(P[S]~"=27,5"))) +
+  labs(x = "Q", y = "P") +
+  theme_minimal(base_size = 12)
+```
+
+A oferta $S'$ representa a oferta **distorcida pelo subsídio**, vista pelo consumidor: $Q_S = 3(P_D + 10) = 3P_D + 30$.
+
+# Incidência Económica
+
+## Quem beneficia do subsídio?
+
+::: {.callout-important}
+**Incidência Económica do Subsídio**
+
+A forma como o benefício do subsídio se reparte entre consumidores e produtores **não depende de quem recebe o subsídio** (incidência legal), mas das **elasticidades** da procura e da oferta.
+:::
+
+. . .
+
+**No exemplo** ($S = 10$ u.m.):
+
+| | Preço | Variação face a $P^*=25$ |
+|---|---|---|
+| Consumidor paga | $P_D = 17{,}5$ | $I_D = 25 - 17{,}5 = 7{,}5$ u.m. |
+| Produtor recebe | $P_S = 27{,}5$ | $I_S = 27{,}5 - 25 = 2{,}5$ u.m. |
+| **Total** | | $I_D + I_S = 10$ u.m. $= S$ ✓ |
+
+## Incidência e elasticidades
+
+A repartição do subsídio entre consumidores e produtores obedece à mesma lógica dos impostos:
+
+$$\frac{I_S}{I_D} = \frac{|\varepsilon_D|}{\varepsilon_S}$$
+
+. . .
+
+**No exemplo:**
+
+- $\varepsilon_D = \frac{dQ_D}{dP}\cdot\frac{P^*}{Q^*} = -1 \times \frac{25}{75} = -\frac{1}{3}$
+- $\varepsilon_S = \frac{dQ_S}{dP}\cdot\frac{P^*}{Q^*} = 3 \times \frac{25}{75} = 1$
+
+$$\frac{I_S}{I_D} = \frac{1/3}{1} = \frac{1}{3} \qquad \checkmark \quad \left(\frac{2{,}5}{7{,}5} = \frac{1}{3}\right)$$
+
+. . .
+
+::: {.callout-note}
+Quanto mais **rígida** for a procura (ou a oferta) face à oferta (ou procura), **maior** será a incidência do subsídio sobre esse lado do mercado.
+:::
+
+# Efeitos sobre o Excedente
+
+## O subsídio e a despesa fiscal
+
+O Estado financia o subsídio com despesa fiscal:
+
+$$\text{Despesa Fiscal} = S \times Q_I$$
+
+. . .
+
+**No exemplo:** $\text{DF} = 10 \times 82{,}5 = 825$ u.m.
+
+. . .
+
+Esta despesa reparte-se entre ganhos de excedente e **perda pura**:
+
+$$\text{Despesa Fiscal} = \Delta XC + \Delta XP + \text{Perda Pura}$$
+
+## Diagrama de excedentes com subsídio
+
+```{r fig-excedente-subsidio, echo=FALSE, fig.width=7, fig.height=5, fig.align='center'}
+# Parameters: D: P=5-Q, S: P=1+Q (scaled for nice plot)
+# Eq: P*=3, Q*=2; with S=2: PD=2, PS=4, QI=3
+d_fn  <- function(q) 5 - q
+sa_fn <- function(q) 1 + q      # original supply (inverse)
+sb_fn <- function(q) -1 + q     # shifted supply (S' = S - subsidy, PD = PS-2)
+
+Pstar <- 3; Qstar <- 2
+PD_n <- 2; PS_n <- 4; QI_n <- 3
+
+# Area labels
+ggplot() +
+  # Shading XC gain (B: between PD and P*, up to QI)
+  geom_polygon(aes(x = c(0, 0, Qstar, QI_n),
+                   y = c(PD_n, Pstar, Pstar, PD_n)),
+               fill = "steelblue", alpha = 0.35) +
+  # Shading XP gain (G: between P* and PS, up to QI)  
+  geom_polygon(aes(x = c(0, 0, QI_n, Qstar),
+                   y = c(Pstar, PS_n, PS_n, Pstar)),
+               fill = "tomato", alpha = 0.35) +
+  # Dead weight loss triangle (C+E combined)
+  geom_polygon(aes(x = c(Qstar, QI_n, QI_n),
+                   y = c(Pstar, PD_n, PS_n)),
+               fill = "gray30", alpha = 0.45) +
+  # Supply and demand curves
+  stat_function(fun = d_fn, xlim = c(0, 4.5), color = "steelblue", linewidth = 1.2,
+                aes(x = NA_real_)) +
+  geom_segment(aes(x = 0, y = 5, xend = 4.5, yend = 0.5),
+               color = "steelblue", linewidth = 1.2) +
+  geom_segment(aes(x = 0, y = 1, xend = 4, yend = 5),
+               color = "tomato", linewidth = 1.2) +
+  geom_segment(aes(x = 1, y = 0, xend = 5, yend = 4),
+               color = "tomato", linetype = "dashed", linewidth = 1.2) +
+  # Equilibrium
+  geom_point(aes(x = Qstar, y = Pstar), size = 3) +
+  geom_segment(aes(x = Qstar, y = 0, xend = Qstar, yend = Pstar), linetype = "dotted") +
+  geom_segment(aes(x = 0, y = Pstar, xend = Qstar, yend = Pstar), linetype = "dotted") +
+  # New equilibrium
+  geom_segment(aes(x = QI_n, y = 0, xend = QI_n, yend = PS_n), linetype = "dashed",
+               color = "gray50") +
+  geom_segment(aes(x = 0, y = PD_n, xend = QI_n, yend = PD_n), linetype = "dashed",
+               color = "steelblue") +
+  geom_segment(aes(x = 0, y = PS_n, xend = QI_n, yend = PS_n), linetype = "dashed",
+               color = "tomato") +
+  geom_point(aes(x = QI_n, y = PD_n), size = 3, color = "steelblue") +
+  geom_point(aes(x = QI_n, y = PS_n), size = 3, color = "tomato") +
+  # Area labels
+  annotate("text", x = 0.7, y = 3.4, label = "B", size = 5, fontface = "bold") +
+  annotate("text", x = 0.7, y = 3.8, label = "A", size = 5, color = "gray30") +
+  annotate("text", x = 0.7, y = 2.6, label = "F", size = 5, color = "gray30") +
+  annotate("text", x = 0.7, y = 3.65, label = "", size = 4) +
+  annotate("text", x = 1.2, y = 3.7, label = "G", size = 5, fontface = "bold",
+           color = "tomato4") +
+  annotate("text", x = 2.6, y = 3.2, label = "PP", size = 5, fontface = "bold",
+           color = "white") +
+  # Curve labels
+  annotate("text", x = 4.6, y = 0.5, label = "D", size = 5, color = "steelblue") +
+  annotate("text", x = 4.1, y = 5.1, label = "S", size = 5, color = "tomato") +
+  annotate("text", x = 5.1, y = 4.1, label = "S'", size = 5, color = "tomato") +
+  scale_x_continuous(limits = c(0, 5.5), breaks = c(Qstar, QI_n),
+                     labels = c(expression(Q^"*"), expression(Q[I]))) +
+  scale_y_continuous(limits = c(0, 5.5), breaks = c(PD_n, Pstar, PS_n),
+                     labels = c(expression(P[D]), expression(P^"*"), expression(P[S]))) +
+  labs(x = "Q", y = "P") +
+  theme_minimal(base_size = 13)
+```
+
+## Tabela resumo dos excedentes
+
+::: {.nonincremental}
+
+| | **Antes do subsídio** | **Após subsídio** | **Variação** |
+|---|---|---|---|
+| Excedente do Consumidor | $XC_0$ | $XC_1 > XC_0$ | $+\Delta XC$ |
+| Excedente do Produtor | $XP_0$ | $XP_1 > XP_0$ | $+\Delta XP$ |
+| Despesa Fiscal (Estado) | — | $S \times Q_I$ | — |
+| **Perda Pura** | — | $\frac{1}{2}S(Q_I-Q^*)$ | — |
+| Quantidade | $Q^*$ | $Q_I > Q^*$ | — |
+| Preço consumidor | $P^*$ | $P_D < P^*$ | $-I_D$ |
+| Preço produtor | $P^*$ | $P_S > P^*$ | $+I_S$ |
+
+:::
+
+. . .
+
+::: {.callout-warning}
+O subsídio cria uma **perda pura de excedente económico**: parte da despesa fiscal não é apropriada nem pelos consumidores nem pelos produtores. O subsídio é **distorcionário**.
+:::
+
+## Perda pura do subsídio
+
+A perda pura corresponde ao triângulo entre as curvas de oferta e procura, para as unidades entre $Q^*$ e $Q_I$:
+
+$$\text{PP} = \frac{1}{2} \times S \times (Q_I - Q^*)$$
+
+. . .
+
+**No exemplo:**
+
+$$\text{PP} = \frac{1}{2} \times 10 \times (82{,}5 - 75) = \frac{1}{2} \times 10 \times 7{,}5 = 37{,}5 \text{ u.m.}$$
+
+. . .
+
+Verificação:
+$$\text{DF} = 825; \quad \Delta XC = 590{,}6; \quad \Delta XP = 196{,}9$$
+$$825 - 590{,}6 - 196{,}9 = 37{,}5 \text{ u.m.} \checkmark$$
+
+## Porquê é que existe perda pura?
+
+O subsídio leva à transacção de unidades entre $Q^*$ e $Q_I$ onde:
+
+$$\text{Valorização do Consumidor} < \text{Custo de Produção}$$
+
+. . .
+
+- Para essas unidades extras, o valor que o consumidor atribui ao bem (dado pela curva $D$) é **menor** do que o custo que o produtor suporta para as produzir (dado pela curva $S$)
+- Estas trocas só acontecem porque o Estado subsidia a diferença
+- O custo social excede o benefício social: é uma **perda líquida de bem-estar**
+
+# Exercícios
+
+## Exercício 1 — Escolha Múltipla {.nonincremental}
+
+Num mercado competitivo, a procura e a oferta são descritas por $Q_D = 200 - 2P$ e $Q_S = -20 + 3P$. O Estado decide introduzir um subsídio específico de **15 u.m.** por unidade transaccionada.
+
+**Qual o novo equilíbrio após o subsídio?**
+
+::: {.nonincremental}
+(A) $P_D = 38$; $P_S = 53$; $Q_I = 124$
+
+(B) $P_D = 35$; $P_S = 50$; $Q_I = 130$
+
+(C) $P_D = 32$; $P_S = 47$; $Q_I = 136$
+
+(D) $P_D = 37$; $P_S = 52$; $Q_I = 126$
+:::
+
+## Exercício 1 — Solução {.nonincremental}
+
+::: {.callout-tip}
+**Resposta correta: (B)**
+:::
+
+**Sem subsídio:** $200-2P = -20+3P \Rightarrow 5P = 220 \Rightarrow P^*=44$, $Q^*=112$
+
+**Com $S=15$:** $\begin{cases} Q_D = 200 - 2P_D \\ Q_S = -20 + 3P_S \\ P_D = P_S - 15 \end{cases}$
+
+Substituindo $P_D = P_S - 15$:
+
+$200 - 2(P_S-15) = -20 + 3P_S \Rightarrow 200 - 2P_S + 30 = -20 + 3P_S \Rightarrow 5P_S = 250 \Rightarrow P_S = 50$
+
+$P_D = 50 - 15 = 35$; $Q_I = 200 - 2(35) = 130$
+
+Incidência: $I_D = 44 - 35 = 9$ u.m.; $I_S = 50 - 44 = 6$ u.m.; DF $= 15 \times 130 = 1950$ u.m.
+
+## Exercício 2 — Escolha Múltipla {.nonincremental}
+
+No mesmo mercado ($Q_D = 200 - 2P$; $Q_S = -20 + 3P$; $P^*=44$; $Q^*=112$), com o subsídio de 15 u.m., **qual a perda pura de excedente económico**?
+
+::: {.nonincremental}
+(A) 90 u.m.
+
+(B) 270 u.m.
+
+(C) 135 u.m.
+
+(D) 54 u.m.
+:::
+
+## Exercício 2 — Solução {.nonincremental}
+
+::: {.callout-tip}
+**Resposta correta: (C)**
+:::
+
+A perda pura é o triângulo com base $S = 15$ e altura $(Q_I - Q^*) = 130 - 112 = 18$:
+
+$$\text{PP} = \frac{1}{2} \times 15 \times 18 = 135 \text{ u.m.}$$
+
+Verificação:
+- $\text{DF} = 15 \times 130 = 1950$ u.m.
+- $\Delta XC = \frac{65 \times 130}{2} - \frac{56 \times 112}{2} = 4225 - 3136 = 1089$ u.m.
+- $\Delta XP = 1950 - 1089 - 135 = 726$ u.m.
+- $\text{DF} - \Delta XC - \Delta XP = 1950 - 1089 - 726 = 135$ u.m. ✓
+
+## Exercício 3 — Desenvolvimento {.nonincremental}
+
+A procura e a oferta de um mercado são descritas por:
+
+$$Q_D = 100 - P \qquad Q_S = 2P - 20$$
+
+O Estado decide introduzir um subsídio específico de **9 u.m.** por unidade transaccionada.
+
+**(a)** Determine o equilíbrio de mercado sem intervenção.
+
+**(b)** Determine o novo equilíbrio após o subsídio. Quais os preços $P_D$ e $P_S$?
+
+**(c)** Calcule a incidência económica do subsídio sobre consumidores e produtores, e relacione com as elasticidades.
+
+**(d)** Calcule a despesa fiscal do Estado e a perda pura de excedente económico.
+
+## Exercício 3 — Solução (a) e (b) {.nonincremental}
+
+::: {.callout-tip icon=false}
+### (a) Equilíbrio sem intervenção
+
+$100 - P = 2P - 20 \Rightarrow 3P = 120 \Rightarrow P^* = 40$; $Q^* = 60$
+:::
+
+. . .
+
+::: {.callout-tip icon=false}
+### (b) Com subsídio $S = 9$
+
+Sistema: $Q_D = Q_S$ e $P_D = P_S - 9$
+
+$100 - P_D = 2P_S - 20 = 2(P_D + 9) - 20$
+
+$100 - P_D = 2P_D + 18 - 20 \Rightarrow 102 = 3P_D \Rightarrow P_D = 34$
+
+$P_S = 34 + 9 = 43$ ; $Q_I = 100 - 34 = 66$
+:::
+
+## Exercício 3 — Solução (c) {.nonincremental}
+
+::: {.callout-tip icon=false}
+### (c) Incidência económica
+
+- $I_D = P^* - P_D = 40 - 34 = 6$ u.m. (ganho do consumidor por unidade)
+- $I_S = P_S - P^* = 43 - 40 = 3$ u.m. (ganho do produtor por unidade)
+- $I_D + I_S = 9$ u.m. $= S$ ✓
+
+**Relação com elasticidades** (calculadas em $P^*=40$, $Q^*=60$):
+
+$$\varepsilon_D = \frac{dQ_D}{dP}\cdot\frac{P^*}{Q^*} = -1 \times \frac{40}{60} = -\frac{2}{3}$$
+
+$$\varepsilon_S = \frac{dQ_S}{dP}\cdot\frac{P^*}{Q^*} = 2 \times \frac{40}{60} = \frac{4}{3}$$
+
+$$\frac{I_S}{I_D} = \frac{3}{6} = \frac{1}{2} = \frac{|\varepsilon_D|}{\varepsilon_S} = \frac{2/3}{4/3} = \frac{1}{2} \checkmark$$
+:::
+
+## Exercício 3 — Solução (d) {.nonincremental}
+
+::: {.callout-tip icon=false}
+### (d) Despesa fiscal e perda pura
+
+**Despesa Fiscal:**
+$$\text{DF} = S \times Q_I = 9 \times 66 = 594 \text{ u.m.}$$
+
+**Perda Pura:**
+$$\text{PP} = \frac{1}{2} \times S \times (Q_I - Q^*) = \frac{1}{2} \times 9 \times (66 - 60) = \frac{1}{2} \times 9 \times 6 = 27 \text{ u.m.}$$
+
+**Verificação via excedentes:**
+
+| | Antes | Depois | Variação |
+|---|---|---|---|
+| $XC = \frac{(100-P_D)\cdot Q}{2}$ | 1800 | 2178 | $+378$ |
+| $XP = \frac{(P_S - 10)\cdot Q}{2}$ | 900 | 1089 | $+189$ |
+| $\text{DF}$ | — | 594 | — |
+| PP $= \text{DF} - \Delta XC - \Delta XP$ | — | — | $594 - 378 - 189 = 27$ ✓ |
+:::
+
+## Síntese {.nonincremental}
+
+::: {.nonincremental}
+| | Subsídio |
+|---|---|
+| Objectivo | Incentivar a produção/consumo de um bem |
+| Efeito no preço do consumidor | $P_D < P^*$ |
+| Efeito no preço do produtor | $P_S > P^*$ |
+| Efeito na quantidade | $Q_I > Q^*$ |
+| Custo para o Estado | $\text{DF} = S \times Q_I$ |
+| Distribuição do benefício | Depende de $\varepsilon_D$ e $\varepsilon_S$ |
+| Perda Pura | $\text{PP} = \frac{1}{2} S (Q_I - Q^*)$ |
+| É distorcionário? | **Sim** |
+:::
+
+. . .
+
+::: {.callout-warning}
+Um subsídio, mesmo bem intencionado, implica sempre uma **perda pura de excedente económico** — salvo no caso-limite de procura ou oferta perfeitamente rígidas ($|\varepsilon| = 0$), onde $Q_I = Q^*$ e PP $= 0$.
+:::

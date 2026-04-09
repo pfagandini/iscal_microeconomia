@@ -1,0 +1,536 @@
+---
+title: "Microeconomia"
+subtitle: "Elasticidades da Procura"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 23_elasticidades_procura-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+  beamer:
+    theme: default
+    classoption: handout
+echo: false
+code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tibble)
+library(patchwork)
+```
+
+# O Conceito de Elasticidade
+
+## O que mede a elasticidade?
+
+::: {.callout-note title="Elasticidade"}
+A elasticidade mede a **variação percentual** de uma variável em resposta à **variação percentual** de outra variável que a influencia.
+:::
+
+. . .
+
+Por ser uma razão de percentagens, a elasticidade é **adimensional** — não depende das unidades de medida.
+
+. . .
+
+Forma geral:
+$$\varepsilon_{Y,X} = \frac{\Delta\% Y}{\Delta\% X} = \frac{\dfrac{\Delta Y}{Y}}{\dfrac{\Delta X}{X}} = \frac{\Delta Y}{\Delta X} \cdot \frac{X}{Y}$$
+
+. . .
+
+Em termos contínuos (derivada):
+$$\varepsilon_{Y,X} = \frac{dY}{dX} \cdot \frac{X}{Y}$$
+
+## Elasticidades da Procura
+
+Vamos estudar três elasticidades da procura:
+
+. . .
+
+**1. Elasticidade preço-direta** $(\varepsilon_D)$
+
+Sensibilidade da quantidade procurada de $X$ face ao preço de $X$.
+
+. . .
+
+**2. Elasticidade preço cruzada** $(\varepsilon_{x,y})$
+
+Sensibilidade da quantidade procurada de $X$ face ao preço de outro bem $Y$.
+
+. . .
+
+**3. Elasticidade rendimento** $(\eta)$
+
+Sensibilidade da quantidade procurada de $X$ face ao rendimento disponível.
+
+# Elasticidade Preço-Direta da Procura
+
+## Definição e Fórmula
+
+::: {.callout-note title="Elasticidade Preço-Direta"}
+Mede a variação percentual da quantidade procurada quando o preço do mesmo bem varia 1%, tudo o resto constante:
+$$\varepsilon_D = \frac{\Delta\% Q_D}{\Delta\% P} = \frac{\Delta Q_D}{\Delta P} \cdot \frac{P}{Q_D}$$
+:::
+
+. . .
+
+Como $Q_D$ e $P$ variam em sentidos opostos (Lei da Procura), $\varepsilon_D < 0$ em geral.
+
+. . .
+
+Trabalha-se habitualmente com o valor absoluto $|\varepsilon_D|$:
+
+| $|\varepsilon_D|$ | Classificação |
+|---|---|
+| $> 1$ | Procura **elástica** |
+| $= 1$ | Elasticidade **unitária** |
+| $< 1$ | Procura **inelástica** (ou rígida) |
+
+## Cálculo: Procura Linear
+
+Para $Q_D = a - bP$:
+
+$$\frac{dQ_D}{dP} = -b \quad \Rightarrow \quad \varepsilon_D = -b \cdot \frac{P}{Q_D}$$
+
+. . .
+
+::: {.callout-tip title="Nota importante"}
+Numa procura linear, $|\varepsilon_D|$ **varia ao longo da curva** — não é constante. O mesmo $b$ produz elasticidades diferentes conforme o ponto $(P, Q_D)$ considerado.
+:::
+
+## Exemplo: $Q_D = 100 - 5P$
+
+```{r elas-linear, fig.width=7, fig.height=4.2}
+P_seq <- seq(0, 20, length.out = 300)
+QD <- pmax(100 - 5*P_seq, 0)
+
+# Elasticity along the curve
+eps_abs <- ifelse(QD > 0, abs(-5 * P_seq / QD), NA)
+
+# Key points
+pts <- tibble(
+  P = c(5, 10, 15),
+  Q = 100 - 5*c(5,10,15),
+  eps = round(-5 * c(5,10,15) / (100 - 5*c(5,10,15)), 2),
+  label = c("|ε|=1/3\n(inelástica)", "|ε|=1\n(unitária)", "|ε|=3\n(elástica)")
+)
+
+# Unit elasticity point P=10
+df <- tibble(P = P_seq, Q = QD)
+
+ggplot(df %>% filter(Q >= 0)) +
+  # Zones
+  annotate("rect", xmin = 10, xmax = 20, ymin = 0, ymax = 50,
+           fill = "steelblue", alpha = 0.08) +
+  annotate("rect", xmin = 0, xmax = 10, ymin = 50, ymax = 100,
+           fill = "#A40027", alpha = 0.08) +
+  geom_line(aes(x = Q, y = P), color = "gray30", linewidth = 1.3) +
+  # Unit elasticity point
+  geom_point(aes(x = 50, y = 10), color = "darkorange", size = 3.5) +
+  geom_segment(aes(x = 50, xend = 50, y = 0, yend = 10),
+               linetype = "dashed", color = "darkorange") +
+  geom_segment(aes(x = 0, xend = 50, y = 10, yend = 10),
+               linetype = "dashed", color = "darkorange") +
+  # Labels
+  annotate("text", x = 75, y = 3, label = "|ε| < 1\n(inelástica)",
+           color = "steelblue", size = 3.5, fontface = "italic") +
+  annotate("text", x = 15, y = 17, label = "|ε| > 1\n(elástica)",
+           color = "#A40027", size = 3.5, fontface = "italic") +
+  annotate("text", x = 55, y = 11.5, label = "|ε| = 1",
+           color = "darkorange", size = 3.5) +
+  annotate("text", x = 0, y = 20.5, label = "P=20\n(|ε|→∞)",
+           color = "gray50", size = 3, hjust = 0) +
+  annotate("text", x = 101, y = 0.5, label = "Q=100\n(|ε|=0)",
+           color = "gray50", size = 3, hjust = 1) +
+  scale_x_continuous(breaks = c(0, 25, 50, 75, 100),
+                     labels = c("0", "25", "50", "75", "100")) +
+  scale_y_continuous(breaks = c(0, 5, 10, 15, 20)) +
+  labs(x = "Q", y = "P") +
+  theme_classic(base_size = 12) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.25,"cm"), type = "closed")))
+```
+
+. . .
+
+::: {.nonincremental}
+- Zona superior (preços altos, quantidades baixas): procura **elástica**
+- Ponto médio ($P=10$, $Q=50$): elasticidade **unitária**
+- Zona inferior (preços baixos, quantidades altas): procura **inelástica**
+:::
+
+## Casos Extremos
+
+```{r extreme-cases, fig.width=8, fig.height=3.8}
+p_left <- ggplot() +
+  geom_vline(xintercept = 3, color = "#A40027", linewidth = 1.3) +
+  annotate("text", x = 3.2, y = 4, label = "D", color = "#A40027", size = 4) +
+  annotate("text", x = 3, y = -0.3, label = expression(Q[0]), color = "gray30",
+           size = 3.5, hjust = 0.5) +
+  annotate("text", x = 4, y = 2,
+           label = "|ε| = 0\n(procura\ntotalmente rígida)",
+           color = "#A40027", size = 3.2, hjust = 0) +
+  scale_x_continuous(breaks = NULL, limits = c(0, 6.5)) +
+  scale_y_continuous(breaks = NULL, limits = c(0, 5)) +
+  labs(x = "Q", y = "P",
+       title = "Procura Perfeitamente Inelástica") +
+  theme_classic(base_size = 11) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.2,"cm"), type = "closed")),
+        plot.title = element_text(hjust = 0.5, size = 10))
+
+p_right <- ggplot() +
+  geom_hline(yintercept = 2.5, color = "steelblue", linewidth = 1.3) +
+  annotate("text", x = 5.5, y = 2.8, label = "D", color = "steelblue", size = 4) +
+  annotate("text", x = 0.3, y = 2.5 + 0.25, label = expression(P[0]),
+           color = "gray30", size = 3.5) +
+  annotate("text", x = 1, y = 1.2,
+           label = "|ε| → ∞\n(procura\ntotalmente elástica)",
+           color = "steelblue", size = 3.2, hjust = 0) +
+  scale_x_continuous(breaks = NULL, limits = c(0, 6.5)) +
+  scale_y_continuous(breaks = NULL, limits = c(0, 5)) +
+  labs(x = "Q", y = "P",
+       title = "Procura Perfeitamente Elástica") +
+  theme_classic(base_size = 11) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.2,"cm"), type = "closed")),
+        plot.title = element_text(hjust = 0.5, size = 10))
+
+p_left + p_right
+```
+
+::: {.nonincremental}
+- **$|\varepsilon|=0$**: quantidade não reage ao preço (ex.: medicação sem substitutos, bem de sobrevivência)
+- **$|\varepsilon|\to\infty$**: consumidores só compram a $P_0$ — qualquer aumento de preço leva a procura a zero (ex.: bem homogéneo com substituto perfeito)
+:::
+
+## Fatores que Influenciam $|\varepsilon_D|$
+
+- **Existência de substitutos**: mais substitutos → maior elasticidade.
+  Leite (poucos substitutos) vs. leite de marca $X$ (muitos substitutos).
+
+. . .
+
+- **Especificidade da definição do bem**: quanto mais específico, maior $|\varepsilon_D|$.
+  "Comida" (inelástica) vs. "Pizza Margherita da Telepizza" (elástica).
+
+. . .
+
+- **Peso no orçamento**: bens com maior peso no orçamento têm procuras mais elásticas — o consumidor está mais atento às variações de preço.
+
+. . .
+
+- **Período de tempo**: no longo prazo, o consumidor tem mais tempo para adaptar comportamentos e encontrar substitutos → elasticidade aumenta com o tempo.
+
+## Elasticidade e Despesa de Consumo
+
+A variação da despesa total ($P \times Q_D$) quando o preço sobe depende de $|\varepsilon_D|$:
+
+. . .
+
+$$\Delta \text{Despesa} \approx \underbrace{P_0 \cdot \Delta Q}_{\text{efeito quantidade}} + \underbrace{\Delta P \cdot Q_0}_{\text{efeito preço}}$$
+
+. . .
+
+- Se $|\varepsilon_D| > 1$: efeito quantidade domina → despesa **desce** quando $P$ sobe
+- Se $|\varepsilon_D| < 1$: efeito preço domina → despesa **sobe** quando $P$ sobe
+- Se $|\varepsilon_D| = 1$: os dois efeitos compensam-se → despesa **não se altera**
+
+```{r despesa-eps, fig.width=7, fig.height=2.8}
+P_s <- seq(0, 20, length.out = 300)
+QD_s <- pmax(100 - 5*P_s, 0)
+despesa <- P_s * QD_s
+
+df_desp <- tibble(P = P_s, despesa = despesa) %>% filter(P <= 20)
+
+ggplot(df_desp, aes(x = P, y = despesa)) +
+  geom_line(color = "#A40027", linewidth = 1.2) +
+  geom_vline(xintercept = 10, linetype = "dashed", color = "darkorange") +
+  annotate("text", x = 10.3, y = 400, label = "P=10\n|ε|=1\nmáx despesa",
+           color = "darkorange", size = 3, hjust = 0) +
+  annotate("text", x = 4, y = 350,
+           label = "|ε|>1\nDespesa ↓\nquando P↑",
+           color = "#A40027", size = 3, hjust = 0.5) +
+  annotate("text", x = 16, y = 350,
+           label = "|ε|<1\nDespesa ↑\nquando P↑",
+           color = "steelblue", size = 3, hjust = 0.5) +
+  labs(x = "P", y = "Despesa (P × Q)") +
+  theme_classic(base_size = 11) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.2,"cm"), type = "closed")))
+```
+
+# Elasticidade Preço Cruzada
+
+## Definição
+
+::: {.callout-note title="Elasticidade Preço Cruzada"}
+Mede a variação percentual da quantidade procurada do bem $X$ quando o preço do bem $Y$ varia 1%, tudo o resto constante:
+$$\varepsilon_{x,y} = \frac{\Delta\% Q_x}{\Delta\% P_y} = \frac{\Delta Q_x}{\Delta P_y} \cdot \frac{P_y}{Q_x}$$
+:::
+
+. . .
+
+O **sinal** de $\varepsilon_{x,y}$ identifica a relação entre os bens:
+
+| Sinal | Relação | Interpretação |
+|---|---|---|
+| $\varepsilon_{x,y} > 0$ | Bens **substitutos** | $P_y \uparrow$ → procura de $X$ sobe |
+| $\varepsilon_{x,y} < 0$ | Bens **complementares** | $P_y \uparrow$ → procura de $X$ desce |
+| $\varepsilon_{x,y} = 0$ | Bens **independentes** | preço de $Y$ não afeta procura de $X$ |
+
+## Exemplo: Bens Substitutos e Complementares
+
+::: {.nonincremental}
+**Substitutos** — café e chá: se o preço do chá sobe, a procura de café sobe
+
+**Complementares** — café e açúcar: se o preço do açúcar sobe, o café fica mais caro de consumir → procura de café desce
+:::
+
+. . .
+
+::: {.callout-tip title="Aplicação à Definição de Mercado"}
+A elasticidade cruzada é usada para determinar se dois bens pertencem ao mesmo mercado relevante. Quanto maior $\varepsilon_{x,y}$, mais próximos os substitutos — iogurtes de diferentes marcas têm $\varepsilon_{x,y}$ elevada; iogurtes e ervilhas têm $\varepsilon_{x,y} \approx 0$.
+:::
+
+# Elasticidade Rendimento
+
+## Definição
+
+::: {.callout-note title="Elasticidade Rendimento"}
+Mede a variação percentual da quantidade procurada quando o rendimento disponível ($W$) varia 1%, tudo o resto constante:
+$$\eta = \frac{\Delta\% Q}{\Delta\% W} = \frac{\Delta Q}{\Delta W} \cdot \frac{W}{Q}$$
+:::
+
+. . .
+
+O **sinal e magnitude** de $\eta$ classificam o tipo de bem:
+
+| $\eta$ | Tipo de bem |
+|---|---|
+| $\eta < 0$ | Bem **inferior** (procura desce quando rendimento sobe) |
+| $0 < \eta \leq 1$ | Bem **normal** (procura sobe com rendimento, não mais do que proporcionalmente) |
+| $\eta > 1$ | Bem de **luxo** (procura sobe mais do que proporcionalmente) |
+
+## Intuição Económica
+
+- **Bem inferior** ($\eta < 0$): quando o rendimento sobe, o consumidor substitui este bem por alternativas melhores. Ex.: transporte em autocarro, marcas de distribuidor baratas.
+
+. . .
+
+- **Bem normal** ($0 < \eta \leq 1$): procura sobe com rendimento, mas de forma menos do que proporcional. Ex.: alimentação básica, roupa corrente.
+
+. . .
+
+- **Bem de luxo** ($\eta > 1$): procura responde de forma mais que proporcional ao rendimento. Ex.: viagens de férias, automóveis de alta gama, jantares em restaurantes de topo.
+
+# Quadro Resumo
+
+## Elasticidades da Procura: Síntese
+
+```{r tabela-resumo, fig.width=8, fig.height=3.5}
+# Simple summary table as ggplot
+df_tab <- tibble(
+  elas = c("$|\\varepsilon_D| > 1$", "$|\\varepsilon_D| = 1$", "$|\\varepsilon_D| < 1$",
+           "$\\varepsilon_{x,y} > 0$", "$\\varepsilon_{x,y} = 0$", "$\\varepsilon_{x,y} < 0$",
+           "$\\eta < 0$", "$0 < \\eta \\leq 1$", "$\\eta > 1$"),
+  conclusao = c("Procura elástica", "Elasticidade unitária", "Procura inelástica",
+                "Bens substitutos", "Bens independentes", "Bens complementares",
+                "Bem inferior", "Bem normal", "Bem de luxo"),
+  grupo = c(rep("Preço-direta", 3), rep("Preço cruzada", 3), rep("Rendimento", 3))
+)
+```
+
+| Elasticidade | Valor | Conclusão |
+|---|---|---|
+| $\|\varepsilon_D\|$ | $> 1$ | Procura **elástica** |
+| | $= 1$ | Elasticidade **unitária** |
+| | $< 1$ | Procura **inelástica** |
+| $\varepsilon_{x,y}$ | $> 0$ | Bens **substitutos** |
+| | $= 0$ | Bens **independentes** |
+| | $< 0$ | Bens **complementares** |
+| $\eta$ | $< 0$ | Bem **inferior** |
+| | $0 < \eta \leq 1$ | Bem **normal** |
+| | $> 1$ | Bem de **luxo** |
+
+# Exercícios
+
+## Exercício 1 — Escolha Múltipla
+
+**A procura de mercado de um bem é $Q_D = 120 - 3P$. Qual é a elasticidade preço-direta quando $P = 30$?**
+
+::: {.nonincremental}
+A) $\varepsilon_D = -1$ (elasticidade unitária)
+
+B) $\varepsilon_D = -3$ (elástica)
+
+C) $\varepsilon_D = -1/3$ (inelástica)
+
+D) $\varepsilon_D = -1/2$ (inelástica)
+:::
+
+## Exercício 1 — Solução {visibility="uncounted"}
+
+**Resolução:**
+
+$$\frac{dQ_D}{dP} = -3$$
+
+. . .
+
+Quando $P = 30$: $\quad Q_D = 120 - 3 \times 30 = 30$
+
+. . .
+
+$$\varepsilon_D = \frac{dQ_D}{dP} \cdot \frac{P}{Q_D} = -3 \times \frac{30}{30} = \mathbf{-3}$$
+
+. . .
+
+$|\varepsilon_D| = 3 > 1$ → procura **elástica** neste ponto.
+
+Se o preço subir 1%, a quantidade procurada reduz-se 3%.
+
+**Resposta: B)**
+
+## Exercício 2 — Escolha Múltipla
+
+**A quantidade procurada do bem $X$ é dada por $Q_x = 80 - 3P_x - 2P_y$. Sabendo que $P_x = 5$ e $P_y = 6$, qual a relação entre $X$ e $Y$?**
+
+::: {.nonincremental}
+A) Bens substitutos, pois $\varepsilon_{x,y} > 0$
+
+B) Bens complementares, pois $\varepsilon_{x,y} < 0$
+
+C) Bens independentes, pois $\varepsilon_{x,y} = 0$
+
+D) Não é possível determinar sem conhecer o rendimento
+:::
+
+## Exercício 2 — Solução {visibility="uncounted"}
+
+**Resolução:**
+
+$$\frac{\partial Q_x}{\partial P_y} = -2$$
+
+. . .
+
+Quando $P_x = 5$, $P_y = 6$:
+$$Q_x = 80 - 3(5) - 2(6) = 80 - 15 - 12 = 53$$
+
+. . .
+
+$$\varepsilon_{x,y} = \frac{\partial Q_x}{\partial P_y} \cdot \frac{P_y}{Q_x} = -2 \times \frac{6}{53} \approx -0{,}23$$
+
+. . .
+
+$\varepsilon_{x,y} < 0$ → bens **complementares**: quando o preço de $Y$ sobe, a quantidade procurada de $X$ diminui.
+
+**Resposta: B)**
+
+## Exercício 3 — Desenvolvimento
+
+**A procura de um bem é $Q_D = 120 - 3P$.**
+
+**(a)** Calcule $\varepsilon_D$ quando $P = 10$, $P = 20$ e $P = 30$. Classifique em cada caso.
+
+**(b)** Para que valor de $P$ a elasticidade é unitária?
+
+**(c)** Calcule o Excedente do Consumidor para $P = 10$ e para $P = 20$. Comente a relação com a elasticidade.
+
+## Exercício 3 — Resolução (a) e (b) {visibility="uncounted"}
+
+**Alínea (a):** $\dfrac{dQ_D}{dP} = -3$
+
+. . .
+
+| $P$ | $Q_D$ | $\varepsilon_D = -3 \cdot \frac{P}{Q_D}$ | Classificação |
+|---|---|---|---|
+| 10 | 90 | $-3 \times \frac{10}{90} = -\frac{1}{3}$ | Inelástica |
+| 20 | 60 | $-3 \times \frac{20}{60} = -1$ | Unitária |
+| 30 | 30 | $-3 \times \frac{30}{30} = -3$ | Elástica |
+
+. . .
+
+**Alínea (b):** $|\varepsilon_D| = 1 \Leftrightarrow \left|-3 \cdot \frac{P}{120-3P}\right| = 1$
+
+$$3P = 120 - 3P \quad \Rightarrow \quad 6P = 120 \quad \Rightarrow \quad \mathbf{P = 20}$$
+
+## Exercício 3 — Resolução (c) {visibility="uncounted"}
+
+**Alínea (c):** Inversa da procura: $P = 40 - \dfrac{Q}{3}$ (preço máximo = 40 quando $Q=0$)
+
+. . .
+
+**EC quando $P = 10$** ($Q = 90$):
+$$EC = \frac{(40 - 10) \times 90}{2} = \frac{30 \times 90}{2} = \mathbf{1{.}350}$$
+
+. . .
+
+**EC quando $P = 20$** ($Q = 60$):
+$$EC = \frac{(40 - 20) \times 60}{2} = \frac{20 \times 60}{2} = \mathbf{600}$$
+
+. . .
+
+::: {.callout-tip title="Comentário"}
+A $P = 10$ a procura é inelástica — os consumidores estão dispostos a pagar muito acima do preço de mercado, gerando um EC elevado (1.350). A $P = 20$ a procura é unitária e o EC é mais reduzido (600). A zona inelástica da procura coincide com onde os consumidores têm menos alternativas e maior disponibilidade a pagar.
+:::
+
+# Síntese
+
+## Resumo da Aula
+
+::: {.nonincremental}
+**Elasticidade preço-direta** $(\varepsilon_D)$:
+
+- Fórmula: $\varepsilon_D = \dfrac{dQ_D}{dP} \cdot \dfrac{P}{Q_D}$; sempre $\leq 0$
+- Numa procura linear, varia ao longo da curva: elástica em cima, inelástica em baixo
+- $|\varepsilon_D| > 1$: despesa desce quando $P$ sobe; $|\varepsilon_D| < 1$: despesa sobe
+:::
+
+. . .
+
+::: {.nonincremental}
+**Elasticidade cruzada** $(\varepsilon_{x,y})$:
+
+- Positiva → substitutos; negativa → complementares; nula → independentes
+:::
+
+. . .
+
+::: {.nonincremental}
+**Elasticidade rendimento** $(\eta)$:
+
+- $\eta < 0$: bem inferior; $0 < \eta \leq 1$: normal; $\eta > 1$: luxo
+:::
+
+. . .
+
+::: {.callout-important title="Para a próxima aula"}
+Na aula 24 estudaremos a **elasticidade preço da oferta** e a sua relação com o horizonte temporal de produção.
+:::

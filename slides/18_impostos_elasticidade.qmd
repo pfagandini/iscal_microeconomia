@@ -1,0 +1,668 @@
+---
+title: "Microeconomia"
+subtitle: "Impostos Indiretos e Elasticidade"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 25_impostos_elasticidade-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+  beamer:
+    theme: default
+    classoption: handout
+echo: false
+code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tibble)
+library(patchwork)
+```
+
+# Impostos Indiretos: Conceito
+
+## O que é um imposto indireto específico?
+
+::: {.callout-note title="Imposto Específico (lump-sum)"}
+Um imposto indireto **específico** é um montante fixo $I$ cobrado por cada unidade produzida e vendida, independentemente do preço. Exemplos: ISV (Imposto sobre Veículos), ISP (Imposto sobre os Combustíveis).
+:::
+
+. . .
+
+O lançamento do imposto cria uma **cunha** entre o preço pago pelo consumidor ($P_D$) e o preço recebido pelo produtor ($P_S$):
+
+$$\boxed{P_D = P_S + I}$$
+
+. . .
+
+::: {.callout-tip title="Incidência legal vs. económica"}
+Normalmente é o **produtor** quem entrega o imposto ao Estado (incidência legal). Mas a incidência **económica** — quem efetivamente suporta o custo — é partilhada entre consumidores e produtores, dependendo das elasticidades.
+:::
+
+## Equilíbrio com Imposto
+
+O sistema de equilíbrio após lançamento do imposto $I$:
+
+$$\begin{cases} Q_D = f_D(P_D) \\ Q_S = f_S(P_S) \\ Q_D = Q_S \\ P_D = P_S + I \end{cases}$$
+
+. . .
+
+Graficamente: a oferta "vista pelo consumidor" desloca-se **para cima** em $I$ unidades — o consumidor paga $I$ a mais por cada unidade, pelo que a oferta aparece distorcida.
+
+. . .
+
+::: {.callout-warning title="Atenção"}
+A oferta de mercado **não se contrai** — os produtores não alteram a sua disposição a produzir. O que muda é o preço que os consumidores enfrentam para cada nível de oferta.
+:::
+
+## Efeito Gráfico do Imposto
+
+```{r tax-graph, fig.width=7.5, fig.height=4.5}
+library(ggplot2)
+library(tibble)
+
+# QD = 100-P (P = 100-Q), QS = 3P (P = Q/3)
+# Eq: P*=25, Q*=75
+# Tax I=10: PD=32.5, PS=22.5, Q=67.5
+
+Q_seq <- seq(0, 100, length.out = 300)
+
+# Demand: P = 100-Q
+# Supply: P = Q/3
+# Supply with tax (as seen by consumer): P = Q/3 + 10
+
+P_demand <- function(Q) 100 - Q
+P_supply <- function(Q) Q / 3
+P_supply_tax <- function(Q) Q / 3 + 10
+
+Q0 <- 75; P0 <- 25
+Q1 <- 67.5; PD1 <- 32.5; PS1 <- 22.5
+
+df <- tibble(Q = Q_seq,
+             Pd = P_demand(Q_seq),
+             Ps = P_supply(Q_seq),
+             Ps_tax = P_supply_tax(Q_seq))
+
+ggplot(df %>% filter(Q <= 100)) +
+  # Surplus areas (after tax)
+  # CS after: triangle above PD=32.5 under demand, up to Q=67.5
+  annotate("polygon",
+           x = c(0, Q1, 0),
+           y = c(100, PD1, PD1),
+           fill = "steelblue", alpha = 0.18) +
+  # Tax revenue rectangle: PD to PS, 0 to Q1
+  annotate("rect", xmin = 0, xmax = Q1, ymin = PS1, ymax = PD1,
+           fill = "gold", alpha = 0.35) +
+  # PS after: triangle below PS=22.5 above supply, 0 to Q1
+  annotate("polygon",
+           x = c(0, Q1, 0),
+           y = c(0, PS1, PS1),
+           fill = "#A40027", alpha = 0.18) +
+  # DWL triangles
+  annotate("polygon",
+           x = c(Q1, Q0, Q1),
+           y = c(PD1, P0, P0),
+           fill = "steelblue", alpha = 0.35) +
+  annotate("polygon",
+           x = c(Q1, Q0, Q1),
+           y = c(PS1, P0, P0),
+           fill = "#A40027", alpha = 0.35) +
+  # Curves
+  geom_line(aes(x = Q, y = Pd), color = "steelblue", linewidth = 1.2) +
+  geom_line(aes(x = Q, y = Ps), color = "#A40027", linewidth = 1.2) +
+  geom_line(aes(x = Q, y = Ps_tax), color = "#A40027", linewidth = 1.2,
+            linetype = "dashed") +
+  # Original eq
+  geom_point(aes(x = Q0, y = P0), color = "gray40", size = 3) +
+  geom_segment(aes(x = Q0, xend = Q0, y = 0, yend = P0),
+               linetype = "dotted", color = "gray50") +
+  geom_segment(aes(x = 0, xend = Q0, y = P0, yend = P0),
+               linetype = "dotted", color = "gray50") +
+  # Tax eq
+  geom_point(aes(x = Q1, y = PD1), color = "steelblue", size = 3) +
+  geom_point(aes(x = Q1, y = PS1), color = "#A40027", size = 3) +
+  geom_segment(aes(x = Q1, xend = Q1, y = 0, yend = PD1),
+               linetype = "dashed", color = "gray50") +
+  geom_segment(aes(x = 0, xend = Q1, y = PD1, yend = PD1),
+               linetype = "dashed", color = "steelblue", alpha = 0.7) +
+  geom_segment(aes(x = 0, xend = Q1, y = PS1, yend = PS1),
+               linetype = "dashed", color = "#A40027", alpha = 0.7) +
+  # Tax wedge arrow
+  annotate("segment", x = Q1 + 4, xend = Q1 + 4, y = PS1, yend = PD1,
+           arrow = arrow(ends = "both", length = unit(0.2,"cm"), type = "closed"),
+           color = "gray30") +
+  annotate("text", x = Q1 + 6, y = (PD1+PS1)/2, label = "I = 10",
+           color = "gray30", size = 3.5, hjust = 0) +
+  # Labels
+  annotate("text", x = 102, y = P_demand(100) + 1, label = "D",
+           color = "steelblue", size = 4, hjust = 0) +
+  annotate("text", x = 102, y = P_supply(100) + 1, label = "S",
+           color = "#A40027", size = 4, hjust = 0) +
+  annotate("text", x = 102, y = P_supply_tax(100) + 1, label = "S'",
+           color = "#A40027", size = 4, hjust = 0, fontface = "italic") +
+  annotate("text", x = 2, y = P0 + 1, label = "P*=25", color = "gray40", size = 3) +
+  annotate("text", x = 2, y = PD1 + 1, label = "P[D]==32.5", parse = TRUE,
+           color = "steelblue", size = 3) +
+  annotate("text", x = 2, y = PS1 - 2, label = "P[S]==22.5", parse = TRUE,
+           color = "#A40027", size = 3) +
+  annotate("text", x = Q0 + 1, y = 1, label = "Q*=75", color = "gray40", size = 3) +
+  annotate("text", x = Q1 - 8, y = 1, label = "Q[I]==67.5", parse = TRUE,
+           color = "gray40", size = 3) +
+  # Area labels
+  annotate("text", x = 15, y = 60, label = "EC", color = "steelblue", size = 3.5,
+           fontface = "bold") +
+  annotate("text", x = 30, y = 28, label = "Receita\nFiscal", color = "goldenrod4",
+           size = 3, fontface = "bold") +
+  annotate("text", x = 15, y = 10, label = "EP", color = "#A40027", size = 3.5,
+           fontface = "bold") +
+  annotate("text", x = 72, y = 29, label = "PPE", color = "gray30", size = 3,
+           fontface = "bold") +
+  scale_x_continuous(breaks = NULL, limits = c(0, 115)) +
+  scale_y_continuous(breaks = NULL, limits = c(0, 105)) +
+  labs(x = "Q", y = "P") +
+  theme_classic(base_size = 12) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.25,"cm"), type = "closed")))
+```
+
+# Incidência Económica e Excedentes
+
+## Quem paga o imposto?
+
+O imposto total $I$ é suportado em partes pelos dois lados do mercado:
+
+$$I = \underbrace{(P_D - P^*)}_{\text{incidência no consumidor: } I_D} + \underbrace{(P^* - P_S)}_{\text{incidência no produtor: } I_S}$$
+
+. . .
+
+No exemplo ($Q_D = 100 - P$, $Q_S = 3P$, $I = 10$):
+
+$$I_D = 32{,}5 - 25 = 7{,}5 \qquad I_S = 25 - 22{,}5 = 2{,}5$$
+
+. . .
+
+Os consumidores suportam **75%** do imposto; os produtores apenas **25%**. Porquê esta assimetria?
+
+## Efeito nos Excedentes: Resumo
+
+| | **Antes do imposto** | **Após imposto** |
+|---|---|---|
+| Excedente do Consumidor | $EC_0$ | $EC_0 - I_D \cdot Q_I - \frac{1}{2}I_D\cdot\Delta Q$ |
+| Excedente do Produtor | $EP_0$ | $EP_0 - I_S \cdot Q_I - \frac{1}{2}I_S\cdot\Delta Q$ |
+| Receita Fiscal | 0 | $I \times Q_I$ |
+| **Perda Pura de Excedente** | **0** | $\frac{1}{2} \cdot I \cdot \Delta Q > 0$ |
+
+. . .
+
+::: {.callout-important title="Perda Pura de Excedente (PPE)"}
+O imposto gera sempre uma **perda pura de excedente** (triângulo de Harberger) porque reduz a quantidade transacionada abaixo do nível socialmente ótimo. A soma do que consumidores e produtores perdem **excede** a receita fiscal arrecadada pelo Estado.
+$$PPE = \frac{1}{2} \cdot I \cdot (Q^* - Q_I)$$
+:::
+
+## Exemplo Numérico: Equilíbrio e Imposto
+
+$Q_D = 100 - P$, $\quad Q_S = 3P$, $\quad I = 10$
+
+. . .
+
+**Sem imposto:** $100 - P = 3P \Rightarrow P^* = 25$, $Q^* = 75$
+
+. . .
+
+**Com imposto** ($P_D = P_S + 10$, $Q_D = Q_S$):
+
+$$100 - P_D = 3P_S \quad \text{e} \quad P_D = P_S + 10 \implies P_S = 22{,}5,\quad P_D = 32{,}5,\quad Q_I = 67{,}5$$
+
+. . .
+
+$$I_D = 32{,}5 - 25 = 7{,}5 \qquad I_S = 25 - 22{,}5 = 2{,}5 \qquad \text{Receita Fiscal} = 10 \times 67{,}5 = 675$$
+
+. . .
+
+$$PPE = \tfrac{1}{2}\times 10 \times (75 - 67{,}5) = \mathbf{37{,}5}$$
+
+## Exemplo Numérico: Excedentes
+
+| | **Antes do imposto** | **Após imposto** | **Variação** |
+|---|---|---|---|
+| Excedente Consumidor | $2812{,}5$ | $2278{,}1$ | $-534{,}4$ |
+| Excedente Produtor | $937{,}5$ | $759{,}4$ | $-178{,}1$ |
+| Receita Fiscal | $0$ | $675{,}0$ | $+675{,}0$ |
+| **Perda Pura** | **$0$** | **$37{,}5$** | |
+
+. . .
+
+Verificação: $534{,}4 + 178{,}1 = 712{,}5 = 675 + 37{,}5$ ✓
+
+A soma das perdas de EC e EP excede a receita fiscal em exatamente 37,5 — a **perda pura de excedente**.
+
+# Elasticidade e Incidência do Imposto
+
+## A Relação Fundamental
+
+A forma como o imposto se reparte entre consumidores e produtores depende **exclusivamente** das elasticidades de cada lado:
+
+$$\boxed{\frac{|\varepsilon_D|}{\varepsilon_S} = \frac{I_S}{I_D}}$$
+
+. . .
+
+Interpretação:
+
+- Se $|\varepsilon_D| > \varepsilon_S$: produtores suportam mais ($I_S > I_D$)
+- Se $|\varepsilon_D| < \varepsilon_S$: consumidores suportam mais ($I_D > I_S$)
+- Se $|\varepsilon_D| = \varepsilon_S$: imposto repartido igualmente
+
+. . .
+
+::: {.callout-tip title="Intuição económica"}
+O lado do mercado **menos elástico** (menos capaz de ajustar o seu comportamento face ao preço) suporta uma maior parte do imposto.
+:::
+
+## Verificação no Exemplo
+
+$Q_D = 100 - P$, $\quad Q_S = 3P$, avaliadas em $P^* = 25$, $Q^* = 75$:
+
+. . .
+
+$$|\varepsilon_D| = \left|-1 \times \frac{25}{75}\right| = \frac{1}{3} \qquad \varepsilon_S = 3 \times \frac{25}{75} = 1$$
+
+. . .
+
+$$\frac{|\varepsilon_D|}{\varepsilon_S} = \frac{1/3}{1} = \frac{1}{3}$$
+
+. . .
+
+$$\frac{I_S}{I_D} = \frac{2{,}5}{7{,}5} = \frac{1}{3} \quad \checkmark$$
+
+. . .
+
+A oferta é mais elástica que a procura → os **consumidores** suportam mais ¾ do imposto.
+
+## Elasticidade e Incidência: Gráfico
+
+```{r incidence-comparison, fig.width=9, fig.height=4.2}
+library(patchwork)
+
+# Panel 1: |eps_D| < eps_S  => consumers bear more
+# Inelastic demand, elastic supply
+# D steep, S flat
+# Tax of 2 units vertical shift
+make_tax_plot <- function(title_txt, d_slope, s_intercept, s_slope, tax,
+                          x_max = 8, p_max_label = NULL) {
+  # Equilibrium: P_demand = d_intercept - d_slope*Q = s_intercept + s_slope*Q
+  # Let d_intercept = 7
+  d_int <- 7
+  # Eq: 7 - d_slope*Q = s_intercept + s_slope*Q => Q = (7-s_intercept)/(d_slope+s_slope)
+  Q_eq <- (d_int - s_intercept) / (d_slope + s_slope)
+  P_eq <- d_int - d_slope * Q_eq
+  
+  # With tax: PD = PS + tax => 7 - d_slope*Q = s_intercept + s_slope*Q + tax
+  # => Q_tax = (7 - s_intercept - tax)/(d_slope + s_slope)
+  Q_tax <- (d_int - s_intercept - tax) / (d_slope + s_slope)
+  PD_tax <- d_int - d_slope * Q_tax
+  PS_tax <- PD_tax - tax
+
+  Q_seq <- seq(0, x_max, length.out = 300)
+  
+  df <- tibble(
+    Q = Q_seq,
+    Pd = d_int - d_slope * Q_seq,
+    Ps = s_intercept + s_slope * Q_seq,
+    Ps_t = s_intercept + tax + s_slope * Q_seq
+  ) %>% filter(Pd >= 0, Ps >= 0, Ps_t >= 0)
+  
+  ID <- PD_tax - P_eq
+  IS <- P_eq - PS_tax
+  
+  ggplot(df) +
+    geom_line(aes(x = Q, y = Pd), color = "steelblue", linewidth = 1.1) +
+    geom_line(aes(x = Q, y = Ps), color = "#A40027", linewidth = 1.1) +
+    geom_line(aes(x = Q, y = Ps_t), color = "#A40027", linewidth = 1.1,
+              linetype = "dashed") +
+    geom_point(aes(x = Q_eq, y = P_eq), color = "gray40", size = 2.5) +
+    geom_point(aes(x = Q_tax, y = PD_tax), color = "steelblue", size = 2.5) +
+    geom_point(aes(x = Q_tax, y = PS_tax), color = "#A40027", size = 2.5) +
+    geom_segment(aes(x = 0, xend = Q_eq, y = P_eq, yend = P_eq),
+                 linetype = "dotted", color = "gray50") +
+    geom_segment(aes(x = 0, xend = Q_tax, y = PD_tax, yend = PD_tax),
+                 linetype = "dashed", color = "steelblue", alpha = 0.6) +
+    geom_segment(aes(x = 0, xend = Q_tax, y = PS_tax, yend = PS_tax),
+                 linetype = "dashed", color = "#A40027", alpha = 0.6) +
+    geom_segment(aes(x = Q_tax, xend = Q_tax, y = 0, yend = PD_tax),
+                 linetype = "dashed", color = "gray50") +
+    # wedge arrows
+    annotate("segment",
+             x = Q_tax + 0.4, xend = Q_tax + 0.4,
+             y = P_eq + 0.05, yend = PD_tax - 0.05,
+             arrow = arrow(ends = "both", length = unit(0.15,"cm")),
+             color = "steelblue") +
+    annotate("segment",
+             x = Q_tax + 0.4, xend = Q_tax + 0.4,
+             y = PS_tax + 0.05, yend = P_eq - 0.05,
+             arrow = arrow(ends = "both", length = unit(0.15,"cm")),
+             color = "#A40027") +
+    annotate("text", x = Q_tax + 0.7, y = (P_eq + PD_tax)/2,
+             label = paste0("ID=", round(ID, 2)), color = "steelblue", size = 2.8, hjust = 0) +
+    annotate("text", x = Q_tax + 0.7, y = (PS_tax + P_eq)/2,
+             label = paste0("IS=", round(IS, 2)), color = "#A40027", size = 2.8, hjust = 0) +
+    annotate("text", x = x_max * 0.85, y = d_int - d_slope * x_max * 0.85 + 0.3,
+             label = "D", color = "steelblue", size = 3.5) +
+    annotate("text", x = x_max * 0.85,
+             y = s_intercept + s_slope * x_max * 0.85 + 0.3,
+             label = "S", color = "#A40027", size = 3.5) +
+    scale_x_continuous(breaks = NULL, limits = c(0, x_max + 1.5)) +
+    scale_y_continuous(breaks = NULL, limits = c(0, d_int + 0.5)) +
+    labs(x = "Q", y = "P", title = title_txt) +
+    theme_classic(base_size = 10) +
+    theme(axis.line = element_line(arrow = arrow(length = unit(0.2,"cm"), type = "closed")),
+          plot.title = element_text(hjust = 0.5, size = 9.5))
+}
+
+# Steep demand (inelastic), flat supply (elastic) => consumers bear more
+p1 <- make_tax_plot("|ε_D| < ε_S  →  consumidores suportam mais",
+                    d_slope = 2,    # steep demand
+                    s_intercept = 0, s_slope = 0.3,  # flat supply
+                    tax = 2, x_max = 7)
+
+# Flat demand (elastic), steep supply (inelastic) => producers bear more
+p2 <- make_tax_plot("|ε_D| > ε_S  →  produtores suportam mais",
+                    d_slope = 0.3,  # flat demand
+                    s_intercept = 0, s_slope = 2,    # steep supply
+                    tax = 2, x_max = 7)
+
+p1 + p2
+```
+
+. . .
+
+::: {.nonincremental}
+- **Esquerda**: procura inelástica ($|\varepsilon_D|$ pequeno) → $I_D \gg I_S$ — consumidores quase não reduzem a procura, acabam por absorver a maior parte
+- **Direita**: oferta inelástica ($\varepsilon_S$ pequeno) → $I_S \gg I_D$ — produtores não conseguem fugir ao imposto
+:::
+
+## Caso Extremo: Sem Perda Pura
+
+```{r no-dwl, fig.width=7, fig.height=4}
+# Perfectly inelastic demand: vertical D at Q=5
+# Supply: P = 0.5 + 0.5*Q
+# Tax = 2: shifts S' up by 2
+# But Q doesn't change! All tax falls on consumers.
+
+Q_seq <- seq(0, 10, length.out = 300)
+s_fn  <- function(Q) 0.5 + 0.5 * Q
+st_fn <- function(Q) 0.5 + 2 + 0.5 * Q   # S'
+
+Q_fix <- 5
+P_eq2  <- s_fn(Q_fix)   # = 3
+PD_eq2 <- st_fn(Q_fix)  # = 5
+PS_eq2 <- s_fn(Q_fix)   # = 3 (unchanged)
+
+df2 <- tibble(Q = Q_seq,
+              Ps = s_fn(Q_seq),
+              Ps_t = st_fn(Q_seq))
+
+ggplot(df2) +
+  # Tax rectangle
+  annotate("rect", xmin = 0, xmax = Q_fix, ymin = P_eq2, ymax = PD_eq2,
+           fill = "gold", alpha = 0.4) +
+  # Vertical demand line
+  geom_vline(xintercept = Q_fix, color = "steelblue", linewidth = 1.2) +
+  geom_line(aes(x = Q, y = Ps), color = "#A40027", linewidth = 1.1) +
+  geom_line(aes(x = Q, y = Ps_t), color = "#A40027", linewidth = 1.1,
+            linetype = "dashed") +
+  geom_segment(aes(x = 0, xend = Q_fix, y = P_eq2, yend = P_eq2),
+               linetype = "dashed", color = "gray50") +
+  geom_segment(aes(x = 0, xend = Q_fix, y = PD_eq2, yend = PD_eq2),
+               linetype = "dashed", color = "steelblue", alpha = 0.7) +
+  geom_point(aes(x = Q_fix, y = P_eq2), color = "gray40", size = 3) +
+  geom_point(aes(x = Q_fix, y = PD_eq2), color = "steelblue", size = 3) +
+  annotate("text", x = Q_fix + 0.15, y = 8.5, label = "D  (|ε|=0)",
+           color = "steelblue", size = 3.5, hjust = 0) +
+  annotate("text", x = 9.2, y = s_fn(9.2) + 0.3, label = "S",
+           color = "#A40027", size = 3.5) +
+  annotate("text", x = 9.2, y = st_fn(9.2) + 0.3, label = "S'",
+           color = "#A40027", size = 3.5) +
+  annotate("text", x = 0.3, y = P_eq2 + 0.2, label = "P^\"*\"==P[S]",
+           parse = TRUE, color = "gray40", size = 3) +
+  annotate("text", x = 0.3, y = PD_eq2 + 0.25, label = "P[D]",
+           parse = TRUE, color = "steelblue", size = 3) +
+  annotate("text", x = Q_fix + 0.15, y = 0.3, label = "Q^\"*\"==Q[I]",
+           parse = TRUE, color = "gray40", size = 3) +
+  annotate("text", x = 2.5, y = (P_eq2 + PD_eq2)/2,
+           label = "Receita\nFiscal = I×Q*\nPPE = 0",
+           color = "goldenrod4", size = 3, fontface = "bold") +
+  scale_x_continuous(breaks = NULL, limits = c(0, 10.5)) +
+  scale_y_continuous(breaks = NULL, limits = c(0, 9)) +
+  labs(x = "Q", y = "P",
+       title = "Procura perfeitamente inelástica: sem perda pura de excedente") +
+  theme_classic(base_size = 12) +
+  theme(axis.line = element_line(arrow = arrow(length = unit(0.25,"cm"), type = "closed")),
+        plot.title = element_text(hjust = 0.5, size = 11))
+```
+
+::: {.nonincremental}
+- Se $|\varepsilon_D| = 0$ (ou $\varepsilon_S = 0$): a quantidade não muda → **sem perda pura** — o imposto é puro transfer para o Estado, sem distorção
+- Este é o caso teoricamente mais "eficiente" para o fisco, mas raramente verificado na prática
+:::
+
+## Elasticidade e Dimensão da PPE
+
+::: {.callout-important title="Princípio da distorção mínima"}
+Quanto **maiores** as elasticidades de ambos os lados do mercado, **maior** a distorção na quantidade transacionada e, portanto, **maior** a perda pura de excedente para o mesmo imposto $I$.
+
+$$PPE = \frac{1}{2} \cdot I \cdot \underbrace{(Q^* - Q_I)}_{\text{distorção}} \quad \text{cresce com } |\varepsilon_D| \text{ e } \varepsilon_S$$
+:::
+
+. . .
+
+Implicações para política fiscal:
+
+- Tributar bens com procura **inelástica** minimiza a distorção (ex.: tabaco, combustíveis, álcool)
+- Tributar bens com procura **elástica** gera distorções maiores e menor receita
+
+# Exercícios
+
+## Exercício 1 — Escolha Múltipla
+
+**No mercado de um bem, $Q_D = 60 - 2P$ e $Q_S = 4P$. É lançado um imposto específico $I = 6$.
+Qual o preço que os consumidores pagam ($P_D$) e o preço que os produtores recebem ($P_S$) após o imposto?**
+
+::: {.nonincremental}
+A) $P_D = 14$, $P_S = 8$
+
+B) $P_D = 12$, $P_S = 6$
+
+C) $P_D = 13$, $P_S = 7$
+
+D) $P_D = 16$, $P_S = 10$
+:::
+
+## Exercício 1 — Solução {visibility="uncounted"}
+
+**Sistema de equilíbrio:**
+
+$$\begin{cases} 60 - 2P_D = 4P_S \\ P_D = P_S + 6 \end{cases}$$
+
+. . .
+
+Substituindo $P_D = P_S + 6$:
+
+$$60 - 2(P_S + 6) = 4P_S \implies 60 - 2P_S - 12 = 4P_S \implies 48 = 6P_S$$
+
+. . .
+
+$$P_S = 8, \quad P_D = 14, \quad Q_I = 60 - 2(14) = 32$$
+
+. . .
+
+Verificação: $Q_S = 4 \times 8 = 32$ ✓ $\quad$ $P_D - P_S = 14 - 8 = 6 = I$ ✓
+
+**Resposta: A)**
+
+## Exercício 2 — Escolha Múltipla
+
+**Continuando o exercício anterior** ($Q_D = 60 - 2P$, $Q_S = 4P$, $P^* = 10$, $Q^* = 40$, após imposto $I = 6$: $P_D = 14$, $P_S = 8$). **Qual a afirmação correta?**
+
+::: {.nonincremental}
+A) Os consumidores e produtores suportam o imposto em partes iguais
+
+B) Os consumidores suportam mais, porque $|\varepsilon_D| < \varepsilon_S$
+
+C) Os produtores suportam mais, porque $|\varepsilon_D| < \varepsilon_S$
+
+D) Os consumidores suportam mais, porque $|\varepsilon_D| > \varepsilon_S$
+:::
+
+## Exercício 2 — Solução {visibility="uncounted"}
+
+**Incidência:**
+
+$$I_D = P_D - P^* = 14 - 10 = 4 \qquad I_S = P^* - P_S = 10 - 8 = 2$$
+
+. . .
+
+**Elasticidades** em $P^* = 10$, $Q^* = 40$:
+
+$$|\varepsilon_D| = \left|-2 \times \frac{10}{40}\right| = 0{,}5 \qquad \varepsilon_S = 4 \times \frac{10}{40} = 1$$
+
+. . .
+
+$$\frac{|\varepsilon_D|}{\varepsilon_S} = \frac{0{,}5}{1} = 0{,}5 = \frac{I_S}{I_D} = \frac{2}{4} \quad \checkmark$$
+
+. . .
+
+$|\varepsilon_D| < \varepsilon_S$ → a **procura é menos elástica** → **consumidores suportam mais** ($I_D = 4 > I_S = 2$).
+
+**Resposta: B)**
+
+## Exercício 3 — Desenvolvimento
+
+**O mercado de um bem tem:**
+$$Q_D = 80 - 2P \qquad Q_S = 2P$$
+
+**(a)** Determine o equilíbrio sem imposto: $P^*$ e $Q^*$.
+
+**(b)** É lançado um imposto específico $I = 8$. Determine $P_D$, $P_S$ e $Q_I$.
+
+**(c)** Calcule $I_D$ e $I_S$. Verifique com as elasticidades que a repartição é coerente.
+
+**(d)** Calcule a receita fiscal e a perda pura de excedente.
+
+## Exercício 3 — Resolução (a) e (b) {visibility="uncounted"}
+
+**Alínea (a): Sem imposto**
+
+$$80 - 2P = 2P \implies 4P = 80 \implies P^* = 20, \quad Q^* = 40$$
+
+. . .
+
+**Alínea (b): Com imposto $I = 8$**
+
+$$\begin{cases} 80 - 2P_D = 2P_S \\ P_D = P_S + 8 \end{cases}$$
+
+Substituindo: $80 - 2(P_S + 8) = 2P_S \implies 64 = 4P_S$
+
+$$P_S = 16, \quad P_D = 24, \quad Q_I = 80 - 2(24) = 32$$
+
+Verificação: $Q_S = 2 \times 16 = 32$ ✓
+
+## Exercício 3 — Resolução (c) {visibility="uncounted"}
+
+**Alínea (c): Incidência e elasticidades**
+
+$$I_D = 24 - 20 = 4 \qquad I_S = 20 - 16 = 4$$
+
+O imposto é repartido **igualmente**: cada lado suporta 4.
+
+. . .
+
+Elasticidades em $P^* = 20$, $Q^* = 40$:
+
+$$|\varepsilon_D| = \left|-2 \times \frac{20}{40}\right| = 1 \qquad \varepsilon_S = 2 \times \frac{20}{40} = 1$$
+
+. . .
+
+$$\frac{|\varepsilon_D|}{\varepsilon_S} = \frac{1}{1} = 1 = \frac{I_S}{I_D} = \frac{4}{4} \quad \checkmark$$
+
+Como $|\varepsilon_D| = \varepsilon_S$, as elasticidades são iguais e o imposto reparte-se simetricamente.
+
+## Exercício 3 — Resolução (d) {visibility="uncounted"}
+
+**Alínea (d): Receita fiscal e PPE**
+
+$$\text{Receita Fiscal} = I \times Q_I = 8 \times 32 = 256$$
+
+. . .
+
+$$PPE = \frac{1}{2} \times I \times (Q^* - Q_I) = \frac{1}{2} \times 8 \times (40 - 32) = \frac{1}{2} \times 8 \times 8 = 32$$
+
+. . .
+
+::: {.callout-tip title="Verificação via excedentes"}
+$EC_0 = \frac{(40-20)\times 40}{2} = 400$; $\quad EC_1 = \frac{(40-24)\times 32}{2} = 256$; $\quad \Delta EC = -144$
+
+$EP_0 = \frac{20 \times 40}{2} = 400$; $\quad EP_1 = \frac{16 \times 32}{2} = 256$; $\quad \Delta EP = -144$
+
+$\Delta EC + \Delta EP = -288 = -(256 + 32) = -(\text{Receita} + PPE)$ ✓
+:::
+
+# Síntese
+
+## Resumo da Aula
+
+::: {.nonincremental}
+**Imposto específico** cria uma cunha $P_D = P_S + I$, reduzindo a quantidade transacionada e gerando:
+
+- Transferência de excedente → Receita Fiscal (Estado)
+- Perda pura de excedente: $PPE = \frac{1}{2} \cdot I \cdot (Q^* - Q_I)$
+:::
+
+. . .
+
+::: {.nonincremental}
+**Incidência económica** — quem suporta mais o imposto:
+
+$$\frac{|\varepsilon_D|}{\varepsilon_S} = \frac{I_S}{I_D}$$
+
+O lado **menos elástico** suporta proporcionalmente mais.
+:::
+
+. . .
+
+::: {.nonincremental}
+**Relação com PPE**:
+
+- Elasticidades altas → grande distorção da quantidade → PPE elevada
+- Se $|\varepsilon_D| = 0$ ou $\varepsilon_S = 0$ → sem distorção → $PPE = 0$
+- Tributar bens inelásticos minimiza a perda de eficiência
+:::

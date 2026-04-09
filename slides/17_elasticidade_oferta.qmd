@@ -1,0 +1,499 @@
+---
+title: "Microeconomia"
+subtitle: "Elasticidade Preço da Oferta"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 24_elasticidade_oferta-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+  beamer:
+    theme: default
+    classoption: handout
+echo: false
+code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tibble)
+library(patchwork)
+```
+
+# Definição e Fórmula
+
+## Elasticidade Preço da Oferta
+
+::: {.callout-note title="Elasticidade Preço da Oferta"}
+Mede a variação percentual da quantidade oferecida quando o preço varia 1%, tudo o resto constante:
+$$\varepsilon_S = \frac{\Delta\% Q_S}{\Delta\% P} = \frac{\Delta Q_S}{\Delta P} \cdot \frac{P}{Q_S}$$
+:::
+
+. . .
+
+Como $Q_S$ e $P$ variam no mesmo sentido (Lei da Oferta), $\varepsilon_S \geq 0$ **sempre**.
+
+. . .
+
+Classificação:
+
+| $\varepsilon_S$ | Classificação |
+|---|---|
+| $> 1$ | Oferta **elástica** |
+| $= 1$ | Elasticidade **unitária** |
+| $< 1$ | Oferta **inelástica** |
+
+## Cálculo para Oferta Linear
+
+Para $Q_S = c + dP$ (com $d > 0$):
+
+$$\frac{dQ_S}{dP} = d \quad \Rightarrow \quad \varepsilon_S = d \cdot \frac{P}{Q_S}$$
+
+. . .
+
+::: {.callout-tip title="Nota importante"}
+Tal como na procura, numa oferta linear $\varepsilon_S$ **varia ao longo da curva** — o mesmo $d$ produz elasticidades diferentes conforme o ponto $(P, Q_S)$.
+
+A exceção notável: uma oferta que passa pela **origem** tem sempre $\varepsilon_S = 1$.
+:::
+
+# Uma Propriedade Geométrica Notável
+
+## Elasticidade e o Intercepto da Oferta
+
+Para uma oferta linear $Q_S = c + dP$, a elasticidade depende do sinal de $c$:
+
+. . .
+
+```{r geometry, fig.width=8.5, fig.height=4.2}
+library(ggplot2)
+library(patchwork)
+
+make_supply_plot <- function(title, c_val, d_val, col, x_max=10, p_max=8,
+                             eps_label, label_y_offset=0.4) {
+  P_seq <- seq(0, p_max, length.out=300)
+  Q_seq <- pmax(c_val + d_val * P_seq, 0)
+  df <- tibble(P=P_seq, Q=Q_seq)
+  
+  # One reference point
+  p_ref <- if (c_val >= 0) p_max * 0.6 else max(p_max * 0.6, -c_val/d_val + 0.5)
+  q_ref <- c_val + d_val * p_ref
+  
+  ggplot(df %>% filter(Q >= 0)) +
+    geom_line(aes(x=Q, y=P), color=col, linewidth=1.3) +
+    geom_point(aes(x=q_ref, y=p_ref), color=col, size=2.5) +
+    geom_segment(aes(x=0, xend=q_ref, y=p_ref, yend=p_ref),
+                 linetype="dashed", color="gray60") +
+    geom_segment(aes(x=q_ref, xend=q_ref, y=0, yend=p_ref),
+                 linetype="dashed", color="gray60") +
+    annotate("text", x=q_ref * 0.4, y=p_ref * 0.5,
+             label=eps_label, color=col, size=3.8) +
+    labs(x="Q", y="P", title=title) +
+    scale_x_continuous(breaks=NULL, limits=c(0, x_max)) +
+    scale_y_continuous(breaks=NULL, limits=c(0, p_max)) +
+    theme_classic(base_size=10) +
+    theme(
+      axis.line=element_line(arrow=arrow(length=unit(0.2,"cm"), type="closed")),
+      plot.title=element_text(hjust=0.5, size=9.5, color=col)
+    )
+}
+
+p1 <- make_supply_plot(
+  "Intercepto em Q: c > 0  →  ε_S < 1",
+  c_val=12, d_val=3, col="steelblue",
+  eps_label="ε_S < 1\n(inelástica)", x_max=60, p_max=8
+)
+
+p2 <- make_supply_plot(
+  "Passa pela origem: c = 0  →  ε_S = 1",
+  c_val=0, d_val=5, col="darkorange",
+  eps_label="ε_S = 1\n(unitária)", x_max=45, p_max=8
+)
+
+p3 <- make_supply_plot(
+  "Intercepto em P: c < 0  →  ε_S > 1",
+  c_val=-8, d_val=4, col="#A40027",
+  eps_label="ε_S > 1\n(elástica)", x_max=30, p_max=8
+)
+
+p1 + p2 + p3
+```
+
+. . .
+
+::: {.nonincremental}
+- **$c > 0$** (intercepto no eixo $Q$): oferta inelástica em todos os pontos
+- **$c = 0$** (passa pela origem): elasticidade unitária em todos os pontos
+- **$c < 0$** (intercepto no eixo $P$): oferta elástica em todos os pontos
+:::
+
+## Porquê esta propriedade geométrica?
+
+Para $Q_S = dP$ (origem): $\quad\varepsilon_S = d \cdot \dfrac{P}{dP} = 1$ em qualquer ponto.
+
+. . .
+
+Para $Q_S = c + dP$ com $c > 0$: $\quad\varepsilon_S = d \cdot \dfrac{P}{c + dP} < d \cdot \dfrac{P}{dP} = 1$
+
+. . .
+
+Para $Q_S = c + dP$ com $c < 0$ (e $Q_S > 0$): $\quad\varepsilon_S = d \cdot \dfrac{P}{c + dP} > 1$
+
+. . .
+
+::: {.callout-tip title="Regra prática"}
+Numa oferta linear, basta ver onde a reta **interseta os eixos**:
+
+- Corta o eixo $Q$ → **inelástica**
+- Passa pela origem → **unitária**
+- Corta o eixo $P$ → **elástica**
+:::
+
+# Casos Extremos
+
+## Oferta Perfeitamente Inelástica e Elástica
+
+```{r extremes, fig.width=8, fig.height=4}
+p_left <- ggplot() +
+  geom_vline(xintercept=4, color="#A40027", linewidth=1.3) +
+  annotate("text", x=4.15, y=7.5, label="S", color="#A40027", size=4) +
+  annotate("text", x=4, y=-0.4, label=expression(Q[0]), color="gray30", size=3.5, hjust=0.5) +
+  annotate("text", x=5.5, y=4,
+           label=expression(paste(epsilon[S],"= 0")),
+           color="#A40027", size=4) +
+  annotate("text", x=0.3, y=2,
+           label="Quantidade\nfixada\nindependentemente\ndo preço",
+           color="gray40", size=2.8, hjust=0) +
+  scale_x_continuous(breaks=NULL, limits=c(0,8)) +
+  scale_y_continuous(breaks=NULL, limits=c(0,8)) +
+  labs(x="Q", y="P", title="Oferta perfeitamente inelástica") +
+  theme_classic(base_size=10) +
+  theme(axis.line=element_line(arrow=arrow(length=unit(0.2,"cm"), type="closed")),
+        plot.title=element_text(hjust=0.5, size=9.5))
+
+p_right <- ggplot() +
+  geom_hline(yintercept=3.5, color="steelblue", linewidth=1.3) +
+  annotate("text", x=7, y=3.85, label="S", color="steelblue", size=4) +
+  annotate("text", x=0.3, y=3.5+0.3, label=expression(P[0]), color="gray30", size=3.5) +
+  annotate("text", x=4, y=1.5,
+           label=expression(paste(epsilon[S],"→ ∞")),
+           color="steelblue", size=4) +
+  annotate("text", x=0.3, y=1.8,
+           label="Qualquer quantidade\né oferecida a P₀;\nabaixo de P₀: Q=0",
+           color="gray40", size=2.8, hjust=0) +
+  scale_x_continuous(breaks=NULL, limits=c(0,8)) +
+  scale_y_continuous(breaks=NULL, limits=c(0,8)) +
+  labs(x="Q", y="P", title="Oferta perfeitamente elástica") +
+  theme_classic(base_size=10) +
+  theme(axis.line=element_line(arrow=arrow(length=unit(0.2,"cm"), type="closed")),
+        plot.title=element_text(hjust=0.5, size=9.5))
+
+p_left + p_right
+```
+
+::: {.nonincremental}
+- **$\varepsilon_S = 0$**: quantidade independente do preço — ex.: obra de arte única, recurso natural esgotado, capacidade máxima física a curto prazo
+- **$\varepsilon_S \to \infty$**: produtores oferecem qualquer quantidade ao preço $P_0$ — ex.: bem produzido com custo marginal constante e sem restrições de capacidade
+:::
+
+# Fatores que Determinam $\varepsilon_S$
+
+## O que torna uma oferta mais ou menos elástica?
+
+- **Disponibilidade e mobilidade dos fatores de produção**
+
+  A oferta de pizzas é mais elástica do que a oferta de morangos fora de época — o produtor de pizza pode aumentar a produção facilmente, mas o morangueiro não.
+
+. . .
+
+- **Capacidade produtiva instalada**
+
+  A oferta de lugares numa aeronave é perfeitamente elástica até esgotar a capacidade e perfeitamente inelástica após isso.
+
+. . .
+
+- **Período de tempo**
+
+  A oferta de longo prazo é **sempre mais elástica** do que a de curto prazo. Com mais tempo, os produtores conseguem ajustar capital, contratar mais fatores e redirecionar a produção.
+
+## Curto Prazo vs. Longo Prazo
+
+```{r sr-lr-supply, fig.width=7, fig.height=4.2}
+Q_seq <- seq(0, 12, length.out=300)
+
+# SR supply: steeper (less elastic)  P = 1 + 0.7*Q
+# LR supply: flatter (more elastic)  P = 0.5 + 0.25*Q
+P_SR <- function(Q) 1 + 0.7 * Q
+P_LR <- function(Q) 0.5 + 0.25 * Q
+
+# Demand: P = 8 - 0.5*Q
+P_D  <- function(Q) 8 - 0.5 * Q
+
+# SR eq: 8-0.5Q = 1+0.7Q => 7=1.2Q => Q=7/1.2, P=8-3.5/1.2
+Q_SR <- 7/1.2
+P_SR_eq <- P_D(Q_SR)
+
+# LR eq: 8-0.5Q = 0.5+0.25Q => 7.5=0.75Q => Q=10, P=3
+Q_LR <- 10
+P_LR_eq <- 3
+
+# Demand shift: P = 10 - 0.5*Q
+P_D2 <- function(Q) 10 - 0.5 * Q
+
+# SR new eq: 10-0.5Q=1+0.7Q => 9=1.2Q
+Q_SR2 <- 9/1.2
+P_SR2_eq <- P_D2(Q_SR2)
+
+# LR new eq: 10-0.5Q=0.5+0.25Q => 9.5=0.75Q
+Q_LR2 <- 9.5/0.75
+P_LR2_eq <- P_D2(Q_LR2)
+
+df <- tibble(Q=Q_seq,
+             SR=P_SR(Q_seq), LR=P_LR(Q_seq),
+             D=P_D(Q_seq), D2=P_D2(Q_seq)) %>%
+  filter(SR<=9, LR<=9, D>=0, D2>=0)
+
+ggplot(df) +
+  geom_line(aes(x=Q, y=D), color="steelblue", linewidth=1.1, linetype="dashed", alpha=0.6) +
+  geom_line(aes(x=Q, y=D2), color="steelblue", linewidth=1.2) +
+  geom_line(aes(x=Q, y=SR), color="#A40027", linewidth=1.2) +
+  geom_line(aes(x=Q, y=LR), color="darkorange", linewidth=1.2) +
+  # Original equilibria
+  geom_point(aes(x=Q_SR, y=P_SR_eq), color="#A40027", size=2.5) +
+  geom_point(aes(x=Q_LR, y=P_LR_eq), color="darkorange", size=2.5) +
+  # New equilibria
+  geom_point(aes(x=Q_SR2, y=P_SR2_eq), color="#A40027", size=3, shape=17) +
+  geom_point(aes(x=Q_LR2, y=P_LR2_eq), color="darkorange", size=3, shape=17) +
+  # dashed connectors
+  geom_segment(aes(x=Q_SR, xend=Q_SR2, y=P_SR_eq, yend=P_SR2_eq),
+               linetype="dotted", color="#A40027", alpha=0.5) +
+  geom_segment(aes(x=Q_LR, xend=Q_LR2, y=P_LR_eq, yend=P_LR2_eq),
+               linetype="dotted", color="darkorange", alpha=0.5) +
+  annotate("text", x=11.5, y=P_SR(11.5)+0.25, label="S[CP]", parse=TRUE,
+           color="#A40027", size=3.5) +
+  annotate("text", x=11.5, y=P_LR(11.5)+0.25, label="S[LP]", parse=TRUE,
+           color="darkorange", size=3.5) +
+  annotate("text", x=11.5, y=P_D2(11.5)+0.3, label="D'", color="steelblue", size=3.5) +
+  annotate("text", x=11.5, y=P_D(11.5)-0.4, label="D", color="steelblue", size=3.5, alpha=0.6) +
+  annotate("text", x=Q_SR2+0.3, y=P_SR2_eq+0.3,
+           label="CP: ΔP grande\nΔQ pequeno",
+           color="#A40027", size=2.8, hjust=0) +
+  annotate("text", x=Q_LR2+0.3, y=P_LR2_eq-0.5,
+           label="LP: ΔP menor\nΔQ maior",
+           color="darkorange", size=2.8, hjust=0) +
+  scale_x_continuous(breaks=NULL, limits=c(0,14)) +
+  scale_y_continuous(breaks=NULL, limits=c(0,9.5)) +
+  labs(x="Q", y="P",
+       title="Expansão da procura: resposta de CP vs. LP") +
+  theme_classic(base_size=12) +
+  theme(axis.line=element_line(arrow=arrow(length=unit(0.25,"cm"), type="closed")),
+        plot.title=element_text(hjust=0.5))
+```
+
+. . .
+
+Uma expansão da procura provoca, a curto prazo, um **grande aumento de preço** com **pouco aumento de quantidade**. A longo prazo, a oferta expande-se mais — o preço sobe menos e a quantidade aumenta mais.
+
+# Quadro Comparativo
+
+## Elasticidade da Procura vs. da Oferta
+
+| | **Procura** $(\varepsilon_D)$ | **Oferta** $(\varepsilon_S)$ |
+|---|---|---|
+| Sinal | $\leq 0$ (sempre) | $\geq 0$ (sempre) |
+| Trabalha-se com | $\|\varepsilon_D\|$ | $\varepsilon_S$ |
+| Numa linear: varia? | Sim, ao longo da curva | Sim, ao longo da curva |
+| Exceção (linear) | — | Passa pela origem → $\varepsilon_S = 1$ sempre |
+| $> 1$ significa | Procura elástica | Oferta elástica |
+| $= 0$ significa | Procura perfeitamente rígida | Oferta perfeitamente rígida |
+| Prazo | LP mais elástica | LP mais elástica |
+
+. . .
+
+::: {.callout-important title="Simetria com a procura"}
+A elasticidade da oferta tem a mesma lógica e fórmula que a elasticidade preço-direta da procura — a única diferença estrutural é o sinal (positivo vs. negativo) e o facto de a oferta poder ser unitária em todos os pontos quando passa pela origem.
+:::
+
+# Exercícios
+
+## Exercício 1 — Escolha Múltipla
+
+**A função de oferta de um mercado é $Q_S = 3P + 6$. Qual é a elasticidade preço da oferta quando $P = 6$?**
+
+::: {.nonincremental}
+A) $\varepsilon_S = 1$
+
+B) $\varepsilon_S = 3$
+
+C) $\varepsilon_S = \dfrac{3}{4}$
+
+D) $\varepsilon_S = \dfrac{3}{2}$
+:::
+
+## Exercício 1 — Solução {visibility="uncounted"}
+
+**Resolução:**
+
+$$\frac{dQ_S}{dP} = 3$$
+
+. . .
+
+Quando $P = 6$: $\quad Q_S = 3(6) + 6 = 24$
+
+. . .
+
+$$\varepsilon_S = \frac{dQ_S}{dP} \cdot \frac{P}{Q_S} = 3 \times \frac{6}{24} = \frac{18}{24} = \mathbf{\frac{3}{4}}$$
+
+. . .
+
+$\varepsilon_S = 0{,}75 < 1$ → oferta **inelástica**.
+
+Note: $c = 6 > 0$ (intercepto positivo no eixo $Q$) → confirma oferta inelástica em todos os pontos.
+
+**Resposta: C)**
+
+## Exercício 2 — Escolha Múltipla
+
+**Qual das seguintes afirmações é verdadeira acerca de uma oferta linear que passa pela origem ($Q_S = bP$, com $b > 0$)?**
+
+::: {.nonincremental}
+A) A elasticidade aumenta à medida que o preço sobe
+
+B) A elasticidade é sempre igual a 1, independentemente do preço
+
+C) A elasticidade é sempre maior do que 1
+
+D) A elasticidade depende do valor de $b$
+:::
+
+## Exercício 2 — Solução {visibility="uncounted"}
+
+**Resolução:**
+
+Para $Q_S = bP$:
+
+$$\varepsilon_S = \frac{dQ_S}{dP} \cdot \frac{P}{Q_S} = b \cdot \frac{P}{bP} = \frac{bP}{bP} = \mathbf{1}$$
+
+. . .
+
+O resultado é **exatamente 1** para qualquer valor de $P$ e qualquer valor de $b > 0$.
+
+. . .
+
+A razão geométrica: a reta passa pela origem, logo o "triângulo" formado pela curva e os eixos mantém sempre a mesma proporção entre $P$ e $Q$ em qualquer ponto.
+
+. . .
+
+**Resposta: B)**
+
+## Exercício 3 — Desenvolvimento
+
+**A função de oferta de um bem é $Q_S = 4P - 8$.**
+
+**(a)** Calcule a elasticidade preço da oferta em $P = 4$, $P = 6$ e $P = 10$.
+
+**(b)** A oferta é elástica, inelástica ou unitária nestes pontos? Justifique geometricamente.
+
+**(c)** Compare com a oferta $Q_S' = 4P$. Calcule $\varepsilon_S$ para $Q_S'$ nos mesmos preços e interprete a diferença.
+
+## Exercício 3 — Resolução (a) e (b) {visibility="uncounted"}
+
+**Alínea (a):** $\dfrac{dQ_S}{dP} = 4$
+
+. . .
+
+| $P$ | $Q_S = 4P-8$ | $\varepsilon_S = 4 \cdot \dfrac{P}{Q_S}$ | Classificação |
+|---|---|---|---|
+| 4 | 8 | $4 \times \dfrac{4}{8} = 2$ | Elástica |
+| 6 | 16 | $4 \times \dfrac{6}{16} = \dfrac{3}{2}$ | Elástica |
+| 10 | 32 | $4 \times \dfrac{10}{32} = \dfrac{5}{4}$ | Elástica |
+
+. . .
+
+**Alínea (b):** A oferta $Q_S = 4P - 8$ tem intercepto no **eixo $P$** quando $Q_S = 0 \Rightarrow P = 2 > 0$.
+
+Qualquer oferta linear que corte o eixo $P$ (e não o eixo $Q$, nem passe pela origem) é **sempre elástica** ($\varepsilon_S > 1$ em todos os pontos).
+
+## Exercício 3 — Resolução (c) {visibility="uncounted"}
+
+**Alínea (c):** Para $Q_S' = 4P$:
+
+$$\varepsilon_S' = 4 \cdot \frac{P}{4P} = 1 \quad \text{em qualquer } P$$
+
+. . .
+
+| $P$ | $Q_S = 4P-8$ | $\varepsilon_S$ | $Q_S' = 4P$ | $\varepsilon_S'$ |
+|---|---|---|---|---|
+| 4 | 8 | 2 | 16 | 1 |
+| 6 | 16 | 1,5 | 24 | 1 |
+| 10 | 32 | 1,25 | 40 | 1 |
+
+. . .
+
+::: {.callout-tip title="Interpretação"}
+Ambas as ofertas têm o mesmo declive ($d=4$), mas $Q_S = 4P - 8$ passa pelo ponto $(0, 2)$ no eixo $P$ — o produtor só começa a oferecer acima de $P = 2$. Esta "barreira de entrada" torna a oferta **mais elástica** do que a que passa pela origem, onde o produtor oferece desde $P = 0$.
+:::
+
+# Síntese
+
+## Resumo da Aula
+
+::: {.nonincremental}
+**Fórmula:** $\varepsilon_S = \dfrac{dQ_S}{dP} \cdot \dfrac{P}{Q_S} \geq 0$ sempre
+:::
+
+. . .
+
+::: {.nonincremental}
+**Regra geométrica** para oferta linear:
+
+- Corta eixo $Q$ ($c > 0$) → inelástica em todos os pontos
+- Passa pela origem ($c = 0$) → unitária em todos os pontos  
+- Corta eixo $P$ ($c < 0$) → elástica em todos os pontos
+:::
+
+. . .
+
+::: {.nonincremental}
+**Fatores determinantes:**
+
+- Disponibilidade e mobilidade dos fatores
+- Capacidade produtiva instalada
+- Período de tempo: $\varepsilon_S^{LP} > \varepsilon_S^{CP}$ sempre
+:::
+
+. . .
+
+::: {.callout-important title="Para a próxima aula"}
+Na aula 25 estudaremos como os **impostos** se repartem entre consumidores e produtores — e veremos que a relação $|\varepsilon_D|/\varepsilon_S$ determina exactamente essa repartição.
+:::

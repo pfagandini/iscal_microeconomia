@@ -501,7 +501,7 @@
     "href": "material.html#slides",
     "title": "Material",
     "section": "Slides",
-    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\nConceitos\nEtapas Processo Produtivo e Regra da Contratação\nFunção de Custos\nGeometria de Custos\nOtimização num mercado concorrencial\n\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\nOferta\nEquilíbrio de Curto Prazo\n\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\nLongo Prazo\n\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
+    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\nConceitos\nEtapas Processo Produtivo e Regra da Contratação\nFunção de Custos\nGeometria de Custos\nOtimização num mercado concorrencial\n\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\nOferta\nEquilíbrio de Curto Prazo\n\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\nLongo Prazo\nEquilíbrio de Longo Prazo\n\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\nElasticidade da Procura\nElasticidade da Oferta\nImpostos\nSubsídios\n\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
   },
   {
     "objectID": "exercises/Capitulo_3C.html#c.-teoria-do-produtor-e-equilíbrio---longo-prazo",
@@ -4982,5 +4982,614 @@
     "title": "Material",
     "section": "Outro Material",
     "text": "Outro Material\n\nBridge Produtor"
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#o-que-muda-no-longo-prazo",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#o-que-muda-no-longo-prazo",
+    "title": "Microeconomia",
+    "section": "O que muda no longo prazo?",
+    "text": "O que muda no longo prazo?\n\n\n\n\n\n\n\nLongo Prazo\n\n\nNo longo prazo, todos os fatores produtivos são variáveis — não existem custos fixos. A empresa tem acesso a todas as combinações de \\(K\\) e \\(L\\), e pode ajustar a sua escala de produção.\n\n\n\n\n\nConsequência fundamental:\n\nOs custos médios de longo prazo são sempre menores ou iguais aos custos médios de curto prazo.\nA empresa escolhe a combinação \\((K, L)\\) que minimiza o custo para cada nível de produção."
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#custos-de-longo-prazo-intuição-gráfica",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#custos-de-longo-prazo-intuição-gráfica",
+    "title": "Microeconomia",
+    "section": "Custos de Longo Prazo: Intuição Gráfica",
+    "text": "Custos de Longo Prazo: Intuição Gráfica\n\n\nCada curva azul: custo médio de curto prazo (capital fixado)\nCurva vermelha: envelope de longo prazo — o mínimo possível para cada \\(Q\\)"
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#economias-e-deseconomias-de-escala",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#economias-e-deseconomias-de-escala",
+    "title": "Microeconomia",
+    "section": "Economias e Deseconomias de Escala",
+    "text": "Economias e Deseconomias de Escala\n\n\n\n\n\n\n\nDefinições\n\n\n\nEconomias de escala: \\(CM_{LP}\\) decrescente — escalar a produção reduz o custo médio.\nDeseconomias de escala: \\(CM_{LP}\\) crescente — crescer aumenta o custo médio.\nEscala Mínima Eficiente (EME): o nível de \\(Q\\) que minimiza \\(CM_{LP}\\).\n\n\n\n\n\n\nA EME influencia a estrutura do mercado:\n\nEME pequena → mercado comporta muitas empresas pequenas (ex.: restaurantes, cabeleireiros)\nEME grande → mercado tende para poucas empresas grandes (ex.: automóvel, aviação)"
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#equilíbrio-de-mercado-em-cp",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#equilíbrio-de-mercado-em-cp",
+    "title": "Microeconomia",
+    "section": "Equilíbrio de Mercado em CP",
+    "text": "Equilíbrio de Mercado em CP\n\n\n\n\n\n\n\nRecapitulação\n\n\nNo curto prazo, o número de empresas no mercado está fixo. O equilíbrio determina-se pela interação entre a procura do mercado e a oferta agregada das empresas existentes.\n\n\n\n\n\nCondição de equilíbrio do mercado em CP:\n\\[Q_D(P^*) = Q_S(P^*)\\]\n\n\nCondição de otimização de cada empresa (tomadora de preço):\n\\[P^* = Cmg_{CP}(q^*)\\]\n\n\nNeste equilíbrio, o lucro individual pode ser positivo, nulo ou negativo."
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#o-lucro-em-cp-como-sinal-de-mercado",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#o-lucro-em-cp-como-sinal-de-mercado",
+    "title": "Microeconomia",
+    "section": "O Lucro em CP como Sinal de Mercado",
+    "text": "O Lucro em CP como Sinal de Mercado\n\n\nSe \\(\\Pi &gt; 0\\): o mercado é atrativo para novos produtores → entram empresas.\nSe \\(\\Pi &lt; 0\\): algumas empresas saem (após cobrir custos fixos irrecuperáveis)."
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#entrada-de-empresas-mecanismo",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#entrada-de-empresas-mecanismo",
+    "title": "Microeconomia",
+    "section": "Entrada de Empresas: Mecanismo",
+    "text": "Entrada de Empresas: Mecanismo\n\n\n\n\n\n\n\nMecanismo de Ajustamento\n\n\nO mercado em concorrência perfeita ajusta-se automaticamente através da entrada e saída de empresas:\n\n\\(\\Pi &gt; 0\\) → entrada de empresas → oferta expande → \\(P\\) desce → \\(\\Pi\\) diminui\n\\(\\Pi &lt; 0\\) → saída de empresas → oferta contrai → \\(P\\) sobe → \\(\\Pi\\) aumenta\n\n\n\n\n\n\nEste processo continua até que nenhuma empresa tenha incentivo para entrar nem sair."
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#entrada-de-empresas-efeito-no-mercado",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#entrada-de-empresas-efeito-no-mercado",
+    "title": "Microeconomia",
+    "section": "Entrada de Empresas: Efeito no Mercado",
+    "text": "Entrada de Empresas: Efeito no Mercado\n\n\nEntram empresas → oferta expande (\\(S \\to S'\\)) → \\(p\\) desce → \\(q_i\\) de cada empresa desce\nNo total, há mais produto no mercado, mas o lucro individual diminui"
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#condição-de-equilíbrio-de-longo-prazo",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#condição-de-equilíbrio-de-longo-prazo",
+    "title": "Microeconomia",
+    "section": "Condição de Equilíbrio de Longo Prazo",
+    "text": "Condição de Equilíbrio de Longo Prazo\nA entrada/saída de empresas cessa quando \\(\\Pi = 0\\).\n\nEm concorrência perfeita, o equilíbrio de longo prazo verifica:\n\\[\\boxed{P^* = Cmg_{LP} = CM_{LP}}\\]\n\n\nInterpretação:\n\n\\(P^* = Cmg_{LP}\\): a empresa está a maximizar o lucro (condição de otimização)\n\\(P^* = CM_{LP}\\): o lucro económico é nulo (condição de entrada/saída livre)\nEstas duas condições em simultâneo implicam que a empresa opera na Escala Mínima Eficiente"
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#equilíbrio-de-longo-prazo-gráfico",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#equilíbrio-de-longo-prazo-gráfico",
+    "title": "Microeconomia",
+    "section": "Equilíbrio de Longo Prazo: Gráfico",
+    "text": "Equilíbrio de Longo Prazo: Gráfico"
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#oferta-de-longo-prazo-do-mercado",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#oferta-de-longo-prazo-do-mercado",
+    "title": "Microeconomia",
+    "section": "Oferta de Longo Prazo do Mercado",
+    "text": "Oferta de Longo Prazo do Mercado\n\n\n\n\n\n\n\nCurva de Oferta de LP em Concorrência Perfeita\n\n\nCom livre entrada e saída, a curva de oferta de longo prazo do mercado é horizontal ao nível de \\(P^* = CM_{LP,\\min}\\).\n\n\n\n\n\nPorquê horizontal?\n\nSempre que \\(P &gt; P^*\\): entram empresas → oferta aumenta → \\(P\\) desce até \\(P^*\\)\nSempre que \\(P &lt; P^*\\): saem empresas → oferta diminui → \\(P\\) sobe até \\(P^*\\)\nPortanto, no LP, o mercado só está em equilíbrio com \\(P = P^*\\)\n\n\n\nA quantidade total de mercado é determinada exclusivamente pela procura — o número de empresas ajusta-se para satisfazê-la ao preço \\(P^*\\)."
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#excedente-total-no-longo-prazo",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#excedente-total-no-longo-prazo",
+    "title": "Microeconomia",
+    "section": "Excedente Total no Longo Prazo",
+    "text": "Excedente Total no Longo Prazo\n\n\n\n\n\n\n\nExcedente no LP\n\n\nNo equilíbrio de longo prazo em concorrência perfeita:\n\nExcedente do produtor = 0 (lucro económico nulo)\nTodo o excedente económico do mercado é Excedente do Consumidor\n\n\n\n\n\n\nIsto é uma propriedade notável da concorrência perfeita: no longo prazo, os consumidores capturam todo o ganho gerado pela atividade económica."
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#passo-a-passo-expansão-da-procura",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#passo-a-passo-expansão-da-procura",
+    "title": "Microeconomia",
+    "section": "Passo a Passo: Expansão da Procura",
+    "text": "Passo a Passo: Expansão da Procura\nSuponha que o mercado está inicialmente em equilíbrio de LP. Ocorre um aumento permanente da procura.\n\nPasso 1 — CP imediato:\nA oferta está fixa (número de empresas fixo). O novo equilíbrio de CP tem \\(P' &gt; P^*\\) e \\(q_i' &gt; q_i^*\\). Surge \\(\\Pi &gt; 0\\).\n\n\nPasso 2 — Ajustamento LP:\n\\(\\Pi &gt; 0\\) atrai novas empresas. A oferta expande progressivamente. O preço desce.\n\n\nPasso 3 — Novo equilíbrio LP:\nO processo termina quando \\(P = P^*\\) novamente (se a tecnologia não se alterar e os preços dos fatores são constantes). A quantidade total no mercado é maior, mas cada empresa individual produz \\(q_i^*\\) (o mesmo de antes)."
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#ajustamento-lp-gráfico",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#ajustamento-lp-gráfico",
+    "title": "Microeconomia",
+    "section": "Ajustamento LP: Gráfico",
+    "text": "Ajustamento LP: Gráfico\n\n\nApós choque, CP: \\(P\\) sobe, \\(\\Pi &gt; 0\\) (ponto laranja)\nLP: entrada de empresas → \\(P\\) regressa a \\(P^*\\), mais empresas no mercado (ponto vermelho)"
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#exercício-1-escolha-múltipla",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nUma empresa em mercado concorrencial tem função de custo total de LP: \\[CT_{LP}(q) = q^3 - 6q^2 + 15q\\]\nQual é o preço de equilíbrio de longo prazo neste mercado?\n\n\\(P^* = 3\\)\n\\(P^* = 6\\)\n\\(P^* = 9\\)\n\\(P^* = 15\\)"
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#exercício-1-solução",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#exercício-1-solução",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Solução",
+    "text": "Exercício 1 — Solução\nResolução:\n\\[CM_{LP} = \\frac{CT_{LP}}{q} = q^2 - 6q + 15\\]\n\nMínimo de \\(CM_{LP}\\): \\(\\frac{d\\,CM_{LP}}{dq} = 2q - 6 = 0 \\Rightarrow q^* = 3\\)\n\n\n\\[CM_{LP}(3) = 9 - 18 + 15 = \\mathbf{6}\\]\nConfirmação: \\(Cmg_{LP} = 3q^2 - 12q + 15 \\Rightarrow Cmg_{LP}(3) = 27 - 36 + 15 = 6\\) ✓\n\n\nNo LP, \\(P^* = CM_{LP,\\min} = Cmg_{LP}(q^*)\\)\nResposta: B) \\(P^* = 6\\)"
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#exercício-2-escolha-múltipla",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nContinuando o exercício anterior (\\(CT_{LP} = q^3 - 6q^2 + 15q\\), \\(P^* = 6\\)). A procura de mercado é \\(Q_D = 120 - 10P\\). Quantas empresas existem no equilíbrio de LP?\n\n10 empresas\n15 empresas\n20 empresas\n60 empresas"
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#exercício-2-solução",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#exercício-2-solução",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Solução",
+    "text": "Exercício 2 — Solução\nResolução:\nQuantidade procurada ao preço de equilíbrio \\(P^* = 6\\): \\[Q_D = 120 - 10 \\times 6 = 60\\]\n\nCada empresa produz \\(q^* = 3\\) no LP.\n\n\nNúmero de empresas: \\[n^* = \\frac{Q_D}{q^*} = \\frac{60}{3} = \\mathbf{20 \\text{ empresas}}\\]\n\n\nResposta: C) 20 empresas"
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#exercício-3-desenvolvimento",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#exercício-3-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Desenvolvimento",
+    "text": "Exercício 3 — Desenvolvimento\nConsidere um mercado em concorrência perfeita com livre entrada e saída.\nA procura de mercado é \\(Q_D = 60 - 5P\\).\nCada empresa tem função de custo total de LP: \\[CT_{LP}(q) = q^3 - 6q^2 + 12q\\]\n(a) Determine o preço de equilíbrio de LP, \\(P^*\\), a quantidade produzida por cada empresa, \\(q^*\\), e o número de empresas no mercado, \\(n^*\\).\n(b) Suponha que a procura aumenta para \\(Q_D' = 75 - 5P\\). Descreva o processo de ajustamento e determine o novo equilíbrio de LP.\n(c) Calcule o Excedente do Consumidor nos dois equilíbrios e comente o resultado."
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#exercício-3-resolução-a",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#exercício-3-resolução-a",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Resolução (a)",
+    "text": "Exercício 3 — Resolução (a)\nAlínea (a): Equilíbrio LP inicial\n\\[CM_{LP} = \\frac{CT_{LP}}{q} = q^2 - 6q + 12\\]\n\nMínimo de \\(CM_{LP}\\): \\(\\displaystyle\\frac{d\\,CM_{LP}}{dq} = 2q - 6 = 0 \\Rightarrow q^* = 3\\)\n\n\n\\[P^* = CM_{LP}(3) = 9 - 18 + 12 = 3\\]\nConfirmação: \\(Cmg_{LP}(q) = 3q^2 - 12q + 12 \\Rightarrow Cmg_{LP}(3) = 27 - 36 + 12 = 3\\) ✓\n\n\nQuantidade de mercado: \\(Q^* = Q_D(P^*) = 60 - 5 \\times 3 = 45\\)\n\n\nNúmero de empresas: \\(\\displaystyle n^* = \\frac{Q^*}{q^*} = \\frac{45}{3} = \\mathbf{15 \\text{ empresas}}\\)"
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#exercício-3-resolução-b",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#exercício-3-resolução-b",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Resolução (b)",
+    "text": "Exercício 3 — Resolução (b)\nAlínea (b): Choque na procura\nA tecnologia não se altera → \\(P^*\\) mantém-se igual a 3 no novo equilíbrio LP.\n\nProcesso de ajustamento:\n\nNo curto prazo (n = 15 fixo): o preço sobe acima de 3, surgem lucros positivos.\nOs lucros positivos atraem novas empresas ao mercado.\nA oferta expande, o preço desce progressivamente.\nO processo termina quando \\(P\\) regressa a \\(P^* = 3\\) e \\(\\Pi = 0\\).\n\n\n\nNovo equilíbrio LP:\n\\[Q'^* = Q_D'(P^*) = 75 - 5 \\times 3 = 60\\]\n\\[n'^* = \\frac{60}{3} = \\mathbf{20 \\text{ empresas}}\\]\nEntraram 5 novas empresas; cada empresa continua a produzir \\(q^* = 3\\)."
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#exercício-3-resolução-c",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#exercício-3-resolução-c",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Resolução (c)",
+    "text": "Exercício 3 — Resolução (c)\nAlínea (c): Excedente do Consumidor\nDa procura \\(Q_D = 60 - 5P\\): inversa \\(P = 12 - \\frac{Q}{5}\\)\n\\(\\Rightarrow\\) preço máximo: \\(P_{max} = 12\\) (quando \\(Q = 0\\))\n\nEC inicial (equilíbrio com \\(P^* = 3\\), \\(Q^* = 45\\)):\n\\[EC_0 = \\frac{(12 - 3) \\times 45}{2} = \\frac{9 \\times 45}{2} = \\mathbf{202{,}5}\\]\n\n\nEC após choque (\\(P^* = 3\\) mantém-se, \\(Q'^* = 60\\)):\n\\[EC_1 = \\frac{(12 - 3) \\times 60}{2} = \\frac{9 \\times 60}{2} = \\mathbf{270}\\]\n\n\n\n\n\n\n\n\n\nComentário\n\n\nO preço não se altera no LP (oferta horizontal), pelo que todo o benefício do aumento da procura é capturado pelos consumidores — o EC aumenta de 202,5 para 270. O excedente do produtor permanece nulo."
+  },
+  {
+    "objectID": "slides/15_Eq_mercado_oferta_lp.html#resumo-equilíbrio-de-lp-em-concorrência-perfeita",
+    "href": "slides/15_Eq_mercado_oferta_lp.html#resumo-equilíbrio-de-lp-em-concorrência-perfeita",
+    "title": "Microeconomia",
+    "section": "Resumo: Equilíbrio de LP em Concorrência Perfeita",
+    "text": "Resumo: Equilíbrio de LP em Concorrência Perfeita\n\n\n\n\nCurto Prazo\nLongo Prazo\n\n\n\n\nNúmero de empresas\nFixo\nVariável (entrada/saída livre)\n\n\nCondição de otimização\n\\(P = Cmg_{CP}\\)\n\\(P = Cmg_{LP}\\)\n\n\nLucro económico\nPode ser \\(\\neq 0\\)\n\\(\\Pi = 0\\)\n\n\nPreço de equilíbrio\nPode variar\n\\(P^* = CM_{LP,\\min}\\)\n\n\nCurva de oferta\nCrescente\nHorizontal\n\n\nExcedente do produtor\nPositivo\nZero\n\n\n\n\n\n\n\n\n\n\n\nMensagem-chave\n\n\nA concorrência perfeita com livre entrada/saída é o único regime de mercado em que, a longo prazo, os consumidores capturam todo o excedente económico e os recursos são afetos à Escala Mínima Eficiente."
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#o-que-é-um-imposto-indireto-específico",
+    "href": "slides/18_impostos_elasticidade.html#o-que-é-um-imposto-indireto-específico",
+    "title": "Microeconomia",
+    "section": "O que é um imposto indireto específico?",
+    "text": "O que é um imposto indireto específico?\n\n\n\n\n\n\n\nImposto Específico (lump-sum)\n\n\nUm imposto indireto específico é um montante fixo \\(I\\) cobrado por cada unidade produzida e vendida, independentemente do preço. Exemplos: ISV (Imposto sobre Veículos), ISP (Imposto sobre os Combustíveis).\n\n\n\n\n\nO lançamento do imposto cria uma cunha entre o preço pago pelo consumidor (\\(P_D\\)) e o preço recebido pelo produtor (\\(P_S\\)):\n\\[\\boxed{P_D = P_S + I}\\]\n\n\n\n\n\n\n\n\n\nIncidência legal vs. económica\n\n\nNormalmente é o produtor quem entrega o imposto ao Estado (incidência legal). Mas a incidência económica — quem efetivamente suporta o custo — é partilhada entre consumidores e produtores, dependendo das elasticidades."
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#equilíbrio-com-imposto",
+    "href": "slides/18_impostos_elasticidade.html#equilíbrio-com-imposto",
+    "title": "Microeconomia",
+    "section": "Equilíbrio com Imposto",
+    "text": "Equilíbrio com Imposto\nO sistema de equilíbrio após lançamento do imposto \\(I\\):\n\\[\\begin{cases} Q_D = f_D(P_D) \\\\ Q_S = f_S(P_S) \\\\ Q_D = Q_S \\\\ P_D = P_S + I \\end{cases}\\]\n\nGraficamente: a oferta “vista pelo consumidor” desloca-se para cima em \\(I\\) unidades — o consumidor paga \\(I\\) a mais por cada unidade, pelo que a oferta aparece distorcida.\n\n\n\n\n\n\n\n\n\nAtenção\n\n\nA oferta de mercado não se contrai — os produtores não alteram a sua disposição a produzir. O que muda é o preço que os consumidores enfrentam para cada nível de oferta."
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#efeito-gráfico-do-imposto",
+    "href": "slides/18_impostos_elasticidade.html#efeito-gráfico-do-imposto",
+    "title": "Microeconomia",
+    "section": "Efeito Gráfico do Imposto",
+    "text": "Efeito Gráfico do Imposto"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#quem-paga-o-imposto",
+    "href": "slides/18_impostos_elasticidade.html#quem-paga-o-imposto",
+    "title": "Microeconomia",
+    "section": "Quem paga o imposto?",
+    "text": "Quem paga o imposto?\nO imposto total \\(I\\) é suportado em partes pelos dois lados do mercado:\n\\[I = \\underbrace{(P_D - P^*)}_{\\text{incidência no consumidor: } I_D} + \\underbrace{(P^* - P_S)}_{\\text{incidência no produtor: } I_S}\\]\n\nNo exemplo (\\(Q_D = 100 - P\\), \\(Q_S = 3P\\), \\(I = 10\\)):\n\\[I_D = 32{,}5 - 25 = 7{,}5 \\qquad I_S = 25 - 22{,}5 = 2{,}5\\]\n\n\nOs consumidores suportam 75% do imposto; os produtores apenas 25%. Porquê esta assimetria?"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#efeito-nos-excedentes-resumo",
+    "href": "slides/18_impostos_elasticidade.html#efeito-nos-excedentes-resumo",
+    "title": "Microeconomia",
+    "section": "Efeito nos Excedentes: Resumo",
+    "text": "Efeito nos Excedentes: Resumo\n\n\n\n\n\n\n\n\n\nAntes do imposto\nApós imposto\n\n\n\n\nExcedente do Consumidor\n\\(EC_0\\)\n\\(EC_0 - I_D \\cdot Q_I - \\frac{1}{2}I_D\\cdot\\Delta Q\\)\n\n\nExcedente do Produtor\n\\(EP_0\\)\n\\(EP_0 - I_S \\cdot Q_I - \\frac{1}{2}I_S\\cdot\\Delta Q\\)\n\n\nReceita Fiscal\n0\n\\(I \\times Q_I\\)\n\n\nPerda Pura de Excedente\n0\n\\(\\frac{1}{2} \\cdot I \\cdot \\Delta Q &gt; 0\\)\n\n\n\n\n\n\n\n\n\n\n\nPerda Pura de Excedente (PPE)\n\n\nO imposto gera sempre uma perda pura de excedente (triângulo de Harberger) porque reduz a quantidade transacionada abaixo do nível socialmente ótimo. A soma do que consumidores e produtores perdem excede a receita fiscal arrecadada pelo Estado. \\[PPE = \\frac{1}{2} \\cdot I \\cdot (Q^* - Q_I)\\]"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#exemplo-numérico-equilíbrio-e-imposto",
+    "href": "slides/18_impostos_elasticidade.html#exemplo-numérico-equilíbrio-e-imposto",
+    "title": "Microeconomia",
+    "section": "Exemplo Numérico: Equilíbrio e Imposto",
+    "text": "Exemplo Numérico: Equilíbrio e Imposto\n\\(Q_D = 100 - P\\), \\(\\quad Q_S = 3P\\), \\(\\quad I = 10\\)\n\nSem imposto: \\(100 - P = 3P \\Rightarrow P^* = 25\\), \\(Q^* = 75\\)\n\n\nCom imposto (\\(P_D = P_S + 10\\), \\(Q_D = Q_S\\)):\n\\[100 - P_D = 3P_S \\quad \\text{e} \\quad P_D = P_S + 10 \\implies P_S = 22{,}5,\\quad P_D = 32{,}5,\\quad Q_I = 67{,}5\\]\n\n\n\\[I_D = 32{,}5 - 25 = 7{,}5 \\qquad I_S = 25 - 22{,}5 = 2{,}5 \\qquad \\text{Receita Fiscal} = 10 \\times 67{,}5 = 675\\]\n\n\n\\[PPE = \\tfrac{1}{2}\\times 10 \\times (75 - 67{,}5) = \\mathbf{37{,}5}\\]"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#exemplo-numérico-excedentes",
+    "href": "slides/18_impostos_elasticidade.html#exemplo-numérico-excedentes",
+    "title": "Microeconomia",
+    "section": "Exemplo Numérico: Excedentes",
+    "text": "Exemplo Numérico: Excedentes\n\n\n\n\nAntes do imposto\nApós imposto\nVariação\n\n\n\n\nExcedente Consumidor\n\\(2812{,}5\\)\n\\(2278{,}1\\)\n\\(-534{,}4\\)\n\n\nExcedente Produtor\n\\(937{,}5\\)\n\\(759{,}4\\)\n\\(-178{,}1\\)\n\n\nReceita Fiscal\n\\(0\\)\n\\(675{,}0\\)\n\\(+675{,}0\\)\n\n\nPerda Pura\n\\(0\\)\n\\(37{,}5\\)\n\n\n\n\n\nVerificação: \\(534{,}4 + 178{,}1 = 712{,}5 = 675 + 37{,}5\\) ✓\nA soma das perdas de EC e EP excede a receita fiscal em exatamente 37,5 — a perda pura de excedente."
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#a-relação-fundamental",
+    "href": "slides/18_impostos_elasticidade.html#a-relação-fundamental",
+    "title": "Microeconomia",
+    "section": "A Relação Fundamental",
+    "text": "A Relação Fundamental\nA forma como o imposto se reparte entre consumidores e produtores depende exclusivamente das elasticidades de cada lado:\n\\[\\boxed{\\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{I_S}{I_D}}\\]\n\nInterpretação:\n\nSe \\(|\\varepsilon_D| &gt; \\varepsilon_S\\): produtores suportam mais (\\(I_S &gt; I_D\\))\nSe \\(|\\varepsilon_D| &lt; \\varepsilon_S\\): consumidores suportam mais (\\(I_D &gt; I_S\\))\nSe \\(|\\varepsilon_D| = \\varepsilon_S\\): imposto repartido igualmente\n\n\n\n\n\n\n\n\n\n\nIntuição económica\n\n\nO lado do mercado menos elástico (menos capaz de ajustar o seu comportamento face ao preço) suporta uma maior parte do imposto."
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#verificação-no-exemplo",
+    "href": "slides/18_impostos_elasticidade.html#verificação-no-exemplo",
+    "title": "Microeconomia",
+    "section": "Verificação no Exemplo",
+    "text": "Verificação no Exemplo\n\\(Q_D = 100 - P\\), \\(\\quad Q_S = 3P\\), avaliadas em \\(P^* = 25\\), \\(Q^* = 75\\):\n\n\\[|\\varepsilon_D| = \\left|-1 \\times \\frac{25}{75}\\right| = \\frac{1}{3} \\qquad \\varepsilon_S = 3 \\times \\frac{25}{75} = 1\\]\n\n\n\\[\\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{1/3}{1} = \\frac{1}{3}\\]\n\n\n\\[\\frac{I_S}{I_D} = \\frac{2{,}5}{7{,}5} = \\frac{1}{3} \\quad \\checkmark\\]\n\n\nA oferta é mais elástica que a procura → os consumidores suportam mais ¾ do imposto."
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#elasticidade-e-incidência-gráfico",
+    "href": "slides/18_impostos_elasticidade.html#elasticidade-e-incidência-gráfico",
+    "title": "Microeconomia",
+    "section": "Elasticidade e Incidência: Gráfico",
+    "text": "Elasticidade e Incidência: Gráfico\n\n\n\nEsquerda: procura inelástica (\\(|\\varepsilon_D|\\) pequeno) → \\(I_D \\gg I_S\\) — consumidores quase não reduzem a procura, acabam por absorver a maior parte\nDireita: oferta inelástica (\\(\\varepsilon_S\\) pequeno) → \\(I_S \\gg I_D\\) — produtores não conseguem fugir ao imposto"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#caso-extremo-sem-perda-pura",
+    "href": "slides/18_impostos_elasticidade.html#caso-extremo-sem-perda-pura",
+    "title": "Microeconomia",
+    "section": "Caso Extremo: Sem Perda Pura",
+    "text": "Caso Extremo: Sem Perda Pura\n\n\nSe \\(|\\varepsilon_D| = 0\\) (ou \\(\\varepsilon_S = 0\\)): a quantidade não muda → sem perda pura — o imposto é puro transfer para o Estado, sem distorção\nEste é o caso teoricamente mais “eficiente” para o fisco, mas raramente verificado na prática"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#elasticidade-e-dimensão-da-ppe",
+    "href": "slides/18_impostos_elasticidade.html#elasticidade-e-dimensão-da-ppe",
+    "title": "Microeconomia",
+    "section": "Elasticidade e Dimensão da PPE",
+    "text": "Elasticidade e Dimensão da PPE\n\n\n\n\n\n\n\nPrincípio da distorção mínima\n\n\nQuanto maiores as elasticidades de ambos os lados do mercado, maior a distorção na quantidade transacionada e, portanto, maior a perda pura de excedente para o mesmo imposto \\(I\\).\n\\[PPE = \\frac{1}{2} \\cdot I \\cdot \\underbrace{(Q^* - Q_I)}_{\\text{distorção}} \\quad \\text{cresce com } |\\varepsilon_D| \\text{ e } \\varepsilon_S\\]\n\n\n\n\n\nImplicações para política fiscal:\n\nTributar bens com procura inelástica minimiza a distorção (ex.: tabaco, combustíveis, álcool)\nTributar bens com procura elástica gera distorções maiores e menor receita"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#exercício-1-escolha-múltipla",
+    "href": "slides/18_impostos_elasticidade.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nNo mercado de um bem, \\(Q_D = 60 - 2P\\) e \\(Q_S = 4P\\). É lançado um imposto específico \\(I = 6\\). Qual o preço que os consumidores pagam (\\(P_D\\)) e o preço que os produtores recebem (\\(P_S\\)) após o imposto?\n\n\\(P_D = 14\\), \\(P_S = 8\\)\n\\(P_D = 12\\), \\(P_S = 6\\)\n\\(P_D = 13\\), \\(P_S = 7\\)\n\\(P_D = 16\\), \\(P_S = 10\\)"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#exercício-1-solução",
+    "href": "slides/18_impostos_elasticidade.html#exercício-1-solução",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Solução",
+    "text": "Exercício 1 — Solução\nSistema de equilíbrio:\n\\[\\begin{cases} 60 - 2P_D = 4P_S \\\\ P_D = P_S + 6 \\end{cases}\\]\n\nSubstituindo \\(P_D = P_S + 6\\):\n\\[60 - 2(P_S + 6) = 4P_S \\implies 60 - 2P_S - 12 = 4P_S \\implies 48 = 6P_S\\]\n\n\n\\[P_S = 8, \\quad P_D = 14, \\quad Q_I = 60 - 2(14) = 32\\]\n\n\nVerificação: \\(Q_S = 4 \\times 8 = 32\\) ✓ \\(\\quad\\) \\(P_D - P_S = 14 - 8 = 6 = I\\) ✓\nResposta: A)"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#exercício-2-escolha-múltipla",
+    "href": "slides/18_impostos_elasticidade.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nContinuando o exercício anterior (\\(Q_D = 60 - 2P\\), \\(Q_S = 4P\\), \\(P^* = 10\\), \\(Q^* = 40\\), após imposto \\(I = 6\\): \\(P_D = 14\\), \\(P_S = 8\\)). Qual a afirmação correta?\n\nOs consumidores e produtores suportam o imposto em partes iguais\nOs consumidores suportam mais, porque \\(|\\varepsilon_D| &lt; \\varepsilon_S\\)\nOs produtores suportam mais, porque \\(|\\varepsilon_D| &lt; \\varepsilon_S\\)\nOs consumidores suportam mais, porque \\(|\\varepsilon_D| &gt; \\varepsilon_S\\)"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#exercício-2-solução",
+    "href": "slides/18_impostos_elasticidade.html#exercício-2-solução",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Solução",
+    "text": "Exercício 2 — Solução\nIncidência:\n\\[I_D = P_D - P^* = 14 - 10 = 4 \\qquad I_S = P^* - P_S = 10 - 8 = 2\\]\n\nElasticidades em \\(P^* = 10\\), \\(Q^* = 40\\):\n\\[|\\varepsilon_D| = \\left|-2 \\times \\frac{10}{40}\\right| = 0{,}5 \\qquad \\varepsilon_S = 4 \\times \\frac{10}{40} = 1\\]\n\n\n\\[\\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{0{,}5}{1} = 0{,}5 = \\frac{I_S}{I_D} = \\frac{2}{4} \\quad \\checkmark\\]\n\n\n\\(|\\varepsilon_D| &lt; \\varepsilon_S\\) → a procura é menos elástica → consumidores suportam mais (\\(I_D = 4 &gt; I_S = 2\\)).\nResposta: B)"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#exercício-3-desenvolvimento",
+    "href": "slides/18_impostos_elasticidade.html#exercício-3-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Desenvolvimento",
+    "text": "Exercício 3 — Desenvolvimento\nO mercado de um bem tem: \\[Q_D = 80 - 2P \\qquad Q_S = 2P\\]\n(a) Determine o equilíbrio sem imposto: \\(P^*\\) e \\(Q^*\\).\n(b) É lançado um imposto específico \\(I = 8\\). Determine \\(P_D\\), \\(P_S\\) e \\(Q_I\\).\n(c) Calcule \\(I_D\\) e \\(I_S\\). Verifique com as elasticidades que a repartição é coerente.\n(d) Calcule a receita fiscal e a perda pura de excedente."
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#exercício-3-resolução-a-e-b",
+    "href": "slides/18_impostos_elasticidade.html#exercício-3-resolução-a-e-b",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Resolução (a) e (b)",
+    "text": "Exercício 3 — Resolução (a) e (b)\nAlínea (a): Sem imposto\n\\[80 - 2P = 2P \\implies 4P = 80 \\implies P^* = 20, \\quad Q^* = 40\\]\n\nAlínea (b): Com imposto \\(I = 8\\)\n\\[\\begin{cases} 80 - 2P_D = 2P_S \\\\ P_D = P_S + 8 \\end{cases}\\]\nSubstituindo: \\(80 - 2(P_S + 8) = 2P_S \\implies 64 = 4P_S\\)\n\\[P_S = 16, \\quad P_D = 24, \\quad Q_I = 80 - 2(24) = 32\\]\nVerificação: \\(Q_S = 2 \\times 16 = 32\\) ✓"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#exercício-3-resolução-c",
+    "href": "slides/18_impostos_elasticidade.html#exercício-3-resolução-c",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Resolução (c)",
+    "text": "Exercício 3 — Resolução (c)\nAlínea (c): Incidência e elasticidades\n\\[I_D = 24 - 20 = 4 \\qquad I_S = 20 - 16 = 4\\]\nO imposto é repartido igualmente: cada lado suporta 4.\n\nElasticidades em \\(P^* = 20\\), \\(Q^* = 40\\):\n\\[|\\varepsilon_D| = \\left|-2 \\times \\frac{20}{40}\\right| = 1 \\qquad \\varepsilon_S = 2 \\times \\frac{20}{40} = 1\\]\n\n\n\\[\\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{1}{1} = 1 = \\frac{I_S}{I_D} = \\frac{4}{4} \\quad \\checkmark\\]\nComo \\(|\\varepsilon_D| = \\varepsilon_S\\), as elasticidades são iguais e o imposto reparte-se simetricamente."
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#exercício-3-resolução-d",
+    "href": "slides/18_impostos_elasticidade.html#exercício-3-resolução-d",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Resolução (d)",
+    "text": "Exercício 3 — Resolução (d)\nAlínea (d): Receita fiscal e PPE\n\\[\\text{Receita Fiscal} = I \\times Q_I = 8 \\times 32 = 256\\]\n\n\\[PPE = \\frac{1}{2} \\times I \\times (Q^* - Q_I) = \\frac{1}{2} \\times 8 \\times (40 - 32) = \\frac{1}{2} \\times 8 \\times 8 = 32\\]\n\n\n\n\n\n\n\n\n\nVerificação via excedentes\n\n\n\\(EC_0 = \\frac{(40-20)\\times 40}{2} = 400\\); \\(\\quad EC_1 = \\frac{(40-24)\\times 32}{2} = 256\\); \\(\\quad \\Delta EC = -144\\)\n\\(EP_0 = \\frac{20 \\times 40}{2} = 400\\); \\(\\quad EP_1 = \\frac{16 \\times 32}{2} = 256\\); \\(\\quad \\Delta EP = -144\\)\n\\(\\Delta EC + \\Delta EP = -288 = -(256 + 32) = -(\\text{Receita} + PPE)\\) ✓"
+  },
+  {
+    "objectID": "slides/18_impostos_elasticidade.html#resumo-da-aula",
+    "href": "slides/18_impostos_elasticidade.html#resumo-da-aula",
+    "title": "Microeconomia",
+    "section": "Resumo da Aula",
+    "text": "Resumo da Aula\nImposto específico cria uma cunha \\(P_D = P_S + I\\), reduzindo a quantidade transacionada e gerando:\n\nTransferência de excedente → Receita Fiscal (Estado)\nPerda pura de excedente: \\(PPE = \\frac{1}{2} \\cdot I \\cdot (Q^* - Q_I)\\)\n\n\nIncidência económica — quem suporta mais o imposto:\n\\[\\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{I_S}{I_D}\\]\nO lado menos elástico suporta proporcionalmente mais.\n\n\nRelação com PPE:\n\nElasticidades altas → grande distorção da quantidade → PPE elevada\nSe \\(|\\varepsilon_D| = 0\\) ou \\(\\varepsilon_S = 0\\) → sem distorção → \\(PPE = 0\\)\nTributar bens inelásticos minimiza a perda de eficiência"
+  },
+  {
+    "objectID": "slides/19_subsidios.html",
+    "href": "slides/19_subsidios.html",
+    "title": "Subsídios",
+    "section": "",
+    "text": "Num mercado competitivo sem intervenção do Estado, o equilíbrio \\(E^*=(Q^*, P^*)\\) maximiza o excedente económico total.\n\n\n\n\n\n\nNote\n\n\n\nExcedente Económico = Excedente do Consumidor + Excedente do Produtor\n\\[XE = XC + XP\\]\nO excedente económico é máximo no equilíbrio competitivo (sem falhas de mercado).\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\n\n\n\\(Q^*=75\\), \\(P^*=25\\)\n\\(XC = \\frac{(100-25)\\times 75}{2} = 2812{,}5\\) u.m.\n\\(XP = \\frac{25 \\times 75}{2} = 937{,}5\\) u.m.\n\\(XE^* = 3750\\) u.m."
+  },
+  {
+    "objectID": "slides/19_subsidios.html#equilíbrio-sem-intervenção",
+    "href": "slides/19_subsidios.html#equilíbrio-sem-intervenção",
+    "title": "Subsídios",
+    "section": "",
+    "text": "Num mercado competitivo sem intervenção do Estado, o equilíbrio \\(E^*=(Q^*, P^*)\\) maximiza o excedente económico total.\n\n\n\n\n\n\nNote\n\n\n\nExcedente Económico = Excedente do Consumidor + Excedente do Produtor\n\\[XE = XC + XP\\]\nO excedente económico é máximo no equilíbrio competitivo (sem falhas de mercado)."
+  },
+  {
+    "objectID": "slides/19_subsidios.html#excedente-no-equilíbrio",
+    "href": "slides/19_subsidios.html#excedente-no-equilíbrio",
+    "title": "Subsídios",
+    "section": "",
+    "text": "Figure 1\n\n\n\n\n\n\n\n\\(Q^*=75\\), \\(P^*=25\\)\n\\(XC = \\frac{(100-25)\\times 75}{2} = 2812{,}5\\) u.m.\n\\(XP = \\frac{25 \\times 75}{2} = 937{,}5\\) u.m.\n\\(XE^* = 3750\\) u.m."
+  },
+  {
+    "objectID": "slides/19_subsidios.html#o-que-é-um-subsídio-específico",
+    "href": "slides/19_subsidios.html#o-que-é-um-subsídio-específico",
+    "title": "Subsídios",
+    "section": "O que é um subsídio específico?",
+    "text": "O que é um subsídio específico?\n\n\n\n\n\n\nNote\n\n\n\nSubsídio Específico (\\(S\\)): O Estado paga aos produtores (ou consumidores) uma quantia fixa por cada unidade transaccionada.\nA condição de equilíbrio com subsídio fica:\n\\[P_D = P_S - S\\]\nonde \\(P_D\\) é o preço pago pelo consumidor e \\(P_S\\) é o preço recebido pelo produtor.\n\n\n\nO subsídio cria um cunha entre o preço do consumidor e o preço do produtor\nAo contrário do imposto (\\(P_D = P_S + I\\)), o subsídio baixa o preço para o consumidor e sobe o preço para o produtor\nSão distorcionários: alteram os incentivos e afastam a quantidade do óptimo competitivo \\(Q^*\\)"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#sistema-de-equilíbrio-com-subsídio-s",
+    "href": "slides/19_subsidios.html#sistema-de-equilíbrio-com-subsídio-s",
+    "title": "Subsídios",
+    "section": "Sistema de equilíbrio com subsídio \\(S\\)",
+    "text": "Sistema de equilíbrio com subsídio \\(S\\)\nO novo equilíbrio resolve o sistema:\n\\[\\begin{cases} Q_D = f_D(P_D) \\\\ Q_S = f_S(P_S) \\\\ Q_D = Q_S \\\\ P_D = P_S - S \\end{cases}\\]\n\n\\(S\\) é uma constante (valor fixo por unidade)\nO Estado entrega o subsídio ao produtor: o consumidor paga \\(P_D &lt; P^*\\) e o produtor recebe \\(P_S &gt; P^*\\)"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#exemplo-q_d-100---p-q_s-3p",
+    "href": "slides/19_subsidios.html#exemplo-q_d-100---p-q_s-3p",
+    "title": "Subsídios",
+    "section": "Exemplo: \\(Q_D = 100 - P\\), \\(Q_S = 3P\\)",
+    "text": "Exemplo: \\(Q_D = 100 - P\\), \\(Q_S = 3P\\)\n\nSem intervenção: \\(P^* = 25\\), \\(Q^* = 75\\)\nCom subsídio \\(S = 10\\) u.m.:\n\\[\\begin{cases} Q_D = 100 - P_D \\\\ Q_S = 3P_S \\\\ Q_D = Q_S \\\\ P_D = P_S - 10 \\end{cases}\\]\nSubstituindo: \\(100 - P_D = 3P_S = 3(P_D + 10)\\)\n\\(100 - P_D = 3P_D + 30 \\Rightarrow 4P_D = 70 \\Rightarrow P_D = 17{,}5\\)\n\\(P_S = 17{,}5 + 10 = 27{,}5\\) e \\(Q_I = 3 \\times 27{,}5 = 82{,}5\\)"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#efeito-gráfico-do-subsídio",
+    "href": "slides/19_subsidios.html#efeito-gráfico-do-subsídio",
+    "title": "Subsídios",
+    "section": "Efeito gráfico do subsídio",
+    "text": "Efeito gráfico do subsídio\n\n\n\n\n\n\n\n\nFigure 2\n\n\n\n\n\nA oferta \\(S'\\) representa a oferta distorcida pelo subsídio, vista pelo consumidor: \\(Q_S = 3(P_D + 10) = 3P_D + 30\\)."
+  },
+  {
+    "objectID": "slides/19_subsidios.html#quem-beneficia-do-subsídio",
+    "href": "slides/19_subsidios.html#quem-beneficia-do-subsídio",
+    "title": "Subsídios",
+    "section": "Quem beneficia do subsídio?",
+    "text": "Quem beneficia do subsídio?\n\n\n\n\n\n\nImportant\n\n\n\nIncidência Económica do Subsídio\nA forma como o benefício do subsídio se reparte entre consumidores e produtores não depende de quem recebe o subsídio (incidência legal), mas das elasticidades da procura e da oferta.\n\n\n. . .\nNo exemplo (\\(S = 10\\) u.m.):\n\n\n\n\nPreço\nVariação face a \\(P^*=25\\)\n\n\n\n\nConsumidor paga\n\\(P_D = 17{,}5\\)\n\\(I_D = 25 - 17{,}5 = 7{,}5\\) u.m.\n\n\nProdutor recebe\n\\(P_S = 27{,}5\\)\n\\(I_S = 27{,}5 - 25 = 2{,}5\\) u.m.\n\n\nTotal\n\n\\(I_D + I_S = 10\\) u.m. \\(= S\\) ✓"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#incidência-e-elasticidades",
+    "href": "slides/19_subsidios.html#incidência-e-elasticidades",
+    "title": "Subsídios",
+    "section": "Incidência e elasticidades",
+    "text": "Incidência e elasticidades\nA repartição do subsídio entre consumidores e produtores obedece à mesma lógica dos impostos:\n\\[\\frac{I_S}{I_D} = \\frac{|\\varepsilon_D|}{\\varepsilon_S}\\]\n. . .\nNo exemplo:\n\n\\(\\varepsilon_D = \\frac{dQ_D}{dP}\\cdot\\frac{P^*}{Q^*} = -1 \\times \\frac{25}{75} = -\\frac{1}{3}\\)\n\\(\\varepsilon_S = \\frac{dQ_S}{dP}\\cdot\\frac{P^*}{Q^*} = 3 \\times \\frac{25}{75} = 1\\)\n\n\\[\\frac{I_S}{I_D} = \\frac{1/3}{1} = \\frac{1}{3} \\qquad \\checkmark \\quad \\left(\\frac{2{,}5}{7{,}5} = \\frac{1}{3}\\right)\\]\n. . .\n\n\n\n\n\n\nNote\n\n\n\nQuanto mais rígida for a procura (ou a oferta) face à oferta (ou procura), maior será a incidência do subsídio sobre esse lado do mercado."
+  },
+  {
+    "objectID": "slides/19_subsidios.html#o-subsídio-e-a-despesa-fiscal",
+    "href": "slides/19_subsidios.html#o-subsídio-e-a-despesa-fiscal",
+    "title": "Subsídios",
+    "section": "O subsídio e a despesa fiscal",
+    "text": "O subsídio e a despesa fiscal\nO Estado financia o subsídio com despesa fiscal:\n\\[\\text{Despesa Fiscal} = S \\times Q_I\\]\n. . .\nNo exemplo: \\(\\text{DF} = 10 \\times 82{,}5 = 825\\) u.m.\n. . .\nEsta despesa reparte-se entre ganhos de excedente e perda pura:\n\\[\\text{Despesa Fiscal} = \\Delta XC + \\Delta XP + \\text{Perda Pura}\\]"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#diagrama-de-excedentes-com-subsídio",
+    "href": "slides/19_subsidios.html#diagrama-de-excedentes-com-subsídio",
+    "title": "Subsídios",
+    "section": "Diagrama de excedentes com subsídio",
+    "text": "Diagrama de excedentes com subsídio\n\n\n\n\n\n\n\n\nFigure 3"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#tabela-resumo-dos-excedentes",
+    "href": "slides/19_subsidios.html#tabela-resumo-dos-excedentes",
+    "title": "Subsídios",
+    "section": "Tabela resumo dos excedentes",
+    "text": "Tabela resumo dos excedentes\n\n\n\n\n\nAntes do subsídio\nApós subsídio\nVariação\n\n\n\n\nExcedente do Consumidor\n\\(XC_0\\)\n\\(XC_1 &gt; XC_0\\)\n\\(+\\Delta XC\\)\n\n\nExcedente do Produtor\n\\(XP_0\\)\n\\(XP_1 &gt; XP_0\\)\n\\(+\\Delta XP\\)\n\n\nDespesa Fiscal (Estado)\n—\n\\(S \\times Q_I\\)\n—\n\n\nPerda Pura\n—\n\\(\\frac{1}{2}S(Q_I-Q^*)\\)\n—\n\n\nQuantidade\n\\(Q^*\\)\n\\(Q_I &gt; Q^*\\)\n—\n\n\nPreço consumidor\n\\(P^*\\)\n\\(P_D &lt; P^*\\)\n\\(-I_D\\)\n\n\nPreço produtor\n\\(P^*\\)\n\\(P_S &gt; P^*\\)\n\\(+I_S\\)\n\n\n\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nO subsídio cria uma perda pura de excedente económico: parte da despesa fiscal não é apropriada nem pelos consumidores nem pelos produtores. O subsídio é distorcionário."
+  },
+  {
+    "objectID": "slides/19_subsidios.html#perda-pura-do-subsídio",
+    "href": "slides/19_subsidios.html#perda-pura-do-subsídio",
+    "title": "Subsídios",
+    "section": "Perda pura do subsídio",
+    "text": "Perda pura do subsídio\nA perda pura corresponde ao triângulo entre as curvas de oferta e procura, para as unidades entre \\(Q^*\\) e \\(Q_I\\):\n\\[\\text{PP} = \\frac{1}{2} \\times S \\times (Q_I - Q^*)\\]\n. . .\nNo exemplo:\n\\[\\text{PP} = \\frac{1}{2} \\times 10 \\times (82{,}5 - 75) = \\frac{1}{2} \\times 10 \\times 7{,}5 = 37{,}5 \\text{ u.m.}\\]\n. . .\nVerificação: \\[\\text{DF} = 825; \\quad \\Delta XC = 590{,}6; \\quad \\Delta XP = 196{,}9\\] \\[825 - 590{,}6 - 196{,}9 = 37{,}5 \\text{ u.m.} \\checkmark\\]"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#porquê-é-que-existe-perda-pura",
+    "href": "slides/19_subsidios.html#porquê-é-que-existe-perda-pura",
+    "title": "Subsídios",
+    "section": "Porquê é que existe perda pura?",
+    "text": "Porquê é que existe perda pura?\nO subsídio leva à transacção de unidades entre \\(Q^*\\) e \\(Q_I\\) onde:\n\\[\\text{Valorização do Consumidor} &lt; \\text{Custo de Produção}\\]\n. . .\n\nPara essas unidades extras, o valor que o consumidor atribui ao bem (dado pela curva \\(D\\)) é menor do que o custo que o produtor suporta para as produzir (dado pela curva \\(S\\))\nEstas trocas só acontecem porque o Estado subsidia a diferença\nO custo social excede o benefício social: é uma perda líquida de bem-estar"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#exercício-1-escolha-múltipla",
+    "href": "slides/19_subsidios.html#exercício-1-escolha-múltipla",
+    "title": "Subsídios",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nNum mercado competitivo, a procura e a oferta são descritas por \\(Q_D = 200 - 2P\\) e \\(Q_S = -20 + 3P\\). O Estado decide introduzir um subsídio específico de 15 u.m. por unidade transaccionada.\nQual o novo equilíbrio após o subsídio?\n\n\n\\(P_D = 38\\); \\(P_S = 53\\); \\(Q_I = 124\\)\n\\(P_D = 35\\); \\(P_S = 50\\); \\(Q_I = 130\\)\n\\(P_D = 32\\); \\(P_S = 47\\); \\(Q_I = 136\\)\n\\(P_D = 37\\); \\(P_S = 52\\); \\(Q_I = 126\\)"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#exercício-1-solução",
+    "href": "slides/19_subsidios.html#exercício-1-solução",
+    "title": "Subsídios",
+    "section": "Exercício 1 — Solução",
+    "text": "Exercício 1 — Solução\n\n\n\n\n\n\nTip\n\n\n\nResposta correta: (B)\n\n\nSem subsídio: \\(200-2P = -20+3P \\Rightarrow 5P = 220 \\Rightarrow P^*=44\\), \\(Q^*=112\\)\nCom \\(S=15\\): \\(\\begin{cases} Q_D = 200 - 2P_D \\\\ Q_S = -20 + 3P_S \\\\ P_D = P_S - 15 \\end{cases}\\)\nSubstituindo \\(P_D = P_S - 15\\):\n\\(200 - 2(P_S-15) = -20 + 3P_S \\Rightarrow 200 - 2P_S + 30 = -20 + 3P_S \\Rightarrow 5P_S = 250 \\Rightarrow P_S = 50\\)\n\\(P_D = 50 - 15 = 35\\); \\(Q_I = 200 - 2(35) = 130\\)\nIncidência: \\(I_D = 44 - 35 = 9\\) u.m.; \\(I_S = 50 - 44 = 6\\) u.m.; DF \\(= 15 \\times 130 = 1950\\) u.m."
+  },
+  {
+    "objectID": "slides/19_subsidios.html#exercício-2-escolha-múltipla",
+    "href": "slides/19_subsidios.html#exercício-2-escolha-múltipla",
+    "title": "Subsídios",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nNo mesmo mercado (\\(Q_D = 200 - 2P\\); \\(Q_S = -20 + 3P\\); \\(P^*=44\\); \\(Q^*=112\\)), com o subsídio de 15 u.m., qual a perda pura de excedente económico?\n\n\n90 u.m.\n270 u.m.\n135 u.m.\n54 u.m."
+  },
+  {
+    "objectID": "slides/19_subsidios.html#exercício-2-solução",
+    "href": "slides/19_subsidios.html#exercício-2-solução",
+    "title": "Subsídios",
+    "section": "Exercício 2 — Solução",
+    "text": "Exercício 2 — Solução\n\n\n\n\n\n\nTip\n\n\n\nResposta correta: (C)\n\n\nA perda pura é o triângulo com base \\(S = 15\\) e altura \\((Q_I - Q^*) = 130 - 112 = 18\\):\n\\[\\text{PP} = \\frac{1}{2} \\times 15 \\times 18 = 135 \\text{ u.m.}\\]\nVerificação: - \\(\\text{DF} = 15 \\times 130 = 1950\\) u.m. - \\(\\Delta XC = \\frac{65 \\times 130}{2} - \\frac{56 \\times 112}{2} = 4225 - 3136 = 1089\\) u.m. - \\(\\Delta XP = 1950 - 1089 - 135 = 726\\) u.m. - \\(\\text{DF} - \\Delta XC - \\Delta XP = 1950 - 1089 - 726 = 135\\) u.m. ✓"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#exercício-3-desenvolvimento",
+    "href": "slides/19_subsidios.html#exercício-3-desenvolvimento",
+    "title": "Subsídios",
+    "section": "Exercício 3 — Desenvolvimento",
+    "text": "Exercício 3 — Desenvolvimento\nA procura e a oferta de um mercado são descritas por:\n\\[Q_D = 100 - P \\qquad Q_S = 2P - 20\\]\nO Estado decide introduzir um subsídio específico de 9 u.m. por unidade transaccionada.\n(a) Determine o equilíbrio de mercado sem intervenção.\n(b) Determine o novo equilíbrio após o subsídio. Quais os preços \\(P_D\\) e \\(P_S\\)?\n(c) Calcule a incidência económica do subsídio sobre consumidores e produtores, e relacione com as elasticidades.\n(d) Calcule a despesa fiscal do Estado e a perda pura de excedente económico."
+  },
+  {
+    "objectID": "slides/19_subsidios.html#exercício-3-solução-a-e-b",
+    "href": "slides/19_subsidios.html#exercício-3-solução-a-e-b",
+    "title": "Subsídios",
+    "section": "Exercício 3 — Solução (a) e (b)",
+    "text": "Exercício 3 — Solução (a) e (b)\n\n\n\n\n\n\nTip(a) Equilíbrio sem intervenção\n\n\n\n\\(100 - P = 2P - 20 \\Rightarrow 3P = 120 \\Rightarrow P^* = 40\\); \\(Q^* = 60\\)\n\n\n. . .\n\n\n\n\n\n\nTip(b) Com subsídio \\(S = 9\\)\n\n\n\nSistema: \\(Q_D = Q_S\\) e \\(P_D = P_S - 9\\)\n\\(100 - P_D = 2P_S - 20 = 2(P_D + 9) - 20\\)\n\\(100 - P_D = 2P_D + 18 - 20 \\Rightarrow 102 = 3P_D \\Rightarrow P_D = 34\\)\n\\(P_S = 34 + 9 = 43\\) ; \\(Q_I = 100 - 34 = 66\\)"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#exercício-3-solução-c",
+    "href": "slides/19_subsidios.html#exercício-3-solução-c",
+    "title": "Subsídios",
+    "section": "Exercício 3 — Solução (c)",
+    "text": "Exercício 3 — Solução (c)\n\n\n\n\n\n\nTip(c) Incidência económica\n\n\n\n\n\\(I_D = P^* - P_D = 40 - 34 = 6\\) u.m. (ganho do consumidor por unidade)\n\\(I_S = P_S - P^* = 43 - 40 = 3\\) u.m. (ganho do produtor por unidade)\n\\(I_D + I_S = 9\\) u.m. \\(= S\\) ✓\n\nRelação com elasticidades (calculadas em \\(P^*=40\\), \\(Q^*=60\\)):\n\\[\\varepsilon_D = \\frac{dQ_D}{dP}\\cdot\\frac{P^*}{Q^*} = -1 \\times \\frac{40}{60} = -\\frac{2}{3}\\]\n\\[\\varepsilon_S = \\frac{dQ_S}{dP}\\cdot\\frac{P^*}{Q^*} = 2 \\times \\frac{40}{60} = \\frac{4}{3}\\]\n\\[\\frac{I_S}{I_D} = \\frac{3}{6} = \\frac{1}{2} = \\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{2/3}{4/3} = \\frac{1}{2} \\checkmark\\]"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#exercício-3-solução-d",
+    "href": "slides/19_subsidios.html#exercício-3-solução-d",
+    "title": "Subsídios",
+    "section": "Exercício 3 — Solução (d)",
+    "text": "Exercício 3 — Solução (d)\n\n\n\n\n\n\nTip(d) Despesa fiscal e perda pura\n\n\n\nDespesa Fiscal: \\[\\text{DF} = S \\times Q_I = 9 \\times 66 = 594 \\text{ u.m.}\\]\nPerda Pura: \\[\\text{PP} = \\frac{1}{2} \\times S \\times (Q_I - Q^*) = \\frac{1}{2} \\times 9 \\times (66 - 60) = \\frac{1}{2} \\times 9 \\times 6 = 27 \\text{ u.m.}\\]\nVerificação via excedentes:\n\n\n\n\n\n\n\n\n\n\nAntes\nDepois\nVariação\n\n\n\n\n\\(XC = \\frac{(100-P_D)\\cdot Q}{2}\\)\n1800\n2178\n\\(+378\\)\n\n\n\\(XP = \\frac{(P_S - 10)\\cdot Q}{2}\\)\n900\n1089\n\\(+189\\)\n\n\n\\(\\text{DF}\\)\n—\n594\n—\n\n\nPP \\(= \\text{DF} - \\Delta XC - \\Delta XP\\)\n—\n—\n\\(594 - 378 - 189 = 27\\) ✓"
+  },
+  {
+    "objectID": "slides/19_subsidios.html#síntese",
+    "href": "slides/19_subsidios.html#síntese",
+    "title": "Subsídios",
+    "section": "Síntese",
+    "text": "Síntese\n\n\n\n\n\n\n\n\n\nSubsídio\n\n\n\n\nObjectivo\nIncentivar a produção/consumo de um bem\n\n\nEfeito no preço do consumidor\n\\(P_D &lt; P^*\\)\n\n\nEfeito no preço do produtor\n\\(P_S &gt; P^*\\)\n\n\nEfeito na quantidade\n\\(Q_I &gt; Q^*\\)\n\n\nCusto para o Estado\n\\(\\text{DF} = S \\times Q_I\\)\n\n\nDistribuição do benefício\nDepende de \\(\\varepsilon_D\\) e \\(\\varepsilon_S\\)\n\n\nPerda Pura\n\\(\\text{PP} = \\frac{1}{2} S (Q_I - Q^*)\\)\n\n\nÉ distorcionário?\nSim\n\n\n\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nUm subsídio, mesmo bem intencionado, implica sempre uma perda pura de excedente económico — salvo no caso-limite de procura ou oferta perfeitamente rígidas (\\(|\\varepsilon| = 0\\)), onde \\(Q_I = Q^*\\) e PP \\(= 0\\)."
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html",
+    "href": "slides/25_impostos_elasticidade-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "NoteImposto Específico (lump-sum)\n\n\n\nUm imposto indireto específico é um montante fixo \\(I\\) cobrado por cada unidade produzida e vendida, independentemente do preço. Exemplos: ISV (Imposto sobre Veículos), ISP (Imposto sobre os Combustíveis).\n\n\n. . .\nO lançamento do imposto cria uma cunha entre o preço pago pelo consumidor (\\(P_D\\)) e o preço recebido pelo produtor (\\(P_S\\)):\n\\[\\boxed{P_D = P_S + I}\\]\n. . .\n\n\n\n\n\n\nTipIncidência legal vs. económica\n\n\n\nNormalmente é o produtor quem entrega o imposto ao Estado (incidência legal). Mas a incidência económica — quem efetivamente suporta o custo — é partilhada entre consumidores e produtores, dependendo das elasticidades.\n\n\n\n\n\nO sistema de equilíbrio após lançamento do imposto \\(I\\):\n\\[\\begin{cases} Q_D = f_D(P_D) \\\\ Q_S = f_S(P_S) \\\\ Q_D = Q_S \\\\ P_D = P_S + I \\end{cases}\\]\n. . .\nGraficamente: a oferta “vista pelo consumidor” desloca-se para cima em \\(I\\) unidades — o consumidor paga \\(I\\) a mais por cada unidade, pelo que a oferta aparece distorcida.\n. . .\n\n\n\n\n\n\nWarningAtenção\n\n\n\nA oferta de mercado não se contrai — os produtores não alteram a sua disposição a produzir. O que muda é o preço que os consumidores enfrentam para cada nível de oferta."
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#o-que-é-um-imposto-indireto-específico",
+    "href": "slides/25_impostos_elasticidade-document.html#o-que-é-um-imposto-indireto-específico",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "NoteImposto Específico (lump-sum)\n\n\n\nUm imposto indireto específico é um montante fixo \\(I\\) cobrado por cada unidade produzida e vendida, independentemente do preço. Exemplos: ISV (Imposto sobre Veículos), ISP (Imposto sobre os Combustíveis).\n\n\n. . .\nO lançamento do imposto cria uma cunha entre o preço pago pelo consumidor (\\(P_D\\)) e o preço recebido pelo produtor (\\(P_S\\)):\n\\[\\boxed{P_D = P_S + I}\\]\n. . .\n\n\n\n\n\n\nTipIncidência legal vs. económica\n\n\n\nNormalmente é o produtor quem entrega o imposto ao Estado (incidência legal). Mas a incidência económica — quem efetivamente suporta o custo — é partilhada entre consumidores e produtores, dependendo das elasticidades."
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#equilíbrio-com-imposto",
+    "href": "slides/25_impostos_elasticidade-document.html#equilíbrio-com-imposto",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "O sistema de equilíbrio após lançamento do imposto \\(I\\):\n\\[\\begin{cases} Q_D = f_D(P_D) \\\\ Q_S = f_S(P_S) \\\\ Q_D = Q_S \\\\ P_D = P_S + I \\end{cases}\\]\n. . .\nGraficamente: a oferta “vista pelo consumidor” desloca-se para cima em \\(I\\) unidades — o consumidor paga \\(I\\) a mais por cada unidade, pelo que a oferta aparece distorcida.\n. . .\n\n\n\n\n\n\nWarningAtenção\n\n\n\nA oferta de mercado não se contrai — os produtores não alteram a sua disposição a produzir. O que muda é o preço que os consumidores enfrentam para cada nível de oferta."
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#quem-paga-o-imposto",
+    "href": "slides/25_impostos_elasticidade-document.html#quem-paga-o-imposto",
+    "title": "Microeconomia",
+    "section": "2.1 Quem paga o imposto?",
+    "text": "2.1 Quem paga o imposto?\nO imposto total \\(I\\) é suportado em partes pelos dois lados do mercado:\n\\[I = \\underbrace{(P_D - P^*)}_{\\text{incidência no consumidor: } I_D} + \\underbrace{(P^* - P_S)}_{\\text{incidência no produtor: } I_S}\\]\n. . .\nNo exemplo (\\(Q_D = 100 - P\\), \\(Q_S = 3P\\), \\(I = 10\\)):\n\\[I_D = 32{,}5 - 25 = 7{,}5 \\qquad I_S = 25 - 22{,}5 = 2{,}5\\]\n. . .\nOs consumidores suportam 75% do imposto; os produtores apenas 25%. Porquê esta assimetria?"
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#efeito-nos-excedentes-resumo",
+    "href": "slides/25_impostos_elasticidade-document.html#efeito-nos-excedentes-resumo",
+    "title": "Microeconomia",
+    "section": "2.2 Efeito nos Excedentes: Resumo",
+    "text": "2.2 Efeito nos Excedentes: Resumo\n\n\n\n\n\n\n\n\n\nAntes do imposto\nApós imposto\n\n\n\n\nExcedente do Consumidor\n\\(EC_0\\)\n\\(EC_0 - I_D \\cdot Q_I - \\frac{1}{2}I_D\\cdot\\Delta Q\\)\n\n\nExcedente do Produtor\n\\(EP_0\\)\n\\(EP_0 - I_S \\cdot Q_I - \\frac{1}{2}I_S\\cdot\\Delta Q\\)\n\n\nReceita Fiscal\n0\n\\(I \\times Q_I\\)\n\n\nPerda Pura de Excedente\n0\n\\(\\frac{1}{2} \\cdot I \\cdot \\Delta Q &gt; 0\\)\n\n\n\n. . .\n\n\n\n\n\n\nImportantPerda Pura de Excedente (PPE)\n\n\n\nO imposto gera sempre uma perda pura de excedente (triângulo de Harberger) porque reduz a quantidade transacionada abaixo do nível socialmente ótimo. A soma do que consumidores e produtores perdem excede a receita fiscal arrecadada pelo Estado. \\[PPE = \\frac{1}{2} \\cdot I \\cdot (Q^* - Q_I)\\]"
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#exemplo-numérico-equilíbrio-e-imposto",
+    "href": "slides/25_impostos_elasticidade-document.html#exemplo-numérico-equilíbrio-e-imposto",
+    "title": "Microeconomia",
+    "section": "2.3 Exemplo Numérico: Equilíbrio e Imposto",
+    "text": "2.3 Exemplo Numérico: Equilíbrio e Imposto\n\\(Q_D = 100 - P\\), \\(\\quad Q_S = 3P\\), \\(\\quad I = 10\\)\n. . .\nSem imposto: \\(100 - P = 3P \\Rightarrow P^* = 25\\), \\(Q^* = 75\\)\n. . .\nCom imposto (\\(P_D = P_S + 10\\), \\(Q_D = Q_S\\)):\n\\[100 - P_D = 3P_S \\quad \\text{e} \\quad P_D = P_S + 10 \\implies P_S = 22{,}5,\\quad P_D = 32{,}5,\\quad Q_I = 67{,}5\\]\n. . .\n\\[I_D = 32{,}5 - 25 = 7{,}5 \\qquad I_S = 25 - 22{,}5 = 2{,}5 \\qquad \\text{Receita Fiscal} = 10 \\times 67{,}5 = 675\\]\n. . .\n\\[PPE = \\tfrac{1}{2}\\times 10 \\times (75 - 67{,}5) = \\mathbf{37{,}5}\\]"
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#exemplo-numérico-excedentes",
+    "href": "slides/25_impostos_elasticidade-document.html#exemplo-numérico-excedentes",
+    "title": "Microeconomia",
+    "section": "2.4 Exemplo Numérico: Excedentes",
+    "text": "2.4 Exemplo Numérico: Excedentes\n\n\n\n\nAntes do imposto\nApós imposto\nVariação\n\n\n\n\nExcedente Consumidor\n\\(2812{,}5\\)\n\\(2278{,}1\\)\n\\(-534{,}4\\)\n\n\nExcedente Produtor\n\\(937{,}5\\)\n\\(759{,}4\\)\n\\(-178{,}1\\)\n\n\nReceita Fiscal\n\\(0\\)\n\\(675{,}0\\)\n\\(+675{,}0\\)\n\n\nPerda Pura\n\\(0\\)\n\\(37{,}5\\)\n\n\n\n\n. . .\nVerificação: \\(534{,}4 + 178{,}1 = 712{,}5 = 675 + 37{,}5\\) ✓\nA soma das perdas de EC e EP excede a receita fiscal em exatamente 37,5 — a perda pura de excedente."
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#a-relação-fundamental",
+    "href": "slides/25_impostos_elasticidade-document.html#a-relação-fundamental",
+    "title": "Microeconomia",
+    "section": "3.1 A Relação Fundamental",
+    "text": "3.1 A Relação Fundamental\nA forma como o imposto se reparte entre consumidores e produtores depende exclusivamente das elasticidades de cada lado:\n\\[\\boxed{\\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{I_S}{I_D}}\\]\n. . .\nInterpretação:\n\nSe \\(|\\varepsilon_D| &gt; \\varepsilon_S\\): produtores suportam mais (\\(I_S &gt; I_D\\))\nSe \\(|\\varepsilon_D| &lt; \\varepsilon_S\\): consumidores suportam mais (\\(I_D &gt; I_S\\))\nSe \\(|\\varepsilon_D| = \\varepsilon_S\\): imposto repartido igualmente\n\n. . .\n\n\n\n\n\n\nTipIntuição económica\n\n\n\nO lado do mercado menos elástico (menos capaz de ajustar o seu comportamento face ao preço) suporta uma maior parte do imposto."
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#verificação-no-exemplo",
+    "href": "slides/25_impostos_elasticidade-document.html#verificação-no-exemplo",
+    "title": "Microeconomia",
+    "section": "3.2 Verificação no Exemplo",
+    "text": "3.2 Verificação no Exemplo\n\\(Q_D = 100 - P\\), \\(\\quad Q_S = 3P\\), avaliadas em \\(P^* = 25\\), \\(Q^* = 75\\):\n. . .\n\\[|\\varepsilon_D| = \\left|-1 \\times \\frac{25}{75}\\right| = \\frac{1}{3} \\qquad \\varepsilon_S = 3 \\times \\frac{25}{75} = 1\\]\n. . .\n\\[\\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{1/3}{1} = \\frac{1}{3}\\]\n. . .\n\\[\\frac{I_S}{I_D} = \\frac{2{,}5}{7{,}5} = \\frac{1}{3} \\quad \\checkmark\\]\n. . .\nA oferta é mais elástica que a procura → os consumidores suportam mais ¾ do imposto."
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#elasticidade-e-incidência-gráfico",
+    "href": "slides/25_impostos_elasticidade-document.html#elasticidade-e-incidência-gráfico",
+    "title": "Microeconomia",
+    "section": "3.3 Elasticidade e Incidência: Gráfico",
+    "text": "3.3 Elasticidade e Incidência: Gráfico\n\n\n\n\n\n\n\n\n\n. . .\n\n\nEsquerda: procura inelástica (\\(|\\varepsilon_D|\\) pequeno) → \\(I_D \\gg I_S\\) — consumidores quase não reduzem a procura, acabam por absorver a maior parte\nDireita: oferta inelástica (\\(\\varepsilon_S\\) pequeno) → \\(I_S \\gg I_D\\) — produtores não conseguem fugir ao imposto"
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#caso-extremo-sem-perda-pura",
+    "href": "slides/25_impostos_elasticidade-document.html#caso-extremo-sem-perda-pura",
+    "title": "Microeconomia",
+    "section": "3.4 Caso Extremo: Sem Perda Pura",
+    "text": "3.4 Caso Extremo: Sem Perda Pura\n\n\n\n\n\n\n\n\n\n\n\nSe \\(|\\varepsilon_D| = 0\\) (ou \\(\\varepsilon_S = 0\\)): a quantidade não muda → sem perda pura — o imposto é puro transfer para o Estado, sem distorção\nEste é o caso teoricamente mais “eficiente” para o fisco, mas raramente verificado na prática"
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#elasticidade-e-dimensão-da-ppe",
+    "href": "slides/25_impostos_elasticidade-document.html#elasticidade-e-dimensão-da-ppe",
+    "title": "Microeconomia",
+    "section": "3.5 Elasticidade e Dimensão da PPE",
+    "text": "3.5 Elasticidade e Dimensão da PPE\n\n\n\n\n\n\nImportantPrincípio da distorção mínima\n\n\n\nQuanto maiores as elasticidades de ambos os lados do mercado, maior a distorção na quantidade transacionada e, portanto, maior a perda pura de excedente para o mesmo imposto \\(I\\).\n\\[PPE = \\frac{1}{2} \\cdot I \\cdot \\underbrace{(Q^* - Q_I)}_{\\text{distorção}} \\quad \\text{cresce com } |\\varepsilon_D| \\text{ e } \\varepsilon_S\\]\n\n\n. . .\nImplicações para política fiscal:\n\nTributar bens com procura inelástica minimiza a distorção (ex.: tabaco, combustíveis, álcool)\nTributar bens com procura elástica gera distorções maiores e menor receita"
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#exercício-1-escolha-múltipla",
+    "href": "slides/25_impostos_elasticidade-document.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "4.1 Exercício 1 — Escolha Múltipla",
+    "text": "4.1 Exercício 1 — Escolha Múltipla\nNo mercado de um bem, \\(Q_D = 60 - 2P\\) e \\(Q_S = 4P\\). É lançado um imposto específico \\(I = 6\\). Qual o preço que os consumidores pagam (\\(P_D\\)) e o preço que os produtores recebem (\\(P_S\\)) após o imposto?\n\n\n\\(P_D = 14\\), \\(P_S = 8\\)\n\\(P_D = 12\\), \\(P_S = 6\\)\n\\(P_D = 13\\), \\(P_S = 7\\)\n\\(P_D = 16\\), \\(P_S = 10\\)"
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#exercício-1-solução",
+    "href": "slides/25_impostos_elasticidade-document.html#exercício-1-solução",
+    "title": "Microeconomia",
+    "section": "4.2 Exercício 1 — Solução",
+    "text": "4.2 Exercício 1 — Solução\nSistema de equilíbrio:\n\\[\\begin{cases} 60 - 2P_D = 4P_S \\\\ P_D = P_S + 6 \\end{cases}\\]\n. . .\nSubstituindo \\(P_D = P_S + 6\\):\n\\[60 - 2(P_S + 6) = 4P_S \\implies 60 - 2P_S - 12 = 4P_S \\implies 48 = 6P_S\\]\n. . .\n\\[P_S = 8, \\quad P_D = 14, \\quad Q_I = 60 - 2(14) = 32\\]\n. . .\nVerificação: \\(Q_S = 4 \\times 8 = 32\\) ✓ \\(\\quad\\) \\(P_D - P_S = 14 - 8 = 6 = I\\) ✓\nResposta: A)"
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#exercício-2-escolha-múltipla",
+    "href": "slides/25_impostos_elasticidade-document.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "4.3 Exercício 2 — Escolha Múltipla",
+    "text": "4.3 Exercício 2 — Escolha Múltipla\nContinuando o exercício anterior (\\(Q_D = 60 - 2P\\), \\(Q_S = 4P\\), \\(P^* = 10\\), \\(Q^* = 40\\), após imposto \\(I = 6\\): \\(P_D = 14\\), \\(P_S = 8\\)). Qual a afirmação correta?\n\n\nOs consumidores e produtores suportam o imposto em partes iguais\nOs consumidores suportam mais, porque \\(|\\varepsilon_D| &lt; \\varepsilon_S\\)\nOs produtores suportam mais, porque \\(|\\varepsilon_D| &lt; \\varepsilon_S\\)\nOs consumidores suportam mais, porque \\(|\\varepsilon_D| &gt; \\varepsilon_S\\)"
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#exercício-2-solução",
+    "href": "slides/25_impostos_elasticidade-document.html#exercício-2-solução",
+    "title": "Microeconomia",
+    "section": "4.4 Exercício 2 — Solução",
+    "text": "4.4 Exercício 2 — Solução\nIncidência:\n\\[I_D = P_D - P^* = 14 - 10 = 4 \\qquad I_S = P^* - P_S = 10 - 8 = 2\\]\n. . .\nElasticidades em \\(P^* = 10\\), \\(Q^* = 40\\):\n\\[|\\varepsilon_D| = \\left|-2 \\times \\frac{10}{40}\\right| = 0{,}5 \\qquad \\varepsilon_S = 4 \\times \\frac{10}{40} = 1\\]\n. . .\n\\[\\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{0{,}5}{1} = 0{,}5 = \\frac{I_S}{I_D} = \\frac{2}{4} \\quad \\checkmark\\]\n. . .\n\\(|\\varepsilon_D| &lt; \\varepsilon_S\\) → a procura é menos elástica → consumidores suportam mais (\\(I_D = 4 &gt; I_S = 2\\)).\nResposta: B)"
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#exercício-3-desenvolvimento",
+    "href": "slides/25_impostos_elasticidade-document.html#exercício-3-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "4.5 Exercício 3 — Desenvolvimento",
+    "text": "4.5 Exercício 3 — Desenvolvimento\nO mercado de um bem tem: \\[Q_D = 80 - 2P \\qquad Q_S = 2P\\]\n(a) Determine o equilíbrio sem imposto: \\(P^*\\) e \\(Q^*\\).\n(b) É lançado um imposto específico \\(I = 8\\). Determine \\(P_D\\), \\(P_S\\) e \\(Q_I\\).\n(c) Calcule \\(I_D\\) e \\(I_S\\). Verifique com as elasticidades que a repartição é coerente.\n(d) Calcule a receita fiscal e a perda pura de excedente."
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#exercício-3-resolução-a-e-b",
+    "href": "slides/25_impostos_elasticidade-document.html#exercício-3-resolução-a-e-b",
+    "title": "Microeconomia",
+    "section": "4.6 Exercício 3 — Resolução (a) e (b)",
+    "text": "4.6 Exercício 3 — Resolução (a) e (b)\nAlínea (a): Sem imposto\n\\[80 - 2P = 2P \\implies 4P = 80 \\implies P^* = 20, \\quad Q^* = 40\\]\n. . .\nAlínea (b): Com imposto \\(I = 8\\)\n\\[\\begin{cases} 80 - 2P_D = 2P_S \\\\ P_D = P_S + 8 \\end{cases}\\]\nSubstituindo: \\(80 - 2(P_S + 8) = 2P_S \\implies 64 = 4P_S\\)\n\\[P_S = 16, \\quad P_D = 24, \\quad Q_I = 80 - 2(24) = 32\\]\nVerificação: \\(Q_S = 2 \\times 16 = 32\\) ✓"
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#exercício-3-resolução-c",
+    "href": "slides/25_impostos_elasticidade-document.html#exercício-3-resolução-c",
+    "title": "Microeconomia",
+    "section": "4.7 Exercício 3 — Resolução (c)",
+    "text": "4.7 Exercício 3 — Resolução (c)\nAlínea (c): Incidência e elasticidades\n\\[I_D = 24 - 20 = 4 \\qquad I_S = 20 - 16 = 4\\]\nO imposto é repartido igualmente: cada lado suporta 4.\n. . .\nElasticidades em \\(P^* = 20\\), \\(Q^* = 40\\):\n\\[|\\varepsilon_D| = \\left|-2 \\times \\frac{20}{40}\\right| = 1 \\qquad \\varepsilon_S = 2 \\times \\frac{20}{40} = 1\\]\n. . .\n\\[\\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{1}{1} = 1 = \\frac{I_S}{I_D} = \\frac{4}{4} \\quad \\checkmark\\]\nComo \\(|\\varepsilon_D| = \\varepsilon_S\\), as elasticidades são iguais e o imposto reparte-se simetricamente."
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#exercício-3-resolução-d",
+    "href": "slides/25_impostos_elasticidade-document.html#exercício-3-resolução-d",
+    "title": "Microeconomia",
+    "section": "4.8 Exercício 3 — Resolução (d)",
+    "text": "4.8 Exercício 3 — Resolução (d)\nAlínea (d): Receita fiscal e PPE\n\\[\\text{Receita Fiscal} = I \\times Q_I = 8 \\times 32 = 256\\]\n. . .\n\\[PPE = \\frac{1}{2} \\times I \\times (Q^* - Q_I) = \\frac{1}{2} \\times 8 \\times (40 - 32) = \\frac{1}{2} \\times 8 \\times 8 = 32\\]\n. . .\n\n\n\n\n\n\nTipVerificação via excedentes\n\n\n\n\\(EC_0 = \\frac{(40-20)\\times 40}{2} = 400\\); \\(\\quad EC_1 = \\frac{(40-24)\\times 32}{2} = 256\\); \\(\\quad \\Delta EC = -144\\)\n\\(EP_0 = \\frac{20 \\times 40}{2} = 400\\); \\(\\quad EP_1 = \\frac{16 \\times 32}{2} = 256\\); \\(\\quad \\Delta EP = -144\\)\n\\(\\Delta EC + \\Delta EP = -288 = -(256 + 32) = -(\\text{Receita} + PPE)\\) ✓"
+  },
+  {
+    "objectID": "slides/25_impostos_elasticidade-document.html#resumo-da-aula",
+    "href": "slides/25_impostos_elasticidade-document.html#resumo-da-aula",
+    "title": "Microeconomia",
+    "section": "5.1 Resumo da Aula",
+    "text": "5.1 Resumo da Aula\n\nImposto específico cria uma cunha \\(P_D = P_S + I\\), reduzindo a quantidade transacionada e gerando:\n\nTransferência de excedente → Receita Fiscal (Estado)\nPerda pura de excedente: \\(PPE = \\frac{1}{2} \\cdot I \\cdot (Q^* - Q_I)\\)\n\n\n. . .\n\nIncidência económica — quem suporta mais o imposto:\n\\[\\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{I_S}{I_D}\\]\nO lado menos elástico suporta proporcionalmente mais.\n\n. . .\n\nRelação com PPE:\n\nElasticidades altas → grande distorção da quantidade → PPE elevada\nSe \\(|\\varepsilon_D| = 0\\) ou \\(\\varepsilon_S = 0\\) → sem distorção → \\(PPE = 0\\)\nTributar bens inelásticos minimiza a perda de eficiência"
   }
 ]
