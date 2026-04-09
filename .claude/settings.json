@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(quarto render:*)"
+      "Bash(quarto render:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)"
     ]
   }
 }
