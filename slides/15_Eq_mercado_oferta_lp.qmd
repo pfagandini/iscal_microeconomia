@@ -449,7 +449,7 @@ p_market <- ggplot() +
 p_firm + p_market
 ```
 
-## Oferta de Longo Prazo do Mercado
+## Oferta de Longo Prazo do Mercado {.smaller}
 
 ::: {.callout-note title="Curva de Oferta de LP em Concorrência Perfeita"}
 Com livre entrada e saída, a curva de oferta de longo prazo do mercado é **horizontal** ao nível de $P^* = CM_{LP,\min}$.
@@ -482,7 +482,7 @@ Isto é uma propriedade notável da concorrência perfeita: no longo prazo, os c
 
 # Ajustamento de Longo Prazo: Choque na Procura
 
-## Passo a Passo: Expansão da Procura
+## Passo a Passo: Expansão da Procura {.smaller}
 
 ::: {.nonincremental}
 Suponha que o mercado está inicialmente em equilíbrio de LP. Ocorre um **aumento permanente da procura**.
@@ -510,7 +510,7 @@ O processo termina quando $P = P^*$ novamente (se a tecnologia não se alterar e
 
 ```{r adjustment, fig.width=8, fig.height=4.2}
 q_seq <- seq(0.3, 5, length.out = 200)
-Q_seq <- seq(0, 15, length.out = 300)
+Q_seq <- seq(0, 22, length.out = 300)
 
 cmg_lp2 <- function(q) 3*q^2 - 12*q + 15
 ctm_lp2 <- function(q) q^2 - 6*q + 15
@@ -522,13 +522,11 @@ D0 <- function(Q) 12 - 0.5*Q      # initial: eq at Q=12, P=6
 D1 <- function(Q) 16 - 0.5*Q      # shifted up: new CP eq
 
 Q0 <- 12
-Q_cp_new <- (16 - p_star2)/0.5 + 2  # rough SR eq
-P_cp <- 8   # approximate SR price
 
-# SR supply: n=4 firms (Q=n*q, Cmg=P)
-# At P=8: 3q^2-12q+15=8 => 3q^2-12q+7=0 => q=(12+sqrt(144-84))/6=(12+sqrt(60))/6
-q_cp <- (12 + sqrt(60))/6
-Q_cp_total <- 4 * q_cp  # n=4 firms
+# SR equilibrium: D1 = SR supply (n=4 firms, P = 3Q^2/16 - 3Q + 15)
+# 16 - 0.5Q = 3Q^2/16 - 3Q + 15  =>  3Q^2 - 40Q - 16 = 0
+Q_cp_total <- (40 + sqrt(40^2 + 4*3*16)) / (2*3)
+P_cp <- 16 - 0.5 * Q_cp_total
 
 # LP supply line at P=6
 # New LP eq with D1: Q_LP_new = (16-6)/0.5 = 20
@@ -703,7 +701,7 @@ Quantidade de mercado: $Q^* = Q_D(P^*) = 60 - 5 \times 3 = 45$
 
 Número de empresas: $\displaystyle n^* = \frac{Q^*}{q^*} = \frac{45}{3} = \mathbf{15 \text{ empresas}}$
 
-## Exercício 3 — Resolução (b) {visibility="uncounted"}
+## Exercício 3 — Resolução (b) {visibility="uncounted" .smaller}
 
 **Alínea (b): Choque na procura**
 
