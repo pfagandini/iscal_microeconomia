@@ -165,7 +165,7 @@ ggplot(df %>% filter(Q >= 0)) +
   # Labels
   annotate("text", x = 75, y = 3, label = "|ε| < 1\n(inelástica)",
            color = "steelblue", size = 3.5, fontface = "italic") +
-  annotate("text", x = 15, y = 17, label = "|ε| > 1\n(elástica)",
+  annotate("text", x = 12, y = 13.5, label = "|ε| > 1\n(elástica)",
            color = "#A40027", size = 3.5, fontface = "italic") +
   annotate("text", x = 55, y = 11.5, label = "|ε| = 1",
            color = "darkorange", size = 3.5) +
@@ -232,7 +232,7 @@ p_left + p_right
 - **$|\varepsilon|\to\infty$**: consumidores só compram a $P_0$ — qualquer aumento de preço leva a procura a zero (ex.: bem homogéneo com substituto perfeito)
 :::
 
-## Fatores que Influenciam $|\varepsilon_D|$
+## Fatores que Influenciam $|\varepsilon_D|$ {.smaller}
 
 - **Existência de substitutos**: mais substitutos → maior elasticidade.
   Leite (poucos substitutos) vs. leite de marca $X$ (muitos substitutos).
@@ -240,7 +240,7 @@ p_left + p_right
 . . .
 
 - **Especificidade da definição do bem**: quanto mais específico, maior $|\varepsilon_D|$.
-  "Comida" (inelástica) vs. "Pizza Margherita da Telepizza" (elástica).
+  "Comida" (inelástica) vs. "Pizza Margherita do Jezzuz Crust" (elástica).
 
 . . .
 
@@ -250,7 +250,7 @@ p_left + p_right
 
 - **Período de tempo**: no longo prazo, o consumidor tem mais tempo para adaptar comportamentos e encontrar substitutos → elasticidade aumenta com o tempo.
 
-## Elasticidade e Despesa de Consumo
+## Elasticidade e Despesa de Consumo {.smaller}
 
 A variação da despesa total ($P \times Q_D$) quando o preço sobe depende de $|\varepsilon_D|$:
 
@@ -289,7 +289,7 @@ ggplot(df_desp, aes(x = P, y = despesa)) +
 
 # Elasticidade Preço Cruzada
 
-## Definição
+## Definição {.smaller}
 
 ::: {.callout-note title="Elasticidade Preço Cruzada"}
 Mede a variação percentual da quantidade procurada do bem $X$ quando o preço do bem $Y$ varia 1%, tudo o resto constante:
@@ -322,7 +322,7 @@ A elasticidade cruzada é usada para determinar se dois bens pertencem ao mesmo 
 
 # Elasticidade Rendimento
 
-## Definição
+## Definição {.smaller}
 
 ::: {.callout-note title="Elasticidade Rendimento"}
 Mede a variação percentual da quantidade procurada quando o rendimento disponível ($W$) varia 1%, tudo o resto constante:
@@ -353,7 +353,7 @@ O **sinal e magnitude** de $\eta$ classificam o tipo de bem:
 
 # Quadro Resumo
 
-## Elasticidades da Procura: Síntese
+## Elasticidades da Procura: Síntese {.smaller}
 
 ```{r tabela-resumo, fig.width=8, fig.height=3.5}
 # Simple summary table as ggplot
@@ -432,7 +432,7 @@ C) Bens independentes, pois $\varepsilon_{x,y} = 0$
 D) Não é possível determinar sem conhecer o rendimento
 :::
 
-## Exercício 2 — Solução {visibility="uncounted"}
+## Exercício 2 — Solução {visibility="uncounted" .smaller}
 
 **Resolução:**
 
@@ -481,7 +481,7 @@ $\varepsilon_{x,y} < 0$ → bens **complementares**: quando o preço de $Y$ sobe
 
 $$3P = 120 - 3P \quad \Rightarrow \quad 6P = 120 \quad \Rightarrow \quad \mathbf{P = 20}$$
 
-## Exercício 3 — Resolução (c) {visibility="uncounted"}
+## Exercício 3 — Resolução (c) {visibility="uncounted" .smaller}
 
 **Alínea (c):** Inversa da procura: $P = 40 - \dfrac{Q}{3}$ (preço máximo = 40 quando $Q=0$)
 
@@ -503,7 +503,7 @@ A $P = 10$ a procura é inelástica — os consumidores estão dispostos a pagar
 
 # Síntese
 
-## Resumo da Aula
+## Resumo da Aula {.smaller}
 
 ::: {.nonincremental}
 **Elasticidade preço-direta** $(\varepsilon_D)$:
