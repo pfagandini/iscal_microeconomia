@@ -310,6 +310,8 @@ supply1 <- function(Q) 0.5 + 0.22*Q  # expanded supply after entry
 # equilibria
 Q0_mkt <- (6 - 0.5)/(0.4 + 0.35)
 Q1_mkt <- (6 - 0.5)/(0.4 + 0.22)
+P0_mkt <- demand_mkt(Q0_mkt)
+P1_mkt <- demand_mkt(Q1_mkt)
 
 df_mkt <- tibble(
   Q = Q_seq,
@@ -322,11 +324,11 @@ p2 <- ggplot(df_mkt) +
   geom_line(aes(x = Q, y = D), color = "steelblue", linewidth = 1) +
   geom_line(aes(x = Q, y = S0), color = "gray50", linewidth = 1) +
   geom_line(aes(x = Q, y = S1), color = "#A40027", linewidth = 1) +
-  geom_hline(yintercept = P0, color = "gray40", linetype = "dashed") +
-  geom_hline(yintercept = P1, color = "#A40027", linetype = "dashed") +
-  annotate("text", x = 0.3, y = P0 + 0.1, label = "p", hjust = 0,
+  geom_hline(yintercept = P0_mkt, color = "gray40", linetype = "dashed") +
+  geom_hline(yintercept = P1_mkt, color = "#A40027", linetype = "dashed") +
+  annotate("text", x = 0.3, y = P0_mkt + 0.1, label = "p", hjust = 0,
            color = "gray40", size = 3.5) +
-  annotate("text", x = 0.3, y = P1 + 0.1, label = "p'", hjust = 0,
+  annotate("text", x = 0.3, y = P1_mkt + 0.1, label = "p'", hjust = 0,
            color = "#A40027", size = 3.5) +
   annotate("text", x = 9.5, y = demand_mkt(9.5) + 0.15, label = "D",
            color = "steelblue", size = 3.5) +
