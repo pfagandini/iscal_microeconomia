@@ -5591,5 +5591,152 @@
     "title": "Microeconomia",
     "section": "5.1 Resumo da Aula",
     "text": "5.1 Resumo da Aula\n\nImposto específico cria uma cunha \\(P_D = P_S + I\\), reduzindo a quantidade transacionada e gerando:\n\nTransferência de excedente → Receita Fiscal (Estado)\nPerda pura de excedente: \\(PPE = \\frac{1}{2} \\cdot I \\cdot (Q^* - Q_I)\\)\n\n\n. . .\n\nIncidência económica — quem suporta mais o imposto:\n\\[\\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{I_S}{I_D}\\]\nO lado menos elástico suporta proporcionalmente mais.\n\n. . .\n\nRelação com PPE:\n\nElasticidades altas → grande distorção da quantidade → PPE elevada\nSe \\(|\\varepsilon_D| = 0\\) ou \\(\\varepsilon_S = 0\\) → sem distorção → \\(PPE = 0\\)\nTributar bens inelásticos minimiza a perda de eficiência"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#o-que-mede-a-elasticidade",
+    "href": "slides/16_elasticidades_procura.html#o-que-mede-a-elasticidade",
+    "title": "Microeconomia",
+    "section": "O que mede a elasticidade?",
+    "text": "O que mede a elasticidade?\n\n\n\n\n\n\n\nElasticidade\n\n\nA elasticidade mede a variação percentual de uma variável em resposta à variação percentual de outra variável que a influencia.\n\n\n\n\n\nPor ser uma razão de percentagens, a elasticidade é adimensional — não depende das unidades de medida.\n\n\nForma geral: \\[\\varepsilon_{Y,X} = \\frac{\\Delta\\% Y}{\\Delta\\% X} = \\frac{\\dfrac{\\Delta Y}{Y}}{\\dfrac{\\Delta X}{X}} = \\frac{\\Delta Y}{\\Delta X} \\cdot \\frac{X}{Y}\\]\n\n\nEm termos contínuos (derivada): \\[\\varepsilon_{Y,X} = \\frac{dY}{dX} \\cdot \\frac{X}{Y}\\]"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#elasticidades-da-procura",
+    "href": "slides/16_elasticidades_procura.html#elasticidades-da-procura",
+    "title": "Microeconomia",
+    "section": "Elasticidades da Procura",
+    "text": "Elasticidades da Procura\nVamos estudar três elasticidades da procura:\n\n1. Elasticidade preço-direta \\((\\varepsilon_D)\\)\nSensibilidade da quantidade procurada de \\(X\\) face ao preço de \\(X\\).\n\n\n2. Elasticidade preço cruzada \\((\\varepsilon_{x,y})\\)\nSensibilidade da quantidade procurada de \\(X\\) face ao preço de outro bem \\(Y\\).\n\n\n3. Elasticidade rendimento \\((\\eta)\\)\nSensibilidade da quantidade procurada de \\(X\\) face ao rendimento disponível."
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#definição-e-fórmula",
+    "href": "slides/16_elasticidades_procura.html#definição-e-fórmula",
+    "title": "Microeconomia",
+    "section": "Definição e Fórmula",
+    "text": "Definição e Fórmula\n\n\n\n\n\n\n\nElasticidade Preço-Direta\n\n\nMede a variação percentual da quantidade procurada quando o preço do mesmo bem varia 1%, tudo o resto constante: \\[\\varepsilon_D = \\frac{\\Delta\\% Q_D}{\\Delta\\% P} = \\frac{\\Delta Q_D}{\\Delta P} \\cdot \\frac{P}{Q_D}\\]\n\n\n\n\n\nComo \\(Q_D\\) e \\(P\\) variam em sentidos opostos (Lei da Procura), \\(\\varepsilon_D &lt; 0\\) em geral.\n\n\nTrabalha-se habitualmente com o valor absoluto \\(|\\varepsilon_D|\\):\n\n\n\n\\(|\\varepsilon_D|\\)\nClassificação\n\n\n\n\n\\(&gt; 1\\)\nProcura elástica\n\n\n\\(= 1\\)\nElasticidade unitária\n\n\n\\(&lt; 1\\)\nProcura inelástica (ou rígida)"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#cálculo-procura-linear",
+    "href": "slides/16_elasticidades_procura.html#cálculo-procura-linear",
+    "title": "Microeconomia",
+    "section": "Cálculo: Procura Linear",
+    "text": "Cálculo: Procura Linear\nPara \\(Q_D = a - bP\\):\n\\[\\frac{dQ_D}{dP} = -b \\quad \\Rightarrow \\quad \\varepsilon_D = -b \\cdot \\frac{P}{Q_D}\\]\n\n\n\n\n\n\n\n\nNota importante\n\n\nNuma procura linear, \\(|\\varepsilon_D|\\) varia ao longo da curva — não é constante. O mesmo \\(b\\) produz elasticidades diferentes conforme o ponto \\((P, Q_D)\\) considerado."
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#exemplo-q_d-100---5p",
+    "href": "slides/16_elasticidades_procura.html#exemplo-q_d-100---5p",
+    "title": "Microeconomia",
+    "section": "Exemplo: \\(Q_D = 100 - 5P\\)",
+    "text": "Exemplo: \\(Q_D = 100 - 5P\\)\n\n\n\nZona superior (preços altos, quantidades baixas): procura elástica\nPonto médio (\\(P=10\\), \\(Q=50\\)): elasticidade unitária\nZona inferior (preços baixos, quantidades altas): procura inelástica"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#casos-extremos",
+    "href": "slides/16_elasticidades_procura.html#casos-extremos",
+    "title": "Microeconomia",
+    "section": "Casos Extremos",
+    "text": "Casos Extremos\n\n\n\\(|\\varepsilon|=0\\): quantidade não reage ao preço (ex.: medicação sem substitutos, bem de sobrevivência)\n\\(|\\varepsilon|\\to\\infty\\): consumidores só compram a \\(P_0\\) — qualquer aumento de preço leva a procura a zero (ex.: bem homogéneo com substituto perfeito)"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#fatores-que-influenciam-varepsilon_d",
+    "href": "slides/16_elasticidades_procura.html#fatores-que-influenciam-varepsilon_d",
+    "title": "Microeconomia",
+    "section": "Fatores que Influenciam \\(|\\varepsilon_D|\\)",
+    "text": "Fatores que Influenciam \\(|\\varepsilon_D|\\)\n\nExistência de substitutos: mais substitutos → maior elasticidade. Leite (poucos substitutos) vs. leite de marca \\(X\\) (muitos substitutos).\n\n\n\nEspecificidade da definição do bem: quanto mais específico, maior \\(|\\varepsilon_D|\\). “Comida” (inelástica) vs. “Pizza Margherita da Telepizza” (elástica).\n\n\n\n\nPeso no orçamento: bens com maior peso no orçamento têm procuras mais elásticas — o consumidor está mais atento às variações de preço.\n\n\n\n\nPeríodo de tempo: no longo prazo, o consumidor tem mais tempo para adaptar comportamentos e encontrar substitutos → elasticidade aumenta com o tempo."
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#elasticidade-e-despesa-de-consumo",
+    "href": "slides/16_elasticidades_procura.html#elasticidade-e-despesa-de-consumo",
+    "title": "Microeconomia",
+    "section": "Elasticidade e Despesa de Consumo",
+    "text": "Elasticidade e Despesa de Consumo\nA variação da despesa total (\\(P \\times Q_D\\)) quando o preço sobe depende de \\(|\\varepsilon_D|\\):\n\n\\[\\Delta \\text{Despesa} \\approx \\underbrace{P_0 \\cdot \\Delta Q}_{\\text{efeito quantidade}} + \\underbrace{\\Delta P \\cdot Q_0}_{\\text{efeito preço}}\\]\n\n\n\nSe \\(|\\varepsilon_D| &gt; 1\\): efeito quantidade domina → despesa desce quando \\(P\\) sobe\nSe \\(|\\varepsilon_D| &lt; 1\\): efeito preço domina → despesa sobe quando \\(P\\) sobe\nSe \\(|\\varepsilon_D| = 1\\): os dois efeitos compensam-se → despesa não se altera"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#definição",
+    "href": "slides/16_elasticidades_procura.html#definição",
+    "title": "Microeconomia",
+    "section": "Definição",
+    "text": "Definição\n\n\n\n\n\n\n\nElasticidade Preço Cruzada\n\n\nMede a variação percentual da quantidade procurada do bem \\(X\\) quando o preço do bem \\(Y\\) varia 1%, tudo o resto constante: \\[\\varepsilon_{x,y} = \\frac{\\Delta\\% Q_x}{\\Delta\\% P_y} = \\frac{\\Delta Q_x}{\\Delta P_y} \\cdot \\frac{P_y}{Q_x}\\]\n\n\n\n\n\nO sinal de \\(\\varepsilon_{x,y}\\) identifica a relação entre os bens:\n\n\n\n\n\n\n\n\nSinal\nRelação\nInterpretação\n\n\n\n\n\\(\\varepsilon_{x,y} &gt; 0\\)\nBens substitutos\n\\(P_y \\uparrow\\) → procura de \\(X\\) sobe\n\n\n\\(\\varepsilon_{x,y} &lt; 0\\)\nBens complementares\n\\(P_y \\uparrow\\) → procura de \\(X\\) desce\n\n\n\\(\\varepsilon_{x,y} = 0\\)\nBens independentes\npreço de \\(Y\\) não afeta procura de \\(X\\)"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#exemplo-bens-substitutos-e-complementares",
+    "href": "slides/16_elasticidades_procura.html#exemplo-bens-substitutos-e-complementares",
+    "title": "Microeconomia",
+    "section": "Exemplo: Bens Substitutos e Complementares",
+    "text": "Exemplo: Bens Substitutos e Complementares\nSubstitutos — café e chá: se o preço do chá sobe, a procura de café sobe\nComplementares — café e açúcar: se o preço do açúcar sobe, o café fica mais caro de consumir → procura de café desce\n\n\n\n\n\n\n\n\nAplicação à Definição de Mercado\n\n\nA elasticidade cruzada é usada para determinar se dois bens pertencem ao mesmo mercado relevante. Quanto maior \\(\\varepsilon_{x,y}\\), mais próximos os substitutos — iogurtes de diferentes marcas têm \\(\\varepsilon_{x,y}\\) elevada; iogurtes e ervilhas têm \\(\\varepsilon_{x,y} \\approx 0\\)."
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#definição-1",
+    "href": "slides/16_elasticidades_procura.html#definição-1",
+    "title": "Microeconomia",
+    "section": "Definição",
+    "text": "Definição\n\n\n\n\n\n\n\nElasticidade Rendimento\n\n\nMede a variação percentual da quantidade procurada quando o rendimento disponível (\\(W\\)) varia 1%, tudo o resto constante: \\[\\eta = \\frac{\\Delta\\% Q}{\\Delta\\% W} = \\frac{\\Delta Q}{\\Delta W} \\cdot \\frac{W}{Q}\\]\n\n\n\n\n\nO sinal e magnitude de \\(\\eta\\) classificam o tipo de bem:\n\n\n\n\n\n\n\n\\(\\eta\\)\nTipo de bem\n\n\n\n\n\\(\\eta &lt; 0\\)\nBem inferior (procura desce quando rendimento sobe)\n\n\n\\(0 &lt; \\eta \\leq 1\\)\nBem normal (procura sobe com rendimento, não mais do que proporcionalmente)\n\n\n\\(\\eta &gt; 1\\)\nBem de luxo (procura sobe mais do que proporcionalmente)"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#intuição-económica",
+    "href": "slides/16_elasticidades_procura.html#intuição-económica",
+    "title": "Microeconomia",
+    "section": "Intuição Económica",
+    "text": "Intuição Económica\n\nBem inferior (\\(\\eta &lt; 0\\)): quando o rendimento sobe, o consumidor substitui este bem por alternativas melhores. Ex.: transporte em autocarro, marcas de distribuidor baratas.\n\n\n\nBem normal (\\(0 &lt; \\eta \\leq 1\\)): procura sobe com rendimento, mas de forma menos do que proporcional. Ex.: alimentação básica, roupa corrente.\n\n\n\n\nBem de luxo (\\(\\eta &gt; 1\\)): procura responde de forma mais que proporcional ao rendimento. Ex.: viagens de férias, automóveis de alta gama, jantares em restaurantes de topo."
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#elasticidades-da-procura-síntese",
+    "href": "slides/16_elasticidades_procura.html#elasticidades-da-procura-síntese",
+    "title": "Microeconomia",
+    "section": "Elasticidades da Procura: Síntese",
+    "text": "Elasticidades da Procura: Síntese\n\n\n\nElasticidade\nValor\nConclusão\n\n\n\n\n\\(\\|\\varepsilon_D\\|\\)\n\\(&gt; 1\\)\nProcura elástica\n\n\n\n\\(= 1\\)\nElasticidade unitária\n\n\n\n\\(&lt; 1\\)\nProcura inelástica\n\n\n\\(\\varepsilon_{x,y}\\)\n\\(&gt; 0\\)\nBens substitutos\n\n\n\n\\(= 0\\)\nBens independentes\n\n\n\n\\(&lt; 0\\)\nBens complementares\n\n\n\\(\\eta\\)\n\\(&lt; 0\\)\nBem inferior\n\n\n\n\\(0 &lt; \\eta \\leq 1\\)\nBem normal\n\n\n\n\\(&gt; 1\\)\nBem de luxo"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#exercício-1-escolha-múltipla",
+    "href": "slides/16_elasticidades_procura.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nA procura de mercado de um bem é \\(Q_D = 120 - 3P\\). Qual é a elasticidade preço-direta quando \\(P = 30\\)?\n\n\\(\\varepsilon_D = -1\\) (elasticidade unitária)\n\\(\\varepsilon_D = -3\\) (elástica)\n\\(\\varepsilon_D = -1/3\\) (inelástica)\n\\(\\varepsilon_D = -1/2\\) (inelástica)"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#exercício-1-solução",
+    "href": "slides/16_elasticidades_procura.html#exercício-1-solução",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Solução",
+    "text": "Exercício 1 — Solução\nResolução:\n\\[\\frac{dQ_D}{dP} = -3\\]\n\nQuando \\(P = 30\\): \\(\\quad Q_D = 120 - 3 \\times 30 = 30\\)\n\n\n\\[\\varepsilon_D = \\frac{dQ_D}{dP} \\cdot \\frac{P}{Q_D} = -3 \\times \\frac{30}{30} = \\mathbf{-3}\\]\n\n\n\\(|\\varepsilon_D| = 3 &gt; 1\\) → procura elástica neste ponto.\nSe o preço subir 1%, a quantidade procurada reduz-se 3%.\nResposta: B)"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#exercício-2-escolha-múltipla",
+    "href": "slides/16_elasticidades_procura.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nA quantidade procurada do bem \\(X\\) é dada por \\(Q_x = 80 - 3P_x - 2P_y\\). Sabendo que \\(P_x = 5\\) e \\(P_y = 6\\), qual a relação entre \\(X\\) e \\(Y\\)?\n\nBens substitutos, pois \\(\\varepsilon_{x,y} &gt; 0\\)\nBens complementares, pois \\(\\varepsilon_{x,y} &lt; 0\\)\nBens independentes, pois \\(\\varepsilon_{x,y} = 0\\)\nNão é possível determinar sem conhecer o rendimento"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#exercício-2-solução",
+    "href": "slides/16_elasticidades_procura.html#exercício-2-solução",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Solução",
+    "text": "Exercício 2 — Solução\nResolução:\n\\[\\frac{\\partial Q_x}{\\partial P_y} = -2\\]\n\nQuando \\(P_x = 5\\), \\(P_y = 6\\): \\[Q_x = 80 - 3(5) - 2(6) = 80 - 15 - 12 = 53\\]\n\n\n\\[\\varepsilon_{x,y} = \\frac{\\partial Q_x}{\\partial P_y} \\cdot \\frac{P_y}{Q_x} = -2 \\times \\frac{6}{53} \\approx -0{,}23\\]\n\n\n\\(\\varepsilon_{x,y} &lt; 0\\) → bens complementares: quando o preço de \\(Y\\) sobe, a quantidade procurada de \\(X\\) diminui.\nResposta: B)"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#exercício-3-desenvolvimento",
+    "href": "slides/16_elasticidades_procura.html#exercício-3-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Desenvolvimento",
+    "text": "Exercício 3 — Desenvolvimento\nA procura de um bem é \\(Q_D = 120 - 3P\\).\n(a) Calcule \\(\\varepsilon_D\\) quando \\(P = 10\\), \\(P = 20\\) e \\(P = 30\\). Classifique em cada caso.\n(b) Para que valor de \\(P\\) a elasticidade é unitária?\n(c) Calcule o Excedente do Consumidor para \\(P = 10\\) e para \\(P = 20\\). Comente a relação com a elasticidade."
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#exercício-3-resolução-a-e-b",
+    "href": "slides/16_elasticidades_procura.html#exercício-3-resolução-a-e-b",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Resolução (a) e (b)",
+    "text": "Exercício 3 — Resolução (a) e (b)\nAlínea (a): \\(\\dfrac{dQ_D}{dP} = -3\\)\n\n\n\n\n\n\n\n\n\n\n\\(P\\)\n\\(Q_D\\)\n\\(\\varepsilon_D = -3 \\cdot \\frac{P}{Q_D}\\)\nClassificação\n\n\n\n\n10\n90\n\\(-3 \\times \\frac{10}{90} = -\\frac{1}{3}\\)\nInelástica\n\n\n20\n60\n\\(-3 \\times \\frac{20}{60} = -1\\)\nUnitária\n\n\n30\n30\n\\(-3 \\times \\frac{30}{30} = -3\\)\nElástica\n\n\n\n\n\nAlínea (b): \\(|\\varepsilon_D| = 1 \\Leftrightarrow \\left|-3 \\cdot \\frac{P}{120-3P}\\right| = 1\\)\n\\[3P = 120 - 3P \\quad \\Rightarrow \\quad 6P = 120 \\quad \\Rightarrow \\quad \\mathbf{P = 20}\\]"
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#exercício-3-resolução-c",
+    "href": "slides/16_elasticidades_procura.html#exercício-3-resolução-c",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Resolução (c)",
+    "text": "Exercício 3 — Resolução (c)\nAlínea (c): Inversa da procura: \\(P = 40 - \\dfrac{Q}{3}\\) (preço máximo = 40 quando \\(Q=0\\))\n\nEC quando \\(P = 10\\) (\\(Q = 90\\)): \\[EC = \\frac{(40 - 10) \\times 90}{2} = \\frac{30 \\times 90}{2} = \\mathbf{1{.}350}\\]\n\n\nEC quando \\(P = 20\\) (\\(Q = 60\\)): \\[EC = \\frac{(40 - 20) \\times 60}{2} = \\frac{20 \\times 60}{2} = \\mathbf{600}\\]\n\n\n\n\n\n\n\n\n\nComentário\n\n\nA \\(P = 10\\) a procura é inelástica — os consumidores estão dispostos a pagar muito acima do preço de mercado, gerando um EC elevado (1.350). A \\(P = 20\\) a procura é unitária e o EC é mais reduzido (600). A zona inelástica da procura coincide com onde os consumidores têm menos alternativas e maior disponibilidade a pagar."
+  },
+  {
+    "objectID": "slides/16_elasticidades_procura.html#resumo-da-aula",
+    "href": "slides/16_elasticidades_procura.html#resumo-da-aula",
+    "title": "Microeconomia",
+    "section": "Resumo da Aula",
+    "text": "Resumo da Aula\nElasticidade preço-direta \\((\\varepsilon_D)\\):\n\nFórmula: \\(\\varepsilon_D = \\dfrac{dQ_D}{dP} \\cdot \\dfrac{P}{Q_D}\\); sempre \\(\\leq 0\\)\nNuma procura linear, varia ao longo da curva: elástica em cima, inelástica em baixo\n\\(|\\varepsilon_D| &gt; 1\\): despesa desce quando \\(P\\) sobe; \\(|\\varepsilon_D| &lt; 1\\): despesa sobe\n\n\nElasticidade cruzada \\((\\varepsilon_{x,y})\\):\n\nPositiva → substitutos; negativa → complementares; nula → independentes\n\n\n\nElasticidade rendimento \\((\\eta)\\):\n\n\\(\\eta &lt; 0\\): bem inferior; \\(0 &lt; \\eta \\leq 1\\): normal; \\(\\eta &gt; 1\\): luxo\n\n\n\n\n\n\n\n\n\n\nPara a próxima aula\n\n\nNa aula 24 estudaremos a elasticidade preço da oferta e a sua relação com o horizonte temporal de produção."
   }
 ]

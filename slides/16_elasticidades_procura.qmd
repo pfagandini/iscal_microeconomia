@@ -52,7 +52,7 @@ library(patchwork)
 
 # O Conceito de Elasticidade
 
-## O que mede a elasticidade?
+## O que mede a elasticidade? {.smaller}
 
 ::: {.callout-note title="Elasticidade"}
 A elasticidade mede a **variação percentual** de uma variável em resposta à **variação percentual** de outra variável que a influencia.
@@ -96,7 +96,7 @@ Sensibilidade da quantidade procurada de $X$ face ao rendimento disponível.
 
 # Elasticidade Preço-Direta da Procura
 
-## Definição e Fórmula
+## Definição e Fórmula {.smaller}
 
 ::: {.callout-note title="Elasticidade Preço-Direta"}
 Mede a variação percentual da quantidade procurada quando o preço do mesmo bem varia 1%, tudo o resto constante:
@@ -151,9 +151,9 @@ df <- tibble(P = P_seq, Q = QD)
 
 ggplot(df %>% filter(Q >= 0)) +
   # Zones
-  annotate("rect", xmin = 10, xmax = 20, ymin = 0, ymax = 50,
+  annotate("rect", xmin = 50, xmax = 100, ymin = 0, ymax = 10,
            fill = "steelblue", alpha = 0.08) +
-  annotate("rect", xmin = 0, xmax = 10, ymin = 50, ymax = 100,
+  annotate("rect", xmin = 0, xmax = 50, ymin = 10, ymax = 20,
            fill = "#A40027", alpha = 0.08) +
   geom_line(aes(x = Q, y = P), color = "gray30", linewidth = 1.3) +
   # Unit elasticity point
