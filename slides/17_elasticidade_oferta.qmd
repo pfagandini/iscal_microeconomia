@@ -52,7 +52,7 @@ library(patchwork)
 
 # Definição e Fórmula
 
-## Elasticidade Preço da Oferta
+## Elasticidade Preço da Oferta {.smaller}
 
 ::: {.callout-note title="Elasticidade Preço da Oferta"}
 Mede a variação percentual da quantidade oferecida quando o preço varia 1%, tudo o resto constante:
@@ -89,7 +89,7 @@ A exceção notável: uma oferta que passa pela **origem** tem sempre $\varepsil
 
 # Uma Propriedade Geométrica Notável
 
-## Elasticidade e o Intercepto da Oferta
+## Elasticidade e o Intercepto da Oferta {.smaller}
 
 Para uma oferta linear $Q_S = c + dP$, a elasticidade depende do sinal de $c$:
 
@@ -326,7 +326,7 @@ Uma expansão da procura provoca, a curto prazo, um **grande aumento de preço**
 
 # Quadro Comparativo
 
-## Elasticidade da Procura vs. da Oferta
+## Elasticidade da Procura vs. da Oferta {.smaller}
 
 | | **Procura** $(\varepsilon_D)$ | **Oferta** $(\varepsilon_S)$ |
 |---|---|---|
@@ -426,7 +426,7 @@ A razão geométrica: a reta passa pela origem, logo o "triângulo" formado pela
 
 **(c)** Compare com a oferta $Q_S' = 4P$. Calcule $\varepsilon_S$ para $Q_S'$ nos mesmos preços e interprete a diferença.
 
-## Exercício 3 — Resolução (a) e (b) {visibility="uncounted"}
+## Exercício 3 — Resolução (a) e (b) {visibility="uncounted" .smaller}
 
 **Alínea (a):** $\dfrac{dQ_S}{dP} = 4$
 
@@ -444,7 +444,7 @@ A razão geométrica: a reta passa pela origem, logo o "triângulo" formado pela
 
 Qualquer oferta linear que corte o eixo $P$ (e não o eixo $Q$, nem passe pela origem) é **sempre elástica** ($\varepsilon_S > 1$ em todos os pontos).
 
-## Exercício 3 — Resolução (c) {visibility="uncounted"}
+## Exercício 3 — Resolução (c) {visibility="uncounted" .smaller}
 
 **Alínea (c):** Para $Q_S' = 4P$:
 
@@ -466,7 +466,7 @@ Ambas as ofertas têm o mesmo declive ($d=4$), mas $Q_S = 4P - 8$ passa pelo pon
 
 # Síntese
 
-## Resumo da Aula
+## Resumo da Aula {.smaller}
 
 ::: {.nonincremental}
 **Fórmula:** $\varepsilon_S = \dfrac{dQ_S}{dP} \cdot \dfrac{P}{Q_S} \geq 0$ sempre
