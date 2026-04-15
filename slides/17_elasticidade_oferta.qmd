@@ -9,7 +9,7 @@ format:
       - default
       - ../font_adjust.scss
       - ../iscal_theme.scss
-    self-contained: false
+    self-contained: true
     logo: ../images/iscal_logo.svg
     slide-number: true
     cross-ref: true

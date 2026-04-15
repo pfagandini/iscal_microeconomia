@@ -5738,5 +5738,117 @@
     "title": "Microeconomia",
     "section": "Resumo da Aula",
     "text": "Resumo da Aula\nElasticidade preço-direta \\((\\varepsilon_D)\\):\n\nFórmula: \\(\\varepsilon_D = \\dfrac{dQ_D}{dP} \\cdot \\dfrac{P}{Q_D}\\); sempre \\(\\leq 0\\)\nNuma procura linear, varia ao longo da curva: elástica em cima, inelástica em baixo\n\\(|\\varepsilon_D| &gt; 1\\): despesa desce quando \\(P\\) sobe; \\(|\\varepsilon_D| &lt; 1\\): despesa sobe\n\n\nElasticidade cruzada \\((\\varepsilon_{x,y})\\):\n\nPositiva → substitutos; negativa → complementares; nula → independentes\n\n\n\nElasticidade rendimento \\((\\eta)\\):\n\n\\(\\eta &lt; 0\\): bem inferior; \\(0 &lt; \\eta \\leq 1\\): normal; \\(\\eta &gt; 1\\): luxo\n\n\n\n\n\n\n\n\n\n\nPara a próxima aula\n\n\nNa aula 24 estudaremos a elasticidade preço da oferta e a sua relação com o horizonte temporal de produção."
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#elasticidade-preço-da-oferta",
+    "href": "slides/17_elasticidade_oferta.html#elasticidade-preço-da-oferta",
+    "title": "Microeconomia",
+    "section": "Elasticidade Preço da Oferta",
+    "text": "Elasticidade Preço da Oferta\n\n\n\n\n\n\n\nElasticidade Preço da Oferta\n\n\nMede a variação percentual da quantidade oferecida quando o preço varia 1%, tudo o resto constante: \\[\\varepsilon_S = \\frac{\\Delta\\% Q_S}{\\Delta\\% P} = \\frac{\\Delta Q_S}{\\Delta P} \\cdot \\frac{P}{Q_S}\\]\n\n\n\n\n\nComo \\(Q_S\\) e \\(P\\) variam no mesmo sentido (Lei da Oferta), \\(\\varepsilon_S \\geq 0\\) sempre.\n\n\nClassificação:\n\n\n\n\\(\\varepsilon_S\\)\nClassificação\n\n\n\n\n\\(&gt; 1\\)\nOferta elástica\n\n\n\\(= 1\\)\nElasticidade unitária\n\n\n\\(&lt; 1\\)\nOferta inelástica"
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#cálculo-para-oferta-linear",
+    "href": "slides/17_elasticidade_oferta.html#cálculo-para-oferta-linear",
+    "title": "Microeconomia",
+    "section": "Cálculo para Oferta Linear",
+    "text": "Cálculo para Oferta Linear\nPara \\(Q_S = c + dP\\) (com \\(d &gt; 0\\)):\n\\[\\frac{dQ_S}{dP} = d \\quad \\Rightarrow \\quad \\varepsilon_S = d \\cdot \\frac{P}{Q_S}\\]\n\n\n\n\n\n\n\n\nNota importante\n\n\nTal como na procura, numa oferta linear \\(\\varepsilon_S\\) varia ao longo da curva — o mesmo \\(d\\) produz elasticidades diferentes conforme o ponto \\((P, Q_S)\\).\nA exceção notável: uma oferta que passa pela origem tem sempre \\(\\varepsilon_S = 1\\)."
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#elasticidade-e-o-intercepto-da-oferta",
+    "href": "slides/17_elasticidade_oferta.html#elasticidade-e-o-intercepto-da-oferta",
+    "title": "Microeconomia",
+    "section": "Elasticidade e o Intercepto da Oferta",
+    "text": "Elasticidade e o Intercepto da Oferta\nPara uma oferta linear \\(Q_S = c + dP\\), a elasticidade depende do sinal de \\(c\\):\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(c &gt; 0\\) (intercepto no eixo \\(Q\\)): oferta inelástica em todos os pontos\n\\(c = 0\\) (passa pela origem): elasticidade unitária em todos os pontos\n\\(c &lt; 0\\) (intercepto no eixo \\(P\\)): oferta elástica em todos os pontos"
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#porquê-esta-propriedade-geométrica",
+    "href": "slides/17_elasticidade_oferta.html#porquê-esta-propriedade-geométrica",
+    "title": "Microeconomia",
+    "section": "Porquê esta propriedade geométrica?",
+    "text": "Porquê esta propriedade geométrica?\nPara \\(Q_S = dP\\) (origem): \\(\\quad\\varepsilon_S = d \\cdot \\dfrac{P}{dP} = 1\\) em qualquer ponto.\n\nPara \\(Q_S = c + dP\\) com \\(c &gt; 0\\): \\(\\quad\\varepsilon_S = d \\cdot \\dfrac{P}{c + dP} &lt; d \\cdot \\dfrac{P}{dP} = 1\\)\n\n\nPara \\(Q_S = c + dP\\) com \\(c &lt; 0\\) (e \\(Q_S &gt; 0\\)): \\(\\quad\\varepsilon_S = d \\cdot \\dfrac{P}{c + dP} &gt; 1\\)\n\n\n\n\n\n\n\n\n\nRegra prática\n\n\nNuma oferta linear, basta ver onde a reta interseta os eixos:\n\nCorta o eixo \\(Q\\) → inelástica\nPassa pela origem → unitária\nCorta o eixo \\(P\\) → elástica"
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#oferta-perfeitamente-inelástica-e-elástica",
+    "href": "slides/17_elasticidade_oferta.html#oferta-perfeitamente-inelástica-e-elástica",
+    "title": "Microeconomia",
+    "section": "Oferta Perfeitamente Inelástica e Elástica",
+    "text": "Oferta Perfeitamente Inelástica e Elástica\n\n\n\\(\\varepsilon_S = 0\\): quantidade independente do preço — ex.: obra de arte única, recurso natural esgotado, capacidade máxima física a curto prazo\n\\(\\varepsilon_S \\to \\infty\\): produtores oferecem qualquer quantidade ao preço \\(P_0\\) — ex.: bem produzido com custo marginal constante e sem restrições de capacidade"
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#o-que-torna-uma-oferta-mais-ou-menos-elástica",
+    "href": "slides/17_elasticidade_oferta.html#o-que-torna-uma-oferta-mais-ou-menos-elástica",
+    "title": "Microeconomia",
+    "section": "O que torna uma oferta mais ou menos elástica?",
+    "text": "O que torna uma oferta mais ou menos elástica?\n\nDisponibilidade e mobilidade dos fatores de produção\nA oferta de pizzas é mais elástica do que a oferta de morangos fora de época — o produtor de pizza pode aumentar a produção facilmente, mas o morangueiro não.\n\n\n\nCapacidade produtiva instalada\nA oferta de lugares numa aeronave é perfeitamente elástica até esgotar a capacidade e perfeitamente inelástica após isso.\n\n\n\n\nPeríodo de tempo\nA oferta de longo prazo é sempre mais elástica do que a de curto prazo. Com mais tempo, os produtores conseguem ajustar capital, contratar mais fatores e redirecionar a produção."
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#curto-prazo-vs.-longo-prazo",
+    "href": "slides/17_elasticidade_oferta.html#curto-prazo-vs.-longo-prazo",
+    "title": "Microeconomia",
+    "section": "Curto Prazo vs. Longo Prazo",
+    "text": "Curto Prazo vs. Longo Prazo\n\n\nUma expansão da procura provoca, a curto prazo, um grande aumento de preço com pouco aumento de quantidade. A longo prazo, a oferta expande-se mais — o preço sobe menos e a quantidade aumenta mais."
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#elasticidade-da-procura-vs.-da-oferta",
+    "href": "slides/17_elasticidade_oferta.html#elasticidade-da-procura-vs.-da-oferta",
+    "title": "Microeconomia",
+    "section": "Elasticidade da Procura vs. da Oferta",
+    "text": "Elasticidade da Procura vs. da Oferta\n\n\n\n\n\n\n\n\n\nProcura \\((\\varepsilon_D)\\)\nOferta \\((\\varepsilon_S)\\)\n\n\n\n\nSinal\n\\(\\leq 0\\) (sempre)\n\\(\\geq 0\\) (sempre)\n\n\nTrabalha-se com\n\\(\\|\\varepsilon_D\\|\\)\n\\(\\varepsilon_S\\)\n\n\nNuma linear: varia?\nSim, ao longo da curva\nSim, ao longo da curva\n\n\nExceção (linear)\n—\nPassa pela origem → \\(\\varepsilon_S = 1\\) sempre\n\n\n\\(&gt; 1\\) significa\nProcura elástica\nOferta elástica\n\n\n\\(= 0\\) significa\nProcura perfeitamente rígida\nOferta perfeitamente rígida\n\n\nPrazo\nLP mais elástica\nLP mais elástica\n\n\n\n\n\n\n\n\n\n\n\nSimetria com a procura\n\n\nA elasticidade da oferta tem a mesma lógica e fórmula que a elasticidade preço-direta da procura — a única diferença estrutural é o sinal (positivo vs. negativo) e o facto de a oferta poder ser unitária em todos os pontos quando passa pela origem."
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#exercício-1-escolha-múltipla",
+    "href": "slides/17_elasticidade_oferta.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nA função de oferta de um mercado é \\(Q_S = 3P + 6\\). Qual é a elasticidade preço da oferta quando \\(P = 6\\)?\n\n\\(\\varepsilon_S = 1\\)\n\\(\\varepsilon_S = 3\\)\n\\(\\varepsilon_S = \\dfrac{3}{4}\\)\n\\(\\varepsilon_S = \\dfrac{3}{2}\\)"
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#exercício-1-solução",
+    "href": "slides/17_elasticidade_oferta.html#exercício-1-solução",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Solução",
+    "text": "Exercício 1 — Solução\nResolução:\n\\[\\frac{dQ_S}{dP} = 3\\]\n\nQuando \\(P = 6\\): \\(\\quad Q_S = 3(6) + 6 = 24\\)\n\n\n\\[\\varepsilon_S = \\frac{dQ_S}{dP} \\cdot \\frac{P}{Q_S} = 3 \\times \\frac{6}{24} = \\frac{18}{24} = \\mathbf{\\frac{3}{4}}\\]\n\n\n\\(\\varepsilon_S = 0{,}75 &lt; 1\\) → oferta inelástica.\nNote: \\(c = 6 &gt; 0\\) (intercepto positivo no eixo \\(Q\\)) → confirma oferta inelástica em todos os pontos.\nResposta: C)"
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#exercício-2-escolha-múltipla",
+    "href": "slides/17_elasticidade_oferta.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nQual das seguintes afirmações é verdadeira acerca de uma oferta linear que passa pela origem (\\(Q_S = bP\\), com \\(b &gt; 0\\))?\n\nA elasticidade aumenta à medida que o preço sobe\nA elasticidade é sempre igual a 1, independentemente do preço\nA elasticidade é sempre maior do que 1\nA elasticidade depende do valor de \\(b\\)"
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#exercício-2-solução",
+    "href": "slides/17_elasticidade_oferta.html#exercício-2-solução",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Solução",
+    "text": "Exercício 2 — Solução\nResolução:\nPara \\(Q_S = bP\\):\n\\[\\varepsilon_S = \\frac{dQ_S}{dP} \\cdot \\frac{P}{Q_S} = b \\cdot \\frac{P}{bP} = \\frac{bP}{bP} = \\mathbf{1}\\]\n\nO resultado é exatamente 1 para qualquer valor de \\(P\\) e qualquer valor de \\(b &gt; 0\\).\n\n\nA razão geométrica: a reta passa pela origem, logo o “triângulo” formado pela curva e os eixos mantém sempre a mesma proporção entre \\(P\\) e \\(Q\\) em qualquer ponto.\n\n\nResposta: B)"
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#exercício-3-desenvolvimento",
+    "href": "slides/17_elasticidade_oferta.html#exercício-3-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Desenvolvimento",
+    "text": "Exercício 3 — Desenvolvimento\nA função de oferta de um bem é \\(Q_S = 4P - 8\\).\n(a) Calcule a elasticidade preço da oferta em \\(P = 4\\), \\(P = 6\\) e \\(P = 10\\).\n(b) A oferta é elástica, inelástica ou unitária nestes pontos? Justifique geometricamente.\n(c) Compare com a oferta \\(Q_S' = 4P\\). Calcule \\(\\varepsilon_S\\) para \\(Q_S'\\) nos mesmos preços e interprete a diferença."
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#exercício-3-resolução-a-e-b",
+    "href": "slides/17_elasticidade_oferta.html#exercício-3-resolução-a-e-b",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Resolução (a) e (b)",
+    "text": "Exercício 3 — Resolução (a) e (b)\nAlínea (a): \\(\\dfrac{dQ_S}{dP} = 4\\)\n\n\n\n\n\n\n\n\n\n\n\\(P\\)\n\\(Q_S = 4P-8\\)\n\\(\\varepsilon_S = 4 \\cdot \\dfrac{P}{Q_S}\\)\nClassificação\n\n\n\n\n4\n8\n\\(4 \\times \\dfrac{4}{8} = 2\\)\nElástica\n\n\n6\n16\n\\(4 \\times \\dfrac{6}{16} = \\dfrac{3}{2}\\)\nElástica\n\n\n10\n32\n\\(4 \\times \\dfrac{10}{32} = \\dfrac{5}{4}\\)\nElástica\n\n\n\n\n\nAlínea (b): A oferta \\(Q_S = 4P - 8\\) tem intercepto no eixo \\(P\\) quando \\(Q_S = 0 \\Rightarrow P = 2 &gt; 0\\).\nQualquer oferta linear que corte o eixo \\(P\\) (e não o eixo \\(Q\\), nem passe pela origem) é sempre elástica (\\(\\varepsilon_S &gt; 1\\) em todos os pontos)."
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#exercício-3-resolução-c",
+    "href": "slides/17_elasticidade_oferta.html#exercício-3-resolução-c",
+    "title": "Microeconomia",
+    "section": "Exercício 3 — Resolução (c)",
+    "text": "Exercício 3 — Resolução (c)\nAlínea (c): Para \\(Q_S' = 4P\\):\n\\[\\varepsilon_S' = 4 \\cdot \\frac{P}{4P} = 1 \\quad \\text{em qualquer } P\\]\n\n\n\n\n\n\n\n\n\n\n\n\\(P\\)\n\\(Q_S = 4P-8\\)\n\\(\\varepsilon_S\\)\n\\(Q_S' = 4P\\)\n\\(\\varepsilon_S'\\)\n\n\n\n\n4\n8\n2\n16\n1\n\n\n6\n16\n1,5\n24\n1\n\n\n10\n32\n1,25\n40\n1\n\n\n\n\n\n\n\n\n\n\n\n\nInterpretação\n\n\nAmbas as ofertas têm o mesmo declive (\\(d=4\\)), mas \\(Q_S = 4P - 8\\) passa pelo ponto \\((0, 2)\\) no eixo \\(P\\) — o produtor só começa a oferecer acima de \\(P = 2\\). Esta “barreira de entrada” torna a oferta mais elástica do que a que passa pela origem, onde o produtor oferece desde \\(P = 0\\)."
+  },
+  {
+    "objectID": "slides/17_elasticidade_oferta.html#resumo-da-aula",
+    "href": "slides/17_elasticidade_oferta.html#resumo-da-aula",
+    "title": "Microeconomia",
+    "section": "Resumo da Aula",
+    "text": "Resumo da Aula\nFórmula: \\(\\varepsilon_S = \\dfrac{dQ_S}{dP} \\cdot \\dfrac{P}{Q_S} \\geq 0\\) sempre\n\nRegra geométrica para oferta linear:\n\nCorta eixo \\(Q\\) (\\(c &gt; 0\\)) → inelástica em todos os pontos\nPassa pela origem (\\(c = 0\\)) → unitária em todos os pontos\n\nCorta eixo \\(P\\) (\\(c &lt; 0\\)) → elástica em todos os pontos\n\n\n\nFatores determinantes:\n\nDisponibilidade e mobilidade dos fatores\nCapacidade produtiva instalada\nPeríodo de tempo: \\(\\varepsilon_S^{LP} &gt; \\varepsilon_S^{CP}\\) sempre\n\n\n\n\n\n\n\n\n\n\nPara a próxima aula\n\n\nNa aula 25 estudaremos como os impostos se repartem entre consumidores e produtores — e veremos que a relação \\(|\\varepsilon_D|/\\varepsilon_S\\) determina exactamente essa repartição."
   }
 ]
