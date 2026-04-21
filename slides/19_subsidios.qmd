@@ -32,7 +32,7 @@ Num mercado competitivo sem intervenção do Estado, o equilíbrio $E^*=(Q^*, P^
 ::: {.callout-note}
 **Excedente Económico** = Excedente do Consumidor + Excedente do Produtor
 
-$$XE = XC + XP$$
+$$XE = EC + EP$$
 
 O excedente económico é máximo no equilíbrio competitivo (sem falhas de mercado).
 :::
@@ -49,15 +49,15 @@ ggplot() +
   # Shading XC
   geom_polygon(aes(x = c(0, 0, 75), y = c(25, 100, 25)),
                fill = "steelblue", alpha = 0.25) +
-  # Shading XP
-  geom_polygon(aes(x = c(0, 75, 75), y = c(0, 0, 25)),
+  # Shading EP
+  geom_polygon(aes(x = c(0, 0, 75), y = c(0, 25, 25)),
                fill = "tomato", alpha = 0.25) +
   # Dashed lines
   geom_segment(aes(x = 75, y = 0, xend = 75, yend = 25), linetype = "dashed") +
   geom_segment(aes(x = 0, y = 25, xend = 75, yend = 25), linetype = "dashed") +
   # Labels
-  annotate("text", x = 20, y = 60, label = "XC", size = 5, color = "steelblue") +
-  annotate("text", x = 20, y = 10, label = "XP", size = 5, color = "tomato") +
+  annotate("text", x = 20, y = 60, label = "EC", size = 5, color = "steelblue") +
+  annotate("text", x = 20, y = 10, label = "EP", size = 5, color = "tomato") +
   annotate("text", x = 90, y = 15, label = "D", size = 5, color = "steelblue") +
   annotate("text", x = 90, y = 35, label = "S", size = 5, color = "tomato") +
   annotate("text", x = 78, y = 28, label = expression(E^"*"), size = 5) +
@@ -71,8 +71,8 @@ ggplot() +
 
 ::: {.nonincremental}
 - $Q^*=75$, $P^*=25$
-- $XC = \frac{(100-25)\times 75}{2} = 2812{,}5$ u.m.
-- $XP = \frac{25 \times 75}{2} = 937{,}5$ u.m.
+- $EC = \frac{(100-25)\times 75}{2} = 2812{,}5$ u.m.
+- $EP = \frac{25 \times 75}{2} = 937{,}5$ u.m.
 - $XE^* = 3750$ u.m.
 :::
 
@@ -223,7 +223,7 @@ $$\text{Despesa Fiscal} = S \times Q_I$$
 
 Esta despesa reparte-se entre ganhos de excedente e **perda pura**:
 
-$$\text{Despesa Fiscal} = \Delta XC + \Delta XP + \text{Perda Pura}$$
+$$\text{Despesa Fiscal} = \Delta EC + \Delta EP + \text{Perda Pura}$$
 
 ## Diagrama de excedentes com subsídio
 
@@ -300,8 +300,8 @@ ggplot() +
 
 | | **Antes do subsídio** | **Após subsídio** | **Variação** |
 |---|---|---|---|
-| Excedente do Consumidor | $XC_0$ | $XC_1 > XC_0$ | $+\Delta XC$ |
-| Excedente do Produtor | $XP_0$ | $XP_1 > XP_0$ | $+\Delta XP$ |
+| Excedente do Consumidor | $EC_0$ | $EC_1 > EC_0$ | $+\Delta EC$ |
+| Excedente do Produtor | $EP_0$ | $EP_1 > EP_0$ | $+\Delta EP$ |
 | Despesa Fiscal (Estado) | — | $S \times Q_I$ | — |
 | **Perda Pura** | — | $\frac{1}{2}S(Q_I-Q^*)$ | — |
 | Quantidade | $Q^*$ | $Q_I > Q^*$ | — |
@@ -331,7 +331,7 @@ $$\text{PP} = \frac{1}{2} \times 10 \times (82{,}5 - 75) = \frac{1}{2} \times 10
 . . .
 
 Verificação:
-$$\text{DF} = 825; \quad \Delta XC = 590{,}6; \quad \Delta XP = 196{,}9$$
+$$\text{DF} = 825; \quad \Delta EC = 590{,}6; \quad \Delta EP = 196{,}9$$
 $$825 - 590{,}6 - 196{,}9 = 37{,}5 \text{ u.m.} \checkmark$$
 
 ## Porquê é que existe perda pura?
@@ -408,9 +408,9 @@ $$\text{PP} = \frac{1}{2} \times 15 \times 18 = 135 \text{ u.m.}$$
 
 Verificação:
 - $\text{DF} = 15 \times 130 = 1950$ u.m.
-- $\Delta XC = \frac{65 \times 130}{2} - \frac{56 \times 112}{2} = 4225 - 3136 = 1089$ u.m.
-- $\Delta XP = 1950 - 1089 - 135 = 726$ u.m.
-- $\text{DF} - \Delta XC - \Delta XP = 1950 - 1089 - 726 = 135$ u.m. ✓
+- $\Delta EC = \frac{65 \times 130}{2} - \frac{56 \times 112}{2} = 4225 - 3136 = 1089$ u.m.
+- $\Delta EP = 1950 - 1089 - 135 = 726$ u.m.
+- $\text{DF} - \Delta EC - \Delta EP = 1950 - 1089 - 726 = 135$ u.m. ✓
 
 ## Exercício 3 — Desenvolvimento {.nonincremental}
 
@@ -483,10 +483,10 @@ $$\text{PP} = \frac{1}{2} \times S \times (Q_I - Q^*) = \frac{1}{2} \times 9 \ti
 
 | | Antes | Depois | Variação |
 |---|---|---|---|
-| $XC = \frac{(100-P_D)\cdot Q}{2}$ | 1800 | 2178 | $+378$ |
-| $XP = \frac{(P_S - 10)\cdot Q}{2}$ | 900 | 1089 | $+189$ |
+| $EC = \frac{(100-P_D)\cdot Q}{2}$ | 1800 | 2178 | $+378$ |
+| $EP = \frac{(P_S - 10)\cdot Q}{2}$ | 900 | 1089 | $+189$ |
 | $\text{DF}$ | — | 594 | — |
-| PP $= \text{DF} - \Delta XC - \Delta XP$ | — | — | $594 - 378 - 189 = 27$ ✓ |
+| PP $= \text{DF} - \Delta EC - \Delta EP$ | — | — | $594 - 378 - 189 = 27$ ✓ |
 :::
 
 ## Síntese {.nonincremental}

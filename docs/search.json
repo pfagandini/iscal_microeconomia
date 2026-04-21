@@ -5295,155 +5295,155 @@
     "objectID": "slides/19_subsidios.html#equilíbrio-sem-intervenção",
     "href": "slides/19_subsidios.html#equilíbrio-sem-intervenção",
     "title": "Subsídios",
-    "section": "",
-    "text": "Num mercado competitivo sem intervenção do Estado, o equilíbrio \\(E^*=(Q^*, P^*)\\) maximiza o excedente económico total.\n\n\n\n\n\n\nNote\n\n\n\nExcedente Económico = Excedente do Consumidor + Excedente do Produtor\n\\[XE = XC + XP\\]\nO excedente económico é máximo no equilíbrio competitivo (sem falhas de mercado)."
+    "section": "1.1 Equilíbrio sem intervenção",
+    "text": "1.1 Equilíbrio sem intervenção\nNum mercado competitivo sem intervenção do Estado, o equilíbrio \\(E^*=(Q^*, P^*)\\) maximiza o excedente económico total.\n\n\n\n\n\n\nNote\n\n\nExcedente Económico = Excedente do Consumidor + Excedente do Produtor\n\\[XE = EC + EP\\]\nO excedente económico é máximo no equilíbrio competitivo (sem falhas de mercado)."
   },
   {
     "objectID": "slides/19_subsidios.html#excedente-no-equilíbrio",
     "href": "slides/19_subsidios.html#excedente-no-equilíbrio",
     "title": "Subsídios",
-    "section": "",
-    "text": "Figure 1\n\n\n\n\n\n\n\n\\(Q^*=75\\), \\(P^*=25\\)\n\\(XC = \\frac{(100-25)\\times 75}{2} = 2812{,}5\\) u.m.\n\\(XP = \\frac{25 \\times 75}{2} = 937{,}5\\) u.m.\n\\(XE^* = 3750\\) u.m."
+    "section": "1.2 Excedente no equilíbrio",
+    "text": "1.2 Excedente no equilíbrio\n\n\nFigure 1\n\n\\(Q^*=75\\), \\(P^*=25\\)\n\\(EC = \\frac{(100-25)\\times 75}{2} = 2812{,}5\\) u.m.\n\\(EP = \\frac{25 \\times 75}{2} = 937{,}5\\) u.m.\n\\(XE^* = 3750\\) u.m."
   },
   {
     "objectID": "slides/19_subsidios.html#o-que-é-um-subsídio-específico",
     "href": "slides/19_subsidios.html#o-que-é-um-subsídio-específico",
     "title": "Subsídios",
-    "section": "O que é um subsídio específico?",
-    "text": "O que é um subsídio específico?\n\n\n\n\n\n\nNote\n\n\n\nSubsídio Específico (\\(S\\)): O Estado paga aos produtores (ou consumidores) uma quantia fixa por cada unidade transaccionada.\nA condição de equilíbrio com subsídio fica:\n\\[P_D = P_S - S\\]\nonde \\(P_D\\) é o preço pago pelo consumidor e \\(P_S\\) é o preço recebido pelo produtor.\n\n\n\nO subsídio cria um cunha entre o preço do consumidor e o preço do produtor\nAo contrário do imposto (\\(P_D = P_S + I\\)), o subsídio baixa o preço para o consumidor e sobe o preço para o produtor\nSão distorcionários: alteram os incentivos e afastam a quantidade do óptimo competitivo \\(Q^*\\)"
+    "section": "2.1 O que é um subsídio específico?",
+    "text": "2.1 O que é um subsídio específico?\n\n\n\n\n\n\nNote\n\n\nSubsídio Específico (\\(S\\)): O Estado paga aos produtores (ou consumidores) uma quantia fixa por cada unidade transaccionada.\nA condição de equilíbrio com subsídio fica:\n\\[P_D = P_S - S\\]\nonde \\(P_D\\) é o preço pago pelo consumidor e \\(P_S\\) é o preço recebido pelo produtor.\n\n\n\n\nO subsídio cria um cunha entre o preço do consumidor e o preço do produtor\nAo contrário do imposto (\\(P_D = P_S + I\\)), o subsídio baixa o preço para o consumidor e sobe o preço para o produtor\nSão distorcionários: alteram os incentivos e afastam a quantidade do óptimo competitivo \\(Q^*\\)"
   },
   {
     "objectID": "slides/19_subsidios.html#sistema-de-equilíbrio-com-subsídio-s",
     "href": "slides/19_subsidios.html#sistema-de-equilíbrio-com-subsídio-s",
     "title": "Subsídios",
-    "section": "Sistema de equilíbrio com subsídio \\(S\\)",
-    "text": "Sistema de equilíbrio com subsídio \\(S\\)\nO novo equilíbrio resolve o sistema:\n\\[\\begin{cases} Q_D = f_D(P_D) \\\\ Q_S = f_S(P_S) \\\\ Q_D = Q_S \\\\ P_D = P_S - S \\end{cases}\\]\n\n\\(S\\) é uma constante (valor fixo por unidade)\nO Estado entrega o subsídio ao produtor: o consumidor paga \\(P_D &lt; P^*\\) e o produtor recebe \\(P_S &gt; P^*\\)"
+    "section": "2.2 Sistema de equilíbrio com subsídio \\(S\\)",
+    "text": "2.2 Sistema de equilíbrio com subsídio \\(S\\)\nO novo equilíbrio resolve o sistema:\n\\[\\begin{cases} Q_D = f_D(P_D) \\\\ Q_S = f_S(P_S) \\\\ Q_D = Q_S \\\\ P_D = P_S - S \\end{cases}\\]\n\n\\(S\\) é uma constante (valor fixo por unidade)\nO Estado entrega o subsídio ao produtor: o consumidor paga \\(P_D &lt; P^*\\) e o produtor recebe \\(P_S &gt; P^*\\)"
   },
   {
     "objectID": "slides/19_subsidios.html#exemplo-q_d-100---p-q_s-3p",
     "href": "slides/19_subsidios.html#exemplo-q_d-100---p-q_s-3p",
     "title": "Subsídios",
-    "section": "Exemplo: \\(Q_D = 100 - P\\), \\(Q_S = 3P\\)",
-    "text": "Exemplo: \\(Q_D = 100 - P\\), \\(Q_S = 3P\\)\n\nSem intervenção: \\(P^* = 25\\), \\(Q^* = 75\\)\nCom subsídio \\(S = 10\\) u.m.:\n\\[\\begin{cases} Q_D = 100 - P_D \\\\ Q_S = 3P_S \\\\ Q_D = Q_S \\\\ P_D = P_S - 10 \\end{cases}\\]\nSubstituindo: \\(100 - P_D = 3P_S = 3(P_D + 10)\\)\n\\(100 - P_D = 3P_D + 30 \\Rightarrow 4P_D = 70 \\Rightarrow P_D = 17{,}5\\)\n\\(P_S = 17{,}5 + 10 = 27{,}5\\) e \\(Q_I = 3 \\times 27{,}5 = 82{,}5\\)"
+    "section": "2.3 Exemplo: \\(Q_D = 100 - P\\), \\(Q_S = 3P\\)",
+    "text": "2.3 Exemplo: \\(Q_D = 100 - P\\), \\(Q_S = 3P\\)\nSem intervenção: \\(P^* = 25\\), \\(Q^* = 75\\)\nCom subsídio \\(S = 10\\) u.m.:\n\\[\\begin{cases} Q_D = 100 - P_D \\\\ Q_S = 3P_S \\\\ Q_D = Q_S \\\\ P_D = P_S - 10 \\end{cases}\\]\nSubstituindo: \\(100 - P_D = 3P_S = 3(P_D + 10)\\)\n\\(100 - P_D = 3P_D + 30 \\Rightarrow 4P_D = 70 \\Rightarrow P_D = 17{,}5\\)\n\\(P_S = 17{,}5 + 10 = 27{,}5\\) e \\(Q_I = 3 \\times 27{,}5 = 82{,}5\\)"
   },
   {
     "objectID": "slides/19_subsidios.html#efeito-gráfico-do-subsídio",
     "href": "slides/19_subsidios.html#efeito-gráfico-do-subsídio",
     "title": "Subsídios",
-    "section": "Efeito gráfico do subsídio",
-    "text": "Efeito gráfico do subsídio\n\n\n\n\n\n\n\n\nFigure 2\n\n\n\n\n\nA oferta \\(S'\\) representa a oferta distorcida pelo subsídio, vista pelo consumidor: \\(Q_S = 3(P_D + 10) = 3P_D + 30\\)."
+    "section": "2.4 Efeito gráfico do subsídio",
+    "text": "2.4 Efeito gráfico do subsídio\n\n\nFigure 2\nA oferta \\(S'\\) representa a oferta distorcida pelo subsídio, vista pelo consumidor: \\(Q_S = 3(P_D + 10) = 3P_D + 30\\)."
   },
   {
     "objectID": "slides/19_subsidios.html#quem-beneficia-do-subsídio",
     "href": "slides/19_subsidios.html#quem-beneficia-do-subsídio",
     "title": "Subsídios",
-    "section": "Quem beneficia do subsídio?",
-    "text": "Quem beneficia do subsídio?\n\n\n\n\n\n\nImportant\n\n\n\nIncidência Económica do Subsídio\nA forma como o benefício do subsídio se reparte entre consumidores e produtores não depende de quem recebe o subsídio (incidência legal), mas das elasticidades da procura e da oferta.\n\n\n. . .\nNo exemplo (\\(S = 10\\) u.m.):\n\n\n\n\nPreço\nVariação face a \\(P^*=25\\)\n\n\n\n\nConsumidor paga\n\\(P_D = 17{,}5\\)\n\\(I_D = 25 - 17{,}5 = 7{,}5\\) u.m.\n\n\nProdutor recebe\n\\(P_S = 27{,}5\\)\n\\(I_S = 27{,}5 - 25 = 2{,}5\\) u.m.\n\n\nTotal\n\n\\(I_D + I_S = 10\\) u.m. \\(= S\\) ✓"
+    "section": "3.1 Quem beneficia do subsídio?",
+    "text": "3.1 Quem beneficia do subsídio?\n\n\n\n\n\n\nImportant\n\n\nIncidência Económica do Subsídio\nA forma como o benefício do subsídio se reparte entre consumidores e produtores não depende de quem recebe o subsídio (incidência legal), mas das elasticidades da procura e da oferta.\n\n\n\n\nNo exemplo (\\(S = 10\\) u.m.):\n\n\n\n\nPreço\nVariação face a \\(P^*=25\\)\n\n\n\n\nConsumidor paga\n\\(P_D = 17{,}5\\)\n\\(I_D = 25 - 17{,}5 = 7{,}5\\) u.m.\n\n\nProdutor recebe\n\\(P_S = 27{,}5\\)\n\\(I_S = 27{,}5 - 25 = 2{,}5\\) u.m.\n\n\nTotal\n\n\\(I_D + I_S = 10\\) u.m. \\(= S\\) ✓"
   },
   {
     "objectID": "slides/19_subsidios.html#incidência-e-elasticidades",
     "href": "slides/19_subsidios.html#incidência-e-elasticidades",
     "title": "Subsídios",
-    "section": "Incidência e elasticidades",
-    "text": "Incidência e elasticidades\nA repartição do subsídio entre consumidores e produtores obedece à mesma lógica dos impostos:\n\\[\\frac{I_S}{I_D} = \\frac{|\\varepsilon_D|}{\\varepsilon_S}\\]\n. . .\nNo exemplo:\n\n\\(\\varepsilon_D = \\frac{dQ_D}{dP}\\cdot\\frac{P^*}{Q^*} = -1 \\times \\frac{25}{75} = -\\frac{1}{3}\\)\n\\(\\varepsilon_S = \\frac{dQ_S}{dP}\\cdot\\frac{P^*}{Q^*} = 3 \\times \\frac{25}{75} = 1\\)\n\n\\[\\frac{I_S}{I_D} = \\frac{1/3}{1} = \\frac{1}{3} \\qquad \\checkmark \\quad \\left(\\frac{2{,}5}{7{,}5} = \\frac{1}{3}\\right)\\]\n. . .\n\n\n\n\n\n\nNote\n\n\n\nQuanto mais rígida for a procura (ou a oferta) face à oferta (ou procura), maior será a incidência do subsídio sobre esse lado do mercado."
+    "section": "3.2 Incidência e elasticidades",
+    "text": "3.2 Incidência e elasticidades\nA repartição do subsídio entre consumidores e produtores obedece à mesma lógica dos impostos:\n\\[\\frac{I_S}{I_D} = \\frac{|\\varepsilon_D|}{\\varepsilon_S}\\]\n\nNo exemplo:\n\n\\(\\varepsilon_D = \\frac{dQ_D}{dP}\\cdot\\frac{P^*}{Q^*} = -1 \\times \\frac{25}{75} = -\\frac{1}{3}\\)\n\\(\\varepsilon_S = \\frac{dQ_S}{dP}\\cdot\\frac{P^*}{Q^*} = 3 \\times \\frac{25}{75} = 1\\)\n\n\\[\\frac{I_S}{I_D} = \\frac{1/3}{1} = \\frac{1}{3} \\qquad \\checkmark \\quad \\left(\\frac{2{,}5}{7{,}5} = \\frac{1}{3}\\right)\\]\n\n\n\n\n\n\n\n\nNote\n\n\nQuanto mais rígida for a procura (ou a oferta) face à oferta (ou procura), maior será a incidência do subsídio sobre esse lado do mercado."
   },
   {
     "objectID": "slides/19_subsidios.html#o-subsídio-e-a-despesa-fiscal",
     "href": "slides/19_subsidios.html#o-subsídio-e-a-despesa-fiscal",
     "title": "Subsídios",
-    "section": "O subsídio e a despesa fiscal",
-    "text": "O subsídio e a despesa fiscal\nO Estado financia o subsídio com despesa fiscal:\n\\[\\text{Despesa Fiscal} = S \\times Q_I\\]\n. . .\nNo exemplo: \\(\\text{DF} = 10 \\times 82{,}5 = 825\\) u.m.\n. . .\nEsta despesa reparte-se entre ganhos de excedente e perda pura:\n\\[\\text{Despesa Fiscal} = \\Delta XC + \\Delta XP + \\text{Perda Pura}\\]"
+    "section": "4.1 O subsídio e a despesa fiscal",
+    "text": "4.1 O subsídio e a despesa fiscal\nO Estado financia o subsídio com despesa fiscal:\n\\[\\text{Despesa Fiscal} = S \\times Q_I\\]\n\nNo exemplo: \\(\\text{DF} = 10 \\times 82{,}5 = 825\\) u.m.\n\n\nEsta despesa reparte-se entre ganhos de excedente e perda pura:\n\\[\\text{Despesa Fiscal} = \\Delta EC + \\Delta EP + \\text{Perda Pura}\\]"
   },
   {
     "objectID": "slides/19_subsidios.html#diagrama-de-excedentes-com-subsídio",
     "href": "slides/19_subsidios.html#diagrama-de-excedentes-com-subsídio",
     "title": "Subsídios",
-    "section": "Diagrama de excedentes com subsídio",
-    "text": "Diagrama de excedentes com subsídio\n\n\n\n\n\n\n\n\nFigure 3"
+    "section": "4.2 Diagrama de excedentes com subsídio",
+    "text": "4.2 Diagrama de excedentes com subsídio\n\n\nFigure 3"
   },
   {
     "objectID": "slides/19_subsidios.html#tabela-resumo-dos-excedentes",
     "href": "slides/19_subsidios.html#tabela-resumo-dos-excedentes",
     "title": "Subsídios",
-    "section": "Tabela resumo dos excedentes",
-    "text": "Tabela resumo dos excedentes\n\n\n\n\n\nAntes do subsídio\nApós subsídio\nVariação\n\n\n\n\nExcedente do Consumidor\n\\(XC_0\\)\n\\(XC_1 &gt; XC_0\\)\n\\(+\\Delta XC\\)\n\n\nExcedente do Produtor\n\\(XP_0\\)\n\\(XP_1 &gt; XP_0\\)\n\\(+\\Delta XP\\)\n\n\nDespesa Fiscal (Estado)\n—\n\\(S \\times Q_I\\)\n—\n\n\nPerda Pura\n—\n\\(\\frac{1}{2}S(Q_I-Q^*)\\)\n—\n\n\nQuantidade\n\\(Q^*\\)\n\\(Q_I &gt; Q^*\\)\n—\n\n\nPreço consumidor\n\\(P^*\\)\n\\(P_D &lt; P^*\\)\n\\(-I_D\\)\n\n\nPreço produtor\n\\(P^*\\)\n\\(P_S &gt; P^*\\)\n\\(+I_S\\)\n\n\n\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nO subsídio cria uma perda pura de excedente económico: parte da despesa fiscal não é apropriada nem pelos consumidores nem pelos produtores. O subsídio é distorcionário."
+    "section": "4.3 Tabela resumo dos excedentes",
+    "text": "4.3 Tabela resumo dos excedentes\n\n\n\n\nAntes do subsídio\nApós subsídio\nVariação\n\n\n\n\nExcedente do Consumidor\n\\(EC_0\\)\n\\(EC_1 &gt; EC_0\\)\n\\(+\\Delta EC\\)\n\n\nExcedente do Produtor\n\\(EP_0\\)\n\\(EP_1 &gt; EP_0\\)\n\\(+\\Delta EP\\)\n\n\nDespesa Fiscal (Estado)\n—\n\\(S \\times Q_I\\)\n—\n\n\nPerda Pura\n—\n\\(\\frac{1}{2}S(Q_I-Q^*)\\)\n—\n\n\nQuantidade\n\\(Q^*\\)\n\\(Q_I &gt; Q^*\\)\n—\n\n\nPreço consumidor\n\\(P^*\\)\n\\(P_D &lt; P^*\\)\n\\(-I_D\\)\n\n\nPreço produtor\n\\(P^*\\)\n\\(P_S &gt; P^*\\)\n\\(+I_S\\)\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nO subsídio cria uma perda pura de excedente económico: parte da despesa fiscal não é apropriada nem pelos consumidores nem pelos produtores. O subsídio é distorcionário."
   },
   {
     "objectID": "slides/19_subsidios.html#perda-pura-do-subsídio",
     "href": "slides/19_subsidios.html#perda-pura-do-subsídio",
     "title": "Subsídios",
-    "section": "Perda pura do subsídio",
-    "text": "Perda pura do subsídio\nA perda pura corresponde ao triângulo entre as curvas de oferta e procura, para as unidades entre \\(Q^*\\) e \\(Q_I\\):\n\\[\\text{PP} = \\frac{1}{2} \\times S \\times (Q_I - Q^*)\\]\n. . .\nNo exemplo:\n\\[\\text{PP} = \\frac{1}{2} \\times 10 \\times (82{,}5 - 75) = \\frac{1}{2} \\times 10 \\times 7{,}5 = 37{,}5 \\text{ u.m.}\\]\n. . .\nVerificação: \\[\\text{DF} = 825; \\quad \\Delta XC = 590{,}6; \\quad \\Delta XP = 196{,}9\\] \\[825 - 590{,}6 - 196{,}9 = 37{,}5 \\text{ u.m.} \\checkmark\\]"
+    "section": "4.4 Perda pura do subsídio",
+    "text": "4.4 Perda pura do subsídio\nA perda pura corresponde ao triângulo entre as curvas de oferta e procura, para as unidades entre \\(Q^*\\) e \\(Q_I\\):\n\\[\\text{PP} = \\frac{1}{2} \\times S \\times (Q_I - Q^*)\\]\n\nNo exemplo:\n\\[\\text{PP} = \\frac{1}{2} \\times 10 \\times (82{,}5 - 75) = \\frac{1}{2} \\times 10 \\times 7{,}5 = 37{,}5 \\text{ u.m.}\\]\n\n\nVerificação: \\[\\text{DF} = 825; \\quad \\Delta EC = 590{,}6; \\quad \\Delta EP = 196{,}9\\] \\[825 - 590{,}6 - 196{,}9 = 37{,}5 \\text{ u.m.} \\checkmark\\]"
   },
   {
     "objectID": "slides/19_subsidios.html#porquê-é-que-existe-perda-pura",
     "href": "slides/19_subsidios.html#porquê-é-que-existe-perda-pura",
     "title": "Subsídios",
-    "section": "Porquê é que existe perda pura?",
-    "text": "Porquê é que existe perda pura?\nO subsídio leva à transacção de unidades entre \\(Q^*\\) e \\(Q_I\\) onde:\n\\[\\text{Valorização do Consumidor} &lt; \\text{Custo de Produção}\\]\n. . .\n\nPara essas unidades extras, o valor que o consumidor atribui ao bem (dado pela curva \\(D\\)) é menor do que o custo que o produtor suporta para as produzir (dado pela curva \\(S\\))\nEstas trocas só acontecem porque o Estado subsidia a diferença\nO custo social excede o benefício social: é uma perda líquida de bem-estar"
+    "section": "4.5 Porquê é que existe perda pura?",
+    "text": "4.5 Porquê é que existe perda pura?\nO subsídio leva à transacção de unidades entre \\(Q^*\\) e \\(Q_I\\) onde:\n\\[\\text{Valorização do Consumidor} &lt; \\text{Custo de Produção}\\]\n\n\nPara essas unidades extras, o valor que o consumidor atribui ao bem (dado pela curva \\(D\\)) é menor do que o custo que o produtor suporta para as produzir (dado pela curva \\(S\\))\nEstas trocas só acontecem porque o Estado subsidia a diferença\nO custo social excede o benefício social: é uma perda líquida de bem-estar"
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-1-escolha-múltipla",
     "href": "slides/19_subsidios.html#exercício-1-escolha-múltipla",
     "title": "Subsídios",
-    "section": "Exercício 1 — Escolha Múltipla",
-    "text": "Exercício 1 — Escolha Múltipla\nNum mercado competitivo, a procura e a oferta são descritas por \\(Q_D = 200 - 2P\\) e \\(Q_S = -20 + 3P\\). O Estado decide introduzir um subsídio específico de 15 u.m. por unidade transaccionada.\nQual o novo equilíbrio após o subsídio?\n\n\n\\(P_D = 38\\); \\(P_S = 53\\); \\(Q_I = 124\\)\n\\(P_D = 35\\); \\(P_S = 50\\); \\(Q_I = 130\\)\n\\(P_D = 32\\); \\(P_S = 47\\); \\(Q_I = 136\\)\n\\(P_D = 37\\); \\(P_S = 52\\); \\(Q_I = 126\\)"
+    "section": "5.1 Exercício 1 — Escolha Múltipla",
+    "text": "5.1 Exercício 1 — Escolha Múltipla\nNum mercado competitivo, a procura e a oferta são descritas por \\(Q_D = 200 - 2P\\) e \\(Q_S = -20 + 3P\\). O Estado decide introduzir um subsídio específico de 15 u.m. por unidade transaccionada.\nQual o novo equilíbrio após o subsídio?\n\n\\(P_D = 38\\); \\(P_S = 53\\); \\(Q_I = 124\\)\n\\(P_D = 35\\); \\(P_S = 50\\); \\(Q_I = 130\\)\n\\(P_D = 32\\); \\(P_S = 47\\); \\(Q_I = 136\\)\n\\(P_D = 37\\); \\(P_S = 52\\); \\(Q_I = 126\\)"
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-1-solução",
     "href": "slides/19_subsidios.html#exercício-1-solução",
     "title": "Subsídios",
-    "section": "Exercício 1 — Solução",
-    "text": "Exercício 1 — Solução\n\n\n\n\n\n\nTip\n\n\n\nResposta correta: (B)\n\n\nSem subsídio: \\(200-2P = -20+3P \\Rightarrow 5P = 220 \\Rightarrow P^*=44\\), \\(Q^*=112\\)\nCom \\(S=15\\): \\(\\begin{cases} Q_D = 200 - 2P_D \\\\ Q_S = -20 + 3P_S \\\\ P_D = P_S - 15 \\end{cases}\\)\nSubstituindo \\(P_D = P_S - 15\\):\n\\(200 - 2(P_S-15) = -20 + 3P_S \\Rightarrow 200 - 2P_S + 30 = -20 + 3P_S \\Rightarrow 5P_S = 250 \\Rightarrow P_S = 50\\)\n\\(P_D = 50 - 15 = 35\\); \\(Q_I = 200 - 2(35) = 130\\)\nIncidência: \\(I_D = 44 - 35 = 9\\) u.m.; \\(I_S = 50 - 44 = 6\\) u.m.; DF \\(= 15 \\times 130 = 1950\\) u.m."
+    "section": "5.2 Exercício 1 — Solução",
+    "text": "5.2 Exercício 1 — Solução\n\n\n\n\n\n\nTip\n\n\nResposta correta: (B)\n\n\n\nSem subsídio: \\(200-2P = -20+3P \\Rightarrow 5P = 220 \\Rightarrow P^*=44\\), \\(Q^*=112\\)\nCom \\(S=15\\): \\(\\begin{cases} Q_D = 200 - 2P_D \\\\ Q_S = -20 + 3P_S \\\\ P_D = P_S - 15 \\end{cases}\\)\nSubstituindo \\(P_D = P_S - 15\\):\n\\(200 - 2(P_S-15) = -20 + 3P_S \\Rightarrow 200 - 2P_S + 30 = -20 + 3P_S \\Rightarrow 5P_S = 250 \\Rightarrow P_S = 50\\)\n\\(P_D = 50 - 15 = 35\\); \\(Q_I = 200 - 2(35) = 130\\)\nIncidência: \\(I_D = 44 - 35 = 9\\) u.m.; \\(I_S = 50 - 44 = 6\\) u.m.; DF \\(= 15 \\times 130 = 1950\\) u.m."
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-2-escolha-múltipla",
     "href": "slides/19_subsidios.html#exercício-2-escolha-múltipla",
     "title": "Subsídios",
-    "section": "Exercício 2 — Escolha Múltipla",
-    "text": "Exercício 2 — Escolha Múltipla\nNo mesmo mercado (\\(Q_D = 200 - 2P\\); \\(Q_S = -20 + 3P\\); \\(P^*=44\\); \\(Q^*=112\\)), com o subsídio de 15 u.m., qual a perda pura de excedente económico?\n\n\n90 u.m.\n270 u.m.\n135 u.m.\n54 u.m."
+    "section": "5.3 Exercício 2 — Escolha Múltipla",
+    "text": "5.3 Exercício 2 — Escolha Múltipla\nNo mesmo mercado (\\(Q_D = 200 - 2P\\); \\(Q_S = -20 + 3P\\); \\(P^*=44\\); \\(Q^*=112\\)), com o subsídio de 15 u.m., qual a perda pura de excedente económico?\n\n90 u.m.\n270 u.m.\n135 u.m.\n54 u.m."
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-2-solução",
     "href": "slides/19_subsidios.html#exercício-2-solução",
     "title": "Subsídios",
-    "section": "Exercício 2 — Solução",
-    "text": "Exercício 2 — Solução\n\n\n\n\n\n\nTip\n\n\n\nResposta correta: (C)\n\n\nA perda pura é o triângulo com base \\(S = 15\\) e altura \\((Q_I - Q^*) = 130 - 112 = 18\\):\n\\[\\text{PP} = \\frac{1}{2} \\times 15 \\times 18 = 135 \\text{ u.m.}\\]\nVerificação: - \\(\\text{DF} = 15 \\times 130 = 1950\\) u.m. - \\(\\Delta XC = \\frac{65 \\times 130}{2} - \\frac{56 \\times 112}{2} = 4225 - 3136 = 1089\\) u.m. - \\(\\Delta XP = 1950 - 1089 - 135 = 726\\) u.m. - \\(\\text{DF} - \\Delta XC - \\Delta XP = 1950 - 1089 - 726 = 135\\) u.m. ✓"
+    "section": "5.4 Exercício 2 — Solução",
+    "text": "5.4 Exercício 2 — Solução\n\n\n\n\n\n\nTip\n\n\nResposta correta: (C)\n\n\n\nA perda pura é o triângulo com base \\(S = 15\\) e altura \\((Q_I - Q^*) = 130 - 112 = 18\\):\n\\[\\text{PP} = \\frac{1}{2} \\times 15 \\times 18 = 135 \\text{ u.m.}\\]\nVerificação: - \\(\\text{DF} = 15 \\times 130 = 1950\\) u.m. - \\(\\Delta EC = \\frac{65 \\times 130}{2} - \\frac{56 \\times 112}{2} = 4225 - 3136 = 1089\\) u.m. - \\(\\Delta EP = 1950 - 1089 - 135 = 726\\) u.m. - \\(\\text{DF} - \\Delta EC - \\Delta EP = 1950 - 1089 - 726 = 135\\) u.m. ✓"
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-3-desenvolvimento",
     "href": "slides/19_subsidios.html#exercício-3-desenvolvimento",
     "title": "Subsídios",
-    "section": "Exercício 3 — Desenvolvimento",
-    "text": "Exercício 3 — Desenvolvimento\nA procura e a oferta de um mercado são descritas por:\n\\[Q_D = 100 - P \\qquad Q_S = 2P - 20\\]\nO Estado decide introduzir um subsídio específico de 9 u.m. por unidade transaccionada.\n(a) Determine o equilíbrio de mercado sem intervenção.\n(b) Determine o novo equilíbrio após o subsídio. Quais os preços \\(P_D\\) e \\(P_S\\)?\n(c) Calcule a incidência económica do subsídio sobre consumidores e produtores, e relacione com as elasticidades.\n(d) Calcule a despesa fiscal do Estado e a perda pura de excedente económico."
+    "section": "5.5 Exercício 3 — Desenvolvimento",
+    "text": "5.5 Exercício 3 — Desenvolvimento\nA procura e a oferta de um mercado são descritas por:\n\\[Q_D = 100 - P \\qquad Q_S = 2P - 20\\]\nO Estado decide introduzir um subsídio específico de 9 u.m. por unidade transaccionada.\n(a) Determine o equilíbrio de mercado sem intervenção.\n(b) Determine o novo equilíbrio após o subsídio. Quais os preços \\(P_D\\) e \\(P_S\\)?\n(c) Calcule a incidência económica do subsídio sobre consumidores e produtores, e relacione com as elasticidades.\n(d) Calcule a despesa fiscal do Estado e a perda pura de excedente económico."
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-3-solução-a-e-b",
     "href": "slides/19_subsidios.html#exercício-3-solução-a-e-b",
     "title": "Subsídios",
-    "section": "Exercício 3 — Solução (a) e (b)",
-    "text": "Exercício 3 — Solução (a) e (b)\n\n\n\n\n\n\nTip(a) Equilíbrio sem intervenção\n\n\n\n\\(100 - P = 2P - 20 \\Rightarrow 3P = 120 \\Rightarrow P^* = 40\\); \\(Q^* = 60\\)\n\n\n. . .\n\n\n\n\n\n\nTip(b) Com subsídio \\(S = 9\\)\n\n\n\nSistema: \\(Q_D = Q_S\\) e \\(P_D = P_S - 9\\)\n\\(100 - P_D = 2P_S - 20 = 2(P_D + 9) - 20\\)\n\\(100 - P_D = 2P_D + 18 - 20 \\Rightarrow 102 = 3P_D \\Rightarrow P_D = 34\\)\n\\(P_S = 34 + 9 = 43\\) ; \\(Q_I = 100 - 34 = 66\\)"
+    "section": "5.6 Exercício 3 — Solução (a) e (b)",
+    "text": "5.6 Exercício 3 — Solução (a) e (b)\n\n\n\n(a) Equilíbrio sem intervenção\n\n\n\\(100 - P = 2P - 20 \\Rightarrow 3P = 120 \\Rightarrow P^* = 40\\); \\(Q^* = 60\\)\n\n\n\n\n\n\n\n(b) Com subsídio \\(S = 9\\)\n\n\nSistema: \\(Q_D = Q_S\\) e \\(P_D = P_S - 9\\)\n\\(100 - P_D = 2P_S - 20 = 2(P_D + 9) - 20\\)\n\\(100 - P_D = 2P_D + 18 - 20 \\Rightarrow 102 = 3P_D \\Rightarrow P_D = 34\\)\n\\(P_S = 34 + 9 = 43\\) ; \\(Q_I = 100 - 34 = 66\\)"
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-3-solução-c",
     "href": "slides/19_subsidios.html#exercício-3-solução-c",
     "title": "Subsídios",
-    "section": "Exercício 3 — Solução (c)",
-    "text": "Exercício 3 — Solução (c)\n\n\n\n\n\n\nTip(c) Incidência económica\n\n\n\n\n\\(I_D = P^* - P_D = 40 - 34 = 6\\) u.m. (ganho do consumidor por unidade)\n\\(I_S = P_S - P^* = 43 - 40 = 3\\) u.m. (ganho do produtor por unidade)\n\\(I_D + I_S = 9\\) u.m. \\(= S\\) ✓\n\nRelação com elasticidades (calculadas em \\(P^*=40\\), \\(Q^*=60\\)):\n\\[\\varepsilon_D = \\frac{dQ_D}{dP}\\cdot\\frac{P^*}{Q^*} = -1 \\times \\frac{40}{60} = -\\frac{2}{3}\\]\n\\[\\varepsilon_S = \\frac{dQ_S}{dP}\\cdot\\frac{P^*}{Q^*} = 2 \\times \\frac{40}{60} = \\frac{4}{3}\\]\n\\[\\frac{I_S}{I_D} = \\frac{3}{6} = \\frac{1}{2} = \\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{2/3}{4/3} = \\frac{1}{2} \\checkmark\\]"
+    "section": "5.7 Exercício 3 — Solução (c)",
+    "text": "5.7 Exercício 3 — Solução (c)\n\n\n\n(c) Incidência económica\n\n\n\n\\(I_D = P^* - P_D = 40 - 34 = 6\\) u.m. (ganho do consumidor por unidade)\n\\(I_S = P_S - P^* = 43 - 40 = 3\\) u.m. (ganho do produtor por unidade)\n\\(I_D + I_S = 9\\) u.m. \\(= S\\) ✓\n\nRelação com elasticidades (calculadas em \\(P^*=40\\), \\(Q^*=60\\)):\n\\[\\varepsilon_D = \\frac{dQ_D}{dP}\\cdot\\frac{P^*}{Q^*} = -1 \\times \\frac{40}{60} = -\\frac{2}{3}\\]\n\\[\\varepsilon_S = \\frac{dQ_S}{dP}\\cdot\\frac{P^*}{Q^*} = 2 \\times \\frac{40}{60} = \\frac{4}{3}\\]\n\\[\\frac{I_S}{I_D} = \\frac{3}{6} = \\frac{1}{2} = \\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{2/3}{4/3} = \\frac{1}{2} \\checkmark\\]"
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-3-solução-d",
     "href": "slides/19_subsidios.html#exercício-3-solução-d",
     "title": "Subsídios",
-    "section": "Exercício 3 — Solução (d)",
-    "text": "Exercício 3 — Solução (d)\n\n\n\n\n\n\nTip(d) Despesa fiscal e perda pura\n\n\n\nDespesa Fiscal: \\[\\text{DF} = S \\times Q_I = 9 \\times 66 = 594 \\text{ u.m.}\\]\nPerda Pura: \\[\\text{PP} = \\frac{1}{2} \\times S \\times (Q_I - Q^*) = \\frac{1}{2} \\times 9 \\times (66 - 60) = \\frac{1}{2} \\times 9 \\times 6 = 27 \\text{ u.m.}\\]\nVerificação via excedentes:\n\n\n\n\n\n\n\n\n\n\nAntes\nDepois\nVariação\n\n\n\n\n\\(XC = \\frac{(100-P_D)\\cdot Q}{2}\\)\n1800\n2178\n\\(+378\\)\n\n\n\\(XP = \\frac{(P_S - 10)\\cdot Q}{2}\\)\n900\n1089\n\\(+189\\)\n\n\n\\(\\text{DF}\\)\n—\n594\n—\n\n\nPP \\(= \\text{DF} - \\Delta XC - \\Delta XP\\)\n—\n—\n\\(594 - 378 - 189 = 27\\) ✓"
+    "section": "5.8 Exercício 3 — Solução (d)",
+    "text": "5.8 Exercício 3 — Solução (d)\n\n\n\n(d) Despesa fiscal e perda pura\n\n\nDespesa Fiscal: \\[\\text{DF} = S \\times Q_I = 9 \\times 66 = 594 \\text{ u.m.}\\]\nPerda Pura: \\[\\text{PP} = \\frac{1}{2} \\times S \\times (Q_I - Q^*) = \\frac{1}{2} \\times 9 \\times (66 - 60) = \\frac{1}{2} \\times 9 \\times 6 = 27 \\text{ u.m.}\\]\nVerificação via excedentes:\n\n\n\n\n\n\n\n\n\n\nAntes\nDepois\nVariação\n\n\n\n\n\\(EC = \\frac{(100-P_D)\\cdot Q}{2}\\)\n1800\n2178\n\\(+378\\)\n\n\n\\(EP = \\frac{(P_S - 10)\\cdot Q}{2}\\)\n900\n1089\n\\(+189\\)\n\n\n\\(\\text{DF}\\)\n—\n594\n—\n\n\nPP \\(= \\text{DF} - \\Delta EC - \\Delta EP\\)\n—\n—\n\\(594 - 378 - 189 = 27\\) ✓"
   },
   {
     "objectID": "slides/19_subsidios.html#síntese",
     "href": "slides/19_subsidios.html#síntese",
     "title": "Subsídios",
-    "section": "Síntese",
-    "text": "Síntese\n\n\n\n\n\n\n\n\n\nSubsídio\n\n\n\n\nObjectivo\nIncentivar a produção/consumo de um bem\n\n\nEfeito no preço do consumidor\n\\(P_D &lt; P^*\\)\n\n\nEfeito no preço do produtor\n\\(P_S &gt; P^*\\)\n\n\nEfeito na quantidade\n\\(Q_I &gt; Q^*\\)\n\n\nCusto para o Estado\n\\(\\text{DF} = S \\times Q_I\\)\n\n\nDistribuição do benefício\nDepende de \\(\\varepsilon_D\\) e \\(\\varepsilon_S\\)\n\n\nPerda Pura\n\\(\\text{PP} = \\frac{1}{2} S (Q_I - Q^*)\\)\n\n\nÉ distorcionário?\nSim\n\n\n\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nUm subsídio, mesmo bem intencionado, implica sempre uma perda pura de excedente económico — salvo no caso-limite de procura ou oferta perfeitamente rígidas (\\(|\\varepsilon| = 0\\)), onde \\(Q_I = Q^*\\) e PP \\(= 0\\)."
+    "section": "5.9 Síntese",
+    "text": "5.9 Síntese\n\n\n\n\n\n\n\n\nSubsídio\n\n\n\n\nObjectivo\nIncentivar a produção/consumo de um bem\n\n\nEfeito no preço do consumidor\n\\(P_D &lt; P^*\\)\n\n\nEfeito no preço do produtor\n\\(P_S &gt; P^*\\)\n\n\nEfeito na quantidade\n\\(Q_I &gt; Q^*\\)\n\n\nCusto para o Estado\n\\(\\text{DF} = S \\times Q_I\\)\n\n\nDistribuição do benefício\nDepende de \\(\\varepsilon_D\\) e \\(\\varepsilon_S\\)\n\n\nPerda Pura\n\\(\\text{PP} = \\frac{1}{2} S (Q_I - Q^*)\\)\n\n\nÉ distorcionário?\nSim\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nUm subsídio, mesmo bem intencionado, implica sempre uma perda pura de excedente económico — salvo no caso-limite de procura ou oferta perfeitamente rígidas (\\(|\\varepsilon| = 0\\)), onde \\(Q_I = Q^*\\) e PP \\(= 0\\)."
   },
   {
     "objectID": "slides/25_impostos_elasticidade-document.html",
