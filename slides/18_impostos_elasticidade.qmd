@@ -268,7 +268,7 @@ A soma das perdas de EC e EP excede a receita fiscal em exatamente 37,5 — a **
 
 # Elasticidade e Incidência do Imposto
 
-## A Relação Fundamental
+## A Relação Fundamental{.smaller}
 
 A forma como o imposto se reparte entre consumidores e produtores depende **exclusivamente** das elasticidades de cada lado:
 
@@ -638,7 +638,7 @@ $\Delta EC + \Delta EP = -288 = -(256 + 32) = -(\text{Receita} + PPE)$ ✓
 
 # Síntese
 
-## Resumo da Aula
+## Resumo da Aula{.smaller}
 
 ::: {.nonincremental}
 **Imposto específico** cria uma cunha $P_D = P_S + I$, reduzindo a quantidade transacionada e gerando:
