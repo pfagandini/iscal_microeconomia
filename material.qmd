@@ -43,8 +43,8 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 17. [Elasticidade da Oferta](slides/17_elasticidade_oferta.qmd)
 18. [Impostos](slides/18_impostos_elasticidade.qmd)
 19. [Subsídios](slides/19_subsidios.qmd)
-20. [Intervenções](slides/20_intervencoes.qmd)
-]
+20. [Intervenções](slides/20_controlo_precos.qmd)
+
 
 ### Capítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos
 
