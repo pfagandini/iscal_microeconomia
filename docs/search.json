@@ -501,7 +501,7 @@
     "href": "material.html#slides",
     "title": "Material",
     "section": "Slides",
-    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\nConceitos\nEtapas Processo Produtivo e Regra da Contratação\nFunção de Custos\nGeometria de Custos\nOtimização num mercado concorrencial\n\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\nOferta\nEquilíbrio de Curto Prazo\n\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\nLongo Prazo\nEquilíbrio de Longo Prazo\n\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\nElasticidade da Procura\nElasticidade da Oferta\nImpostos\nSubsídios\n\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
+    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\nConceitos\nEtapas Processo Produtivo e Regra da Contratação\nFunção de Custos\nGeometria de Custos\nOtimização num mercado concorrencial\n\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\nOferta\nEquilíbrio de Curto Prazo\n\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\nLongo Prazo\nEquilíbrio de Longo Prazo\n\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\nElasticidade da Procura\nElasticidade da Oferta\nImpostos\nSubsídios\nIntervenções ]\n\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
   },
   {
     "objectID": "exercises/Capitulo_3C.html#c.-teoria-do-produtor-e-equilíbrio---longo-prazo",
@@ -6109,5 +6109,439 @@
     "title": "Intervenções nos Mercados: Controlo de Preços",
     "section": "Controlos de preços justificados? (2/2)",
     "text": "Controlos de preços justificados? (2/2)\n3. Objectivos distributivos explícitos\nUma sociedade pode preferir aceitar algum DWL para redistribuir de ricos para pobres — decisão normativa, não positiva.\n\n4. Choques transitórios e emergências\nControlos temporários durante crises podem evitar rendas de extracção (price gouging). O custo de eficiência pode ser menor do que os ganhos de estabilidade social."
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html",
+    "href": "slides/23_elasticidades_procura-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "NoteElasticidade\n\n\n\nA elasticidade mede a variação percentual de uma variável em resposta à variação percentual de outra variável que a influencia.\n\n\n. . .\nPor ser uma razão de percentagens, a elasticidade é adimensional — não depende das unidades de medida.\n. . .\nForma geral: \\[\\varepsilon_{Y,X} = \\frac{\\Delta\\% Y}{\\Delta\\% X} = \\frac{\\dfrac{\\Delta Y}{Y}}{\\dfrac{\\Delta X}{X}} = \\frac{\\Delta Y}{\\Delta X} \\cdot \\frac{X}{Y}\\]\n. . .\nEm termos contínuos (derivada): \\[\\varepsilon_{Y,X} = \\frac{dY}{dX} \\cdot \\frac{X}{Y}\\]\n\n\n\nVamos estudar três elasticidades da procura:\n. . .\n1. Elasticidade preço-direta \\((\\varepsilon_D)\\)\nSensibilidade da quantidade procurada de \\(X\\) face ao preço de \\(X\\).\n. . .\n2. Elasticidade preço cruzada \\((\\varepsilon_{x,y})\\)\nSensibilidade da quantidade procurada de \\(X\\) face ao preço de outro bem \\(Y\\).\n. . .\n3. Elasticidade rendimento \\((\\eta)\\)\nSensibilidade da quantidade procurada de \\(X\\) face ao rendimento disponível."
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#o-que-mede-a-elasticidade",
+    "href": "slides/23_elasticidades_procura-document.html#o-que-mede-a-elasticidade",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "NoteElasticidade\n\n\n\nA elasticidade mede a variação percentual de uma variável em resposta à variação percentual de outra variável que a influencia.\n\n\n. . .\nPor ser uma razão de percentagens, a elasticidade é adimensional — não depende das unidades de medida.\n. . .\nForma geral: \\[\\varepsilon_{Y,X} = \\frac{\\Delta\\% Y}{\\Delta\\% X} = \\frac{\\dfrac{\\Delta Y}{Y}}{\\dfrac{\\Delta X}{X}} = \\frac{\\Delta Y}{\\Delta X} \\cdot \\frac{X}{Y}\\]\n. . .\nEm termos contínuos (derivada): \\[\\varepsilon_{Y,X} = \\frac{dY}{dX} \\cdot \\frac{X}{Y}\\]"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#elasticidades-da-procura",
+    "href": "slides/23_elasticidades_procura-document.html#elasticidades-da-procura",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Vamos estudar três elasticidades da procura:\n. . .\n1. Elasticidade preço-direta \\((\\varepsilon_D)\\)\nSensibilidade da quantidade procurada de \\(X\\) face ao preço de \\(X\\).\n. . .\n2. Elasticidade preço cruzada \\((\\varepsilon_{x,y})\\)\nSensibilidade da quantidade procurada de \\(X\\) face ao preço de outro bem \\(Y\\).\n. . .\n3. Elasticidade rendimento \\((\\eta)\\)\nSensibilidade da quantidade procurada de \\(X\\) face ao rendimento disponível."
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#definição-e-fórmula",
+    "href": "slides/23_elasticidades_procura-document.html#definição-e-fórmula",
+    "title": "Microeconomia",
+    "section": "2.1 Definição e Fórmula",
+    "text": "2.1 Definição e Fórmula\n\n\n\n\n\n\nNoteElasticidade Preço-Direta\n\n\n\nMede a variação percentual da quantidade procurada quando o preço do mesmo bem varia 1%, tudo o resto constante: \\[\\varepsilon_D = \\frac{\\Delta\\% Q_D}{\\Delta\\% P} = \\frac{\\Delta Q_D}{\\Delta P} \\cdot \\frac{P}{Q_D}\\]\n\n\n. . .\nComo \\(Q_D\\) e \\(P\\) variam em sentidos opostos (Lei da Procura), \\(\\varepsilon_D &lt; 0\\) em geral.\n. . .\nTrabalha-se habitualmente com o valor absoluto \\(|\\varepsilon_D|\\):\n\n\n\n\\(|\\varepsilon_D|\\)\nClassificação\n\n\n\n\n\\(&gt; 1\\)\nProcura elástica\n\n\n\\(= 1\\)\nElasticidade unitária\n\n\n\\(&lt; 1\\)\nProcura inelástica (ou rígida)"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#cálculo-procura-linear",
+    "href": "slides/23_elasticidades_procura-document.html#cálculo-procura-linear",
+    "title": "Microeconomia",
+    "section": "2.2 Cálculo: Procura Linear",
+    "text": "2.2 Cálculo: Procura Linear\nPara \\(Q_D = a - bP\\):\n\\[\\frac{dQ_D}{dP} = -b \\quad \\Rightarrow \\quad \\varepsilon_D = -b \\cdot \\frac{P}{Q_D}\\]\n. . .\n\n\n\n\n\n\nTipNota importante\n\n\n\nNuma procura linear, \\(|\\varepsilon_D|\\) varia ao longo da curva — não é constante. O mesmo \\(b\\) produz elasticidades diferentes conforme o ponto \\((P, Q_D)\\) considerado."
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#exemplo-q_d-100---5p",
+    "href": "slides/23_elasticidades_procura-document.html#exemplo-q_d-100---5p",
+    "title": "Microeconomia",
+    "section": "2.3 Exemplo: \\(Q_D = 100 - 5P\\)",
+    "text": "2.3 Exemplo: \\(Q_D = 100 - 5P\\)\n\n\n\n\n\n\n\n\n\n. . .\n\n\nZona superior (preços altos, quantidades baixas): procura elástica\nPonto médio (\\(P=10\\), \\(Q=50\\)): elasticidade unitária\nZona inferior (preços baixos, quantidades altas): procura inelástica"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#casos-extremos",
+    "href": "slides/23_elasticidades_procura-document.html#casos-extremos",
+    "title": "Microeconomia",
+    "section": "2.4 Casos Extremos",
+    "text": "2.4 Casos Extremos\n\n\n\n\n\n\n\n\n\n\n\n\\(|\\varepsilon|=0\\): quantidade não reage ao preço (ex.: medicação sem substitutos, bem de sobrevivência)\n\\(|\\varepsilon|\\to\\infty\\): consumidores só compram a \\(P_0\\) — qualquer aumento de preço leva a procura a zero (ex.: bem homogéneo com substituto perfeito)"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#fatores-que-influenciam-varepsilon_d",
+    "href": "slides/23_elasticidades_procura-document.html#fatores-que-influenciam-varepsilon_d",
+    "title": "Microeconomia",
+    "section": "2.5 Fatores que Influenciam \\(|\\varepsilon_D|\\)",
+    "text": "2.5 Fatores que Influenciam \\(|\\varepsilon_D|\\)\n\nExistência de substitutos: mais substitutos → maior elasticidade. Leite (poucos substitutos) vs. leite de marca \\(X\\) (muitos substitutos).\n\n. . .\n\nEspecificidade da definição do bem: quanto mais específico, maior \\(|\\varepsilon_D|\\). “Comida” (inelástica) vs. “Pizza Margherita do Jezzuz Crust” (elástica).\n\n. . .\n\nPeso no orçamento: bens com maior peso no orçamento têm procuras mais elásticas — o consumidor está mais atento às variações de preço.\n\n. . .\n\nPeríodo de tempo: no longo prazo, o consumidor tem mais tempo para adaptar comportamentos e encontrar substitutos → elasticidade aumenta com o tempo."
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#elasticidade-e-despesa-de-consumo",
+    "href": "slides/23_elasticidades_procura-document.html#elasticidade-e-despesa-de-consumo",
+    "title": "Microeconomia",
+    "section": "2.6 Elasticidade e Despesa de Consumo",
+    "text": "2.6 Elasticidade e Despesa de Consumo\nA variação da despesa total (\\(P \\times Q_D\\)) quando o preço sobe depende de \\(|\\varepsilon_D|\\):\n. . .\n\\[\\Delta \\text{Despesa} \\approx \\underbrace{P_0 \\cdot \\Delta Q}_{\\text{efeito quantidade}} + \\underbrace{\\Delta P \\cdot Q_0}_{\\text{efeito preço}}\\]\n. . .\n\nSe \\(|\\varepsilon_D| &gt; 1\\): efeito quantidade domina → despesa desce quando \\(P\\) sobe\nSe \\(|\\varepsilon_D| &lt; 1\\): efeito preço domina → despesa sobe quando \\(P\\) sobe\nSe \\(|\\varepsilon_D| = 1\\): os dois efeitos compensam-se → despesa não se altera"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#definição",
+    "href": "slides/23_elasticidades_procura-document.html#definição",
+    "title": "Microeconomia",
+    "section": "3.1 Definição",
+    "text": "3.1 Definição\n\n\n\n\n\n\nNoteElasticidade Preço Cruzada\n\n\n\nMede a variação percentual da quantidade procurada do bem \\(X\\) quando o preço do bem \\(Y\\) varia 1%, tudo o resto constante: \\[\\varepsilon_{x,y} = \\frac{\\Delta\\% Q_x}{\\Delta\\% P_y} = \\frac{\\Delta Q_x}{\\Delta P_y} \\cdot \\frac{P_y}{Q_x}\\]\n\n\n. . .\nO sinal de \\(\\varepsilon_{x,y}\\) identifica a relação entre os bens:\n\n\n\n\n\n\n\n\nSinal\nRelação\nInterpretação\n\n\n\n\n\\(\\varepsilon_{x,y} &gt; 0\\)\nBens substitutos\n\\(P_y \\uparrow\\) → procura de \\(X\\) sobe\n\n\n\\(\\varepsilon_{x,y} &lt; 0\\)\nBens complementares\n\\(P_y \\uparrow\\) → procura de \\(X\\) desce\n\n\n\\(\\varepsilon_{x,y} = 0\\)\nBens independentes\npreço de \\(Y\\) não afeta procura de \\(X\\)"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#exemplo-bens-substitutos-e-complementares",
+    "href": "slides/23_elasticidades_procura-document.html#exemplo-bens-substitutos-e-complementares",
+    "title": "Microeconomia",
+    "section": "3.2 Exemplo: Bens Substitutos e Complementares",
+    "text": "3.2 Exemplo: Bens Substitutos e Complementares\n\nSubstitutos — café e chá: se o preço do chá sobe, a procura de café sobe\nComplementares — café e açúcar: se o preço do açúcar sobe, o café fica mais caro de consumir → procura de café desce\n\n. . .\n\n\n\n\n\n\nTipAplicação à Definição de Mercado\n\n\n\nA elasticidade cruzada é usada para determinar se dois bens pertencem ao mesmo mercado relevante. Quanto maior \\(\\varepsilon_{x,y}\\), mais próximos os substitutos — iogurtes de diferentes marcas têm \\(\\varepsilon_{x,y}\\) elevada; iogurtes e ervilhas têm \\(\\varepsilon_{x,y} \\approx 0\\)."
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#definição-1",
+    "href": "slides/23_elasticidades_procura-document.html#definição-1",
+    "title": "Microeconomia",
+    "section": "4.1 Definição",
+    "text": "4.1 Definição\n\n\n\n\n\n\nNoteElasticidade Rendimento\n\n\n\nMede a variação percentual da quantidade procurada quando o rendimento disponível (\\(W\\)) varia 1%, tudo o resto constante: \\[\\eta = \\frac{\\Delta\\% Q}{\\Delta\\% W} = \\frac{\\Delta Q}{\\Delta W} \\cdot \\frac{W}{Q}\\]\n\n\n. . .\nO sinal e magnitude de \\(\\eta\\) classificam o tipo de bem:\n\n\n\n\n\n\n\n\\(\\eta\\)\nTipo de bem\n\n\n\n\n\\(\\eta &lt; 0\\)\nBem inferior (procura desce quando rendimento sobe)\n\n\n\\(0 &lt; \\eta \\leq 1\\)\nBem normal (procura sobe com rendimento, não mais do que proporcionalmente)\n\n\n\\(\\eta &gt; 1\\)\nBem de luxo (procura sobe mais do que proporcionalmente)"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#intuição-económica",
+    "href": "slides/23_elasticidades_procura-document.html#intuição-económica",
+    "title": "Microeconomia",
+    "section": "4.2 Intuição Económica",
+    "text": "4.2 Intuição Económica\n\nBem inferior (\\(\\eta &lt; 0\\)): quando o rendimento sobe, o consumidor substitui este bem por alternativas melhores. Ex.: transporte em autocarro, marcas de distribuidor baratas.\n\n. . .\n\nBem normal (\\(0 &lt; \\eta \\leq 1\\)): procura sobe com rendimento, mas de forma menos do que proporcional. Ex.: alimentação básica, roupa corrente.\n\n. . .\n\nBem de luxo (\\(\\eta &gt; 1\\)): procura responde de forma mais que proporcional ao rendimento. Ex.: viagens de férias, automóveis de alta gama, jantares em restaurantes de topo."
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#elasticidades-da-procura-síntese",
+    "href": "slides/23_elasticidades_procura-document.html#elasticidades-da-procura-síntese",
+    "title": "Microeconomia",
+    "section": "5.1 Elasticidades da Procura: Síntese",
+    "text": "5.1 Elasticidades da Procura: Síntese\n\n\n\nElasticidade\nValor\nConclusão\n\n\n\n\n\\(\\|\\varepsilon_D\\|\\)\n\\(&gt; 1\\)\nProcura elástica\n\n\n\n\\(= 1\\)\nElasticidade unitária\n\n\n\n\\(&lt; 1\\)\nProcura inelástica\n\n\n\\(\\varepsilon_{x,y}\\)\n\\(&gt; 0\\)\nBens substitutos\n\n\n\n\\(= 0\\)\nBens independentes\n\n\n\n\\(&lt; 0\\)\nBens complementares\n\n\n\\(\\eta\\)\n\\(&lt; 0\\)\nBem inferior\n\n\n\n\\(0 &lt; \\eta \\leq 1\\)\nBem normal\n\n\n\n\\(&gt; 1\\)\nBem de luxo"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#exercício-1-escolha-múltipla",
+    "href": "slides/23_elasticidades_procura-document.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "6.1 Exercício 1 — Escolha Múltipla",
+    "text": "6.1 Exercício 1 — Escolha Múltipla\nA procura de mercado de um bem é \\(Q_D = 120 - 3P\\). Qual é a elasticidade preço-direta quando \\(P = 30\\)?\n\n\n\\(\\varepsilon_D = -1\\) (elasticidade unitária)\n\\(\\varepsilon_D = -3\\) (elástica)\n\\(\\varepsilon_D = -1/3\\) (inelástica)\n\\(\\varepsilon_D = -1/2\\) (inelástica)"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#exercício-1-solução",
+    "href": "slides/23_elasticidades_procura-document.html#exercício-1-solução",
+    "title": "Microeconomia",
+    "section": "6.2 Exercício 1 — Solução",
+    "text": "6.2 Exercício 1 — Solução\nResolução:\n\\[\\frac{dQ_D}{dP} = -3\\]\n. . .\nQuando \\(P = 30\\): \\(\\quad Q_D = 120 - 3 \\times 30 = 30\\)\n. . .\n\\[\\varepsilon_D = \\frac{dQ_D}{dP} \\cdot \\frac{P}{Q_D} = -3 \\times \\frac{30}{30} = \\mathbf{-3}\\]\n. . .\n\\(|\\varepsilon_D| = 3 &gt; 1\\) → procura elástica neste ponto.\nSe o preço subir 1%, a quantidade procurada reduz-se 3%.\nResposta: B)"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#exercício-2-escolha-múltipla",
+    "href": "slides/23_elasticidades_procura-document.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "6.3 Exercício 2 — Escolha Múltipla",
+    "text": "6.3 Exercício 2 — Escolha Múltipla\nA quantidade procurada do bem \\(X\\) é dada por \\(Q_x = 80 - 3P_x - 2P_y\\). Sabendo que \\(P_x = 5\\) e \\(P_y = 6\\), qual a relação entre \\(X\\) e \\(Y\\)?\n\n\nBens substitutos, pois \\(\\varepsilon_{x,y} &gt; 0\\)\nBens complementares, pois \\(\\varepsilon_{x,y} &lt; 0\\)\nBens independentes, pois \\(\\varepsilon_{x,y} = 0\\)\nNão é possível determinar sem conhecer o rendimento"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#exercício-2-solução",
+    "href": "slides/23_elasticidades_procura-document.html#exercício-2-solução",
+    "title": "Microeconomia",
+    "section": "6.4 Exercício 2 — Solução",
+    "text": "6.4 Exercício 2 — Solução\nResolução:\n\\[\\frac{\\partial Q_x}{\\partial P_y} = -2\\]\n. . .\nQuando \\(P_x = 5\\), \\(P_y = 6\\): \\[Q_x = 80 - 3(5) - 2(6) = 80 - 15 - 12 = 53\\]\n. . .\n\\[\\varepsilon_{x,y} = \\frac{\\partial Q_x}{\\partial P_y} \\cdot \\frac{P_y}{Q_x} = -2 \\times \\frac{6}{53} \\approx -0{,}23\\]\n. . .\n\\(\\varepsilon_{x,y} &lt; 0\\) → bens complementares: quando o preço de \\(Y\\) sobe, a quantidade procurada de \\(X\\) diminui.\nResposta: B)"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#exercício-3-desenvolvimento",
+    "href": "slides/23_elasticidades_procura-document.html#exercício-3-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "6.5 Exercício 3 — Desenvolvimento",
+    "text": "6.5 Exercício 3 — Desenvolvimento\nA procura de um bem é \\(Q_D = 120 - 3P\\).\n(a) Calcule \\(\\varepsilon_D\\) quando \\(P = 10\\), \\(P = 20\\) e \\(P = 30\\). Classifique em cada caso.\n(b) Para que valor de \\(P\\) a elasticidade é unitária?\n(c) Calcule o Excedente do Consumidor para \\(P = 10\\) e para \\(P = 20\\). Comente a relação com a elasticidade."
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#exercício-3-resolução-a-e-b",
+    "href": "slides/23_elasticidades_procura-document.html#exercício-3-resolução-a-e-b",
+    "title": "Microeconomia",
+    "section": "6.6 Exercício 3 — Resolução (a) e (b)",
+    "text": "6.6 Exercício 3 — Resolução (a) e (b)\nAlínea (a): \\(\\dfrac{dQ_D}{dP} = -3\\)\n. . .\n\n\n\n\n\n\n\n\n\n\\(P\\)\n\\(Q_D\\)\n\\(\\varepsilon_D = -3 \\cdot \\frac{P}{Q_D}\\)\nClassificação\n\n\n\n\n10\n90\n\\(-3 \\times \\frac{10}{90} = -\\frac{1}{3}\\)\nInelástica\n\n\n20\n60\n\\(-3 \\times \\frac{20}{60} = -1\\)\nUnitária\n\n\n30\n30\n\\(-3 \\times \\frac{30}{30} = -3\\)\nElástica\n\n\n\n. . .\nAlínea (b): \\(|\\varepsilon_D| = 1 \\Leftrightarrow \\left|-3 \\cdot \\frac{P}{120-3P}\\right| = 1\\)\n\\[3P = 120 - 3P \\quad \\Rightarrow \\quad 6P = 120 \\quad \\Rightarrow \\quad \\mathbf{P = 20}\\]"
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#exercício-3-resolução-c",
+    "href": "slides/23_elasticidades_procura-document.html#exercício-3-resolução-c",
+    "title": "Microeconomia",
+    "section": "6.7 Exercício 3 — Resolução (c)",
+    "text": "6.7 Exercício 3 — Resolução (c)\nAlínea (c): Inversa da procura: \\(P = 40 - \\dfrac{Q}{3}\\) (preço máximo = 40 quando \\(Q=0\\))\n. . .\nEC quando \\(P = 10\\) (\\(Q = 90\\)): \\[EC = \\frac{(40 - 10) \\times 90}{2} = \\frac{30 \\times 90}{2} = \\mathbf{1{.}350}\\]\n. . .\nEC quando \\(P = 20\\) (\\(Q = 60\\)): \\[EC = \\frac{(40 - 20) \\times 60}{2} = \\frac{20 \\times 60}{2} = \\mathbf{600}\\]\n. . .\n\n\n\n\n\n\nTipComentário\n\n\n\nA \\(P = 10\\) a procura é inelástica — os consumidores estão dispostos a pagar muito acima do preço de mercado, gerando um EC elevado (1.350). A \\(P = 20\\) a procura é unitária e o EC é mais reduzido (600). A zona inelástica da procura coincide com onde os consumidores têm menos alternativas e maior disponibilidade a pagar."
+  },
+  {
+    "objectID": "slides/23_elasticidades_procura-document.html#resumo-da-aula",
+    "href": "slides/23_elasticidades_procura-document.html#resumo-da-aula",
+    "title": "Microeconomia",
+    "section": "7.1 Resumo da Aula",
+    "text": "7.1 Resumo da Aula\n\nElasticidade preço-direta \\((\\varepsilon_D)\\):\n\nFórmula: \\(\\varepsilon_D = \\dfrac{dQ_D}{dP} \\cdot \\dfrac{P}{Q_D}\\); sempre \\(\\leq 0\\)\nNuma procura linear, varia ao longo da curva: elástica em cima, inelástica em baixo\n\\(|\\varepsilon_D| &gt; 1\\): despesa desce quando \\(P\\) sobe; \\(|\\varepsilon_D| &lt; 1\\): despesa sobe\n\n\n. . .\n\nElasticidade cruzada \\((\\varepsilon_{x,y})\\):\n\nPositiva → substitutos; negativa → complementares; nula → independentes\n\n\n. . .\n\nElasticidade rendimento \\((\\eta)\\):\n\n\\(\\eta &lt; 0\\): bem inferior; \\(0 &lt; \\eta \\leq 1\\): normal; \\(\\eta &gt; 1\\): luxo\n\n\n. . .\n\n\n\n\n\n\nImportantPara a próxima aula\n\n\n\nNa aula 24 estudaremos a elasticidade preço da oferta e a sua relação com o horizonte temporal de produção."
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "NoteLongo Prazo\n\n\n\nNo longo prazo, todos os fatores produtivos são variáveis — não existem custos fixos. A empresa tem acesso a todas as combinações de \\(K\\) e \\(L\\), e pode ajustar a sua escala de produção.\n\n\n. . .\nConsequência fundamental:\n\nOs custos médios de longo prazo são sempre menores ou iguais aos custos médios de curto prazo.\nA empresa escolhe a combinação \\((K, L)\\) que minimiza o custo para cada nível de produção.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCada curva azul: custo médio de curto prazo (capital fixado)\nCurva vermelha: envelope de longo prazo — o mínimo possível para cada \\(Q\\)\n\n\n\n\n\n\n\n\n\n\n\nNoteDefinições\n\n\n\n\nEconomias de escala: \\(CM_{LP}\\) decrescente — escalar a produção reduz o custo médio.\nDeseconomias de escala: \\(CM_{LP}\\) crescente — crescer aumenta o custo médio.\nEscala Mínima Eficiente (EME): o nível de \\(Q\\) que minimiza \\(CM_{LP}\\).\n\n\n\n. . .\nA EME influencia a estrutura do mercado:\n\nEME pequena → mercado comporta muitas empresas pequenas (ex.: restaurantes, cabeleireiros)\nEME grande → mercado tende para poucas empresas grandes (ex.: automóvel, aviação)"
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#o-que-muda-no-longo-prazo",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#o-que-muda-no-longo-prazo",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "NoteLongo Prazo\n\n\n\nNo longo prazo, todos os fatores produtivos são variáveis — não existem custos fixos. A empresa tem acesso a todas as combinações de \\(K\\) e \\(L\\), e pode ajustar a sua escala de produção.\n\n\n. . .\nConsequência fundamental:\n\nOs custos médios de longo prazo são sempre menores ou iguais aos custos médios de curto prazo.\nA empresa escolhe a combinação \\((K, L)\\) que minimiza o custo para cada nível de produção."
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#custos-de-longo-prazo-intuição-gráfica",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#custos-de-longo-prazo-intuição-gráfica",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Cada curva azul: custo médio de curto prazo (capital fixado)\nCurva vermelha: envelope de longo prazo — o mínimo possível para cada \\(Q\\)"
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#economias-e-deseconomias-de-escala",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#economias-e-deseconomias-de-escala",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "NoteDefinições\n\n\n\n\nEconomias de escala: \\(CM_{LP}\\) decrescente — escalar a produção reduz o custo médio.\nDeseconomias de escala: \\(CM_{LP}\\) crescente — crescer aumenta o custo médio.\nEscala Mínima Eficiente (EME): o nível de \\(Q\\) que minimiza \\(CM_{LP}\\).\n\n\n\n. . .\nA EME influencia a estrutura do mercado:\n\nEME pequena → mercado comporta muitas empresas pequenas (ex.: restaurantes, cabeleireiros)\nEME grande → mercado tende para poucas empresas grandes (ex.: automóvel, aviação)"
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#equilíbrio-de-mercado-em-cp",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#equilíbrio-de-mercado-em-cp",
+    "title": "Microeconomia",
+    "section": "2.1 Equilíbrio de Mercado em CP",
+    "text": "2.1 Equilíbrio de Mercado em CP\n\n\n\n\n\n\nTipRecapitulação\n\n\n\nNo curto prazo, o número de empresas no mercado está fixo. O equilíbrio determina-se pela interação entre a procura do mercado e a oferta agregada das empresas existentes.\n\n\n. . .\nCondição de equilíbrio do mercado em CP:\n\\[Q_D(P^*) = Q_S(P^*)\\]\n. . .\nCondição de otimização de cada empresa (tomadora de preço):\n\\[P^* = Cmg_{CP}(q^*)\\]\n. . .\nNeste equilíbrio, o lucro individual pode ser positivo, nulo ou negativo."
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#o-lucro-em-cp-como-sinal-de-mercado",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#o-lucro-em-cp-como-sinal-de-mercado",
+    "title": "Microeconomia",
+    "section": "2.2 O Lucro em CP como Sinal de Mercado",
+    "text": "2.2 O Lucro em CP como Sinal de Mercado\n\n\n\n\n\n\n\n\n\n. . .\nSe \\(\\Pi &gt; 0\\): o mercado é atrativo para novos produtores → entram empresas.\nSe \\(\\Pi &lt; 0\\): algumas empresas saem (após cobrir custos fixos irrecuperáveis)."
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#entrada-de-empresas-mecanismo",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#entrada-de-empresas-mecanismo",
+    "title": "Microeconomia",
+    "section": "3.1 Entrada de Empresas: Mecanismo",
+    "text": "3.1 Entrada de Empresas: Mecanismo\n\n\n\n\n\n\nImportantMecanismo de Ajustamento\n\n\n\nO mercado em concorrência perfeita ajusta-se automaticamente através da entrada e saída de empresas:\n\n\\(\\Pi &gt; 0\\) → entrada de empresas → oferta expande → \\(P\\) desce → \\(\\Pi\\) diminui\n\\(\\Pi &lt; 0\\) → saída de empresas → oferta contrai → \\(P\\) sobe → \\(\\Pi\\) aumenta\n\n\n\n. . .\nEste processo continua até que nenhuma empresa tenha incentivo para entrar nem sair."
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#entrada-de-empresas-efeito-no-mercado",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#entrada-de-empresas-efeito-no-mercado",
+    "title": "Microeconomia",
+    "section": "3.2 Entrada de Empresas: Efeito no Mercado",
+    "text": "3.2 Entrada de Empresas: Efeito no Mercado\n\n\n\n\n\n\n\n\n\n\n\nEntram empresas → oferta expande (\\(S \\to S'\\)) → \\(p\\) desce → \\(q_i\\) de cada empresa desce\nNo total, há mais produto no mercado, mas o lucro individual diminui"
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#condição-de-equilíbrio-de-longo-prazo",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#condição-de-equilíbrio-de-longo-prazo",
+    "title": "Microeconomia",
+    "section": "3.3 Condição de Equilíbrio de Longo Prazo",
+    "text": "3.3 Condição de Equilíbrio de Longo Prazo\nA entrada/saída de empresas cessa quando \\(\\Pi = 0\\).\n. . .\nEm concorrência perfeita, o equilíbrio de longo prazo verifica:\n\\[\\boxed{P^* = Cmg_{LP} = CM_{LP}}\\]\n. . .\nInterpretação:\n\n\\(P^* = Cmg_{LP}\\): a empresa está a maximizar o lucro (condição de otimização)\n\\(P^* = CM_{LP}\\): o lucro económico é nulo (condição de entrada/saída livre)\nEstas duas condições em simultâneo implicam que a empresa opera na Escala Mínima Eficiente"
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#equilíbrio-de-longo-prazo-gráfico",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#equilíbrio-de-longo-prazo-gráfico",
+    "title": "Microeconomia",
+    "section": "3.4 Equilíbrio de Longo Prazo: Gráfico",
+    "text": "3.4 Equilíbrio de Longo Prazo: Gráfico"
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#oferta-de-longo-prazo-do-mercado",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#oferta-de-longo-prazo-do-mercado",
+    "title": "Microeconomia",
+    "section": "3.5 Oferta de Longo Prazo do Mercado",
+    "text": "3.5 Oferta de Longo Prazo do Mercado\n\n\n\n\n\n\nNoteCurva de Oferta de LP em Concorrência Perfeita\n\n\n\nCom livre entrada e saída, a curva de oferta de longo prazo do mercado é horizontal ao nível de \\(P^* = CM_{LP,\\min}\\).\n\n\n. . .\nPorquê horizontal?\n\nSempre que \\(P &gt; P^*\\): entram empresas → oferta aumenta → \\(P\\) desce até \\(P^*\\)\nSempre que \\(P &lt; P^*\\): saem empresas → oferta diminui → \\(P\\) sobe até \\(P^*\\)\nPortanto, no LP, o mercado só está em equilíbrio com \\(P = P^*\\)\n\n. . .\nA quantidade total de mercado é determinada exclusivamente pela procura — o número de empresas ajusta-se para satisfazê-la ao preço \\(P^*\\)."
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#excedente-total-no-longo-prazo",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#excedente-total-no-longo-prazo",
+    "title": "Microeconomia",
+    "section": "3.6 Excedente Total no Longo Prazo",
+    "text": "3.6 Excedente Total no Longo Prazo\n\n\n\n\n\n\nTipExcedente no LP\n\n\n\nNo equilíbrio de longo prazo em concorrência perfeita:\n\nExcedente do produtor = 0 (lucro económico nulo)\nTodo o excedente económico do mercado é Excedente do Consumidor\n\n\n\n. . .\nIsto é uma propriedade notável da concorrência perfeita: no longo prazo, os consumidores capturam todo o ganho gerado pela atividade económica."
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#passo-a-passo-expansão-da-procura",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#passo-a-passo-expansão-da-procura",
+    "title": "Microeconomia",
+    "section": "4.1 Passo a Passo: Expansão da Procura",
+    "text": "4.1 Passo a Passo: Expansão da Procura\n\nSuponha que o mercado está inicialmente em equilíbrio de LP. Ocorre um aumento permanente da procura.\n\n. . .\nPasso 1 — CP imediato:\nA oferta está fixa (número de empresas fixo). O novo equilíbrio de CP tem \\(P' &gt; P^*\\) e \\(q_i' &gt; q_i^*\\). Surge \\(\\Pi &gt; 0\\).\n. . .\nPasso 2 — Ajustamento LP:\n\\(\\Pi &gt; 0\\) atrai novas empresas. A oferta expande progressivamente. O preço desce.\n. . .\nPasso 3 — Novo equilíbrio LP:\nO processo termina quando \\(P = P^*\\) novamente (se a tecnologia não se alterar e os preços dos fatores são constantes). A quantidade total no mercado é maior, mas cada empresa individual produz \\(q_i^*\\) (o mesmo de antes)."
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#ajustamento-lp-gráfico",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#ajustamento-lp-gráfico",
+    "title": "Microeconomia",
+    "section": "4.2 Ajustamento LP: Gráfico",
+    "text": "4.2 Ajustamento LP: Gráfico\n\n\n\n\n\n\n\n\n\n\n\nApós choque, CP: \\(P\\) sobe, \\(\\Pi &gt; 0\\) (ponto laranja)\nLP: entrada de empresas → \\(P\\) regressa a \\(P^*\\), mais empresas no mercado (ponto vermelho)"
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#exercício-1-escolha-múltipla",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "5.1 Exercício 1 — Escolha Múltipla",
+    "text": "5.1 Exercício 1 — Escolha Múltipla\nUma empresa em mercado concorrencial tem função de custo total de LP: \\[CT_{LP}(q) = q^3 - 6q^2 + 15q\\]\nQual é o preço de equilíbrio de longo prazo neste mercado?\n\n\n\\(P^* = 3\\)\n\\(P^* = 6\\)\n\\(P^* = 9\\)\n\\(P^* = 15\\)"
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#exercício-1-solução",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#exercício-1-solução",
+    "title": "Microeconomia",
+    "section": "5.2 Exercício 1 — Solução",
+    "text": "5.2 Exercício 1 — Solução\nResolução:\n\\[CM_{LP} = \\frac{CT_{LP}}{q} = q^2 - 6q + 15\\]\n. . .\nMínimo de \\(CM_{LP}\\): \\(\\frac{d\\,CM_{LP}}{dq} = 2q - 6 = 0 \\Rightarrow q^* = 3\\)\n. . .\n\\[CM_{LP}(3) = 9 - 18 + 15 = \\mathbf{6}\\]\nConfirmação: \\(Cmg_{LP} = 3q^2 - 12q + 15 \\Rightarrow Cmg_{LP}(3) = 27 - 36 + 15 = 6\\) ✓\n. . .\nNo LP, \\(P^* = CM_{LP,\\min} = Cmg_{LP}(q^*)\\)\nResposta: B) \\(P^* = 6\\)"
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#exercício-2-escolha-múltipla",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "5.3 Exercício 2 — Escolha Múltipla",
+    "text": "5.3 Exercício 2 — Escolha Múltipla\nContinuando o exercício anterior (\\(CT_{LP} = q^3 - 6q^2 + 15q\\), \\(P^* = 6\\)). A procura de mercado é \\(Q_D = 120 - 10P\\). Quantas empresas existem no equilíbrio de LP?\n\n\n10 empresas\n15 empresas\n20 empresas\n60 empresas"
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#exercício-2-solução",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#exercício-2-solução",
+    "title": "Microeconomia",
+    "section": "5.4 Exercício 2 — Solução",
+    "text": "5.4 Exercício 2 — Solução\nResolução:\nQuantidade procurada ao preço de equilíbrio \\(P^* = 6\\): \\[Q_D = 120 - 10 \\times 6 = 60\\]\n. . .\nCada empresa produz \\(q^* = 3\\) no LP.\n. . .\nNúmero de empresas: \\[n^* = \\frac{Q_D}{q^*} = \\frac{60}{3} = \\mathbf{20 \\text{ empresas}}\\]\n. . .\nResposta: C) 20 empresas"
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#exercício-3-desenvolvimento",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#exercício-3-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "5.5 Exercício 3 — Desenvolvimento",
+    "text": "5.5 Exercício 3 — Desenvolvimento\nConsidere um mercado em concorrência perfeita com livre entrada e saída.\nA procura de mercado é \\(Q_D = 60 - 5P\\).\nCada empresa tem função de custo total de LP: \\[CT_{LP}(q) = q^3 - 6q^2 + 12q\\]\n(a) Determine o preço de equilíbrio de LP, \\(P^*\\), a quantidade produzida por cada empresa, \\(q^*\\), e o número de empresas no mercado, \\(n^*\\).\n(b) Suponha que a procura aumenta para \\(Q_D' = 75 - 5P\\). Descreva o processo de ajustamento e determine o novo equilíbrio de LP.\n(c) Calcule o Excedente do Consumidor nos dois equilíbrios e comente o resultado."
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#exercício-3-resolução-a",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#exercício-3-resolução-a",
+    "title": "Microeconomia",
+    "section": "5.6 Exercício 3 — Resolução (a)",
+    "text": "5.6 Exercício 3 — Resolução (a)\nAlínea (a): Equilíbrio LP inicial\n\\[CM_{LP} = \\frac{CT_{LP}}{q} = q^2 - 6q + 12\\]\n. . .\nMínimo de \\(CM_{LP}\\): \\(\\displaystyle\\frac{d\\,CM_{LP}}{dq} = 2q - 6 = 0 \\Rightarrow q^* = 3\\)\n. . .\n\\[P^* = CM_{LP}(3) = 9 - 18 + 12 = 3\\]\nConfirmação: \\(Cmg_{LP}(q) = 3q^2 - 12q + 12 \\Rightarrow Cmg_{LP}(3) = 27 - 36 + 12 = 3\\) ✓\n. . .\nQuantidade de mercado: \\(Q^* = Q_D(P^*) = 60 - 5 \\times 3 = 45\\)\n. . .\nNúmero de empresas: \\(\\displaystyle n^* = \\frac{Q^*}{q^*} = \\frac{45}{3} = \\mathbf{15 \\text{ empresas}}\\)"
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#exercício-3-resolução-b",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#exercício-3-resolução-b",
+    "title": "Microeconomia",
+    "section": "5.7 Exercício 3 — Resolução (b)",
+    "text": "5.7 Exercício 3 — Resolução (b)\nAlínea (b): Choque na procura\nA tecnologia não se altera → \\(P^*\\) mantém-se igual a 3 no novo equilíbrio LP.\n. . .\nProcesso de ajustamento:\n\nNo curto prazo (n = 15 fixo): o preço sobe acima de 3, surgem lucros positivos.\nOs lucros positivos atraem novas empresas ao mercado.\nA oferta expande, o preço desce progressivamente.\nO processo termina quando \\(P\\) regressa a \\(P^* = 3\\) e \\(\\Pi = 0\\).\n\n. . .\nNovo equilíbrio LP:\n\\[Q'^* = Q_D'(P^*) = 75 - 5 \\times 3 = 60\\]\n\\[n'^* = \\frac{60}{3} = \\mathbf{20 \\text{ empresas}}\\]\nEntraram 5 novas empresas; cada empresa continua a produzir \\(q^* = 3\\)."
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#exercício-3-resolução-c",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#exercício-3-resolução-c",
+    "title": "Microeconomia",
+    "section": "5.8 Exercício 3 — Resolução (c)",
+    "text": "5.8 Exercício 3 — Resolução (c)\nAlínea (c): Excedente do Consumidor\nDa procura \\(Q_D = 60 - 5P\\): inversa \\(P = 12 - \\frac{Q}{5}\\)\n\\(\\Rightarrow\\) preço máximo: \\(P_{max} = 12\\) (quando \\(Q = 0\\))\n. . .\nEC inicial (equilíbrio com \\(P^* = 3\\), \\(Q^* = 45\\)):\n\\[EC_0 = \\frac{(12 - 3) \\times 45}{2} = \\frac{9 \\times 45}{2} = \\mathbf{202{,}5}\\]\n. . .\nEC após choque (\\(P^* = 3\\) mantém-se, \\(Q'^* = 60\\)):\n\\[EC_1 = \\frac{(12 - 3) \\times 60}{2} = \\frac{9 \\times 60}{2} = \\mathbf{270}\\]\n. . .\n\n\n\n\n\n\nTipComentário\n\n\n\nO preço não se altera no LP (oferta horizontal), pelo que todo o benefício do aumento da procura é capturado pelos consumidores — o EC aumenta de 202,5 para 270. O excedente do produtor permanece nulo."
+  },
+  {
+    "objectID": "slides/21_eq_mercado_oferta_lp-document.html#resumo-equilíbrio-de-lp-em-concorrência-perfeita",
+    "href": "slides/21_eq_mercado_oferta_lp-document.html#resumo-equilíbrio-de-lp-em-concorrência-perfeita",
+    "title": "Microeconomia",
+    "section": "6.1 Resumo: Equilíbrio de LP em Concorrência Perfeita",
+    "text": "6.1 Resumo: Equilíbrio de LP em Concorrência Perfeita\n\n\n\n\nCurto Prazo\nLongo Prazo\n\n\n\n\nNúmero de empresas\nFixo\nVariável (entrada/saída livre)\n\n\nCondição de otimização\n\\(P = Cmg_{CP}\\)\n\\(P = Cmg_{LP}\\)\n\n\nLucro económico\nPode ser \\(\\neq 0\\)\n\\(\\Pi = 0\\)\n\n\nPreço de equilíbrio\nPode variar\n\\(P^* = CM_{LP,\\min}\\)\n\n\nCurva de oferta\nCrescente\nHorizontal\n\n\nExcedente do produtor\nPositivo\nZero\n\n\n\n. . .\n\n\n\n\n\n\nImportantMensagem-chave\n\n\n\nA concorrência perfeita com livre entrada/saída é o único regime de mercado em que, a longo prazo, os consumidores capturam todo o excedente económico e os recursos são afetos à Escala Mínima Eficiente."
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html",
+    "href": "slides/24_elasticidade_oferta-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "NoteElasticidade Preço da Oferta\n\n\n\nMede a variação percentual da quantidade oferecida quando o preço varia 1%, tudo o resto constante: \\[\\varepsilon_S = \\frac{\\Delta\\% Q_S}{\\Delta\\% P} = \\frac{\\Delta Q_S}{\\Delta P} \\cdot \\frac{P}{Q_S}\\]\n\n\n. . .\nComo \\(Q_S\\) e \\(P\\) variam no mesmo sentido (Lei da Oferta), \\(\\varepsilon_S \\geq 0\\) sempre.\n. . .\nClassificação:\n\n\n\n\\(\\varepsilon_S\\)\nClassificação\n\n\n\n\n\\(&gt; 1\\)\nOferta elástica\n\n\n\\(= 1\\)\nElasticidade unitária\n\n\n\\(&lt; 1\\)\nOferta inelástica\n\n\n\n\n\n\nPara \\(Q_S = c + dP\\) (com \\(d &gt; 0\\)):\n\\[\\frac{dQ_S}{dP} = d \\quad \\Rightarrow \\quad \\varepsilon_S = d \\cdot \\frac{P}{Q_S}\\]\n. . .\n\n\n\n\n\n\nTipNota importante\n\n\n\nTal como na procura, numa oferta linear \\(\\varepsilon_S\\) varia ao longo da curva — o mesmo \\(d\\) produz elasticidades diferentes conforme o ponto \\((P, Q_S)\\).\nA exceção notável: uma oferta que passa pela origem tem sempre \\(\\varepsilon_S = 1\\)."
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#elasticidade-preço-da-oferta",
+    "href": "slides/24_elasticidade_oferta-document.html#elasticidade-preço-da-oferta",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "NoteElasticidade Preço da Oferta\n\n\n\nMede a variação percentual da quantidade oferecida quando o preço varia 1%, tudo o resto constante: \\[\\varepsilon_S = \\frac{\\Delta\\% Q_S}{\\Delta\\% P} = \\frac{\\Delta Q_S}{\\Delta P} \\cdot \\frac{P}{Q_S}\\]\n\n\n. . .\nComo \\(Q_S\\) e \\(P\\) variam no mesmo sentido (Lei da Oferta), \\(\\varepsilon_S \\geq 0\\) sempre.\n. . .\nClassificação:\n\n\n\n\\(\\varepsilon_S\\)\nClassificação\n\n\n\n\n\\(&gt; 1\\)\nOferta elástica\n\n\n\\(= 1\\)\nElasticidade unitária\n\n\n\\(&lt; 1\\)\nOferta inelástica"
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#cálculo-para-oferta-linear",
+    "href": "slides/24_elasticidade_oferta-document.html#cálculo-para-oferta-linear",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Para \\(Q_S = c + dP\\) (com \\(d &gt; 0\\)):\n\\[\\frac{dQ_S}{dP} = d \\quad \\Rightarrow \\quad \\varepsilon_S = d \\cdot \\frac{P}{Q_S}\\]\n. . .\n\n\n\n\n\n\nTipNota importante\n\n\n\nTal como na procura, numa oferta linear \\(\\varepsilon_S\\) varia ao longo da curva — o mesmo \\(d\\) produz elasticidades diferentes conforme o ponto \\((P, Q_S)\\).\nA exceção notável: uma oferta que passa pela origem tem sempre \\(\\varepsilon_S = 1\\)."
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#elasticidade-e-o-intercepto-da-oferta",
+    "href": "slides/24_elasticidade_oferta-document.html#elasticidade-e-o-intercepto-da-oferta",
+    "title": "Microeconomia",
+    "section": "2.1 Elasticidade e o Intercepto da Oferta",
+    "text": "2.1 Elasticidade e o Intercepto da Oferta\nPara uma oferta linear \\(Q_S = c + dP\\), a elasticidade depende do sinal de \\(c\\):\n. . .\n\n\n\n\n\n\n\n\n\n. . .\n\n\n\\(c &gt; 0\\) (intercepto no eixo \\(Q\\)): oferta inelástica em todos os pontos\n\\(c = 0\\) (passa pela origem): elasticidade unitária em todos os pontos\n\\(c &lt; 0\\) (intercepto no eixo \\(P\\)): oferta elástica em todos os pontos"
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#porquê-esta-propriedade-geométrica",
+    "href": "slides/24_elasticidade_oferta-document.html#porquê-esta-propriedade-geométrica",
+    "title": "Microeconomia",
+    "section": "2.2 Porquê esta propriedade geométrica?",
+    "text": "2.2 Porquê esta propriedade geométrica?\nPara \\(Q_S = dP\\) (origem): \\(\\quad\\varepsilon_S = d \\cdot \\dfrac{P}{dP} = 1\\) em qualquer ponto.\n. . .\nPara \\(Q_S = c + dP\\) com \\(c &gt; 0\\): \\(\\quad\\varepsilon_S = d \\cdot \\dfrac{P}{c + dP} &lt; d \\cdot \\dfrac{P}{dP} = 1\\)\n. . .\nPara \\(Q_S = c + dP\\) com \\(c &lt; 0\\) (e \\(Q_S &gt; 0\\)): \\(\\quad\\varepsilon_S = d \\cdot \\dfrac{P}{c + dP} &gt; 1\\)\n. . .\n\n\n\n\n\n\nTipRegra prática\n\n\n\nNuma oferta linear, basta ver onde a reta interseta os eixos:\n\nCorta o eixo \\(Q\\) → inelástica\nPassa pela origem → unitária\nCorta o eixo \\(P\\) → elástica"
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#oferta-perfeitamente-inelástica-e-elástica",
+    "href": "slides/24_elasticidade_oferta-document.html#oferta-perfeitamente-inelástica-e-elástica",
+    "title": "Microeconomia",
+    "section": "3.1 Oferta Perfeitamente Inelástica e Elástica",
+    "text": "3.1 Oferta Perfeitamente Inelástica e Elástica\n\n\n\n\n\n\n\n\n\n\n\n\\(\\varepsilon_S = 0\\): quantidade independente do preço — ex.: obra de arte única, recurso natural esgotado, capacidade máxima física a curto prazo\n\\(\\varepsilon_S \\to \\infty\\): produtores oferecem qualquer quantidade ao preço \\(P_0\\) — ex.: bem produzido com custo marginal constante e sem restrições de capacidade"
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#o-que-torna-uma-oferta-mais-ou-menos-elástica",
+    "href": "slides/24_elasticidade_oferta-document.html#o-que-torna-uma-oferta-mais-ou-menos-elástica",
+    "title": "Microeconomia",
+    "section": "4.1 O que torna uma oferta mais ou menos elástica?",
+    "text": "4.1 O que torna uma oferta mais ou menos elástica?\n\nDisponibilidade e mobilidade dos fatores de produção\nA oferta de pizzas é mais elástica do que a oferta de morangos fora de época — o produtor de pizza pode aumentar a produção facilmente, mas o morangueiro não.\n\n. . .\n\nCapacidade produtiva instalada\nA oferta de lugares numa aeronave é perfeitamente elástica até esgotar a capacidade e perfeitamente inelástica após isso.\n\n. . .\n\nPeríodo de tempo\nA oferta de longo prazo é sempre mais elástica do que a de curto prazo. Com mais tempo, os produtores conseguem ajustar capital, contratar mais fatores e redirecionar a produção."
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#curto-prazo-vs.-longo-prazo",
+    "href": "slides/24_elasticidade_oferta-document.html#curto-prazo-vs.-longo-prazo",
+    "title": "Microeconomia",
+    "section": "4.2 Curto Prazo vs. Longo Prazo",
+    "text": "4.2 Curto Prazo vs. Longo Prazo\n\n\n\n\n\n\n\n\n\n. . .\nUma expansão da procura provoca, a curto prazo, um grande aumento de preço com pouco aumento de quantidade. A longo prazo, a oferta expande-se mais — o preço sobe menos e a quantidade aumenta mais."
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#elasticidade-da-procura-vs.-da-oferta",
+    "href": "slides/24_elasticidade_oferta-document.html#elasticidade-da-procura-vs.-da-oferta",
+    "title": "Microeconomia",
+    "section": "5.1 Elasticidade da Procura vs. da Oferta",
+    "text": "5.1 Elasticidade da Procura vs. da Oferta\n\n\n\n\n\n\n\n\n\nProcura \\((\\varepsilon_D)\\)\nOferta \\((\\varepsilon_S)\\)\n\n\n\n\nSinal\n\\(\\leq 0\\) (sempre)\n\\(\\geq 0\\) (sempre)\n\n\nTrabalha-se com\n\\(\\|\\varepsilon_D\\|\\)\n\\(\\varepsilon_S\\)\n\n\nNuma linear: varia?\nSim, ao longo da curva\nSim, ao longo da curva\n\n\nExceção (linear)\n—\nPassa pela origem → \\(\\varepsilon_S = 1\\) sempre\n\n\n\\(&gt; 1\\) significa\nProcura elástica\nOferta elástica\n\n\n\\(= 0\\) significa\nProcura perfeitamente rígida\nOferta perfeitamente rígida\n\n\nPrazo\nLP mais elástica\nLP mais elástica\n\n\n\n. . .\n\n\n\n\n\n\nImportantSimetria com a procura\n\n\n\nA elasticidade da oferta tem a mesma lógica e fórmula que a elasticidade preço-direta da procura — a única diferença estrutural é o sinal (positivo vs. negativo) e o facto de a oferta poder ser unitária em todos os pontos quando passa pela origem."
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#exercício-1-escolha-múltipla",
+    "href": "slides/24_elasticidade_oferta-document.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "6.1 Exercício 1 — Escolha Múltipla",
+    "text": "6.1 Exercício 1 — Escolha Múltipla\nA função de oferta de um mercado é \\(Q_S = 3P + 6\\). Qual é a elasticidade preço da oferta quando \\(P = 6\\)?\n\n\n\\(\\varepsilon_S = 1\\)\n\\(\\varepsilon_S = 3\\)\n\\(\\varepsilon_S = \\dfrac{3}{4}\\)\n\\(\\varepsilon_S = \\dfrac{3}{2}\\)"
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#exercício-1-solução",
+    "href": "slides/24_elasticidade_oferta-document.html#exercício-1-solução",
+    "title": "Microeconomia",
+    "section": "6.2 Exercício 1 — Solução",
+    "text": "6.2 Exercício 1 — Solução\nResolução:\n\\[\\frac{dQ_S}{dP} = 3\\]\n. . .\nQuando \\(P = 6\\): \\(\\quad Q_S = 3(6) + 6 = 24\\)\n. . .\n\\[\\varepsilon_S = \\frac{dQ_S}{dP} \\cdot \\frac{P}{Q_S} = 3 \\times \\frac{6}{24} = \\frac{18}{24} = \\mathbf{\\frac{3}{4}}\\]\n. . .\n\\(\\varepsilon_S = 0{,}75 &lt; 1\\) → oferta inelástica.\nNote: \\(c = 6 &gt; 0\\) (intercepto positivo no eixo \\(Q\\)) → confirma oferta inelástica em todos os pontos.\nResposta: C)"
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#exercício-2-escolha-múltipla",
+    "href": "slides/24_elasticidade_oferta-document.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "6.3 Exercício 2 — Escolha Múltipla",
+    "text": "6.3 Exercício 2 — Escolha Múltipla\nQual das seguintes afirmações é verdadeira acerca de uma oferta linear que passa pela origem (\\(Q_S = bP\\), com \\(b &gt; 0\\))?\n\n\nA elasticidade aumenta à medida que o preço sobe\nA elasticidade é sempre igual a 1, independentemente do preço\nA elasticidade é sempre maior do que 1\nA elasticidade depende do valor de \\(b\\)"
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#exercício-2-solução",
+    "href": "slides/24_elasticidade_oferta-document.html#exercício-2-solução",
+    "title": "Microeconomia",
+    "section": "6.4 Exercício 2 — Solução",
+    "text": "6.4 Exercício 2 — Solução\nResolução:\nPara \\(Q_S = bP\\):\n\\[\\varepsilon_S = \\frac{dQ_S}{dP} \\cdot \\frac{P}{Q_S} = b \\cdot \\frac{P}{bP} = \\frac{bP}{bP} = \\mathbf{1}\\]\n. . .\nO resultado é exatamente 1 para qualquer valor de \\(P\\) e qualquer valor de \\(b &gt; 0\\).\n. . .\nA razão geométrica: a reta passa pela origem, logo o “triângulo” formado pela curva e os eixos mantém sempre a mesma proporção entre \\(P\\) e \\(Q\\) em qualquer ponto.\n. . .\nResposta: B)"
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#exercício-3-desenvolvimento",
+    "href": "slides/24_elasticidade_oferta-document.html#exercício-3-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "6.5 Exercício 3 — Desenvolvimento",
+    "text": "6.5 Exercício 3 — Desenvolvimento\nA função de oferta de um bem é \\(Q_S = 4P - 8\\).\n(a) Calcule a elasticidade preço da oferta em \\(P = 4\\), \\(P = 6\\) e \\(P = 10\\).\n(b) A oferta é elástica, inelástica ou unitária nestes pontos? Justifique geometricamente.\n(c) Compare com a oferta \\(Q_S' = 4P\\). Calcule \\(\\varepsilon_S\\) para \\(Q_S'\\) nos mesmos preços e interprete a diferença."
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#exercício-3-resolução-a-e-b",
+    "href": "slides/24_elasticidade_oferta-document.html#exercício-3-resolução-a-e-b",
+    "title": "Microeconomia",
+    "section": "6.6 Exercício 3 — Resolução (a) e (b)",
+    "text": "6.6 Exercício 3 — Resolução (a) e (b)\nAlínea (a): \\(\\dfrac{dQ_S}{dP} = 4\\)\n. . .\n\n\n\n\n\n\n\n\n\n\\(P\\)\n\\(Q_S = 4P-8\\)\n\\(\\varepsilon_S = 4 \\cdot \\dfrac{P}{Q_S}\\)\nClassificação\n\n\n\n\n4\n8\n\\(4 \\times \\dfrac{4}{8} = 2\\)\nElástica\n\n\n6\n16\n\\(4 \\times \\dfrac{6}{16} = \\dfrac{3}{2}\\)\nElástica\n\n\n10\n32\n\\(4 \\times \\dfrac{10}{32} = \\dfrac{5}{4}\\)\nElástica\n\n\n\n. . .\nAlínea (b): A oferta \\(Q_S = 4P - 8\\) tem intercepto no eixo \\(P\\) quando \\(Q_S = 0 \\Rightarrow P = 2 &gt; 0\\).\nQualquer oferta linear que corte o eixo \\(P\\) (e não o eixo \\(Q\\), nem passe pela origem) é sempre elástica (\\(\\varepsilon_S &gt; 1\\) em todos os pontos)."
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#exercício-3-resolução-c",
+    "href": "slides/24_elasticidade_oferta-document.html#exercício-3-resolução-c",
+    "title": "Microeconomia",
+    "section": "6.7 Exercício 3 — Resolução (c)",
+    "text": "6.7 Exercício 3 — Resolução (c)\nAlínea (c): Para \\(Q_S' = 4P\\):\n\\[\\varepsilon_S' = 4 \\cdot \\frac{P}{4P} = 1 \\quad \\text{em qualquer } P\\]\n. . .\n\n\n\n\n\n\n\n\n\n\n\\(P\\)\n\\(Q_S = 4P-8\\)\n\\(\\varepsilon_S\\)\n\\(Q_S' = 4P\\)\n\\(\\varepsilon_S'\\)\n\n\n\n\n4\n8\n2\n16\n1\n\n\n6\n16\n1,5\n24\n1\n\n\n10\n32\n1,25\n40\n1\n\n\n\n. . .\n\n\n\n\n\n\nTipInterpretação\n\n\n\nAmbas as ofertas têm o mesmo declive (\\(d=4\\)), mas \\(Q_S = 4P - 8\\) passa pelo ponto \\((0, 2)\\) no eixo \\(P\\) — o produtor só começa a oferecer acima de \\(P = 2\\). Esta “barreira de entrada” torna a oferta mais elástica do que a que passa pela origem, onde o produtor oferece desde \\(P = 0\\)."
+  },
+  {
+    "objectID": "slides/24_elasticidade_oferta-document.html#resumo-da-aula",
+    "href": "slides/24_elasticidade_oferta-document.html#resumo-da-aula",
+    "title": "Microeconomia",
+    "section": "7.1 Resumo da Aula",
+    "text": "7.1 Resumo da Aula\n\nFórmula: \\(\\varepsilon_S = \\dfrac{dQ_S}{dP} \\cdot \\dfrac{P}{Q_S} \\geq 0\\) sempre\n\n. . .\n\nRegra geométrica para oferta linear:\n\nCorta eixo \\(Q\\) (\\(c &gt; 0\\)) → inelástica em todos os pontos\nPassa pela origem (\\(c = 0\\)) → unitária em todos os pontos\n\nCorta eixo \\(P\\) (\\(c &lt; 0\\)) → elástica em todos os pontos\n\n\n. . .\n\nFatores determinantes:\n\nDisponibilidade e mobilidade dos fatores\nCapacidade produtiva instalada\nPeríodo de tempo: \\(\\varepsilon_S^{LP} &gt; \\varepsilon_S^{CP}\\) sempre\n\n\n. . .\n\n\n\n\n\n\nImportantPara a próxima aula\n\n\n\nNa aula 25 estudaremos como os impostos se repartem entre consumidores e produtores — e veremos que a relação \\(|\\varepsilon_D|/\\varepsilon_S\\) determina exactamente essa repartição."
   }
 ]
