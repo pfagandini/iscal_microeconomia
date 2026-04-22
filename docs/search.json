@@ -5877,7 +5877,7 @@
     "href": "slides/20_controlo_precos.html#efeitos-do-p_max-exemplo-numérico",
     "title": "Intervenções nos Mercados: Controlo de Preços",
     "section": "Efeitos do \\(P_{max}\\): exemplo numérico",
-    "text": "Efeitos do \\(P_{max}\\): exemplo numérico\nMercado com \\(D: P = 10 - Q\\) e \\(S: P = 2 + Q\\), equilíbrio \\(Q^* = 4\\), \\(P^* = 6\\)\nTecto \\(P_{max} = 4 &lt; P^*\\):\n\n\n\n\nCompetitivo\nCom \\(P_{max} = 4\\)\nVariação\n\n\n\n\nQuantidade transaccionada\n\\(Q^* = 4\\)\n\\(Q_S = 2\\)\n\\(-2\\)\n\n\nExcedente do Consumidor\n8\n10\n+2\n\n\nExcedente do Produtor\n8\n2\n−6\n\n\nExcedente Total\n16\n12\n−4 (DWL)\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nOs consumidores que conseguem comprar ficam melhor (pagam menos). Mas o mercado serve menos consumidores: \\(Q_S = 2\\) em vez de \\(Q^* = 4\\). O excedente total cai."
+    "text": "Efeitos do \\(P_{max}\\): exemplo numérico\nMercado com \\(D: P = 10 - Q\\) e \\(S: P = 2 + Q\\), equilíbrio \\(Q^* = 4\\), \\(P^* = 6\\)\nTecto \\(P_{max} = 4 &lt; P^*\\):\n\n\n\n\nCompetitivo\nCom \\(P_{max} = 4\\)\nVariação\n\n\n\n\nQuantidade transaccionada\n\\(Q^* = 4\\)\n\\(Q_S = 2\\)\n\\(-2\\)\n\n\nExcedente do Consumidor\n8\n\\(\\leq 10\\) †\n\\(\\leq\\) +2\n\n\nExcedente do Produtor\n8\n2\n−6\n\n\nExcedente Total\n16\n\\(\\leq 12\\)\n\\(\\geq\\) −4\n\n\n\n† máximo teórico — assume racionamento eficiente (bens vão para quem mais valoriza)\n\n\n\n\n\n\n\nImportant\n\n\nO EP cai sempre: o produtor vende menos a preço mais baixo. O EC depende de quem recebe os \\(Q_S = 2\\) bens racionados: se vão para os consumidores com maior WTP (EC = 10 &gt; 8), há ganho; mas com racionamento não-preço (fila, relações pessoais, discrição do vendedor) os bens podem ir para quem os valoriza menos — o EC real pode ser inferior a 8. A DWL mínima é 4 (triângulo entre curvas de \\(Q_S\\) a \\(Q^*\\)) e cresce com ineficiência alocativa."
   },
   {
     "objectID": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_max",
@@ -5898,7 +5898,7 @@
     "href": "slides/20_controlo_precos.html#efeitos-do-p_min-exemplo-numérico",
     "title": "Intervenções nos Mercados: Controlo de Preços",
     "section": "Efeitos do \\(P_{min}\\): exemplo numérico",
-    "text": "Efeitos do \\(P_{min}\\): exemplo numérico\nMesmo mercado, piso \\(P_{min} = 8 &gt; P^* = 6\\):\n\n\n\n\nCompetitivo\nCom \\(P_{min} = 8\\)\nVariação\n\n\n\n\nQuantidade transaccionada\n\\(Q^* = 4\\)\n\\(Q_D = 2\\)\n\\(-2\\)\n\n\nExcedente do Consumidor\n8\n2\n−6\n\n\nExcedente do Produtor\n8\n10\n+2\n\n\nExcedente Total\n16\n12\n−4 (DWL)\n\n\n\n\n\n\n\n\n\n\nSimetria notável\n\n\nO DWL é igual nos dois casos (4 unidades). A redistribuição é oposta: o \\(P_{max}\\) favorece consumidores, o \\(P_{min}\\) favorece produtores. Em ambos os casos, o mercado serve menos agentes e o excedente total diminui."
+    "text": "Efeitos do \\(P_{min}\\): exemplo numérico\nMesmo mercado, piso \\(P_{min} = 8 &gt; P^* = 6\\):\n\n\n\n\nCompetitivo\nCom \\(P_{min} = 8\\)\nVariação\n\n\n\n\nQuantidade transaccionada\n\\(Q^* = 4\\)\n\\(Q_D = 2\\)\n\\(-2\\)\n\n\nExcedente do Consumidor\n8\n2\n−6\n\n\nExcedente do Produtor\n8\n\\(\\leq 10\\) †\n\\(\\leq\\) +2\n\n\nExcedente Total\n16\n\\(\\leq 12\\)\n\\(\\geq\\) −4\n\n\n\n† máximo teórico — assume que vendem os \\(Q_D = 2\\) produtores mais eficientes (menor custo)\n\n\n\n\n\n\n\nSimetria notável\n\n\nO EC cai sempre: o consumidor compra menos a preço mais alto. O EP depende de quais dos \\(Q_S = 6\\) produtores conseguem vender os \\(Q_D = 2\\) bens: se forem os mais eficientes, EP = 10 &gt; 8; se não, EP pode ser inferior a 8. Tal como no \\(P_{max}\\), o excesso de oferta cria um problema de alocação que agrava as perdas de excedente."
   },
   {
     "objectID": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_min",
@@ -5968,28 +5968,28 @@
     "href": "slides/20_controlo_precos.html#exercício-de-escolha-múltipla-1",
     "title": "Intervenções nos Mercados: Controlo de Preços",
     "section": "Exercício de escolha múltipla 1",
-    "text": "Exercício de escolha múltipla 1\nO Governo fixa um preço máximo \\(P_{max}\\) abaixo do preço de equilíbrio \\(P^*\\). Qual das seguintes afirmações está correcta?\n\nA quantidade transaccionada aumenta relativamente ao equilíbrio competitivo\nSurge um excesso de oferta no mercado\nO excedente total diminui relativamente ao equilíbrio competitivo\nO excedente do produtor aumenta"
+    "text": "Exercício de escolha múltipla 1\nO Governo fixa um preço máximo \\(P_{max}\\) abaixo do preço de equilíbrio \\(P^*\\). Qual das seguintes afirmações está correcta?\n\n\nA quantidade transaccionada aumenta relativamente ao equilíbrio competitivo\n\n\nSurge um excesso de oferta no mercado\n\n\nO excedente total diminui relativamente ao equilíbrio competitivo\n\n\nO excedente do produtor aumenta"
   },
   {
     "objectID": "slides/20_controlo_precos.html#solução-escolha-múltipla-1",
     "href": "slides/20_controlo_precos.html#solução-escolha-múltipla-1",
     "title": "Intervenções nos Mercados: Controlo de Preços",
     "section": "Solução — escolha múltipla 1",
-    "text": "Solução — escolha múltipla 1\nO Governo fixa um preço máximo \\(P_{max}\\) abaixo do preço de equilíbrio \\(P^*\\). Qual das seguintes afirmações está correcta?\n\nA quantidade transaccionada aumenta ✗ — cai para \\(Q_S &lt; Q^*\\)\nSurge um excesso de oferta ✗ — surge escassez (\\(Q_D &gt; Q_S\\))\n\nC) O excedente total diminui ✓ — há DWL\n\nO excedente do produtor aumenta ✗ — o EP cai (preço mais baixo, menos quantidade vendida)\n\n\n\n\n\n\n\nTip\n\n\nCom \\(P_{max} &lt; P^*\\), a quantidade transaccionada é determinada pela oferta (\\(Q_S\\)). O EC pode aumentar para os compradores com sorte, mas o EP cai e o excedente total é sempre menor do que no equilíbrio competitivo."
+    "text": "Solução — escolha múltipla 1\nO Governo fixa um preço máximo \\(P_{max}\\) abaixo do preço de equilíbrio \\(P^*\\). Qual das seguintes afirmações está correcta?\n\n\nA quantidade transaccionada aumenta ✗ — cai para \\(Q_S &lt; Q^*\\)\n\n\nSurge um excesso de oferta ✗ — surge escassez (\\(Q_D &gt; Q_S\\))\n\nC) O excedente total diminui ✓ — há DWL\n\nO excedente do produtor aumenta ✗ — o EP cai (preço mais baixo, menos quantidade vendida)\n\n\n\n\n\n\n\n\nTip\n\n\nCom \\(P_{max} &lt; P^*\\), o EP cai sempre. O EC só aumenta se os bens racionados forem para quem mais os valoriza — o que não é garantido. O excedente total é sempre inferior ao equilíbrio competitivo."
   },
   {
     "objectID": "slides/20_controlo_precos.html#exercício-de-escolha-múltipla-2",
     "href": "slides/20_controlo_precos.html#exercício-de-escolha-múltipla-2",
     "title": "Intervenções nos Mercados: Controlo de Preços",
     "section": "Exercício de escolha múltipla 2",
-    "text": "Exercício de escolha múltipla 2\nMercado de trabalho: procura \\(W = 20 - 2L\\), oferta \\(W = 4 + L\\). Equilíbrio: \\(L^* \\approx 5{,}3\\), \\(W^* \\approx 9{,}3\\). É fixado um salário mínimo \\(W_{min} = 14\\). Qual o desemprego involuntário?\n\n3\n7\n10\n0 — o salário mínimo não tem efeito porque está abaixo de \\(W^*\\)"
+    "text": "Exercício de escolha múltipla 2\nMercado de trabalho: procura \\(W = 20 - 2L\\), oferta \\(W = 4 + L\\). Equilíbrio: \\(L^* \\approx 5{,}3\\), \\(W^* \\approx 9{,}3\\). É fixado um salário mínimo \\(W_{min} = 14\\). Qual o desemprego involuntário?\n\n\n3\n\n\n7\n\n\n10\n\n\n0 — o salário mínimo não tem efeito porque está abaixo de \\(W^*\\)"
   },
   {
     "objectID": "slides/20_controlo_precos.html#solução-escolha-múltipla-2",
     "href": "slides/20_controlo_precos.html#solução-escolha-múltipla-2",
     "title": "Intervenções nos Mercados: Controlo de Preços",
     "section": "Solução — escolha múltipla 2",
-    "text": "Solução — escolha múltipla 2\nCom \\(W_{min} = 14 &gt; W^* \\approx 9{,}3\\):\n\nProcura de trabalho: \\(14 = 20 - 2L \\Rightarrow L_D = 3\\)\nOferta de trabalho: \\(14 = 4 + L \\Rightarrow L_S = 10\\)\nDesemprego involuntário: \\(L_S - L_D = 10 - 3 = \\mathbf{7}\\)\n\n\n3 ✗\n\nB) 7 ✓\n\n10 ✗ — este é o número de trabalhadores que querem trabalhar, não o desemprego\n0 ✗ — o salário mínimo está acima do equilíbrio, logo tem efeito\n\n\n\n\n\n\n\nTip\n\n\nO desemprego involuntário é \\(L_S - L_D\\), não \\(L_S\\). Os trabalhadores empregados são \\(L_D = 3\\); os que querem trabalhar mas não encontram emprego são \\(L_S - L_D = 7\\)."
+    "text": "Solução — escolha múltipla 2\nCom \\(W_{min} = 14 &gt; W^* \\approx 9{,}3\\):\n\nProcura de trabalho: \\(14 = 20 - 2L \\Rightarrow L_D = 3\\)\nOferta de trabalho: \\(14 = 4 + L \\Rightarrow L_S = 10\\)\nDesemprego involuntário: \\(L_S - L_D = 10 - 3 = \\mathbf{7}\\)\n\n\n\n\n\n\n\nTip\n\n\nO desemprego involuntário é \\(L_S - L_D\\), não \\(L_S\\). Os trabalhadores empregados são \\(L_D = 3\\); os que querem trabalhar mas não encontram emprego são \\(L_S - L_D = 7\\)."
   },
   {
     "objectID": "slides/20_controlo_precos.html#exercício-de-desenvolvimento",
@@ -6011,5 +6011,103 @@
     "title": "Intervenções nos Mercados: Controlo de Preços",
     "section": "Solução — desenvolvimento (d)",
     "text": "Solução — desenvolvimento (d)\nd) Duas consequências dinâmicas não capturadas pelo modelo estático:\n(1) Contracção da oferta a médio prazo\nOs senhorios convertem habitação em outros usos com maior rendibilidade — alojamento local (Airbnb), escritórios, venda. A oferta de arrendamento regulado encolhe. Diamond et al. (2019) estimam uma redução de 15% no parque de arrendamento em São Francisco após a extensão do controlo de rendas.\n(2) Degradação da qualidade\nSem possibilidade de aumentar o preço, os senhorios têm menos incentivo a investir em manutenção e renovação. A qualidade do parque habitacional regulado deteriora-se progressivamente.\n\n\n\n\n\n\nTip\n\n\nEm ambos os casos, o efeito final é o oposto do pretendido: a médio prazo, quem procura habitação a preço acessível encontra menos oferta e pior qualidade."
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#mecanismo-tecto-de-preço-no-melhor-dos-casos",
+    "href": "slides/20_controlo_precos.html#mecanismo-tecto-de-preço-no-melhor-dos-casos",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Mecanismo: tecto de preço (no melhor dos casos)",
+    "text": "Mecanismo: tecto de preço (no melhor dos casos)\n\n\nFigure 1"
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#caso-1-controlo-de-rendas-s.-francisco",
+    "href": "slides/20_controlo_precos.html#caso-1-controlo-de-rendas-s.-francisco",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Caso 1: Controlo de rendas: S. Francisco",
+    "text": "Caso 1: Controlo de rendas: S. Francisco\n\n\n\n\n\n\nDiamond, McQuade & Qian (2019) — American Economic Review\n\n\nEstudo quasi-experimental sobre a extensão do controlo de rendas a edifícios com ≤ 4 fogos (construídos antes de 1980), após uma reforma legislativa de 1994 em São Francisco.\n\n\n\nResultados principais:\n\nInquilinos em casas controladas: probabilidade de permanecer na morada \\(\\uparrow\\) cerca de 20 p.p.\nSenhorios retiraram 15% das unidades controladas do mercado de arrendamento (conversão em condominiums ou demolição)\nEfeito sobre toda a cidade: rendas no mercado não controlado \\(\\uparrow\\) 5,1%\n\n\n\n\n\n\n\n\nImportant\n\n\nExatamente o previsto pela teoria: os inquilinos existentes beneficiam, mas a oferta total cai e as rendas sobem para quem ainda procura no mercado livre."
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#caso-1-control-de-rendas-sfo",
+    "href": "slides/20_controlo_precos.html#caso-1-control-de-rendas-sfo",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Caso 1: Control de Rendas: SFO",
+    "text": "Caso 1: Control de Rendas: SFO\n\n\n\n\n\n\nDiamond, McQuade & Qian (2019) — American Economic Review\n\n\nEstudo quasi-experimental sobre a extensão do controlo de rendas a edifícios com ≤ 4 fogos (construídos antes de 1980), após uma reforma legislativa de 1994 em São Francisco.\n\n\n\nResultados principais:\n\nInquilinos em casas controladas: probabilidade de permanecer na morada \\(\\uparrow\\) cerca de 20 p.p.\nSenhorios retiraram 15% das unidades controladas do mercado de arrendamento (conversão em condominiums ou demolição)\nEfeito sobre toda a cidade: rendas no mercado não controlado \\(\\uparrow\\) 5,1%\n\n\n\n\n\n\n\n\nImportant\n\n\nExatamente o previsto pela teoria: os inquilinos existentes beneficiam, mas a oferta total cai e as rendas sobem para quem ainda procura no mercado livre."
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#caso-2-berlim-20202021",
+    "href": "slides/20_controlo_precos.html#caso-2-berlim-20202021",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Caso 2: Berlim (2020–2021)",
+    "text": "Caso 2: Berlim (2020–2021)\n\nEm fevereiro de 2020, Berlim congelou rendas de ~1,5 milhões de apartamentos (construídos antes de 2014, ~95% do parque)\nO mercado bifurcou-se: apartamentos pós-2014 (não regulados, ~5% do parque) sofreram aumentos de preço imediatos\n\n\n\nHahn, Kholodilin, Waltl & Fongoni (2024): anúncios no segmento não regulado dispararam em preço; inquilinos sem contratos existentes pagaram mais, não menos\n\n\n\n\nO Tribunal Constitucional Federal alemão declarou o Mietendeckel inconstitucional em abril de 2021\nAs rendas voltaram, em geral, aos níveis pré-regulação\n\n\n\n\n\n\n\n\n\nNote\n\n\nQuando a regulação é parcial, os recursos «fogem» para os segmentos não regulados — agravando a situação de quem não beneficiou do controlo."
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#caso-3-catalunha-20202022",
+    "href": "slides/20_controlo_precos.html#caso-3-catalunha-20202022",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Caso 3: Catalunha — 2020–2022",
+    "text": "Caso 3: Catalunha — 2020–2022\n\nRegulação aplicada a municípios com mais de 20 000 habitantes com mercado de arrendamento «tenso»\nRendas não podiam exceder um cap por tipo de habitação e zona geográfica\nTerminou em março de 2022 (declarado inconstitucional pelo Tribunal Constitucional espanhol)"
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#evidência",
+    "href": "slides/20_controlo_precos.html#evidência",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Evidência",
+    "text": "Evidência\nEvidência (estudos do Banco de España e Fed. San Francisco, 2023):\n\nCurto prazo: rendas nos segmentos controlados desceram (efeito esperado)\nNúmero de novos contratos de arrendamento caiu significativamente nos municípios regulados\nParte da oferta migrou para alojamento turístico (Airbnb) — não sujeito à regulação\n\n\n\n\n\n\n\n\nImportant\n\n\nPadrão consistente em três países europeus: controlo de rendas redistribui rendimento a curto prazo, mas contrai a oferta a médio prazo."
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#controlos-de-preços-podem-ser-justificados",
+    "href": "slides/20_controlo_precos.html#controlos-de-preços-podem-ser-justificados",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Controlos de preços podem ser justificados?",
+    "text": "Controlos de preços podem ser justificados?\nA teoria standard conclui que os controlos são ineficientes em mercados perfeitamente competitivos. Mas há casos que alteram a análise:\n1. Poder de mercado (monopólio ou monopsónia)\nSe o vendedor/comprador já fixa um preço fora do óptimo, um controlo pode melhorar a eficiência.\n\n2. Falhas de informação\nEm mercados com assimetria de informação severa, a concorrência de preços pode não funcionar.\n\n\n3. Objectivos distributivos explícitos\nUma sociedade pode preferir aceitar algum DWL para redistribuir de ricos para pobres — decisão normativa, não positiva.\n\n\n4. Choques transitórios e emergências\nControlos temporários durante crises podem evitar rendas de extracção (price gouging). O custo de eficiência pode ser menor do que os ganhos de estabilidade social."
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#controlos-de-preços-justificados",
+    "href": "slides/20_controlo_precos.html#controlos-de-preços-justificados",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Controlos de preços justificados?",
+    "text": "Controlos de preços justificados?\nA teoria standard conclui que os controlos são ineficientes em mercados perfeitamente competitivos. Mas há casos que alteram a análise:\n1. Poder de mercado (monopólio ou monopsónia)\nSe o vendedor/comprador já fixa um preço fora do óptimo, um controlo pode melhorar a eficiência.\n\n2. Falhas de informação\nEm mercados com assimetria de informação severa, a concorrência de preços pode não funcionar.\n\n\n3. Objectivos distributivos explícitos\nUma sociedade pode preferir aceitar algum DWL para redistribuir de ricos para pobres — decisão normativa, não positiva.\n\n\n4. Choques transitórios e emergências\nControlos temporários durante crises podem evitar rendas de extracção (price gouging). O custo de eficiência pode ser menor do que os ganhos de estabilidade social."
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#solução-desenvolvimento-a-e-b",
+    "href": "slides/20_controlo_precos.html#solução-desenvolvimento-a-e-b",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Solução — desenvolvimento (a) e (b)",
+    "text": "Solução — desenvolvimento (a) e (b)\na) \\(1000 - 2Q = 200 + 2Q \\Rightarrow Q^* = 200\\) mil fogos, \\(P^* = 600\\) €/mês\n\nb) Com \\(P_{max} = 400\\):\n\n\\(Q_S\\): \\(400 = 200 + 2Q \\Rightarrow Q_S = 100\\) mil fogos\n\\(Q_D\\): \\(400 = 1000 - 2Q \\Rightarrow Q_D = 300\\) mil fogos\nEscassez: \\(300 - 100 = 200\\) mil fogos"
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#solução-desenvolvimento-c",
+    "href": "slides/20_controlo_precos.html#solução-desenvolvimento-c",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Solução — desenvolvimento (c)",
+    "text": "Solução — desenvolvimento (c)\nc) Excedentes com \\(P_{max} = 400\\), \\(Q_S = 100\\) (assumindo racionamento eficiente):\n\n\n\n\n\n\n\n\n\nÁrea\nForma\nCálculo\nValor\n\n\n\n\nEC\ntrapézio acima \\(P_{max}\\) sob procura\n\\(\\frac{(1000-400)+(800-400)}{2}\\times 100\\)\n50 000\n\n\nEP\ntriângulo acima oferta sob \\(P_{max}\\)\n\\(\\frac{(400-200)}{2}\\times 100\\)\n10 000\n\n\nDWL\ntriângulo entre curvas de \\(Q_S\\) a \\(Q^*\\)\n\\(\\frac{(800-400)}{2}\\times(200-100)\\)\n20 000\n\n\nTotal\n\n\\(50\\,000+10\\,000+20\\,000\\)\n80 000 ✓\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nEC = 50 000 é o máximo: assume que os \\(Q_S = 100\\) fogos vão para os 100 arrendatários de maior valorização. Com racionamento não-preço, o EC real pode ser inferior — a DWL efectiva superior a 20 000."
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_max-12",
+    "href": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_max-12",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Consequências não intencionais do \\(P_{max}\\) (1/2)",
+    "text": "Consequências não intencionais do \\(P_{max}\\) (1/2)\nEscassez e racionamento não-preço\nQuem recebe o bem? Não necessariamente quem mais o valoriza. O racionamento é feito por filas, relações pessoais ou discrição do vendedor — o EC real pode ficar abaixo do valor competitivo.\n\nDegradação da qualidade\nProdutores não podem cobrar mais → reduzem custos de manutenção e qualidade para compensar a margem perdida."
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_max-22",
+    "href": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_max-22",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Consequências não intencionais do \\(P_{max}\\) (2/2)",
+    "text": "Consequências não intencionais do \\(P_{max}\\) (2/2)\nMercado paralelo (mercado negro)\nA disposição a pagar dos consumidores excedentários (\\(Q_D - Q_S = 4\\)) é muito superior a \\(P_{max}\\) → surgem trocas informais a preços mais altos, muitas vezes ilegais.\n\nRedução da oferta futura\nA menor rentabilidade desincentiva novos investimentos. A longo prazo, a oferta pode contrair ainda mais."
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#controlos-de-preços-justificados-12",
+    "href": "slides/20_controlo_precos.html#controlos-de-preços-justificados-12",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Controlos de preços justificados? (1/2)",
+    "text": "Controlos de preços justificados? (1/2)\nA teoria standard conclui que os controlos são ineficientes em mercados perfeitamente competitivos. Mas há casos que alteram a análise:\n1. Poder de mercado (monopólio ou monopsónia)\nSe o vendedor/comprador já fixa um preço fora do óptimo, um controlo pode melhorar a eficiência.\n\n2. Falhas de informação\nEm mercados com assimetria de informação severa, a concorrência de preços pode não funcionar."
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html#controlos-de-preços-justificados-22",
+    "href": "slides/20_controlo_precos.html#controlos-de-preços-justificados-22",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "Controlos de preços justificados? (2/2)",
+    "text": "Controlos de preços justificados? (2/2)\n3. Objectivos distributivos explícitos\nUma sociedade pode preferir aceitar algum DWL para redistribuir de ricos para pobres — decisão normativa, não positiva.\n\n4. Choques transitórios e emergências\nControlos temporários durante crises podem evitar rendas de extracção (price gouging). O custo de eficiência pode ser menor do que os ganhos de estabilidade social."
   }
 ]
