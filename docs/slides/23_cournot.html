@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
-  <meta name="author" content="Paulo Fagandini">
+  <meta name="author" content="ISCAL - IPL">
   <title>Iscal - Microeconomia (Plano de Transição) – Microeconomia</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -128,427 +128,409 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Microeconomia</h1>
-  <p class="subtitle">Escolhas Racionais: Excedente, Cmg-Bmg</p>
+  <p class="subtitle">Aula 23 — Oligopólio: O Modelo de Cournot</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Paulo Fagandini 
+ISCAL - IPL 
 </div>
-        <p class="quarto-title-affiliation">
-            ISCAL-IPL
-          </p>
-    </div>
+</div>
 </div>
 
 </section>
-<section id="análise-custo-benefício" class="slide level2">
-<h2>Análise Custo-Benefício</h2>
-<p>A comparação entre <strong>custos marginais</strong> e <strong>benefícios marginais</strong> é particularmente útil quando é necessário escolher a <strong>quantidade</strong> de um recurso que está a ser utilizada ou a quantidade de um bem que se está a produzir.</p>
-</section>
-<section class="slide level2">
+<section>
+<section id="oligopólio" class="title-slide slide level1 center" data-background-color="#2C3E7A">
+<h1>Oligopólio</h1>
 
-<h3 id="princípio-fundamental">Princípio Fundamental</h3>
-<p>Valerá a pena <strong>aumentar a quantidade</strong> enquanto o <strong>benefício marginal</strong> (benefício adicional por mais uma unidade) for <strong>superior</strong> ao <strong>custo marginal</strong> (custo adicional por essa unidade).</p>
 </section>
-<section id="exemplo-produtor-de-pêra-rocha" class="slide level2">
-<h2>Exemplo: Produtor de Pêra Rocha</h2>
-<p>Um produtor de Pêra Rocha do Oeste precisa decidir que quantidade de pêra deve colher nos seus pomares.</p>
+<section id="características-do-oligopólio" class="slide level2">
+<h2>Características do Oligopólio</h2>
 <ul>
-<li class="fragment">Se colher mais, consegue <strong>vender mais</strong></li>
-<li class="fragment">Mas também tem <strong>mais custos</strong></li>
+<li class="fragment"><strong>Poucas empresas</strong> dominam o mercado — tipicamente 2 a 10</li>
+<li class="fragment">Produto pode ser homogéneo (petróleo, aço) ou diferenciado (automóveis, smartphones)</li>
+<li class="fragment"><strong>Barreiras à entrada</strong> significativas — custos elevados, economias de escala, patentes</li>
+<li class="fragment"><strong>Interdependência estratégica</strong> — o lucro de cada empresa depende das decisões das rivais</li>
 </ul>
 <div class="fragment">
-<p>As receitas e os custos são de acordo com o quadro seguinte:</p>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>A característica central do oligopólio é a <strong>interdependência estratégica</strong>. A empresa A não pode optimizar sem antecipar o comportamento da empresa B — e B sabe que A sabe isso. É precisamente aqui que a teoria de jogos se aplica.</p>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section class="slide level2">
-
-<h3 id="dados-do-problema">Dados do Problema</h3>
-<table class="caption-top">
-<colgroup>
-<col style="width: 27%">
-<col style="width: 24%">
-<col style="width: 21%">
-<col style="width: 8%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Quantidade (10s caixas)</th>
-<th>Receitas (benefício)</th>
-<th>Benefício marginal</th>
-<th>Custos</th>
-<th>Custo marginal</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10</td>
-<td>€100</td>
-<td></td>
-<td>€80</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td>€109</td>
-<td></td>
-<td>€85</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>12</td>
-<td>€117</td>
-<td></td>
-<td>€92</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>€124</td>
-<td></td>
-<td>€100</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>14</td>
-<td>€130</td>
-<td></td>
-<td>€110</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="slide level2">
-
-<h3 id="cálculo-do-benefício-marginal">Cálculo do Benefício Marginal</h3>
-<table class="caption-top">
-<colgroup>
-<col style="width: 27%">
-<col style="width: 24%">
-<col style="width: 21%">
-<col style="width: 8%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Quantidade (10s caixas)</th>
-<th>Receitas (benefício)</th>
-<th>Benefício marginal</th>
-<th>Custos</th>
-<th>Custo marginal</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10</td>
-<td>€100</td>
-<td>-</td>
-<td>€80</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td>€109</td>
-<td><strong>€9</strong></td>
-<td>€85</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>12</td>
-<td>€117</td>
-<td><strong>€8</strong></td>
-<td>€92</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>€124</td>
-<td><strong>€7</strong></td>
-<td>€100</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>14</td>
-<td>€130</td>
-<td><strong>€6</strong></td>
-<td>€110</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="slide level2">
-
-<h3 id="cálculo-do-custo-marginal">Cálculo do Custo Marginal</h3>
-<table class="caption-top">
-<colgroup>
-<col style="width: 27%">
-<col style="width: 24%">
-<col style="width: 21%">
-<col style="width: 8%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Quantidade (10s caixas)</th>
-<th>Receitas (benefício)</th>
-<th>Benefício marginal</th>
-<th>Custos</th>
-<th>Custo marginal</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10</td>
-<td>€100</td>
-<td>-</td>
-<td>€80</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td>€109</td>
-<td>€9</td>
-<td>€85</td>
-<td><strong>€5</strong></td>
-</tr>
-<tr class="odd">
-<td>12</td>
-<td>€117</td>
-<td>€8</td>
-<td>€92</td>
-<td><strong>€7</strong></td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>€124</td>
-<td>€7</td>
-<td>€100</td>
-<td><strong>€8</strong></td>
-</tr>
-<tr class="odd">
-<td>14</td>
-<td>€130</td>
-<td>€6</td>
-<td>€110</td>
-<td><strong>€10</strong></td>
-</tr>
-</tbody>
-</table>
-<p><span class="math display">\[Bmg = \frac{\Delta B}{\Delta Q}, \quad Cmg = \frac{\Delta C}{\Delta Q}\]</span></p>
-</section>
-<section class="slide level2">
-
-<h3 id="tabela-completa">Tabela Completa</h3>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Quantidade (10s caixas)</th>
-<th>Receitas</th>
-<th>Bmg</th>
-<th>Custos</th>
-<th>Cmg</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10</td>
-<td>€100</td>
-<td>-</td>
-<td>€80</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td>€109</td>
-<td>€9</td>
-<td>€85</td>
-<td>€5</td>
-</tr>
-<tr class="odd">
-<td>12</td>
-<td>€117</td>
-<td>€8</td>
-<td>€92</td>
-<td>€7</td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>€124</td>
-<td>€7</td>
-<td>€100</td>
-<td>€8</td>
-</tr>
-<tr class="odd">
-<td>14</td>
-<td>€130</td>
-<td>€6</td>
-<td>€110</td>
-<td>€10</td>
-</tr>
-<tr class="even">
-<td>16</td>
-<td>€140</td>
-<td>€5</td>
-<td>€132</td>
-<td>€11</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>Qual a quantidade ótima de caixas a produzir?</p>
-</blockquote>
-</section>
-<section class="slide level2">
-
-<h3 id="cálculo-do-lucro">Cálculo do Lucro</h3>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Quantidade</th>
-<th>Receitas</th>
-<th>Bmg</th>
-<th>Custos</th>
-<th>Cmg</th>
-<th><strong>Lucro</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10</td>
-<td>€100</td>
-<td>-</td>
-<td>€80</td>
-<td>-</td>
-<td>€20</td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td>€109</td>
-<td>€9</td>
-<td>€85</td>
-<td>€5</td>
-<td>€24</td>
-</tr>
-<tr class="odd">
-<td><strong>12</strong>*</td>
-<td><strong>€117</strong></td>
-<td><strong>€8</strong></td>
-<td><strong>€92</strong></td>
-<td><strong>€7</strong></td>
-<td><strong>€25</strong></td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>€124</td>
-<td>€7</td>
-<td>€100</td>
-<td>€8</td>
-<td>€24</td>
-</tr>
-<tr class="odd">
-<td>14</td>
-<td>€130</td>
-<td>€6</td>
-<td>€110</td>
-<td>€10</td>
-<td>€20</td>
-</tr>
-<tr class="even">
-<td>16</td>
-<td>€140</td>
-<td>€5</td>
-<td>€132</td>
-<td>€11</td>
-<td>€12</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Quantidade ótima: 12 caixas</strong> (onde Bmg ≈ Cmg)</p>
-</section>
-<section id="optimização-de-uma-função" class="slide level2">
-<h2>Optimização de uma função</h2>
-<p>Se a uma função <span class="math inline">\(f\)</span> for diferenciàvel no conjunto aberto <span class="math inline">\(S\)</span>, então:</p>
-<ol type="1">
-<li class="fragment">Se para <span class="math inline">\(x^*\in S\)</span>, <span class="math inline">\(f'(x^*)=0\)</span>, e <span class="math inline">\(f''(x^*)&lt;0\)</span>, então <span class="math inline">\(x^*\)</span> é um máximo local.</li>
-<li class="fragment">Se para <span class="math inline">\(x^*\in S\)</span>, <span class="math inline">\(f'(x^*)=0\)</span>, e <span class="math inline">\(f''(x^*)&gt;0\)</span>, então <span class="math inline">\(x^*\)</span> é um minimo local.</li>
-</ol>
+<section id="como-modelar-o-oligopólio" class="slide level2">
+<h2>Como Modelar o Oligopólio?</h2>
+<p>A variável estratégica define o modelo:</p>
 <div class="fragment">
-<p>À condição na primeira derivada chamamos <strong>Condição de Primeiro Ordem (CPO)</strong>, e à condição na segunda derivada chamamos <strong>Condição de Segundo Ordem (CSO)</strong>.</p>
-<blockquote>
-<p>Se a função tiver segunda derivada monotónica, então a <strong>CSO</strong> não é necessária.</p>
-</blockquote>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Modelo</th>
+<th>Variável estratégica</th>
+<th>Timing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cournot</strong></td>
+<td>Quantidade</td>
+<td>Simultâneo</td>
+</tr>
+<tr class="even">
+<td><strong>Stackelberg</strong></td>
+<td>Quantidade</td>
+<td>Sequencial</td>
+</tr>
+<tr class="odd">
+<td><strong>Bertrand</strong></td>
+<td>Preço</td>
+<td>Simultâneo</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fragment">
+<p>Hoje: <strong>Cournot</strong> — cada empresa escolhe simultaneamente a quantidade a produzir, tomando a quantidade da rival como dada.</p>
+</div>
+</section></section>
+<section>
+<section id="o-modelo-de-cournot" class="title-slide slide level1 center" data-background-color="#2C3E7A">
+<h1>O Modelo de Cournot</h1>
+
+</section>
+<section id="estrutura-do-modelo" class="slide level2">
+<h2>Estrutura do Modelo</h2>
+<p>Duopólio simétrico:</p>
+<ul>
+<li class="fragment">Duas empresas, A e B, produzem um bem homogéneo</li>
+<li class="fragment">Procura inversa de mercado: <span class="math inline">\(P = a - b(q_A + q_B)\)</span></li>
+<li class="fragment">Custos idênticos: <span class="math inline">\(CT_i = c \cdot q_i\)</span> (custo marginal constante <span class="math inline">\(Cmg = c\)</span>, sem custos fixos)</li>
+<li class="fragment">Decisão <strong>simultânea</strong> de quantidade — nenhuma empresa observa a escolha da outra antes de decidir</li>
+</ul>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>A hipótese de Cournot: cada empresa trata a quantidade da rival como <strong>fixa</strong> ao optimizar. É uma hipótese simplificadora mas gera um equilíbrio de Nash bem definido.</p>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="condição-matemática-de-máximo" class="slide level2">
-<h2>Condição Matemática de Máximo</h2>
-<p>Para maximizar o lucro (Benefício - Custo):</p>
-<p><span class="math display">\[
-\max\ (B - C)
-\]</span></p>
-<p>Condição de primeira ordem:</p>
-<p><span class="math display">\[
-\frac{d(B-C)}{dQ} = 0 \Rightarrow B' - C' = 0 \Rightarrow B' = C'
-\]</span></p>
-<p><strong>Conclusão:</strong></p>
-<p><span class="math display">\[
-Bmg = Cmg
-\]</span></p>
+<section id="maximização-do-lucro-empresa-a" class="slide level2">
+<h2>Maximização do Lucro — Empresa A</h2>
+<p>O lucro da empresa A é:</p>
+<p><span class="math display">\[\Pi_A = P \cdot q_A - c \cdot q_A = \bigl[a - b(q_A + q_B)\bigr] q_A - c \cdot q_A\]</span></p>
+<div class="fragment">
+<p>Expandindo:</p>
+<p><span class="math display">\[\Pi_A = (a - c)\,q_A - b\,q_A^2 - b\,q_A q_B\]</span></p>
+</div>
+<div class="fragment">
+<p>Condição de primeira ordem (<span class="math inline">\(q_B\)</span> tratado como fixo):</p>
+<p><span class="math display">\[\frac{\partial \Pi_A}{\partial q_A} = (a - c) - 2b\,q_A - b\,q_B = 0\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\boxed{q_A^* = \frac{a-c}{2b} - \frac{q_B}{2}}\]</span></p>
+</div>
 </section>
-<section id="conclusões-sobre-análise-marginal" class="slide level2">
-<h2>Conclusões sobre Análise Marginal</h2>
-<ol type="1">
-<li class="fragment"><p><strong>Análise marginal</strong> é o cálculo da variação de uma variável por unidade adicional de outra</p></li>
-<li class="fragment"><p>Análise marginal corresponde, portanto, a uma <strong>taxa de variação média</strong></p></li>
-<li class="fragment"><p>Uma taxa de variação média é uma <strong>derivada</strong></p></li>
-<li class="fragment"><p>O critério custo-benefício corresponde à <strong>condição de primeira ordem de máximo</strong></p></li>
-</ol>
-</section>
-<section id="racionalidade" class="slide level2">
-<h2>Racionalidade</h2>
-<p>Por vezes, os agentes económicos <strong>não</strong> tomam decisões racionais, porque a racionalidade é <strong>limitada</strong>, já que:</p>
-<ol type="1">
-<li class="fragment">A realidade é muito <strong>complexa</strong></li>
-<li class="fragment">A capacidade <strong>cognitiva</strong> dos indivíduos é limitada</li>
-<li class="fragment">A <strong>informação</strong> é frequentemente incompleta</li>
-</ol>
-</section>
-<section class="slide level2">
-
-<h3 id="pressuposto-do-curso">Pressuposto do Curso</h3>
-<p>Mas admitiremos que os indivíduos são <strong>racionais</strong> e que reagem a <strong>incentivos</strong>.</p>
-<p><strong>Escolhas racionais são escolhas eficientes.</strong></p>
-</section>
-<section id="eficiência" class="slide level2">
-<h2>Eficiência</h2>
-<p><strong>Eficiência</strong> (no sentido de Pareto) significa não poder melhorar a situação de um agente económico sem piorar a situação de outro…</p>
-<p>Em geral, todas as escolhas eficientes têm subjacente um <strong>trade-off</strong>: uma situação de escolha em que para ter mais de uma opção é preciso prescindir de outra.</p>
-<p><strong>Na produção, eficiência é incompatível com desaproveitamento de recursos.</strong></p>
-</section>
-<section id="bem-estar-social" class="slide level2">
-<h2>Bem-Estar Social</h2>
-<p>Refere-se à <strong>adição de todos os benefícios</strong> que decorrem das escolhas para todos os agentes económicos. Note que estes benefícios não fazem referência ao benefício bruto, mas sim ao <em>excedente</em>.</p>
-</section>
-<section id="resumo-da-aula-2" class="slide level2">
-<h2>Resumo da Aula 2</h2>
+<section id="a-função-de-reacção-best-response" class="slide level2">
+<h2>A Função de Reacção (Best Response)</h2>
+<p><span class="math display">\[q_A^*(q_B) = \frac{a-c}{2b} - \frac{1}{2}\,q_B\]</span></p>
+<div class="fragment">
+<p>Esta é a <strong>função de reacção</strong> (ou best response) da empresa A: para cada valor de <span class="math inline">\(q_B\)</span>, indica a quantidade óptima de A.</p>
+</div>
+<div class="fragment">
 <ul>
-<li class="fragment"><strong>Análise custo-benefício</strong>: comparar Bmg e Cmg</li>
-<li class="fragment"><strong>Regra de otimização</strong>: aumentar quantidade enquanto Bmg &gt; Cmg</li>
-<li class="fragment"><strong>Condição de máximo</strong>: Bmg = Cmg (derivada = 0)</li>
-<li class="fragment"><strong>Racionalidade limitada</strong>: complexidade, cognição, informação</li>
-<li class="fragment"><strong>Eficiência de Pareto</strong>: não melhorar um sem piorar outro</li>
+<li>Quando <span class="math inline">\(q_B = 0\)</span>: <span class="math inline">\(q_A^* = \dfrac{a-c}{2b}\)</span> — A produz como monopolista</li>
+<li>Quando <span class="math inline">\(q_B\)</span> aumenta: <span class="math inline">\(q_A^*\)</span> diminui — A produz menos porque o preço já é pressionado pela produção de B</li>
+<li>A inclinação é <span class="math inline">\(-\tfrac{1}{2}\)</span>: por cada unidade adicional de B, A reduz a sua produção em meia unidade</li>
 </ul>
+</div>
+<div class="fragment">
+<p>Por simetria, a função de reacção de B é:</p>
+<p><span class="math display">\[q_B^*(q_A) = \frac{a-c}{2b} - \frac{1}{2}\,q_A\]</span></p>
+</div>
+</section>
+<section id="equilíbrio-de-nash-de-cournot" class="slide level2">
+<h2>Equilíbrio de Nash de Cournot</h2>
+<p>O equilíbrio ocorre quando <strong>ambas</strong> as empresas estão na sua função de reacção simultaneamente:</p>
+<p><span class="math display">\[q_A = q_B^*(q_A) \quad \text{e} \quad q_B = q_A^*(q_B)\]</span></p>
+<div class="fragment">
+<p>Substituindo <span class="math inline">\(q_B^*\)</span> na função de reacção de A (duopólio simétrico):</p>
+<p><span class="math display">\[q_A = \frac{a-c}{2b} - \frac{1}{2}\left(\frac{a-c}{2b} - \frac{q_A}{2}\right) = \frac{a-c}{2b} - \frac{a-c}{4b} + \frac{q_A}{4}\]</span></p>
+<p><span class="math display">\[\frac{3}{4}\,q_A = \frac{a-c}{4b} \quad\Rightarrow\quad \boxed{q_A^* = q_B^* = \frac{a-c}{3b}}\]</span></p>
+</div>
+<div class="fragment">
+<p>Quantidade total e preço de equilíbrio:</p>
+<p><span class="math display">\[Q^*_C = \frac{2(a-c)}{3b} \qquad P^*_C = a - b\,Q^*_C = \frac{a + 2c}{3}\]</span></p>
+</div>
+</section>
+<section id="diagrama-das-funções-de-reacção" class="slide level2">
+<h2>Diagrama das Funções de Reacção</h2>
+
+</section>
+<section id="leitura-do-diagrama" class="slide level2">
+<h2>Leitura do Diagrama</h2>
+<ul>
+<li><strong><span class="math inline">\(BR_A\)</span></strong> (azul): função de reacção de A — para cada <span class="math inline">\(q_B\)</span>, a melhor resposta de A</li>
+<li><strong><span class="math inline">\(BR_B\)</span></strong> (vermelha): função de reacção de B — para cada <span class="math inline">\(q_A\)</span>, a melhor resposta de B</li>
+<li><strong>Cournot (8, 8)</strong>: interseção das duas funções — único ponto em que ambas as empresas estão simultaneamente a optimizar</li>
+<li><strong>Cartel (6, 6)</strong>: se as empresas cooperassem, produziriam menos e ganhariam mais — mas não está na intersecção das BRs, logo não é estável</li>
+<li><strong>C.P. (12, 12)</strong>: equilíbrio competitivo — está fora da região de lucros positivos de cada empresa</li>
+</ul>
+<div class="fragment">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>O Cartel <strong>(6, 6)</strong> não é um Equilíbrio de Nash: se B produz 6, a melhor resposta de A é <span class="math inline">\(BR_A(6) = 12 - 3 = 9 \neq 6\)</span>. Cada empresa tem incentivo a desviar — o cartel é instável.</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="equilíbrio-numérico" class="title-slide slide level1 center" data-background-color="#2C3E7A">
+<h1>Equilíbrio Numérico</h1>
+
+</section>
+<section id="exemplo-p-30---q-cmg-6" class="slide level2">
+<h2>Exemplo: <span class="math inline">\(P = 30 - Q\)</span>, <span class="math inline">\(Cmg = 6\)</span></h2>
+<p>Com <span class="math inline">\(a=30\)</span>, <span class="math inline">\(b=1\)</span>, <span class="math inline">\(c=6\)</span>:</p>
+<div class="fragment">
+<p><strong>Funções de reacção:</strong></p>
+<p><span class="math display">\[q_A^*(q_B) = 12 - \frac{q_B}{2} \qquad q_B^*(q_A) = 12 - \frac{q_A}{2}\]</span></p>
+</div>
+<div class="fragment">
+<p><strong>Equilíbrio de Cournot</strong> (resolver o sistema):</p>
+<p><span class="math display">\[q_A^* = 12 - \frac{q_A^*}{4} \cdot \ldots \quad \Rightarrow \quad q_A^* = q_B^* = \frac{30-6}{3} = 8\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[Q^*_C = 16 \qquad P^*_C = 30 - 16 = 14 \qquad \Pi^*_{\text{cada}} = (14-6)\times 8 = 64\]</span></p>
+</div>
+</section>
+<section id="comparação-entre-estruturas-de-mercado" class="slide level2">
+<h2>Comparação entre Estruturas de Mercado</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Estrutura</th>
+<th><span class="math inline">\(Q\)</span></th>
+<th><span class="math inline">\(P\)</span></th>
+<th><span class="math inline">\(\Pi\)</span> cada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Monopólio (cartel)</td>
+<td><span class="math inline">\(12\)</span></td>
+<td><span class="math inline">\(18\)</span></td>
+<td><span class="math inline">\(72\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Cournot</strong></td>
+<td><strong><span class="math inline">\(16\)</span></strong></td>
+<td><strong><span class="math inline">\(14\)</span></strong></td>
+<td><strong><span class="math inline">\(64\)</span></strong></td>
+</tr>
+<tr class="odd">
+<td>Concorrência Perfeita</td>
+<td><span class="math inline">\(24\)</span></td>
+<td><span class="math inline">\(6\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Ordenações que sempre se verificam</strong> (duopólio simétrico):</p>
+<p><span class="math inline">\(Q_{\text{mono}} &lt; Q_{\text{Cournot}} &lt; Q_{\text{CP}}\)</span></p>
+<p><span class="math inline">\(P_{\text{mono}} &gt; P_{\text{Cournot}} &gt; P_{\text{CP}}\)</span></p>
+<p><span class="math inline">\(\Pi_{\text{mono}}/2 &gt; \Pi_{\text{Cournot}} &gt; 0\)</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="por-que-o-cartel-é-instável" class="slide level2">
+<h2>Por que o Cartel é Instável?</h2>
+<p>Se ambas cooperassem e produzissem <span class="math inline">\(q = 6\)</span> cada (resultado de monopólio):</p>
+<div class="fragment">
+<p>A empresa A verifica: <span class="math inline">\(BR_A(6) = 12 - 3 = 9 \neq 6\)</span></p>
+</div>
+<div class="fragment">
+<p>Se A desviar para <span class="math inline">\(q_A = 9\)</span> (com <span class="math inline">\(q_B = 6\)</span>):</p>
+<p><span class="math display">\[P = 30 - (9+6) = 15 \qquad \Pi_A = (15-6)\times 9 = 81 &gt; 72\]</span></p>
+</div>
+<div class="fragment">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>Ao desviar do cartel, A aumenta o lucro de <span class="math inline">\(72\)</span> para <span class="math inline">\(81\)</span>. B raciocina da mesma forma. O acordo colapsa — <strong>estrutura de dilema do prisioneiro</strong>.</p>
+<p>Esta ligação entre Cournot e teoria de jogos (aula anterior) é exacta: o equilíbrio de Cournot <strong>é</strong> o Equilíbrio de Nash do jogo em que as estratégias são quantidades.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section class="slide level2">
 
-<p><strong>Próxima aula:</strong> Fronteira das Possibilidades de Produção (FPP), Custo Relativo, Vantagens do Comércio</p>
-
-
+</section></section>
+<section>
+<section id="exercícios" class="title-slide slide level1 center" data-background-color="#1a5276">
+<h1>Exercícios</h1>
 
 </section>
+<section id="exercício-1-escolha-múltipla" class="slide level2">
+<h2>Exercício 1 — Escolha Múltipla</h2>
+<p>No modelo de Cournot com duas empresas simétricas e procura linear, quando a empresa A aumenta a sua produção, a função de reacção da empresa B indica que B deve:</p>
+<ol type="a">
+<li>Aumentar também a produção, para manter a quota de mercado</li>
+<li>Manter a produção inalterada, pois toma <span class="math inline">\(q_A\)</span> como dado</li>
+<li>Reduzir a produção, porque o preço de mercado desceu</li>
+<li>Sair do mercado se o preço cair abaixo do custo médio</li>
+</ol>
+</section>
+<section id="solução-exercício-1" class="slide level2" data-visibility="uncounted">
+<h2>Solução — Exercício 1</h2>
+<p>A função de reacção de B é <span class="math inline">\(q_B^*(q_A) = \dfrac{a-c}{2b} - \dfrac{1}{2}q_A\)</span>.</p>
+<p>A inclinação é <span class="math inline">\(-\tfrac{1}{2}\)</span>: quando <span class="math inline">\(q_A\)</span> sobe 1 unidade, <span class="math inline">\(q_B^*\)</span> desce <span class="math inline">\(\tfrac{1}{2}\)</span>.</p>
+<p><strong>Resposta: (c)</strong> — B reduz a produção porque a maior quantidade de A baixa o preço de mercado; a melhor resposta de B é produzir menos para limitar a queda do preço que recebe.</p>
+<ol start="2" type="a">
+<li class="fragment">descreve a <strong>hipótese</strong> de Cournot (B toma <span class="math inline">\(q_A\)</span> como dado ao optimizar), não a direcção da resposta óptima quando <span class="math inline">\(q_A\)</span> muda.</li>
+</ol>
+</section>
+<section id="exercício-2-escolha-múltipla" class="slide level2">
+<h2>Exercício 2 — Escolha Múltipla</h2>
+<p>No equilíbrio de Cournot de um duopólio simétrico, comparando com o resultado de monopólio:</p>
+<ol type="a">
+<li>A quantidade total é maior e o preço é menor</li>
+<li>A quantidade total é menor e o preço é maior</li>
+<li>O lucro de cada empresa é maior do que metade do lucro de monopólio</li>
+<li>O resultado é eficiente porque <span class="math inline">\(P = Cmg\)</span></li>
+</ol>
+</section>
+<section id="solução-exercício-2" class="slide level2" data-visibility="uncounted">
+<h2>Solução — Exercício 2</h2>
+<ul>
+<li class="fragment"><strong>(a) Verdadeiro</strong> — <span class="math inline">\(Q_C &gt; Q_m\)</span> e <span class="math inline">\(P_C &lt; P_m\)</span>: a concorrência entre as duas empresas aumenta a produção total e baixa o preço face ao monopólio</li>
+<li class="fragment"><ol start="2" type="a">
+<li class="fragment">Falso — inverte as ordenações correctas</li>
+</ol></li>
+<li class="fragment"><ol start="3" type="a">
+<li class="fragment">Falso — o lucro de cada empresa em Cournot (<span class="math inline">\(64\)</span>) é <strong>menor</strong> do que metade do lucro de monopólio (<span class="math inline">\(72\)</span>): a concorrência dissipa parte dos lucros</li>
+</ol></li>
+<li class="fragment"><ol start="4" type="a">
+<li class="fragment">Falso — em Cournot <span class="math inline">\(P &gt; Cmg\)</span>; o resultado é ineficiente (existe DWL), embora menor do que em monopólio</li>
+</ol></li>
+</ul>
+<p><strong>Resposta: (a)</strong></p>
+</section>
+<section id="exercício-de-desenvolvimento" class="slide level2 smaller">
+<h2>Exercício de Desenvolvimento</h2>
+<p>Duas empresas, A e B, operam num mercado com procura inversa <span class="math inline">\(P = 30 - (q_A + q_B)\)</span>.</p>
+<p>Ambas têm custo marginal constante <span class="math inline">\(Cmg = 6\)</span> e sem custos fixos.</p>
+<p><strong>Alíneas:</strong></p>
+<ol type="a">
+<li>Derive a função de reacção (best response) da empresa A, <span class="math inline">\(q_A^*(q_B)\)</span>.</li>
+<li>Por simetria, escreva a função de reacção de B. Resolva o sistema para obter o equilíbrio de Cournot <span class="math inline">\((q_A^*, q_B^*)\)</span>.</li>
+<li>Calcule a quantidade total <span class="math inline">\(Q^*_C\)</span>, o preço <span class="math inline">\(P^*_C\)</span> e o lucro de cada empresa <span class="math inline">\(\Pi^*_C\)</span>.</li>
+<li>Determine o resultado de monopólio: quantidade, preço e lucro total. Compare com Cournot.</li>
+<li>Mostre que o acordo de cartel (cada empresa produz <span class="math inline">\(q=6\)</span>) não é estável: calcule o lucro de A se se desviar enquanto B produz 6.</li>
+<li>Determine o equilíbrio de concorrência perfeita e complete a tabela comparativa.</li>
+</ol>
+</section>
+<section id="solução-exercício-de-desenvolvimento" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Solução — Exercício de Desenvolvimento</h2>
+<p><strong>a)</strong> <span class="math inline">\(\Pi_A = (30 - q_A - q_B)q_A - 6q_A\)</span>. CPO: <span class="math inline">\(\dfrac{\partial \Pi_A}{\partial q_A} = 24 - 2q_A - q_B = 0\)</span></p>
+<p><span class="math display">\[q_A^*(q_B) = 12 - \frac{q_B}{2}\]</span></p>
+<div class="fragment">
+<p><strong>b)</strong> <span class="math inline">\(q_B^*(q_A) = 12 - \dfrac{q_A}{2}\)</span>. Substituindo: <span class="math inline">\(q_A = 12 - \dfrac{1}{2}\!\left(12 - \dfrac{q_A}{2}\right) = 6 + \dfrac{q_A}{4}\)</span></p>
+<p><span class="math inline">\(\dfrac{3}{4}q_A = 6 \Rightarrow q_A^* = q_B^* = 8\)</span></p>
+</div>
+<div class="fragment">
+<p><strong>c)</strong> <span class="math inline">\(Q^*_C = 16\)</span>, <span class="math inline">\(P^*_C = 30-16 = 14\)</span>, <span class="math inline">\(\Pi^*_C = (14-6)\times 8 = 64\)</span> cada</p>
+</div>
+<div class="fragment">
+<p><strong>d)</strong> Monopolista: <span class="math inline">\(Rmg = 30-2Q = 6 \Rightarrow Q_m=12\)</span>, <span class="math inline">\(P_m=18\)</span>, <span class="math inline">\(\Pi_m=144\)</span> (cada: <span class="math inline">\(72\)</span>)</p>
+<p>Cournot produz mais (<span class="math inline">\(16&gt;12\)</span>), cobra menos (<span class="math inline">\(14&lt;18\)</span>), lucro por empresa menor (<span class="math inline">\(64&lt;72\)</span>).</p>
+</div>
+<div class="fragment">
+<p><strong>e)</strong> Se B produz <span class="math inline">\(6\)</span>: <span class="math inline">\(q_A^{dev} = 12-3=9\)</span>, <span class="math inline">\(P=30-15=15\)</span>, <span class="math inline">\(\Pi_A^{dev}=(15-6)\times 9=81&gt;72\)</span> ✓</p>
+<p>A tem incentivo a desviar do cartel — o acordo é instável.</p>
+</div>
+<div class="fragment">
+<p><strong>f)</strong> <span class="math inline">\(P=Cmg \Rightarrow 30-Q=6 \Rightarrow Q_{cp}=24\)</span>, <span class="math inline">\(P_{cp}=6\)</span>, <span class="math inline">\(\Pi=0\)</span></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Estrutura</th>
+<th><span class="math inline">\(Q\)</span></th>
+<th><span class="math inline">\(P\)</span></th>
+<th><span class="math inline">\(\Pi\)</span> cada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Monopólio</td>
+<td><span class="math inline">\(12\)</span></td>
+<td><span class="math inline">\(18\)</span></td>
+<td><span class="math inline">\(72\)</span></td>
+</tr>
+<tr class="even">
+<td>Cournot</td>
+<td><span class="math inline">\(16\)</span></td>
+<td><span class="math inline">\(14\)</span></td>
+<td><span class="math inline">\(64\)</span></td>
+</tr>
+<tr class="odd">
+<td>Conc. Perf.</td>
+<td><span class="math inline">\(24\)</span></td>
+<td><span class="math inline">\(6\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+</tr>
+</tbody>
+</table>
+
+
+
+</div>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../images/iscal_logo.svg" class="slide-logo"></p>

@@ -1,0 +1,472 @@
+---
+title: "Microeconomia"
+subtitle: "Aula 25 — Bertrand, Colusão e Jogos Repetidos"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 25_bertrand_colusao-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+  beamer:
+    theme: default
+    classoption: handout
+echo: false
+code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+# O Modelo de Bertrand {background-color="#2C3E7A"}
+
+## Uma Pergunta Simples
+
+Em Cournot, duas empresas com $Cmg = 6$ e procura $P = 30 - Q$ obtêm:
+
+$$Q_C = 16,\quad P_C = 14,\quad \Pi_C = 64 \text{ cada}$$
+
+. . .
+
+E se, em vez de escolherem **quantidades**, as empresas escolhessem **preços**?
+
+. . .
+
+::: {.callout-important}
+Esta é a diferença essencial entre Cournot e Bertrand: **a variável estratégica**. Mesma estrutura de mercado, mesmo número de empresas — resultado radicalmente diferente.
+:::
+
+## A Lógica do Undercutting
+
+Com produto homogéneo, consumidores compram sempre à empresa mais barata.
+
+. . .
+
+Suponha que a Empresa B cobra $P_B = 14$ (preço de Cournot):
+
+:::{.incremental}
+- A Empresa A cobra $P_A = 13{,}99$ — captura **todo** o mercado e ganha lucro positivo
+- B responde com $P_B = 13{,}98$ — captura todo o mercado de volta
+- A responde com $P_A = 13{,}97\ldots$
+:::
+
+. . .
+
+Este processo — **undercutting** — só pára quando nenhuma empresa tem incentivo a baixar mais o preço.
+
+. . .
+
+$$P_A = P_B = Cmg = 6$$
+
+Abaixo de $Cmg$, vender implica prejuízo. Acima de $Cmg$, a rival subcorta.
+
+## O Paradoxo de Bertrand
+
+::: {.callout-important}
+**Paradoxo de Bertrand:** com apenas **duas** empresas, produto homogéneo e decisões simultâneas de preço, o equilíbrio de Nash é $P = Cmg$ — o mesmo resultado que concorrência perfeita com infinitas empresas.
+:::
+
+. . .
+
+Verificação do Equilíbrio de Nash:
+
+:::{.nonincremental}
+- Se $P_B = 6 = Cmg$: cobrar $P_A < 6$ gera prejuízo; cobrar $P_A > 6$ perde todos os clientes; cobrar $P_A = 6$ dá lucro zero. **Nenhum desvio é rentável.** ✓
+:::
+
+. . .
+
+$$P^*_{\text{Bert}} = Cmg = 6 \qquad Q^*_{\text{Bert}} = 24 \qquad \Pi^*_{\text{Bert}} = 0$$
+
+## Cournot vs. Bertrand — O que Muda?
+
+:::{.nonincremental}
+| | Cournot | Bertrand |
+|---|---|---|
+| Variável estratégica | Quantidade | Preço |
+| Timing | Simultâneo | Simultâneo |
+| Resultado | $P > Cmg$, $\Pi > 0$ | $P = Cmg$, $\Pi = 0$ |
+| Equivalente a | — | Conc. Perfeita |
+:::
+
+. . .
+
+::: {.callout-note}
+O paradoxo levanta uma questão: qual o modelo mais realista? Depende do mercado. Quando as empresas constroem capacidade com antecedência (e depois competem em preço), o resultado aproxima-se de Cournot. Quando podem ajustar a oferta instantaneamente, Bertrand é mais adequado.
+:::
+
+## Saídas do Paradoxo
+
+Na prática, o resultado de Bertrand raramente se verifica porque:
+
+:::{.incremental}
+- **Diferenciação de produto** — com produtos diferentes, a empresa que baixa o preço não captura imediatamente todo o mercado; há fidelização
+- **Capacidade instalada limitada** — se a empresa não tem capacidade para servir todo o mercado, o undercutting total não é possível
+- **Interacção repetida** — em mercados com encontros frequentes, a ameaça de represália pode sustentar preços acima de $Cmg$
+:::
+
+. . .
+
+::: {.callout-tip}
+Este último ponto — a **interacção repetida** — é o tema da segunda parte desta aula. A repetição transforma o jogo e pode sustentar resultados que não seriam possíveis num jogo de uma só vez.
+:::
+
+# Colusão e o Incentivo a Desviar {background-color="#2C3E7A"}
+
+## O Sonho do Cartel
+
+Se as empresas pudessem coordenar os preços, agiriam como um monopolista:
+
+$$Q_m = 12,\quad P_m = 18,\quad \Pi_m = 144 \quad\Rightarrow\quad \Pi_{\text{cada}} = 72$$
+
+. . .
+
+Comparando com Bertrand ($\Pi = 0$) e Cournot ($\Pi = 64$), a colusão maximiza o lucro conjunto.
+
+. . .
+
+**Mas cada empresa tem incentivo a desviar:**
+
+. . .
+
+Se B mantém o preço de cartel $P_B = 18$, A pode cobrar $P_A = 17{,}99$ e capturar **todo** o mercado, obtendo $\Pi_A \approx 144$ em vez de $72$.
+
+. . .
+
+::: {.callout-important}
+Estrutura de **Dilema do Prisioneiro** (já conhecida da Aula 22): o resultado colectivamente óptimo (cooperar) não é sustentável num jogo de uma só vez porque cada empresa tem incentivo a desviar unilateralmente.
+:::
+
+## Matriz do Jogo de Preços (Uma Vez)
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[every node/.style={scale=0.84}]
+  \node at (2.6, 1.8) {\textbf{Empresa B}};
+  \node at (2.0, 1.15) {\textit{Colusão ($P_m$)}};
+  \node at (4.1, 1.15) {\textit{Desviar ($P_m\!-\!\varepsilon$)}};
+  \node[rotate=90] at (-0.35, 0) {\textbf{Empresa A}};
+  \node at (0.7,  0.45) {\textit{Colusão}};
+  \node at (0.7, -0.85) {\textit{Desviar}};
+
+  \node at (2.0,  0.5) {$(72,\ 72)$};
+  \node at (4.1,  0.5) {$(0,\ 144)$};
+  \node at (2.0, -0.8) {$(144,\ 0)$};
+  \node at (4.1, -0.8) {$(0,\ 0)$};
+
+  \draw (1.1, 1.0) rectangle (5.2,-1.45);
+  \draw (3.1, 1.0) -- (3.1,-1.45);
+  \draw (1.1, 0.0) -- (5.2, 0.0);
+\end{tikzpicture}
+\end{center}
+```
+
+. . .
+
+**Desviar domina Colusão** (num jogo de uma só vez): $144 > 72$ se o outro coopera; $0 = 0$ se o outro desvia.
+
+**EN: (Desviar, Desviar) = (0, 0)** — mesma estrutura do dilema do prisioneiro. ✓
+
+# Jogos Repetidos e Colusão Sustentável {background-color="#2C3E7A"}
+
+## A Repetição Muda o Jogo
+
+Num mercado real, as empresas interagem **repetidamente** — todos os meses, todos os anos.
+
+. . .
+
+A repetição introduz um elemento novo: a **ameaça de represália futura**.
+
+. . .
+
+:::{.incremental}
+- Se A desviar hoje, B pune A amanhã (e depois, e sempre)
+- A punição reduz os lucros futuros de A
+- Se A valorizar suficientemente o futuro, a ameaça de punição pode impedir o desvio
+:::
+
+. . .
+
+::: {.callout-note}
+O jogo repetido não elimina o incentivo a desviar num único período — mas cria um **trade-off inter-temporal**: ganho imediato de desviar vs. perda de lucros futuros pela punição.
+:::
+
+## O Factor de Desconto $\delta$
+
+$\delta \in (0,1)$ é o **factor de desconto** — mede quanto a empresa valoriza $1$ euro de lucro no próximo período em comparação com $1$ euro hoje.
+
+. . .
+
+:::{.nonincremental}
+- $\delta$ próximo de $1$: empresa muito paciente — valoriza muito o futuro
+- $\delta$ próximo de $0$: empresa impaciente — quase só valoriza o presente
+:::
+
+. . .
+
+O valor presente de um fluxo constante $\Pi$ por período, para sempre:
+
+$$NPV = \Pi + \delta\Pi + \delta^2\Pi + \ldots = \frac{\Pi}{1-\delta}$$
+
+. . .
+
+::: {.callout-tip}
+$\delta$ pode interpretar-se como $\dfrac{1}{1+r}$ onde $r$ é a taxa de juro, ou como a probabilidade de o jogo continuar no próximo período.
+:::
+
+## Estratégia Grim Trigger
+
+A estratégia mais simples que pode sustentar a colusão:
+
+. . .
+
+::: {.callout-note}
+**Grim Trigger (gatilho implacável):**
+
+- Cooperar (cobrar $P_m$) enquanto o rival cooperar
+- Se o rival desviar **alguma vez**: punir para sempre — cobrar $P = Cmg$ (Bertrand) eternamente
+:::
+
+. . .
+
+Esta estratégia é **simples e credível**: uma vez activada a punição, jogar Bertrand é óptimo para ambas as empresas (é o EN do jogo estático). A ameaça é credível porque não requer que ninguém "sacrifique" lucros para punir.
+
+## Condição de Sustentabilidade da Colusão
+
+Empresa A compara dois cenários:
+
+. . .
+
+**Cooperar sempre** (recebe $\Pi_{coop}$ por período):
+
+$$NPV_{\text{coop}} = \frac{\Pi_{coop}}{1-\delta}$$
+
+. . .
+
+**Desviar hoje** (recebe $\Pi_{dev}$ hoje, depois punição $\Pi_N = 0$ para sempre):
+
+$$NPV_{dev} = \Pi_{dev} + \frac{\delta \cdot 0}{1-\delta} = \Pi_{dev}$$
+
+. . .
+
+Colusão sustentável se $NPV_{\text{coop}} \geq NPV_{dev}$:
+
+$$\frac{\Pi_{coop}}{1-\delta} \geq \Pi_{dev} \quad\Leftrightarrow\quad \delta \geq 1 - \frac{\Pi_{coop}}{\Pi_{dev}}$$
+
+## Derivação do $\delta$ Mínimo
+
+Com $\Pi_{coop} = 72$ e $\Pi_{dev} = 144$:
+
+$$\frac{72}{1-\delta} \geq 144$$
+
+. . .
+
+$$72 \geq 144(1-\delta)$$
+
+. . .
+
+$$144\delta \geq 144 - 72 = 72$$
+
+. . .
+
+$$\boxed{\delta \geq \frac{1}{2}}$$
+
+. . .
+
+::: {.callout-important}
+Se $\delta \geq \tfrac{1}{2}$, a colusão é sustentável com grim trigger. Se $\delta < \tfrac{1}{2}$, a empresa prefere desviar hoje — o futuro não pesa suficientemente para disciplinar o comportamento presente.
+:::
+
+## Interpretação Económica de $\delta \geq \frac{1}{2}$
+
+```{=latex}
+\begin{tikzpicture}[
+  scale=1.0,
+  every node/.style={scale=0.78}
+]
+% Timeline
+\draw[->,thick] (-0.3,0) -- (8,0) node[below]{tempo};
+\foreach \t in {0,1,2,3,4,5} {
+  \draw (\t*1.2, 0.08) -- (\t*1.2,-0.08) node[below]{\small $t=\t$};
+}
+\node at (7.2,-0.35) {\small $\ldots$};
+
+% Cooperation path (top)
+\foreach \t in {0,1,2,3,4,5} {
+  \draw[blue,thick,->] (\t*1.2,0.3) -- (\t*1.2,1.1);
+  \node[blue] at (\t*1.2,1.25) {\small $72$};
+}
+\node[blue] at (-0.1,0.7) [left]{\small Cooperar:};
+
+% Deviation path (bottom)
+\draw[red,thick,->] (0,-0.3) -- (0,-1.1);
+\node[red] at (0,-1.3) {\small $144$};
+\foreach \t in {1,2,3,4,5} {
+  \draw[red,thick,->] (\t*1.2,-0.3) -- (\t*1.2,-1.1);
+  \node[red] at (\t*1.2,-1.3) {\small $0$};
+}
+\node[red] at (-0.1,-0.7) [left]{\small Desviar:};
+
+% Annotation
+\draw[<->,thick,gray] (0,1.5) -- (6,1.5)
+  node[midway,above,gray]{\small $NPV_{\text{coop}} = 72/(1-\delta)$};
+\draw[<->,thick,gray!50] (0,-1.7) -- (0,-1.7)
+  node[right,gray!70]{\small $NPV_{dev} = 144$};
+\end{tikzpicture}
+```
+
+. . .
+
+Quanto maior $\delta$ (mais paciente a empresa), maior $NPV_{\text{coop}}$ — o fluxo futuro de lucros de colusão vale mais. Para $\delta = \tfrac{1}{2}$: $NPV_{\text{coop}} = \tfrac{72}{1/2} = 144 = NPV_{dev}$ — a empresa é indiferente.
+
+## Quando é a Colusão Mais Provável?
+
+A condição $\delta \geq \tfrac{1}{2}$ é mais fácil de satisfazer quando:
+
+:::{.incremental}
+- **Taxas de juro baixas** — $\delta = 1/(1+r)$ é maior quando $r$ é pequeno; o futuro desconta menos
+- **Mercado estável e de longa duração** — horizon longo aumenta o valor dos lucros futuros
+- **Interacções frequentes** — empresas que se encontram frequentemente têm mais oportunidades de punir desvios rapidamente
+- **Poucos participantes** — é mais fácil monitorizar o comportamento das rivais e detectar desvios
+- **Lucro de desvio relativamente pequeno** — se $\Pi_{dev}/\Pi_{coop}$ for baixo, o $\delta$ necessário é menor
+:::
+
+. . .
+
+::: {.callout-note}
+**Implicação para a política de concorrência:** os reguladores monitorizam especialmente mercados concentrados, estáveis e com interacções frequentes — precisamente onde a colusão tácita é mais fácil de sustentar.
+:::
+
+## Tabela Final: Todas as Estruturas
+
+:::{.nonincremental}
+| Estrutura | $Q$ | $P$ | $\Pi$ cada | Eficiência |
+|---|---|---|---|---|
+| Monopólio/Cartel | $12$ | $18$ | $72$ | Mínima |
+| Stackelberg | $18$ | $12$ | $72\ /\ 36$ | — |
+| Cournot | $16$ | $14$ | $64$ | Intermédia |
+| **Bertrand** | **$24$** | **$6$** | **$0$** | **Máxima** |
+| Conc. Perfeita | $24$ | $6$ | $0$ | Máxima |
+:::
+
+. . .
+
+::: {.callout-important}
+Bertrand com produto homogéneo e custos idênticos reproduz exactamente o resultado de concorrência perfeita — com apenas duas empresas. A variável estratégica importa tanto quanto o número de concorrentes.
+:::
+
+---
+
+# Exercícios {background-color="#1a5276"}
+
+## Exercício 1 — Escolha Múltipla
+
+Duas empresas com produto homogéneo e $Cmg = 10$ competem em preços (Bertrand). O equilíbrio de Nash é:
+
+:::{.nonincremental}
+a) $P = 10$, $\Pi = 0$ para cada empresa
+b) $P > 10$, com lucros positivos para ambas
+c) Uma empresa cobra $P > 10$ e a outra cobra $P = 10$
+d) Depende da procura — não há solução geral
+:::
+
+## Solução — Exercício 1 {visibility="uncounted"}
+
+A lógica de undercutting: qualquer $P > Cmg = 10$ é instável — a rival tem incentivo a cobrar $P - \varepsilon$ e capturar todo o mercado.
+
+O processo pára em $P = Cmg = 10$: abaixo, há prejuízo; acima, a rival subcorta.
+
+**Resposta: (a)**
+
+Verificação Nash: se $P_B = 10$, cobrar $P_A < 10$ gera prejuízo; cobrar $P_A > 10$ perde clientes; cobrar $P_A = 10$ dá $\Pi = 0$. Nenhum desvio é estritamente rentável. ✓
+
+## Exercício 2 — Escolha Múltipla
+
+Em jogos repetidos com estratégia grim trigger, se o lucro de cooperação é $\Pi_{coop} = 8$ e o lucro de desvio é $\Pi_{dev} = 16$ (com punição Bertrand $\Pi_N = 0$), o factor de desconto mínimo para sustentar a colusão é:
+
+:::{.nonincremental}
+a) $\delta \geq \dfrac{1}{4}$
+b) $\delta \geq \dfrac{1}{3}$
+c) $\delta \geq \dfrac{1}{2}$
+d) $\delta \geq \dfrac{2}{3}$
+:::
+
+## Solução — Exercício 2 {visibility="uncounted"}
+
+Condição: $\dfrac{\Pi_{coop}}{1-\delta} \geq \Pi_{dev}$
+
+$$\frac{8}{1-\delta} \geq 16 \quad\Rightarrow\quad 8 \geq 16(1-\delta) \quad\Rightarrow\quad \delta \geq 1 - \frac{8}{16} = \frac{1}{2}$$
+
+**Resposta: (c)**
+
+Verificação: $\delta = \frac{1}{2}$ $\Rightarrow$ $NPV_{\text{coop}} = \frac{8}{1/2} = 16 = NPV_{dev}$ ✓ (restrição vinculativa)
+
+## Exercício de Desenvolvimento {.smaller}
+
+Duas empresas farmacêuticas produzem um medicamento genérico (produto homogéneo) e competem em preço. Em cada período, o lucro de monopólio partilhado é $\Pi_{coop} = 60$ (cada), o lucro de desvio (capturar todo o mercado) é $\Pi_{dev} = 100$, e o lucro de Nash de Bertrand é $\Pi_N = 0$.
+
+**Alíneas:**
+
+:::{.nonincremental}
+a) Explique por que razão, num jogo de uma só vez, nenhuma empresa consegue manter o preço de monopólio. Qual é o Equilíbrio de Nash estático?
+b) No jogo repetido com grim trigger, escreva as expressões para $NPV_{\text{coop}}$ e $NPV_{dev}$.
+c) Derive o valor mínimo de $\delta$ para que a colusão seja sustentável.
+d) Interprete o resultado: que condições de mercado favorecem $\delta$ acima do limiar calculado?
+e) Suponha que o regulador consegue aumentar a probabilidade de detecção do cartel, o que equivale a reduzir $\Pi_{dev}$ para $80$ (coima esperada reduz o ganho do desvio). Recalcule o $\delta$ mínimo. O que conclui?
+:::
+
+## Solução — Exercício de Desenvolvimento {visibility="uncounted" .smaller}
+
+**a)** Num jogo de uma só vez, desviar domina: se a rival coopera, $\Pi_{dev}=100 > \Pi_{coop}=60$; se a rival desvia, $0 = 0$. Ambas desviam. **EN estático: (Desviar, Desviar) = (0, 0)**. A colusão colapsa pela lógica do dilema do prisioneiro.
+
+. . .
+
+**b)**
+$$NPV_{\text{coop}} = \frac{60}{1-\delta} \qquad NPV_{dev} = 100 + \frac{\delta \cdot 0}{1-\delta} = 100$$
+
+. . .
+
+**c)** $NPV_{\text{coop}} \geq NPV_{dev}$:
+
+$$\frac{60}{1-\delta} \geq 100 \;\Rightarrow\; 60 \geq 100(1-\delta) \;\Rightarrow\; 100\delta \geq 40 \;\Rightarrow\; \boxed{\delta \geq \frac{2}{5}}$$
+
+Verificação: $\delta = \frac{2}{5}$ $\Rightarrow$ $NPV_{\text{coop}} = \frac{60}{3/5} = 100 = NPV_{dev}$ ✓ (restrição vinculativa)
+
+. . .
+
+**d)** $\delta \geq \frac{2}{5}$ é mais fácil de satisfazer com taxas de juro baixas (empresas pacientes), horizonte longo, interacções frequentes e poucos concorrentes (monitorização fácil de desvios).
+
+. . .
+
+**e)** Com $\Pi_{dev} = 80$:
+
+$$\frac{60}{1-\delta} \geq 80 \;\Rightarrow\; 60 \geq 80(1-\delta) \;\Rightarrow\; 80\delta \geq 20 \;\Rightarrow\; \delta \geq \frac{1}{4}$$
+
+Verificação: $\delta = \frac{1}{4}$ $\Rightarrow$ $NPV_{\text{coop}} = \frac{60}{3/4} = 80 = NPV_{dev}$ ✓
+
+O $\delta$ mínimo **baixou** de $\frac{2}{5}$ para $\frac{1}{4}$: desviar tornou-se menos atractivo (o ganho cai de 100 para 80), pelo que empresas com menos paciência conseguem agora manter o acordo. A política de leniência funciona de forma diferente: ao reduzir o ganho do desvio, o regulador na verdade facilita a colusão tácita. O verdadeiro efeito dissuasor vem de reduzir os lucros de **cooperação** (proibição e coimas sobre os lucros do cartel), não apenas o ganho de desviar.

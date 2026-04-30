@@ -1,0 +1,458 @@
+---
+title: "Microeconomia"
+subtitle: "Aula 20 — O Problema do Monopolista"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 20_problema_monopolista-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+  beamer:
+    theme: default
+    classoption: handout
+echo: false
+code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+# Estruturas de Mercado {background-color="#2C3E7A"}
+
+## Estruturas de Mercado: Um Espectro
+
+:::{.nonincremental}
+| Característica | Conc. Perfeita | Oligopólio | Conc. Monopolística | **Monopólio** |
+|---|---|---|---|---|
+| N.º de empresas | Muitas | Poucas | Muitas | **Uma** |
+| Produto | Homogéneo | Homo/Difer. | Diferenciado | **Único** |
+| Poder de mercado | Nenhum | Elevado | Algum | **Máximo** |
+| Barreiras entrada | Nenhuma | Elevadas | Baixas | **Intransponíveis** |
+| P vs. Cmg | $P = Cmg$ | $P > Cmg$ | $P > Cmg$ | **$P > Cmg$** |
+:::
+
+::: {.callout-note}
+O monopólio é o caso polar oposto à concorrência perfeita. Analisamos os dois extremos para depois entender os casos intermédios.
+:::
+
+## Barreiras à Entrada
+
+Para existir monopólio, a entrada de rivais tem de ser impedida:
+
+:::{.incremental}
+- **Legais:** licenças exclusivas, concessões do Estado, patentes
+- **Estruturais:** custos de entrada muito elevados
+- **Economias de escala:** tecnologia que favorece uma única empresa grande (menção apenas, não é o foco desta aula)
+:::
+
+::: {.callout-important}
+Sem barreiras à entrada, lucros positivos atrairiam concorrentes e o monopólio desapareceria. As barreiras são a condição necessária.
+:::
+
+# Receita no Monopólio {background-color="#2C3E7A"}
+
+## Concorrência Perfeita vs. Monopólio
+
+Em concorrência perfeita, a empresa é *price-taker*:
+
+$$P = \bar{P} \quad \Rightarrow \quad RT = \bar{P} \cdot Q$$
+
+. . .
+
+O monopolista enfrenta **a curva de procura do mercado** $\rightarrow$ é *price-maker*:
+
+$$P = P(Q) \quad \text{(função decrescente)} \quad \Rightarrow \quad RT = P(Q) \cdot Q$$
+
+. . .
+
+Para vender mais, o monopolista tem de **baixar o preço**, e essa descida aplica-se a **todas** as unidades vendidas.
+
+## Receita Total e Receita Marginal
+
+Com procura inversa linear $P = a - bQ$:
+
+$$RT = (a - bQ) \cdot Q = aQ - bQ^2$$
+
+. . .
+
+A receita marginal é:
+
+$$Rmg = \frac{dRT}{dQ} = a - 2bQ$$
+
+. . .
+
+::: {.callout-important}
+**Rmg tem o dobro do declive (em módulo) da curva de procura inversa.**
+
+Se $P = a - bQ$, então $Rmg = a - 2bQ$.
+:::
+
+## Rmg < P sempre que a procura tem inclinação negativa
+
+$$Rmg = P + Q \frac{dP}{dQ}$$
+
+. . .
+
+Como $\dfrac{dP}{dQ} < 0$ e $Q > 0$, temos $Q \dfrac{dP}{dQ} < 0$, portanto:
+
+$$\boxed{Rmg < P}$$
+
+. . .
+
+Intuição: para vender uma unidade adicional, o monopolista baixa o preço. O ganho dessa unidade é $P$, mas perde $Q \cdot |dP/dQ|$ nas unidades anteriores.
+
+## RT e Rmg — Gráfico
+
+```{r, engine='tikz', fig.width=10, fig.height=6, fig.align='center'}
+\begin{tikzpicture}[
+  scale=1.1,                           % slightly larger overall scale
+  transform shape,
+  declare function={
+    d(\x)  = 12 - 0.8*\x;              % flatter, more extended demand
+    rt(\x) = \x*(12 - 0.8*\x);         % corresponding RT
+    rmg(\x)= 12 - 1.6*\x;              % 2 time the slope
+  }
+]
+  % --- eixo e labels
+  \draw[->,thick] (-0.5,0) -- (18,0) node[below]{$Q$};
+  \draw[->,thick] (0,-3) -- (0,12) node[left]{$P,\ Rmg$};
+
+  % --- curvas
+  \draw[blue,thick,domain=0:15,variable=\x,samples=100] plot (\x,{rt(\x)/4})
+    node[below right]{$RT$};
+  \draw[blue,thick,domain=0:15,variable=\x,samples=100] plot (\x,{d(\x)})
+    node[above left]{$D$};
+  \draw[green!60!black,thick,domain=0:9,variable=\x,samples=100] plot (\x,{rmg(\x)})
+    node[above right]{$Rmg$};
+
+  % --- ponto de máximo RT
+  \draw[dashed] (7.5,0) node[below]{$\frac{a}{2b}$} -- (7.5,{rt(7.5)/4});
+
+  % --- anotações sinal Rmg
+  \node at (5,11) {\small $Rmg>0$};
+  \node at (13,9) {\small $Rmg<0$};
+
+  % --- anotação de a
+  \node at (0,12) [left]{$a$};
+\end{tikzpicture}
+```  
+
+## Rmg, Zona Elástica e Zona Rígida
+
+$$Rmg = P\!\left(1 + \frac{1}{\varepsilon_D}\right) = P\!\left(1 - \frac{1}{|\varepsilon_D|}\right)$$
+
+. . .
+
+:::{.nonincremental}
+| Zona da procura | $|\varepsilon_D|$ | $Rmg$ | $RT$ ao aumentar $Q$ |
+|---|---|---|---|
+| Elástica | $> 1$ | $> 0$ | Aumenta |
+| Unitária | $= 1$ | $= 0$ | Máxima |
+| Rígida | $< 1$ | $< 0$ | Diminui |
+:::
+
+. . .
+
+::: {.callout-note}
+O monopolista **nunca opera na zona rígida**: baixar o preço aumentaria $Q$ mas reduziria $RT$ — e os custos também aumentariam. Logo, $\Pi$ diminuiria de forma garantida.
+:::
+
+# Optimização do Monopolista {background-color="#2C3E7A"}
+
+## Condição de Optimização
+
+O monopolista maximiza o lucro:
+
+$$\max_Q \ \Pi = RT(Q) - CT(Q)$$
+
+. . .
+
+Condição de primeira ordem:
+
+$$\frac{d\Pi}{dQ} = 0 \iff \underbrace{\frac{dRT}{dQ}}_{Rmg} - \underbrace{\frac{dCT}{dQ}}_{Cmg} = 0$$
+
+$$\boxed{Rmg = Cmg}$$
+
+. . .
+
+::: {.callout-important}
+A regra $Rmg = Cmg$ é **a mesma** que em concorrência perfeita.
+
+A diferença: em CP, $Rmg = P$; em monopólio, $Rmg < P$.
+
+Logo, o preço de monopólio está **acima** do custo marginal.
+:::
+
+## Porque não existe Curva de Oferta no Monopólio?
+
+Em CP, a curva de oferta é $P = Cmg(Q)$: para cada preço, a empresa escolhe $Q$.
+
+. . .
+
+No monopólio, o preço **não é dado** $\rightarrow$ é determinado pela procura:
+
+$$Q^* \leftarrow Rmg = Cmg \quad \Rightarrow \quad P^* = D(Q^*)$$
+
+. . .
+
+O mesmo $Q^*$ pode corresponder a preços **diferentes** conforme a procura mude: não há uma relação unívoca preço-quantidade.
+
+::: {.callout-note}
+**Não existe curva de oferta do monopolista.** A decisão de produção depende sempre da curva de procura enfrentada.
+:::
+
+## Determinação de Q\*, P\* e Lucro — Gráfico
+
+```{r, engine='tikz'}
+\begin{tikzpicture}[
+  scale=1.0,
+  every node/.style={scale=0.75},
+  declare function={
+    d(\x)   = 10 - \x;
+    rmg(\x) = 10 - 2*\x;
+    cmg(\x) = 2;
+    ctm(\x) = 2 + 4/\x;
+  }
+]
+\draw[->,thick] (-0.2,0) -- (10.5,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.2) -- (0,11)   node[left]{$P$};
+
+% D e Rmg
+\draw[blue,thick,domain=0:10,variable=\x] plot (\x,{d(\x)}) node[above right]{$D$};
+\draw[thick,domain=0:5,variable=\x]       plot (\x,{rmg(\x)}) node[above right]{$Rmg$};
+
+% Cmg (constante)
+\draw[red,thick,domain=0.5:9,variable=\x] plot (\x,{cmg(\x)}) node[right]{$Cmg = 2$};
+
+% CTM
+\draw[green!60!black,thick,domain=0.5:9,variable=\x] plot (\x,{ctm(\x)}) node[right]{$CTM$};
+
+% Optimum: Q*=4, P*=6, CTM(4)=3
+\draw[dashed] (4,0) node[below]{$Q^*=4$} -- (4,{d(4)});
+\draw[dashed] (0,{d(4)}) node[left]{$P^*=6$} -- (4,{d(4)}) node[circle,fill,inner sep=1.5pt]{};
+\draw[dashed] (0,{ctm(4)}) node[left]{$CTM=3$} -- (4,{ctm(4)}) node[circle,fill,inner sep=1.5pt]{};
+\draw[dashed] (4,{rmg(4)}) node[circle,fill,inner sep=1.5pt]{};
+
+% Lucro (shaded rectangle)
+\fill[blue,opacity=0.25] (0,{ctm(4)}) rectangle (4,{d(4)});
+\node at (2,{(ctm(4)+d(4))/2}) {$\Pi=12$};
+
+\node at (6,6) {$P=10-Q_D$};
+
+\end{tikzpicture}
+```
+
+## Leitura do Gráfico: Passo a Passo
+
+:::{.nonincremental}
+1. Encontrar $Q^*$: interseção de $Rmg$ e $Cmg$ $\rightarrow$ $Q^* = 4$
+2. Subir até à curva de procura $D$ para obter $P^*$: $P^* = 6$
+3. Ler $CTM(Q^*) = 3$ na curva de custo médio total
+4. Lucro: $\Pi = (P^* - CTM) \times Q^* = (6-3) \times 4 = 12$
+:::
+
+. . .
+
+::: {.callout-note}
+Note que o ponto de optimização $Rmg = Cmg$ fica **abaixo** do preço. O preço lê-se sempre **na curva de procura** à quantidade óptima.
+:::
+
+# Monopólio vs. Concorrência Perfeita {background-color="#2C3E7A"}
+
+## Comparação de Excedentes
+
+```{r, engine='tikz'}
+\begin{tikzpicture}[
+  scale=1.0,
+  every node/.style={scale=0.75},
+  declare function={
+    d(\x)   = 10 - \x;
+    rmg(\x) = 10 - 2*\x;
+    cmg(\x) = 2;
+  }
+]
+\draw[->,thick] (-0.2,0) -- (10.5,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.2) -- (0,11)   node[left]{$P$};
+
+\draw[blue,thick,domain=0:10,variable=\x] plot (\x,{d(\x)}) node[above right]{$D$};
+\draw[thick,domain=0:5,variable=\x]       plot (\x,{rmg(\x)}) node[above right]{$Rmg$};
+\draw[red,thick,domain=0:9,variable=\x]   plot (\x,{cmg(\x)}) node[right]{$Cmg=CM$};
+
+% CP: Q=8, P=2
+% Mono: Q=4, P=6
+
+% Área A: XD monopólio (triângulo acima de P*=6)
+\fill[blue!40,opacity=0.5]   (0,10) -- (4,6) -- (0,6) -- cycle;
+\node[blue!70!black] at (1.2,7.5) {A};
+
+% Área B: Excedente do Produtor (monopólio) — retângulo entre Cmg=2 e P*=6, 0 a 4
+\fill[red!40,opacity=0.5]    (0,2) rectangle (4,6);
+\node[red!70!black]  at (2,4) {B};
+
+% Área C: DWL — triângulo
+\fill[gray!60,opacity=0.6]   (4,6) -- (8,2) -- (4,2) -- cycle;
+\node[gray!70!black] at (5.5,3.5) {C};
+
+% Reference lines
+\draw[dashed] (4,0) node[below]{$Q_m=4$}  -- (4,{d(4)});
+\draw[dashed] (8,0) node[below]{$Q_{cp}=8$} -- (8,{d(8)});
+\draw[dashed] (0,6) node[left]{$P_m=6$}    -- (4,{d(4)});
+\draw[dashed] (0,2) node[left]{$P_{cp}=2$} -- (8,{d(8)});
+
+\node at (6,6) {$P=10-Q_D$};
+
+\end{tikzpicture}
+```
+
+## Tabela Comparativa
+
+:::{.nonincremental}
+| | Concorrência Perfeita | Monopólio |
+|---|---|---|
+| Quantidade | $Q_{cp} = 8$ | $Q_m = 4$ |
+| Preço | $P_{cp} = 2$ | $P_m = 6$ |
+| Excedente do Consumidor | $32$ (A+B+C) | $8$ (A) |
+| Excedente do Produtor | $0$ | $16$ (B) |
+| Excedente Total | $32$ | $24$ |
+| Perda de Excedente (DWL) | — | $8$ (C) |
+:::
+
+. . .
+
+::: {.callout-important}
+O monopólio é **ineficiente**: a área C representa valor destruído — nem consumidores nem produtor a obtêm. Há transacções mutuamente vantajosas que não se realizam porque $P_m > Cmg$.
+:::
+
+## Por que o Monopólio é Ineficiente?
+
+Em concorrência perfeita: $P = Cmg$: todas as unidades para as quais a disposição a pagar supera o custo são produzidas.
+
+. . .
+
+Em monopólio: $P > Cmg$, entre $Q_m = 4$ e $Q_{cp} = 8$, há unidades cujo valor para o consumidor ($< P_m$ mas $> Cmg$) nunca são produzidas.
+
+. . .
+
+::: {.callout-note}
+O produtor não produz essas unidades porque baixar o preço implicaria também baixá-lo nas unidades anteriores: o mecanismo de *price-making* gera a ineficiência.
+:::
+
+---
+
+# Exercícios {background-color="#1a5276"}
+
+## Exercício 1 — Escolha Múltipla
+
+Uma empresa monopolista enfrenta a procura $P = 12 - 2Q$ e tem custo marginal constante $Cmg = 4$. A quantidade óptima de produção é:
+
+:::{.nonincremental}
+a) $Q^* = 2$
+b) $Q^* = 3$  
+c) $Q^* = 4$
+d) $Q^* = 6$
+:::
+
+## Solução — Exercício 1 {visibility="uncounted"}
+
+$Rmg = 12 - 4Q$ (declive duplo da procura inversa).
+
+Condição: $Rmg = Cmg \Rightarrow 12 - 4Q = 4 \Rightarrow Q^* = 2$.
+
+**Resposta: (a)**
+
+Preço: $P^* = 12 - 2(2) = 8$.
+
+## Exercício 2 — Escolha Múltipla
+
+Comparando monopólio com concorrência perfeita (mesmos custos e procura), é **sempre** verdade que:
+
+:::{.nonincremental}
+a) O monopolista tem custos marginais mais elevados
+b) O preço de monopólio é superior ao preço de concorrência perfeita
+c) O excedente do produtor é nulo em monopólio
+d) O excedente total é igual nos dois casos
+:::
+
+## Solução — Exercício 2 {visibility="uncounted"}
+
+- (a) Falso — os custos são iguais por hipótese
+- **(b) Verdadeiro** — $P_m > P_{cp}$, uma vez que $Rmg < P$ leva o monopolista a produzir menos e cobrar mais
+- (c) Falso — o excedente do produtor em monopólio é positivo (é precisamente a razão pela qual o monopólio é preferível para o produtor)
+- (d) Falso — o excedente total é menor em monopólio (existe DWL)
+
+**Resposta: (b)**
+
+## Exercício de Desenvolvimento {.smaller}
+
+Uma empresa monopolista opera num mercado com procura inversa $P = 10 - Q$.
+
+Os seus custos são: $CT = 2Q + 4$ (custo fixo $CF = 4$, custo marginal $Cmg = 2$).
+
+**Alíneas:**
+
+:::{.nonincremental}
+a) Derive a expressão da receita marginal ($Rmg$).
+b) Determine a quantidade óptima $Q^*$ e o preço $P^*$.
+c) Calcule o lucro económico $\Pi^*$.
+d) Calcule o excedente do consumidor e o excedente do produtor em monopólio.
+e) Determine o equilíbrio de concorrência perfeita ($Q_{cp}$, $P_{cp}$).
+f) Calcule a perda de excedente (DWL) gerada pelo monopólio. Interprete.
+:::
+
+## Solução — Exercício de Desenvolvimento {visibility="uncounted" .smaller}
+
+**a)** $RT = (10-Q)Q = 10Q - Q^2 \Rightarrow Rmg = 10 - 2Q$
+
+. . .
+
+**b)** $Rmg = Cmg \Rightarrow 10 - 2Q = 2 \Rightarrow Q^* = 4$
+
+$P^* = 10 - 4 = 6$
+
+. . .
+
+**c)** $CTM(4) = 2 + 4/4 = 3 \Rightarrow \Pi^* = (P^* - CTM) \cdot Q^* = (6-3)\cdot 4 = 12$
+
+Ou directamente: $\Pi = RT - CT = 6 \cdot 4 - (2 \cdot 4 + 4) = 24 - 12 = 12$ ✓
+
+. . .
+
+**d)** $XD_m = \frac{1}{2}(10-6)\cdot 4 = 8$ (triângulo acima de $P^*$)
+
+$XS_m = (P^* - Cmg)\cdot Q^* = (6-2)\cdot 4 = 16$ (rectângulo, $Cmg$ constante)
+
+. . .
+
+**e)** $P = Cmg \Rightarrow 10 - Q = 2 \Rightarrow Q_{cp} = 8,\ P_{cp} = 2$
+
+. . .
+
+**f)** $DWL = \frac{1}{2}(P_m - P_{cp})(Q_{cp} - Q_m) = \frac{1}{2}(6-2)(8-4) = 8$
+
+O monopólio impede a realização de transacções entre $Q=4$ e $Q=8$ que seriam mutuamente vantajosas (disposição a pagar $> Cmg = 2$), destruindo $8$ unidades de excedente total.

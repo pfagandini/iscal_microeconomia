@@ -1,0 +1,405 @@
+---
+title: "Microeconomia"
+subtitle: "Aula 21 — Concorrência Monopolística"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 21_conc_monopolistica-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+  beamer:
+    theme: default
+    classoption: handout
+echo: false
+code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+# O que é a Concorrência Monopolística? {background-color="#2C3E7A"}
+
+## Características Definidoras
+
+A concorrência monopolística combina elementos dos dois modelos extremos:
+
+:::{.incremental}
+- **Muitas empresas** — como em concorrência perfeita; nenhuma domina o mercado
+- **Diferenciação de produto** — cada empresa oferece uma variante distinta; os produtos são substitutos próximos mas não perfeitos
+- **Entrada e saída livres** — sem barreiras estruturais à entrada
+- **Poder de mercado limitado** — a diferenciação confere algum poder, mas a concorrência de substitutos limita-o
+:::
+
+. . .
+
+::: {.callout-note}
+A diferenciação significa que cada empresa enfrenta uma curva de procura com inclinação negativa — ao contrário da empresa em CP que enfrenta procura horizontal.
+:::
+
+## Exemplos Reais
+
+:::{.incremental}
+- **Restaurantes** — servem refeições (substitutos próximos), mas cada um tem cozinha, ambiente e localização distintos
+- **Marcas de roupa** — t-shirts de diferentes marcas satisfazem a mesma necessidade, mas diferem em estilo e imagem
+- **Aplicações móveis** — editores de texto, apps de fitness, jogos casuais: muitas opções, cada uma ligeiramente diferente
+- **Cabeleireiros, ginásios, cafés** — serviços standardizáveis mas com forte componente local e identitária
+:::
+
+. . .
+
+::: {.callout-tip}
+O ponto-chave: **os consumidores valorizam a variedade**. A diferenciação não é artificial $\rightarrow$ responde a preferências heterogéneas.
+:::
+
+## Posição no Espectro de Mercados
+
+:::{.nonincremental}
+| | Conc. Perfeita | **Conc. Monop.** | Oligopólio | Monopólio |
+|---|---|---|---|---|
+| N.º empresas | Muitas | **Muitas** | Poucas | Uma |
+| Produto | Homogéneo | **Diferenciado** | Homo/Difer. | Único |
+| Entrada | Livre | **Livre** | Barreiras | Bloqueada |
+| Curva D | Horizontal | **Decrescente** | Decrescente | Decrescente |
+| $P$ vs $Cmg$ | $P=Cmg$ | **$P>Cmg$** | $P>Cmg$ | $P>Cmg$ |
+| Lucro LP | Zero | **Zero** | Positivo | Positivo |
+:::
+
+# Curto Prazo {background-color="#2C3E7A"}
+
+## Comportamento no Curto Prazo
+
+No curto prazo, o número de empresas está fixo. A empresa comporta-se **como um monopolista** sobre a sua variante:
+
+:::{.incremental}
+- Enfrenta uma curva de procura com inclinação negativa
+- Calcula $Rmg$ e iguala a $Cmg$
+- Pode obter **lucro económico positivo**
+:::
+
+. . .
+
+A condição de optimização é exactamente a mesma que no monopólio:
+
+$$Rmg = Cmg \quad \Rightarrow \quad Q^*_{cp},\ P^*_{cp}$$
+
+. . .
+
+Com $P^*_{cp} > CTM(Q^*_{cp})$, o lucro é positivo: $\Pi_{cp} > 0$.
+
+## Equilíbrio de Curto Prazo: Gráfico
+
+```{r, engine='tikz', fig.width=10, fig.height=5, fig.align='center'}
+\begin{tikzpicture}[
+  x=1.2cm, y=0.45cm,
+  every node/.style={scale=0.9},
+  declare function={
+    d(\x)   = 18 - 2*\x;
+    rmg(\x) = 18 - 4*\x;
+    cmg(\x) = 2*\x;
+    ctm(\x) = \x + 12/\x;
+  }
+]
+\draw[->,thick] (-0.3,0) -- (12,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.3) -- (0,19) node[left]{$P$};
+
+\draw[blue,thick,domain=0:9,variable=\x] plot (\x,{d(\x)}) node[above right]{$D_{cp}$};
+\draw[thick,domain=0:4.5,variable=\x] plot (\x,{rmg(\x)}) node[above right]{$Rmg_{cp}$};
+\draw[red,thick,domain=0.5:7,variable=\x] plot (\x,{cmg(\x)}) node[right]{$Cmg$};
+\draw[green!60!black,thick,domain=0.8:8,variable=\x,samples=80] plot (\x,{ctm(\x)}) node[right]{$CTM$};
+
+\draw[dashed] (3,0) node[below]{$Q^*_{cp}=3$} -- (3,{d(3)});
+\draw[dashed] (0,{d(3)}) node[left]{$P^*_{cp}=12$} -- (3,{d(3)}) node[circle,fill,inner sep=1.5pt]{};
+\draw[dashed] (0,{ctm(3)}) node[left]{$CTM=7$} -- (3,{ctm(3)}) node[circle,fill,inner sep=1.5pt]{};
+\draw[dashed] (3,{rmg(3)}) node[circle,fill,inner sep=1.5pt]{};
+
+
+\fill[blue,opacity=0.25] (0,{ctm(3)}) rectangle (3,{d(3)});
+
+\node at (5,15) {$P=18-2Q,\ Cmg=2Q,\ CF=12$};
+\node at (1.5,{(ctm(3)+d(3))/2}) {$\Pi=15$};
+\end{tikzpicture}
+```
+
+## Leitura do Gráfico de Curto Prazo
+
+:::{.nonincremental}
+1. $Rmg = Cmg$: $18 - 4Q = 2Q \Rightarrow Q^*_{cp} = 3$
+2. Preço na curva de procura: $P^*_{cp} = 18 - 2(3) = 12$
+3. Custo médio: $CTM(3) = 3 + 12/3 = 7$
+4. Lucro: $\Pi = (12 - 7) \times 3 = 15 > 0$
+:::
+
+. . .
+
+::: {.callout-important}
+O lucro positivo ($\Pi = 15$) é um **sinal de mercado**: novas empresas têm incentivo a entrar com produtos diferenciados. Este processo leva ao equilíbrio de longo prazo.
+:::
+
+# Longo Prazo {background-color="#2C3E7A"}
+
+## O Mecanismo de Entrada
+
+Com lucros positivos no curto prazo, novas empresas entram no mercado com produtos diferenciados. O que acontece?
+
+:::{.incremental}
+- Os consumidores distribuem-se por mais variantes
+- A procura que cada empresa enfrenta **desloca-se para a esquerda** (menor quantidade para cada preço)
+- Também se torna **mais elástica** (mais substitutos disponíveis)
+- Os lucros de cada empresa diminuem
+:::
+
+. . .
+
+O processo continua **até que o lucro económico seja nulo**: $\Pi = 0$.
+
+. . .
+
+::: {.callout-note}
+Tal como em concorrência perfeita, a entrada livre elimina os lucros no longo prazo. A diferença está na forma como esse equilíbrio é atingido.
+:::
+
+## Condição de Equilíbrio de Longo Prazo
+
+Em LP, duas condições são satisfeitas simultaneamente:
+
+. . .
+
+**1. Optimização:** a empresa maximiza o lucro dado que enfrenta curva D com inclinação negativa:
+$$Rmg = Cmg$$
+
+. . .
+
+**2. Lucro nulo:** a entrada eliminou todos os lucros extraordinários:
+$$P = CTM$$
+
+. . .
+
+Estas duas condições implicam que a curva de procura é **tangente** à curva CTM no ponto de equilíbrio.
+
+## Equilíbrio de Longo Prazo — Gráfico
+
+```{r, engine='tikz', fig.width=11, fig.height=5.5, fig.align='center'}
+\begin{tikzpicture}[
+  x=1.25cm,
+  y=0.75cm,
+  every node/.style={scale=0.85},
+  declare function={
+    d(\x)   = 12 - 2*\x;
+    rmg(\x) = 12 - 4*\x;
+    cmg(\x) = 2*\x;
+    ctm(\x) = \x + 12/\x;
+  }
+]
+\draw[->,thick] (-0.2,0) -- (10.5,0) node[below]{$Q$};
+\draw[->,thick] (0,-0.2) -- (0,13) node[left]{$P$};
+
+\draw[blue,thick,domain=0:6,variable=\x,samples=80]
+  plot (\x,{d(\x)}) node[above right]{$D_{lp}$};
+
+\draw[black,thick,domain=0:3,variable=\x,samples=80]
+  plot (\x,{rmg(\x)}) node[above right]{$Rmg_{lp}$};
+
+\draw[red,thick,domain=0.5:5,variable=\x,samples=80]
+  plot (\x,{cmg(\x)}) node[right]{$Cmg$};
+
+\draw[green!60!black,thick,domain=1.5:7,variable=\x,samples=80]
+  plot (\x,{ctm(\x)}) node[right]{$CTM$};
+
+\draw[dashed] (2,0) node[below]{$Q^*_{lp}=2$} -- (2,{d(2)});
+\draw[dashed] (0,{d(2)}) node[left]{$P^*_{lp}=8$} -- (2,{d(2)}) node[circle,fill,inner sep=2pt]{};
+\draw[dashed] (2,{rmg(2)}) node[circle,fill,inner sep=1.5pt]{};
+\draw[dashed] (0,{cmg(2)}) node[left]{$Cmg=4$} -- (2,{cmg(2)});
+
+\node at (2,{d(2)}) [above right] {\small tangência: $P=CTM$};
+
+\draw[dotted] ({2*sqrt(3)},0) node[below]{\small $Q_{min\ CTM}$} -- ({2*sqrt(3)},{ctm(2*sqrt(3))});
+
+\end{tikzpicture}
+```
+
+## Leitura do Gráfico de Longo Prazo
+
+:::{.nonincremental}
+1. $Rmg = Cmg$: $12 - 4Q = 2Q \Rightarrow Q^*_{lp} = 2$
+2. Preço: $P^*_{lp} = 12 - 2(2) = 8$
+3. $CTM(2) = 2 + 12/2 = 8$ — tangência confirmada: $P = CTM$ ✓
+4. Lucro: $\Pi = (8-8) \times 2 = 0$ ✓
+5. $Cmg(2) = 4 < P = 8$ — ineficiência persiste ✓
+:::
+
+. . .
+
+::: {.callout-important}
+Mesmo com lucro zero, $P > Cmg$: o equilíbrio de longo prazo **não é eficiente**. Esta é a ineficiência residual da concorrência monopolística.
+:::
+
+# Ineficiências Residuais {background-color="#2C3E7A"}
+
+## Duas Ineficiências no Equilíbrio de LP {.smaller}
+
+**1. $P > Cmg$ — Ineficiência alocativa**
+
+:::{.nonincremental}
+- Em CP: $P = Cmg$ — todas as unidades mutuamente vantajosas são produzidas
+- Em conc. monop. LP: $P = 8 > Cmg = 4$ — há unidades que não se produzem, apesar de a disposição a pagar superar o custo
+:::
+
+. . .
+
+**2. Excesso de capacidade — Ineficiência produtiva**
+
+:::{.nonincremental}
+- A empresa produz $Q^*_{lp} = 2$
+- O mínimo de $CTM$ ocorre em $Q \approx 3.46$
+- Cada empresa opera **abaixo da escala mínima eficiente**
+:::
+
+. . .
+
+::: {.callout-note}
+Em CP perfeita, no LP cada empresa produz no mínimo de $CTM$. Em conc. monopolística, a tangência ocorre na parte **decrescente** do CTM — sempre à esquerda do mínimo.
+:::
+
+## O Trade-off: Variedade vs. Ineficiência {.smaller}
+
+A concorrência monopolística é ineficiente — mas isso é necessariamente mau?
+
+. . .
+
+**Argumentos contra (custo da diferenciação):**
+
+:::{.nonincremental}
+- Excesso de capacidade: recursos não usados na escala eficiente
+- $P > Cmg$: transacções mutuamente vantajosas não realizadas
+- "Demasiados" produtos semelhantes no mercado
+:::
+
+. . .
+
+**Argumentos a favor (benefício da variedade):**
+
+:::{.nonincremental}
+- Os consumidores valorizam a **variedade** — não é indiferente ter só um produto homogéneo
+- A diferenciação pode reflectir inovação e qualidade
+- O excedente do consumidor derivado da variedade pode compensar a ineficiência
+:::
+
+. . .
+
+::: {.callout-tip}
+Não há uma resposta única. O juízo depende do quanto os consumidores valorizam a diversidade face ao ganho de eficiência de ter menos variantes a menor custo.
+:::
+
+---
+
+# Exercícios {background-color="#1a5276"}
+
+## Exercício 1 — Escolha Múltipla
+
+No equilíbrio de longo prazo de uma empresa em concorrência monopolística, é verdade que:
+
+:::{.nonincremental}
+a) $P = Cmg$ e $\Pi = 0$
+b) $P = CTM$ e $P = Cmg$
+c) $P = CTM$ e $P > Cmg$
+d) $P > CTM$ e $\Pi > 0$
+:::
+
+## Solução — Exercício 1 {visibility="uncounted"}
+
+No LP da conc. monopolística:
+
+- A entrada livre elimina lucros: $P = CTM$ ✓
+- A empresa tem poder de mercado ($D$ com inclinação negativa): $Rmg < P$, logo $Rmg = Cmg$ implica $P > Cmg$ ✓
+
+A combinação $P = CTM$ com $P > Cmg$ é o que define o equilíbrio de tangência.
+
+**Resposta: (c)**
+
+## Exercício 2 — Escolha Múltipla
+
+Uma empresa em concorrência monopolística tem lucros positivos no curto prazo. No longo prazo, esperamos que:
+
+:::{.nonincremental}
+a) O preço desça, a quantidade suba, e o lucro fique positivo
+b) Novas empresas entrem, a procura de cada empresa se desloque para a esquerda, e o lucro tenda para zero
+c) A empresa aumente a produção até ao mínimo de CTM, eliminando o excesso de capacidade
+d) O mercado converja para concorrência perfeita, com $P = Cmg$
+:::
+
+## Solução — Exercício 2 {visibility="uncounted"}
+
+- (a) Incorrecto — o preço desce mas o lucro converge para zero, não permanece positivo
+- **(b) Correcto** — a entrada de rivais com produtos diferenciados desloca a procura de cada empresa para a esquerda até $\Pi = 0$
+- (c) Incorrecto — a tangência ocorre à esquerda do mínimo de CTM; o excesso de capacidade persiste no LP
+- (d) Incorrecto — $P > Cmg$ mantém-se no LP porque a procura continua a ter inclinação negativa
+
+**Resposta: (b)**
+
+## Exercício de Desenvolvimento {.smaller}
+
+Uma empresa em concorrência monopolística tem estrutura de custos $CT = Q^2 + 12$ e enfrenta, no curto prazo, a procura inversa $P = 18 - 2Q$.
+
+**Alíneas:**
+
+:::{.nonincremental}
+a) Determine o custo marginal ($Cmg$) e o custo total médio ($CTM$).
+b) Calcule a quantidade óptima $Q^*_{cp}$, o preço $P^*_{cp}$ e o lucro de curto prazo $\Pi_{cp}$.
+c) Explique o mecanismo pelo qual o mercado converge para o equilíbrio de longo prazo.
+d) No longo prazo, a procura que a empresa enfrenta é $P = 12 - 2Q$. Verifique que esta curva é tangente ao $CTM$ e calcule $Q^*_{lp}$, $P^*_{lp}$ e $\Pi_{lp}$.
+e) Compare $P^*_{lp}$ com $Cmg(Q^*_{lp})$. O equilíbrio de LP é eficiente? Justifique.
+:::
+
+## Solução — Exercício de Desenvolvimento {visibility="uncounted" .smaller}
+
+**a)** $Cmg = \dfrac{dCT}{dQ} = 2Q$ $\quad;\quad$ $CTM = \dfrac{Q^2+12}{Q} = Q + \dfrac{12}{Q}$
+
+. . .
+
+**b)** $Rmg = 18-4Q$. $\quad Rmg=Cmg \Rightarrow 18-4Q=2Q \Rightarrow Q^*_{cp}=3$
+
+$P^*_{cp} = 18-6 = 12$ $\quad;\quad$ $CTM(3)=3+4=7$ $\quad;\quad$ $\Pi = (12-7)\times 3 = 15$
+
+. . .
+
+**c)** O lucro positivo ($\Pi=15$) atrai novas empresas com produtos diferenciados. A entrada divide a procura por mais variantes, deslocando a curva $D$ de cada empresa para a esquerda. O processo continua até $\Pi=0$.
+
+. . .
+
+**d)** $Rmg_{lp}=12-4Q$. $\quad Rmg=Cmg \Rightarrow 12-4Q=2Q \Rightarrow Q^*_{lp}=2$
+
+$P^*_{lp}=12-4=8$ $\quad;\quad$ $CTM(2)=2+6=8$ $\quad\Rightarrow\quad P=CTM$ ✓ (tangência)
+
+$\Pi_{lp}=(8-8)\times 2=0$ ✓
+
+Verificação da tangência: $\dfrac{dD}{dQ}\big|_{Q=2}=-2$ $\quad;\quad$ $\dfrac{dCTM}{dQ}\big|_{Q=2}=1-\dfrac{12}{4}=-2$ ✓
+
+. . .
+
+**e)** $Cmg(2)=4 < P^*_{lp}=8$. O equilíbrio **não é eficiente**: $P>Cmg$ significa que há unidades não produzidas para as quais a disposição a pagar supera o custo. A empresa produz $Q=2$, abaixo da escala eficiente ($Q_{minCTM}\approx 3.46$) — há excesso de capacidade.

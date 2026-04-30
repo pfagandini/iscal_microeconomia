@@ -6543,5 +6543,796 @@
     "title": "Microeconomia",
     "section": "7.1 Resumo da Aula",
     "text": "7.1 Resumo da Aula\n\nFórmula: \\(\\varepsilon_S = \\dfrac{dQ_S}{dP} \\cdot \\dfrac{P}{Q_S} \\geq 0\\) sempre\n\n. . .\n\nRegra geométrica para oferta linear:\n\nCorta eixo \\(Q\\) (\\(c &gt; 0\\)) → inelástica em todos os pontos\nPassa pela origem (\\(c = 0\\)) → unitária em todos os pontos\n\nCorta eixo \\(P\\) (\\(c &lt; 0\\)) → elástica em todos os pontos\n\n\n. . .\n\nFatores determinantes:\n\nDisponibilidade e mobilidade dos fatores\nCapacidade produtiva instalada\nPeríodo de tempo: \\(\\varepsilon_S^{LP} &gt; \\varepsilon_S^{CP}\\) sempre\n\n\n. . .\n\n\n\n\n\n\nImportantPara a próxima aula\n\n\n\nNa aula 25 estudaremos como os impostos se repartem entre consumidores e produtores — e veremos que a relação \\(|\\varepsilon_D|/\\varepsilon_S\\) determina exactamente essa repartição."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#estruturas-de-mercado-um-espectro",
+    "href": "slides/20_problema_monopolista.html#estruturas-de-mercado-um-espectro",
+    "title": "Microeconomia",
+    "section": "Estruturas de Mercado: Um Espectro",
+    "text": "Estruturas de Mercado: Um Espectro\n\n\n\n\n\n\n\n\n\n\nCaracterística\nConc. Perfeita\nOligopólio\nConc. Monopolística\nMonopólio\n\n\n\n\nN.º de empresas\nMuitas\nPoucas\nMuitas\nUma\n\n\nProduto\nHomogéneo\nHomo/Difer.\nDiferenciado\nÚnico\n\n\nPoder de mercado\nNenhum\nElevado\nAlgum\nMáximo\n\n\nBarreiras entrada\nNenhuma\nElevadas\nBaixas\nIntransponíveis\n\n\nP vs. Cmg\n\\(P = Cmg\\)\n\\(P &gt; Cmg\\)\n\\(P &gt; Cmg\\)\n\\(P &gt; Cmg\\)\n\n\n\n\n\n\n\n\n\nNote\n\n\nO monopólio é o caso polar oposto à concorrência perfeita. Analisamos os dois extremos para depois entender os casos intermédios."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#barreiras-à-entrada",
+    "href": "slides/20_problema_monopolista.html#barreiras-à-entrada",
+    "title": "Microeconomia",
+    "section": "Barreiras à Entrada",
+    "text": "Barreiras à Entrada\nPara existir monopólio, a entrada de rivais tem de ser impedida:\n\nLegais: licenças exclusivas, concessões do Estado, patentes\nEstruturais: custos de entrada muito elevados\nEconomias de escala: tecnologia que favorece uma única empresa grande (menção apenas, não é o foco desta aula)\n\n\n\n\n\n\n\nImportant\n\n\nSem barreiras à entrada, lucros positivos atrairiam concorrentes e o monopólio desapareceria. As barreiras são a condição necessária."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#concorrência-perfeita-vs.-monopólio",
+    "href": "slides/20_problema_monopolista.html#concorrência-perfeita-vs.-monopólio",
+    "title": "Microeconomia",
+    "section": "Concorrência Perfeita vs. Monopólio",
+    "text": "Concorrência Perfeita vs. Monopólio\nEm concorrência perfeita, a empresa é price-taker:\n\\[P = \\bar{P} \\quad \\Rightarrow \\quad RT = \\bar{P} \\cdot Q\\]\n\nO monopolista enfrenta a curva de procura do mercado \\(\\rightarrow\\) é price-maker:\n\\[P = P(Q) \\quad \\text{(função decrescente)} \\quad \\Rightarrow \\quad RT = P(Q) \\cdot Q\\]\n\n\nPara vender mais, o monopolista tem de baixar o preço, e essa descida aplica-se a todas as unidades vendidas."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#receita-total-e-receita-marginal",
+    "href": "slides/20_problema_monopolista.html#receita-total-e-receita-marginal",
+    "title": "Microeconomia",
+    "section": "Receita Total e Receita Marginal",
+    "text": "Receita Total e Receita Marginal\nCom procura inversa linear \\(P = a - bQ\\):\n\\[RT = (a - bQ) \\cdot Q = aQ - bQ^2\\]\n\nA receita marginal é:\n\\[Rmg = \\frac{dRT}{dQ} = a - 2bQ\\]\n\n\n\n\n\n\n\n\nImportant\n\n\nRmg tem o dobro do declive (em módulo) da curva de procura inversa.\nSe \\(P = a - bQ\\), então \\(Rmg = a - 2bQ\\)."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#rmg-p-sempre-que-a-procura-tem-inclinação-negativa",
+    "href": "slides/20_problema_monopolista.html#rmg-p-sempre-que-a-procura-tem-inclinação-negativa",
+    "title": "Microeconomia",
+    "section": "Rmg < P sempre que a procura tem inclinação negativa",
+    "text": "Rmg &lt; P sempre que a procura tem inclinação negativa\n\\[Rmg = P + Q \\frac{dP}{dQ}\\]\n\nComo \\(\\dfrac{dP}{dQ} &lt; 0\\) e \\(Q &gt; 0\\), temos \\(Q \\dfrac{dP}{dQ} &lt; 0\\), portanto:\n\\[\\boxed{Rmg &lt; P}\\]\n\n\nIntuição: para vender uma unidade adicional, o monopolista baixa o preço. O ganho dessa unidade é \\(P\\), mas perde \\(Q \\cdot |dP/dQ|\\) nas unidades anteriores."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#rt-e-rmg-gráfico",
+    "href": "slides/20_problema_monopolista.html#rt-e-rmg-gráfico",
+    "title": "Microeconomia",
+    "section": "RT e Rmg — Gráfico",
+    "text": "RT e Rmg — Gráfico"
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#rmg-zona-elástica-e-zona-rígida",
+    "href": "slides/20_problema_monopolista.html#rmg-zona-elástica-e-zona-rígida",
+    "title": "Microeconomia",
+    "section": "Rmg, Zona Elástica e Zona Rígida",
+    "text": "Rmg, Zona Elástica e Zona Rígida\n\\[Rmg = P\\!\\left(1 + \\frac{1}{\\varepsilon_D}\\right) = P\\!\\left(1 - \\frac{1}{|\\varepsilon_D|}\\right)\\]\n\n\n\n\nZona da procura\n\\(|\\varepsilon_D|\\)\n\\(Rmg\\)\n\\(RT\\) ao aumentar \\(Q\\)\n\n\n\n\nElástica\n\\(&gt; 1\\)\n\\(&gt; 0\\)\nAumenta\n\n\nUnitária\n\\(= 1\\)\n\\(= 0\\)\nMáxima\n\n\nRígida\n\\(&lt; 1\\)\n\\(&lt; 0\\)\nDiminui\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nO monopolista nunca opera na zona rígida: baixar o preço aumentaria \\(Q\\) mas reduziria \\(RT\\) — e os custos também aumentariam. Logo, \\(\\Pi\\) diminuiria de forma garantida."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#condição-de-optimização",
+    "href": "slides/20_problema_monopolista.html#condição-de-optimização",
+    "title": "Microeconomia",
+    "section": "Condição de Optimização",
+    "text": "Condição de Optimização\nO monopolista maximiza o lucro:\n\\[\\max_Q \\ \\Pi = RT(Q) - CT(Q)\\]\n\nCondição de primeira ordem:\n\\[\\frac{d\\Pi}{dQ} = 0 \\iff \\underbrace{\\frac{dRT}{dQ}}_{Rmg} - \\underbrace{\\frac{dCT}{dQ}}_{Cmg} = 0\\]\n\\[\\boxed{Rmg = Cmg}\\]\n\n\n\n\n\n\n\n\nImportant\n\n\nA regra \\(Rmg = Cmg\\) é a mesma que em concorrência perfeita.\nA diferença: em CP, \\(Rmg = P\\); em monopólio, \\(Rmg &lt; P\\).\nLogo, o preço de monopólio está acima do custo marginal."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#porque-não-existe-curva-de-oferta-no-monopólio",
+    "href": "slides/20_problema_monopolista.html#porque-não-existe-curva-de-oferta-no-monopólio",
+    "title": "Microeconomia",
+    "section": "Porque não existe Curva de Oferta no Monopólio?",
+    "text": "Porque não existe Curva de Oferta no Monopólio?\nEm CP, a curva de oferta é \\(P = Cmg(Q)\\): para cada preço, a empresa escolhe \\(Q\\).\n\nNo monopólio, o preço não é dado \\(\\rightarrow\\) é determinado pela procura:\n\\[Q^* \\leftarrow Rmg = Cmg \\quad \\Rightarrow \\quad P^* = D(Q^*)\\]\n\n\nO mesmo \\(Q^*\\) pode corresponder a preços diferentes conforme a procura mude: não há uma relação unívoca preço-quantidade.\n\n\n\n\n\n\nNote\n\n\nNão existe curva de oferta do monopolista. A decisão de produção depende sempre da curva de procura enfrentada."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#determinação-de-q-p-e-lucro-gráfico",
+    "href": "slides/20_problema_monopolista.html#determinação-de-q-p-e-lucro-gráfico",
+    "title": "Microeconomia",
+    "section": "Determinação de Q*, P* e Lucro — Gráfico",
+    "text": "Determinação de Q*, P* e Lucro — Gráfico"
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#leitura-do-gráfico-passo-a-passo",
+    "href": "slides/20_problema_monopolista.html#leitura-do-gráfico-passo-a-passo",
+    "title": "Microeconomia",
+    "section": "Leitura do Gráfico: Passo a Passo",
+    "text": "Leitura do Gráfico: Passo a Passo\n\nEncontrar \\(Q^*\\): interseção de \\(Rmg\\) e \\(Cmg\\) \\(\\rightarrow\\) \\(Q^* = 4\\)\nSubir até à curva de procura \\(D\\) para obter \\(P^*\\): \\(P^* = 6\\)\nLer \\(CTM(Q^*) = 3\\) na curva de custo médio total\nLucro: \\(\\Pi = (P^* - CTM) \\times Q^* = (6-3) \\times 4 = 12\\)\n\n\n\n\n\n\n\n\nNote\n\n\nNote que o ponto de optimização \\(Rmg = Cmg\\) fica abaixo do preço. O preço lê-se sempre na curva de procura à quantidade óptima."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#comparação-de-excedentes",
+    "href": "slides/20_problema_monopolista.html#comparação-de-excedentes",
+    "title": "Microeconomia",
+    "section": "Comparação de Excedentes",
+    "text": "Comparação de Excedentes"
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#tabela-comparativa",
+    "href": "slides/20_problema_monopolista.html#tabela-comparativa",
+    "title": "Microeconomia",
+    "section": "Tabela Comparativa",
+    "text": "Tabela Comparativa\n\n\n\n\nConcorrência Perfeita\nMonopólio\n\n\n\n\nQuantidade\n\\(Q_{cp} = 8\\)\n\\(Q_m = 4\\)\n\n\nPreço\n\\(P_{cp} = 2\\)\n\\(P_m = 6\\)\n\n\nExcedente do Consumidor\n\\(32\\) (A+B+C)\n\\(8\\) (A)\n\n\nExcedente do Produtor\n\\(0\\)\n\\(16\\) (B)\n\n\nExcedente Total\n\\(32\\)\n\\(24\\)\n\n\nPerda de Excedente (DWL)\n—\n\\(8\\) (C)\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nO monopólio é ineficiente: a área C representa valor destruído — nem consumidores nem produtor a obtêm. Há transacções mutuamente vantajosas que não se realizam porque \\(P_m &gt; Cmg\\)."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#por-que-o-monopólio-é-ineficiente",
+    "href": "slides/20_problema_monopolista.html#por-que-o-monopólio-é-ineficiente",
+    "title": "Microeconomia",
+    "section": "Por que o Monopólio é Ineficiente?",
+    "text": "Por que o Monopólio é Ineficiente?\nEm concorrência perfeita: \\(P = Cmg\\): todas as unidades para as quais a disposição a pagar supera o custo são produzidas.\n\nEm monopólio: \\(P &gt; Cmg\\), entre \\(Q_m = 4\\) e \\(Q_{cp} = 8\\), há unidades cujo valor para o consumidor (\\(&lt; P_m\\) mas \\(&gt; Cmg\\)) nunca são produzidas.\n\n\n\n\n\n\n\n\nNote\n\n\nO produtor não produz essas unidades porque baixar o preço implicaria também baixá-lo nas unidades anteriores: o mecanismo de price-making gera a ineficiência."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#exercício-1-escolha-múltipla",
+    "href": "slides/20_problema_monopolista.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nUma empresa monopolista enfrenta a procura \\(P = 12 - 2Q\\) e tem custo marginal constante \\(Cmg = 4\\). A quantidade óptima de produção é:\n\n\\(Q^* = 2\\)\n\\(Q^* = 3\\)\n\n\\(Q^* = 4\\)\n\\(Q^* = 6\\)"
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#solução-exercício-1",
+    "href": "slides/20_problema_monopolista.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 1",
+    "text": "Solução — Exercício 1\n\\(Rmg = 12 - 4Q\\) (declive duplo da procura inversa).\nCondição: \\(Rmg = Cmg \\Rightarrow 12 - 4Q = 4 \\Rightarrow Q^* = 2\\).\nResposta: (a)\nPreço: \\(P^* = 12 - 2(2) = 8\\)."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#exercício-2-escolha-múltipla",
+    "href": "slides/20_problema_monopolista.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nComparando monopólio com concorrência perfeita (mesmos custos e procura), é sempre verdade que:\n\nO monopolista tem custos marginais mais elevados\nO preço de monopólio é superior ao preço de concorrência perfeita\nO excedente do produtor é nulo em monopólio\nO excedente total é igual nos dois casos"
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#solução-exercício-2",
+    "href": "slides/20_problema_monopolista.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 2",
+    "text": "Solução — Exercício 2\n\n\nFalso — os custos são iguais por hipótese\n\n(b) Verdadeiro — \\(P_m &gt; P_{cp}\\), uma vez que \\(Rmg &lt; P\\) leva o monopolista a produzir menos e cobrar mais\n\nFalso — o excedente do produtor em monopólio é positivo (é precisamente a razão pela qual o monopólio é preferível para o produtor)\n\n\nFalso — o excedente total é menor em monopólio (existe DWL)\n\n\nResposta: (b)"
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#exercício-de-desenvolvimento",
+    "href": "slides/20_problema_monopolista.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício de Desenvolvimento",
+    "text": "Exercício de Desenvolvimento\nUma empresa monopolista opera num mercado com procura inversa \\(P = 10 - Q\\).\nOs seus custos são: \\(CT = 2Q + 4\\) (custo fixo \\(CF = 4\\), custo marginal \\(Cmg = 2\\)).\nAlíneas:\n\nDerive a expressão da receita marginal (\\(Rmg\\)).\nDetermine a quantidade óptima \\(Q^*\\) e o preço \\(P^*\\).\nCalcule o lucro económico \\(\\Pi^*\\).\nCalcule o excedente do consumidor e o excedente do produtor em monopólio.\nDetermine o equilíbrio de concorrência perfeita (\\(Q_{cp}\\), \\(P_{cp}\\)).\nCalcule a perda de excedente (DWL) gerada pelo monopólio. Interprete."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/20_problema_monopolista.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício de Desenvolvimento",
+    "text": "Solução — Exercício de Desenvolvimento\na) \\(RT = (10-Q)Q = 10Q - Q^2 \\Rightarrow Rmg = 10 - 2Q\\)\n\nb) \\(Rmg = Cmg \\Rightarrow 10 - 2Q = 2 \\Rightarrow Q^* = 4\\)\n\\(P^* = 10 - 4 = 6\\)\n\n\nc) \\(CTM(4) = 2 + 4/4 = 3 \\Rightarrow \\Pi^* = (P^* - CTM) \\cdot Q^* = (6-3)\\cdot 4 = 12\\)\nOu directamente: \\(\\Pi = RT - CT = 6 \\cdot 4 - (2 \\cdot 4 + 4) = 24 - 12 = 12\\) ✓\n\n\nd) \\(XD_m = \\frac{1}{2}(10-6)\\cdot 4 = 8\\) (triângulo acima de \\(P^*\\))\n\\(XS_m = (P^* - Cmg)\\cdot Q^* = (6-2)\\cdot 4 = 16\\) (rectângulo, \\(Cmg\\) constante)\n\n\ne) \\(P = Cmg \\Rightarrow 10 - Q = 2 \\Rightarrow Q_{cp} = 8,\\ P_{cp} = 2\\)\n\n\nf) \\(DWL = \\frac{1}{2}(P_m - P_{cp})(Q_{cp} - Q_m) = \\frac{1}{2}(6-2)(8-4) = 8\\)\nO monopólio impede a realização de transacções entre \\(Q=4\\) e \\(Q=8\\) que seriam mutuamente vantajosas (disposição a pagar \\(&gt; Cmg = 2\\)), destruindo \\(8\\) unidades de excedente total."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#características-definidoras",
+    "href": "slides/21_conc_monopolistica.html#características-definidoras",
+    "title": "Microeconomia",
+    "section": "Características Definidoras",
+    "text": "Características Definidoras\nA concorrência monopolística combina elementos dos dois modelos extremos:\n\nMuitas empresas — como em concorrência perfeita; nenhuma domina o mercado\nDiferenciação de produto — cada empresa oferece uma variante distinta; os produtos são substitutos próximos mas não perfeitos\nEntrada e saída livres — sem barreiras estruturais à entrada\nPoder de mercado limitado — a diferenciação confere algum poder, mas a concorrência de substitutos limita-o\n\n\n\n\n\n\n\n\nNote\n\n\nA diferenciação significa que cada empresa enfrenta uma curva de procura com inclinação negativa — ao contrário da empresa em CP que enfrenta procura horizontal."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#exemplos-reais",
+    "href": "slides/21_conc_monopolistica.html#exemplos-reais",
+    "title": "Microeconomia",
+    "section": "Exemplos Reais",
+    "text": "Exemplos Reais\n\nRestaurantes — servem refeições (substitutos próximos), mas cada um tem cozinha, ambiente e localização distintos\nMarcas de roupa — t-shirts de diferentes marcas satisfazem a mesma necessidade, mas diferem em estilo e imagem\nAplicações móveis — editores de texto, apps de fitness, jogos casuais: muitas opções, cada uma ligeiramente diferente\nCabeleireiros, ginásios, cafés — serviços standardizáveis mas com forte componente local e identitária\n\n\n\n\n\n\n\n\nTip\n\n\nO ponto-chave: os consumidores valorizam a variedade. A diferenciação não é artificial \\(\\rightarrow\\) responde a preferências heterogéneas."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#posição-no-espectro-de-mercados",
+    "href": "slides/21_conc_monopolistica.html#posição-no-espectro-de-mercados",
+    "title": "Microeconomia",
+    "section": "Posição no Espectro de Mercados",
+    "text": "Posição no Espectro de Mercados\n\n\n\n\nConc. Perfeita\nConc. Monop.\nOligopólio\nMonopólio\n\n\n\n\nN.º empresas\nMuitas\nMuitas\nPoucas\nUma\n\n\nProduto\nHomogéneo\nDiferenciado\nHomo/Difer.\nÚnico\n\n\nEntrada\nLivre\nLivre\nBarreiras\nBloqueada\n\n\nCurva D\nHorizontal\nDecrescente\nDecrescente\nDecrescente\n\n\n\\(P\\) vs \\(Cmg\\)\n\\(P=Cmg\\)\n\\(P&gt;Cmg\\)\n\\(P&gt;Cmg\\)\n\\(P&gt;Cmg\\)\n\n\nLucro LP\nZero\nZero\nPositivo\nPositivo"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#comportamento-no-curto-prazo",
+    "href": "slides/21_conc_monopolistica.html#comportamento-no-curto-prazo",
+    "title": "Microeconomia",
+    "section": "Comportamento no Curto Prazo",
+    "text": "Comportamento no Curto Prazo\nNo curto prazo, o número de empresas está fixo. A empresa comporta-se como um monopolista sobre a sua variante:\n\nEnfrenta uma curva de procura com inclinação negativa\nCalcula \\(Rmg\\) e iguala a \\(Cmg\\)\nPode obter lucro económico positivo\n\n\nA condição de optimização é exactamente a mesma que no monopólio:\n\\[Rmg = Cmg \\quad \\Rightarrow \\quad Q^*_{cp},\\ P^*_{cp}\\]\n\n\nCom \\(P^*_{cp} &gt; CTM(Q^*_{cp})\\), o lucro é positivo: \\(\\Pi_{cp} &gt; 0\\)."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#equilíbrio-de-curto-prazo-gráfico",
+    "href": "slides/21_conc_monopolistica.html#equilíbrio-de-curto-prazo-gráfico",
+    "title": "Microeconomia",
+    "section": "Equilíbrio de Curto Prazo: Gráfico",
+    "text": "Equilíbrio de Curto Prazo: Gráfico"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#leitura-do-gráfico-de-curto-prazo",
+    "href": "slides/21_conc_monopolistica.html#leitura-do-gráfico-de-curto-prazo",
+    "title": "Microeconomia",
+    "section": "Leitura do Gráfico de Curto Prazo",
+    "text": "Leitura do Gráfico de Curto Prazo\n\n\\(Rmg = Cmg\\): \\(18 - 4Q = 2Q \\Rightarrow Q^*_{cp} = 3\\)\nPreço na curva de procura: \\(P^*_{cp} = 18 - 2(3) = 12\\)\nCusto médio: \\(CTM(3) = 3 + 12/3 = 7\\)\nLucro: \\(\\Pi = (12 - 7) \\times 3 = 15 &gt; 0\\)\n\n\n\n\n\n\n\n\nImportant\n\n\nO lucro positivo (\\(\\Pi = 15\\)) é um sinal de mercado: novas empresas têm incentivo a entrar com produtos diferenciados. Este processo leva ao equilíbrio de longo prazo."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#o-mecanismo-de-entrada",
+    "href": "slides/21_conc_monopolistica.html#o-mecanismo-de-entrada",
+    "title": "Microeconomia",
+    "section": "O Mecanismo de Entrada",
+    "text": "O Mecanismo de Entrada\nCom lucros positivos no curto prazo, novas empresas entram no mercado com produtos diferenciados. O que acontece?\n\nOs consumidores distribuem-se por mais variantes\nA procura que cada empresa enfrenta desloca-se para a esquerda (menor quantidade para cada preço)\nTambém se torna mais elástica (mais substitutos disponíveis)\nOs lucros de cada empresa diminuem\n\n\nO processo continua até que o lucro económico seja nulo: \\(\\Pi = 0\\).\n\n\n\n\n\n\n\n\nNote\n\n\nTal como em concorrência perfeita, a entrada livre elimina os lucros no longo prazo. A diferença está na forma como esse equilíbrio é atingido."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#condição-de-equilíbrio-de-longo-prazo",
+    "href": "slides/21_conc_monopolistica.html#condição-de-equilíbrio-de-longo-prazo",
+    "title": "Microeconomia",
+    "section": "Condição de Equilíbrio de Longo Prazo",
+    "text": "Condição de Equilíbrio de Longo Prazo\nEm LP, duas condições são satisfeitas simultaneamente:\n\n1. Optimização: a empresa maximiza o lucro dado que enfrenta curva D com inclinação negativa: \\[Rmg = Cmg\\]\n\n\n2. Lucro nulo: a entrada eliminou todos os lucros extraordinários: \\[P = CTM\\]\n\n\nEstas duas condições implicam que a curva de procura é tangente à curva CTM no ponto de equilíbrio."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#equilíbrio-de-longo-prazo-gráfico",
+    "href": "slides/21_conc_monopolistica.html#equilíbrio-de-longo-prazo-gráfico",
+    "title": "Microeconomia",
+    "section": "Equilíbrio de Longo Prazo — Gráfico",
+    "text": "Equilíbrio de Longo Prazo — Gráfico"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#leitura-do-gráfico-de-longo-prazo",
+    "href": "slides/21_conc_monopolistica.html#leitura-do-gráfico-de-longo-prazo",
+    "title": "Microeconomia",
+    "section": "Leitura do Gráfico de Longo Prazo",
+    "text": "Leitura do Gráfico de Longo Prazo\n\n\\(Rmg = Cmg\\): \\(12 - 4Q = 2Q \\Rightarrow Q^*_{lp} = 2\\)\nPreço: \\(P^*_{lp} = 12 - 2(2) = 8\\)\n\\(CTM(2) = 2 + 12/2 = 8\\) — tangência confirmada: \\(P = CTM\\) ✓\nLucro: \\(\\Pi = (8-8) \\times 2 = 0\\) ✓\n\\(Cmg(2) = 4 &lt; P = 8\\) — ineficiência persiste ✓\n\n\n\n\n\n\n\n\nImportant\n\n\nMesmo com lucro zero, \\(P &gt; Cmg\\): o equilíbrio de longo prazo não é eficiente. Esta é a ineficiência residual da concorrência monopolística."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#duas-ineficiências-no-equilíbrio-de-lp",
+    "href": "slides/21_conc_monopolistica.html#duas-ineficiências-no-equilíbrio-de-lp",
+    "title": "Microeconomia",
+    "section": "Duas Ineficiências no Equilíbrio de LP",
+    "text": "Duas Ineficiências no Equilíbrio de LP\n1. \\(P &gt; Cmg\\) — Ineficiência alocativa\n\nEm CP: \\(P = Cmg\\) — todas as unidades mutuamente vantajosas são produzidas\nEm conc. monop. LP: \\(P = 8 &gt; Cmg = 4\\) — há unidades que não se produzem, apesar de a disposição a pagar superar o custo\n\n\n2. Excesso de capacidade — Ineficiência produtiva\n\nA empresa produz \\(Q^*_{lp} = 2\\)\nO mínimo de \\(CTM\\) ocorre em \\(Q \\approx 3.46\\)\nCada empresa opera abaixo da escala mínima eficiente\n\n\n\n\n\n\n\n\n\nNote\n\n\nEm CP perfeita, no LP cada empresa produz no mínimo de \\(CTM\\). Em conc. monopolística, a tangência ocorre na parte decrescente do CTM — sempre à esquerda do mínimo."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#o-trade-off-variedade-vs.-ineficiência",
+    "href": "slides/21_conc_monopolistica.html#o-trade-off-variedade-vs.-ineficiência",
+    "title": "Microeconomia",
+    "section": "O Trade-off: Variedade vs. Ineficiência",
+    "text": "O Trade-off: Variedade vs. Ineficiência\nA concorrência monopolística é ineficiente — mas isso é necessariamente mau?\n\nArgumentos contra (custo da diferenciação):\n\nExcesso de capacidade: recursos não usados na escala eficiente\n\\(P &gt; Cmg\\): transacções mutuamente vantajosas não realizadas\n“Demasiados” produtos semelhantes no mercado\n\n\n\nArgumentos a favor (benefício da variedade):\n\nOs consumidores valorizam a variedade — não é indiferente ter só um produto homogéneo\nA diferenciação pode reflectir inovação e qualidade\nO excedente do consumidor derivado da variedade pode compensar a ineficiência\n\n\n\n\n\n\n\n\n\nTip\n\n\nNão há uma resposta única. O juízo depende do quanto os consumidores valorizam a diversidade face ao ganho de eficiência de ter menos variantes a menor custo."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#exercício-1-escolha-múltipla",
+    "href": "slides/21_conc_monopolistica.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nNo equilíbrio de longo prazo de uma empresa em concorrência monopolística, é verdade que:\n\n\\(P = Cmg\\) e \\(\\Pi = 0\\)\n\\(P = CTM\\) e \\(P = Cmg\\)\n\\(P = CTM\\) e \\(P &gt; Cmg\\)\n\\(P &gt; CTM\\) e \\(\\Pi &gt; 0\\)"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#solução-exercício-1",
+    "href": "slides/21_conc_monopolistica.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 1",
+    "text": "Solução — Exercício 1\nNo LP da conc. monopolística:\n\nA entrada livre elimina lucros: \\(P = CTM\\) ✓\nA empresa tem poder de mercado (\\(D\\) com inclinação negativa): \\(Rmg &lt; P\\), logo \\(Rmg = Cmg\\) implica \\(P &gt; Cmg\\) ✓\n\nA combinação \\(P = CTM\\) com \\(P &gt; Cmg\\) é o que define o equilíbrio de tangência.\nResposta: (c)"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#exercício-2-escolha-múltipla",
+    "href": "slides/21_conc_monopolistica.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nUma empresa em concorrência monopolística tem lucros positivos no curto prazo. No longo prazo, esperamos que:\n\nO preço desça, a quantidade suba, e o lucro fique positivo\nNovas empresas entrem, a procura de cada empresa se desloque para a esquerda, e o lucro tenda para zero\nA empresa aumente a produção até ao mínimo de CTM, eliminando o excesso de capacidade\nO mercado converja para concorrência perfeita, com \\(P = Cmg\\)"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#solução-exercício-2",
+    "href": "slides/21_conc_monopolistica.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 2",
+    "text": "Solução — Exercício 2\n\n\nIncorrecto — o preço desce mas o lucro converge para zero, não permanece positivo\n\n(b) Correcto — a entrada de rivais com produtos diferenciados desloca a procura de cada empresa para a esquerda até \\(\\Pi = 0\\)\n\nIncorrecto — a tangência ocorre à esquerda do mínimo de CTM; o excesso de capacidade persiste no LP\n\n\nIncorrecto — \\(P &gt; Cmg\\) mantém-se no LP porque a procura continua a ter inclinação negativa\n\n\nResposta: (b)"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#exercício-de-desenvolvimento",
+    "href": "slides/21_conc_monopolistica.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício de Desenvolvimento",
+    "text": "Exercício de Desenvolvimento\nUma empresa em concorrência monopolística tem estrutura de custos \\(CT = Q^2 + 12\\) e enfrenta, no curto prazo, a procura inversa \\(P = 18 - 2Q\\).\nAlíneas:\n\nDetermine o custo marginal (\\(Cmg\\)) e o custo total médio (\\(CTM\\)).\nCalcule a quantidade óptima \\(Q^*_{cp}\\), o preço \\(P^*_{cp}\\) e o lucro de curto prazo \\(\\Pi_{cp}\\).\nExplique o mecanismo pelo qual o mercado converge para o equilíbrio de longo prazo.\nNo longo prazo, a procura que a empresa enfrenta é \\(P = 12 - 2Q\\). Verifique que esta curva é tangente ao \\(CTM\\) e calcule \\(Q^*_{lp}\\), \\(P^*_{lp}\\) e \\(\\Pi_{lp}\\).\nCompare \\(P^*_{lp}\\) com \\(Cmg(Q^*_{lp})\\). O equilíbrio de LP é eficiente? Justifique."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/21_conc_monopolistica.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício de Desenvolvimento",
+    "text": "Solução — Exercício de Desenvolvimento\na) \\(Cmg = \\dfrac{dCT}{dQ} = 2Q\\) \\(\\quad;\\quad\\) \\(CTM = \\dfrac{Q^2+12}{Q} = Q + \\dfrac{12}{Q}\\)\n\nb) \\(Rmg = 18-4Q\\). \\(\\quad Rmg=Cmg \\Rightarrow 18-4Q=2Q \\Rightarrow Q^*_{cp}=3\\)\n\\(P^*_{cp} = 18-6 = 12\\) \\(\\quad;\\quad\\) \\(CTM(3)=3+4=7\\) \\(\\quad;\\quad\\) \\(\\Pi = (12-7)\\times 3 = 15\\)\n\n\nc) O lucro positivo (\\(\\Pi=15\\)) atrai novas empresas com produtos diferenciados. A entrada divide a procura por mais variantes, deslocando a curva \\(D\\) de cada empresa para a esquerda. O processo continua até \\(\\Pi=0\\).\n\n\nd) \\(Rmg_{lp}=12-4Q\\). \\(\\quad Rmg=Cmg \\Rightarrow 12-4Q=2Q \\Rightarrow Q^*_{lp}=2\\)\n\\(P^*_{lp}=12-4=8\\) \\(\\quad;\\quad\\) \\(CTM(2)=2+6=8\\) \\(\\quad\\Rightarrow\\quad P=CTM\\) ✓ (tangência)\n\\(\\Pi_{lp}=(8-8)\\times 2=0\\) ✓\nVerificação da tangência: \\(\\dfrac{dD}{dQ}\\big|_{Q=2}=-2\\) \\(\\quad;\\quad\\) \\(\\dfrac{dCTM}{dQ}\\big|_{Q=2}=1-\\dfrac{12}{4}=-2\\) ✓\n\n\ne) \\(Cmg(2)=4 &lt; P^*_{lp}=8\\). O equilíbrio não é eficiente: \\(P&gt;Cmg\\) significa que há unidades não produzidas para as quais a disposição a pagar supera o custo. A empresa produz \\(Q=2\\), abaixo da escala eficiente (\\(Q_{minCTM}\\approx 3.46\\)) — há excesso de capacidade."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#porque-precisamos-de-teoria-de-jogos",
+    "href": "slides/22_teoria_jogos_I.html#porque-precisamos-de-teoria-de-jogos",
+    "title": "Microeconomia",
+    "section": "Porque precisamos de Teoria de Jogos?",
+    "text": "Porque precisamos de Teoria de Jogos?\nAté agora, cada decisor foi analisado em isolamento:\n\nO consumidor maximiza utilidade dado um preço que não controla\nA empresa em CP escolhe \\(Q\\) dado um preço de mercado\nO monopolista optimiza face a uma curva de procura passiva\n\n\nMas e quando o resultado de cada agente depende das escolhas dos outros?\n\n\n\n\n\n\n\n\nImportant\n\n\nEm oligopólio, duas ou três empresas controlam o mercado. A decisão de uma afecta directamente o lucro das outras. Cada empresa precisa de antecipar o comportamento das rivais — e elas sabem disso.\nA teoria de jogos é a ferramenta adequada para analisar estas situações de interdependência estratégica."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#os-elementos-de-um-jogo",
+    "href": "slides/22_teoria_jogos_I.html#os-elementos-de-um-jogo",
+    "title": "Microeconomia",
+    "section": "Os Elementos de um Jogo",
+    "text": "Os Elementos de um Jogo\nTodo o jogo em forma normal é definido por três elementos:\n\n1. Jogadores — quem decide? (\\(i = 1, 2, \\ldots, n\\))\n\n\n2. Estratégias — que acções estão disponíveis a cada jogador?\n\\[S_i = \\{s_{i1},\\ s_{i2},\\ \\ldots\\}\\]\n\n\n3. Payoffs — que resultado obtém cada jogador para cada combinação de estratégias?\n\\[\\pi_i(s_1, s_2, \\ldots, s_n)\\]\n\n\n\n\n\n\n\n\nNote\n\n\nO payoff pode representar lucro, utilidade, anos de prisão evitados, ou qualquer medida de bem-estar relevante. A teoria é geral — o conteúdo depende da aplicação."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#forma-normal-a-matriz-de-payoffs",
+    "href": "slides/22_teoria_jogos_I.html#forma-normal-a-matriz-de-payoffs",
+    "title": "Microeconomia",
+    "section": "Forma Normal: A Matriz de Payoffs",
+    "text": "Forma Normal: A Matriz de Payoffs\nCom dois jogadores e duas estratégias cada, o jogo representa-se numa matriz \\(2\\times2\\):\n\n\n\nConvenção: cada célula mostra \\((\\pi_A,\\ \\pi_B)\\) — primeiro o payoff da empresa que escolhe a linha, segundo o da coluna."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#dominância-estrita",
+    "href": "slides/22_teoria_jogos_I.html#dominância-estrita",
+    "title": "Microeconomia",
+    "section": "Dominância Estrita",
+    "text": "Dominância Estrita\n\n\n\n\n\n\nNote\n\n\nDefinição: A estratégia \\(s_i\\) domina estritamente \\(s_i'\\) se, independentemente do que os outros jogadores fizerem, \\(s_i\\) dá sempre um payoff estritamente superior a \\(s_i'\\).\n\n\n\n\nSe existe uma estratégia dominante para um jogador, um agente racional nunca escolhe a estratégia dominada — independentemente das suas crenças sobre os rivais.\n\n\nEliminação iterada de estratégias dominadas:\n\nEliminar as estratégias estritamente dominadas de cada jogador\nRepetir com a matriz reduzida\nContinuar até não haver mais eliminações\n\n\n\nSe este processo conduz a uma única célula, temos um equilíbrio em estratégias dominantes."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#equilíbrio-de-nash",
+    "href": "slides/22_teoria_jogos_I.html#equilíbrio-de-nash",
+    "title": "Microeconomia",
+    "section": "Equilíbrio de Nash",
+    "text": "Equilíbrio de Nash\n\n\n\n\n\n\nImportant\n\n\nDefinição (John Nash, 1950): Um perfil de estratégias \\((s_1^*, s_2^*, \\ldots, s_n^*)\\) é um Equilíbrio de Nash se nenhum jogador tem incentivo a desviar-se unilateralmente, dado que os outros mantêm as suas estratégias.\n\n\n\n\nFormalmente, para cada jogador \\(i\\):\n\\[\\pi_i(s_i^*,\\ s_{-i}^*) \\geq \\pi_i(s_i,\\ s_{-i}^*) \\quad \\forall s_i\\]\nonde \\(s_{-i}^*\\) denota as estratégias de todos os outros jogadores.\n\n\n\n\n\n\n\n\nNote\n\n\nO Equilíbrio de Nash é um conceito de consistência mútua: cada jogador está a fazer o melhor que pode dado o que os outros estão a fazer. Ninguém se arrepende da sua escolha a posteriori."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#nash-vs.-óptimo-colectivo",
+    "href": "slides/22_teoria_jogos_I.html#nash-vs.-óptimo-colectivo",
+    "title": "Microeconomia",
+    "section": "Nash vs. Óptimo Colectivo",
+    "text": "Nash vs. Óptimo Colectivo\nUm Equilíbrio de Nash não é necessariamente o melhor resultado colectivo:\n\n\nO EN é estável do ponto de vista individual — ninguém quer desviar sozinho\nMas pode existir outro resultado em que todos ficariam melhor\nEsse resultado não é sustentável sem coordenação ou compromisso vinculativo\n\n\n\nEsta tensão entre racionalidade individual e óptimo colectivo é o coração do Dilema do Prisioneiro."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#a-história-original",
+    "href": "slides/22_teoria_jogos_I.html#a-história-original",
+    "title": "Microeconomia",
+    "section": "A História Original",
+    "text": "A História Original\nDois suspeitos são detidos e interrogados separadamente. Cada um pode:\n\nCalar (cooperar com o cúmplice)\nConfessar (delatar o cúmplice)\n\n\n(payoffs = anos de prisão evitados — maior é melhor)"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#análise-dominância-e-nash",
+    "href": "slides/22_teoria_jogos_I.html#análise-dominância-e-nash",
+    "title": "Microeconomia",
+    "section": "Análise: Dominância e Nash",
+    "text": "Análise: Dominância e Nash\nRaciocínio de A:\n\nSe B calar: A obtém \\(5\\) (confessar) vs \\(4\\) (calar) \\(\\Rightarrow\\) Confessar\nSe B confessar: A obtém \\(1\\) (confessar) vs \\(0\\) (calar) \\(\\Rightarrow\\) Confessar\n\n\nConfessar domina estritamente Calar — para A. Pelo mesmo raciocínio, também para B.\n\n\nEquilíbrio de Nash: (Confessar, Confessar) = (1, 1)\n\n\n\n\n\n\n\n\nImportant\n\n\nMas (Calar, Calar) = (4, 4) é Pareto superior — ambos ficariam melhor se calassem. O problema: nenhum consegue credibilmente comprometer-se a calar sem que o outro aproveite para confessar.\nA racionalidade individual leva a um resultado colectivamente mau."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#aplicação-delação-premiada-em-cartéis",
+    "href": "slides/22_teoria_jogos_I.html#aplicação-delação-premiada-em-cartéis",
+    "title": "Microeconomia",
+    "section": "Aplicação: Delação Premiada em Cartéis",
+    "text": "Aplicação: Delação Premiada em Cartéis\nO dilema do prisioneiro tem uma aplicação directa à política de concorrência:\n\nDuas empresas num cartel podem:\n\nCooperar — manter o acordo de cartel, partilhar lucros de monopólio\nDelatar — informar a autoridade da concorrência, obtendo imunidade ou redução de coima\n\n\n\n(payoffs em milhares de euros de lucro líquido)"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#análise-da-delação-premiada",
+    "href": "slides/22_teoria_jogos_I.html#análise-da-delação-premiada",
+    "title": "Microeconomia",
+    "section": "Análise da Delação Premiada",
+    "text": "Análise da Delação Premiada\nDominância de Delatar:\n\nSe B cooperar: A obtém \\(8\\) (delatar) vs \\(6\\) (cooperar) \\(\\Rightarrow\\) Delatar\nSe B delatar: A obtém \\(2\\) (delatar) vs \\(0\\) (cooperar) \\(\\Rightarrow\\) Delatar\n\n\nEquilíbrio de Nash: (Delatar, Delatar) = (2, 2)\nResultado colectivamente inferior a (Cooperar, Cooperar) = (6, 6).\n\n\n\n\n\n\n\n\nTip\n\n\nLógica da política de leniência: os reguladores exploram exactamente esta estrutura. Ao oferecer imunidade total ao primeiro a delatar, tornam a delação ainda mais atractiva — o equilíbrio de Nash desloca-se para (Delatar, Delatar) de forma ainda mais robusta.\nOs cartéis são instáveis precisamente porque cada membro tem incentivo a trair os parceiros."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#jogos-de-coordenação",
+    "href": "slides/22_teoria_jogos_I.html#jogos-de-coordenação",
+    "title": "Microeconomia",
+    "section": "Jogos de Coordenação",
+    "text": "Jogos de Coordenação\nNem todos os jogos têm a estrutura problemática do dilema do prisioneiro:\n\n(Exemplo: lados de circulação no trânsito)\n\n\nDois Equilíbrios de Nash: (Esq, Esq) e (Dir, Dir). Aqui o problema não é a traição — é a coordenação: ambos querem fazer o mesmo, mas qual?"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#resumo-conceitos-chave",
+    "href": "slides/22_teoria_jogos_I.html#resumo-conceitos-chave",
+    "title": "Microeconomia",
+    "section": "Resumo: Conceitos-Chave",
+    "text": "Resumo: Conceitos-Chave\n\n\n\n\n\n\n\nConceito\nDefinição em síntese\n\n\n\n\nEstratégia dominante\nMelhor resposta independentemente do rival\n\n\nEstratégia dominada\nNunca é a melhor resposta — racional eliminá-la\n\n\nEquilíbrio de Nash\nNinguém quer desviar unilateralmente\n\n\nDilema do Prisioneiro\nEN existe mas é Pareto inferior — racionalidade individual \\(\\neq\\) óptimo colectivo\n\n\nJogo de coordenação\nMúltiplos EN — o problema é coordenar, não trair\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nNa próxima aula aplicamos estes conceitos ao oligopólio: o modelo de Cournot é precisamente um jogo em que cada empresa escolhe quantidade tomando a rival como dado — e o equilíbrio de Nash em quantidades é o resultado central."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#exercício-1-escolha-múltipla",
+    "href": "slides/22_teoria_jogos_I.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nConsidere a seguinte matriz de payoffs \\((\\pi_A,\\ \\pi_B)\\):\nO Equilíbrio de Nash desta matriz é:\n\n(Alto, Alto) = (3, 3)\n(Alto, Baixo) = (1, 5)\n(Baixo, Baixo) = (2, 2)\nNão existe Equilíbrio de Nash"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#solução-exercício-1",
+    "href": "slides/22_teoria_jogos_I.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 1",
+    "text": "Solução — Exercício 1\nA: Se B=Alto: \\(5 &gt; 3\\) → Baixo. Se B=Baixo: \\(2 &gt; 1\\) → Baixo. Baixo domina.\nB: Se A=Alto: \\(5 &gt; 3\\) → Baixo. Se A=Baixo: \\(2 &gt; 1\\) → Baixo. Baixo domina.\nNash: (Baixo, Baixo) = (2, 2) — nenhum quer desviar unilateralmente.\nNote: (Alto, Alto) = (3, 3) é Pareto superior mas não é EN — cada um tem incentivo a desviar para Baixo.\nResposta: (c)"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#exercício-2-escolha-múltipla",
+    "href": "slides/22_teoria_jogos_I.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nNo Dilema do Prisioneiro, o Equilíbrio de Nash é:\n\nO resultado que maximiza a soma dos payoffs dos dois jogadores\nO resultado em que nenhum jogador quer desviar, mesmo que seja Pareto inferior\nSempre o resultado em que ambos cooperam\nO resultado que só é atingível com comunicação entre os jogadores"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#solução-exercício-2",
+    "href": "slides/22_teoria_jogos_I.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 2",
+    "text": "Solução — Exercício 2\n\n\nFalso — o EN do DP é (Confessar, Confessar) que minimiza a soma dos payoffs\n\n(b) Verdadeiro — o EN é estável individualmente (ninguém quer desviar sozinho) mesmo sendo Pareto inferior a (Calar, Calar)\n\nFalso — no DP o EN é precisamente a não-cooperação\n\n\nFalso — o EN existe sem comunicação; com comunicação vinculativa o resultado poderia mudar, mas o EN em si não requer comunicação\n\n\nResposta: (b)"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#exercício-de-desenvolvimento",
+    "href": "slides/22_teoria_jogos_I.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício de Desenvolvimento",
+    "text": "Exercício de Desenvolvimento\nDuas empresas, A e B, participavam num cartel ilegal. A autoridade da concorrência abre uma investigação e contacta cada empresa separadamente, oferecendo imunidade total à primeira a colaborar.\nCada empresa pode Cooperar (manter silêncio) ou Delatar (colaborar com a autoridade).\nOs payoffs (lucro líquido esperado, em milhares de euros) são:\n\nMostre que Delatar é uma estratégia estritamente dominante para a Empresa A.\nIdentifique o Equilíbrio de Nash. Qual o payoff de cada empresa?\nQual o resultado colectivamente óptimo? Compare com o EN.\nExplique por que razão a política de leniência é eficaz para desmantelar cartéis."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/22_teoria_jogos_I.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício de Desenvolvimento",
+    "text": "Solução — Exercício de Desenvolvimento\na) Verificação da dominância de Delatar para A:\n\nSe B Cooperar: A obtém \\(8\\) (Delatar) \\(&gt;\\) \\(6\\) (Cooperar) \\(\\Rightarrow\\) Delatar\nSe B Delatar: A obtém \\(2\\) (Delatar) \\(&gt;\\) \\(0\\) (Cooperar) \\(\\Rightarrow\\) Delatar\n\nDelatar é estritamente dominante — A prefere Delatar independentemente da escolha de B. ✓\n\nb) Pelo mesmo raciocínio (o jogo é simétrico), Delatar também domina para B.\nEquilíbrio de Nash: (Delatar, Delatar) = (2, 2)\nNenhuma empresa quer desviar: se A está a delatar, B obtém \\(2\\) (delatar) \\(&gt;\\) \\(0\\) (cooperar). ✓\n\n\nc) O resultado colectivamente óptimo é (Cooperar, Cooperar) = (6, 6) — soma de payoffs \\(12 &gt; 4\\).\nMas não é sustentável: qualquer empresa tem incentivo a desviar unilateralmente para Delatar e obter \\(8\\) em vez de \\(6\\).\n\n\nd) A política de leniência reforça exactamente esta estrutura. Ao garantir imunidade ao primeiro a delatar, o regulador torna o payoff de Delatar ainda mais atractivo. Cada empresa sabe que a rival tem incentivo a delatar primeiro — o que acelera a delação mútua. O cartel dissolve-se pela mesma lógica do dilema do prisioneiro: a racionalidade individual destrói a colusão colectiva."
+  },
+  {
+    "objectID": "slides/23_cournot.html#características-do-oligopólio",
+    "href": "slides/23_cournot.html#características-do-oligopólio",
+    "title": "Microeconomia",
+    "section": "Características do Oligopólio",
+    "text": "Características do Oligopólio\n\nPoucas empresas dominam o mercado — tipicamente 2 a 10\nProduto pode ser homogéneo (petróleo, aço) ou diferenciado (automóveis, smartphones)\nBarreiras à entrada significativas — custos elevados, economias de escala, patentes\nInterdependência estratégica — o lucro de cada empresa depende das decisões das rivais\n\n\n\n\n\n\n\n\nImportant\n\n\nA característica central do oligopólio é a interdependência estratégica. A empresa A não pode optimizar sem antecipar o comportamento da empresa B — e B sabe que A sabe isso. É precisamente aqui que a teoria de jogos se aplica."
+  },
+  {
+    "objectID": "slides/23_cournot.html#como-modelar-o-oligopólio",
+    "href": "slides/23_cournot.html#como-modelar-o-oligopólio",
+    "title": "Microeconomia",
+    "section": "Como Modelar o Oligopólio?",
+    "text": "Como Modelar o Oligopólio?\nA variável estratégica define o modelo:\n\n\n\n\nModelo\nVariável estratégica\nTiming\n\n\n\n\nCournot\nQuantidade\nSimultâneo\n\n\nStackelberg\nQuantidade\nSequencial\n\n\nBertrand\nPreço\nSimultâneo\n\n\n\n\n\nHoje: Cournot — cada empresa escolhe simultaneamente a quantidade a produzir, tomando a quantidade da rival como dada."
+  },
+  {
+    "objectID": "slides/23_cournot.html#estrutura-do-modelo",
+    "href": "slides/23_cournot.html#estrutura-do-modelo",
+    "title": "Microeconomia",
+    "section": "Estrutura do Modelo",
+    "text": "Estrutura do Modelo\nDuopólio simétrico:\n\nDuas empresas, A e B, produzem um bem homogéneo\nProcura inversa de mercado: \\(P = a - b(q_A + q_B)\\)\nCustos idênticos: \\(CT_i = c \\cdot q_i\\) (custo marginal constante \\(Cmg = c\\), sem custos fixos)\nDecisão simultânea de quantidade — nenhuma empresa observa a escolha da outra antes de decidir\n\n\n\n\n\n\n\n\nNote\n\n\nA hipótese de Cournot: cada empresa trata a quantidade da rival como fixa ao optimizar. É uma hipótese simplificadora mas gera um equilíbrio de Nash bem definido."
+  },
+  {
+    "objectID": "slides/23_cournot.html#maximização-do-lucro-empresa-a",
+    "href": "slides/23_cournot.html#maximização-do-lucro-empresa-a",
+    "title": "Microeconomia",
+    "section": "Maximização do Lucro — Empresa A",
+    "text": "Maximização do Lucro — Empresa A\nO lucro da empresa A é:\n\\[\\Pi_A = P \\cdot q_A - c \\cdot q_A = \\bigl[a - b(q_A + q_B)\\bigr] q_A - c \\cdot q_A\\]\n\nExpandindo:\n\\[\\Pi_A = (a - c)\\,q_A - b\\,q_A^2 - b\\,q_A q_B\\]\n\n\nCondição de primeira ordem (\\(q_B\\) tratado como fixo):\n\\[\\frac{\\partial \\Pi_A}{\\partial q_A} = (a - c) - 2b\\,q_A - b\\,q_B = 0\\]\n\n\n\\[\\boxed{q_A^* = \\frac{a-c}{2b} - \\frac{q_B}{2}}\\]"
+  },
+  {
+    "objectID": "slides/23_cournot.html#a-função-de-reacção-best-response",
+    "href": "slides/23_cournot.html#a-função-de-reacção-best-response",
+    "title": "Microeconomia",
+    "section": "A Função de Reacção (Best Response)",
+    "text": "A Função de Reacção (Best Response)\n\\[q_A^*(q_B) = \\frac{a-c}{2b} - \\frac{1}{2}\\,q_B\\]\n\nEsta é a função de reacção (ou best response) da empresa A: para cada valor de \\(q_B\\), indica a quantidade óptima de A.\n\n\n\nQuando \\(q_B = 0\\): \\(q_A^* = \\dfrac{a-c}{2b}\\) — A produz como monopolista\nQuando \\(q_B\\) aumenta: \\(q_A^*\\) diminui — A produz menos porque o preço já é pressionado pela produção de B\nA inclinação é \\(-\\tfrac{1}{2}\\): por cada unidade adicional de B, A reduz a sua produção em meia unidade\n\n\n\nPor simetria, a função de reacção de B é:\n\\[q_B^*(q_A) = \\frac{a-c}{2b} - \\frac{1}{2}\\,q_A\\]"
+  },
+  {
+    "objectID": "slides/23_cournot.html#equilíbrio-de-nash-de-cournot",
+    "href": "slides/23_cournot.html#equilíbrio-de-nash-de-cournot",
+    "title": "Microeconomia",
+    "section": "Equilíbrio de Nash de Cournot",
+    "text": "Equilíbrio de Nash de Cournot\nO equilíbrio ocorre quando ambas as empresas estão na sua função de reacção simultaneamente:\n\\[q_A = q_B^*(q_A) \\quad \\text{e} \\quad q_B = q_A^*(q_B)\\]\n\nSubstituindo \\(q_B^*\\) na função de reacção de A (duopólio simétrico):\n\\[q_A = \\frac{a-c}{2b} - \\frac{1}{2}\\left(\\frac{a-c}{2b} - \\frac{q_A}{2}\\right) = \\frac{a-c}{2b} - \\frac{a-c}{4b} + \\frac{q_A}{4}\\]\n\\[\\frac{3}{4}\\,q_A = \\frac{a-c}{4b} \\quad\\Rightarrow\\quad \\boxed{q_A^* = q_B^* = \\frac{a-c}{3b}}\\]\n\n\nQuantidade total e preço de equilíbrio:\n\\[Q^*_C = \\frac{2(a-c)}{3b} \\qquad P^*_C = a - b\\,Q^*_C = \\frac{a + 2c}{3}\\]"
+  },
+  {
+    "objectID": "slides/23_cournot.html#diagrama-das-funções-de-reacção",
+    "href": "slides/23_cournot.html#diagrama-das-funções-de-reacção",
+    "title": "Microeconomia",
+    "section": "Diagrama das Funções de Reacção",
+    "text": "Diagrama das Funções de Reacção"
+  },
+  {
+    "objectID": "slides/23_cournot.html#leitura-do-diagrama",
+    "href": "slides/23_cournot.html#leitura-do-diagrama",
+    "title": "Microeconomia",
+    "section": "Leitura do Diagrama",
+    "text": "Leitura do Diagrama\n\n\\(BR_A\\) (azul): função de reacção de A — para cada \\(q_B\\), a melhor resposta de A\n\\(BR_B\\) (vermelha): função de reacção de B — para cada \\(q_A\\), a melhor resposta de B\nCournot (8, 8): interseção das duas funções — único ponto em que ambas as empresas estão simultaneamente a optimizar\nCartel (6, 6): se as empresas cooperassem, produziriam menos e ganhariam mais — mas não está na intersecção das BRs, logo não é estável\nC.P. (12, 12): equilíbrio competitivo — está fora da região de lucros positivos de cada empresa\n\n\n\n\n\n\n\n\nImportant\n\n\nO Cartel (6, 6) não é um Equilíbrio de Nash: se B produz 6, a melhor resposta de A é \\(BR_A(6) = 12 - 3 = 9 \\neq 6\\). Cada empresa tem incentivo a desviar — o cartel é instável."
+  },
+  {
+    "objectID": "slides/23_cournot.html#exemplo-p-30---q-cmg-6",
+    "href": "slides/23_cournot.html#exemplo-p-30---q-cmg-6",
+    "title": "Microeconomia",
+    "section": "Exemplo: \\(P = 30 - Q\\), \\(Cmg = 6\\)",
+    "text": "Exemplo: \\(P = 30 - Q\\), \\(Cmg = 6\\)\nCom \\(a=30\\), \\(b=1\\), \\(c=6\\):\n\nFunções de reacção:\n\\[q_A^*(q_B) = 12 - \\frac{q_B}{2} \\qquad q_B^*(q_A) = 12 - \\frac{q_A}{2}\\]\n\n\nEquilíbrio de Cournot (resolver o sistema):\n\\[q_A^* = 12 - \\frac{q_A^*}{4} \\cdot \\ldots \\quad \\Rightarrow \\quad q_A^* = q_B^* = \\frac{30-6}{3} = 8\\]\n\n\n\\[Q^*_C = 16 \\qquad P^*_C = 30 - 16 = 14 \\qquad \\Pi^*_{\\text{cada}} = (14-6)\\times 8 = 64\\]"
+  },
+  {
+    "objectID": "slides/23_cournot.html#comparação-entre-estruturas-de-mercado",
+    "href": "slides/23_cournot.html#comparação-entre-estruturas-de-mercado",
+    "title": "Microeconomia",
+    "section": "Comparação entre Estruturas de Mercado",
+    "text": "Comparação entre Estruturas de Mercado\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi\\) cada\n\n\n\n\nMonopólio (cartel)\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\n\nConcorrência Perfeita\n\\(24\\)\n\\(6\\)\n\\(0\\)\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nOrdenações que sempre se verificam (duopólio simétrico):\n\\(Q_{\\text{mono}} &lt; Q_{\\text{Cournot}} &lt; Q_{\\text{CP}}\\)\n\\(P_{\\text{mono}} &gt; P_{\\text{Cournot}} &gt; P_{\\text{CP}}\\)\n\\(\\Pi_{\\text{mono}}/2 &gt; \\Pi_{\\text{Cournot}} &gt; 0\\)"
+  },
+  {
+    "objectID": "slides/23_cournot.html#por-que-o-cartel-é-instável",
+    "href": "slides/23_cournot.html#por-que-o-cartel-é-instável",
+    "title": "Microeconomia",
+    "section": "Por que o Cartel é Instável?",
+    "text": "Por que o Cartel é Instável?\nSe ambas cooperassem e produzissem \\(q = 6\\) cada (resultado de monopólio):\n\nA empresa A verifica: \\(BR_A(6) = 12 - 3 = 9 \\neq 6\\)\n\n\nSe A desviar para \\(q_A = 9\\) (com \\(q_B = 6\\)):\n\\[P = 30 - (9+6) = 15 \\qquad \\Pi_A = (15-6)\\times 9 = 81 &gt; 72\\]\n\n\n\n\n\n\n\n\nImportant\n\n\nAo desviar do cartel, A aumenta o lucro de \\(72\\) para \\(81\\). B raciocina da mesma forma. O acordo colapsa — estrutura de dilema do prisioneiro.\nEsta ligação entre Cournot e teoria de jogos (aula anterior) é exacta: o equilíbrio de Cournot é o Equilíbrio de Nash do jogo em que as estratégias são quantidades."
+  },
+  {
+    "objectID": "slides/23_cournot.html#exercício-1-escolha-múltipla",
+    "href": "slides/23_cournot.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nNo modelo de Cournot com duas empresas simétricas e procura linear, quando a empresa A aumenta a sua produção, a função de reacção da empresa B indica que B deve:\n\nAumentar também a produção, para manter a quota de mercado\nManter a produção inalterada, pois toma \\(q_A\\) como dado\nReduzir a produção, porque o preço de mercado desceu\nSair do mercado se o preço cair abaixo do custo médio"
+  },
+  {
+    "objectID": "slides/23_cournot.html#solução-exercício-1",
+    "href": "slides/23_cournot.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 1",
+    "text": "Solução — Exercício 1\nA função de reacção de B é \\(q_B^*(q_A) = \\dfrac{a-c}{2b} - \\dfrac{1}{2}q_A\\).\nA inclinação é \\(-\\tfrac{1}{2}\\): quando \\(q_A\\) sobe 1 unidade, \\(q_B^*\\) desce \\(\\tfrac{1}{2}\\).\nResposta: (c) — B reduz a produção porque a maior quantidade de A baixa o preço de mercado; a melhor resposta de B é produzir menos para limitar a queda do preço que recebe.\n\ndescreve a hipótese de Cournot (B toma \\(q_A\\) como dado ao optimizar), não a direcção da resposta óptima quando \\(q_A\\) muda."
+  },
+  {
+    "objectID": "slides/23_cournot.html#exercício-2-escolha-múltipla",
+    "href": "slides/23_cournot.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nNo equilíbrio de Cournot de um duopólio simétrico, comparando com o resultado de monopólio:\n\nA quantidade total é maior e o preço é menor\nA quantidade total é menor e o preço é maior\nO lucro de cada empresa é maior do que metade do lucro de monopólio\nO resultado é eficiente porque \\(P = Cmg\\)"
+  },
+  {
+    "objectID": "slides/23_cournot.html#solução-exercício-2",
+    "href": "slides/23_cournot.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 2",
+    "text": "Solução — Exercício 2\n\n(a) Verdadeiro — \\(Q_C &gt; Q_m\\) e \\(P_C &lt; P_m\\): a concorrência entre as duas empresas aumenta a produção total e baixa o preço face ao monopólio\n\nFalso — inverte as ordenações correctas\n\n\nFalso — o lucro de cada empresa em Cournot (\\(64\\)) é menor do que metade do lucro de monopólio (\\(72\\)): a concorrência dissipa parte dos lucros\n\n\nFalso — em Cournot \\(P &gt; Cmg\\); o resultado é ineficiente (existe DWL), embora menor do que em monopólio\n\n\nResposta: (a)"
+  },
+  {
+    "objectID": "slides/23_cournot.html#exercício-de-desenvolvimento",
+    "href": "slides/23_cournot.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício de Desenvolvimento",
+    "text": "Exercício de Desenvolvimento\nDuas empresas, A e B, operam num mercado com procura inversa \\(P = 30 - (q_A + q_B)\\).\nAmbas têm custo marginal constante \\(Cmg = 6\\) e sem custos fixos.\nAlíneas:\n\nDerive a função de reacção (best response) da empresa A, \\(q_A^*(q_B)\\).\nPor simetria, escreva a função de reacção de B. Resolva o sistema para obter o equilíbrio de Cournot \\((q_A^*, q_B^*)\\).\nCalcule a quantidade total \\(Q^*_C\\), o preço \\(P^*_C\\) e o lucro de cada empresa \\(\\Pi^*_C\\).\nDetermine o resultado de monopólio: quantidade, preço e lucro total. Compare com Cournot.\nMostre que o acordo de cartel (cada empresa produz \\(q=6\\)) não é estável: calcule o lucro de A se se desviar enquanto B produz 6.\nDetermine o equilíbrio de concorrência perfeita e complete a tabela comparativa."
+  },
+  {
+    "objectID": "slides/23_cournot.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/23_cournot.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício de Desenvolvimento",
+    "text": "Solução — Exercício de Desenvolvimento\na) \\(\\Pi_A = (30 - q_A - q_B)q_A - 6q_A\\). CPO: \\(\\dfrac{\\partial \\Pi_A}{\\partial q_A} = 24 - 2q_A - q_B = 0\\)\n\\[q_A^*(q_B) = 12 - \\frac{q_B}{2}\\]\n\nb) \\(q_B^*(q_A) = 12 - \\dfrac{q_A}{2}\\). Substituindo: \\(q_A = 12 - \\dfrac{1}{2}\\!\\left(12 - \\dfrac{q_A}{2}\\right) = 6 + \\dfrac{q_A}{4}\\)\n\\(\\dfrac{3}{4}q_A = 6 \\Rightarrow q_A^* = q_B^* = 8\\)\n\n\nc) \\(Q^*_C = 16\\), \\(P^*_C = 30-16 = 14\\), \\(\\Pi^*_C = (14-6)\\times 8 = 64\\) cada\n\n\nd) Monopolista: \\(Rmg = 30-2Q = 6 \\Rightarrow Q_m=12\\), \\(P_m=18\\), \\(\\Pi_m=144\\) (cada: \\(72\\))\nCournot produz mais (\\(16&gt;12\\)), cobra menos (\\(14&lt;18\\)), lucro por empresa menor (\\(64&lt;72\\)).\n\n\ne) Se B produz \\(6\\): \\(q_A^{dev} = 12-3=9\\), \\(P=30-15=15\\), \\(\\Pi_A^{dev}=(15-6)\\times 9=81&gt;72\\) ✓\nA tem incentivo a desviar do cartel — o acordo é instável.\n\n\nf) \\(P=Cmg \\Rightarrow 30-Q=6 \\Rightarrow Q_{cp}=24\\), \\(P_{cp}=6\\), \\(\\Pi=0\\)\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi\\) cada\n\n\n\n\nMonopólio\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\n\nConc. Perf.\n\\(24\\)\n\\(6\\)\n\\(0\\)"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#da-forma-normal-à-forma-extensiva",
+    "href": "slides/24_jogos_II_stackelberg.html#da-forma-normal-à-forma-extensiva",
+    "title": "Microeconomia",
+    "section": "Da Forma Normal à Forma Extensiva",
+    "text": "Da Forma Normal à Forma Extensiva\nNa aula anterior, analisámos jogos em forma normal — decisões simultâneas representadas em matriz.\n\nMuitas situações económicas são sequenciais: um jogador age primeiro, o outro observa e responde.\n\n\n\n\n\n\nForma Normal\nForma Extensiva\n\n\n\n\nTiming\nSimultâneo\nSequencial\n\n\nRepresentação\nMatriz de payoffs\nÁrvore de decisão\n\n\nConceito solução\nEquilíbrio de Nash\nIndução para trás\n\n\nInformação\nSem observação\nObservação da jogada anterior\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nA forma extensiva acrescenta estrutura temporal ao jogo. Quem move primeiro tem informação comprometida — e quem move depois tem mais informação mas menos iniciativa."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#a-árvore-de-decisão",
+    "href": "slides/24_jogos_II_stackelberg.html#a-árvore-de-decisão",
+    "title": "Microeconomia",
+    "section": "A Árvore de Decisão",
+    "text": "A Árvore de Decisão\nUma árvore de decisão representa:\n\nNós de decisão — pontos onde um jogador escolhe\nRamos — as acções disponíveis em cada nó\nFolhas — resultados finais com os payoffs \\((π_1,\\ π_2)\\)\nOrdem das jogadas — lê-se da esquerda (raiz) para a direita (folhas)\n\n\nO método de solução é a indução para trás (backward induction):\n\n\n\n\n\n\n\n\nImportant\n\n\nResolver o jogo de trás para a frente: começar nas folhas e determinar a escolha óptima do último jogador; dado isso, determinar a escolha óptima do penúltimo; e assim sucessivamente até à raiz."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#o-jogo-de-entrada-no-mercado",
+    "href": "slides/24_jogos_II_stackelberg.html#o-jogo-de-entrada-no-mercado",
+    "title": "Microeconomia",
+    "section": "O Jogo de Entrada no Mercado",
+    "text": "O Jogo de Entrada no Mercado\nUma empresa Entrante pondera entrar num mercado onde existe uma empresa Incumbente.\n\n(payoffs: Entrante, Incumbente)"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#solução-por-indução-para-trás",
+    "href": "slides/24_jogos_II_stackelberg.html#solução-por-indução-para-trás",
+    "title": "Microeconomia",
+    "section": "Solução por Indução para Trás",
+    "text": "Solução por Indução para Trás\nPasso 1 — O que faz o Incumbente se a Entrante entrar?\n\nCombater: payoff \\(= -1\\)\nAcomodar: payoff \\(= 2\\)\n\n\n\\(2 &gt; -1\\) \\(\\Rightarrow\\) Incumbente acomoda. A ameaça de combater não é credível.\n\n\nPasso 2 — O que faz a Entrante, antecipando a acomodação?\n\nEntrar (sabendo que Incumbente acomoda): payoff \\(= 3\\)\nFicar Fora: payoff \\(= 0\\)\n\n\n\n\\(3 &gt; 0\\) \\(\\Rightarrow\\) Entrante entra.\n\n\n\n\n\n\n\n\nImportant\n\n\nResultado por indução para trás: (Entrar, Acomodar) = (3, 2)\nA ameaça de combater é não credível: o Incumbente preferirá sempre acomodar ex-post. Um jogador racional não acredita em ameaças que o ameaçador não tem incentivo a cumprir."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#ameaças-credíveis-e-não-credíveis",
+    "href": "slides/24_jogos_II_stackelberg.html#ameaças-credíveis-e-não-credíveis",
+    "title": "Microeconomia",
+    "section": "Ameaças Credíveis e Não Credíveis",
+    "text": "Ameaças Credíveis e Não Credíveis\nO jogo de entrada ilustra um princípio central:\n\n\n\n\n\n\n\nNote\n\n\nAmeaça credível: acção que o ameaçador tem incentivo a executar quando chega o momento, independentemente do que disse antes.\nAmeaça não credível: acção que o ameaçador prefere não executar quando chega o momento — racionalmente ignorada pelo rival.\n\n\n\n\n\nO Incumbente pode dizer “se entrar, combato” — mas a Entrante sabe que, uma vez dentro, o Incumbente preferirá acomodar. As palavras não chegam; só os incentivos ex-post contam.\n\n\n\n\n\n\n\n\nTip\n\n\nAplicação: um monopolista que ameaça baixar preços drasticamente para afastar rivais precisa de tornar essa ameaça credível — por exemplo, através de investimento em capacidade que torna o combate rentável."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#stackelberg-como-jogo-sequencial",
+    "href": "slides/24_jogos_II_stackelberg.html#stackelberg-como-jogo-sequencial",
+    "title": "Microeconomia",
+    "section": "Stackelberg como Jogo Sequencial",
+    "text": "Stackelberg como Jogo Sequencial\nO modelo de Stackelberg aplica a lógica dos jogos sequenciais ao oligopólio de quantidades:\n\nLíder (Empresa 1): escolhe \\(q_1\\) primeiro, de forma observável\nSeguidor (Empresa 2): observa \\(q_1\\) e escolhe \\(q_2\\) a seguir\nMesma estrutura de mercado da aula anterior: \\(P = 30 - (q_1+q_2)\\), \\(Cmg = 6\\)\n\n\n\n\n\n\n\n\nNote\n\n\nA diferença face a Cournot é apenas o timing: em Cournot, as decisões são simultâneas e cada empresa toma a quantidade da outra como dada. Em Stackelberg, o líder conhece a função de reacção do seguidor e optimiza em função dela."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#passo-1-a-função-de-reacção-do-seguidor",
+    "href": "slides/24_jogos_II_stackelberg.html#passo-1-a-função-de-reacção-do-seguidor",
+    "title": "Microeconomia",
+    "section": "Passo 1 — A Função de Reacção do Seguidor",
+    "text": "Passo 1 — A Função de Reacção do Seguidor\nO seguidor resolve o seu problema exactamente como em Cournot, dado \\(q_1\\) observado:\n\\[\\Pi_2 = (30 - q_1 - q_2)\\,q_2 - 6\\,q_2\\]\n\n\\[\\frac{\\partial \\Pi_2}{\\partial q_2} = 24 - q_1 - 2q_2 = 0 \\quad\\Rightarrow\\quad \\boxed{q_2^*(q_1) = 12 - \\frac{q_1}{2}}\\]\n\n\nEsta é a mesma função de reacção da aula anterior — o líder sabe que o seguidor a irá usar."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#passo-2-o-líder-internaliza-a-reacção-do-seguidor",
+    "href": "slides/24_jogos_II_stackelberg.html#passo-2-o-líder-internaliza-a-reacção-do-seguidor",
+    "title": "Microeconomia",
+    "section": "Passo 2 — O Líder Internaliza a Reacção do Seguidor",
+    "text": "Passo 2 — O Líder Internaliza a Reacção do Seguidor\nO líder substitui \\(q_2^*(q_1)\\) no seu próprio lucro:\n\\[\\Pi_1 = \\bigl(30 - q_1 - q_2^*(q_1)\\bigr)\\,q_1 - 6\\,q_1\\]\n\n\\[= \\left(30 - q_1 - \\left(12 - \\frac{q_1}{2}\\right)\\right)q_1 - 6q_1 = \\left(12 - \\frac{q_1}{2}\\right)q_1\\]\n\n\n\\[\\Pi_1 = 12\\,q_1 - \\frac{q_1^2}{2}\\]\n\n\nCondição de primeira ordem:\n\\[\\frac{d\\Pi_1}{dq_1} = 12 - q_1 = 0 \\quad\\Rightarrow\\quad \\boxed{q_1^* = 12}\\]"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#passo-3-equilíbrio-de-stackelberg",
+    "href": "slides/24_jogos_II_stackelberg.html#passo-3-equilíbrio-de-stackelberg",
+    "title": "Microeconomia",
+    "section": "Passo 3 — Equilíbrio de Stackelberg",
+    "text": "Passo 3 — Equilíbrio de Stackelberg\nCom \\(q_1^* = 12\\), o seguidor responde:\n\\[q_2^* = 12 - \\frac{12}{2} = 6\\]\n\nResultados de equilíbrio:\n\\[Q^*_S = 12 + 6 = 18 \\qquad P^*_S = 30 - 18 = 12\\]\n\n\n\\[\\Pi_{\\text{líder}} = (12-6)\\times 12 = 72 \\qquad \\Pi_{\\text{seguidor}} = (12-6)\\times 6 = 36\\]\n\n\n\n\n\n\n\n\nImportant\n\n\nVantagem do primeiro movente: o líder ganha 72 — tanto quanto o monopolista — enquanto o seguidor fica com apenas 36, abaixo dos 64 de Cournot.\nO líder usa a quantidade como compromisso: ao produzir muito (12), força o seguidor a produzir pouco (6)."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#stackelberg-vs.-cournot-diagrama",
+    "href": "slides/24_jogos_II_stackelberg.html#stackelberg-vs.-cournot-diagrama",
+    "title": "Microeconomia",
+    "section": "Stackelberg vs. Cournot — Diagrama",
+    "text": "Stackelberg vs. Cournot — Diagrama"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#intuição-do-primeiro-movente",
+    "href": "slides/24_jogos_II_stackelberg.html#intuição-do-primeiro-movente",
+    "title": "Microeconomia",
+    "section": "Intuição do Primeiro Movente",
+    "text": "Intuição do Primeiro Movente\nPor que vale a pena ser o líder?\n\nEm Cournot, se a Empresa 1 aumentasse unilateralmente a sua produção de 8 para 12, o preço desceria e o lucro cairia (dado \\(q_2 = 8\\) fixo).\n\n\nEm Stackelberg, o líder sabe que ao produzir 12, o seguidor responde com 6 (não com 8). O efeito adverso no preço é parcialmente compensado pela contracção do seguidor.\n\n\n\n\n\n\n\n\nNote\n\n\nO compromisso credível de produzir muito disciplina o rival. O líder renuncia à melhor resposta de Cournot, mas obtém um resultado melhor porque o seguidor ajusta em sentido contrário.\nEsta é a essência da vantagem do primeiro movente em jogos de quantidades."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#tabela-resumo-quatro-estruturas",
+    "href": "slides/24_jogos_II_stackelberg.html#tabela-resumo-quatro-estruturas",
+    "title": "Microeconomia",
+    "section": "Tabela Resumo: Quatro Estruturas",
+    "text": "Tabela Resumo: Quatro Estruturas\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi_1\\)\n\\(\\Pi_2\\)\n\n\n\n\nMonopólio (cartel)\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\\(72\\)\n\n\nStackelberg\n\\(18\\)\n\\(12\\)\n\\(72\\)\n\\(36\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\\(64\\)\n\n\nConc. Perfeita\n\\(24\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nOrdenações que sempre se verificam:\n\\(Q_m &lt; Q_C &lt; Q_S &lt; Q_{cp}\\) e \\(P_m &gt; P_C &gt; P_S &gt; P_{cp}\\)\n\\(\\Pi_{\\text{líder}}^S &gt; \\Pi^C &gt; \\Pi_{\\text{seguidor}}^S\\)\nO líder de Stackelberg ganha tanto quanto o monopolista — ao comprometer-se com produção elevada, captura toda a vantagem estratégica."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#cournot-vs.-stackelberg-síntese",
+    "href": "slides/24_jogos_II_stackelberg.html#cournot-vs.-stackelberg-síntese",
+    "title": "Microeconomia",
+    "section": "Cournot vs. Stackelberg: Síntese",
+    "text": "Cournot vs. Stackelberg: Síntese\n\n\n\n\n\n\n\n\n\nCournot\nStackelberg\n\n\n\n\nTiming\nSimultâneo\nSequencial\n\n\nHipótese sobre rival\n\\(q_j\\) fixo (conjectura)\n\\(q_j = BR_j(q_i)\\) (conhecida)\n\n\nEquilíbrio\nNash em quantidades\nBackward induction\n\n\n\\(q_{\\text{líder}}\\) vs \\(q_C\\)\n\\(q^C = 8\\)\n\\(q_L^S = 12 &gt; 8\\)\n\n\n\\(q_{\\text{seguidor}}\\) vs \\(q_C\\)\n\\(q^C = 8\\)\n\\(q_F^S = 6 &lt; 8\\)\n\n\n\\(\\Pi_{\\text{líder}}\\) vs \\(\\Pi_C\\)\n\\(64\\)\n\\(72 &gt; 64\\)\n\n\n\\(\\Pi_{\\text{seguidor}}\\) vs \\(\\Pi_C\\)\n\\(64\\)\n\\(36 &lt; 64\\)"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#exercício-1-escolha-múltipla",
+    "href": "slides/24_jogos_II_stackelberg.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nNo modelo de Stackelberg, o líder produz mais do que no equilíbrio de Cournot porque:\n\nO líder tem custos marginais mais baixos\nO líder sabe que o seguidor reduzirá a sua produção em resposta — o compromisso com quantidade elevada disciplina o rival\nO líder age simultaneamente com o seguidor e pode coordenar melhor\nO seguidor não observa a quantidade do líder e não consegue reagir"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#solução-exercício-1",
+    "href": "slides/24_jogos_II_stackelberg.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 1",
+    "text": "Solução — Exercício 1\n\n\nFalso — os custos são idênticos nos dois modelos\n\n(b) Verdadeiro — o líder internaliza a função de reacção do seguidor: sabe que produzir mais força o seguidor a produzir menos, atenuando o efeito negativo no preço. É a essência da vantagem do primeiro movente.\n\nFalso — Stackelberg é sequencial, não simultâneo\n\n\nFalso — o seguidor observa \\(q_1\\) antes de decidir; é precisamente isso que torna o compromisso do líder credível\n\n\nResposta: (b)"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#exercício-2-escolha-múltipla",
+    "href": "slides/24_jogos_II_stackelberg.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nNo jogo de entrada com payoffs (Entrante, Incumbente): Entrar+Combater = \\((-2,\\ -1)\\); Entrar+Acomodar = \\((3,\\ 2)\\); Ficar Fora = \\((0,\\ 5)\\). Por indução para trás, o resultado é:\n\nFicar Fora, porque o Incumbente ameaça combater\nEntrar + Combater, porque o Incumbente cumpre a ameaça\nEntrar + Acomodar, porque a ameaça de combater não é credível\nIndeterminado — há dois Equilíbrios de Nash"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#solução-exercício-2",
+    "href": "slides/24_jogos_II_stackelberg.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 2",
+    "text": "Solução — Exercício 2\nIndução para trás:\n\nSe Entrante entrar, Incumbente escolhe: Combater \\((-1)\\) vs Acomodar \\((2)\\) \\(\\Rightarrow\\) Acomodar\nEntrante antecipa Acomodar: Entrar \\((3)\\) vs Ficar Fora \\((0)\\) \\(\\Rightarrow\\) Entrar\n\nA ameaça de combater é não credível — o Incumbente não a executaria ex-post.\nResposta: (c)\nNota: existe um EN na forma normal em que Entrante fica fora com base na ameaça de combater — mas a indução para trás elimina esse EN por envolver estratégias não credíveis."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#exercício-de-desenvolvimento",
+    "href": "slides/24_jogos_II_stackelberg.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício de Desenvolvimento",
+    "text": "Exercício de Desenvolvimento\nDois produtores de aço, a Empresa 1 (líder) e a Empresa 2 (seguidor), operam no mercado com procura inversa \\(P = 30 - (q_1 + q_2)\\) e custo marginal \\(Cmg = 6\\) para ambas.\nAlíneas:\n\nDerive a função de reacção do seguidor (Empresa 2), \\(q_2^*(q_1)\\).\nSubstitua \\(q_2^*(q_1)\\) na função de lucro do líder e simplifique.\nDetermine a quantidade óptima do líder \\(q_1^*\\) e a resposta do seguidor \\(q_2^*\\).\nCalcule \\(Q^*_S\\), \\(P^*_S\\), \\(\\Pi_{\\text{líder}}\\) e \\(\\Pi_{\\text{seguidor}}\\).\nCompare com o equilíbrio de Cournot da aula anterior (\\(q^C = 8\\), \\(\\Pi^C = 64\\)). Quem ganha e quem perde com a liderança? Justifique.\nComplete a tabela com os quatro resultados: monopólio, Stackelberg, Cournot, concorrência perfeita."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/24_jogos_II_stackelberg.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício de Desenvolvimento",
+    "text": "Solução — Exercício de Desenvolvimento\na) \\(\\Pi_2 = (30-q_1-q_2-6)q_2\\). CPO: \\(24-q_1-2q_2=0\\)\n\\[q_2^*(q_1) = 12 - \\frac{q_1}{2}\\]\n\nb) \\(\\Pi_1 = \\!\\left(30-q_1-\\!\\left(12-\\tfrac{q_1}{2}\\right)-6\\right)q_1 = \\!\\left(12-\\tfrac{q_1}{2}\\right)q_1 = 12q_1 - \\tfrac{q_1^2}{2}\\)\n\n\nc) \\(\\dfrac{d\\Pi_1}{dq_1} = 12 - q_1 = 0 \\Rightarrow q_1^* = 12\\)\n\\(q_2^* = 12 - 6 = 6\\)\n\n\nd) \\(Q^*_S = 18\\), \\(P^*_S = 30-18 = 12\\)\n\\(\\Pi_{\\text{líder}} = (12-6)\\times 12 = 72\\) \\(\\quad;\\quad\\) \\(\\Pi_{\\text{seguidor}} = (12-6)\\times 6 = 36\\)\n\n\ne) O líder ganha \\(72 &gt; 64\\) (Cournot): ao comprometer-se com \\(q_1=12\\), força o seguidor a retrair-se para \\(q_2=6\\), capturando mais mercado. O seguidor perde: \\(36 &lt; 64\\) (Cournot) — é penalizado por agir segundo, ficando com um mercado residual mais pequeno.\n\n\nf)\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi_1\\)\n\\(\\Pi_2\\)\n\n\n\n\nMonopólio\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\\(72\\)\n\n\nStackelberg\n\\(18\\)\n\\(12\\)\n\\(72\\)\n\\(36\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\\(64\\)\n\n\nConc. Perfeita\n\\(24\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#uma-pergunta-simples",
+    "href": "slides/25_bertrand_colusao.html#uma-pergunta-simples",
+    "title": "Microeconomia",
+    "section": "Uma Pergunta Simples",
+    "text": "Uma Pergunta Simples\nEm Cournot, duas empresas com \\(Cmg = 6\\) e procura \\(P = 30 - Q\\) obtêm:\n\\[Q_C = 16,\\quad P_C = 14,\\quad \\Pi_C = 64 \\text{ cada}\\]\n\nE se, em vez de escolherem quantidades, as empresas escolhessem preços?\n\n\n\n\n\n\n\n\nImportant\n\n\nEsta é a diferença essencial entre Cournot e Bertrand: a variável estratégica. Mesma estrutura de mercado, mesmo número de empresas — resultado radicalmente diferente."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#a-lógica-do-undercutting",
+    "href": "slides/25_bertrand_colusao.html#a-lógica-do-undercutting",
+    "title": "Microeconomia",
+    "section": "A Lógica do Undercutting",
+    "text": "A Lógica do Undercutting\nCom produto homogéneo, consumidores compram sempre à empresa mais barata.\n\nSuponha que a Empresa B cobra \\(P_B = 14\\) (preço de Cournot):\n\nA Empresa A cobra \\(P_A = 13{,}99\\) — captura todo o mercado e ganha lucro positivo\nB responde com \\(P_B = 13{,}98\\) — captura todo o mercado de volta\nA responde com \\(P_A = 13{,}97\\ldots\\)\n\n\n\nEste processo — undercutting — só pára quando nenhuma empresa tem incentivo a baixar mais o preço.\n\n\n\\[P_A = P_B = Cmg = 6\\]\nAbaixo de \\(Cmg\\), vender implica prejuízo. Acima de \\(Cmg\\), a rival subcorta."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#o-paradoxo-de-bertrand",
+    "href": "slides/25_bertrand_colusao.html#o-paradoxo-de-bertrand",
+    "title": "Microeconomia",
+    "section": "O Paradoxo de Bertrand",
+    "text": "O Paradoxo de Bertrand\n\n\n\n\n\n\nImportant\n\n\nParadoxo de Bertrand: com apenas duas empresas, produto homogéneo e decisões simultâneas de preço, o equilíbrio de Nash é \\(P = Cmg\\) — o mesmo resultado que concorrência perfeita com infinitas empresas.\n\n\n\n\nVerificação do Equilíbrio de Nash:\n\nSe \\(P_B = 6 = Cmg\\): cobrar \\(P_A &lt; 6\\) gera prejuízo; cobrar \\(P_A &gt; 6\\) perde todos os clientes; cobrar \\(P_A = 6\\) dá lucro zero. Nenhum desvio é rentável. ✓\n\n\n\n\\[P^*_{\\text{Bert}} = Cmg = 6 \\qquad Q^*_{\\text{Bert}} = 24 \\qquad \\Pi^*_{\\text{Bert}} = 0\\]"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#cournot-vs.-bertrand-o-que-muda",
+    "href": "slides/25_bertrand_colusao.html#cournot-vs.-bertrand-o-que-muda",
+    "title": "Microeconomia",
+    "section": "Cournot vs. Bertrand — O que Muda?",
+    "text": "Cournot vs. Bertrand — O que Muda?\n\n\n\n\nCournot\nBertrand\n\n\n\n\nVariável estratégica\nQuantidade\nPreço\n\n\nTiming\nSimultâneo\nSimultâneo\n\n\nResultado\n\\(P &gt; Cmg\\), \\(\\Pi &gt; 0\\)\n\\(P = Cmg\\), \\(\\Pi = 0\\)\n\n\nEquivalente a\n—\nConc. Perfeita\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nO paradoxo levanta uma questão: qual o modelo mais realista? Depende do mercado. Quando as empresas constroem capacidade com antecedência (e depois competem em preço), o resultado aproxima-se de Cournot. Quando podem ajustar a oferta instantaneamente, Bertrand é mais adequado."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#saídas-do-paradoxo",
+    "href": "slides/25_bertrand_colusao.html#saídas-do-paradoxo",
+    "title": "Microeconomia",
+    "section": "Saídas do Paradoxo",
+    "text": "Saídas do Paradoxo\nNa prática, o resultado de Bertrand raramente se verifica porque:\n\nDiferenciação de produto — com produtos diferentes, a empresa que baixa o preço não captura imediatamente todo o mercado; há fidelização\nCapacidade instalada limitada — se a empresa não tem capacidade para servir todo o mercado, o undercutting total não é possível\nInteracção repetida — em mercados com encontros frequentes, a ameaça de represália pode sustentar preços acima de \\(Cmg\\)\n\n\n\n\n\n\n\n\nTip\n\n\nEste último ponto — a interacção repetida — é o tema da segunda parte desta aula. A repetição transforma o jogo e pode sustentar resultados que não seriam possíveis num jogo de uma só vez."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#o-sonho-do-cartel",
+    "href": "slides/25_bertrand_colusao.html#o-sonho-do-cartel",
+    "title": "Microeconomia",
+    "section": "O Sonho do Cartel",
+    "text": "O Sonho do Cartel\nSe as empresas pudessem coordenar os preços, agiriam como um monopolista:\n\\[Q_m = 12,\\quad P_m = 18,\\quad \\Pi_m = 144 \\quad\\Rightarrow\\quad \\Pi_{\\text{cada}} = 72\\]\n\nComparando com Bertrand (\\(\\Pi = 0\\)) e Cournot (\\(\\Pi = 64\\)), a colusão maximiza o lucro conjunto.\n\n\nMas cada empresa tem incentivo a desviar:\n\n\nSe B mantém o preço de cartel \\(P_B = 18\\), A pode cobrar \\(P_A = 17{,}99\\) e capturar todo o mercado, obtendo \\(\\Pi_A \\approx 144\\) em vez de \\(72\\).\n\n\n\n\n\n\n\n\nImportant\n\n\nEstrutura de Dilema do Prisioneiro (já conhecida da Aula 22): o resultado colectivamente óptimo (cooperar) não é sustentável num jogo de uma só vez porque cada empresa tem incentivo a desviar unilateralmente."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#matriz-do-jogo-de-preços-uma-vez",
+    "href": "slides/25_bertrand_colusao.html#matriz-do-jogo-de-preços-uma-vez",
+    "title": "Microeconomia",
+    "section": "Matriz do Jogo de Preços (Uma Vez)",
+    "text": "Matriz do Jogo de Preços (Uma Vez)\n\nDesviar domina Colusão (num jogo de uma só vez): \\(144 &gt; 72\\) se o outro coopera; \\(0 = 0\\) se o outro desvia.\nEN: (Desviar, Desviar) = (0, 0) — mesma estrutura do dilema do prisioneiro. ✓"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#a-repetição-muda-o-jogo",
+    "href": "slides/25_bertrand_colusao.html#a-repetição-muda-o-jogo",
+    "title": "Microeconomia",
+    "section": "A Repetição Muda o Jogo",
+    "text": "A Repetição Muda o Jogo\nNum mercado real, as empresas interagem repetidamente — todos os meses, todos os anos.\n\nA repetição introduz um elemento novo: a ameaça de represália futura.\n\n\n\nSe A desviar hoje, B pune A amanhã (e depois, e sempre)\nA punição reduz os lucros futuros de A\nSe A valorizar suficientemente o futuro, a ameaça de punição pode impedir o desvio\n\n\n\n\n\n\n\n\n\nNote\n\n\nO jogo repetido não elimina o incentivo a desviar num único período — mas cria um trade-off inter-temporal: ganho imediato de desviar vs. perda de lucros futuros pela punição."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#o-factor-de-desconto-delta",
+    "href": "slides/25_bertrand_colusao.html#o-factor-de-desconto-delta",
+    "title": "Microeconomia",
+    "section": "O Factor de Desconto \\(\\delta\\)",
+    "text": "O Factor de Desconto \\(\\delta\\)\n\\(\\delta \\in (0,1)\\) é o factor de desconto — mede quanto a empresa valoriza \\(1\\) euro de lucro no próximo período em comparação com \\(1\\) euro hoje.\n\n\n\\(\\delta\\) próximo de \\(1\\): empresa muito paciente — valoriza muito o futuro\n\\(\\delta\\) próximo de \\(0\\): empresa impaciente — quase só valoriza o presente\n\n\n\nO valor presente de um fluxo constante \\(\\Pi\\) por período, para sempre:\n\\[NPV = \\Pi + \\delta\\Pi + \\delta^2\\Pi + \\ldots = \\frac{\\Pi}{1-\\delta}\\]\n\n\n\n\n\n\n\n\nTip\n\n\n\\(\\delta\\) pode interpretar-se como \\(\\dfrac{1}{1+r}\\) onde \\(r\\) é a taxa de juro, ou como a probabilidade de o jogo continuar no próximo período."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#estratégia-grim-trigger",
+    "href": "slides/25_bertrand_colusao.html#estratégia-grim-trigger",
+    "title": "Microeconomia",
+    "section": "Estratégia Grim Trigger",
+    "text": "Estratégia Grim Trigger\nA estratégia mais simples que pode sustentar a colusão:\n\n\n\n\n\n\n\nNote\n\n\nGrim Trigger (gatilho implacável):\n\nCooperar (cobrar \\(P_m\\)) enquanto o rival cooperar\nSe o rival desviar alguma vez: punir para sempre — cobrar \\(P = Cmg\\) (Bertrand) eternamente\n\n\n\n\n\n\nEsta estratégia é simples e credível: uma vez activada a punição, jogar Bertrand é óptimo para ambas as empresas (é o EN do jogo estático). A ameaça é credível porque não requer que ninguém “sacrifique” lucros para punir."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#condição-de-sustentabilidade-da-colusão",
+    "href": "slides/25_bertrand_colusao.html#condição-de-sustentabilidade-da-colusão",
+    "title": "Microeconomia",
+    "section": "Condição de Sustentabilidade da Colusão",
+    "text": "Condição de Sustentabilidade da Colusão\nEmpresa A compara dois cenários:\n\nCooperar sempre (recebe \\(\\Pi_{coop}\\) por período):\n\\[NPV_{\\text{coop}} = \\frac{\\Pi_{coop}}{1-\\delta}\\]\n\n\nDesviar hoje (recebe \\(\\Pi_{dev}\\) hoje, depois punição \\(\\Pi_N = 0\\) para sempre):\n\\[NPV_{dev} = \\Pi_{dev} + \\frac{\\delta \\cdot 0}{1-\\delta} = \\Pi_{dev}\\]\n\n\nColusão sustentável se \\(NPV_{\\text{coop}} \\geq NPV_{dev}\\):\n\\[\\frac{\\Pi_{coop}}{1-\\delta} \\geq \\Pi_{dev} \\quad\\Leftrightarrow\\quad \\delta \\geq 1 - \\frac{\\Pi_{coop}}{\\Pi_{dev}}\\]"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#derivação-do-delta-mínimo",
+    "href": "slides/25_bertrand_colusao.html#derivação-do-delta-mínimo",
+    "title": "Microeconomia",
+    "section": "Derivação do \\(\\delta\\) Mínimo",
+    "text": "Derivação do \\(\\delta\\) Mínimo\nCom \\(\\Pi_{coop} = 72\\) e \\(\\Pi_{dev} = 144\\):\n\\[\\frac{72}{1-\\delta} \\geq 144\\]\n\n\\[72 \\geq 144(1-\\delta)\\]\n\n\n\\[144\\delta \\geq 144 - 72 = 72\\]\n\n\n\\[\\boxed{\\delta \\geq \\frac{1}{2}}\\]\n\n\n\n\n\n\n\n\nImportant\n\n\nSe \\(\\delta \\geq \\tfrac{1}{2}\\), a colusão é sustentável com grim trigger. Se \\(\\delta &lt; \\tfrac{1}{2}\\), a empresa prefere desviar hoje — o futuro não pesa suficientemente para disciplinar o comportamento presente."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#interpretação-económica-de-delta-geq-frac12",
+    "href": "slides/25_bertrand_colusao.html#interpretação-económica-de-delta-geq-frac12",
+    "title": "Microeconomia",
+    "section": "Interpretação Económica de \\(\\delta \\geq \\frac{1}{2}\\)",
+    "text": "Interpretação Económica de \\(\\delta \\geq \\frac{1}{2}\\)\n\nQuanto maior \\(\\delta\\) (mais paciente a empresa), maior \\(NPV_{\\text{coop}}\\) — o fluxo futuro de lucros de colusão vale mais. Para \\(\\delta = \\tfrac{1}{2}\\): \\(NPV_{\\text{coop}} = \\tfrac{72}{1/2} = 144 = NPV_{dev}\\) — a empresa é indiferente."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#quando-é-a-colusão-mais-provável",
+    "href": "slides/25_bertrand_colusao.html#quando-é-a-colusão-mais-provável",
+    "title": "Microeconomia",
+    "section": "Quando é a Colusão Mais Provável?",
+    "text": "Quando é a Colusão Mais Provável?\nA condição \\(\\delta \\geq \\tfrac{1}{2}\\) é mais fácil de satisfazer quando:\n\nTaxas de juro baixas — \\(\\delta = 1/(1+r)\\) é maior quando \\(r\\) é pequeno; o futuro desconta menos\nMercado estável e de longa duração — horizon longo aumenta o valor dos lucros futuros\nInteracções frequentes — empresas que se encontram frequentemente têm mais oportunidades de punir desvios rapidamente\nPoucos participantes — é mais fácil monitorizar o comportamento das rivais e detectar desvios\nLucro de desvio relativamente pequeno — se \\(\\Pi_{dev}/\\Pi_{coop}\\) for baixo, o \\(\\delta\\) necessário é menor\n\n\n\n\n\n\n\n\nNote\n\n\nImplicação para a política de concorrência: os reguladores monitorizam especialmente mercados concentrados, estáveis e com interacções frequentes — precisamente onde a colusão tácita é mais fácil de sustentar."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#tabela-final-todas-as-estruturas",
+    "href": "slides/25_bertrand_colusao.html#tabela-final-todas-as-estruturas",
+    "title": "Microeconomia",
+    "section": "Tabela Final: Todas as Estruturas",
+    "text": "Tabela Final: Todas as Estruturas\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi\\) cada\nEficiência\n\n\n\n\nMonopólio/Cartel\n\\(12\\)\n\\(18\\)\n\\(72\\)\nMínima\n\n\nStackelberg\n\\(18\\)\n\\(12\\)\n\\(72\\ /\\ 36\\)\n—\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\nIntermédia\n\n\nBertrand\n\\(24\\)\n\\(6\\)\n\\(0\\)\nMáxima\n\n\nConc. Perfeita\n\\(24\\)\n\\(6\\)\n\\(0\\)\nMáxima\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nBertrand com produto homogéneo e custos idênticos reproduz exactamente o resultado de concorrência perfeita — com apenas duas empresas. A variável estratégica importa tanto quanto o número de concorrentes."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#exercício-1-escolha-múltipla",
+    "href": "slides/25_bertrand_colusao.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nDuas empresas com produto homogéneo e \\(Cmg = 10\\) competem em preços (Bertrand). O equilíbrio de Nash é:\n\n\\(P = 10\\), \\(\\Pi = 0\\) para cada empresa\n\\(P &gt; 10\\), com lucros positivos para ambas\nUma empresa cobra \\(P &gt; 10\\) e a outra cobra \\(P = 10\\)\nDepende da procura — não há solução geral"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#solução-exercício-1",
+    "href": "slides/25_bertrand_colusao.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 1",
+    "text": "Solução — Exercício 1\nA lógica de undercutting: qualquer \\(P &gt; Cmg = 10\\) é instável — a rival tem incentivo a cobrar \\(P - \\varepsilon\\) e capturar todo o mercado.\nO processo pára em \\(P = Cmg = 10\\): abaixo, há prejuízo; acima, a rival subcorta.\nResposta: (a)\nVerificação Nash: se \\(P_B = 10\\), cobrar \\(P_A &lt; 10\\) gera prejuízo; cobrar \\(P_A &gt; 10\\) perde clientes; cobrar \\(P_A = 10\\) dá \\(\\Pi = 0\\). Nenhum desvio é estritamente rentável. ✓"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#exercício-2-escolha-múltipla",
+    "href": "slides/25_bertrand_colusao.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nEm jogos repetidos com estratégia grim trigger, se o lucro de cooperação é \\(\\Pi_{coop} = 8\\) e o lucro de desvio é \\(\\Pi_{dev} = 16\\) (com punição Bertrand \\(\\Pi_N = 0\\)), o factor de desconto mínimo para sustentar a colusão é:\n\n\\(\\delta \\geq \\dfrac{1}{4}\\)\n\\(\\delta \\geq \\dfrac{1}{3}\\)\n\\(\\delta \\geq \\dfrac{1}{2}\\)\n\\(\\delta \\geq \\dfrac{2}{3}\\)"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#solução-exercício-2",
+    "href": "slides/25_bertrand_colusao.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 2",
+    "text": "Solução — Exercício 2\nCondição: \\(\\dfrac{\\Pi_{coop}}{1-\\delta} \\geq \\Pi_{dev}\\)\n\\[\\frac{8}{1-\\delta} \\geq 16 \\quad\\Rightarrow\\quad 8 \\geq 16(1-\\delta) \\quad\\Rightarrow\\quad \\delta \\geq 1 - \\frac{8}{16} = \\frac{1}{2}\\]\nResposta: (c)\nVerificação: \\(\\delta = \\frac{1}{2}\\) \\(\\Rightarrow\\) \\(NPV_{\\text{coop}} = \\frac{8}{1/2} = 16 = NPV_{dev}\\) ✓ (restrição vinculativa)"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#exercício-de-desenvolvimento",
+    "href": "slides/25_bertrand_colusao.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício de Desenvolvimento",
+    "text": "Exercício de Desenvolvimento\nDuas empresas farmacêuticas produzem um medicamento genérico (produto homogéneo) e competem em preço. Em cada período, o lucro de monopólio partilhado é \\(\\Pi_{coop} = 60\\) (cada), o lucro de desvio (capturar todo o mercado) é \\(\\Pi_{dev} = 100\\), e o lucro de Nash de Bertrand é \\(\\Pi_N = 0\\).\nAlíneas:\n\nExplique por que razão, num jogo de uma só vez, nenhuma empresa consegue manter o preço de monopólio. Qual é o Equilíbrio de Nash estático?\nNo jogo repetido com grim trigger, escreva as expressões para \\(NPV_{\\text{coop}}\\) e \\(NPV_{dev}\\).\nDerive o valor mínimo de \\(\\delta\\) para que a colusão seja sustentável.\nInterprete o resultado: que condições de mercado favorecem \\(\\delta\\) acima do limiar calculado?\nSuponha que o regulador consegue aumentar a probabilidade de detecção do cartel, o que equivale a reduzir \\(\\Pi_{dev}\\) para \\(80\\) (coima esperada reduz o ganho do desvio). Recalcule o \\(\\delta\\) mínimo. O que conclui?"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/25_bertrand_colusao.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício de Desenvolvimento",
+    "text": "Solução — Exercício de Desenvolvimento\na) Num jogo de uma só vez, desviar domina: se a rival coopera, \\(\\Pi_{dev}=100 &gt; \\Pi_{coop}=60\\); se a rival desvia, \\(0 = 0\\). Ambas desviam. EN estático: (Desviar, Desviar) = (0, 0). A colusão colapsa pela lógica do dilema do prisioneiro.\n\nb) \\[NPV_{\\text{coop}} = \\frac{60}{1-\\delta} \\qquad NPV_{dev} = 100 + \\frac{\\delta \\cdot 0}{1-\\delta} = 100\\]\n\n\nc) \\(NPV_{\\text{coop}} \\geq NPV_{dev}\\):\n\\[\\frac{60}{1-\\delta} \\geq 100 \\;\\Rightarrow\\; 60 \\geq 100(1-\\delta) \\;\\Rightarrow\\; 100\\delta \\geq 40 \\;\\Rightarrow\\; \\boxed{\\delta \\geq \\frac{2}{5}}\\]\nVerificação: \\(\\delta = \\frac{2}{5}\\) \\(\\Rightarrow\\) \\(NPV_{\\text{coop}} = \\frac{60}{3/5} = 100 = NPV_{dev}\\) ✓ (restrição vinculativa)\n\n\nd) \\(\\delta \\geq \\frac{2}{5}\\) é mais fácil de satisfazer com taxas de juro baixas (empresas pacientes), horizonte longo, interacções frequentes e poucos concorrentes (monitorização fácil de desvios).\n\n\ne) Com \\(\\Pi_{dev} = 80\\):\n\\[\\frac{60}{1-\\delta} \\geq 80 \\;\\Rightarrow\\; 60 \\geq 80(1-\\delta) \\;\\Rightarrow\\; 80\\delta \\geq 20 \\;\\Rightarrow\\; \\delta \\geq \\frac{1}{4}\\]\nVerificação: \\(\\delta = \\frac{1}{4}\\) \\(\\Rightarrow\\) \\(NPV_{\\text{coop}} = \\frac{60}{3/4} = 80 = NPV_{dev}\\) ✓\nO \\(\\delta\\) mínimo baixou de \\(\\frac{2}{5}\\) para \\(\\frac{1}{4}\\): desviar tornou-se menos atractivo (o ganho cai de 100 para 80), pelo que empresas com menos paciência conseguem agora manter o acordo. A política de leniência funciona de forma diferente: ao reduzir o ganho do desvio, o regulador na verdade facilita a colusão tácita. O verdadeiro efeito dissuasor vem de reduzir os lucros de cooperação (proibição e coimas sobre os lucros do cartel), não apenas o ganho de desviar."
   }
 ]

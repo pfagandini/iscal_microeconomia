@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
-  <meta name="author" content="Paulo Fagandini">
+  <meta name="author" content="ISCAL - IPL">
   <title>Iscal - Microeconomia (Plano de Transição) – Microeconomia</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -128,427 +128,418 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Microeconomia</h1>
-  <p class="subtitle">Escolhas Racionais: Excedente, Cmg-Bmg</p>
+  <p class="subtitle">Aula 22 — Introdução à Teoria de Jogos</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Paulo Fagandini 
+ISCAL - IPL 
 </div>
-        <p class="quarto-title-affiliation">
-            ISCAL-IPL
-          </p>
-    </div>
+</div>
 </div>
 
 </section>
-<section id="análise-custo-benefício" class="slide level2">
-<h2>Análise Custo-Benefício</h2>
-<p>A comparação entre <strong>custos marginais</strong> e <strong>benefícios marginais</strong> é particularmente útil quando é necessário escolher a <strong>quantidade</strong> de um recurso que está a ser utilizada ou a quantidade de um bem que se está a produzir.</p>
-</section>
-<section class="slide level2">
+<section>
+<section id="o-que-é-um-jogo" class="title-slide slide level1 center" data-background-color="#2C3E7A">
+<h1>O que é um Jogo?</h1>
 
-<h3 id="princípio-fundamental">Princípio Fundamental</h3>
-<p>Valerá a pena <strong>aumentar a quantidade</strong> enquanto o <strong>benefício marginal</strong> (benefício adicional por mais uma unidade) for <strong>superior</strong> ao <strong>custo marginal</strong> (custo adicional por essa unidade).</p>
 </section>
-<section id="exemplo-produtor-de-pêra-rocha" class="slide level2">
-<h2>Exemplo: Produtor de Pêra Rocha</h2>
-<p>Um produtor de Pêra Rocha do Oeste precisa decidir que quantidade de pêra deve colher nos seus pomares.</p>
+<section id="porque-precisamos-de-teoria-de-jogos" class="slide level2">
+<h2>Porque precisamos de Teoria de Jogos?</h2>
+<p>Até agora, cada decisor foi analisado em <strong>isolamento</strong>:</p>
 <ul>
-<li class="fragment">Se colher mais, consegue <strong>vender mais</strong></li>
-<li class="fragment">Mas também tem <strong>mais custos</strong></li>
+<li class="fragment">O consumidor maximiza utilidade dado um preço que não controla</li>
+<li class="fragment">A empresa em CP escolhe <span class="math inline">\(Q\)</span> dado um preço de mercado</li>
+<li class="fragment">O monopolista optimiza face a uma curva de procura passiva</li>
 </ul>
 <div class="fragment">
-<p>As receitas e os custos são de acordo com o quadro seguinte:</p>
+<p>Mas e quando <strong>o resultado de cada agente depende das escolhas dos outros</strong>?</p>
 </div>
-</section>
-<section class="slide level2">
-
-<h3 id="dados-do-problema">Dados do Problema</h3>
-<table class="caption-top">
-<colgroup>
-<col style="width: 27%">
-<col style="width: 24%">
-<col style="width: 21%">
-<col style="width: 8%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Quantidade (10s caixas)</th>
-<th>Receitas (benefício)</th>
-<th>Benefício marginal</th>
-<th>Custos</th>
-<th>Custo marginal</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10</td>
-<td>€100</td>
-<td></td>
-<td>€80</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td>€109</td>
-<td></td>
-<td>€85</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>12</td>
-<td>€117</td>
-<td></td>
-<td>€92</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>€124</td>
-<td></td>
-<td>€100</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>14</td>
-<td>€130</td>
-<td></td>
-<td>€110</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="slide level2">
-
-<h3 id="cálculo-do-benefício-marginal">Cálculo do Benefício Marginal</h3>
-<table class="caption-top">
-<colgroup>
-<col style="width: 27%">
-<col style="width: 24%">
-<col style="width: 21%">
-<col style="width: 8%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Quantidade (10s caixas)</th>
-<th>Receitas (benefício)</th>
-<th>Benefício marginal</th>
-<th>Custos</th>
-<th>Custo marginal</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10</td>
-<td>€100</td>
-<td>-</td>
-<td>€80</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td>€109</td>
-<td><strong>€9</strong></td>
-<td>€85</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>12</td>
-<td>€117</td>
-<td><strong>€8</strong></td>
-<td>€92</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>€124</td>
-<td><strong>€7</strong></td>
-<td>€100</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>14</td>
-<td>€130</td>
-<td><strong>€6</strong></td>
-<td>€110</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="slide level2">
-
-<h3 id="cálculo-do-custo-marginal">Cálculo do Custo Marginal</h3>
-<table class="caption-top">
-<colgroup>
-<col style="width: 27%">
-<col style="width: 24%">
-<col style="width: 21%">
-<col style="width: 8%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Quantidade (10s caixas)</th>
-<th>Receitas (benefício)</th>
-<th>Benefício marginal</th>
-<th>Custos</th>
-<th>Custo marginal</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10</td>
-<td>€100</td>
-<td>-</td>
-<td>€80</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td>€109</td>
-<td>€9</td>
-<td>€85</td>
-<td><strong>€5</strong></td>
-</tr>
-<tr class="odd">
-<td>12</td>
-<td>€117</td>
-<td>€8</td>
-<td>€92</td>
-<td><strong>€7</strong></td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>€124</td>
-<td>€7</td>
-<td>€100</td>
-<td><strong>€8</strong></td>
-</tr>
-<tr class="odd">
-<td>14</td>
-<td>€130</td>
-<td>€6</td>
-<td>€110</td>
-<td><strong>€10</strong></td>
-</tr>
-</tbody>
-</table>
-<p><span class="math display">\[Bmg = \frac{\Delta B}{\Delta Q}, \quad Cmg = \frac{\Delta C}{\Delta Q}\]</span></p>
-</section>
-<section class="slide level2">
-
-<h3 id="tabela-completa">Tabela Completa</h3>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Quantidade (10s caixas)</th>
-<th>Receitas</th>
-<th>Bmg</th>
-<th>Custos</th>
-<th>Cmg</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10</td>
-<td>€100</td>
-<td>-</td>
-<td>€80</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td>€109</td>
-<td>€9</td>
-<td>€85</td>
-<td>€5</td>
-</tr>
-<tr class="odd">
-<td>12</td>
-<td>€117</td>
-<td>€8</td>
-<td>€92</td>
-<td>€7</td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>€124</td>
-<td>€7</td>
-<td>€100</td>
-<td>€8</td>
-</tr>
-<tr class="odd">
-<td>14</td>
-<td>€130</td>
-<td>€6</td>
-<td>€110</td>
-<td>€10</td>
-</tr>
-<tr class="even">
-<td>16</td>
-<td>€140</td>
-<td>€5</td>
-<td>€132</td>
-<td>€11</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>Qual a quantidade ótima de caixas a produzir?</p>
-</blockquote>
-</section>
-<section class="slide level2">
-
-<h3 id="cálculo-do-lucro">Cálculo do Lucro</h3>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Quantidade</th>
-<th>Receitas</th>
-<th>Bmg</th>
-<th>Custos</th>
-<th>Cmg</th>
-<th><strong>Lucro</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10</td>
-<td>€100</td>
-<td>-</td>
-<td>€80</td>
-<td>-</td>
-<td>€20</td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td>€109</td>
-<td>€9</td>
-<td>€85</td>
-<td>€5</td>
-<td>€24</td>
-</tr>
-<tr class="odd">
-<td><strong>12</strong>*</td>
-<td><strong>€117</strong></td>
-<td><strong>€8</strong></td>
-<td><strong>€92</strong></td>
-<td><strong>€7</strong></td>
-<td><strong>€25</strong></td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>€124</td>
-<td>€7</td>
-<td>€100</td>
-<td>€8</td>
-<td>€24</td>
-</tr>
-<tr class="odd">
-<td>14</td>
-<td>€130</td>
-<td>€6</td>
-<td>€110</td>
-<td>€10</td>
-<td>€20</td>
-</tr>
-<tr class="even">
-<td>16</td>
-<td>€140</td>
-<td>€5</td>
-<td>€132</td>
-<td>€11</td>
-<td>€12</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Quantidade ótima: 12 caixas</strong> (onde Bmg ≈ Cmg)</p>
-</section>
-<section id="optimização-de-uma-função" class="slide level2">
-<h2>Optimização de uma função</h2>
-<p>Se a uma função <span class="math inline">\(f\)</span> for diferenciàvel no conjunto aberto <span class="math inline">\(S\)</span>, então:</p>
-<ol type="1">
-<li class="fragment">Se para <span class="math inline">\(x^*\in S\)</span>, <span class="math inline">\(f'(x^*)=0\)</span>, e <span class="math inline">\(f''(x^*)&lt;0\)</span>, então <span class="math inline">\(x^*\)</span> é um máximo local.</li>
-<li class="fragment">Se para <span class="math inline">\(x^*\in S\)</span>, <span class="math inline">\(f'(x^*)=0\)</span>, e <span class="math inline">\(f''(x^*)&gt;0\)</span>, então <span class="math inline">\(x^*\)</span> é um minimo local.</li>
-</ol>
 <div class="fragment">
-<p>À condição na primeira derivada chamamos <strong>Condição de Primeiro Ordem (CPO)</strong>, e à condição na segunda derivada chamamos <strong>Condição de Segundo Ordem (CSO)</strong>.</p>
-<blockquote>
-<p>Se a função tiver segunda derivada monotónica, então a <strong>CSO</strong> não é necessária.</p>
-</blockquote>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>Em oligopólio, duas ou três empresas controlam o mercado. A decisão de uma <strong>afecta directamente</strong> o lucro das outras. Cada empresa precisa de antecipar o comportamento das rivais — e elas sabem disso.</p>
+<p>A teoria de jogos é a ferramenta adequada para analisar estas situações de <strong>interdependência estratégica</strong>.</p>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="condição-matemática-de-máximo" class="slide level2">
-<h2>Condição Matemática de Máximo</h2>
-<p>Para maximizar o lucro (Benefício - Custo):</p>
-<p><span class="math display">\[
-\max\ (B - C)
-\]</span></p>
-<p>Condição de primeira ordem:</p>
-<p><span class="math display">\[
-\frac{d(B-C)}{dQ} = 0 \Rightarrow B' - C' = 0 \Rightarrow B' = C'
-\]</span></p>
-<p><strong>Conclusão:</strong></p>
-<p><span class="math display">\[
-Bmg = Cmg
-\]</span></p>
+<section id="os-elementos-de-um-jogo" class="slide level2">
+<h2>Os Elementos de um Jogo</h2>
+<p>Todo o jogo em forma normal é definido por três elementos:</p>
+<div class="fragment">
+<p><strong>1. Jogadores</strong> — quem decide? (<span class="math inline">\(i = 1, 2, \ldots, n\)</span>)</p>
+</div>
+<div class="fragment">
+<p><strong>2. Estratégias</strong> — que acções estão disponíveis a cada jogador?</p>
+<p><span class="math display">\[S_i = \{s_{i1},\ s_{i2},\ \ldots\}\]</span></p>
+</div>
+<div class="fragment">
+<p><strong>3. Payoffs</strong> — que resultado obtém cada jogador para cada combinação de estratégias?</p>
+<p><span class="math display">\[\pi_i(s_1, s_2, \ldots, s_n)\]</span></p>
+</div>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>O payoff pode representar lucro, utilidade, anos de prisão evitados, ou qualquer medida de bem-estar relevante. A teoria é geral — o conteúdo depende da aplicação.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="conclusões-sobre-análise-marginal" class="slide level2">
-<h2>Conclusões sobre Análise Marginal</h2>
-<ol type="1">
-<li class="fragment"><p><strong>Análise marginal</strong> é o cálculo da variação de uma variável por unidade adicional de outra</p></li>
-<li class="fragment"><p>Análise marginal corresponde, portanto, a uma <strong>taxa de variação média</strong></p></li>
-<li class="fragment"><p>Uma taxa de variação média é uma <strong>derivada</strong></p></li>
-<li class="fragment"><p>O critério custo-benefício corresponde à <strong>condição de primeira ordem de máximo</strong></p></li>
-</ol>
-</section>
-<section id="racionalidade" class="slide level2">
-<h2>Racionalidade</h2>
-<p>Por vezes, os agentes económicos <strong>não</strong> tomam decisões racionais, porque a racionalidade é <strong>limitada</strong>, já que:</p>
-<ol type="1">
-<li class="fragment">A realidade é muito <strong>complexa</strong></li>
-<li class="fragment">A capacidade <strong>cognitiva</strong> dos indivíduos é limitada</li>
-<li class="fragment">A <strong>informação</strong> é frequentemente incompleta</li>
-</ol>
-</section>
-<section class="slide level2">
+<section id="forma-normal-a-matriz-de-payoffs" class="slide level2">
+<h2>Forma Normal: A Matriz de Payoffs</h2>
+<p>Com dois jogadores e duas estratégias cada, o jogo representa-se numa <strong>matriz <span class="math inline">\(2\times2\)</span></strong>:</p>
+<div class="fragment">
+</div>
+<div class="fragment">
+<p>Convenção: cada célula mostra <span class="math inline">\((\pi_A,\ \pi_B)\)</span> — <strong>primeiro o payoff da empresa que escolhe a linha</strong>, segundo o da coluna.</p>
+</div>
+</section></section>
+<section>
+<section id="conceitos-fundamentais" class="title-slide slide level1 center" data-background-color="#2C3E7A">
+<h1>Conceitos Fundamentais</h1>
 
-<h3 id="pressuposto-do-curso">Pressuposto do Curso</h3>
-<p>Mas admitiremos que os indivíduos são <strong>racionais</strong> e que reagem a <strong>incentivos</strong>.</p>
-<p><strong>Escolhas racionais são escolhas eficientes.</strong></p>
 </section>
-<section id="eficiência" class="slide level2">
-<h2>Eficiência</h2>
-<p><strong>Eficiência</strong> (no sentido de Pareto) significa não poder melhorar a situação de um agente económico sem piorar a situação de outro…</p>
-<p>Em geral, todas as escolhas eficientes têm subjacente um <strong>trade-off</strong>: uma situação de escolha em que para ter mais de uma opção é preciso prescindir de outra.</p>
-<p><strong>Na produção, eficiência é incompatível com desaproveitamento de recursos.</strong></p>
+<section id="dominância-estrita" class="slide level2">
+<h2>Dominância Estrita</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Definição:</strong> A estratégia <span class="math inline">\(s_i\)</span> <strong>domina estritamente</strong> <span class="math inline">\(s_i'\)</span> se, independentemente do que os outros jogadores fizerem, <span class="math inline">\(s_i\)</span> dá sempre um payoff estritamente superior a <span class="math inline">\(s_i'\)</span>.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>Se existe uma estratégia dominante para um jogador, um agente racional <strong>nunca</strong> escolhe a estratégia dominada — independentemente das suas crenças sobre os rivais.</p>
+</div>
+<div class="fragment">
+<p><strong>Eliminação iterada de estratégias dominadas:</strong></p>
+<ol type="1">
+<li>Eliminar as estratégias estritamente dominadas de cada jogador</li>
+<li>Repetir com a matriz reduzida</li>
+<li>Continuar até não haver mais eliminações</li>
+</ol>
+</div>
+<div class="fragment">
+<p>Se este processo conduz a uma única célula, temos um <strong>equilíbrio em estratégias dominantes</strong>.</p>
+</div>
 </section>
-<section id="bem-estar-social" class="slide level2">
-<h2>Bem-Estar Social</h2>
-<p>Refere-se à <strong>adição de todos os benefícios</strong> que decorrem das escolhas para todos os agentes económicos. Note que estes benefícios não fazem referência ao benefício bruto, mas sim ao <em>excedente</em>.</p>
+<section id="equilíbrio-de-nash" class="slide level2">
+<h2>Equilíbrio de Nash</h2>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Definição (John Nash, 1950):</strong> Um perfil de estratégias <span class="math inline">\((s_1^*, s_2^*, \ldots, s_n^*)\)</span> é um <strong>Equilíbrio de Nash</strong> se nenhum jogador tem incentivo a desviar-se unilateralmente, dado que os outros mantêm as suas estratégias.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>Formalmente, para cada jogador <span class="math inline">\(i\)</span>:</p>
+<p><span class="math display">\[\pi_i(s_i^*,\ s_{-i}^*) \geq \pi_i(s_i,\ s_{-i}^*) \quad \forall s_i\]</span></p>
+<p>onde <span class="math inline">\(s_{-i}^*\)</span> denota as estratégias de todos os outros jogadores.</p>
+</div>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>O Equilíbrio de Nash é um conceito de <strong>consistência mútua</strong>: cada jogador está a fazer o melhor que pode <em>dado o que os outros estão a fazer</em>. Ninguém se arrepende da sua escolha <em>a posteriori</em>.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="resumo-da-aula-2" class="slide level2">
-<h2>Resumo da Aula 2</h2>
+<section id="nash-vs.-óptimo-colectivo" class="slide level2">
+<h2>Nash vs.&nbsp;Óptimo Colectivo</h2>
+<p>Um Equilíbrio de Nash <strong>não é necessariamente</strong> o melhor resultado colectivo:</p>
+<div class="fragment">
 <ul>
-<li class="fragment"><strong>Análise custo-benefício</strong>: comparar Bmg e Cmg</li>
-<li class="fragment"><strong>Regra de otimização</strong>: aumentar quantidade enquanto Bmg &gt; Cmg</li>
-<li class="fragment"><strong>Condição de máximo</strong>: Bmg = Cmg (derivada = 0)</li>
-<li class="fragment"><strong>Racionalidade limitada</strong>: complexidade, cognição, informação</li>
-<li class="fragment"><strong>Eficiência de Pareto</strong>: não melhorar um sem piorar outro</li>
+<li>O EN é estável do ponto de vista individual — ninguém quer desviar <strong>sozinho</strong></li>
+<li>Mas pode existir outro resultado em que <strong>todos</strong> ficariam melhor</li>
+<li>Esse resultado não é sustentável sem coordenação ou compromisso vinculativo</li>
 </ul>
+</div>
+<div class="fragment">
+<p>Esta tensão entre racionalidade individual e óptimo colectivo é o coração do <strong>Dilema do Prisioneiro</strong>.</p>
+</div>
+</section></section>
+<section>
+<section id="o-dilema-do-prisioneiro" class="title-slide slide level1 center" data-background-color="#2C3E7A">
+<h1>O Dilema do Prisioneiro</h1>
+
+</section>
+<section id="a-história-original" class="slide level2">
+<h2>A História Original</h2>
+<p>Dois suspeitos são detidos e interrogados separadamente. Cada um pode:</p>
+<ul>
+<li><strong>Calar</strong> (cooperar com o cúmplice)</li>
+<li><strong>Confessar</strong> (delatar o cúmplice)</li>
+</ul>
+<div class="fragment">
+<p><em>(payoffs = anos de prisão evitados — maior é melhor)</em></p>
+</div>
+</section>
+<section id="análise-dominância-e-nash" class="slide level2">
+<h2>Análise: Dominância e Nash</h2>
+<p><strong>Raciocínio de A:</strong></p>
+<ul>
+<li>Se B calar: A obtém <span class="math inline">\(5\)</span> (confessar) vs <span class="math inline">\(4\)</span> (calar) <span class="math inline">\(\Rightarrow\)</span> Confessar</li>
+<li>Se B confessar: A obtém <span class="math inline">\(1\)</span> (confessar) vs <span class="math inline">\(0\)</span> (calar) <span class="math inline">\(\Rightarrow\)</span> Confessar</li>
+</ul>
+<div class="fragment">
+<p><strong>Confessar domina estritamente Calar</strong> — para A. Pelo mesmo raciocínio, também para B.</p>
+</div>
+<div class="fragment">
+<p><strong>Equilíbrio de Nash: (Confessar, Confessar) = (1, 1)</strong></p>
+</div>
+<div class="fragment">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>Mas (Calar, Calar) = (4, 4) é <strong>Pareto superior</strong> — ambos ficariam melhor se calassem. O problema: nenhum consegue credibilmente comprometer-se a calar sem que o outro aproveite para confessar.</p>
+<p><strong>A racionalidade individual leva a um resultado colectivamente mau.</strong></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="aplicação-delação-premiada-em-cartéis" class="slide level2">
+<h2>Aplicação: Delação Premiada em Cartéis</h2>
+<p>O dilema do prisioneiro tem uma aplicação directa à política de concorrência:</p>
+<div class="fragment">
+<p>Duas empresas num cartel podem:</p>
+<ul>
+<li><strong>Cooperar</strong> — manter o acordo de cartel, partilhar lucros de monopólio</li>
+<li><strong>Delatar</strong> — informar a autoridade da concorrência, obtendo imunidade ou redução de coima</li>
+</ul>
+</div>
+<div class="fragment">
+<p><em>(payoffs em milhares de euros de lucro líquido)</em></p>
+</div>
+</section>
+<section id="análise-da-delação-premiada" class="slide level2">
+<h2>Análise da Delação Premiada</h2>
+<p><strong>Dominância de Delatar:</strong></p>
+<ul>
+<li>Se B cooperar: A obtém <span class="math inline">\(8\)</span> (delatar) vs <span class="math inline">\(6\)</span> (cooperar) <span class="math inline">\(\Rightarrow\)</span> Delatar</li>
+<li>Se B delatar: A obtém <span class="math inline">\(2\)</span> (delatar) vs <span class="math inline">\(0\)</span> (cooperar) <span class="math inline">\(\Rightarrow\)</span> Delatar</li>
+</ul>
+<div class="fragment">
+<p><strong>Equilíbrio de Nash: (Delatar, Delatar) = (2, 2)</strong></p>
+<p>Resultado colectivamente inferior a (Cooperar, Cooperar) = (6, 6).</p>
+</div>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Lógica da política de leniência:</strong> os reguladores exploram exactamente esta estrutura. Ao oferecer imunidade total ao primeiro a delatar, tornam a delação ainda mais atractiva — o equilíbrio de Nash desloca-se para (Delatar, Delatar) de forma ainda mais robusta.</p>
+<p>Os cartéis são instáveis precisamente porque cada membro tem incentivo a trair os parceiros.</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="outros-tipos-de-jogos" class="title-slide slide level1 center" data-background-color="#2C3E7A">
+<h1>Outros Tipos de Jogos</h1>
+
+</section>
+<section id="jogos-de-coordenação" class="slide level2">
+<h2>Jogos de Coordenação</h2>
+<p>Nem todos os jogos têm a estrutura problemática do dilema do prisioneiro:</p>
+<div class="fragment">
+<p><em>(Exemplo: lados de circulação no trânsito)</em></p>
+</div>
+<div class="fragment">
+<p>Dois Equilíbrios de Nash: <strong>(Esq, Esq)</strong> e <strong>(Dir, Dir)</strong>. Aqui o problema não é a traição — é a <strong>coordenação</strong>: ambos querem fazer o mesmo, mas qual?</p>
+</div>
+</section>
+<section id="resumo-conceitos-chave" class="slide level2">
+<h2>Resumo: Conceitos-Chave</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Conceito</th>
+<th>Definição em síntese</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Estratégia dominante</strong></td>
+<td>Melhor resposta independentemente do rival</td>
+</tr>
+<tr class="even">
+<td><strong>Estratégia dominada</strong></td>
+<td>Nunca é a melhor resposta — racional eliminá-la</td>
+</tr>
+<tr class="odd">
+<td><strong>Equilíbrio de Nash</strong></td>
+<td>Ninguém quer desviar unilateralmente</td>
+</tr>
+<tr class="even">
+<td><strong>Dilema do Prisioneiro</strong></td>
+<td>EN existe mas é Pareto inferior — racionalidade individual <span class="math inline">\(\neq\)</span> óptimo colectivo</td>
+</tr>
+<tr class="odd">
+<td><strong>Jogo de coordenação</strong></td>
+<td>Múltiplos EN — o problema é coordenar, não trair</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Na próxima aula aplicamos estes conceitos ao oligopólio: o modelo de Cournot é precisamente um jogo em que cada empresa escolhe quantidade tomando a rival como dado — e o equilíbrio de Nash em quantidades é o resultado central.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section class="slide level2">
 
-<p><strong>Próxima aula:</strong> Fronteira das Possibilidades de Produção (FPP), Custo Relativo, Vantagens do Comércio</p>
-
-
+</section></section>
+<section>
+<section id="exercícios" class="title-slide slide level1 center" data-background-color="#1a5276">
+<h1>Exercícios</h1>
 
 </section>
+<section id="exercício-1-escolha-múltipla" class="slide level2">
+<h2>Exercício 1 — Escolha Múltipla</h2>
+<p>Considere a seguinte matriz de payoffs <span class="math inline">\((\pi_A,\ \pi_B)\)</span>:</p>
+<p>O Equilíbrio de Nash desta matriz é:</p>
+<ol type="a">
+<li>(Alto, Alto) = (3, 3)</li>
+<li>(Alto, Baixo) = (1, 5)</li>
+<li>(Baixo, Baixo) = (2, 2)</li>
+<li>Não existe Equilíbrio de Nash</li>
+</ol>
+</section>
+<section id="solução-exercício-1" class="slide level2" data-visibility="uncounted">
+<h2>Solução — Exercício 1</h2>
+<p><strong>A:</strong> Se B=Alto: <span class="math inline">\(5 &gt; 3\)</span> → Baixo. Se B=Baixo: <span class="math inline">\(2 &gt; 1\)</span> → Baixo. <strong>Baixo domina.</strong></p>
+<p><strong>B:</strong> Se A=Alto: <span class="math inline">\(5 &gt; 3\)</span> → Baixo. Se A=Baixo: <span class="math inline">\(2 &gt; 1\)</span> → Baixo. <strong>Baixo domina.</strong></p>
+<p>Nash: <strong>(Baixo, Baixo) = (2, 2)</strong> — nenhum quer desviar unilateralmente.</p>
+<p>Note: (Alto, Alto) = (3, 3) é Pareto superior mas não é EN — cada um tem incentivo a desviar para Baixo.</p>
+<p><strong>Resposta: (c)</strong></p>
+</section>
+<section id="exercício-2-escolha-múltipla" class="slide level2">
+<h2>Exercício 2 — Escolha Múltipla</h2>
+<p>No Dilema do Prisioneiro, o Equilíbrio de Nash é:</p>
+<ol type="a">
+<li>O resultado que maximiza a soma dos payoffs dos dois jogadores</li>
+<li>O resultado em que nenhum jogador quer desviar, mesmo que seja Pareto inferior</li>
+<li>Sempre o resultado em que ambos cooperam</li>
+<li>O resultado que só é atingível com comunicação entre os jogadores</li>
+</ol>
+</section>
+<section id="solução-exercício-2" class="slide level2" data-visibility="uncounted">
+<h2>Solução — Exercício 2</h2>
+<ul>
+<li class="fragment"><ol type="a">
+<li class="fragment">Falso — o EN do DP é (Confessar, Confessar) que <strong>minimiza</strong> a soma dos payoffs</li>
+</ol></li>
+<li class="fragment"><strong>(b) Verdadeiro</strong> — o EN é estável individualmente (ninguém quer desviar sozinho) mesmo sendo Pareto inferior a (Calar, Calar)</li>
+<li class="fragment"><ol start="3" type="a">
+<li class="fragment">Falso — no DP o EN é precisamente a <strong>não-cooperação</strong></li>
+</ol></li>
+<li class="fragment"><ol start="4" type="a">
+<li class="fragment">Falso — o EN existe sem comunicação; com comunicação vinculativa o resultado poderia mudar, mas o EN em si não requer comunicação</li>
+</ol></li>
+</ul>
+<p><strong>Resposta: (b)</strong></p>
+</section>
+<section id="exercício-de-desenvolvimento" class="slide level2 smaller">
+<h2>Exercício de Desenvolvimento</h2>
+<p>Duas empresas, A e B, participavam num cartel ilegal. A autoridade da concorrência abre uma investigação e contacta cada empresa separadamente, oferecendo <strong>imunidade total</strong> à primeira a colaborar.</p>
+<p>Cada empresa pode <strong>Cooperar</strong> (manter silêncio) ou <strong>Delatar</strong> (colaborar com a autoridade).</p>
+<p>Os payoffs (lucro líquido esperado, em milhares de euros) são:</p>
+<ol type="a">
+<li>Mostre que <strong>Delatar</strong> é uma estratégia estritamente dominante para a Empresa A.</li>
+<li>Identifique o Equilíbrio de Nash. Qual o payoff de cada empresa?</li>
+<li>Qual o resultado colectivamente óptimo? Compare com o EN.</li>
+<li>Explique por que razão a política de leniência é eficaz para desmantelar cartéis.</li>
+</ol>
+</section>
+<section id="solução-exercício-de-desenvolvimento" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Solução — Exercício de Desenvolvimento</h2>
+<p><strong>a)</strong> Verificação da dominância de Delatar para A:</p>
+<ul>
+<li class="fragment">Se B Cooperar: A obtém <span class="math inline">\(8\)</span> (Delatar) <span class="math inline">\(&gt;\)</span> <span class="math inline">\(6\)</span> (Cooperar) <span class="math inline">\(\Rightarrow\)</span> Delatar</li>
+<li class="fragment">Se B Delatar: A obtém <span class="math inline">\(2\)</span> (Delatar) <span class="math inline">\(&gt;\)</span> <span class="math inline">\(0\)</span> (Cooperar) <span class="math inline">\(\Rightarrow\)</span> Delatar</li>
+</ul>
+<p>Delatar é estritamente dominante — A prefere Delatar <strong>independentemente</strong> da escolha de B. ✓</p>
+<div class="fragment">
+<p><strong>b)</strong> Pelo mesmo raciocínio (o jogo é simétrico), Delatar também domina para B.</p>
+<p><strong>Equilíbrio de Nash: (Delatar, Delatar) = (2, 2)</strong></p>
+<p>Nenhuma empresa quer desviar: se A está a delatar, B obtém <span class="math inline">\(2\)</span> (delatar) <span class="math inline">\(&gt;\)</span> <span class="math inline">\(0\)</span> (cooperar). ✓</p>
+</div>
+<div class="fragment">
+<p><strong>c)</strong> O resultado colectivamente óptimo é <strong>(Cooperar, Cooperar) = (6, 6)</strong> — soma de payoffs <span class="math inline">\(12 &gt; 4\)</span>.</p>
+<p>Mas não é sustentável: qualquer empresa tem incentivo a desviar unilateralmente para Delatar e obter <span class="math inline">\(8\)</span> em vez de <span class="math inline">\(6\)</span>.</p>
+</div>
+<div class="fragment">
+<p><strong>d)</strong> A política de leniência reforça exactamente esta estrutura. Ao garantir imunidade ao primeiro a delatar, o regulador torna o payoff de Delatar ainda mais atractivo. Cada empresa sabe que a rival tem incentivo a delatar primeiro — o que acelera a delação mútua. O cartel dissolve-se pela mesma lógica do dilema do prisioneiro: a racionalidade individual destrói a colusão colectiva.</p>
+
+
+
+</div>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../images/iscal_logo.svg" class="slide-logo"></p>

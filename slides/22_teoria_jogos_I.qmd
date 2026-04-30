@@ -1,0 +1,503 @@
+---
+title: "Microeconomia"
+subtitle: "Aula 22 — Introdução à Teoria de Jogos"
+author: "ISCAL - IPL"
+date: ""
+format:
+  revealjs:
+    theme:
+      - default
+      - ../font_adjust.scss
+      - ../iscal_theme.scss
+    self-contained: false
+    logo: ../images/iscal_logo.svg
+    slide-number: true
+    cross-ref: true
+    keep-tex: false
+    incremental: true
+    math:
+      method: mathjax
+    transition: slide
+    footer: "Microeconomia (Plano de Transição)"
+    from: markdown+emoji
+    code-overflow: wrap
+    code-block-font-size: 0.75em
+    progress: true
+  html:
+    output-file: 22_teoria_jogos_I-document.html
+    toc: true
+    math:
+      method: mathjax
+    keep-tex: false
+    number-sections: true
+    embed-resources: false
+  beamer:
+    theme: default
+    classoption: handout
+echo: false
+code-tools: false
+editor: source
+execute:
+  enabled: true
+  engine: knitr
+  echo: false
+---
+
+# O que é um Jogo? {background-color="#2C3E7A"}
+
+## Porque precisamos de Teoria de Jogos?
+
+Até agora, cada decisor foi analisado em **isolamento**:
+
+:::{.incremental}
+- O consumidor maximiza utilidade dado um preço que não controla
+- A empresa em CP escolhe $Q$ dado um preço de mercado
+- O monopolista optimiza face a uma curva de procura passiva
+:::
+
+. . .
+
+Mas e quando **o resultado de cada agente depende das escolhas dos outros**?
+
+. . .
+
+::: {.callout-important}
+Em oligopólio, duas ou três empresas controlam o mercado. A decisão de uma **afecta directamente** o lucro das outras. Cada empresa precisa de antecipar o comportamento das rivais — e elas sabem disso.
+
+A teoria de jogos é a ferramenta adequada para analisar estas situações de **interdependência estratégica**.
+:::
+
+## Os Elementos de um Jogo
+
+Todo o jogo em forma normal é definido por três elementos:
+
+. . .
+
+**1. Jogadores** — quem decide? ($i = 1, 2, \ldots, n$)
+
+. . .
+
+**2. Estratégias** — que acções estão disponíveis a cada jogador?
+
+$$S_i = \{s_{i1},\ s_{i2},\ \ldots\}$$
+
+. . .
+
+**3. Payoffs** — que resultado obtém cada jogador para cada combinação de estratégias?
+
+$$\pi_i(s_1, s_2, \ldots, s_n)$$
+
+. . .
+
+::: {.callout-note}
+O payoff pode representar lucro, utilidade, anos de prisão evitados, ou qualquer medida de bem-estar relevante. A teoria é geral — o conteúdo depende da aplicação.
+:::
+
+## Forma Normal: A Matriz de Payoffs
+
+Com dois jogadores e duas estratégias cada, o jogo representa-se numa **matriz $2\times2$**:
+
+. . .
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[every node/.style={scale=0.85}]
+  \matrix (m) [
+    matrix of nodes,
+    nodes={minimum width=2.2cm, minimum height=1.1cm, align=center},
+    column sep=0pt, row sep=0pt
+  ]{
+                    & \textbf{Empresa B: $s_{B1}$} & \textbf{Empresa B: $s_{B2}$} \\
+    \textbf{Empresa A: $s_{A1}$} & $(\pi_A^{11},\ \pi_B^{11})$ & $(\pi_A^{12},\ \pi_B^{12})$ \\
+    \textbf{Empresa A: $s_{A2}$} & $(\pi_A^{21},\ \pi_B^{21})$ & $(\pi_A^{22},\ \pi_B^{22})$ \\
+  };
+  \draw (m-1-2.north west) -- (m-3-2.south west);
+  \draw (m-1-3.north west) -- (m-3-3.south west);
+  \draw (m-2-1.north west) -- (m-2-3.north east);
+  \draw (m-3-1.north west) -- (m-3-3.north east);
+\end{tikzpicture}
+\end{center}
+```
+
+. . .
+
+Convenção: cada célula mostra $(\pi_A,\ \pi_B)$ — **primeiro o payoff da empresa que escolhe a linha**, segundo o da coluna.
+
+# Conceitos Fundamentais {background-color="#2C3E7A"}
+
+## Dominância Estrita
+
+::: {.callout-note}
+**Definição:** A estratégia $s_i$ **domina estritamente** $s_i'$ se, independentemente do que os outros jogadores fizerem, $s_i$ dá sempre um payoff estritamente superior a $s_i'$.
+:::
+
+. . .
+
+Se existe uma estratégia dominante para um jogador, um agente racional **nunca** escolhe a estratégia dominada — independentemente das suas crenças sobre os rivais.
+
+. . .
+
+**Eliminação iterada de estratégias dominadas:**
+
+:::{.nonincremental}
+1. Eliminar as estratégias estritamente dominadas de cada jogador
+2. Repetir com a matriz reduzida
+3. Continuar até não haver mais eliminações
+:::
+
+. . .
+
+Se este processo conduz a uma única célula, temos um **equilíbrio em estratégias dominantes**.
+
+## Equilíbrio de Nash
+
+::: {.callout-important}
+**Definição (John Nash, 1950):** Um perfil de estratégias $(s_1^*, s_2^*, \ldots, s_n^*)$ é um **Equilíbrio de Nash** se nenhum jogador tem incentivo a desviar-se unilateralmente, dado que os outros mantêm as suas estratégias.
+:::
+
+. . .
+
+Formalmente, para cada jogador $i$:
+
+$$\pi_i(s_i^*,\ s_{-i}^*) \geq \pi_i(s_i,\ s_{-i}^*) \quad \forall s_i$$
+
+onde $s_{-i}^*$ denota as estratégias de todos os outros jogadores.
+
+. . .
+
+::: {.callout-note}
+O Equilíbrio de Nash é um conceito de **consistência mútua**: cada jogador está a fazer o melhor que pode *dado o que os outros estão a fazer*. Ninguém se arrepende da sua escolha *a posteriori*.
+:::
+
+## Nash vs. Óptimo Colectivo
+
+Um Equilíbrio de Nash **não é necessariamente** o melhor resultado colectivo:
+
+. . .
+
+:::{.nonincremental}
+- O EN é estável do ponto de vista individual — ninguém quer desviar **sozinho**
+- Mas pode existir outro resultado em que **todos** ficariam melhor
+- Esse resultado não é sustentável sem coordenação ou compromisso vinculativo
+:::
+
+. . .
+
+Esta tensão entre racionalidade individual e óptimo colectivo é o coração do **Dilema do Prisioneiro**.
+
+# O Dilema do Prisioneiro {background-color="#2C3E7A"}
+
+## A História Original
+
+Dois suspeitos são detidos e interrogados separadamente. Cada um pode:
+
+:::{.nonincremental}
+- **Calar** (cooperar com o cúmplice)
+- **Confessar** (delatar o cúmplice)
+:::
+
+. . .
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[every node/.style={scale=0.82}]
+  \node at (2.5, 1.7) {\textbf{Suspeito B}};
+  \node at (2.1, 1.1) {\textit{Calar}};
+  \node at (3.8, 1.1) {\textit{Confessar}};
+  \node[rotate=90] at (-0.3, 0) {\textbf{Suspeito A}};
+  \node at (0.55,  0.4) {\textit{Calar}};
+  \node at (0.55, -0.8) {\textit{Confessar}};
+
+  \draw[thick] (1.0, 1.0) -- (1.0,-1.5);
+  \draw[thick] (1.0, 0.0) -- (5.0, 0.0);
+
+  \node at (2.1,  0.5) {$(4,\ 4)$};
+  \node at (3.8,  0.5) {$(0,\ 5)$};
+  \node at (2.1, -0.7) {$(5,\ 0)$};
+  \node at (3.8, -0.7) {$(1,\ 1)$};
+
+  \draw (1.0, 1.0) rectangle (5.0,-1.5);
+  \draw (3.0, 1.0) -- (3.0,-1.5);
+  \draw (1.0, 0.0) -- (5.0, 0.0);
+\end{tikzpicture}
+\end{center}
+```
+
+*(payoffs = anos de prisão evitados — maior é melhor)*
+
+## Análise: Dominância e Nash
+
+**Raciocínio de A:**
+
+:::{.nonincremental}
+- Se B calar: A obtém $5$ (confessar) vs $4$ (calar) $\Rightarrow$ Confessar
+- Se B confessar: A obtém $1$ (confessar) vs $0$ (calar) $\Rightarrow$ Confessar
+:::
+
+. . .
+
+**Confessar domina estritamente Calar** — para A. Pelo mesmo raciocínio, também para B.
+
+. . .
+
+**Equilíbrio de Nash: (Confessar, Confessar) = (1, 1)**
+
+. . .
+
+::: {.callout-important}
+Mas (Calar, Calar) = (4, 4) é **Pareto superior** — ambos ficariam melhor se calassem. O problema: nenhum consegue credibilmente comprometer-se a calar sem que o outro aproveite para confessar.
+
+**A racionalidade individual leva a um resultado colectivamente mau.**
+:::
+
+## Aplicação: Delação Premiada em Cartéis
+
+O dilema do prisioneiro tem uma aplicação directa à política de concorrência:
+
+. . .
+
+Duas empresas num cartel podem:
+
+:::{.nonincremental}
+- **Cooperar** — manter o acordo de cartel, partilhar lucros de monopólio
+- **Delatar** — informar a autoridade da concorrência, obtendo imunidade ou redução de coima
+:::
+
+. . .
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[every node/.style={scale=0.82}]
+  \node at (2.5, 1.7) {\textbf{Empresa B}};
+  \node at (2.0, 1.1) {\textit{Cooperar}};
+  \node at (3.9, 1.1) {\textit{Delatar}};
+  \node[rotate=90] at (-0.3, 0) {\textbf{Empresa A}};
+  \node at (0.6,  0.4) {\textit{Cooperar}};
+  \node at (0.6, -0.8) {\textit{Delatar}};
+
+  \draw[thick] (1.0, 1.0) -- (1.0,-1.5);
+  \draw[thick] (1.0, 0.0) -- (5.0, 0.0);
+
+  \node at (2.0,  0.5) {$(6,\ 6)$};
+  \node at (3.9,  0.5) {$(0,\ 8)$};
+  \node at (2.0, -0.7) {$(8,\ 0)$};
+  \node at (3.9, -0.7) {$(2,\ 2)$};
+
+  \draw (1.0, 1.0) rectangle (5.0,-1.5);
+  \draw (3.0, 1.0) -- (3.0,-1.5);
+  \draw (1.0, 0.0) -- (5.0, 0.0);
+\end{tikzpicture}
+\end{center}
+```
+
+*(payoffs em milhares de euros de lucro líquido)*
+
+## Análise da Delação Premiada
+
+**Dominância de Delatar:**
+
+:::{.nonincremental}
+- Se B cooperar: A obtém $8$ (delatar) vs $6$ (cooperar) $\Rightarrow$ Delatar
+- Se B delatar: A obtém $2$ (delatar) vs $0$ (cooperar) $\Rightarrow$ Delatar
+:::
+
+. . .
+
+**Equilíbrio de Nash: (Delatar, Delatar) = (2, 2)**
+
+Resultado colectivamente inferior a (Cooperar, Cooperar) = (6, 6).
+
+. . .
+
+::: {.callout-tip}
+**Lógica da política de leniência:** os reguladores exploram exactamente esta estrutura. Ao oferecer imunidade total ao primeiro a delatar, tornam a delação ainda mais atractiva — o equilíbrio de Nash desloca-se para (Delatar, Delatar) de forma ainda mais robusta.
+
+Os cartéis são instáveis precisamente porque cada membro tem incentivo a trair os parceiros.
+:::
+
+# Outros Tipos de Jogos {background-color="#2C3E7A"}
+
+## Jogos de Coordenação
+
+Nem todos os jogos têm a estrutura problemática do dilema do prisioneiro:
+
+. . .
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[every node/.style={scale=0.82}]
+  \node at (2.7, 1.7) {\textbf{Jogador B}};
+  \node at (2.1, 1.1) {\textit{Esquerda}};
+  \node at (3.9, 1.1) {\textit{Direita}};
+  \node[rotate=90] at (-0.4, 0) {\textbf{Jogador A}};
+  \node at (0.6,  0.4) {\textit{Esquerda}};
+  \node at (0.6, -0.8) {\textit{Direita}};
+
+  \draw[thick] (1.0, 1.0) -- (1.0,-1.5);
+
+  \node at (2.1,  0.5) {$(3,\ 3)$};
+  \node at (3.9,  0.5) {$(0,\ 0)$};
+  \node at (2.1, -0.7) {$(0,\ 0)$};
+  \node at (3.9, -0.7) {$(3,\ 3)$};
+
+  \draw (1.0, 1.0) rectangle (5.0,-1.5);
+  \draw (3.0, 1.0) -- (3.0,-1.5);
+  \draw (1.0, 0.0) -- (5.0, 0.0);
+\end{tikzpicture}
+\end{center}
+```
+
+*(Exemplo: lados de circulação no trânsito)*
+
+. . .
+
+Dois Equilíbrios de Nash: **(Esq, Esq)** e **(Dir, Dir)**. Aqui o problema não é a traição — é a **coordenação**: ambos querem fazer o mesmo, mas qual?
+
+## Resumo: Conceitos-Chave
+
+:::{.nonincremental}
+| Conceito | Definição em síntese |
+|---|---|
+| **Estratégia dominante** | Melhor resposta independentemente do rival |
+| **Estratégia dominada** | Nunca é a melhor resposta — racional eliminá-la |
+| **Equilíbrio de Nash** | Ninguém quer desviar unilateralmente |
+| **Dilema do Prisioneiro** | EN existe mas é Pareto inferior — racionalidade individual $\neq$ óptimo colectivo |
+| **Jogo de coordenação** | Múltiplos EN — o problema é coordenar, não trair |
+:::
+
+. . .
+
+::: {.callout-note}
+Na próxima aula aplicamos estes conceitos ao oligopólio: o modelo de Cournot é precisamente um jogo em que cada empresa escolhe quantidade tomando a rival como dado — e o equilíbrio de Nash em quantidades é o resultado central.
+:::
+
+---
+
+# Exercícios {background-color="#1a5276"}
+
+## Exercício 1 — Escolha Múltipla
+
+Considere a seguinte matriz de payoffs $(\pi_A,\ \pi_B)$:
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[every node/.style={scale=0.85}]
+  \node at (2.5, 1.6) {\textbf{Empresa B}};
+  \node at (2.0, 1.05) {\textit{Alto}};
+  \node at (3.8, 1.05) {\textit{Baixo}};
+  \node[rotate=90] at (-0.3, 0) {\textbf{Empresa A}};
+  \node at (0.55,  0.4) {\textit{Alto}};
+  \node at (0.55, -0.8) {\textit{Baixo}};
+  \node at (2.0,  0.5) {$(3,\ 3)$};
+  \node at (3.8,  0.5) {$(1,\ 5)$};
+  \node at (2.0, -0.7) {$(5,\ 1)$};
+  \node at (3.8, -0.7) {$(2,\ 2)$};
+  \draw (1.0, 1.0) rectangle (5.0,-1.5);
+  \draw (3.0, 1.0) -- (3.0,-1.5);
+  \draw (1.0, 0.0) -- (5.0, 0.0);
+\end{tikzpicture}
+\end{center}
+```
+
+O Equilíbrio de Nash desta matriz é:
+
+:::{.nonincremental}
+a) (Alto, Alto) = (3, 3)
+b) (Alto, Baixo) = (1, 5)
+c) (Baixo, Baixo) = (2, 2)
+d) Não existe Equilíbrio de Nash
+:::
+
+## Solução — Exercício 1 {visibility="uncounted"}
+
+**A:** Se B=Alto: $5 > 3$ → Baixo. Se B=Baixo: $2 > 1$ → Baixo. **Baixo domina.**
+
+**B:** Se A=Alto: $5 > 3$ → Baixo. Se A=Baixo: $2 > 1$ → Baixo. **Baixo domina.**
+
+Nash: **(Baixo, Baixo) = (2, 2)** — nenhum quer desviar unilateralmente.
+
+Note: (Alto, Alto) = (3, 3) é Pareto superior mas não é EN — cada um tem incentivo a desviar para Baixo.
+
+**Resposta: (c)**
+
+## Exercício 2 — Escolha Múltipla
+
+No Dilema do Prisioneiro, o Equilíbrio de Nash é:
+
+:::{.nonincremental}
+a) O resultado que maximiza a soma dos payoffs dos dois jogadores
+b) O resultado em que nenhum jogador quer desviar, mesmo que seja Pareto inferior
+c) Sempre o resultado em que ambos cooperam
+d) O resultado que só é atingível com comunicação entre os jogadores
+:::
+
+## Solução — Exercício 2 {visibility="uncounted"}
+
+- (a) Falso — o EN do DP é (Confessar, Confessar) que **minimiza** a soma dos payoffs
+- **(b) Verdadeiro** — o EN é estável individualmente (ninguém quer desviar sozinho) mesmo sendo Pareto inferior a (Calar, Calar)
+- (c) Falso — no DP o EN é precisamente a **não-cooperação**
+- (d) Falso — o EN existe sem comunicação; com comunicação vinculativa o resultado poderia mudar, mas o EN em si não requer comunicação
+
+**Resposta: (b)**
+
+## Exercício de Desenvolvimento {.smaller}
+
+Duas empresas, A e B, participavam num cartel ilegal. A autoridade da concorrência abre uma investigação e contacta cada empresa separadamente, oferecendo **imunidade total** à primeira a colaborar.
+
+Cada empresa pode **Cooperar** (manter silêncio) ou **Delatar** (colaborar com a autoridade).
+
+Os payoffs (lucro líquido esperado, em milhares de euros) são:
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[every node/.style={scale=0.85}]
+  \node at (2.5, 1.7) {\textbf{Empresa B}};
+  \node at (2.0, 1.1) {\textit{Cooperar}};
+  \node at (3.9, 1.1) {\textit{Delatar}};
+  \node[rotate=90] at (-0.5, 0) {\textbf{Empresa A}};
+  \node at (0.6,  0.4) {\textit{Cooperar}};
+  \node at (0.6, -0.8) {\textit{Delatar}};
+  \node at (2.0,  0.5) {$(6,\ 6)$};
+  \node at (3.9,  0.5) {$(0,\ 8)$};
+  \node at (2.0, -0.7) {$(8,\ 0)$};
+  \node at (3.9, -0.7) {$(2,\ 2)$};
+  \draw (1.0, 1.0) rectangle (5.0,-1.5);
+  \draw (3.0, 1.0) -- (3.0,-1.5);
+  \draw (1.0, 0.0) -- (5.0, 0.0);
+\end{tikzpicture}
+\end{center}
+```
+
+:::{.nonincremental}
+a) Mostre que **Delatar** é uma estratégia estritamente dominante para a Empresa A.
+b) Identifique o Equilíbrio de Nash. Qual o payoff de cada empresa?
+c) Qual o resultado colectivamente óptimo? Compare com o EN.
+d) Explique por que razão a política de leniência é eficaz para desmantelar cartéis.
+:::
+
+## Solução — Exercício de Desenvolvimento {visibility="uncounted" .smaller}
+
+**a)** Verificação da dominância de Delatar para A:
+
+- Se B Cooperar: A obtém $8$ (Delatar) $>$ $6$ (Cooperar) $\Rightarrow$ Delatar
+- Se B Delatar: A obtém $2$ (Delatar) $>$ $0$ (Cooperar) $\Rightarrow$ Delatar
+
+Delatar é estritamente dominante — A prefere Delatar **independentemente** da escolha de B. ✓
+
+. . .
+
+**b)** Pelo mesmo raciocínio (o jogo é simétrico), Delatar também domina para B.
+
+**Equilíbrio de Nash: (Delatar, Delatar) = (2, 2)**
+
+Nenhuma empresa quer desviar: se A está a delatar, B obtém $2$ (delatar) $>$ $0$ (cooperar). ✓
+
+. . .
+
+**c)** O resultado colectivamente óptimo é **(Cooperar, Cooperar) = (6, 6)** — soma de payoffs $12 > 4$.
+
+Mas não é sustentável: qualquer empresa tem incentivo a desviar unilateralmente para Delatar e obter $8$ em vez de $6$.
+
+. . .
+
+**d)** A política de leniência reforça exactamente esta estrutura. Ao garantir imunidade ao primeiro a delatar, o regulador torna o payoff de Delatar ainda mais atractivo. Cada empresa sabe que a rival tem incentivo a delatar primeiro — o que acelera a delação mútua. O cartel dissolve-se pela mesma lógica do dilema do prisioneiro: a racionalidade individual destrói a colusão colectiva.
