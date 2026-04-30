@@ -99,8 +99,7 @@ Com dois jogadores e duas estratégias cada, o jogo representa-se numa **matriz 
 
 . . .
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz', engine.opts=list(extra.preamble="\\usetikzlibrary{matrix}")}
 \begin{tikzpicture}[every node/.style={scale=0.85}]
   \matrix (m) [
     matrix of nodes,
@@ -116,7 +115,6 @@ Com dois jogadores e duas estratégias cada, o jogo representa-se numa **matriz 
   \draw (m-2-1.north west) -- (m-2-3.north east);
   \draw (m-3-1.north west) -- (m-3-3.north east);
 \end{tikzpicture}
-\end{center}
 ```
 
 . . .
@@ -198,15 +196,14 @@ Dois suspeitos são detidos e interrogados separadamente. Cada um pode:
 
 . . .
 
-```{=latex}
-\begin{center}
+```{r,engine='tikz'}
 \begin{tikzpicture}[every node/.style={scale=0.82}]
   \node at (2.5, 1.7) {\textbf{Suspeito B}};
-  \node at (2.1, 1.1) {\textit{Calar}};
-  \node at (3.8, 1.1) {\textit{Confessar}};
-  \node[rotate=90] at (-0.3, 0) {\textbf{Suspeito A}};
-  \node at (0.55,  0.4) {\textit{Calar}};
-  \node at (0.55, -0.8) {\textit{Confessar}};
+  \node at (2.1, 1.2) {\textit{Calar}};
+  \node at (3.8, 1.2) {\textit{Confessar}};
+  \node[rotate=90] at (0.3, 0) {\textbf{Suspeito A}};
+  \node[rotate=90] at (0.55,  0.4) {\textit{Calar}};
+  \node[rotate=90] at (0.55, -0.8) {\textit{Confessar}};
 
   \draw[thick] (1.0, 1.0) -- (1.0,-1.5);
   \draw[thick] (1.0, 0.0) -- (5.0, 0.0);
@@ -220,7 +217,6 @@ Dois suspeitos são detidos e interrogados separadamente. Cada um pode:
   \draw (3.0, 1.0) -- (3.0,-1.5);
   \draw (1.0, 0.0) -- (5.0, 0.0);
 \end{tikzpicture}
-\end{center}
 ```
 
 *(payoffs = anos de prisão evitados — maior é melhor)*
@@ -265,15 +261,14 @@ Duas empresas num cartel podem:
 
 . . .
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
 \begin{tikzpicture}[every node/.style={scale=0.82}]
-  \node at (2.5, 1.7) {\textbf{Empresa B}};
-  \node at (2.0, 1.1) {\textit{Cooperar}};
-  \node at (3.9, 1.1) {\textit{Delatar}};
-  \node[rotate=90] at (-0.3, 0) {\textbf{Empresa A}};
-  \node at (0.6,  0.4) {\textit{Cooperar}};
-  \node at (0.6, -0.8) {\textit{Delatar}};
+  \node at (2.5, 1.6) {\textbf{Empresa B}};
+  \node at (2.0, 1.2) {\textit{Cooperar}};
+  \node at (3.9, 1.2) {\textit{Delatar}};
+  \node[rotate=90] at (0.3, 0) {\textbf{Empresa A}};
+  \node[rotate=90] at (0.6,  0.4) {\textit{Cooperar}};
+  \node[rotate=90] at (0.6, -0.8) {\textit{Delatar}};
 
   \draw[thick] (1.0, 1.0) -- (1.0,-1.5);
   \draw[thick] (1.0, 0.0) -- (5.0, 0.0);
@@ -287,7 +282,6 @@ Duas empresas num cartel podem:
   \draw (3.0, 1.0) -- (3.0,-1.5);
   \draw (1.0, 0.0) -- (5.0, 0.0);
 \end{tikzpicture}
-\end{center}
 ```
 
 *(payoffs em milhares de euros de lucro líquido)*
@@ -323,15 +317,14 @@ Nem todos os jogos têm a estrutura problemática do dilema do prisioneiro:
 
 . . .
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
 \begin{tikzpicture}[every node/.style={scale=0.82}]
-  \node at (2.7, 1.7) {\textbf{Jogador B}};
-  \node at (2.1, 1.1) {\textit{Esquerda}};
-  \node at (3.9, 1.1) {\textit{Direita}};
-  \node[rotate=90] at (-0.4, 0) {\textbf{Jogador A}};
-  \node at (0.6,  0.4) {\textit{Esquerda}};
-  \node at (0.6, -0.8) {\textit{Direita}};
+  \node at (2.7, 1.6) {\textbf{Jogador B}};
+  \node at (2.1, 1.2) {\textit{Esquerda}};
+  \node at (3.9, 1.2) {\textit{Direita}};
+  \node[rotate=90] at (0.4, 0) {\textbf{Jogador A}};
+  \node[rotate=90] at (0.7,  0.4) {\textit{Esquerda}};
+  \node[rotate=90] at (0.7, -0.8) {\textit{Direita}};
 
   \draw[thick] (1.0, 1.0) -- (1.0,-1.5);
 
@@ -344,7 +337,6 @@ Nem todos os jogos têm a estrutura problemática do dilema do prisioneiro:
   \draw (3.0, 1.0) -- (3.0,-1.5);
   \draw (1.0, 0.0) -- (5.0, 0.0);
 \end{tikzpicture}
-\end{center}
 ```
 
 *(Exemplo: lados de circulação no trânsito)*
@@ -379,15 +371,14 @@ Na próxima aula aplicamos estes conceitos ao oligopólio: o modelo de Cournot �
 
 Considere a seguinte matriz de payoffs $(\pi_A,\ \pi_B)$:
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
 \begin{tikzpicture}[every node/.style={scale=0.85}]
-  \node at (2.5, 1.6) {\textbf{Empresa B}};
-  \node at (2.0, 1.05) {\textit{Alto}};
-  \node at (3.8, 1.05) {\textit{Baixo}};
-  \node[rotate=90] at (-0.3, 0) {\textbf{Empresa A}};
-  \node at (0.55,  0.4) {\textit{Alto}};
-  \node at (0.55, -0.8) {\textit{Baixo}};
+  \node at (2.5, 1.5) {\textbf{Empresa B}};
+  \node at (2.0, 1.15) {\textit{Alto}};
+  \node at (3.8, 1.15) {\textit{Baixo}};
+  \node[rotate=90] at (0.3, 0) {\textbf{Empresa A}};
+  \node[rotate=90] at (0.55,  0.4) {\textit{Alto}};
+  \node[rotate=90] at (0.55, -0.8) {\textit{Baixo}};
   \node at (2.0,  0.5) {$(3,\ 3)$};
   \node at (3.8,  0.5) {$(1,\ 5)$};
   \node at (2.0, -0.7) {$(5,\ 1)$};
@@ -396,7 +387,6 @@ Considere a seguinte matriz de payoffs $(\pi_A,\ \pi_B)$:
   \draw (3.0, 1.0) -- (3.0,-1.5);
   \draw (1.0, 0.0) -- (5.0, 0.0);
 \end{tikzpicture}
-\end{center}
 ```
 
 O Equilíbrio de Nash desta matriz é:
@@ -448,15 +438,14 @@ Cada empresa pode **Cooperar** (manter silêncio) ou **Delatar** (colaborar com 
 
 Os payoffs (lucro líquido esperado, em milhares de euros) são:
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz'}
 \begin{tikzpicture}[every node/.style={scale=0.85}]
   \node at (2.5, 1.7) {\textbf{Empresa B}};
   \node at (2.0, 1.1) {\textit{Cooperar}};
   \node at (3.9, 1.1) {\textit{Delatar}};
-  \node[rotate=90] at (-0.5, 0) {\textbf{Empresa A}};
-  \node at (0.6,  0.4) {\textit{Cooperar}};
-  \node at (0.6, -0.8) {\textit{Delatar}};
+  \node[rotate=90] at (0, 0) {\textbf{Empresa A}};
+  \node[rotate=90] at (0.6,  0.4) {\textit{Cooperar}};
+  \node[rotate=90] at (0.6, -0.8) {\textit{Delatar}};
   \node at (2.0,  0.5) {$(6,\ 6)$};
   \node at (3.9,  0.5) {$(0,\ 8)$};
   \node at (2.0, -0.7) {$(8,\ 0)$};
@@ -465,7 +454,6 @@ Os payoffs (lucro líquido esperado, em milhares de euros) são:
   \draw (3.0, 1.0) -- (3.0,-1.5);
   \draw (1.0, 0.0) -- (5.0, 0.0);
 \end{tikzpicture}
-\end{center}
 ```
 
 :::{.nonincremental}

@@ -119,7 +119,7 @@ $$\frac{\partial \Pi_A}{\partial q_A} = (a - c) - 2b\,q_A - b\,q_B = 0$$
 
 $$\boxed{q_A^* = \frac{a-c}{2b} - \frac{q_B}{2}}$$
 
-## A Função de Reacção (Best Response)
+## A Função de Reacção (Best Response) {.smaller}
 
 $$q_A^*(q_B) = \frac{a-c}{2b} - \frac{1}{2}\,q_B$$
 
@@ -141,7 +141,7 @@ Por simetria, a função de reacção de B é:
 
 $$q_B^*(q_A) = \frac{a-c}{2b} - \frac{1}{2}\,q_A$$
 
-## Equilíbrio de Nash de Cournot
+## Equilíbrio de Nash de Cournot {.smaller}
 
 O equilíbrio ocorre quando **ambas** as empresas estão na sua função de reacção simultaneamente:
 
@@ -163,46 +163,47 @@ $$Q^*_C = \frac{2(a-c)}{3b} \qquad P^*_C = a - b\,Q^*_C = \frac{a + 2c}{3}$$
 
 ## Diagrama das Funções de Reacção
 
-```{=latex}
+```{r, engine='tikz', fig.width=11.5, fig.height=5.8, fig.align='center'}
 \begin{tikzpicture}[
-  scale=0.95,
-  every node/.style={scale=0.78},
+  x=1.05cm,
+  y=0.95cm,
+  every node/.style={scale=0.82},
   declare function={
-    br1(\y) = 12 - \y/2;   % q_A = 12 - q_B/2
-    br2(\x) = 12 - \x/2;   % q_B = 12 - q_A/2
+    br1(\y) = 24 - 2*\y;   % q_A = 24 - 2 q_B
+    br2(\x) = 24 - 2*\x;   % q_B = 24 - 2 q_A
   }
 ]
-\draw[->,thick] (-0.2,0) -- (26,0) node[below]{$q_A$};
-\draw[->,thick] (0,-0.2) -- (0,26) node[left]{$q_B$};
+\draw[->,thick] (-0.2,0) -- (26.5,0) node[below]{$q_A$};
+\draw[->,thick] (0,-0.2) -- (0,26.5) node[left]{$q_B$};
 
-% BR of A: q_B = 24 - 2*q_A  (rearranged: q_A = 12 - q_B/2)
+% BR of A
 \draw[blue,thick] (0,24) node[left]{$24$} -- (12,0) node[below]{$12$}
   node[above right, pos=0.6, blue]{$BR_A$};
 
-% BR of B: q_A = 24 - 2*q_B  (i.e. on q_A axis: when q_B=0, q_A=24; when q_A=0, q_B=12)
-\draw[red,thick]  (24,0) node[below]{$24$} -- (0,12) node[left]{$12$}
+% BR of B
+\draw[red,thick] (24,0) node[below]{$24$} -- (0,12) node[left]{$12$}
   node[above right, pos=0.3, red]{$BR_B$};
 
-% Cournot Nash: (8,8)
+% Cournot Nash
 \draw[fill=black] (8,8) circle (3pt) node[above right]{Cournot $(8,8)$};
 \draw[dashed] (8,0) node[below]{$8$} -- (8,8) -- (0,8) node[left]{$8$};
 
-% Monopoly/Cartel point: each produces 6
+% Cartel point
 \draw[fill=gray!60] (6,6) circle (2.5pt);
 \draw[dotted] (6,0) node[below]{\small $6$} -- (6,6) -- (0,6) node[left]{\small $6$};
-\node at (4.5,8) [gray!70!black]{\small Cartel $(6,6)$};
+\node at (4.8,6.3) [gray!70!black]{\small Cartel $(6,6)$};
 
-% CP point: each produces 12
+% Competitive point
 \draw[fill=green!60!black] (12,12) circle (2.5pt);
-\node at (13.5,12.5) [green!60!black]{\small C.P. $(12,12)$};
+\node at (12.8,11.8) [green!60!black]{\small C.P. $(12,12)$};
 
-% 45-degree line reference (locus of symmetric outcomes)
+% 45-degree line
 \draw[gray!40,dashed,domain=0:13] plot(\x,\x);
 
 \end{tikzpicture}
 ```
 
-## Leitura do Diagrama
+## Leitura do Diagrama {.smaller}
 
 :::{.nonincremental}
 - **$BR_A$** (azul): função de reacção de A — para cada $q_B$, a melhor resposta de A
@@ -374,7 +375,7 @@ Cournot produz mais ($16>12$), cobra menos ($14<18$), lucro por empresa menor ($
 
 A tem incentivo a desviar do cartel — o acordo é instável.
 
-. . .
+## Solução — Exercício de Desenvolvimento {visibility="uncounted" .smaller}
 
 **f)** $P=Cmg \Rightarrow 30-Q=6 \Rightarrow Q_{cp}=24$, $P_{cp}=6$, $\Pi=0$
 

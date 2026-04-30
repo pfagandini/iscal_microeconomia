@@ -45,9 +45,14 @@ Podem encontrar o material para a cadeira nesta página, organizado por capítul
 19. [Subsídios](slides/19_subsidios.qmd)
 20. [Intervenções](slides/20_controlo_precos.qmd)
 
-
 ### Capítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos
 
+21. [Monopólio](slides/21_problema_monopolista.qmd)
+22. [Concorrência Monopolística](slides/22_conc_monopolistica.qmd)
+23. [Teoria de Jogos I](slides/23_teoria_jogos_I.qmd)
+24. [Cournot](slides/24_cournot.qmd)
+25. [Teoria de Jogos II](slides/25_jogos_II_stackelberg.qmd)
+26. [Bertrand and Colusão](slides/26_bertrand_colusao.qmd)
 
 ## Outro Material
 
