@@ -45,7 +45,7 @@ execute:
 
 # Jogos Sequenciais {background-color="#2C3E7A"}
 
-## Da Forma Normal à Forma Extensiva
+## Da Forma Normal à Forma Extensiva {.smaller}
 
 Na aula anterior, analisámos jogos em **forma normal** — decisões simultâneas representadas em matriz.
 
@@ -99,41 +99,39 @@ Uma empresa **Entrante** pondera entrar num mercado onde existe uma empresa **In
 
 . . .
 
-```{=latex}
-\begin{center}
+```{r, engine='tikz', fig.width=8.8, fig.height=3.8, fig.align='center'}
 \begin{tikzpicture}[
-  scale=1.0,
-  every node/.style={scale=0.82},
-  level distance=3.2cm,
-  sibling distance=3cm
+  grow=right,
+  level distance=2.1cm,
+  sibling distance=1.5cm,
+  edge from parent/.style={draw, thick},
+  every node/.style={scale=0.72},
+  level 1/.style={sibling distance=2.4cm},
+  level 2/.style={sibling distance=1.5cm}
 ]
-
-% Root node
-\node[circle,draw,thick,minimum size=0.7cm] (E) at (0,0) {E}
-  child[grow=right] {
-    node[circle,draw,thick,minimum size=0.7cm] (I) at (3,1) {I}
-      child[grow=right, sibling distance=1.8cm] {
-        node[rectangle,draw,minimum size=0.6cm] at (6,2) {$(-2,\ -1)$}
-        edge from parent node[above]{\textit{Combater}}
+\node[circle,draw,thick,minimum size=0.48cm,inner sep=1pt] {E}
+  child {
+    node[circle,draw,thick,minimum size=0.48cm,inner sep=1pt] {I}
+      child {
+        node[rectangle,draw,minimum width=1.25cm,minimum height=0.52cm,inner sep=1pt] {$(-2,\,-1)$}
+        edge from parent node[above,sloped,midway,font=\tiny]{ \textit{Combater}}
       }
-      child[grow=right, sibling distance=1.8cm] {
-        node[rectangle,draw,minimum size=0.6cm] at (6,0) {$(3,\ 2)$}
-        edge from parent node[below]{\textit{Acomodar}}
+      child {
+        node[rectangle,draw,minimum width=1.25cm,minimum height=0.52cm,inner sep=1pt] {$(3,\ 2)$}
+        edge from parent node[below,sloped,midway,font=\tiny]{ \textit{Acomodar}}
       }
-    edge from parent node[above]{\textit{Entrar}}
+    edge from parent node[above,sloped,midway,font=\footnotesize]{\textit{Entrar}}
   }
-  child[grow=right] {
-    node[rectangle,draw,minimum size=0.6cm] at (3,-1.2) {$(0,\ 5)$}
-    edge from parent node[below]{\textit{Ficar Fora}}
+  child {
+    node[rectangle,draw,minimum width=1.25cm,minimum height=0.52cm,inner sep=1pt] {$(0,\ 5)$}
+    edge from parent node[below,sloped,midway,font=\footnotesize]{\textit{Ficar Fora}}
   };
-
 \end{tikzpicture}
-\end{center}
 ```
 
 *(payoffs: Entrante, Incumbente)*
 
-## Solução por Indução para Trás
+## Solução por Indução para Trás {.smaller}
 
 **Passo 1 — O que faz o Incumbente se a Entrante entrar?**
 
@@ -167,7 +165,7 @@ $3 > 0$ $\Rightarrow$ **Entrante entra**.
 A ameaça de combater é **não credível**: o Incumbente preferirá sempre acomodar ex-post. Um jogador racional não acredita em ameaças que o ameaçador não tem incentivo a cumprir.
 :::
 
-## Ameaças Credíveis e Não Credíveis
+## Ameaças Credíveis e Não Credíveis {.smaller}
 
 O jogo de entrada ilustra um princípio central:
 
@@ -241,7 +239,7 @@ Condição de primeira ordem:
 
 $$\frac{d\Pi_1}{dq_1} = 12 - q_1 = 0 \quad\Rightarrow\quad \boxed{q_1^* = 12}$$
 
-## Passo 3 — Equilíbrio de Stackelberg
+## Passo 3 — Equilíbrio de Sta
 
 Com $q_1^* = 12$, o seguidor responde:
 
@@ -267,7 +265,7 @@ O líder usa a quantidade como **compromisso**: ao produzir muito (12), força o
 
 ## Stackelberg vs. Cournot — Diagrama
 
-```{=latex}
+```{r, engine='tikz'}
 \begin{tikzpicture}[
   scale=0.92,
   every node/.style={scale=0.78}
@@ -353,7 +351,7 @@ O líder de Stackelberg ganha tanto quanto o monopolista — ao comprometer-se c
 :::
 
 ## Cournot vs. Stackelberg: Síntese
-
+Uma empresa Entrante pondera entrar num mercado onde existe uma empresa Incumbente.
 :::{.nonincremental}
 | | Cournot | Stackelberg |
 |---|---|---|

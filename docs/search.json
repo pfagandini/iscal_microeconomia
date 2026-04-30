@@ -7586,5 +7586,138 @@
     "title": "Microeconomia",
     "section": "Solução — Exercício de Desenvolvimento",
     "text": "Solução — Exercício de Desenvolvimento\nf) \\(P=Cmg \\Rightarrow 30-Q=6 \\Rightarrow Q_{cp}=24\\), \\(P_{cp}=6\\), \\(\\Pi=0\\)\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi\\) cada\n\n\n\n\nMonopólio\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\n\nConc. Perf.\n\\(24\\)\n\\(6\\)\n\\(0\\)"
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#da-forma-normal-à-forma-extensiva",
+    "href": "slides/25_jogos_II_stackelberg.html#da-forma-normal-à-forma-extensiva",
+    "title": "Microeconomia",
+    "section": "Da Forma Normal à Forma Extensiva",
+    "text": "Da Forma Normal à Forma Extensiva\nNa aula anterior, analisámos jogos em forma normal — decisões simultâneas representadas em matriz.\n\nMuitas situações económicas são sequenciais: um jogador age primeiro, o outro observa e responde.\n\n\n\n\n\n\nForma Normal\nForma Extensiva\n\n\n\n\nTiming\nSimultâneo\nSequencial\n\n\nRepresentação\nMatriz de payoffs\nÁrvore de decisão\n\n\nConceito solução\nEquilíbrio de Nash\nIndução para trás\n\n\nInformação\nSem observação\nObservação da jogada anterior\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nA forma extensiva acrescenta estrutura temporal ao jogo. Quem move primeiro tem informação comprometida — e quem move depois tem mais informação mas menos iniciativa."
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#a-árvore-de-decisão",
+    "href": "slides/25_jogos_II_stackelberg.html#a-árvore-de-decisão",
+    "title": "Microeconomia",
+    "section": "A Árvore de Decisão",
+    "text": "A Árvore de Decisão\nUma árvore de decisão representa:\n\nNós de decisão — pontos onde um jogador escolhe\nRamos — as acções disponíveis em cada nó\nFolhas — resultados finais com os payoffs \\((π_1,\\ π_2)\\)\nOrdem das jogadas — lê-se da esquerda (raiz) para a direita (folhas)\n\n\nO método de solução é a indução para trás (backward induction):\n\n\n\n\n\n\n\n\nImportant\n\n\nResolver o jogo de trás para a frente: começar nas folhas e determinar a escolha óptima do último jogador; dado isso, determinar a escolha óptima do penúltimo; e assim sucessivamente até à raiz."
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#o-jogo-de-entrada-no-mercado",
+    "href": "slides/25_jogos_II_stackelberg.html#o-jogo-de-entrada-no-mercado",
+    "title": "Microeconomia",
+    "section": "O Jogo de Entrada no Mercado",
+    "text": "O Jogo de Entrada no Mercado\nUma empresa Entrante pondera entrar num mercado onde existe uma empresa Incumbente.\n\n\n\n\n\n\n\n\n\n\n(payoffs: Entrante, Incumbente)"
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#solução-por-indução-para-trás",
+    "href": "slides/25_jogos_II_stackelberg.html#solução-por-indução-para-trás",
+    "title": "Microeconomia",
+    "section": "Solução por Indução para Trás",
+    "text": "Solução por Indução para Trás\nPasso 1 — O que faz o Incumbente se a Entrante entrar?\n\nCombater: payoff \\(= -1\\)\nAcomodar: payoff \\(= 2\\)\n\n\n\\(2 &gt; -1\\) \\(\\Rightarrow\\) Incumbente acomoda. A ameaça de combater não é credível.\n\n\nPasso 2 — O que faz a Entrante, antecipando a acomodação?\n\nEntrar (sabendo que Incumbente acomoda): payoff \\(= 3\\)\nFicar Fora: payoff \\(= 0\\)\n\n\n\n\\(3 &gt; 0\\) \\(\\Rightarrow\\) Entrante entra.\n\n\n\n\n\n\n\n\nImportant\n\n\nResultado por indução para trás: (Entrar, Acomodar) = (3, 2)\nA ameaça de combater é não credível: o Incumbente preferirá sempre acomodar ex-post. Um jogador racional não acredita em ameaças que o ameaçador não tem incentivo a cumprir."
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#ameaças-credíveis-e-não-credíveis",
+    "href": "slides/25_jogos_II_stackelberg.html#ameaças-credíveis-e-não-credíveis",
+    "title": "Microeconomia",
+    "section": "Ameaças Credíveis e Não Credíveis",
+    "text": "Ameaças Credíveis e Não Credíveis\nO jogo de entrada ilustra um princípio central:\n\n\n\n\n\n\n\nNote\n\n\nAmeaça credível: acção que o ameaçador tem incentivo a executar quando chega o momento, independentemente do que disse antes.\nAmeaça não credível: acção que o ameaçador prefere não executar quando chega o momento — racionalmente ignorada pelo rival.\n\n\n\n\n\nO Incumbente pode dizer “se entrar, combato” — mas a Entrante sabe que, uma vez dentro, o Incumbente preferirá acomodar. As palavras não chegam; só os incentivos ex-post contam.\n\n\n\n\n\n\n\n\nTip\n\n\nAplicação: um monopolista que ameaça baixar preços drasticamente para afastar rivais precisa de tornar essa ameaça credível — por exemplo, através de investimento em capacidade que torna o combate rentável."
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#stackelberg-como-jogo-sequencial",
+    "href": "slides/25_jogos_II_stackelberg.html#stackelberg-como-jogo-sequencial",
+    "title": "Microeconomia",
+    "section": "Stackelberg como Jogo Sequencial",
+    "text": "Stackelberg como Jogo Sequencial\nO modelo de Stackelberg aplica a lógica dos jogos sequenciais ao oligopólio de quantidades:\n\nLíder (Empresa 1): escolhe \\(q_1\\) primeiro, de forma observável\nSeguidor (Empresa 2): observa \\(q_1\\) e escolhe \\(q_2\\) a seguir\nMesma estrutura de mercado da aula anterior: \\(P = 30 - (q_1+q_2)\\), \\(Cmg = 6\\)\n\n\n\n\n\n\n\n\nNote\n\n\nA diferença face a Cournot é apenas o timing: em Cournot, as decisões são simultâneas e cada empresa toma a quantidade da outra como dada. Em Stackelberg, o líder conhece a função de reacção do seguidor e optimiza em função dela."
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#passo-1-a-função-de-reacção-do-seguidor",
+    "href": "slides/25_jogos_II_stackelberg.html#passo-1-a-função-de-reacção-do-seguidor",
+    "title": "Microeconomia",
+    "section": "Passo 1 — A Função de Reacção do Seguidor",
+    "text": "Passo 1 — A Função de Reacção do Seguidor\nO seguidor resolve o seu problema exactamente como em Cournot, dado \\(q_1\\) observado:\n\\[\\Pi_2 = (30 - q_1 - q_2)\\,q_2 - 6\\,q_2\\]\n\n\\[\\frac{\\partial \\Pi_2}{\\partial q_2} = 24 - q_1 - 2q_2 = 0 \\quad\\Rightarrow\\quad \\boxed{q_2^*(q_1) = 12 - \\frac{q_1}{2}}\\]\n\n\nEsta é a mesma função de reacção da aula anterior — o líder sabe que o seguidor a irá usar."
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#passo-2-o-líder-internaliza-a-reacção-do-seguidor",
+    "href": "slides/25_jogos_II_stackelberg.html#passo-2-o-líder-internaliza-a-reacção-do-seguidor",
+    "title": "Microeconomia",
+    "section": "Passo 2 — O Líder Internaliza a Reacção do Seguidor",
+    "text": "Passo 2 — O Líder Internaliza a Reacção do Seguidor\nO líder substitui \\(q_2^*(q_1)\\) no seu próprio lucro:\n\\[\\Pi_1 = \\bigl(30 - q_1 - q_2^*(q_1)\\bigr)\\,q_1 - 6\\,q_1\\]\n\n\\[= \\left(30 - q_1 - \\left(12 - \\frac{q_1}{2}\\right)\\right)q_1 - 6q_1 = \\left(12 - \\frac{q_1}{2}\\right)q_1\\]\n\n\n\\[\\Pi_1 = 12\\,q_1 - \\frac{q_1^2}{2}\\]\n\n\nCondição de primeira ordem:\n\\[\\frac{d\\Pi_1}{dq_1} = 12 - q_1 = 0 \\quad\\Rightarrow\\quad \\boxed{q_1^* = 12}\\]"
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#passo-3-equilíbrio-de-stackelberg",
+    "href": "slides/25_jogos_II_stackelberg.html#passo-3-equilíbrio-de-stackelberg",
+    "title": "Microeconomia",
+    "section": "Passo 3 — Equilíbrio de Stackelberg",
+    "text": "Passo 3 — Equilíbrio de Stackelberg\nCom \\(q_1^* = 12\\), o seguidor responde:\n\\[q_2^* = 12 - \\frac{12}{2} = 6\\]\n\nResultados de equilíbrio:\n\\[Q^*_S = 12 + 6 = 18 \\qquad P^*_S = 30 - 18 = 12\\]\n\n\n\\[\\Pi_{\\text{líder}} = (12-6)\\times 12 = 72 \\qquad \\Pi_{\\text{seguidor}} = (12-6)\\times 6 = 36\\]\n\n\n\n\n\n\n\n\nImportant\n\n\nVantagem do primeiro movente: o líder ganha 72 — tanto quanto o monopolista — enquanto o seguidor fica com apenas 36, abaixo dos 64 de Cournot.\nO líder usa a quantidade como compromisso: ao produzir muito (12), força o seguidor a produzir pouco (6)."
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#stackelberg-vs.-cournot-diagrama",
+    "href": "slides/25_jogos_II_stackelberg.html#stackelberg-vs.-cournot-diagrama",
+    "title": "Microeconomia",
+    "section": "Stackelberg vs. Cournot — Diagrama",
+    "text": "Stackelberg vs. Cournot — Diagrama"
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#intuição-do-primeiro-movente",
+    "href": "slides/25_jogos_II_stackelberg.html#intuição-do-primeiro-movente",
+    "title": "Microeconomia",
+    "section": "Intuição do Primeiro Movente",
+    "text": "Intuição do Primeiro Movente\nPor que vale a pena ser o líder?\n\nEm Cournot, se a Empresa 1 aumentasse unilateralmente a sua produção de 8 para 12, o preço desceria e o lucro cairia (dado \\(q_2 = 8\\) fixo).\n\n\nEm Stackelberg, o líder sabe que ao produzir 12, o seguidor responde com 6 (não com 8). O efeito adverso no preço é parcialmente compensado pela contracção do seguidor.\n\n\n\n\n\n\n\n\nNote\n\n\nO compromisso credível de produzir muito disciplina o rival. O líder renuncia à melhor resposta de Cournot, mas obtém um resultado melhor porque o seguidor ajusta em sentido contrário.\nEsta é a essência da vantagem do primeiro movente em jogos de quantidades."
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#tabela-resumo-quatro-estruturas",
+    "href": "slides/25_jogos_II_stackelberg.html#tabela-resumo-quatro-estruturas",
+    "title": "Microeconomia",
+    "section": "Tabela Resumo: Quatro Estruturas",
+    "text": "Tabela Resumo: Quatro Estruturas\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi_1\\)\n\\(\\Pi_2\\)\n\n\n\n\nMonopólio (cartel)\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\\(72\\)\n\n\nStackelberg\n\\(18\\)\n\\(12\\)\n\\(72\\)\n\\(36\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\\(64\\)\n\n\nConc. Perfeita\n\\(24\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nOrdenações que sempre se verificam:\n\\(Q_m &lt; Q_C &lt; Q_S &lt; Q_{cp}\\) e \\(P_m &gt; P_C &gt; P_S &gt; P_{cp}\\)\n\\(\\Pi_{\\text{líder}}^S &gt; \\Pi^C &gt; \\Pi_{\\text{seguidor}}^S\\)\nO líder de Stackelberg ganha tanto quanto o monopolista — ao comprometer-se com produção elevada, captura toda a vantagem estratégica."
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#cournot-vs.-stackelberg-síntese",
+    "href": "slides/25_jogos_II_stackelberg.html#cournot-vs.-stackelberg-síntese",
+    "title": "Microeconomia",
+    "section": "Cournot vs. Stackelberg: Síntese",
+    "text": "Cournot vs. Stackelberg: Síntese\nUma empresa Entrante pondera entrar num mercado onde existe uma empresa Incumbente. :::{.nonincremental} | | Cournot | Stackelberg | |—|—|—| | Timing | Simultâneo | Sequencial | | Hipótese sobre rival | \\(q_j\\) fixo (conjectura) | \\(q_j = BR_j(q_i)\\) (conhecida) | | Equilíbrio | Nash em quantidades | Backward induction | | \\(q_{\\text{líder}}\\) vs \\(q_C\\) | \\(q^C = 8\\) | \\(q_L^S = 12 &gt; 8\\) | | \\(q_{\\text{seguidor}}\\) vs \\(q_C\\) | \\(q^C = 8\\) | \\(q_F^S = 6 &lt; 8\\) | | \\(\\Pi_{\\text{líder}}\\) vs \\(\\Pi_C\\) | \\(64\\) | \\(72 &gt; 64\\) | | \\(\\Pi_{\\text{seguidor}}\\) vs \\(\\Pi_C\\) | \\(64\\) | \\(36 &lt; 64\\) | :::"
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#exercício-1-escolha-múltipla",
+    "href": "slides/25_jogos_II_stackelberg.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nNo modelo de Stackelberg, o líder produz mais do que no equilíbrio de Cournot porque:\n\nO líder tem custos marginais mais baixos\nO líder sabe que o seguidor reduzirá a sua produção em resposta — o compromisso com quantidade elevada disciplina o rival\nO líder age simultaneamente com o seguidor e pode coordenar melhor\nO seguidor não observa a quantidade do líder e não consegue reagir"
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#solução-exercício-1",
+    "href": "slides/25_jogos_II_stackelberg.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 1",
+    "text": "Solução — Exercício 1\n\n\nFalso — os custos são idênticos nos dois modelos\n\n(b) Verdadeiro — o líder internaliza a função de reacção do seguidor: sabe que produzir mais força o seguidor a produzir menos, atenuando o efeito negativo no preço. É a essência da vantagem do primeiro movente.\n\nFalso — Stackelberg é sequencial, não simultâneo\n\n\nFalso — o seguidor observa \\(q_1\\) antes de decidir; é precisamente isso que torna o compromisso do líder credível\n\n\nResposta: (b)"
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#exercício-2-escolha-múltipla",
+    "href": "slides/25_jogos_II_stackelberg.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nNo jogo de entrada com payoffs (Entrante, Incumbente): Entrar+Combater = \\((-2,\\ -1)\\); Entrar+Acomodar = \\((3,\\ 2)\\); Ficar Fora = \\((0,\\ 5)\\). Por indução para trás, o resultado é:\n\nFicar Fora, porque o Incumbente ameaça combater\nEntrar + Combater, porque o Incumbente cumpre a ameaça\nEntrar + Acomodar, porque a ameaça de combater não é credível\nIndeterminado — há dois Equilíbrios de Nash"
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#solução-exercício-2",
+    "href": "slides/25_jogos_II_stackelberg.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 2",
+    "text": "Solução — Exercício 2\nIndução para trás:\n\nSe Entrante entrar, Incumbente escolhe: Combater \\((-1)\\) vs Acomodar \\((2)\\) \\(\\Rightarrow\\) Acomodar\nEntrante antecipa Acomodar: Entrar \\((3)\\) vs Ficar Fora \\((0)\\) \\(\\Rightarrow\\) Entrar\n\nA ameaça de combater é não credível — o Incumbente não a executaria ex-post.\nResposta: (c)\nNota: existe um EN na forma normal em que Entrante fica fora com base na ameaça de combater — mas a indução para trás elimina esse EN por envolver estratégias não credíveis."
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#exercício-de-desenvolvimento",
+    "href": "slides/25_jogos_II_stackelberg.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício de Desenvolvimento",
+    "text": "Exercício de Desenvolvimento\nDois produtores de aço, a Empresa 1 (líder) e a Empresa 2 (seguidor), operam no mercado com procura inversa \\(P = 30 - (q_1 + q_2)\\) e custo marginal \\(Cmg = 6\\) para ambas.\nAlíneas:\n\nDerive a função de reacção do seguidor (Empresa 2), \\(q_2^*(q_1)\\).\nSubstitua \\(q_2^*(q_1)\\) na função de lucro do líder e simplifique.\nDetermine a quantidade óptima do líder \\(q_1^*\\) e a resposta do seguidor \\(q_2^*\\).\nCalcule \\(Q^*_S\\), \\(P^*_S\\), \\(\\Pi_{\\text{líder}}\\) e \\(\\Pi_{\\text{seguidor}}\\).\nCompare com o equilíbrio de Cournot da aula anterior (\\(q^C = 8\\), \\(\\Pi^C = 64\\)). Quem ganha e quem perde com a liderança? Justifique.\nComplete a tabela com os quatro resultados: monopólio, Stackelberg, Cournot, concorrência perfeita."
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/25_jogos_II_stackelberg.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício de Desenvolvimento",
+    "text": "Solução — Exercício de Desenvolvimento\na) \\(\\Pi_2 = (30-q_1-q_2-6)q_2\\). CPO: \\(24-q_1-2q_2=0\\)\n\\[q_2^*(q_1) = 12 - \\frac{q_1}{2}\\]\n\nb) \\(\\Pi_1 = \\!\\left(30-q_1-\\!\\left(12-\\tfrac{q_1}{2}\\right)-6\\right)q_1 = \\!\\left(12-\\tfrac{q_1}{2}\\right)q_1 = 12q_1 - \\tfrac{q_1^2}{2}\\)\n\n\nc) \\(\\dfrac{d\\Pi_1}{dq_1} = 12 - q_1 = 0 \\Rightarrow q_1^* = 12\\)\n\\(q_2^* = 12 - 6 = 6\\)\n\n\nd) \\(Q^*_S = 18\\), \\(P^*_S = 30-18 = 12\\)\n\\(\\Pi_{\\text{líder}} = (12-6)\\times 12 = 72\\) \\(\\quad;\\quad\\) \\(\\Pi_{\\text{seguidor}} = (12-6)\\times 6 = 36\\)\n\n\ne) O líder ganha \\(72 &gt; 64\\) (Cournot): ao comprometer-se com \\(q_1=12\\), força o seguidor a retrair-se para \\(q_2=6\\), capturando mais mercado. O seguidor perde: \\(36 &lt; 64\\) (Cournot) — é penalizado por agir segundo, ficando com um mercado residual mais pequeno.\n\n\nf)\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi_1\\)\n\\(\\Pi_2\\)\n\n\n\n\nMonopólio\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\\(72\\)\n\n\nStackelberg\n\\(18\\)\n\\(12\\)\n\\(72\\)\n\\(36\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\\(64\\)\n\n\nConc. Perfeita\n\\(24\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)"
   }
 ]
