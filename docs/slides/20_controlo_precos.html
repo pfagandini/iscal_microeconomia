@@ -1,220 +1,392 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="ISCAL - IPL">
+
+<title>Intervenções nos Mercados: Controlo de Preços – Iscal - Microeconomia (Plano de Transição)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.26">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
-  <meta name="author" content="ISCAL - IPL">
-  <title>Iscal - Microeconomia (Plano de Transição) – Intervenções nos Mercados: Controlo de Preços</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-      vertical-align: middle;
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
     }
-  </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-87de07903ab30f83923ef3893164b783.css">
-  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
-  <style type="text/css">
-    .reveal div.sourceCode {
-      margin: 0;
-      overflow: auto;
-    }
-    .reveal div.hanging-indent {
-      margin-left: 1em;
-      text-indent: -1em;
-    }
-    .reveal .slide:not(.center) {
-      height: 100%;
-    }
-    .reveal .slide.scrollable {
-      overflow-y: auto;
-    }
-    .reveal .footnotes {
-      height: 100%;
-      overflow-y: auto;
-    }
-    .reveal .slide .absolute {
-      position: absolute;
-      display: block;
-    }
-    .reveal .footnotes ol {
-      counter-reset: ol;
-      list-style-type: none; 
-      margin-left: 0;
-    }
-    .reveal .footnotes ol li:before {
-      counter-increment: ol;
-      content: counter(ol) ". "; 
-    }
-    .reveal .footnotes ol li > p:first-child {
-      display: inline-block;
-    }
-    .reveal .slide ul,
-    .reveal .slide ol {
-      margin-bottom: 0.5em;
-    }
-    .reveal .slide ul li,
-    .reveal .slide ol li {
-      margin-top: 0.4em;
-      margin-bottom: 0.2em;
-    }
-    .reveal .slide ul[role="tablist"] li {
-      margin-bottom: 0;
-    }
-    .reveal .slide ul li > *:first-child,
-    .reveal .slide ol li > *:first-child {
-      margin-block-start: 0;
-    }
-    .reveal .slide ul li > *:last-child,
-    .reveal .slide ol li > *:last-child {
-      margin-block-end: 0;
-    }
-    .reveal .slide .columns:nth-child(3) {
-      margin-block-start: 0.8em;
-    }
-    .reveal blockquote {
-      box-shadow: none;
-    }
-    .reveal .tippy-content>* {
-      margin-top: 0.2em;
-      margin-bottom: 0.7em;
-    }
-    .reveal .tippy-content>*:last-child {
-      margin-bottom: 0.2em;
-    }
-    .reveal .slide > img.stretch.quarto-figure-center,
-    .reveal .slide > img.r-stretch.quarto-figure-center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; 
-    }
-    .reveal .slide > img.stretch.quarto-figure-left,
-    .reveal .slide > img.r-stretch.quarto-figure-left  {
-      display: block;
-      margin-left: 0;
-      margin-right: auto; 
-    }
-    .reveal .slide > img.stretch.quarto-figure-right,
-    .reveal .slide > img.r-stretch.quarto-figure-right  {
-      display: block;
-      margin-left: auto;
-      margin-right: 0; 
-    }
-  </style>
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
-<body class="quarto-light">
-  <div class="reveal">
-    <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Intervenções nos Mercados: Controlo de Preços</h1>
-  <p class="subtitle">Da teoria à evidência empírica</p>
+<body class="nav-fixed quarto-light">
 
-<div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-ISCAL - IPL 
-</div>
-</div>
-</div>
-
-</section>
-<section>
-<section id="enquadramento" class="title-slide slide level1 center" data-background-color="#003366">
-<h1>Enquadramento</h1>
-
-</section>
-<section id="o-que-fizemos-até-aqui" class="slide level2">
-<h2>O que fizemos até aqui</h2>
-<ul>
-<li class="fragment">Impostos e subsídios são intervenções que actuam <strong>sobre o preço de mercado</strong> de forma indirecta</li>
-<li class="fragment">Ambos criam uma <strong>perda de excedente total</strong> (DWL), cuja incidência depende das elasticidades</li>
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Iscal - Microeconomia (Plano de Transição)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../material.html"> 
+<span class="menu-text">Material</span></a>
+  </li>  
 </ul>
-<div class="fragment">
-<p><strong>Hoje:</strong> o Estado fixa directamente o preço — <strong>controlo de preços</strong></p>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#enquadramento" id="toc-enquadramento" class="nav-link active" data-scroll-target="#enquadramento"><span class="header-section-number">1</span> Enquadramento</a>
+  <ul class="collapse">
+  <li><a href="#o-que-fizemos-até-aqui" id="toc-o-que-fizemos-até-aqui" class="nav-link" data-scroll-target="#o-que-fizemos-até-aqui"><span class="header-section-number">1.1</span> O que fizemos até aqui</a></li>
+  <li><a href="#motivações-políticas" id="toc-motivações-políticas" class="nav-link" data-scroll-target="#motivações-políticas"><span class="header-section-number">1.2</span> Motivações políticas</a></li>
+  </ul></li>
+  <li><a href="#preço-máximo-p_max" id="toc-preço-máximo-p_max" class="nav-link" data-scroll-target="#preço-máximo-p_max"><span class="header-section-number">2</span> Preço Máximo (<span class="math inline">\(P_{max}\)</span>)</a>
+  <ul class="collapse">
+  <li><a href="#mecanismo-tecto-de-preço-no-melhor-dos-casos" id="toc-mecanismo-tecto-de-preço-no-melhor-dos-casos" class="nav-link" data-scroll-target="#mecanismo-tecto-de-preço-no-melhor-dos-casos"><span class="header-section-number">2.1</span> Mecanismo: tecto de preço (no melhor dos casos)</a></li>
+  <li><a href="#efeitos-do-p_max-exemplo-numérico" id="toc-efeitos-do-p_max-exemplo-numérico" class="nav-link" data-scroll-target="#efeitos-do-p_max-exemplo-numérico"><span class="header-section-number">2.2</span> Efeitos do <span class="math inline">\(P_{max}\)</span>: exemplo numérico</a></li>
+  <li><a href="#consequências-não-intencionais-do-p_max-12" id="toc-consequências-não-intencionais-do-p_max-12" class="nav-link" data-scroll-target="#consequências-não-intencionais-do-p_max-12"><span class="header-section-number">2.3</span> Consequências não intencionais do <span class="math inline">\(P_{max}\)</span> (1/2)</a></li>
+  <li><a href="#consequências-não-intencionais-do-p_max-22" id="toc-consequências-não-intencionais-do-p_max-22" class="nav-link" data-scroll-target="#consequências-não-intencionais-do-p_max-22"><span class="header-section-number">2.4</span> Consequências não intencionais do <span class="math inline">\(P_{max}\)</span> (2/2)</a></li>
+  </ul></li>
+  <li><a href="#preço-mínimo-p_min" id="toc-preço-mínimo-p_min" class="nav-link" data-scroll-target="#preço-mínimo-p_min"><span class="header-section-number">3</span> Preço Mínimo (<span class="math inline">\(P_{min}\)</span>)</a>
+  <ul class="collapse">
+  <li><a href="#mecanismo-piso-de-preço" id="toc-mecanismo-piso-de-preço" class="nav-link" data-scroll-target="#mecanismo-piso-de-preço"><span class="header-section-number">3.1</span> Mecanismo: piso de preço</a></li>
+  <li><a href="#efeitos-do-p_min-exemplo-numérico" id="toc-efeitos-do-p_min-exemplo-numérico" class="nav-link" data-scroll-target="#efeitos-do-p_min-exemplo-numérico"><span class="header-section-number">3.2</span> Efeitos do <span class="math inline">\(P_{min}\)</span>: exemplo numérico</a></li>
+  <li><a href="#consequências-não-intencionais-do-p_min" id="toc-consequências-não-intencionais-do-p_min" class="nav-link" data-scroll-target="#consequências-não-intencionais-do-p_min"><span class="header-section-number">3.3</span> Consequências não intencionais do <span class="math inline">\(P_{min}\)</span></a></li>
+  </ul></li>
+  <li><a href="#casos-reais" id="toc-casos-reais" class="nav-link" data-scroll-target="#casos-reais"><span class="header-section-number">4</span> Casos Reais</a>
+  <ul class="collapse">
+  <li><a href="#caso-1-control-de-rendas-sfo" id="toc-caso-1-control-de-rendas-sfo" class="nav-link" data-scroll-target="#caso-1-control-de-rendas-sfo"><span class="header-section-number">4.1</span> Caso 1: Control de Rendas: SFO</a></li>
+  <li><a href="#caso-2-berlim-20202021" id="toc-caso-2-berlim-20202021" class="nav-link" data-scroll-target="#caso-2-berlim-20202021"><span class="header-section-number">4.2</span> Caso 2: Berlim (2020–2021)</a></li>
+  <li><a href="#caso-3-catalunha-20202022" id="toc-caso-3-catalunha-20202022" class="nav-link" data-scroll-target="#caso-3-catalunha-20202022"><span class="header-section-number">4.3</span> Caso 3: Catalunha — 2020–2022</a></li>
+  <li><a href="#evidência" id="toc-evidência" class="nav-link" data-scroll-target="#evidência"><span class="header-section-number">4.4</span> Evidência</a></li>
+  <li><a href="#caso-4-salário-mínimo-o-debate-empírico" id="toc-caso-4-salário-mínimo-o-debate-empírico" class="nav-link" data-scroll-target="#caso-4-salário-mínimo-o-debate-empírico"><span class="header-section-number">4.5</span> Caso 4: Salário mínimo — o debate empírico</a></li>
+  <li><a href="#porquê-diverge-da-teoria-simples" id="toc-porquê-diverge-da-teoria-simples" class="nav-link" data-scroll-target="#porquê-diverge-da-teoria-simples"><span class="header-section-number">4.6</span> Porquê diverge da teoria simples?</a></li>
+  <li><a href="#síntese-teoria-e-evidência" id="toc-síntese-teoria-e-evidência" class="nav-link" data-scroll-target="#síntese-teoria-e-evidência"><span class="header-section-number">4.7</span> Síntese: teoria e evidência</a></li>
+  </ul></li>
+  <li><a href="#discussão" id="toc-discussão" class="nav-link" data-scroll-target="#discussão"><span class="header-section-number">5</span> Discussão</a>
+  <ul class="collapse">
+  <li><a href="#controlos-de-preços-justificados-12" id="toc-controlos-de-preços-justificados-12" class="nav-link" data-scroll-target="#controlos-de-preços-justificados-12"><span class="header-section-number">5.1</span> Controlos de preços justificados? (1/2)</a></li>
+  <li><a href="#controlos-de-preços-justificados-22" id="toc-controlos-de-preços-justificados-22" class="nav-link" data-scroll-target="#controlos-de-preços-justificados-22"><span class="header-section-number">5.2</span> Controlos de preços justificados? (2/2)</a></li>
+  <li><a href="#referências-e-leituras-recomendadas" id="toc-referências-e-leituras-recomendadas" class="nav-link" data-scroll-target="#referências-e-leituras-recomendadas"><span class="header-section-number">5.3</span> Referências e leituras recomendadas</a></li>
+  </ul></li>
+  <li><a href="#exercícios" id="toc-exercícios" class="nav-link" data-scroll-target="#exercícios"><span class="header-section-number">6</span> Exercícios</a>
+  <ul class="collapse">
+  <li><a href="#exercício-de-escolha-múltipla-1" id="toc-exercício-de-escolha-múltipla-1" class="nav-link" data-scroll-target="#exercício-de-escolha-múltipla-1"><span class="header-section-number">6.1</span> Exercício de escolha múltipla 1</a></li>
+  <li><a href="#solução-escolha-múltipla-1" id="toc-solução-escolha-múltipla-1" class="nav-link" data-scroll-target="#solução-escolha-múltipla-1"><span class="header-section-number">6.2</span> Solução — escolha múltipla 1</a></li>
+  <li><a href="#exercício-de-escolha-múltipla-2" id="toc-exercício-de-escolha-múltipla-2" class="nav-link" data-scroll-target="#exercício-de-escolha-múltipla-2"><span class="header-section-number">6.3</span> Exercício de escolha múltipla 2</a></li>
+  <li><a href="#solução-escolha-múltipla-2" id="toc-solução-escolha-múltipla-2" class="nav-link" data-scroll-target="#solução-escolha-múltipla-2"><span class="header-section-number">6.4</span> Solução — escolha múltipla 2</a></li>
+  <li><a href="#exercício-de-desenvolvimento" id="toc-exercício-de-desenvolvimento" class="nav-link" data-scroll-target="#exercício-de-desenvolvimento"><span class="header-section-number">6.5</span> Exercício de desenvolvimento</a></li>
+  <li><a href="#solução-desenvolvimento-a-e-b" id="toc-solução-desenvolvimento-a-e-b" class="nav-link" data-scroll-target="#solução-desenvolvimento-a-e-b"><span class="header-section-number">6.6</span> Solução — desenvolvimento (a) e (b)</a></li>
+  <li><a href="#solução-desenvolvimento-c" id="toc-solução-desenvolvimento-c" class="nav-link" data-scroll-target="#solução-desenvolvimento-c"><span class="header-section-number">6.7</span> Solução — desenvolvimento (c)</a></li>
+  <li><a href="#solução-desenvolvimento-d" id="toc-solução-desenvolvimento-d" class="nav-link" data-scroll-target="#solução-desenvolvimento-d"><span class="header-section-number">6.8</span> Solução — desenvolvimento (d)</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="20_controlo_precos.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="20_controlo_precos.pdf"><i class="bi bi-file-pdf"></i>Beamer</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Intervenções nos Mercados: Controlo de Preços</h1>
+<p class="subtitle lead">Da teoria à evidência empírica</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>ISCAL - IPL </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="enquadramento" class="level1" data-background-color="#003366" data-number="1">
+<h1 data-background-color="#003366" data-number="1"><span class="header-section-number">1</span> Enquadramento</h1>
+<section id="o-que-fizemos-até-aqui" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="o-que-fizemos-até-aqui"><span class="header-section-number">1.1</span> O que fizemos até aqui</h2>
+<ul>
+<li>Impostos e subsídios são intervenções que actuam <strong>sobre o preço de mercado</strong> de forma indirecta</li>
+<li>Ambos criam uma <strong>perda de excedente total</strong> (DWL), cuja incidência depende das elasticidades</li>
+</ul>
+<p>. . .</p>
+<p><strong>Hoje:</strong> o Estado fixa directamente o preço — <strong>controlo de preços</strong></p>
+<p>. . .</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Definição</strong></p>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Definição
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p>Um <strong>preço máximo</strong> (<span class="math inline">\(P_{max}\)</span>) impede que o preço suba acima de um tecto fixado pelo Estado. Um <strong>preço mínimo</strong> (<span class="math inline">\(P_{min}\)</span>) impede que o preço desça abaixo de um piso. Quando vinculativos, impedem o mercado de atingir o equilíbrio competitivo.</p>
 </div>
 </div>
-</div>
-</div>
 </section>
-<section id="motivações-políticas" class="slide level2 smaller">
-<h2>Motivações políticas</h2>
+<section id="motivações-políticas" class="level2 smaller" data-number="1.2">
+<h2 class="smaller anchored" data-number="1.2" data-anchor-id="motivações-políticas"><span class="header-section-number">1.2</span> Motivações políticas</h2>
 <p><strong>Para fixar um preço máximo:</strong></p>
 <ul>
-<li class="fragment">Proteger consumidores de preços considerados excessivos</li>
-<li class="fragment">Exemplos: controlo de rendas, tarifas de energia, medicamentos essenciais, alimentos em tempo de guerra</li>
+<li>Proteger consumidores de preços considerados excessivos</li>
+<li>Exemplos: controlo de rendas, tarifas de energia, medicamentos essenciais, alimentos em tempo de guerra</li>
 </ul>
-<div class="fragment">
+<p>. . .</p>
 <p><strong>Para fixar um preço mínimo:</strong></p>
 <ul>
-<li class="fragment">Garantir rendimento suficiente a produtores ou trabalhadores</li>
-<li class="fragment">Exemplos: preços mínimos agrícolas (PAC), salário mínimo nacional</li>
+<li>Garantir rendimento suficiente a produtores ou trabalhadores</li>
+<li>Exemplos: preços mínimos agrícolas (PAC), salário mínimo nacional</li>
 </ul>
-</div>
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<p>. . .</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Important</strong></p>
+<div class="callout-title-container flex-fill">
+Important
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p>A economia positiva não diz que estas políticas são “erradas” — analisa as suas <strong>consequências</strong>. A avaliação normativa depende dos valores da sociedade e dos trade-offs entre eficiência e equidade.</p>
 </div>
 </div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="preço-máximo-p_max" class="title-slide slide level1 center" data-background-color="#003366">
-<h1>Preço Máximo (<span class="math inline">\(P_{max}\)</span>)</h1>
-
 </section>
-<section id="mecanismo-tecto-de-preço-no-melhor-dos-casos" class="slide level2">
-<h2>Mecanismo: tecto de preço (no melhor dos casos)</h2>
-
-<img data-src="20_controlo_precos_files/figure-revealjs/fig-pmax-1.png" id="fig-pmax" style="width:72.0%" class="r-stretch quarto-figure-center"><p class="caption">
+</section>
+<section id="preço-máximo-p_max" class="level1" data-background-color="#003366" data-number="2">
+<h1 data-background-color="#003366" data-number="2"><span class="header-section-number">2</span> Preço Máximo (<span class="math inline">\(P_{max}\)</span>)</h1>
+<section id="mecanismo-tecto-de-preço-no-melhor-dos-casos" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="mecanismo-tecto-de-preço-no-melhor-dos-casos"><span class="header-section-number">2.1</span> Mecanismo: tecto de preço (no melhor dos casos)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>eq_q <span class="ot">&lt;-</span> <span class="dv">4</span>; eq_p <span class="ot">&lt;-</span> <span class="dv">6</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pmax <span class="ot">&lt;-</span> <span class="dv">4</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>qs_ceil <span class="ot">&lt;-</span> <span class="dv">2</span>; qd_ceil <span class="ot">&lt;-</span> <span class="dv">6</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>df_d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">q =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="at">p =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">0</span>))</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>df_s <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">q =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">8</span>),  <span class="at">p =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">10</span>))</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> df_d, <span class="fu">aes</span>(<span class="at">x =</span> q, <span class="at">y =</span> p), <span class="at">colour =</span> <span class="st">"#0066CC"</span>, <span class="at">linewidth =</span> <span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> df_s, <span class="fu">aes</span>(<span class="at">x =</span> q, <span class="at">y =</span> p), <span class="at">colour =</span> <span class="st">"#CC3300"</span>, <span class="at">linewidth =</span> <span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> eq_q, <span class="at">y =</span> eq_p), <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">xend =</span> eq_q, <span class="at">y =</span> eq_p, <span class="at">yend =</span> eq_p),</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>               <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">colour =</span> <span class="st">"grey50"</span>) <span class="sc">+</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> eq_q, <span class="at">xend =</span> eq_q, <span class="at">y =</span> <span class="dv">0</span>, <span class="at">yend =</span> eq_p),</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>               <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">colour =</span> <span class="st">"grey50"</span>) <span class="sc">+</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> pmax, <span class="at">colour =</span> <span class="st">"darkgreen"</span>, <span class="at">linewidth =</span> <span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> qs_ceil, <span class="at">xend =</span> qs_ceil, <span class="at">y =</span> <span class="dv">0</span>, <span class="at">yend =</span> pmax),</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>               <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">colour =</span> <span class="st">"darkgreen"</span>) <span class="sc">+</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> qd_ceil, <span class="at">xend =</span> qd_ceil, <span class="at">y =</span> <span class="dv">0</span>, <span class="at">yend =</span> pmax),</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>               <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">colour =</span> <span class="st">"darkgreen"</span>) <span class="sc">+</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_polygon</span>(</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> <span class="fu">data.frame</span>(<span class="at">q =</span> <span class="fu">c</span>(qs_ceil, eq_q, qs_ceil),</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>                      <span class="at">p =</span> <span class="fu">c</span>(<span class="dv">10</span> <span class="sc">-</span> qs_ceil, eq_p, pmax)),</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> q, <span class="at">y =</span> p), <span class="at">fill =</span> <span class="st">"orange"</span>, <span class="at">alpha =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fl">10.5</span>, <span class="at">y =</span> <span class="fl">0.4</span>, <span class="at">label =</span> <span class="st">"D"</span>,</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="fl">4.5</span>, <span class="at">colour =</span> <span class="st">"#0066CC"</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>) <span class="sc">+</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fl">8.4</span>,  <span class="at">y =</span> <span class="fl">10.3</span>, <span class="at">label =</span> <span class="st">"S"</span>,</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="fl">4.5</span>, <span class="at">colour =</span> <span class="st">"#CC3300"</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>) <span class="sc">+</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">0.55</span>, <span class="at">y =</span> eq_p,  <span class="at">label =</span> <span class="st">"P*"</span>,   <span class="at">size =</span> <span class="fl">3.6</span>) <span class="sc">+</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> eq_q,  <span class="at">y =</span> <span class="sc">-</span><span class="fl">0.55</span>, <span class="at">label =</span> <span class="st">"Q*"</span>,   <span class="at">size =</span> <span class="fl">3.6</span>) <span class="sc">+</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">0.8</span>, <span class="at">y =</span> pmax,</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="fu">expression</span>(P[max]), <span class="at">size =</span> <span class="fl">3.6</span>, <span class="at">colour =</span> <span class="st">"darkgreen"</span>) <span class="sc">+</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> qs_ceil, <span class="at">y =</span> <span class="sc">-</span><span class="fl">0.55</span>,</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="fu">expression</span>(Q[S]), <span class="at">size =</span> <span class="fl">3.4</span>, <span class="at">colour =</span> <span class="st">"darkgreen"</span>) <span class="sc">+</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> qd_ceil, <span class="at">y =</span> <span class="sc">-</span><span class="fl">0.55</span>,</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="fu">expression</span>(Q[D]), <span class="at">size =</span> <span class="fl">3.4</span>, <span class="at">colour =</span> <span class="st">"darkgreen"</span>) <span class="sc">+</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fl">3.0</span>, <span class="at">y =</span> <span class="fl">6.3</span>, <span class="at">label =</span> <span class="st">"DWL"</span>,</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="fl">3.4</span>, <span class="at">colour =</span> <span class="st">"darkorange3"</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>) <span class="sc">+</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"segment"</span>,</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>           <span class="at">x =</span> qs_ceil <span class="sc">+</span> <span class="fl">0.1</span>, <span class="at">xend =</span> qd_ceil <span class="sc">-</span> <span class="fl">0.1</span>,</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> pmax <span class="sc">-</span> <span class="fl">0.6</span>, <span class="at">yend =</span> pmax <span class="sc">-</span> <span class="fl">0.6</span>,</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>           <span class="at">arrow =</span> <span class="fu">arrow</span>(<span class="at">ends =</span> <span class="st">"both"</span>, <span class="at">length =</span> <span class="fu">unit</span>(<span class="fl">0.12</span>, <span class="st">"cm"</span>)),</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>           <span class="at">colour =</span> <span class="st">"darkgreen"</span>) <span class="sc">+</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> (qs_ceil <span class="sc">+</span> qd_ceil) <span class="sc">/</span> <span class="dv">2</span>, <span class="at">y =</span> pmax <span class="sc">-</span> <span class="fl">1.1</span>,</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="st">"Escassez"</span>, <span class="at">size =</span> <span class="fl">3.2</span>, <span class="at">colour =</span> <span class="st">"darkgreen"</span>) <span class="sc">+</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">11</span>), <span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="sc">+</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">11</span>), <span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="sc">+</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Q"</span>, <span class="at">y =</span> <span class="st">"P"</span>) <span class="sc">+</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">13</span>) <span class="sc">+</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-pmax" class="quarto-float quarto-figure quarto-figure-center anchored" width="72%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pmax-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="20_controlo_precos_files/figure-html/fig-pmax-1.png" id="fig-pmax" class="img-fluid figure-img" style="width:72.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-pmax-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1
-</p></section>
-<section id="efeitos-do-p_max-exemplo-numérico" class="slide level2 smaller">
-<h2>Efeitos do <span class="math inline">\(P_{max}\)</span>: exemplo numérico</h2>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="efeitos-do-p_max-exemplo-numérico" class="level2 smaller" data-number="2.2">
+<h2 class="smaller anchored" data-number="2.2" data-anchor-id="efeitos-do-p_max-exemplo-numérico"><span class="header-section-number">2.2</span> Efeitos do <span class="math inline">\(P_{max}\)</span>: exemplo numérico</h2>
 <p>Mercado com <span class="math inline">\(D: P = 10 - Q\)</span> e <span class="math inline">\(S: P = 2 + Q\)</span>, equilíbrio <span class="math inline">\(Q^* = 4\)</span>, <span class="math inline">\(P^* = 6\)</span></p>
 <p>Tecto <span class="math inline">\(P_{max} = 4 &lt; P^*\)</span>:</p>
-<table class="caption-top">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th></th>
@@ -251,55 +423,112 @@ Figure&nbsp;1
 </tbody>
 </table>
 <p>† máximo teórico — assume racionamento eficiente (bens vão para quem mais valoriza)</p>
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<p>. . .</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Important</strong></p>
+<div class="callout-title-container flex-fill">
+Important
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p>O EP cai <strong>sempre</strong>: o produtor vende menos a preço mais baixo. O EC depende de <strong>quem recebe os <span class="math inline">\(Q_S = 2\)</span> bens racionados</strong>: se vão para os consumidores com maior WTP (EC = 10 &gt; 8), há ganho; mas com racionamento não-preço (fila, relações pessoais, discrição do vendedor) os bens podem ir para quem os valoriza menos — o EC real pode ser <strong>inferior a 8</strong>. A DWL mínima é 4 (triângulo entre curvas de <span class="math inline">\(Q_S\)</span> a <span class="math inline">\(Q^*\)</span>) e cresce com ineficiência alocativa.</p>
 </div>
 </div>
-</div>
-</div>
 </section>
-<section id="consequências-não-intencionais-do-p_max-12" class="slide level2 smaller">
-<h2>Consequências não intencionais do <span class="math inline">\(P_{max}\)</span> (1/2)</h2>
+<section id="consequências-não-intencionais-do-p_max-12" class="level2 smaller" data-number="2.3">
+<h2 class="smaller anchored" data-number="2.3" data-anchor-id="consequências-não-intencionais-do-p_max-12"><span class="header-section-number">2.3</span> Consequências não intencionais do <span class="math inline">\(P_{max}\)</span> (1/2)</h2>
 <p><strong>Escassez e racionamento não-preço</strong></p>
 <p>Quem recebe o bem? Não necessariamente quem mais o valoriza. O racionamento é feito por filas, relações pessoais ou discrição do vendedor — o EC real pode ficar abaixo do valor competitivo.</p>
-<div class="fragment">
+<p>. . .</p>
 <p><strong>Degradação da qualidade</strong></p>
 <p>Produtores não podem cobrar mais → reduzem custos de manutenção e qualidade para compensar a margem perdida.</p>
-</div>
 </section>
-<section id="consequências-não-intencionais-do-p_max-22" class="slide level2 smaller">
-<h2>Consequências não intencionais do <span class="math inline">\(P_{max}\)</span> (2/2)</h2>
+<section id="consequências-não-intencionais-do-p_max-22" class="level2 smaller" data-number="2.4">
+<h2 class="smaller anchored" data-number="2.4" data-anchor-id="consequências-não-intencionais-do-p_max-22"><span class="header-section-number">2.4</span> Consequências não intencionais do <span class="math inline">\(P_{max}\)</span> (2/2)</h2>
 <p><strong>Mercado paralelo (mercado negro)</strong></p>
 <p>A disposição a pagar dos consumidores excedentários (<span class="math inline">\(Q_D - Q_S = 4\)</span>) é muito superior a <span class="math inline">\(P_{max}\)</span> → surgem trocas informais a preços mais altos, muitas vezes ilegais.</p>
-<div class="fragment">
+<p>. . .</p>
 <p><strong>Redução da oferta futura</strong></p>
 <p>A menor rentabilidade desincentiva novos investimentos. A longo prazo, a oferta pode contrair ainda mais.</p>
-</div>
-</section></section>
-<section>
-<section id="preço-mínimo-p_min" class="title-slide slide level1 center" data-background-color="#003366">
-<h1>Preço Mínimo (<span class="math inline">\(P_{min}\)</span>)</h1>
-
 </section>
-<section id="mecanismo-piso-de-preço" class="slide level2">
-<h2>Mecanismo: piso de preço</h2>
-
-<img data-src="20_controlo_precos_files/figure-revealjs/fig-pmin-1.png" id="fig-pmin" style="width:72.0%" class="r-stretch quarto-figure-center"><p class="caption">
+</section>
+<section id="preço-mínimo-p_min" class="level1" data-background-color="#003366" data-number="3">
+<h1 data-background-color="#003366" data-number="3"><span class="header-section-number">3</span> Preço Mínimo (<span class="math inline">\(P_{min}\)</span>)</h1>
+<section id="mecanismo-piso-de-preço" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="mecanismo-piso-de-preço"><span class="header-section-number">3.1</span> Mecanismo: piso de preço</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>eq_q <span class="ot">&lt;-</span> <span class="dv">4</span>; eq_p <span class="ot">&lt;-</span> <span class="dv">6</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pmin <span class="ot">&lt;-</span> <span class="dv">8</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>qd_fl <span class="ot">&lt;-</span> <span class="dv">2</span>; qs_fl <span class="ot">&lt;-</span> <span class="dv">6</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>df_d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">q =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="at">p =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">0</span>))</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>df_s <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">q =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">8</span>),  <span class="at">p =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">10</span>))</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> df_d, <span class="fu">aes</span>(<span class="at">x =</span> q, <span class="at">y =</span> p), <span class="at">colour =</span> <span class="st">"#0066CC"</span>, <span class="at">linewidth =</span> <span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> df_s, <span class="fu">aes</span>(<span class="at">x =</span> q, <span class="at">y =</span> p), <span class="at">colour =</span> <span class="st">"#CC3300"</span>, <span class="at">linewidth =</span> <span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> eq_q, <span class="at">y =</span> eq_p), <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">xend =</span> eq_q, <span class="at">y =</span> eq_p, <span class="at">yend =</span> eq_p),</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>               <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">colour =</span> <span class="st">"grey50"</span>) <span class="sc">+</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> eq_q, <span class="at">xend =</span> eq_q, <span class="at">y =</span> <span class="dv">0</span>, <span class="at">yend =</span> eq_p),</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>               <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">colour =</span> <span class="st">"grey50"</span>) <span class="sc">+</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> pmin, <span class="at">colour =</span> <span class="st">"purple"</span>, <span class="at">linewidth =</span> <span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> qd_fl, <span class="at">xend =</span> qd_fl, <span class="at">y =</span> <span class="dv">0</span>, <span class="at">yend =</span> pmin),</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>               <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">colour =</span> <span class="st">"purple"</span>) <span class="sc">+</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> qs_fl, <span class="at">xend =</span> qs_fl, <span class="at">y =</span> <span class="dv">0</span>, <span class="at">yend =</span> pmin),</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>               <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">colour =</span> <span class="st">"purple"</span>) <span class="sc">+</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_polygon</span>(</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> <span class="fu">data.frame</span>(<span class="at">q =</span> <span class="fu">c</span>(qd_fl, eq_q, qd_fl),</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>                      <span class="at">p =</span> <span class="fu">c</span>(pmin, eq_p, <span class="dv">2</span> <span class="sc">+</span> qd_fl)),</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> q, <span class="at">y =</span> p), <span class="at">fill =</span> <span class="st">"orange"</span>, <span class="at">alpha =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fl">10.5</span>, <span class="at">y =</span> <span class="fl">0.4</span>, <span class="at">label =</span> <span class="st">"D"</span>,</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="fl">4.5</span>, <span class="at">colour =</span> <span class="st">"#0066CC"</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>) <span class="sc">+</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fl">8.4</span>,  <span class="at">y =</span> <span class="fl">10.3</span>, <span class="at">label =</span> <span class="st">"S"</span>,</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="fl">4.5</span>, <span class="at">colour =</span> <span class="st">"#CC3300"</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>) <span class="sc">+</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">0.55</span>, <span class="at">y =</span> eq_p, <span class="at">label =</span> <span class="st">"P*"</span>,   <span class="at">size =</span> <span class="fl">3.6</span>) <span class="sc">+</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> eq_q,  <span class="at">y =</span> <span class="sc">-</span><span class="fl">0.55</span>, <span class="at">label =</span> <span class="st">"Q*"</span>,  <span class="at">size =</span> <span class="fl">3.6</span>) <span class="sc">+</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">0.8</span>, <span class="at">y =</span> pmin,</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="fu">expression</span>(P[min]), <span class="at">size =</span> <span class="fl">3.6</span>, <span class="at">colour =</span> <span class="st">"purple"</span>) <span class="sc">+</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> qd_fl, <span class="at">y =</span> <span class="sc">-</span><span class="fl">0.55</span>,</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="fu">expression</span>(Q[D]), <span class="at">size =</span> <span class="fl">3.4</span>, <span class="at">colour =</span> <span class="st">"purple"</span>) <span class="sc">+</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> qs_fl, <span class="at">y =</span> <span class="sc">-</span><span class="fl">0.55</span>,</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="fu">expression</span>(Q[S]), <span class="at">size =</span> <span class="fl">3.4</span>, <span class="at">colour =</span> <span class="st">"purple"</span>) <span class="sc">+</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fl">2.8</span>, <span class="at">y =</span> <span class="fl">7.4</span>, <span class="at">label =</span> <span class="st">"DWL"</span>,</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="fl">3.4</span>, <span class="at">colour =</span> <span class="st">"darkorange3"</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>) <span class="sc">+</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"segment"</span>,</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>           <span class="at">x =</span> qd_fl <span class="sc">+</span> <span class="fl">0.1</span>, <span class="at">xend =</span> qs_fl <span class="sc">-</span> <span class="fl">0.1</span>,</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> pmin <span class="sc">+</span> <span class="fl">0.6</span>, <span class="at">yend =</span> pmin <span class="sc">+</span> <span class="fl">0.6</span>,</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>           <span class="at">arrow =</span> <span class="fu">arrow</span>(<span class="at">ends =</span> <span class="st">"both"</span>, <span class="at">length =</span> <span class="fu">unit</span>(<span class="fl">0.12</span>, <span class="st">"cm"</span>)),</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>           <span class="at">colour =</span> <span class="st">"purple"</span>) <span class="sc">+</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> (qd_fl <span class="sc">+</span> qs_fl) <span class="sc">/</span> <span class="dv">2</span>, <span class="at">y =</span> pmin <span class="sc">+</span> <span class="fl">1.15</span>,</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="st">"Excesso de oferta"</span>, <span class="at">size =</span> <span class="fl">3.2</span>, <span class="at">colour =</span> <span class="st">"purple"</span>) <span class="sc">+</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">11</span>), <span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="sc">+</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">11</span>), <span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="sc">+</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Q"</span>, <span class="at">y =</span> <span class="st">"P"</span>) <span class="sc">+</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">13</span>) <span class="sc">+</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-pmin" class="quarto-float quarto-figure quarto-figure-center anchored" width="72%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pmin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="20_controlo_precos_files/figure-html/fig-pmin-1.png" id="fig-pmin" class="img-fluid figure-img" style="width:72.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-pmin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2
-</p></section>
-<section id="efeitos-do-p_min-exemplo-numérico" class="slide level2 smaller">
-<h2>Efeitos do <span class="math inline">\(P_{min}\)</span>: exemplo numérico</h2>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="efeitos-do-p_min-exemplo-numérico" class="level2 smaller" data-number="3.2">
+<h2 class="smaller anchored" data-number="3.2" data-anchor-id="efeitos-do-p_min-exemplo-numérico"><span class="header-section-number">3.2</span> Efeitos do <span class="math inline">\(P_{min}\)</span>: exemplo numérico</h2>
 <p>Mesmo mercado, piso <span class="math inline">\(P_{min} = 8 &gt; P^* = 6\)</span>:</p>
-<table class="caption-top">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th></th>
@@ -336,244 +565,275 @@ Figure&nbsp;2
 </tbody>
 </table>
 <p>† máximo teórico — assume que vendem os <span class="math inline">\(Q_D = 2\)</span> produtores mais eficientes (menor custo)</p>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<p>. . .</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Simetria notável</strong></p>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Simetria notável
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p>O EC cai <strong>sempre</strong>: o consumidor compra menos a preço mais alto. O EP depende de <strong>quais</strong> dos <span class="math inline">\(Q_S = 6\)</span> produtores conseguem vender os <span class="math inline">\(Q_D = 2\)</span> bens: se forem os mais eficientes, EP = 10 &gt; 8; se não, EP pode ser inferior a 8. Tal como no <span class="math inline">\(P_{max}\)</span>, o excesso de oferta cria um problema de alocação que agrava as perdas de excedente.</p>
 </div>
 </div>
-</div>
-</div>
 </section>
-<section id="consequências-não-intencionais-do-p_min" class="slide level2 smaller">
-<h2>Consequências não intencionais do <span class="math inline">\(P_{min}\)</span></h2>
+<section id="consequências-não-intencionais-do-p_min" class="level2 smaller" data-number="3.3">
+<h2 class="smaller anchored" data-number="3.3" data-anchor-id="consequências-não-intencionais-do-p_min"><span class="header-section-number">3.3</span> Consequências não intencionais do <span class="math inline">\(P_{min}\)</span></h2>
 <p><strong>Excesso de oferta (stocks acumulados)</strong></p>
 <p><span class="math inline">\(Q_S = 6 &gt; Q_D = 2\)</span>: produtores não escoam toda a produção. Quem vende? Pode não ser o mais eficiente.</p>
-<div class="fragment">
+<p>. . .</p>
 <p><strong>Intervenções secundárias para gerir os excedentes</strong></p>
 <p>O Estado pode ser obrigado a comprar os excedentes para manter o preço. Custo para o contribuinte.</p>
 <p><em>Exemplo histórico:</em> «montanhas de manteiga» e «lagos de leite» na Política Agrícola Comum europeia dos anos 1980.</p>
-</div>
-<div class="fragment">
+<p>. . .</p>
 <p><strong>Redução de incentivos à eficiência e qualidade</strong></p>
 <p>Se o preço mínimo elimina a pressão competitiva por preço, reduz o incentivo a inovar e a melhorar.</p>
-</div>
-</section></section>
-<section>
-<section id="casos-reais" class="title-slide slide level1 center" data-background-color="#003366">
-<h1>Casos Reais</h1>
-
 </section>
-<section id="caso-1-control-de-rendas-sfo" class="slide level2 smaller">
-<h2>Caso 1: Control de Rendas: SFO</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+</section>
+<section id="casos-reais" class="level1" data-background-color="#003366" data-number="4">
+<h1 data-background-color="#003366" data-number="4"><span class="header-section-number">4</span> Casos Reais</h1>
+<section id="caso-1-control-de-rendas-sfo" class="level2 smaller" data-number="4.1">
+<h2 class="smaller anchored" data-number="4.1" data-anchor-id="caso-1-control-de-rendas-sfo"><span class="header-section-number">4.1</span> Caso 1: Control de Rendas: SFO</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Diamond, McQuade &amp; Qian (2019) — <em>American Economic Review</em></strong></p>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Diamond, McQuade &amp; Qian (2019) — <em>American Economic Review</em>
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p>Estudo quasi-experimental sobre a extensão do controlo de rendas a edifícios com ≤ 4 fogos (construídos antes de 1980), após uma reforma legislativa de 1994 em São Francisco.</p>
-</div>
 </div>
 </div>
 <p><strong>Resultados principais:</strong></p>
 <ul>
-<li class="fragment">Inquilinos em casas <strong>controladas</strong>: probabilidade de permanecer na morada <span class="math inline">\(\uparrow\)</span> cerca de 20 p.p.</li>
-<li class="fragment">Senhorios retiraram <strong>15%</strong> das unidades controladas do mercado de arrendamento (conversão em condominiums ou demolição)</li>
-<li class="fragment">Efeito sobre toda a cidade: rendas no mercado <strong>não controlado</strong> <span class="math inline">\(\uparrow\)</span> 5,1%</li>
+<li>Inquilinos em casas <strong>controladas</strong>: probabilidade de permanecer na morada <span class="math inline">\(\uparrow\)</span> cerca de 20 p.p.</li>
+<li>Senhorios retiraram <strong>15%</strong> das unidades controladas do mercado de arrendamento (conversão em condominiums ou demolição)</li>
+<li>Efeito sobre toda a cidade: rendas no mercado <strong>não controlado</strong> <span class="math inline">\(\uparrow\)</span> 5,1%</li>
 </ul>
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<p>. . .</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Important</strong></p>
+<div class="callout-title-container flex-fill">
+Important
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p>Exatamente o previsto pela teoria: os inquilinos existentes beneficiam, mas a oferta total cai e as rendas sobem para quem ainda procura no mercado livre.</p>
 </div>
 </div>
-</div>
-</div>
 </section>
-<section id="caso-2-berlim-20202021" class="slide level2 smaller">
-<h2>Caso 2: Berlim (2020–2021)</h2>
+<section id="caso-2-berlim-20202021" class="level2 smaller" data-number="4.2">
+<h2 class="smaller anchored" data-number="4.2" data-anchor-id="caso-2-berlim-20202021"><span class="header-section-number">4.2</span> Caso 2: Berlim (2020–2021)</h2>
 <ul>
-<li class="fragment">Em fevereiro de 2020, Berlim <strong>congelou</strong> rendas de ~1,5 milhões de apartamentos (construídos antes de 2014, ~95% do parque)</li>
-<li class="fragment">O mercado bifurcou-se: apartamentos <em>pós-2014</em> (não regulados, ~5% do parque) sofreram aumentos de preço imediatos</li>
+<li>Em fevereiro de 2020, Berlim <strong>congelou</strong> rendas de ~1,5 milhões de apartamentos (construídos antes de 2014, ~95% do parque)</li>
+<li>O mercado bifurcou-se: apartamentos <em>pós-2014</em> (não regulados, ~5% do parque) sofreram aumentos de preço imediatos</li>
 </ul>
-<div class="fragment">
+<p>. . .</p>
 <ul>
-<li class="fragment"><strong>Hahn, Kholodilin, Waltl &amp; Fongoni (2024):</strong> anúncios no segmento não regulado dispararam em preço; inquilinos sem contratos existentes pagaram mais, não menos</li>
+<li><strong>Hahn, Kholodilin, Waltl &amp; Fongoni (2024):</strong> anúncios no segmento não regulado dispararam em preço; inquilinos sem contratos existentes pagaram mais, não menos</li>
 </ul>
-</div>
-<div class="fragment">
+<p>. . .</p>
 <ul>
-<li class="fragment">O Tribunal Constitucional Federal alemão declarou o <em>Mietendeckel</em> <strong>inconstitucional</strong> em abril de 2021</li>
-<li class="fragment">As rendas voltaram, em geral, aos níveis pré-regulação</li>
+<li>O Tribunal Constitucional Federal alemão declarou o <em>Mietendeckel</em> <strong>inconstitucional</strong> em abril de 2021</li>
+<li>As rendas voltaram, em geral, aos níveis pré-regulação</li>
 </ul>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<p>. . .</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Note</strong></p>
+<div class="callout-title-container flex-fill">
+Note
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p>Quando a regulação é parcial, os recursos «fogem» para os segmentos não regulados — agravando a situação de quem não beneficiou do controlo.</p>
 </div>
 </div>
-</div>
-</div>
 </section>
-<section id="caso-3-catalunha-20202022" class="slide level2 smaller">
-<h2>Caso 3: Catalunha — 2020–2022</h2>
+<section id="caso-3-catalunha-20202022" class="level2 smaller" data-number="4.3">
+<h2 class="smaller anchored" data-number="4.3" data-anchor-id="caso-3-catalunha-20202022"><span class="header-section-number">4.3</span> Caso 3: Catalunha — 2020–2022</h2>
 <ul>
-<li class="fragment">Regulação aplicada a municípios com mais de 20 000 habitantes com mercado de arrendamento «tenso»</li>
-<li class="fragment">Rendas não podiam exceder um cap por tipo de habitação e zona geográfica</li>
-<li class="fragment">Terminou em março de 2022 (declarado inconstitucional pelo Tribunal Constitucional espanhol)</li>
+<li>Regulação aplicada a municípios com mais de 20 000 habitantes com mercado de arrendamento «tenso»</li>
+<li>Rendas não podiam exceder um cap por tipo de habitação e zona geográfica</li>
+<li>Terminou em março de 2022 (declarado inconstitucional pelo Tribunal Constitucional espanhol)</li>
 </ul>
 </section>
-<section id="evidência" class="slide level2 smaller">
-<h2>Evidência</h2>
+<section id="evidência" class="level2 smaller" data-number="4.4">
+<h2 class="smaller anchored" data-number="4.4" data-anchor-id="evidência"><span class="header-section-number">4.4</span> Evidência</h2>
 <p><strong>Evidência (estudos do Banco de España e Fed. San Francisco, 2023):</strong></p>
 <ul>
-<li class="fragment">Curto prazo: rendas nos segmentos controlados desceram (efeito esperado)</li>
-<li class="fragment">Número de novos contratos de arrendamento caiu significativamente nos municípios regulados</li>
-<li class="fragment">Parte da oferta migrou para alojamento turístico (Airbnb) — não sujeito à regulação</li>
+<li>Curto prazo: rendas nos segmentos controlados desceram (efeito esperado)</li>
+<li>Número de novos contratos de arrendamento caiu significativamente nos municípios regulados</li>
+<li>Parte da oferta migrou para alojamento turístico (Airbnb) — não sujeito à regulação</li>
 </ul>
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<p>. . .</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Important</strong></p>
+<div class="callout-title-container flex-fill">
+Important
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p><strong>Padrão consistente em três países europeus:</strong> controlo de rendas redistribui rendimento a curto prazo, mas contrai a oferta a médio prazo.</p>
 </div>
 </div>
-</div>
-</div>
 </section>
-<section id="caso-4-salário-mínimo-o-debate-empírico" class="slide level2 smaller">
-<h2>Caso 4: Salário mínimo — o debate empírico</h2>
+<section id="caso-4-salário-mínimo-o-debate-empírico" class="level2 smaller" data-number="4.5">
+<h2 class="smaller anchored" data-number="4.5" data-anchor-id="caso-4-salário-mínimo-o-debate-empírico"><span class="header-section-number">4.5</span> Caso 4: Salário mínimo — o debate empírico</h2>
 <p>O salário mínimo é um <strong><span class="math inline">\(P_{min}\)</span> no mercado de trabalho</strong>.</p>
 <p>A teoria standard prevê: <span class="math inline">\(W_{min} &gt; W^* \Rightarrow\)</span> desemprego involuntário (<span class="math inline">\(L_S &gt; L_D\)</span>).</p>
-<div class="fragment">
+<p>. . .</p>
 <p><strong>Mas a evidência empírica é mais complexa:</strong></p>
 <ul>
-<li class="fragment"><strong>Card &amp; Krueger (1994, AER):</strong> Aumento do salário mínimo em New Jersey (de $4,25 para $5,05) — <em>sem</em> queda de emprego em fast food vs.&nbsp;Pennsylvania (grupo de controlo); o emprego até aumentou ligeiramente</li>
-<li class="fragment"><strong>Dube, Lester &amp; Reich (2010):</strong> usando condados fronteiriços como grupo de controlo, encontram efeitos de emprego próximos de zero para aumentos moderados</li>
-<li class="fragment"><strong>Burkhauser et al.&nbsp;(2022):</strong> revisão abrangente — maioria dos estudos encontra efeitos centrados em zero, mas com incerteza considerável</li>
+<li><strong>Card &amp; Krueger (1994, AER):</strong> Aumento do salário mínimo em New Jersey (de $4,25 para $5,05) — <em>sem</em> queda de emprego em fast food vs.&nbsp;Pennsylvania (grupo de controlo); o emprego até aumentou ligeiramente</li>
+<li><strong>Dube, Lester &amp; Reich (2010):</strong> usando condados fronteiriços como grupo de controlo, encontram efeitos de emprego próximos de zero para aumentos moderados</li>
+<li><strong>Burkhauser et al.&nbsp;(2022):</strong> revisão abrangente — maioria dos estudos encontra efeitos centrados em zero, mas com incerteza considerável</li>
 </ul>
-</div>
 </section>
-<section id="porquê-diverge-da-teoria-simples" class="slide level2 smaller">
-<h2>Porquê diverge da teoria simples?</h2>
+<section id="porquê-diverge-da-teoria-simples" class="level2 smaller" data-number="4.6">
+<h2 class="smaller anchored" data-number="4.6" data-anchor-id="porquê-diverge-da-teoria-simples"><span class="header-section-number">4.6</span> Porquê diverge da teoria simples?</h2>
 <p><strong>1. Monopsónia no mercado de trabalho</strong></p>
 <p>Se os empregadores têm poder de mercado, o salário competitivo já está <strong>abaixo</strong> do óptimo. Um salário mínimo pode <em>aumentar</em> emprego até certo ponto — tal como um <span class="math inline">\(P_{min}\)</span> num mercado com poder de monopólio do comprador.</p>
-<div class="fragment">
+<p>. . .</p>
 <p><strong>2. Custos de rotatividade (<em>turnover</em>)</strong></p>
 <p>Com salário mínimo mais alto, os trabalhadores ficam mais tempo nos empregos → menos custos de recrutamento e formação para as empresas.</p>
-</div>
-<div class="fragment">
+<p>. . .</p>
 <p><strong>3. Efeito nos preços finais</strong></p>
 <p>Parte do custo salarial extra é transferida para os consumidores via preços mais altos — o ajustamento não é só via quantidade de emprego.</p>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<p>. . .</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Note</strong></p>
+<div class="callout-title-container flex-fill">
+Note
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p>O debate empírico sobre o salário mínimo foi reconhecido com o Prémio Nobel da Economia de 2021, atribuído a David Card.</p>
 </div>
 </div>
-</div>
-</div>
 </section>
-<section id="síntese-teoria-e-evidência" class="slide level2 smaller">
-<h2>Síntese: teoria e evidência</h2>
-
-<img data-src="20_controlo_precos_files/figure-revealjs/fig-synth-1.png" id="fig-synth" style="width:90.0%" class="r-stretch quarto-figure-center"><p class="caption">
+<section id="síntese-teoria-e-evidência" class="level2 smaller" data-number="4.7">
+<h2 class="smaller anchored" data-number="4.7" data-anchor-id="síntese-teoria-e-evidência"><span class="header-section-number">4.7</span> Síntese: teoria e evidência</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">politica =</span> <span class="fu">factor</span>(</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(<span class="st">"Controlo de rendas"</span>, <span class="st">"P. mínimos agrícolas"</span>, <span class="st">"Salário mínimo"</span>),</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Controlo de rendas"</span>, <span class="st">"P. mínimos agrícolas"</span>, <span class="st">"Salário mínimo"</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">teoria_neg  =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.9</span>, <span class="sc">-</span><span class="fl">0.85</span>, <span class="sc">-</span><span class="fl">0.75</span>),</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">evidencia   =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.75</span>, <span class="sc">-</span><span class="fl">0.65</span>, <span class="sc">-</span><span class="fl">0.20</span>),</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">label_teoria =</span> <span class="fu">c</span>(<span class="st">"Escassez + mercado negro"</span>, <span class="st">"Excesso oferta + custo Estado"</span>, <span class="st">"Desemprego"</span>),</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">label_evid   =</span> <span class="fu">c</span>(<span class="st">"Escassez + subida seg. livre"</span>, <span class="st">"Excesso + migração mercados"</span>, <span class="st">"Efeito ~ 0 (variações mod.)"</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">x =</span> politica, <span class="at">y =</span> teoria_neg),</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>           <span class="at">fill =</span> <span class="st">"#CC3300"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">width =</span> <span class="fl">0.35</span>,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>           <span class="at">position =</span> <span class="fu">position_nudge</span>(<span class="at">x =</span> <span class="sc">-</span><span class="fl">0.2</span>)) <span class="sc">+</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">x =</span> politica, <span class="at">y =</span> evidencia),</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>           <span class="at">fill =</span> <span class="st">"#0066CC"</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>, <span class="at">width =</span> <span class="fl">0.35</span>,</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>           <span class="at">position =</span> <span class="fu">position_nudge</span>(<span class="at">x =</span> <span class="fl">0.2</span>)) <span class="sc">+</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">colour =</span> <span class="st">"black"</span>, <span class="at">linewidth =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"rect"</span>, <span class="at">xmin =</span> <span class="fl">0.3</span>, <span class="at">xmax =</span> <span class="fl">0.7</span>, <span class="at">ymin =</span> <span class="sc">-</span><span class="fl">1.05</span>, <span class="at">ymax =</span> <span class="sc">-</span><span class="fl">0.96</span>,</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>           <span class="at">fill =</span> <span class="st">"#CC3300"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fl">0.75</span>, <span class="at">y =</span> <span class="sc">-</span><span class="fl">1.005</span>, <span class="at">label =</span> <span class="st">"Teoria (modelo simples)"</span>,</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>           <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">size =</span> <span class="fl">3.2</span>, <span class="at">colour =</span> <span class="st">"#CC3300"</span>) <span class="sc">+</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"rect"</span>, <span class="at">xmin =</span> <span class="fl">0.3</span>, <span class="at">xmax =</span> <span class="fl">0.7</span>, <span class="at">ymin =</span> <span class="sc">-</span><span class="fl">1.22</span>, <span class="at">ymax =</span> <span class="sc">-</span><span class="fl">1.13</span>,</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>           <span class="at">fill =</span> <span class="st">"#0066CC"</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fl">0.75</span>, <span class="at">y =</span> <span class="sc">-</span><span class="fl">1.175</span>, <span class="at">label =</span> <span class="st">"Evidência empírica"</span>,</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>           <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">size =</span> <span class="fl">3.2</span>, <span class="at">colour =</span> <span class="st">"#0066CC"</span>) <span class="sc">+</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="cn">NULL</span>,</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">1.35</span>, <span class="fl">0.1</span>),</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"Custo de eficiência</span><span class="sc">\n</span><span class="st">(mais negativo = maior perda)"</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_discrete</span>(<span class="at">name =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"A teoria prevê sempre perdas; a magnitude varia com o contexto"</span>) <span class="sc">+</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>)</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-synth" class="quarto-float quarto-figure quarto-figure-center anchored" width="90%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-synth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="20_controlo_precos_files/figure-html/fig-synth-1.png" id="fig-synth" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-synth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;3
-</p><p>A teoria standard sobre-estima os custos quando há poder de mercado do lado oposto. A evidência confirma os <em>mecanismos</em>, mas não sempre a <em>magnitude</em>.</p>
-</section></section>
-<section>
-<section id="discussão" class="title-slide slide level1 center" data-background-color="#003366">
-<h1>Discussão</h1>
-
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>A teoria standard sobre-estima os custos quando há poder de mercado do lado oposto. A evidência confirma os <em>mecanismos</em>, mas não sempre a <em>magnitude</em>.</p>
 </section>
-<section id="controlos-de-preços-justificados-12" class="slide level2 smaller">
-<h2>Controlos de preços justificados? (1/2)</h2>
+</section>
+<section id="discussão" class="level1" data-background-color="#003366" data-number="5">
+<h1 data-background-color="#003366" data-number="5"><span class="header-section-number">5</span> Discussão</h1>
+<section id="controlos-de-preços-justificados-12" class="level2 smaller" data-number="5.1">
+<h2 class="smaller anchored" data-number="5.1" data-anchor-id="controlos-de-preços-justificados-12"><span class="header-section-number">5.1</span> Controlos de preços justificados? (1/2)</h2>
 <p>A teoria standard conclui que os controlos são ineficientes em mercados <em>perfeitamente competitivos</em>. Mas há casos que alteram a análise:</p>
 <p><strong>1. Poder de mercado (monopólio ou monopsónia)</strong></p>
 <p>Se o vendedor/comprador já fixa um preço fora do óptimo, um controlo pode melhorar a eficiência.</p>
-<div class="fragment">
+<p>. . .</p>
 <p><strong>2. Falhas de informação</strong></p>
 <p>Em mercados com assimetria de informação severa, a concorrência de preços pode não funcionar.</p>
-</div>
 </section>
-<section id="controlos-de-preços-justificados-22" class="slide level2 smaller">
-<h2>Controlos de preços justificados? (2/2)</h2>
+<section id="controlos-de-preços-justificados-22" class="level2 smaller" data-number="5.2">
+<h2 class="smaller anchored" data-number="5.2" data-anchor-id="controlos-de-preços-justificados-22"><span class="header-section-number">5.2</span> Controlos de preços justificados? (2/2)</h2>
 <p><strong>3. Objectivos distributivos explícitos</strong></p>
 <p>Uma sociedade pode preferir aceitar algum DWL para redistribuir de ricos para pobres — decisão normativa, não positiva.</p>
-<div class="fragment">
+<p>. . .</p>
 <p><strong>4. Choques transitórios e emergências</strong></p>
 <p>Controlos temporários durante crises podem evitar rendas de extracção (<em>price gouging</em>). O custo de eficiência pode ser menor do que os ganhos de estabilidade social.</p>
-</div>
 </section>
-<section id="referências-e-leituras-recomendadas" class="slide level2 smaller">
-<h2>Referências e leituras recomendadas</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<section id="referências-e-leituras-recomendadas" class="level2 smaller" data-number="5.3">
+<h2 class="smaller anchored" data-number="5.3" data-anchor-id="referências-e-leituras-recomendadas"><span class="header-section-number">5.3</span> Referências e leituras recomendadas</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Artigos científicos citados</strong></p>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Artigos científicos citados
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li class="fragment"><strong>Diamond, R., McQuade, T. &amp; Qian, F. (2019).</strong> “The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco.” <em>American Economic Review</em>, 109(9): 3365–3394.</li>
-<li class="fragment"><strong>Card, D. &amp; Krueger, A. (1994).</strong> “Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania.” <em>American Economic Review</em>, 84(4): 772–793.</li>
-<li class="fragment"><strong>Kholodilin, K.A. (2024).</strong> “Rent Control Effects through the Lens of Empirical Research.” <em>Journal of Housing Economics</em>, 63.</li>
-<li class="fragment"><strong>Hahn, A., Kholodilin, K., Waltl, S. &amp; Fongoni, M. (2024).</strong> <em>DIW Berlin Discussion Paper</em> 2094.</li>
+<li><strong>Diamond, R., McQuade, T. &amp; Qian, F. (2019).</strong> “The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco.” <em>American Economic Review</em>, 109(9): 3365–3394.</li>
+<li><strong>Card, D. &amp; Krueger, A. (1994).</strong> “Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania.” <em>American Economic Review</em>, 84(4): 772–793.</li>
+<li><strong>Kholodilin, K.A. (2024).</strong> “Rent Control Effects through the Lens of Empirical Research.” <em>Journal of Housing Economics</em>, 63.</li>
+<li><strong>Hahn, A., Kholodilin, K., Waltl, S. &amp; Fongoni, M. (2024).</strong> <em>DIW Berlin Discussion Paper</em> 2094.</li>
 </ul>
 </div>
 </div>
-</div>
-</section></section>
-<section>
-<section id="exercícios" class="title-slide slide level1 center" data-background-color="#003366">
-<h1>Exercícios</h1>
-
 </section>
-<section id="exercício-de-escolha-múltipla-1" class="slide level2">
-<h2>Exercício de escolha múltipla 1</h2>
+</section>
+<section id="exercícios" class="level1" data-background-color="#003366" data-number="6">
+<h1 data-background-color="#003366" data-number="6"><span class="header-section-number">6</span> Exercícios</h1>
+<section id="exercício-de-escolha-múltipla-1" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="exercício-de-escolha-múltipla-1"><span class="header-section-number">6.1</span> Exercício de escolha múltipla 1</h2>
 <p><strong>O Governo fixa um preço máximo <span class="math inline">\(P_{max}\)</span> abaixo do preço de equilíbrio <span class="math inline">\(P^*\)</span>. Qual das seguintes afirmações está correcta?</strong></p>
+<div class="nonincremental">
 <ul>
 <li><ol type="A">
 <li>A quantidade transaccionada aumenta relativamente ao equilíbrio competitivo</li>
@@ -588,10 +848,12 @@ Figure&nbsp;3
 <li>O excedente do produtor aumenta</li>
 </ol></li>
 </ul>
+</div>
 </section>
-<section id="solução-escolha-múltipla-1" class="slide level2 smaller" data-visibility="uncounted">
-<h2>Solução — escolha múltipla 1</h2>
+<section id="solução-escolha-múltipla-1" class="level2 smaller" data-visibility="uncounted" data-number="6.2">
+<h2 class="smaller anchored" data-visibility="uncounted" data-number="6.2" data-anchor-id="solução-escolha-múltipla-1"><span class="header-section-number">6.2</span> Solução — escolha múltipla 1</h2>
 <p><strong>O Governo fixa um preço máximo <span class="math inline">\(P_{max}\)</span> abaixo do preço de equilíbrio <span class="math inline">\(P^*\)</span>. Qual das seguintes afirmações está correcta?</strong></p>
+<div class="nonincremental">
 <ul>
 <li><ol type="A">
 <li>A quantidade transaccionada aumenta ✗ — cai para <span class="math inline">\(Q_S &lt; Q^*\)</span></li>
@@ -604,23 +866,25 @@ Figure&nbsp;3
 <li>O excedente do produtor aumenta ✗ — o EP cai (preço mais baixo, menos quantidade vendida)</li>
 </ol></li>
 </ul>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Tip</strong></p>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p>Com <span class="math inline">\(P_{max} &lt; P^*\)</span>, o EP cai sempre. O EC só aumenta se os bens racionados forem para quem mais os valoriza — o que não é garantido. O excedente total é sempre inferior ao equilíbrio competitivo.</p>
 </div>
 </div>
-</div>
 </section>
-<section id="exercício-de-escolha-múltipla-2" class="slide level2">
-<h2>Exercício de escolha múltipla 2</h2>
+<section id="exercício-de-escolha-múltipla-2" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="exercício-de-escolha-múltipla-2"><span class="header-section-number">6.3</span> Exercício de escolha múltipla 2</h2>
 <p><strong>Mercado de trabalho: procura <span class="math inline">\(W = 20 - 2L\)</span>, oferta <span class="math inline">\(W = 4 + L\)</span>. Equilíbrio: <span class="math inline">\(L^* \approx 5{,}3\)</span>, <span class="math inline">\(W^* \approx 9{,}3\)</span>. É fixado um salário mínimo <span class="math inline">\(W_{min} = 14\)</span>. Qual o desemprego involuntário?</strong></p>
+<div class="nonincremental">
 <ul>
 <li><ol type="A">
 <li>3</li>
@@ -635,53 +899,53 @@ Figure&nbsp;3
 <li>0 — o salário mínimo não tem efeito porque está abaixo de <span class="math inline">\(W^*\)</span></li>
 </ol></li>
 </ul>
+</div>
 </section>
-<section id="solução-escolha-múltipla-2" class="slide level2" data-visibility="uncounted">
-<h2>Solução — escolha múltipla 2</h2>
+<section id="solução-escolha-múltipla-2" class="level2" data-visibility="uncounted" data-number="6.4">
+<h2 data-visibility="uncounted" data-number="6.4" class="anchored" data-anchor-id="solução-escolha-múltipla-2"><span class="header-section-number">6.4</span> Solução — escolha múltipla 2</h2>
 <p><strong>Com <span class="math inline">\(W_{min} = 14 &gt; W^* \approx 9{,}3\)</span>:</strong></p>
 <ul>
-<li class="fragment">Procura de trabalho: <span class="math inline">\(14 = 20 - 2L \Rightarrow L_D = 3\)</span></li>
-<li class="fragment">Oferta de trabalho: <span class="math inline">\(14 = 4 + L \Rightarrow L_S = 10\)</span></li>
-<li class="fragment">Desemprego involuntário: <span class="math inline">\(L_S - L_D = 10 - 3 = \mathbf{7}\)</span></li>
+<li>Procura de trabalho: <span class="math inline">\(14 = 20 - 2L \Rightarrow L_D = 3\)</span></li>
+<li>Oferta de trabalho: <span class="math inline">\(14 = 4 + L \Rightarrow L_S = 10\)</span></li>
+<li>Desemprego involuntário: <span class="math inline">\(L_S - L_D = 10 - 3 = \mathbf{7}\)</span></li>
 </ul>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Tip</strong></p>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p>O desemprego involuntário é <span class="math inline">\(L_S - L_D\)</span>, não <span class="math inline">\(L_S\)</span>. Os trabalhadores <em>empregados</em> são <span class="math inline">\(L_D = 3\)</span>; os que <em>querem</em> trabalhar mas não encontram emprego são <span class="math inline">\(L_S - L_D = 7\)</span>.</p>
 </div>
 </div>
-</div>
 </section>
-<section id="exercício-de-desenvolvimento" class="slide level2 smaller nonincremental">
-<h2>Exercício de desenvolvimento</h2>
+<section id="exercício-de-desenvolvimento" class="level2 smaller nonincremental" data-number="6.5">
+<h2 class="smaller nonincremental anchored" data-number="6.5" data-anchor-id="exercício-de-desenvolvimento"><span class="header-section-number">6.5</span> Exercício de desenvolvimento</h2>
 <p><strong>Mercado de arrendamento:</strong> <span class="math inline">\(D: P = 1000 - 2Q\)</span>, <span class="math inline">\(S: P = 200 + 2Q\)</span> (€/mês; <span class="math inline">\(Q\)</span> em milhares de fogos).</p>
 <p><strong>a)</strong> Calcule o equilíbrio competitivo <span class="math inline">\((Q^*, P^*)\)</span>.</p>
 <p><strong>b)</strong> O Governo fixa <span class="math inline">\(P_{max} = 400\)</span>. Calcule <span class="math inline">\(Q_S\)</span>, <span class="math inline">\(Q_D\)</span> e a escassez resultante.</p>
 <p><strong>c)</strong> Calcule o excedente do consumidor, o excedente do produtor e a perda de excedente total (DWL) com o tecto. Confirme que EC + EP + DWL = excedente total competitivo.</p>
 <p><strong>d)</strong> Com base na evidência empírica (Diamond et al., 2019; Berlim 2020), discuta <strong>duas</strong> consequências dinâmicas que este modelo estático não captura.</p>
 </section>
-<section id="solução-desenvolvimento-a-e-b" class="slide level2 smaller" data-visibility="uncounted">
-<h2>Solução — desenvolvimento (a) e (b)</h2>
+<section id="solução-desenvolvimento-a-e-b" class="level2 smaller" data-visibility="uncounted" data-number="6.6">
+<h2 class="smaller anchored" data-visibility="uncounted" data-number="6.6" data-anchor-id="solução-desenvolvimento-a-e-b"><span class="header-section-number">6.6</span> Solução — desenvolvimento (a) e (b)</h2>
 <p><strong>a)</strong> <span class="math inline">\(1000 - 2Q = 200 + 2Q \Rightarrow Q^* = 200\)</span> mil fogos, <span class="math inline">\(P^* = 600\)</span> €/mês</p>
-<div class="fragment">
+<p>. . .</p>
 <p><strong>b)</strong> Com <span class="math inline">\(P_{max} = 400\)</span>:</p>
 <ul>
-<li class="fragment"><span class="math inline">\(Q_S\)</span>: <span class="math inline">\(400 = 200 + 2Q \Rightarrow Q_S = 100\)</span> mil fogos</li>
-<li class="fragment"><span class="math inline">\(Q_D\)</span>: <span class="math inline">\(400 = 1000 - 2Q \Rightarrow Q_D = 300\)</span> mil fogos</li>
-<li class="fragment">Escassez: <span class="math inline">\(300 - 100 = 200\)</span> mil fogos</li>
+<li><span class="math inline">\(Q_S\)</span>: <span class="math inline">\(400 = 200 + 2Q \Rightarrow Q_S = 100\)</span> mil fogos</li>
+<li><span class="math inline">\(Q_D\)</span>: <span class="math inline">\(400 = 1000 - 2Q \Rightarrow Q_D = 300\)</span> mil fogos</li>
+<li>Escassez: <span class="math inline">\(300 - 100 = 200\)</span> mil fogos</li>
 </ul>
-</div>
 </section>
-<section id="solução-desenvolvimento-c" class="slide level2 smaller" data-visibility="uncounted">
-<h2>Solução — desenvolvimento (c)</h2>
+<section id="solução-desenvolvimento-c" class="level2 smaller" data-visibility="uncounted" data-number="6.7">
+<h2 class="smaller anchored" data-visibility="uncounted" data-number="6.7" data-anchor-id="solução-desenvolvimento-c"><span class="header-section-number">6.7</span> Solução — desenvolvimento (c)</h2>
 <p><strong>c)</strong> Excedentes com <span class="math inline">\(P_{max} = 400\)</span>, <span class="math inline">\(Q_S = 100\)</span> (assumindo racionamento eficiente):</p>
-<table class="caption-top">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 21%">
 <col style="width: 21%">
@@ -723,467 +987,450 @@ Figure&nbsp;3
 </tr>
 </tbody>
 </table>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<p>. . .</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Warning</strong></p>
+<div class="callout-title-container flex-fill">
+Warning
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p>EC = 50 000 é o <strong>máximo</strong>: assume que os <span class="math inline">\(Q_S = 100\)</span> fogos vão para os 100 arrendatários de maior valorização. Com racionamento não-preço, o EC real pode ser inferior — a DWL efectiva superior a 20 000.</p>
 </div>
 </div>
-</div>
-</div>
 </section>
-<section id="solução-desenvolvimento-d" class="slide level2 smaller" data-visibility="uncounted">
-<h2>Solução — desenvolvimento (d)</h2>
+<section id="solução-desenvolvimento-d" class="level2 smaller" data-visibility="uncounted" data-number="6.8">
+<h2 class="smaller anchored" data-visibility="uncounted" data-number="6.8" data-anchor-id="solução-desenvolvimento-d"><span class="header-section-number">6.8</span> Solução — desenvolvimento (d)</h2>
 <p><strong>d)</strong> Duas consequências dinâmicas não capturadas pelo modelo estático:</p>
 <p><strong>(1) Contracção da oferta a médio prazo</strong></p>
 <p>Os senhorios convertem habitação em outros usos com maior rendibilidade — alojamento local (Airbnb), escritórios, venda. A oferta de arrendamento regulado encolhe. Diamond et al.&nbsp;(2019) estimam uma redução de 15% no parque de arrendamento em São Francisco após a extensão do controlo de rendas.</p>
 <p><strong>(2) Degradação da qualidade</strong></p>
 <p>Sem possibilidade de aumentar o preço, os senhorios têm menos incentivo a investir em manutenção e renovação. A qualidade do parque habitacional regulado deteriora-se progressivamente.</p>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Tip</strong></p>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <p>Em ambos os casos, o efeito final é o oposto do pretendido: a médio prazo, quem procura habitação a preço acessível encontra <strong>menos</strong> oferta e <strong>pior</strong> qualidade.</p>
 </div>
 </div>
-</div>
 
 
-</section></section>
-    </div>
-  <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="../images/iscal_logo.svg" class="slide-logo"></p>
-<div class="footer footer-default">
-<p>Microeconomia — ISCAL-IPL</p>
-</div>
-</div></div>
+</section>
+</section>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../site_libs/revealjs/dist/reveal.js"></script>
-  <!-- reveal.js plugins -->
-  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
-  
-
-  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
-
-  <script>
-
-      // Full list of configuration options available at:
-      // https://revealjs.com/config/
-      Reveal.initialize({
-'controlsAuto': true,
-'previewLinksAuto': false,
-'pdfSeparateFragments': false,
-'autoAnimateEasing': "ease",
-'autoAnimateDuration': 1,
-'autoAnimateUnmatched': true,
-'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'smaller': false,
- 
-        // Display controls in the bottom right corner
-        controls: false,
-
-        // Help the user learn the controls by providing hints, for example by
-        // bouncing the down arrow when they first encounter a vertical slide
-        controlsTutorial: false,
-
-        // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'edges',
-
-        // Visibility rule for backwards navigation arrows; "faded", "hidden"
-        // or "visible"
-        controlsBackArrows: 'faded',
-
-        // Display a presentation progress bar
-        progress: true,
-
-        // Display the page number of the current slide
-        slideNumber: 'c/t',
-
-        // 'all', 'print', or 'speaker'
-        showSlideNumber: 'all',
-
-        // Add the current slide number to the URL hash so that reloading the
-        // page/copying the URL will return you to the same slide
-        hash: true,
-
-        // Start with 1 for the hash rather than 0
-        hashOneBasedIndex: false,
-
-        // Flags if we should monitor the hash and change slides accordingly
-        respondToHashChanges: true,
-
-        // Push each slide change to the browser history
-        history: true,
-
-        // Enable keyboard shortcuts for navigation
-        keyboard: true,
-
-        // Enable the slide overview mode
-        overview: true,
-
-        // Disables the default reveal.js slide layout (scaling and centering)
-        // so that you can use custom CSS layout
-        disableLayout: false,
-
-        // Vertical centering of slides
-        center: false,
-
-        // Enables touch navigation on devices with touch input
-        touch: true,
-
-        // Loop the presentation
-        loop: false,
-
-        // Change the presentation direction to be RTL
-        rtl: false,
-
-        // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'linear',
-
-        // Randomizes the order of slides each time the presentation loads
-        shuffle: false,
-
-        // Turns fragments on and off globally
-        fragments: true,
-
-        // Flags whether to include the current fragment in the URL,
-        // so that reloading brings you to the same fragment position
-        fragmentInURL: false,
-
-        // Flags if the presentation is running in an embedded mode,
-        // i.e. contained within a limited portion of the screen
-        embedded: false,
-
-        // Flags if we should show a help overlay when the questionmark
-        // key is pressed
-        help: true,
-
-        // Flags if it should be possible to pause the presentation (blackout)
-        pause: true,
-
-        // Flags if speaker notes should be visible to all viewers
-        showNotes: false,
-
-        // Global override for autoplaying embedded media (null/true/false)
-        autoPlayMedia: null,
-
-        // Global override for preloading lazy-loaded iframes (null/true/false)
-        preloadIframes: null,
-
-        // Number of milliseconds between automatically proceeding to the
-        // next slide, disabled when set to 0, this value can be overwritten
-        // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-
-        // Stop auto-sliding after user input
-        autoSlideStoppable: true,
-
-        // Use this method for navigation when auto-sliding
-        autoSlideMethod: null,
-
-        // Specify the average time in seconds that you think you will spend
-        // presenting each slide. This is used to show a pacing timer in the
-        // speaker view
-        defaultTiming: null,
-
-        // Enable slide navigation via mouse wheel
-        mouseWheel: false,
-
-        // The display mode that will be used to show slides
-        display: 'block',
-
-        // Hide cursor if inactive
-        hideInactiveCursor: true,
-
-        // Time before the cursor is hidden (in ms)
-        hideCursorTime: 5000,
-
-        // Opens links in an iframe preview overlay
-        previewLinks: false,
-
-        // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'slide',
-
-        // Transition speed (default/fast/slow)
-        transitionSpeed: 'default',
-
-        // Transition style for full page slide backgrounds
-        // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'none',
-
-        // Number of slides away from the current that are visible
-        viewDistance: 3,
-
-        // Number of slides away from the current that are visible on mobile
-        // devices. It is advisable to set this to a lower number than
-        // viewDistance in order to save resources.
-        mobileViewDistance: 2,
-
-        // The "normal" size of the presentation, aspect ratio will be preserved
-        // when the presentation is scaled to fit different resolutions. Can be
-        // specified using percentage units.
-        width: 1050,
-
-        height: 700,
-
-        // Factor of the display size that should remain empty around the content
-        margin: 0.1,
-
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
-        // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
-
-          RevealMath,
-          RevealNotes,
-          RevealSearch,
-          RevealZoom
-        ]
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
-    </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
           }
         }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-
-      })();
-    </script>
-
-    <script id="quarto-html-after-body" type="application/javascript">
-      window.document.addEventListener("DOMContentLoaded", function (event) {
-        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-        tabsets.forEach(function(tabset) {
-          const tabby = new Tabby('#' + tabset.id);
-        });
-        const isCodeAnnotation = (el) => {
-          for (const clz of el.classList) {
-            if (clz.startsWith('code-annotation-')) {                     
-              return true;
-            }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
           }
-          return false;
         }
-        const onCopySuccess = function(e) {
-          // button target
-          const button = e.trigger;
-          // don't keep focus
-          button.blur();
-          // flash "checked"
-          button.classList.add('code-copy-button-checked');
-          var currentTitle = button.getAttribute("title");
-          button.setAttribute("title", "Copied!");
-          let tooltip;
-          if (window.bootstrap) {
-            button.setAttribute("data-bs-toggle", "tooltip");
-            button.setAttribute("data-bs-placement", "left");
-            button.setAttribute("data-bs-title", "Copied!");
-            tooltip = new bootstrap.Tooltip(button, 
-              { trigger: "manual", 
-                customClass: "code-copy-button-tooltip",
-                offset: [0, -8]});
-            tooltip.show();    
-          }
-          setTimeout(function() {
-            if (tooltip) {
-              tooltip.hide();
-              button.removeAttribute("data-bs-title");
-              button.removeAttribute("data-bs-toggle");
-              button.removeAttribute("data-bs-placement");
-            }
-            button.setAttribute("title", currentTitle);
-            button.classList.remove('code-copy-button-checked');
-          }, 1000);
-          // clear code selection
-          e.clearSelection();
-        }
-        const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-          text: getTextToCopy
-        });
-        clipboard.on('success', onCopySuccess);
-        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-            text: getTextToCopy,
-            container: window.document.getElementById('quarto-embedded-source-code-modal')
-          });
-          clipboardModal.on('success', onCopySuccess);
-        }
-          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-          var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
-          var isInternal = (href) => {
-              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-          }
-          // Inspect non-navigation links and adorn them if external
-         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-          for (var i=0; i<links.length; i++) {
-            const link = links[i];
-            if (!isInternal(link.href)) {
-              // undo the damage that might have been done by quarto-nav.js in the case of
-              // links that we want to consider external
-              if (link.dataset.originalHref !== undefined) {
-                link.href = link.dataset.originalHref;
-              }
-            }
-          }
-        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-          const config = {
-            allowHTML: true,
-            maxWidth: 500,
-            delay: 100,
-            arrow: false,
-            appendTo: function(el) {
-                return el.closest('section.slide') || el.parentElement;
-            },
-            interactive: true,
-            interactiveBorder: 10,
-            theme: 'light-border',
-            placement: 'bottom-start',
-          };
-          if (contentFn) {
-            config.content = contentFn;
-          }
-          if (onTriggerFn) {
-            config.onTrigger = onTriggerFn;
-          }
-          if (onUntriggerFn) {
-            config.onUntrigger = onUntriggerFn;
-          }
-            config['offset'] = [0,0];
-            config['maxWidth'] = 700;
-          window.tippy(el, config); 
-        }
-        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-        for (var i=0; i<noterefs.length; i++) {
-          const ref = noterefs[i];
-          tippyHover(ref, function() {
-            // use id or data attribute instead here
-            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-            try { href = new URL(href).hash; } catch {}
-            const id = href.replace(/^#\/?/, "");
-            const note = window.document.getElementById(id);
-            if (note) {
-              return note.innerHTML;
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
             } else {
-              return "";
+              container.appendChild(child.cloneNode(true));
+              break;
             }
-          });
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
         }
-        const findCites = (el) => {
-          const parentEl = el.parentElement;
-          if (parentEl) {
-            const cites = parentEl.dataset.cites;
-            if (cites) {
-              return {
-                el,
-                cites: cites.split(' ')
-              };
-            } else {
-              return findCites(el.parentElement)
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
             }
           } else {
-            return undefined;
-          }
-        };
-        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-        for (var i=0; i<bibliorefs.length; i++) {
-          const ref = bibliorefs[i];
-          const citeInfo = findCites(ref);
-          if (citeInfo) {
-            tippyHover(citeInfo.el, function() {
-              var popup = window.document.createElement('div');
-              citeInfo.cites.forEach(function(cite) {
-                var citeDiv = window.document.createElement('div');
-                citeDiv.classList.add('hanging-indent');
-                citeDiv.classList.add('csl-entry');
-                var biblioDiv = window.document.getElementById('ref-' + cite);
-                if (biblioDiv) {
-                  citeDiv.innerHTML = biblioDiv.innerHTML;
-                }
-                popup.appendChild(citeDiv);
-              });
-              return popup.innerHTML;
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
             });
           }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
         }
+      }, function(instance) {
       });
-      </script>
-    
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
 
 </body></html>
