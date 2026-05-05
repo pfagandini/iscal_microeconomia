@@ -501,7 +501,7 @@
     "href": "material.html#slides",
     "title": "Material",
     "section": "Slides",
-    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\nConceitos\nEtapas Processo Produtivo e Regra da Contratação\nFunção de Custos\nGeometria de Custos\nOtimização num mercado concorrencial\n\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\nOferta\nEquilíbrio de Curto Prazo\n\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\nLongo Prazo\nEquilíbrio de Longo Prazo\n\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\nElasticidade da Procura\nElasticidade da Oferta\nImpostos\nSubsídios\nIntervenções\n\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos"
+    "text": "Slides\n\nCapítulo I: Racionalidade e Vantagens do Comêrcio\n\nIntrodução\nEscolhas Racionais\nFPP e Ventagens do Comêrcio\n\n\n\nCapítulo II: Teoria do Consumidor e Procura\n\nRestrição Orçamental e Preferências\nUtilidade e procura\nProcura agregada a excedente\n\n\n\nCapítulo III: Teoría da Produção - Curto Prazo\n\nConceitos\nEtapas Processo Produtivo e Regra da Contratação\nFunção de Custos\nGeometria de Custos\nOtimização num mercado concorrencial\n\n\n\nCapítulo IV: Equilíbrio de Mercado de Curto Prazo\n\nOferta\nEquilíbrio de Curto Prazo\n\n\n\nCapítulo V: Produção e Equilíbrio de Mercado de Longo Prazo\n\nLongo Prazo\nEquilíbrio de Longo Prazo\n\n\n\nCapítulo VI: Elasticidades e Intervenções dos Mercados\n\nElasticidade da Procura\nElasticidade da Oferta\nImpostos\nSubsídios\nIntervenções\n\n\n\nCapítulo VII: Monopólio e Oligopólio, Introdução à Teoria de Jogos\n\nMonopólio\nConcorrência Monopolística\nTeoria de Jogos I\nCournot\nTeoria de Jogos II\nBertrand and Colusão"
   },
   {
     "objectID": "exercises/Capitulo_3C.html#c.-teoria-do-produtor-e-equilíbrio---longo-prazo",
@@ -5289,161 +5289,161 @@
     "href": "slides/19_subsidios.html",
     "title": "Subsídios",
     "section": "",
-    "text": "Num mercado competitivo sem intervenção do Estado, o equilíbrio \\(E^*=(Q^*, P^*)\\) maximiza o excedente económico total.\n\n\n\n\n\n\nNote\n\n\n\nExcedente Económico = Excedente do Consumidor + Excedente do Produtor\n\\[XE = XC + XP\\]\nO excedente económico é máximo no equilíbrio competitivo (sem falhas de mercado).\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\n\n\n\\(Q^*=75\\), \\(P^*=25\\)\n\\(XC = \\frac{(100-25)\\times 75}{2} = 2812{,}5\\) u.m.\n\\(XP = \\frac{25 \\times 75}{2} = 937{,}5\\) u.m.\n\\(XE^* = 3750\\) u.m."
+    "text": "Num mercado competitivo sem intervenção do Estado, o equilíbrio \\(E^*=(Q^*, P^*)\\) maximiza o excedente económico total.\n\n\n\n\n\n\nNote\n\n\n\nExcedente Económico = Excedente do Consumidor + Excedente do Produtor\n\\[XE = EC + EP\\]\nO excedente económico é máximo no equilíbrio competitivo (sem falhas de mercado).\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\n\n\n\\(Q^*=75\\), \\(P^*=25\\)\n\\(EC = \\frac{(100-25)\\times 75}{2} = 2812{,}5\\) u.m.\n\\(EP = \\frac{25 \\times 75}{2} = 937{,}5\\) u.m.\n\\(XE^* = 3750\\) u.m."
   },
   {
     "objectID": "slides/19_subsidios.html#equilíbrio-sem-intervenção",
     "href": "slides/19_subsidios.html#equilíbrio-sem-intervenção",
     "title": "Subsídios",
-    "section": "1.1 Equilíbrio sem intervenção",
-    "text": "1.1 Equilíbrio sem intervenção\nNum mercado competitivo sem intervenção do Estado, o equilíbrio \\(E^*=(Q^*, P^*)\\) maximiza o excedente económico total.\n\n\n\n\n\n\nNote\n\n\nExcedente Económico = Excedente do Consumidor + Excedente do Produtor\n\\[XE = EC + EP\\]\nO excedente económico é máximo no equilíbrio competitivo (sem falhas de mercado)."
+    "section": "",
+    "text": "Num mercado competitivo sem intervenção do Estado, o equilíbrio \\(E^*=(Q^*, P^*)\\) maximiza o excedente económico total.\n\n\n\n\n\n\nNote\n\n\n\nExcedente Económico = Excedente do Consumidor + Excedente do Produtor\n\\[XE = EC + EP\\]\nO excedente económico é máximo no equilíbrio competitivo (sem falhas de mercado)."
   },
   {
     "objectID": "slides/19_subsidios.html#excedente-no-equilíbrio",
     "href": "slides/19_subsidios.html#excedente-no-equilíbrio",
     "title": "Subsídios",
-    "section": "1.2 Excedente no equilíbrio",
-    "text": "1.2 Excedente no equilíbrio\n\n\nFigure 1\n\n\\(Q^*=75\\), \\(P^*=25\\)\n\\(EC = \\frac{(100-25)\\times 75}{2} = 2812{,}5\\) u.m.\n\\(EP = \\frac{25 \\times 75}{2} = 937{,}5\\) u.m.\n\\(XE^* = 3750\\) u.m."
+    "section": "",
+    "text": "Figure 1\n\n\n\n\n\n\n\n\\(Q^*=75\\), \\(P^*=25\\)\n\\(EC = \\frac{(100-25)\\times 75}{2} = 2812{,}5\\) u.m.\n\\(EP = \\frac{25 \\times 75}{2} = 937{,}5\\) u.m.\n\\(XE^* = 3750\\) u.m."
   },
   {
     "objectID": "slides/19_subsidios.html#o-que-é-um-subsídio-específico",
     "href": "slides/19_subsidios.html#o-que-é-um-subsídio-específico",
     "title": "Subsídios",
-    "section": "2.1 O que é um subsídio específico?",
-    "text": "2.1 O que é um subsídio específico?\n\n\n\n\n\n\nNote\n\n\nSubsídio Específico (\\(S\\)): O Estado paga aos produtores (ou consumidores) uma quantia fixa por cada unidade transaccionada.\nA condição de equilíbrio com subsídio fica:\n\\[P_D = P_S - S\\]\nonde \\(P_D\\) é o preço pago pelo consumidor e \\(P_S\\) é o preço recebido pelo produtor.\n\n\n\n\nO subsídio cria um cunha entre o preço do consumidor e o preço do produtor\nAo contrário do imposto (\\(P_D = P_S + I\\)), o subsídio baixa o preço para o consumidor e sobe o preço para o produtor\nSão distorcionários: alteram os incentivos e afastam a quantidade do óptimo competitivo \\(Q^*\\)"
+    "section": "O que é um subsídio específico?",
+    "text": "O que é um subsídio específico?\n\n\n\n\n\n\nNote\n\n\n\nSubsídio Específico (\\(S\\)): O Estado paga aos produtores (ou consumidores) uma quantia fixa por cada unidade transaccionada.\nA condição de equilíbrio com subsídio fica:\n\\[P_D = P_S - S\\]\nonde \\(P_D\\) é o preço pago pelo consumidor e \\(P_S\\) é o preço recebido pelo produtor.\n\n\n\nO subsídio cria um cunha entre o preço do consumidor e o preço do produtor\nAo contrário do imposto (\\(P_D = P_S + I\\)), o subsídio baixa o preço para o consumidor e sobe o preço para o produtor\nSão distorcionários: alteram os incentivos e afastam a quantidade do óptimo competitivo \\(Q^*\\)"
   },
   {
     "objectID": "slides/19_subsidios.html#sistema-de-equilíbrio-com-subsídio-s",
     "href": "slides/19_subsidios.html#sistema-de-equilíbrio-com-subsídio-s",
     "title": "Subsídios",
-    "section": "2.2 Sistema de equilíbrio com subsídio \\(S\\)",
-    "text": "2.2 Sistema de equilíbrio com subsídio \\(S\\)\nO novo equilíbrio resolve o sistema:\n\\[\\begin{cases} Q_D = f_D(P_D) \\\\ Q_S = f_S(P_S) \\\\ Q_D = Q_S \\\\ P_D = P_S - S \\end{cases}\\]\n\n\\(S\\) é uma constante (valor fixo por unidade)\nO Estado entrega o subsídio ao produtor: o consumidor paga \\(P_D &lt; P^*\\) e o produtor recebe \\(P_S &gt; P^*\\)"
+    "section": "Sistema de equilíbrio com subsídio \\(S\\)",
+    "text": "Sistema de equilíbrio com subsídio \\(S\\)\nO novo equilíbrio resolve o sistema:\n\\[\\begin{cases} Q_D = f_D(P_D) \\\\ Q_S = f_S(P_S) \\\\ Q_D = Q_S \\\\ P_D = P_S - S \\end{cases}\\]\n\n\\(S\\) é uma constante (valor fixo por unidade)\nO Estado entrega o subsídio ao produtor: o consumidor paga \\(P_D &lt; P^*\\) e o produtor recebe \\(P_S &gt; P^*\\)"
   },
   {
     "objectID": "slides/19_subsidios.html#exemplo-q_d-100---p-q_s-3p",
     "href": "slides/19_subsidios.html#exemplo-q_d-100---p-q_s-3p",
     "title": "Subsídios",
-    "section": "2.3 Exemplo: \\(Q_D = 100 - P\\), \\(Q_S = 3P\\)",
-    "text": "2.3 Exemplo: \\(Q_D = 100 - P\\), \\(Q_S = 3P\\)\nSem intervenção: \\(P^* = 25\\), \\(Q^* = 75\\)\nCom subsídio \\(S = 10\\) u.m.:\n\\[\\begin{cases} Q_D = 100 - P_D \\\\ Q_S = 3P_S \\\\ Q_D = Q_S \\\\ P_D = P_S - 10 \\end{cases}\\]\nSubstituindo: \\(100 - P_D = 3P_S = 3(P_D + 10)\\)\n\\(100 - P_D = 3P_D + 30 \\Rightarrow 4P_D = 70 \\Rightarrow P_D = 17{,}5\\)\n\\(P_S = 17{,}5 + 10 = 27{,}5\\) e \\(Q_I = 3 \\times 27{,}5 = 82{,}5\\)"
+    "section": "Exemplo: \\(Q_D = 100 - P\\), \\(Q_S = 3P\\)",
+    "text": "Exemplo: \\(Q_D = 100 - P\\), \\(Q_S = 3P\\)\n\nSem intervenção: \\(P^* = 25\\), \\(Q^* = 75\\)\nCom subsídio \\(S = 10\\) u.m.:\n\\[\\begin{cases} Q_D = 100 - P_D \\\\ Q_S = 3P_S \\\\ Q_D = Q_S \\\\ P_D = P_S - 10 \\end{cases}\\]\nSubstituindo: \\(100 - P_D = 3P_S = 3(P_D + 10)\\)\n\\(100 - P_D = 3P_D + 30 \\Rightarrow 4P_D = 70 \\Rightarrow P_D = 17{,}5\\)\n\\(P_S = 17{,}5 + 10 = 27{,}5\\) e \\(Q_I = 3 \\times 27{,}5 = 82{,}5\\)"
   },
   {
     "objectID": "slides/19_subsidios.html#efeito-gráfico-do-subsídio",
     "href": "slides/19_subsidios.html#efeito-gráfico-do-subsídio",
     "title": "Subsídios",
-    "section": "2.4 Efeito gráfico do subsídio",
-    "text": "2.4 Efeito gráfico do subsídio\n\n\nFigure 2\nA oferta \\(S'\\) representa a oferta distorcida pelo subsídio, vista pelo consumidor: \\(Q_S = 3(P_D + 10) = 3P_D + 30\\)."
+    "section": "Efeito gráfico do subsídio",
+    "text": "Efeito gráfico do subsídio\n\n\n\n\n\n\n\n\nFigure 2\n\n\n\n\n\nA oferta \\(S'\\) representa a oferta distorcida pelo subsídio, vista pelo consumidor: \\(Q_S = 3(P_D + 10) = 3P_D + 30\\)."
   },
   {
     "objectID": "slides/19_subsidios.html#quem-beneficia-do-subsídio",
     "href": "slides/19_subsidios.html#quem-beneficia-do-subsídio",
     "title": "Subsídios",
-    "section": "3.1 Quem beneficia do subsídio?",
-    "text": "3.1 Quem beneficia do subsídio?\n\n\n\n\n\n\nImportant\n\n\nIncidência Económica do Subsídio\nA forma como o benefício do subsídio se reparte entre consumidores e produtores não depende de quem recebe o subsídio (incidência legal), mas das elasticidades da procura e da oferta.\n\n\n\n\nNo exemplo (\\(S = 10\\) u.m.):\n\n\n\n\nPreço\nVariação face a \\(P^*=25\\)\n\n\n\n\nConsumidor paga\n\\(P_D = 17{,}5\\)\n\\(I_D = 25 - 17{,}5 = 7{,}5\\) u.m.\n\n\nProdutor recebe\n\\(P_S = 27{,}5\\)\n\\(I_S = 27{,}5 - 25 = 2{,}5\\) u.m.\n\n\nTotal\n\n\\(I_D + I_S = 10\\) u.m. \\(= S\\) ✓"
+    "section": "Quem beneficia do subsídio?",
+    "text": "Quem beneficia do subsídio?\n\n\n\n\n\n\nImportant\n\n\n\nIncidência Económica do Subsídio\nA forma como o benefício do subsídio se reparte entre consumidores e produtores não depende de quem recebe o subsídio (incidência legal), mas das elasticidades da procura e da oferta.\n\n\n. . .\nNo exemplo (\\(S = 10\\) u.m.):\n\n\n\n\nPreço\nVariação face a \\(P^*=25\\)\n\n\n\n\nConsumidor paga\n\\(P_D = 17{,}5\\)\n\\(I_D = 25 - 17{,}5 = 7{,}5\\) u.m.\n\n\nProdutor recebe\n\\(P_S = 27{,}5\\)\n\\(I_S = 27{,}5 - 25 = 2{,}5\\) u.m.\n\n\nTotal\n\n\\(I_D + I_S = 10\\) u.m. \\(= S\\) ✓"
   },
   {
     "objectID": "slides/19_subsidios.html#incidência-e-elasticidades",
     "href": "slides/19_subsidios.html#incidência-e-elasticidades",
     "title": "Subsídios",
-    "section": "3.2 Incidência e elasticidades",
-    "text": "3.2 Incidência e elasticidades\nA repartição do subsídio entre consumidores e produtores obedece à mesma lógica dos impostos:\n\\[\\frac{I_S}{I_D} = \\frac{|\\varepsilon_D|}{\\varepsilon_S}\\]\n\nNo exemplo:\n\n\\(\\varepsilon_D = \\frac{dQ_D}{dP}\\cdot\\frac{P^*}{Q^*} = -1 \\times \\frac{25}{75} = -\\frac{1}{3}\\)\n\\(\\varepsilon_S = \\frac{dQ_S}{dP}\\cdot\\frac{P^*}{Q^*} = 3 \\times \\frac{25}{75} = 1\\)\n\n\\[\\frac{I_S}{I_D} = \\frac{1/3}{1} = \\frac{1}{3} \\qquad \\checkmark \\quad \\left(\\frac{2{,}5}{7{,}5} = \\frac{1}{3}\\right)\\]\n\n\n\n\n\n\n\n\nNote\n\n\nQuanto mais rígida for a procura (ou a oferta) face à oferta (ou procura), maior será a incidência do subsídio sobre esse lado do mercado."
+    "section": "Incidência e elasticidades",
+    "text": "Incidência e elasticidades\nA repartição do subsídio entre consumidores e produtores obedece à mesma lógica dos impostos:\n\\[\\frac{I_S}{I_D} = \\frac{|\\varepsilon_D|}{\\varepsilon_S}\\]\n. . .\nNo exemplo:\n\n\\(\\varepsilon_D = \\frac{dQ_D}{dP}\\cdot\\frac{P^*}{Q^*} = -1 \\times \\frac{25}{75} = -\\frac{1}{3}\\)\n\\(\\varepsilon_S = \\frac{dQ_S}{dP}\\cdot\\frac{P^*}{Q^*} = 3 \\times \\frac{25}{75} = 1\\)\n\n\\[\\frac{I_S}{I_D} = \\frac{1/3}{1} = \\frac{1}{3} \\qquad \\checkmark \\quad \\left(\\frac{2{,}5}{7{,}5} = \\frac{1}{3}\\right)\\]\n. . .\n\n\n\n\n\n\nNote\n\n\n\nQuanto mais rígida for a procura (ou a oferta) face à oferta (ou procura), maior será a incidência do subsídio sobre esse lado do mercado."
   },
   {
     "objectID": "slides/19_subsidios.html#o-subsídio-e-a-despesa-fiscal",
     "href": "slides/19_subsidios.html#o-subsídio-e-a-despesa-fiscal",
     "title": "Subsídios",
-    "section": "4.1 O subsídio e a despesa fiscal",
-    "text": "4.1 O subsídio e a despesa fiscal\nO Estado financia o subsídio com despesa fiscal:\n\\[\\text{Despesa Fiscal} = S \\times Q_I\\]\n\nNo exemplo: \\(\\text{DF} = 10 \\times 82{,}5 = 825\\) u.m.\n\n\nEsta despesa reparte-se entre ganhos de excedente e perda pura:\n\\[\\text{Despesa Fiscal} = \\Delta EC + \\Delta EP + \\text{Perda Pura}\\]"
+    "section": "O subsídio e a despesa fiscal",
+    "text": "O subsídio e a despesa fiscal\nO Estado financia o subsídio com despesa fiscal:\n\\[\\text{Despesa Fiscal} = S \\times Q_I\\]\n. . .\nNo exemplo: \\(\\text{DF} = 10 \\times 82{,}5 = 825\\) u.m.\n. . .\nEsta despesa reparte-se entre ganhos de excedente e perda pura:\n\\[\\text{Despesa Fiscal} = \\Delta EC + \\Delta EP + \\text{Perda Pura}\\]"
   },
   {
     "objectID": "slides/19_subsidios.html#diagrama-de-excedentes-com-subsídio",
     "href": "slides/19_subsidios.html#diagrama-de-excedentes-com-subsídio",
     "title": "Subsídios",
-    "section": "4.2 Diagrama de excedentes com subsídio",
-    "text": "4.2 Diagrama de excedentes com subsídio\n\n\nFigure 3"
+    "section": "Diagrama de excedentes com subsídio",
+    "text": "Diagrama de excedentes com subsídio\n\n\n\n\n\n\n\n\nFigure 3"
   },
   {
     "objectID": "slides/19_subsidios.html#tabela-resumo-dos-excedentes",
     "href": "slides/19_subsidios.html#tabela-resumo-dos-excedentes",
     "title": "Subsídios",
-    "section": "4.3 Tabela resumo dos excedentes",
-    "text": "4.3 Tabela resumo dos excedentes\n\n\n\n\nAntes do subsídio\nApós subsídio\nVariação\n\n\n\n\nExcedente do Consumidor\n\\(EC_0\\)\n\\(EC_1 &gt; EC_0\\)\n\\(+\\Delta EC\\)\n\n\nExcedente do Produtor\n\\(EP_0\\)\n\\(EP_1 &gt; EP_0\\)\n\\(+\\Delta EP\\)\n\n\nDespesa Fiscal (Estado)\n—\n\\(S \\times Q_I\\)\n—\n\n\nPerda Pura\n—\n\\(\\frac{1}{2}S(Q_I-Q^*)\\)\n—\n\n\nQuantidade\n\\(Q^*\\)\n\\(Q_I &gt; Q^*\\)\n—\n\n\nPreço consumidor\n\\(P^*\\)\n\\(P_D &lt; P^*\\)\n\\(-I_D\\)\n\n\nPreço produtor\n\\(P^*\\)\n\\(P_S &gt; P^*\\)\n\\(+I_S\\)\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nO subsídio cria uma perda pura de excedente económico: parte da despesa fiscal não é apropriada nem pelos consumidores nem pelos produtores. O subsídio é distorcionário."
+    "section": "Tabela resumo dos excedentes",
+    "text": "Tabela resumo dos excedentes\n\n\n\n\n\nAntes do subsídio\nApós subsídio\nVariação\n\n\n\n\nExcedente do Consumidor\n\\(EC_0\\)\n\\(EC_1 &gt; EC_0\\)\n\\(+\\Delta EC\\)\n\n\nExcedente do Produtor\n\\(EP_0\\)\n\\(EP_1 &gt; EP_0\\)\n\\(+\\Delta EP\\)\n\n\nDespesa Fiscal (Estado)\n—\n\\(S \\times Q_I\\)\n—\n\n\nPerda Pura\n—\n\\(\\frac{1}{2}S(Q_I-Q^*)\\)\n—\n\n\nQuantidade\n\\(Q^*\\)\n\\(Q_I &gt; Q^*\\)\n—\n\n\nPreço consumidor\n\\(P^*\\)\n\\(P_D &lt; P^*\\)\n\\(-I_D\\)\n\n\nPreço produtor\n\\(P^*\\)\n\\(P_S &gt; P^*\\)\n\\(+I_S\\)\n\n\n\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nO subsídio cria uma perda pura de excedente económico: parte da despesa fiscal não é apropriada nem pelos consumidores nem pelos produtores. O subsídio é distorcionário."
   },
   {
     "objectID": "slides/19_subsidios.html#perda-pura-do-subsídio",
     "href": "slides/19_subsidios.html#perda-pura-do-subsídio",
     "title": "Subsídios",
-    "section": "4.4 Perda pura do subsídio",
-    "text": "4.4 Perda pura do subsídio\nA perda pura corresponde ao triângulo entre as curvas de oferta e procura, para as unidades entre \\(Q^*\\) e \\(Q_I\\):\n\\[\\text{PP} = \\frac{1}{2} \\times S \\times (Q_I - Q^*)\\]\n\nNo exemplo:\n\\[\\text{PP} = \\frac{1}{2} \\times 10 \\times (82{,}5 - 75) = \\frac{1}{2} \\times 10 \\times 7{,}5 = 37{,}5 \\text{ u.m.}\\]\n\n\nVerificação: \\[\\text{DF} = 825; \\quad \\Delta EC = 590{,}6; \\quad \\Delta EP = 196{,}9\\] \\[825 - 590{,}6 - 196{,}9 = 37{,}5 \\text{ u.m.} \\checkmark\\]"
+    "section": "Perda pura do subsídio",
+    "text": "Perda pura do subsídio\nA perda pura corresponde ao triângulo entre as curvas de oferta e procura, para as unidades entre \\(Q^*\\) e \\(Q_I\\):\n\\[\\text{PP} = \\frac{1}{2} \\times S \\times (Q_I - Q^*)\\]\n. . .\nNo exemplo:\n\\[\\text{PP} = \\frac{1}{2} \\times 10 \\times (82{,}5 - 75) = \\frac{1}{2} \\times 10 \\times 7{,}5 = 37{,}5 \\text{ u.m.}\\]\n. . .\nVerificação: \\[\\text{DF} = 825; \\quad \\Delta EC = 590{,}6; \\quad \\Delta EP = 196{,}9\\] \\[825 - 590{,}6 - 196{,}9 = 37{,}5 \\text{ u.m.} \\checkmark\\]"
   },
   {
     "objectID": "slides/19_subsidios.html#porquê-é-que-existe-perda-pura",
     "href": "slides/19_subsidios.html#porquê-é-que-existe-perda-pura",
     "title": "Subsídios",
-    "section": "4.5 Porquê é que existe perda pura?",
-    "text": "4.5 Porquê é que existe perda pura?\nO subsídio leva à transacção de unidades entre \\(Q^*\\) e \\(Q_I\\) onde:\n\\[\\text{Valorização do Consumidor} &lt; \\text{Custo de Produção}\\]\n\n\nPara essas unidades extras, o valor que o consumidor atribui ao bem (dado pela curva \\(D\\)) é menor do que o custo que o produtor suporta para as produzir (dado pela curva \\(S\\))\nEstas trocas só acontecem porque o Estado subsidia a diferença\nO custo social excede o benefício social: é uma perda líquida de bem-estar"
+    "section": "Porquê é que existe perda pura?",
+    "text": "Porquê é que existe perda pura?\nO subsídio leva à transacção de unidades entre \\(Q^*\\) e \\(Q_I\\) onde:\n\\[\\text{Valorização do Consumidor} &lt; \\text{Custo de Produção}\\]\n. . .\n\nPara essas unidades extras, o valor que o consumidor atribui ao bem (dado pela curva \\(D\\)) é menor do que o custo que o produtor suporta para as produzir (dado pela curva \\(S\\))\nEstas trocas só acontecem porque o Estado subsidia a diferença\nO custo social excede o benefício social: é uma perda líquida de bem-estar"
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-1-escolha-múltipla",
     "href": "slides/19_subsidios.html#exercício-1-escolha-múltipla",
     "title": "Subsídios",
-    "section": "5.1 Exercício 1 — Escolha Múltipla",
-    "text": "5.1 Exercício 1 — Escolha Múltipla\nNum mercado competitivo, a procura e a oferta são descritas por \\(Q_D = 200 - 2P\\) e \\(Q_S = -20 + 3P\\). O Estado decide introduzir um subsídio específico de 15 u.m. por unidade transaccionada.\nQual o novo equilíbrio após o subsídio?\n\n\\(P_D = 38\\); \\(P_S = 53\\); \\(Q_I = 124\\)\n\\(P_D = 35\\); \\(P_S = 50\\); \\(Q_I = 130\\)\n\\(P_D = 32\\); \\(P_S = 47\\); \\(Q_I = 136\\)\n\\(P_D = 37\\); \\(P_S = 52\\); \\(Q_I = 126\\)"
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nNum mercado competitivo, a procura e a oferta são descritas por \\(Q_D = 200 - 2P\\) e \\(Q_S = -20 + 3P\\). O Estado decide introduzir um subsídio específico de 15 u.m. por unidade transaccionada.\nQual o novo equilíbrio após o subsídio?\n\n\n\\(P_D = 38\\); \\(P_S = 53\\); \\(Q_I = 124\\)\n\\(P_D = 35\\); \\(P_S = 50\\); \\(Q_I = 130\\)\n\\(P_D = 32\\); \\(P_S = 47\\); \\(Q_I = 136\\)\n\\(P_D = 37\\); \\(P_S = 52\\); \\(Q_I = 126\\)"
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-1-solução",
     "href": "slides/19_subsidios.html#exercício-1-solução",
     "title": "Subsídios",
-    "section": "5.2 Exercício 1 — Solução",
-    "text": "5.2 Exercício 1 — Solução\n\n\n\n\n\n\nTip\n\n\nResposta correta: (B)\n\n\n\nSem subsídio: \\(200-2P = -20+3P \\Rightarrow 5P = 220 \\Rightarrow P^*=44\\), \\(Q^*=112\\)\nCom \\(S=15\\): \\(\\begin{cases} Q_D = 200 - 2P_D \\\\ Q_S = -20 + 3P_S \\\\ P_D = P_S - 15 \\end{cases}\\)\nSubstituindo \\(P_D = P_S - 15\\):\n\\(200 - 2(P_S-15) = -20 + 3P_S \\Rightarrow 200 - 2P_S + 30 = -20 + 3P_S \\Rightarrow 5P_S = 250 \\Rightarrow P_S = 50\\)\n\\(P_D = 50 - 15 = 35\\); \\(Q_I = 200 - 2(35) = 130\\)\nIncidência: \\(I_D = 44 - 35 = 9\\) u.m.; \\(I_S = 50 - 44 = 6\\) u.m.; DF \\(= 15 \\times 130 = 1950\\) u.m."
+    "section": "Exercício 1 — Solução",
+    "text": "Exercício 1 — Solução\n\n\n\n\n\n\nTip\n\n\n\nResposta correta: (B)\n\n\nSem subsídio: \\(200-2P = -20+3P \\Rightarrow 5P = 220 \\Rightarrow P^*=44\\), \\(Q^*=112\\)\nCom \\(S=15\\): \\(\\begin{cases} Q_D = 200 - 2P_D \\\\ Q_S = -20 + 3P_S \\\\ P_D = P_S - 15 \\end{cases}\\)\nSubstituindo \\(P_D = P_S - 15\\):\n\\(200 - 2(P_S-15) = -20 + 3P_S \\Rightarrow 200 - 2P_S + 30 = -20 + 3P_S \\Rightarrow 5P_S = 250 \\Rightarrow P_S = 50\\)\n\\(P_D = 50 - 15 = 35\\); \\(Q_I = 200 - 2(35) = 130\\)\nIncidência: \\(I_D = 44 - 35 = 9\\) u.m.; \\(I_S = 50 - 44 = 6\\) u.m.; DF \\(= 15 \\times 130 = 1950\\) u.m."
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-2-escolha-múltipla",
     "href": "slides/19_subsidios.html#exercício-2-escolha-múltipla",
     "title": "Subsídios",
-    "section": "5.3 Exercício 2 — Escolha Múltipla",
-    "text": "5.3 Exercício 2 — Escolha Múltipla\nNo mesmo mercado (\\(Q_D = 200 - 2P\\); \\(Q_S = -20 + 3P\\); \\(P^*=44\\); \\(Q^*=112\\)), com o subsídio de 15 u.m., qual a perda pura de excedente económico?\n\n90 u.m.\n270 u.m.\n135 u.m.\n54 u.m."
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nNo mesmo mercado (\\(Q_D = 200 - 2P\\); \\(Q_S = -20 + 3P\\); \\(P^*=44\\); \\(Q^*=112\\)), com o subsídio de 15 u.m., qual a perda pura de excedente económico?\n\n\n90 u.m.\n270 u.m.\n135 u.m.\n54 u.m."
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-2-solução",
     "href": "slides/19_subsidios.html#exercício-2-solução",
     "title": "Subsídios",
-    "section": "5.4 Exercício 2 — Solução",
-    "text": "5.4 Exercício 2 — Solução\n\n\n\n\n\n\nTip\n\n\nResposta correta: (C)\n\n\n\nA perda pura é o triângulo com base \\(S = 15\\) e altura \\((Q_I - Q^*) = 130 - 112 = 18\\):\n\\[\\text{PP} = \\frac{1}{2} \\times 15 \\times 18 = 135 \\text{ u.m.}\\]\nVerificação: - \\(\\text{DF} = 15 \\times 130 = 1950\\) u.m. - \\(\\Delta EC = \\frac{65 \\times 130}{2} - \\frac{56 \\times 112}{2} = 4225 - 3136 = 1089\\) u.m. - \\(\\Delta EP = 1950 - 1089 - 135 = 726\\) u.m. - \\(\\text{DF} - \\Delta EC - \\Delta EP = 1950 - 1089 - 726 = 135\\) u.m. ✓"
+    "section": "Exercício 2 — Solução",
+    "text": "Exercício 2 — Solução\n\n\n\n\n\n\nTip\n\n\n\nResposta correta: (C)\n\n\nA perda pura é o triângulo com base \\(S = 15\\) e altura \\((Q_I - Q^*) = 130 - 112 = 18\\):\n\\[\\text{PP} = \\frac{1}{2} \\times 15 \\times 18 = 135 \\text{ u.m.}\\]\nVerificação: - \\(\\text{DF} = 15 \\times 130 = 1950\\) u.m. - \\(\\Delta EC = \\frac{65 \\times 130}{2} - \\frac{56 \\times 112}{2} = 4225 - 3136 = 1089\\) u.m. - \\(\\Delta EP = 1950 - 1089 - 135 = 726\\) u.m. - \\(\\text{DF} - \\Delta EC - \\Delta EP = 1950 - 1089 - 726 = 135\\) u.m. ✓"
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-3-desenvolvimento",
     "href": "slides/19_subsidios.html#exercício-3-desenvolvimento",
     "title": "Subsídios",
-    "section": "5.5 Exercício 3 — Desenvolvimento",
-    "text": "5.5 Exercício 3 — Desenvolvimento\nA procura e a oferta de um mercado são descritas por:\n\\[Q_D = 100 - P \\qquad Q_S = 2P - 20\\]\nO Estado decide introduzir um subsídio específico de 9 u.m. por unidade transaccionada.\n(a) Determine o equilíbrio de mercado sem intervenção.\n(b) Determine o novo equilíbrio após o subsídio. Quais os preços \\(P_D\\) e \\(P_S\\)?\n(c) Calcule a incidência económica do subsídio sobre consumidores e produtores, e relacione com as elasticidades.\n(d) Calcule a despesa fiscal do Estado e a perda pura de excedente económico."
+    "section": "Exercício 3 — Desenvolvimento",
+    "text": "Exercício 3 — Desenvolvimento\nA procura e a oferta de um mercado são descritas por:\n\\[Q_D = 100 - P \\qquad Q_S = 2P - 20\\]\nO Estado decide introduzir um subsídio específico de 9 u.m. por unidade transaccionada.\n(a) Determine o equilíbrio de mercado sem intervenção.\n(b) Determine o novo equilíbrio após o subsídio. Quais os preços \\(P_D\\) e \\(P_S\\)?\n(c) Calcule a incidência económica do subsídio sobre consumidores e produtores, e relacione com as elasticidades.\n(d) Calcule a despesa fiscal do Estado e a perda pura de excedente económico."
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-3-solução-a-e-b",
     "href": "slides/19_subsidios.html#exercício-3-solução-a-e-b",
     "title": "Subsídios",
-    "section": "5.6 Exercício 3 — Solução (a) e (b)",
-    "text": "5.6 Exercício 3 — Solução (a) e (b)\n\n\n\n(a) Equilíbrio sem intervenção\n\n\n\\(100 - P = 2P - 20 \\Rightarrow 3P = 120 \\Rightarrow P^* = 40\\); \\(Q^* = 60\\)\n\n\n\n\n\n\n\n(b) Com subsídio \\(S = 9\\)\n\n\nSistema: \\(Q_D = Q_S\\) e \\(P_D = P_S - 9\\)\n\\(100 - P_D = 2P_S - 20 = 2(P_D + 9) - 20\\)\n\\(100 - P_D = 2P_D + 18 - 20 \\Rightarrow 102 = 3P_D \\Rightarrow P_D = 34\\)\n\\(P_S = 34 + 9 = 43\\) ; \\(Q_I = 100 - 34 = 66\\)"
+    "section": "Exercício 3 — Solução (a) e (b)",
+    "text": "Exercício 3 — Solução (a) e (b)\n\n\n\n\n\n\nTip(a) Equilíbrio sem intervenção\n\n\n\n\\(100 - P = 2P - 20 \\Rightarrow 3P = 120 \\Rightarrow P^* = 40\\); \\(Q^* = 60\\)\n\n\n. . .\n\n\n\n\n\n\nTip(b) Com subsídio \\(S = 9\\)\n\n\n\nSistema: \\(Q_D = Q_S\\) e \\(P_D = P_S - 9\\)\n\\(100 - P_D = 2P_S - 20 = 2(P_D + 9) - 20\\)\n\\(100 - P_D = 2P_D + 18 - 20 \\Rightarrow 102 = 3P_D \\Rightarrow P_D = 34\\)\n\\(P_S = 34 + 9 = 43\\) ; \\(Q_I = 100 - 34 = 66\\)"
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-3-solução-c",
     "href": "slides/19_subsidios.html#exercício-3-solução-c",
     "title": "Subsídios",
-    "section": "5.7 Exercício 3 — Solução (c)",
-    "text": "5.7 Exercício 3 — Solução (c)\n\n\n\n(c) Incidência económica\n\n\n\n\\(I_D = P^* - P_D = 40 - 34 = 6\\) u.m. (ganho do consumidor por unidade)\n\\(I_S = P_S - P^* = 43 - 40 = 3\\) u.m. (ganho do produtor por unidade)\n\\(I_D + I_S = 9\\) u.m. \\(= S\\) ✓\n\nRelação com elasticidades (calculadas em \\(P^*=40\\), \\(Q^*=60\\)):\n\\[\\varepsilon_D = \\frac{dQ_D}{dP}\\cdot\\frac{P^*}{Q^*} = -1 \\times \\frac{40}{60} = -\\frac{2}{3}\\]\n\\[\\varepsilon_S = \\frac{dQ_S}{dP}\\cdot\\frac{P^*}{Q^*} = 2 \\times \\frac{40}{60} = \\frac{4}{3}\\]\n\\[\\frac{I_S}{I_D} = \\frac{3}{6} = \\frac{1}{2} = \\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{2/3}{4/3} = \\frac{1}{2} \\checkmark\\]"
+    "section": "Exercício 3 — Solução (c)",
+    "text": "Exercício 3 — Solução (c)\n\n\n\n\n\n\nTip(c) Incidência económica\n\n\n\n\n\\(I_D = P^* - P_D = 40 - 34 = 6\\) u.m. (ganho do consumidor por unidade)\n\\(I_S = P_S - P^* = 43 - 40 = 3\\) u.m. (ganho do produtor por unidade)\n\\(I_D + I_S = 9\\) u.m. \\(= S\\) ✓\n\nRelação com elasticidades (calculadas em \\(P^*=40\\), \\(Q^*=60\\)):\n\\[\\varepsilon_D = \\frac{dQ_D}{dP}\\cdot\\frac{P^*}{Q^*} = -1 \\times \\frac{40}{60} = -\\frac{2}{3}\\]\n\\[\\varepsilon_S = \\frac{dQ_S}{dP}\\cdot\\frac{P^*}{Q^*} = 2 \\times \\frac{40}{60} = \\frac{4}{3}\\]\n\\[\\frac{I_S}{I_D} = \\frac{3}{6} = \\frac{1}{2} = \\frac{|\\varepsilon_D|}{\\varepsilon_S} = \\frac{2/3}{4/3} = \\frac{1}{2} \\checkmark\\]"
   },
   {
     "objectID": "slides/19_subsidios.html#exercício-3-solução-d",
     "href": "slides/19_subsidios.html#exercício-3-solução-d",
     "title": "Subsídios",
-    "section": "5.8 Exercício 3 — Solução (d)",
-    "text": "5.8 Exercício 3 — Solução (d)\n\n\n\n(d) Despesa fiscal e perda pura\n\n\nDespesa Fiscal: \\[\\text{DF} = S \\times Q_I = 9 \\times 66 = 594 \\text{ u.m.}\\]\nPerda Pura: \\[\\text{PP} = \\frac{1}{2} \\times S \\times (Q_I - Q^*) = \\frac{1}{2} \\times 9 \\times (66 - 60) = \\frac{1}{2} \\times 9 \\times 6 = 27 \\text{ u.m.}\\]\nVerificação via excedentes:\n\n\n\n\n\n\n\n\n\n\nAntes\nDepois\nVariação\n\n\n\n\n\\(EC = \\frac{(100-P_D)\\cdot Q}{2}\\)\n1800\n2178\n\\(+378\\)\n\n\n\\(EP = \\frac{(P_S - 10)\\cdot Q}{2}\\)\n900\n1089\n\\(+189\\)\n\n\n\\(\\text{DF}\\)\n—\n594\n—\n\n\nPP \\(= \\text{DF} - \\Delta EC - \\Delta EP\\)\n—\n—\n\\(594 - 378 - 189 = 27\\) ✓"
+    "section": "Exercício 3 — Solução (d)",
+    "text": "Exercício 3 — Solução (d)\n\n\n\n\n\n\nTip(d) Despesa fiscal e perda pura\n\n\n\nDespesa Fiscal: \\[\\text{DF} = S \\times Q_I = 9 \\times 66 = 594 \\text{ u.m.}\\]\nPerda Pura: \\[\\text{PP} = \\frac{1}{2} \\times S \\times (Q_I - Q^*) = \\frac{1}{2} \\times 9 \\times (66 - 60) = \\frac{1}{2} \\times 9 \\times 6 = 27 \\text{ u.m.}\\]\nVerificação via excedentes:\n\n\n\n\n\n\n\n\n\n\nAntes\nDepois\nVariação\n\n\n\n\n\\(EC = \\frac{(100-P_D)\\cdot Q}{2}\\)\n1800\n2178\n\\(+378\\)\n\n\n\\(EP = \\frac{(P_S - 10)\\cdot Q}{2}\\)\n900\n1089\n\\(+189\\)\n\n\n\\(\\text{DF}\\)\n—\n594\n—\n\n\nPP \\(= \\text{DF} - \\Delta EC - \\Delta EP\\)\n—\n—\n\\(594 - 378 - 189 = 27\\) ✓"
   },
   {
     "objectID": "slides/19_subsidios.html#síntese",
     "href": "slides/19_subsidios.html#síntese",
     "title": "Subsídios",
-    "section": "5.9 Síntese",
-    "text": "5.9 Síntese\n\n\n\n\n\n\n\n\nSubsídio\n\n\n\n\nObjectivo\nIncentivar a produção/consumo de um bem\n\n\nEfeito no preço do consumidor\n\\(P_D &lt; P^*\\)\n\n\nEfeito no preço do produtor\n\\(P_S &gt; P^*\\)\n\n\nEfeito na quantidade\n\\(Q_I &gt; Q^*\\)\n\n\nCusto para o Estado\n\\(\\text{DF} = S \\times Q_I\\)\n\n\nDistribuição do benefício\nDepende de \\(\\varepsilon_D\\) e \\(\\varepsilon_S\\)\n\n\nPerda Pura\n\\(\\text{PP} = \\frac{1}{2} S (Q_I - Q^*)\\)\n\n\nÉ distorcionário?\nSim\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nUm subsídio, mesmo bem intencionado, implica sempre uma perda pura de excedente económico — salvo no caso-limite de procura ou oferta perfeitamente rígidas (\\(|\\varepsilon| = 0\\)), onde \\(Q_I = Q^*\\) e PP \\(= 0\\)."
+    "section": "Síntese",
+    "text": "Síntese\n\n\n\n\n\n\n\n\n\nSubsídio\n\n\n\n\nObjectivo\nIncentivar a produção/consumo de um bem\n\n\nEfeito no preço do consumidor\n\\(P_D &lt; P^*\\)\n\n\nEfeito no preço do produtor\n\\(P_S &gt; P^*\\)\n\n\nEfeito na quantidade\n\\(Q_I &gt; Q^*\\)\n\n\nCusto para o Estado\n\\(\\text{DF} = S \\times Q_I\\)\n\n\nDistribuição do benefício\nDepende de \\(\\varepsilon_D\\) e \\(\\varepsilon_S\\)\n\n\nPerda Pura\n\\(\\text{PP} = \\frac{1}{2} S (Q_I - Q^*)\\)\n\n\nÉ distorcionário?\nSim\n\n\n\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nUm subsídio, mesmo bem intencionado, implica sempre uma perda pura de excedente económico — salvo no caso-limite de procura ou oferta perfeitamente rígidas (\\(|\\varepsilon| = 0\\)), onde \\(Q_I = Q^*\\) e PP \\(= 0\\)."
   },
   {
     "objectID": "slides/25_impostos_elasticidade-document.html",
@@ -5855,15 +5855,15 @@
     "objectID": "slides/20_controlo_precos.html#o-que-fizemos-até-aqui",
     "href": "slides/20_controlo_precos.html#o-que-fizemos-até-aqui",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "O que fizemos até aqui",
-    "text": "O que fizemos até aqui\n\nImpostos e subsídios são intervenções que actuam sobre o preço de mercado de forma indirecta\nAmbos criam uma perda de excedente total (DWL), cuja incidência depende das elasticidades\n\n\nHoje: o Estado fixa directamente o preço — controlo de preços\n\n\n\n\n\n\n\n\nDefinição\n\n\nUm preço máximo (\\(P_{max}\\)) impede que o preço suba acima de um tecto fixado pelo Estado. Um preço mínimo (\\(P_{min}\\)) impede que o preço desça abaixo de um piso. Quando vinculativos, impedem o mercado de atingir o equilíbrio competitivo."
+    "section": "",
+    "text": "Impostos e subsídios são intervenções que actuam sobre o preço de mercado de forma indirecta\nAmbos criam uma perda de excedente total (DWL), cuja incidência depende das elasticidades\n\n. . .\nHoje: o Estado fixa directamente o preço — controlo de preços\n. . .\n\n\n\n\n\n\nNoteDefinição\n\n\n\nUm preço máximo (\\(P_{max}\\)) impede que o preço suba acima de um tecto fixado pelo Estado. Um preço mínimo (\\(P_{min}\\)) impede que o preço desça abaixo de um piso. Quando vinculativos, impedem o mercado de atingir o equilíbrio competitivo."
   },
   {
     "objectID": "slides/20_controlo_precos.html#motivações-políticas",
     "href": "slides/20_controlo_precos.html#motivações-políticas",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Motivações políticas",
-    "text": "Motivações políticas\nPara fixar um preço máximo:\n\nProteger consumidores de preços considerados excessivos\nExemplos: controlo de rendas, tarifas de energia, medicamentos essenciais, alimentos em tempo de guerra\n\n\nPara fixar um preço mínimo:\n\nGarantir rendimento suficiente a produtores ou trabalhadores\nExemplos: preços mínimos agrícolas (PAC), salário mínimo nacional\n\n\n\n\n\n\n\n\n\nImportant\n\n\nA economia positiva não diz que estas políticas são “erradas” — analisa as suas consequências. A avaliação normativa depende dos valores da sociedade e dos trade-offs entre eficiência e equidade."
+    "section": "",
+    "text": "Para fixar um preço máximo:\n\nProteger consumidores de preços considerados excessivos\nExemplos: controlo de rendas, tarifas de energia, medicamentos essenciais, alimentos em tempo de guerra\n\n. . .\nPara fixar um preço mínimo:\n\nGarantir rendimento suficiente a produtores ou trabalhadores\nExemplos: preços mínimos agrícolas (PAC), salário mínimo nacional\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nA economia positiva não diz que estas políticas são “erradas” — analisa as suas consequências. A avaliação normativa depende dos valores da sociedade e dos trade-offs entre eficiência e equidade."
   },
   {
     "objectID": "slides/20_controlo_precos.html#mecanismo-tecto-de-preço",
@@ -5876,8 +5876,8 @@
     "objectID": "slides/20_controlo_precos.html#efeitos-do-p_max-exemplo-numérico",
     "href": "slides/20_controlo_precos.html#efeitos-do-p_max-exemplo-numérico",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Efeitos do \\(P_{max}\\): exemplo numérico",
-    "text": "Efeitos do \\(P_{max}\\): exemplo numérico\nMercado com \\(D: P = 10 - Q\\) e \\(S: P = 2 + Q\\), equilíbrio \\(Q^* = 4\\), \\(P^* = 6\\)\nTecto \\(P_{max} = 4 &lt; P^*\\):\n\n\n\n\nCompetitivo\nCom \\(P_{max} = 4\\)\nVariação\n\n\n\n\nQuantidade transaccionada\n\\(Q^* = 4\\)\n\\(Q_S = 2\\)\n\\(-2\\)\n\n\nExcedente do Consumidor\n8\n\\(\\leq 10\\) †\n\\(\\leq\\) +2\n\n\nExcedente do Produtor\n8\n2\n−6\n\n\nExcedente Total\n16\n\\(\\leq 12\\)\n\\(\\geq\\) −4\n\n\n\n† máximo teórico — assume racionamento eficiente (bens vão para quem mais valoriza)\n\n\n\n\n\n\n\nImportant\n\n\nO EP cai sempre: o produtor vende menos a preço mais baixo. O EC depende de quem recebe os \\(Q_S = 2\\) bens racionados: se vão para os consumidores com maior WTP (EC = 10 &gt; 8), há ganho; mas com racionamento não-preço (fila, relações pessoais, discrição do vendedor) os bens podem ir para quem os valoriza menos — o EC real pode ser inferior a 8. A DWL mínima é 4 (triângulo entre curvas de \\(Q_S\\) a \\(Q^*\\)) e cresce com ineficiência alocativa."
+    "section": "2.2 Efeitos do \\(P_{max}\\): exemplo numérico",
+    "text": "2.2 Efeitos do \\(P_{max}\\): exemplo numérico\nMercado com \\(D: P = 10 - Q\\) e \\(S: P = 2 + Q\\), equilíbrio \\(Q^* = 4\\), \\(P^* = 6\\)\nTecto \\(P_{max} = 4 &lt; P^*\\):\n\n\n\n\nCompetitivo\nCom \\(P_{max} = 4\\)\nVariação\n\n\n\n\nQuantidade transaccionada\n\\(Q^* = 4\\)\n\\(Q_S = 2\\)\n\\(-2\\)\n\n\nExcedente do Consumidor\n8\n\\(\\leq 10\\) †\n\\(\\leq\\) +2\n\n\nExcedente do Produtor\n8\n2\n−6\n\n\nExcedente Total\n16\n\\(\\leq 12\\)\n\\(\\geq\\) −4\n\n\n\n† máximo teórico — assume racionamento eficiente (bens vão para quem mais valoriza)\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nO EP cai sempre: o produtor vende menos a preço mais baixo. O EC depende de quem recebe os \\(Q_S = 2\\) bens racionados: se vão para os consumidores com maior WTP (EC = 10 &gt; 8), há ganho; mas com racionamento não-preço (fila, relações pessoais, discrição do vendedor) os bens podem ir para quem os valoriza menos — o EC real pode ser inferior a 8. A DWL mínima é 4 (triângulo entre curvas de \\(Q_S\\) a \\(Q^*\\)) e cresce com ineficiência alocativa."
   },
   {
     "objectID": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_max",
@@ -5890,22 +5890,22 @@
     "objectID": "slides/20_controlo_precos.html#mecanismo-piso-de-preço",
     "href": "slides/20_controlo_precos.html#mecanismo-piso-de-preço",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Mecanismo: piso de preço",
-    "text": "Mecanismo: piso de preço\n\n\nFigure 2"
+    "section": "3.1 Mecanismo: piso de preço",
+    "text": "3.1 Mecanismo: piso de preço\n\neq_q &lt;- 4; eq_p &lt;- 6\npmin &lt;- 8\nqd_fl &lt;- 2; qs_fl &lt;- 6\n\ndf_d &lt;- data.frame(q = c(0, 10), p = c(10, 0))\ndf_s &lt;- data.frame(q = c(0, 8),  p = c(2, 10))\n\nggplot() +\n  geom_line(data = df_d, aes(x = q, y = p), colour = \"#0066CC\", linewidth = 1.1) +\n  geom_line(data = df_s, aes(x = q, y = p), colour = \"#CC3300\", linewidth = 1.1) +\n  geom_point(aes(x = eq_q, y = eq_p), size = 3) +\n  geom_segment(aes(x = 0, xend = eq_q, y = eq_p, yend = eq_p),\n               linetype = \"dashed\", colour = \"grey50\") +\n  geom_segment(aes(x = eq_q, xend = eq_q, y = 0, yend = eq_p),\n               linetype = \"dashed\", colour = \"grey50\") +\n  geom_hline(yintercept = pmin, colour = \"purple\", linewidth = 1.1) +\n  geom_segment(aes(x = qd_fl, xend = qd_fl, y = 0, yend = pmin),\n               linetype = \"dashed\", colour = \"purple\") +\n  geom_segment(aes(x = qs_fl, xend = qs_fl, y = 0, yend = pmin),\n               linetype = \"dashed\", colour = \"purple\") +\n  geom_polygon(\n    data = data.frame(q = c(qd_fl, eq_q, qd_fl),\n                      p = c(pmin, eq_p, 2 + qd_fl)),\n    aes(x = q, y = p), fill = \"orange\", alpha = 0.4) +\n  annotate(\"text\", x = 10.5, y = 0.4, label = \"D\",\n           size = 4.5, colour = \"#0066CC\", fontface = \"bold\") +\n  annotate(\"text\", x = 8.4,  y = 10.3, label = \"S\",\n           size = 4.5, colour = \"#CC3300\", fontface = \"bold\") +\n  annotate(\"text\", x = -0.55, y = eq_p, label = \"P*\",   size = 3.6) +\n  annotate(\"text\", x = eq_q,  y = -0.55, label = \"Q*\",  size = 3.6) +\n  annotate(\"text\", x = -0.8, y = pmin,\n           label = expression(P[min]), size = 3.6, colour = \"purple\") +\n  annotate(\"text\", x = qd_fl, y = -0.55,\n           label = expression(Q[D]), size = 3.4, colour = \"purple\") +\n  annotate(\"text\", x = qs_fl, y = -0.55,\n           label = expression(Q[S]), size = 3.4, colour = \"purple\") +\n  annotate(\"text\", x = 2.8, y = 7.4, label = \"DWL\",\n           size = 3.4, colour = \"darkorange3\", fontface = \"bold\") +\n  annotate(\"segment\",\n           x = qd_fl + 0.1, xend = qs_fl - 0.1,\n           y = pmin + 0.6, yend = pmin + 0.6,\n           arrow = arrow(ends = \"both\", length = unit(0.12, \"cm\")),\n           colour = \"purple\") +\n  annotate(\"text\", x = (qd_fl + qs_fl) / 2, y = pmin + 1.15,\n           label = \"Excesso de oferta\", size = 3.2, colour = \"purple\") +\n  scale_x_continuous(limits = c(-1, 11), expand = c(0, 0)) +\n  scale_y_continuous(limits = c(-1, 11), expand = c(0, 0)) +\n  labs(x = \"Q\", y = \"P\") +\n  theme_minimal(base_size = 13) +\n  theme(panel.grid.minor = element_blank(),\n        axis.title = element_text(face = \"bold\"))\n\n\n\n\n\n\n\nFigure 2"
   },
   {
     "objectID": "slides/20_controlo_precos.html#efeitos-do-p_min-exemplo-numérico",
     "href": "slides/20_controlo_precos.html#efeitos-do-p_min-exemplo-numérico",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Efeitos do \\(P_{min}\\): exemplo numérico",
-    "text": "Efeitos do \\(P_{min}\\): exemplo numérico\nMesmo mercado, piso \\(P_{min} = 8 &gt; P^* = 6\\):\n\n\n\n\nCompetitivo\nCom \\(P_{min} = 8\\)\nVariação\n\n\n\n\nQuantidade transaccionada\n\\(Q^* = 4\\)\n\\(Q_D = 2\\)\n\\(-2\\)\n\n\nExcedente do Consumidor\n8\n2\n−6\n\n\nExcedente do Produtor\n8\n\\(\\leq 10\\) †\n\\(\\leq\\) +2\n\n\nExcedente Total\n16\n\\(\\leq 12\\)\n\\(\\geq\\) −4\n\n\n\n† máximo teórico — assume que vendem os \\(Q_D = 2\\) produtores mais eficientes (menor custo)\n\n\n\n\n\n\n\nSimetria notável\n\n\nO EC cai sempre: o consumidor compra menos a preço mais alto. O EP depende de quais dos \\(Q_S = 6\\) produtores conseguem vender os \\(Q_D = 2\\) bens: se forem os mais eficientes, EP = 10 &gt; 8; se não, EP pode ser inferior a 8. Tal como no \\(P_{max}\\), o excesso de oferta cria um problema de alocação que agrava as perdas de excedente."
+    "section": "3.2 Efeitos do \\(P_{min}\\): exemplo numérico",
+    "text": "3.2 Efeitos do \\(P_{min}\\): exemplo numérico\nMesmo mercado, piso \\(P_{min} = 8 &gt; P^* = 6\\):\n\n\n\n\nCompetitivo\nCom \\(P_{min} = 8\\)\nVariação\n\n\n\n\nQuantidade transaccionada\n\\(Q^* = 4\\)\n\\(Q_D = 2\\)\n\\(-2\\)\n\n\nExcedente do Consumidor\n8\n2\n−6\n\n\nExcedente do Produtor\n8\n\\(\\leq 10\\) †\n\\(\\leq\\) +2\n\n\nExcedente Total\n16\n\\(\\leq 12\\)\n\\(\\geq\\) −4\n\n\n\n† máximo teórico — assume que vendem os \\(Q_D = 2\\) produtores mais eficientes (menor custo)\n. . .\n\n\n\n\n\n\nNoteSimetria notável\n\n\n\nO EC cai sempre: o consumidor compra menos a preço mais alto. O EP depende de quais dos \\(Q_S = 6\\) produtores conseguem vender os \\(Q_D = 2\\) bens: se forem os mais eficientes, EP = 10 &gt; 8; se não, EP pode ser inferior a 8. Tal como no \\(P_{max}\\), o excesso de oferta cria um problema de alocação que agrava as perdas de excedente."
   },
   {
     "objectID": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_min",
     "href": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_min",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Consequências não intencionais do \\(P_{min}\\)",
-    "text": "Consequências não intencionais do \\(P_{min}\\)\nExcesso de oferta (stocks acumulados)\n\\(Q_S = 6 &gt; Q_D = 2\\): produtores não escoam toda a produção. Quem vende? Pode não ser o mais eficiente.\n\nIntervenções secundárias para gerir os excedentes\nO Estado pode ser obrigado a comprar os excedentes para manter o preço. Custo para o contribuinte.\nExemplo histórico: «montanhas de manteiga» e «lagos de leite» na Política Agrícola Comum europeia dos anos 1980.\n\n\nRedução de incentivos à eficiência e qualidade\nSe o preço mínimo elimina a pressão competitiva por preço, reduz o incentivo a inovar e a melhorar."
+    "section": "3.3 Consequências não intencionais do \\(P_{min}\\)",
+    "text": "3.3 Consequências não intencionais do \\(P_{min}\\)\nExcesso de oferta (stocks acumulados)\n\\(Q_S = 6 &gt; Q_D = 2\\): produtores não escoam toda a produção. Quem vende? Pode não ser o mais eficiente.\n. . .\nIntervenções secundárias para gerir os excedentes\nO Estado pode ser obrigado a comprar os excedentes para manter o preço. Custo para o contribuinte.\nExemplo histórico: «montanhas de manteiga» e «lagos de leite» na Política Agrícola Comum europeia dos anos 1980.\n. . .\nRedução de incentivos à eficiência e qualidade\nSe o preço mínimo elimina a pressão competitiva por preço, reduz o incentivo a inovar e a melhorar."
   },
   {
     "objectID": "slides/20_controlo_precos.html#caso-1-controlo-de-rendas-são-francisco",
@@ -5932,22 +5932,22 @@
     "objectID": "slides/20_controlo_precos.html#caso-4-salário-mínimo-o-debate-empírico",
     "href": "slides/20_controlo_precos.html#caso-4-salário-mínimo-o-debate-empírico",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Caso 4: Salário mínimo — o debate empírico",
-    "text": "Caso 4: Salário mínimo — o debate empírico\nO salário mínimo é um \\(P_{min}\\) no mercado de trabalho.\nA teoria standard prevê: \\(W_{min} &gt; W^* \\Rightarrow\\) desemprego involuntário (\\(L_S &gt; L_D\\)).\n\nMas a evidência empírica é mais complexa:\n\nCard & Krueger (1994, AER): Aumento do salário mínimo em New Jersey (de $4,25 para $5,05) — sem queda de emprego em fast food vs. Pennsylvania (grupo de controlo); o emprego até aumentou ligeiramente\nDube, Lester & Reich (2010): usando condados fronteiriços como grupo de controlo, encontram efeitos de emprego próximos de zero para aumentos moderados\nBurkhauser et al. (2022): revisão abrangente — maioria dos estudos encontra efeitos centrados em zero, mas com incerteza considerável"
+    "section": "4.5 Caso 4: Salário mínimo — o debate empírico",
+    "text": "4.5 Caso 4: Salário mínimo — o debate empírico\nO salário mínimo é um \\(P_{min}\\) no mercado de trabalho.\nA teoria standard prevê: \\(W_{min} &gt; W^* \\Rightarrow\\) desemprego involuntário (\\(L_S &gt; L_D\\)).\n. . .\nMas a evidência empírica é mais complexa:\n\nCard & Krueger (1994, AER): Aumento do salário mínimo em New Jersey (de $4,25 para $5,05) — sem queda de emprego em fast food vs. Pennsylvania (grupo de controlo); o emprego até aumentou ligeiramente\nDube, Lester & Reich (2010): usando condados fronteiriços como grupo de controlo, encontram efeitos de emprego próximos de zero para aumentos moderados\nBurkhauser et al. (2022): revisão abrangente — maioria dos estudos encontra efeitos centrados em zero, mas com incerteza considerável"
   },
   {
     "objectID": "slides/20_controlo_precos.html#porquê-diverge-da-teoria-simples",
     "href": "slides/20_controlo_precos.html#porquê-diverge-da-teoria-simples",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Porquê diverge da teoria simples?",
-    "text": "Porquê diverge da teoria simples?\n1. Monopsónia no mercado de trabalho\nSe os empregadores têm poder de mercado, o salário competitivo já está abaixo do óptimo. Um salário mínimo pode aumentar emprego até certo ponto — tal como um \\(P_{min}\\) num mercado com poder de monopólio do comprador.\n\n2. Custos de rotatividade (turnover)\nCom salário mínimo mais alto, os trabalhadores ficam mais tempo nos empregos → menos custos de recrutamento e formação para as empresas.\n\n\n3. Efeito nos preços finais\nParte do custo salarial extra é transferida para os consumidores via preços mais altos — o ajustamento não é só via quantidade de emprego.\n\n\n\n\n\n\n\n\nNote\n\n\nO debate empírico sobre o salário mínimo foi reconhecido com o Prémio Nobel da Economia de 2021, atribuído a David Card."
+    "section": "4.6 Porquê diverge da teoria simples?",
+    "text": "4.6 Porquê diverge da teoria simples?\n1. Monopsónia no mercado de trabalho\nSe os empregadores têm poder de mercado, o salário competitivo já está abaixo do óptimo. Um salário mínimo pode aumentar emprego até certo ponto — tal como um \\(P_{min}\\) num mercado com poder de monopólio do comprador.\n. . .\n2. Custos de rotatividade (turnover)\nCom salário mínimo mais alto, os trabalhadores ficam mais tempo nos empregos → menos custos de recrutamento e formação para as empresas.\n. . .\n3. Efeito nos preços finais\nParte do custo salarial extra é transferida para os consumidores via preços mais altos — o ajustamento não é só via quantidade de emprego.\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO debate empírico sobre o salário mínimo foi reconhecido com o Prémio Nobel da Economia de 2021, atribuído a David Card."
   },
   {
     "objectID": "slides/20_controlo_precos.html#síntese-teoria-e-evidência",
     "href": "slides/20_controlo_precos.html#síntese-teoria-e-evidência",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Síntese: teoria e evidência",
-    "text": "Síntese: teoria e evidência\n\n\nFigure 3\nA teoria standard sobre-estima os custos quando há poder de mercado do lado oposto. A evidência confirma os mecanismos, mas não sempre a magnitude."
+    "section": "4.7 Síntese: teoria e evidência",
+    "text": "4.7 Síntese: teoria e evidência\n\ndf &lt;- data.frame(\n  politica = factor(\n    c(\"Controlo de rendas\", \"P. mínimos agrícolas\", \"Salário mínimo\"),\n    levels = c(\"Controlo de rendas\", \"P. mínimos agrícolas\", \"Salário mínimo\")\n  ),\n  teoria_neg  = c(-0.9, -0.85, -0.75),\n  evidencia   = c(-0.75, -0.65, -0.20),\n  label_teoria = c(\"Escassez + mercado negro\", \"Excesso oferta + custo Estado\", \"Desemprego\"),\n  label_evid   = c(\"Escassez + subida seg. livre\", \"Excesso + migração mercados\", \"Efeito ~ 0 (variações mod.)\")\n)\n\nggplot(df) +\n  geom_col(aes(x = politica, y = teoria_neg),\n           fill = \"#CC3300\", alpha = 0.5, width = 0.35,\n           position = position_nudge(x = -0.2)) +\n  geom_col(aes(x = politica, y = evidencia),\n           fill = \"#0066CC\", alpha = 0.6, width = 0.35,\n           position = position_nudge(x = 0.2)) +\n  geom_hline(yintercept = 0, colour = \"black\", linewidth = 0.5) +\n  annotate(\"rect\", xmin = 0.3, xmax = 0.7, ymin = -1.05, ymax = -0.96,\n           fill = \"#CC3300\", alpha = 0.5) +\n  annotate(\"text\", x = 0.75, y = -1.005, label = \"Teoria (modelo simples)\",\n           hjust = 0, size = 3.2, colour = \"#CC3300\") +\n  annotate(\"rect\", xmin = 0.3, xmax = 0.7, ymin = -1.22, ymax = -1.13,\n           fill = \"#0066CC\", alpha = 0.6) +\n  annotate(\"text\", x = 0.75, y = -1.175, label = \"Evidência empírica\",\n           hjust = 0, size = 3.2, colour = \"#0066CC\") +\n  scale_y_continuous(\n    labels = NULL,\n    limits = c(-1.35, 0.1),\n    name = \"Custo de eficiência\\n(mais negativo = maior perda)\"\n  ) +\n  scale_x_discrete(name = NULL) +\n  labs(title = \"A teoria prevê sempre perdas; a magnitude varia com o contexto\") +\n  theme_minimal(base_size = 12) +\n  theme(\n    panel.grid.major.x = element_blank(),\n    plot.title = element_text(size = 11)\n  )\n\n\n\n\n\n\n\nFigure 3\n\n\n\n\n\nA teoria standard sobre-estima os custos quando há poder de mercado do lado oposto. A evidência confirma os mecanismos, mas não sempre a magnitude."
   },
   {
     "objectID": "slides/20_controlo_precos.html#quando-podem-os-controlos-de-preços-ser-justificados",
@@ -5960,43 +5960,43 @@
     "objectID": "slides/20_controlo_precos.html#referências-e-leituras-recomendadas",
     "href": "slides/20_controlo_precos.html#referências-e-leituras-recomendadas",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Referências e leituras recomendadas",
-    "text": "Referências e leituras recomendadas\n\n\n\n\n\n\nArtigos científicos citados\n\n\n\nDiamond, R., McQuade, T. & Qian, F. (2019). “The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco.” American Economic Review, 109(9): 3365–3394.\nCard, D. & Krueger, A. (1994). “Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania.” American Economic Review, 84(4): 772–793.\nKholodilin, K.A. (2024). “Rent Control Effects through the Lens of Empirical Research.” Journal of Housing Economics, 63.\nHahn, A., Kholodilin, K., Waltl, S. & Fongoni, M. (2024). DIW Berlin Discussion Paper 2094."
+    "section": "5.3 Referências e leituras recomendadas",
+    "text": "5.3 Referências e leituras recomendadas\n\n\n\n\n\n\nNoteArtigos científicos citados\n\n\n\n\nDiamond, R., McQuade, T. & Qian, F. (2019). “The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco.” American Economic Review, 109(9): 3365–3394.\nCard, D. & Krueger, A. (1994). “Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania.” American Economic Review, 84(4): 772–793.\nKholodilin, K.A. (2024). “Rent Control Effects through the Lens of Empirical Research.” Journal of Housing Economics, 63.\nHahn, A., Kholodilin, K., Waltl, S. & Fongoni, M. (2024). DIW Berlin Discussion Paper 2094."
   },
   {
     "objectID": "slides/20_controlo_precos.html#exercício-de-escolha-múltipla-1",
     "href": "slides/20_controlo_precos.html#exercício-de-escolha-múltipla-1",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Exercício de escolha múltipla 1",
-    "text": "Exercício de escolha múltipla 1\nO Governo fixa um preço máximo \\(P_{max}\\) abaixo do preço de equilíbrio \\(P^*\\). Qual das seguintes afirmações está correcta?\n\n\nA quantidade transaccionada aumenta relativamente ao equilíbrio competitivo\n\n\nSurge um excesso de oferta no mercado\n\n\nO excedente total diminui relativamente ao equilíbrio competitivo\n\n\nO excedente do produtor aumenta"
+    "section": "6.1 Exercício de escolha múltipla 1",
+    "text": "6.1 Exercício de escolha múltipla 1\nO Governo fixa um preço máximo \\(P_{max}\\) abaixo do preço de equilíbrio \\(P^*\\). Qual das seguintes afirmações está correcta?\n\n\n\nA quantidade transaccionada aumenta relativamente ao equilíbrio competitivo\n\n\nSurge um excesso de oferta no mercado\n\n\nO excedente total diminui relativamente ao equilíbrio competitivo\n\n\nO excedente do produtor aumenta"
   },
   {
     "objectID": "slides/20_controlo_precos.html#solução-escolha-múltipla-1",
     "href": "slides/20_controlo_precos.html#solução-escolha-múltipla-1",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Solução — escolha múltipla 1",
-    "text": "Solução — escolha múltipla 1\nO Governo fixa um preço máximo \\(P_{max}\\) abaixo do preço de equilíbrio \\(P^*\\). Qual das seguintes afirmações está correcta?\n\n\nA quantidade transaccionada aumenta ✗ — cai para \\(Q_S &lt; Q^*\\)\n\n\nSurge um excesso de oferta ✗ — surge escassez (\\(Q_D &gt; Q_S\\))\n\nC) O excedente total diminui ✓ — há DWL\n\nO excedente do produtor aumenta ✗ — o EP cai (preço mais baixo, menos quantidade vendida)\n\n\n\n\n\n\n\n\nTip\n\n\nCom \\(P_{max} &lt; P^*\\), o EP cai sempre. O EC só aumenta se os bens racionados forem para quem mais os valoriza — o que não é garantido. O excedente total é sempre inferior ao equilíbrio competitivo."
+    "section": "6.2 Solução — escolha múltipla 1",
+    "text": "6.2 Solução — escolha múltipla 1\nO Governo fixa um preço máximo \\(P_{max}\\) abaixo do preço de equilíbrio \\(P^*\\). Qual das seguintes afirmações está correcta?\n\n\n\nA quantidade transaccionada aumenta ✗ — cai para \\(Q_S &lt; Q^*\\)\n\n\nSurge um excesso de oferta ✗ — surge escassez (\\(Q_D &gt; Q_S\\))\n\nC) O excedente total diminui ✓ — há DWL\n\nO excedente do produtor aumenta ✗ — o EP cai (preço mais baixo, menos quantidade vendida)\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nCom \\(P_{max} &lt; P^*\\), o EP cai sempre. O EC só aumenta se os bens racionados forem para quem mais os valoriza — o que não é garantido. O excedente total é sempre inferior ao equilíbrio competitivo."
   },
   {
     "objectID": "slides/20_controlo_precos.html#exercício-de-escolha-múltipla-2",
     "href": "slides/20_controlo_precos.html#exercício-de-escolha-múltipla-2",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Exercício de escolha múltipla 2",
-    "text": "Exercício de escolha múltipla 2\nMercado de trabalho: procura \\(W = 20 - 2L\\), oferta \\(W = 4 + L\\). Equilíbrio: \\(L^* \\approx 5{,}3\\), \\(W^* \\approx 9{,}3\\). É fixado um salário mínimo \\(W_{min} = 14\\). Qual o desemprego involuntário?\n\n\n3\n\n\n7\n\n\n10\n\n\n0 — o salário mínimo não tem efeito porque está abaixo de \\(W^*\\)"
+    "section": "6.3 Exercício de escolha múltipla 2",
+    "text": "6.3 Exercício de escolha múltipla 2\nMercado de trabalho: procura \\(W = 20 - 2L\\), oferta \\(W = 4 + L\\). Equilíbrio: \\(L^* \\approx 5{,}3\\), \\(W^* \\approx 9{,}3\\). É fixado um salário mínimo \\(W_{min} = 14\\). Qual o desemprego involuntário?\n\n\n\n3\n\n\n7\n\n\n10\n\n\n0 — o salário mínimo não tem efeito porque está abaixo de \\(W^*\\)"
   },
   {
     "objectID": "slides/20_controlo_precos.html#solução-escolha-múltipla-2",
     "href": "slides/20_controlo_precos.html#solução-escolha-múltipla-2",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Solução — escolha múltipla 2",
-    "text": "Solução — escolha múltipla 2\nCom \\(W_{min} = 14 &gt; W^* \\approx 9{,}3\\):\n\nProcura de trabalho: \\(14 = 20 - 2L \\Rightarrow L_D = 3\\)\nOferta de trabalho: \\(14 = 4 + L \\Rightarrow L_S = 10\\)\nDesemprego involuntário: \\(L_S - L_D = 10 - 3 = \\mathbf{7}\\)\n\n\n\n\n\n\n\nTip\n\n\nO desemprego involuntário é \\(L_S - L_D\\), não \\(L_S\\). Os trabalhadores empregados são \\(L_D = 3\\); os que querem trabalhar mas não encontram emprego são \\(L_S - L_D = 7\\)."
+    "section": "6.4 Solução — escolha múltipla 2",
+    "text": "6.4 Solução — escolha múltipla 2\nCom \\(W_{min} = 14 &gt; W^* \\approx 9{,}3\\):\n\nProcura de trabalho: \\(14 = 20 - 2L \\Rightarrow L_D = 3\\)\nOferta de trabalho: \\(14 = 4 + L \\Rightarrow L_S = 10\\)\nDesemprego involuntário: \\(L_S - L_D = 10 - 3 = \\mathbf{7}\\)\n\n\n\n\n\n\n\nTip\n\n\n\nO desemprego involuntário é \\(L_S - L_D\\), não \\(L_S\\). Os trabalhadores empregados são \\(L_D = 3\\); os que querem trabalhar mas não encontram emprego são \\(L_S - L_D = 7\\)."
   },
   {
     "objectID": "slides/20_controlo_precos.html#exercício-de-desenvolvimento",
     "href": "slides/20_controlo_precos.html#exercício-de-desenvolvimento",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Exercício de desenvolvimento",
-    "text": "Exercício de desenvolvimento\nMercado de arrendamento: \\(D: P = 1000 - 2Q\\), \\(S: P = 200 + 2Q\\) (€/mês; \\(Q\\) em milhares de fogos).\na) Calcule o equilíbrio competitivo \\((Q^*, P^*)\\).\nb) O Governo fixa \\(P_{max} = 400\\). Calcule \\(Q_S\\), \\(Q_D\\) e a escassez resultante.\nc) Calcule o excedente do consumidor, o excedente do produtor e a perda de excedente total (DWL) com o tecto. Confirme que EC + EP + DWL = excedente total competitivo.\nd) Com base na evidência empírica (Diamond et al., 2019; Berlim 2020), discuta duas consequências dinâmicas que este modelo estático não captura."
+    "section": "6.5 Exercício de desenvolvimento",
+    "text": "6.5 Exercício de desenvolvimento\nMercado de arrendamento: \\(D: P = 1000 - 2Q\\), \\(S: P = 200 + 2Q\\) (€/mês; \\(Q\\) em milhares de fogos).\na) Calcule o equilíbrio competitivo \\((Q^*, P^*)\\).\nb) O Governo fixa \\(P_{max} = 400\\). Calcule \\(Q_S\\), \\(Q_D\\) e a escassez resultante.\nc) Calcule o excedente do consumidor, o excedente do produtor e a perda de excedente total (DWL) com o tecto. Confirme que EC + EP + DWL = excedente total competitivo.\nd) Com base na evidência empírica (Diamond et al., 2019; Berlim 2020), discuta duas consequências dinâmicas que este modelo estático não captura."
   },
   {
     "objectID": "slides/20_controlo_precos.html#solução-desenvolvimento-a-b-c",
@@ -6009,15 +6009,15 @@
     "objectID": "slides/20_controlo_precos.html#solução-desenvolvimento-d",
     "href": "slides/20_controlo_precos.html#solução-desenvolvimento-d",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Solução — desenvolvimento (d)",
-    "text": "Solução — desenvolvimento (d)\nd) Duas consequências dinâmicas não capturadas pelo modelo estático:\n(1) Contracção da oferta a médio prazo\nOs senhorios convertem habitação em outros usos com maior rendibilidade — alojamento local (Airbnb), escritórios, venda. A oferta de arrendamento regulado encolhe. Diamond et al. (2019) estimam uma redução de 15% no parque de arrendamento em São Francisco após a extensão do controlo de rendas.\n(2) Degradação da qualidade\nSem possibilidade de aumentar o preço, os senhorios têm menos incentivo a investir em manutenção e renovação. A qualidade do parque habitacional regulado deteriora-se progressivamente.\n\n\n\n\n\n\nTip\n\n\nEm ambos os casos, o efeito final é o oposto do pretendido: a médio prazo, quem procura habitação a preço acessível encontra menos oferta e pior qualidade."
+    "section": "6.8 Solução — desenvolvimento (d)",
+    "text": "6.8 Solução — desenvolvimento (d)\nd) Duas consequências dinâmicas não capturadas pelo modelo estático:\n(1) Contracção da oferta a médio prazo\nOs senhorios convertem habitação em outros usos com maior rendibilidade — alojamento local (Airbnb), escritórios, venda. A oferta de arrendamento regulado encolhe. Diamond et al. (2019) estimam uma redução de 15% no parque de arrendamento em São Francisco após a extensão do controlo de rendas.\n(2) Degradação da qualidade\nSem possibilidade de aumentar o preço, os senhorios têm menos incentivo a investir em manutenção e renovação. A qualidade do parque habitacional regulado deteriora-se progressivamente.\n\n\n\n\n\n\nTip\n\n\n\nEm ambos os casos, o efeito final é o oposto do pretendido: a médio prazo, quem procura habitação a preço acessível encontra menos oferta e pior qualidade."
   },
   {
     "objectID": "slides/20_controlo_precos.html#mecanismo-tecto-de-preço-no-melhor-dos-casos",
     "href": "slides/20_controlo_precos.html#mecanismo-tecto-de-preço-no-melhor-dos-casos",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Mecanismo: tecto de preço (no melhor dos casos)",
-    "text": "Mecanismo: tecto de preço (no melhor dos casos)\n\n\nFigure 1"
+    "section": "2.1 Mecanismo: tecto de preço (no melhor dos casos)",
+    "text": "2.1 Mecanismo: tecto de preço (no melhor dos casos)\n\neq_q &lt;- 4; eq_p &lt;- 6\npmax &lt;- 4\nqs_ceil &lt;- 2; qd_ceil &lt;- 6\n\ndf_d &lt;- data.frame(q = c(0, 10), p = c(10, 0))\ndf_s &lt;- data.frame(q = c(0, 8),  p = c(2, 10))\n\nggplot() +\n  geom_line(data = df_d, aes(x = q, y = p), colour = \"#0066CC\", linewidth = 1.1) +\n  geom_line(data = df_s, aes(x = q, y = p), colour = \"#CC3300\", linewidth = 1.1) +\n  geom_point(aes(x = eq_q, y = eq_p), size = 3) +\n  geom_segment(aes(x = 0, xend = eq_q, y = eq_p, yend = eq_p),\n               linetype = \"dashed\", colour = \"grey50\") +\n  geom_segment(aes(x = eq_q, xend = eq_q, y = 0, yend = eq_p),\n               linetype = \"dashed\", colour = \"grey50\") +\n  geom_hline(yintercept = pmax, colour = \"darkgreen\", linewidth = 1.1) +\n  geom_segment(aes(x = qs_ceil, xend = qs_ceil, y = 0, yend = pmax),\n               linetype = \"dashed\", colour = \"darkgreen\") +\n  geom_segment(aes(x = qd_ceil, xend = qd_ceil, y = 0, yend = pmax),\n               linetype = \"dashed\", colour = \"darkgreen\") +\n  geom_polygon(\n    data = data.frame(q = c(qs_ceil, eq_q, qs_ceil),\n                      p = c(10 - qs_ceil, eq_p, pmax)),\n    aes(x = q, y = p), fill = \"orange\", alpha = 0.4) +\n  annotate(\"text\", x = 10.5, y = 0.4, label = \"D\",\n           size = 4.5, colour = \"#0066CC\", fontface = \"bold\") +\n  annotate(\"text\", x = 8.4,  y = 10.3, label = \"S\",\n           size = 4.5, colour = \"#CC3300\", fontface = \"bold\") +\n  annotate(\"text\", x = -0.55, y = eq_p,  label = \"P*\",   size = 3.6) +\n  annotate(\"text\", x = eq_q,  y = -0.55, label = \"Q*\",   size = 3.6) +\n  annotate(\"text\", x = -0.8, y = pmax,\n           label = expression(P[max]), size = 3.6, colour = \"darkgreen\") +\n  annotate(\"text\", x = qs_ceil, y = -0.55,\n           label = expression(Q[S]), size = 3.4, colour = \"darkgreen\") +\n  annotate(\"text\", x = qd_ceil, y = -0.55,\n           label = expression(Q[D]), size = 3.4, colour = \"darkgreen\") +\n  annotate(\"text\", x = 3.0, y = 6.3, label = \"DWL\",\n           size = 3.4, colour = \"darkorange3\", fontface = \"bold\") +\n  annotate(\"segment\",\n           x = qs_ceil + 0.1, xend = qd_ceil - 0.1,\n           y = pmax - 0.6, yend = pmax - 0.6,\n           arrow = arrow(ends = \"both\", length = unit(0.12, \"cm\")),\n           colour = \"darkgreen\") +\n  annotate(\"text\", x = (qs_ceil + qd_ceil) / 2, y = pmax - 1.1,\n           label = \"Escassez\", size = 3.2, colour = \"darkgreen\") +\n  scale_x_continuous(limits = c(-1, 11), expand = c(0, 0)) +\n  scale_y_continuous(limits = c(-1, 11), expand = c(0, 0)) +\n  labs(x = \"Q\", y = \"P\") +\n  theme_minimal(base_size = 13) +\n  theme(panel.grid.minor = element_blank(),\n        axis.title = element_text(face = \"bold\"))\n\n\n\n\n\n\n\nFigure 1"
   },
   {
     "objectID": "slides/20_controlo_precos.html#caso-1-controlo-de-rendas-s.-francisco",
@@ -6030,29 +6030,29 @@
     "objectID": "slides/20_controlo_precos.html#caso-1-control-de-rendas-sfo",
     "href": "slides/20_controlo_precos.html#caso-1-control-de-rendas-sfo",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Caso 1: Control de Rendas: SFO",
-    "text": "Caso 1: Control de Rendas: SFO\n\n\n\n\n\n\nDiamond, McQuade & Qian (2019) — American Economic Review\n\n\nEstudo quasi-experimental sobre a extensão do controlo de rendas a edifícios com ≤ 4 fogos (construídos antes de 1980), após uma reforma legislativa de 1994 em São Francisco.\n\n\n\nResultados principais:\n\nInquilinos em casas controladas: probabilidade de permanecer na morada \\(\\uparrow\\) cerca de 20 p.p.\nSenhorios retiraram 15% das unidades controladas do mercado de arrendamento (conversão em condominiums ou demolição)\nEfeito sobre toda a cidade: rendas no mercado não controlado \\(\\uparrow\\) 5,1%\n\n\n\n\n\n\n\n\nImportant\n\n\nExatamente o previsto pela teoria: os inquilinos existentes beneficiam, mas a oferta total cai e as rendas sobem para quem ainda procura no mercado livre."
+    "section": "4.1 Caso 1: Control de Rendas: SFO",
+    "text": "4.1 Caso 1: Control de Rendas: SFO\n\n\n\n\n\n\nNoteDiamond, McQuade & Qian (2019) — American Economic Review\n\n\n\nEstudo quasi-experimental sobre a extensão do controlo de rendas a edifícios com ≤ 4 fogos (construídos antes de 1980), após uma reforma legislativa de 1994 em São Francisco.\n\n\nResultados principais:\n\nInquilinos em casas controladas: probabilidade de permanecer na morada \\(\\uparrow\\) cerca de 20 p.p.\nSenhorios retiraram 15% das unidades controladas do mercado de arrendamento (conversão em condominiums ou demolição)\nEfeito sobre toda a cidade: rendas no mercado não controlado \\(\\uparrow\\) 5,1%\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nExatamente o previsto pela teoria: os inquilinos existentes beneficiam, mas a oferta total cai e as rendas sobem para quem ainda procura no mercado livre."
   },
   {
     "objectID": "slides/20_controlo_precos.html#caso-2-berlim-20202021",
     "href": "slides/20_controlo_precos.html#caso-2-berlim-20202021",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Caso 2: Berlim (2020–2021)",
-    "text": "Caso 2: Berlim (2020–2021)\n\nEm fevereiro de 2020, Berlim congelou rendas de ~1,5 milhões de apartamentos (construídos antes de 2014, ~95% do parque)\nO mercado bifurcou-se: apartamentos pós-2014 (não regulados, ~5% do parque) sofreram aumentos de preço imediatos\n\n\n\nHahn, Kholodilin, Waltl & Fongoni (2024): anúncios no segmento não regulado dispararam em preço; inquilinos sem contratos existentes pagaram mais, não menos\n\n\n\n\nO Tribunal Constitucional Federal alemão declarou o Mietendeckel inconstitucional em abril de 2021\nAs rendas voltaram, em geral, aos níveis pré-regulação\n\n\n\n\n\n\n\n\n\nNote\n\n\nQuando a regulação é parcial, os recursos «fogem» para os segmentos não regulados — agravando a situação de quem não beneficiou do controlo."
+    "section": "4.2 Caso 2: Berlim (2020–2021)",
+    "text": "4.2 Caso 2: Berlim (2020–2021)\n\nEm fevereiro de 2020, Berlim congelou rendas de ~1,5 milhões de apartamentos (construídos antes de 2014, ~95% do parque)\nO mercado bifurcou-se: apartamentos pós-2014 (não regulados, ~5% do parque) sofreram aumentos de preço imediatos\n\n. . .\n\nHahn, Kholodilin, Waltl & Fongoni (2024): anúncios no segmento não regulado dispararam em preço; inquilinos sem contratos existentes pagaram mais, não menos\n\n. . .\n\nO Tribunal Constitucional Federal alemão declarou o Mietendeckel inconstitucional em abril de 2021\nAs rendas voltaram, em geral, aos níveis pré-regulação\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nQuando a regulação é parcial, os recursos «fogem» para os segmentos não regulados — agravando a situação de quem não beneficiou do controlo."
   },
   {
     "objectID": "slides/20_controlo_precos.html#caso-3-catalunha-20202022",
     "href": "slides/20_controlo_precos.html#caso-3-catalunha-20202022",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Caso 3: Catalunha — 2020–2022",
-    "text": "Caso 3: Catalunha — 2020–2022\n\nRegulação aplicada a municípios com mais de 20 000 habitantes com mercado de arrendamento «tenso»\nRendas não podiam exceder um cap por tipo de habitação e zona geográfica\nTerminou em março de 2022 (declarado inconstitucional pelo Tribunal Constitucional espanhol)"
+    "section": "4.3 Caso 3: Catalunha — 2020–2022",
+    "text": "4.3 Caso 3: Catalunha — 2020–2022\n\nRegulação aplicada a municípios com mais de 20 000 habitantes com mercado de arrendamento «tenso»\nRendas não podiam exceder um cap por tipo de habitação e zona geográfica\nTerminou em março de 2022 (declarado inconstitucional pelo Tribunal Constitucional espanhol)"
   },
   {
     "objectID": "slides/20_controlo_precos.html#evidência",
     "href": "slides/20_controlo_precos.html#evidência",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Evidência",
-    "text": "Evidência\nEvidência (estudos do Banco de España e Fed. San Francisco, 2023):\n\nCurto prazo: rendas nos segmentos controlados desceram (efeito esperado)\nNúmero de novos contratos de arrendamento caiu significativamente nos municípios regulados\nParte da oferta migrou para alojamento turístico (Airbnb) — não sujeito à regulação\n\n\n\n\n\n\n\n\nImportant\n\n\nPadrão consistente em três países europeus: controlo de rendas redistribui rendimento a curto prazo, mas contrai a oferta a médio prazo."
+    "section": "4.4 Evidência",
+    "text": "4.4 Evidência\nEvidência (estudos do Banco de España e Fed. San Francisco, 2023):\n\nCurto prazo: rendas nos segmentos controlados desceram (efeito esperado)\nNúmero de novos contratos de arrendamento caiu significativamente nos municípios regulados\nParte da oferta migrou para alojamento turístico (Airbnb) — não sujeito à regulação\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nPadrão consistente em três países europeus: controlo de rendas redistribui rendimento a curto prazo, mas contrai a oferta a médio prazo."
   },
   {
     "objectID": "slides/20_controlo_precos.html#controlos-de-preços-podem-ser-justificados",
@@ -6072,43 +6072,43 @@
     "objectID": "slides/20_controlo_precos.html#solução-desenvolvimento-a-e-b",
     "href": "slides/20_controlo_precos.html#solução-desenvolvimento-a-e-b",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Solução — desenvolvimento (a) e (b)",
-    "text": "Solução — desenvolvimento (a) e (b)\na) \\(1000 - 2Q = 200 + 2Q \\Rightarrow Q^* = 200\\) mil fogos, \\(P^* = 600\\) €/mês\n\nb) Com \\(P_{max} = 400\\):\n\n\\(Q_S\\): \\(400 = 200 + 2Q \\Rightarrow Q_S = 100\\) mil fogos\n\\(Q_D\\): \\(400 = 1000 - 2Q \\Rightarrow Q_D = 300\\) mil fogos\nEscassez: \\(300 - 100 = 200\\) mil fogos"
+    "section": "6.6 Solução — desenvolvimento (a) e (b)",
+    "text": "6.6 Solução — desenvolvimento (a) e (b)\na) \\(1000 - 2Q = 200 + 2Q \\Rightarrow Q^* = 200\\) mil fogos, \\(P^* = 600\\) €/mês\n. . .\nb) Com \\(P_{max} = 400\\):\n\n\\(Q_S\\): \\(400 = 200 + 2Q \\Rightarrow Q_S = 100\\) mil fogos\n\\(Q_D\\): \\(400 = 1000 - 2Q \\Rightarrow Q_D = 300\\) mil fogos\nEscassez: \\(300 - 100 = 200\\) mil fogos"
   },
   {
     "objectID": "slides/20_controlo_precos.html#solução-desenvolvimento-c",
     "href": "slides/20_controlo_precos.html#solução-desenvolvimento-c",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Solução — desenvolvimento (c)",
-    "text": "Solução — desenvolvimento (c)\nc) Excedentes com \\(P_{max} = 400\\), \\(Q_S = 100\\) (assumindo racionamento eficiente):\n\n\n\n\n\n\n\n\n\nÁrea\nForma\nCálculo\nValor\n\n\n\n\nEC\ntrapézio acima \\(P_{max}\\) sob procura\n\\(\\frac{(1000-400)+(800-400)}{2}\\times 100\\)\n50 000\n\n\nEP\ntriângulo acima oferta sob \\(P_{max}\\)\n\\(\\frac{(400-200)}{2}\\times 100\\)\n10 000\n\n\nDWL\ntriângulo entre curvas de \\(Q_S\\) a \\(Q^*\\)\n\\(\\frac{(800-400)}{2}\\times(200-100)\\)\n20 000\n\n\nTotal\n\n\\(50\\,000+10\\,000+20\\,000\\)\n80 000 ✓\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nEC = 50 000 é o máximo: assume que os \\(Q_S = 100\\) fogos vão para os 100 arrendatários de maior valorização. Com racionamento não-preço, o EC real pode ser inferior — a DWL efectiva superior a 20 000."
+    "section": "6.7 Solução — desenvolvimento (c)",
+    "text": "6.7 Solução — desenvolvimento (c)\nc) Excedentes com \\(P_{max} = 400\\), \\(Q_S = 100\\) (assumindo racionamento eficiente):\n\n\n\n\n\n\n\n\n\nÁrea\nForma\nCálculo\nValor\n\n\n\n\nEC\ntrapézio acima \\(P_{max}\\) sob procura\n\\(\\frac{(1000-400)+(800-400)}{2}\\times 100\\)\n50 000\n\n\nEP\ntriângulo acima oferta sob \\(P_{max}\\)\n\\(\\frac{(400-200)}{2}\\times 100\\)\n10 000\n\n\nDWL\ntriângulo entre curvas de \\(Q_S\\) a \\(Q^*\\)\n\\(\\frac{(800-400)}{2}\\times(200-100)\\)\n20 000\n\n\nTotal\n\n\\(50\\,000+10\\,000+20\\,000\\)\n80 000 ✓\n\n\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nEC = 50 000 é o máximo: assume que os \\(Q_S = 100\\) fogos vão para os 100 arrendatários de maior valorização. Com racionamento não-preço, o EC real pode ser inferior — a DWL efectiva superior a 20 000."
   },
   {
     "objectID": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_max-12",
     "href": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_max-12",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Consequências não intencionais do \\(P_{max}\\) (1/2)",
-    "text": "Consequências não intencionais do \\(P_{max}\\) (1/2)\nEscassez e racionamento não-preço\nQuem recebe o bem? Não necessariamente quem mais o valoriza. O racionamento é feito por filas, relações pessoais ou discrição do vendedor — o EC real pode ficar abaixo do valor competitivo.\n\nDegradação da qualidade\nProdutores não podem cobrar mais → reduzem custos de manutenção e qualidade para compensar a margem perdida."
+    "section": "2.3 Consequências não intencionais do \\(P_{max}\\) (1/2)",
+    "text": "2.3 Consequências não intencionais do \\(P_{max}\\) (1/2)\nEscassez e racionamento não-preço\nQuem recebe o bem? Não necessariamente quem mais o valoriza. O racionamento é feito por filas, relações pessoais ou discrição do vendedor — o EC real pode ficar abaixo do valor competitivo.\n. . .\nDegradação da qualidade\nProdutores não podem cobrar mais → reduzem custos de manutenção e qualidade para compensar a margem perdida."
   },
   {
     "objectID": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_max-22",
     "href": "slides/20_controlo_precos.html#consequências-não-intencionais-do-p_max-22",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Consequências não intencionais do \\(P_{max}\\) (2/2)",
-    "text": "Consequências não intencionais do \\(P_{max}\\) (2/2)\nMercado paralelo (mercado negro)\nA disposição a pagar dos consumidores excedentários (\\(Q_D - Q_S = 4\\)) é muito superior a \\(P_{max}\\) → surgem trocas informais a preços mais altos, muitas vezes ilegais.\n\nRedução da oferta futura\nA menor rentabilidade desincentiva novos investimentos. A longo prazo, a oferta pode contrair ainda mais."
+    "section": "2.4 Consequências não intencionais do \\(P_{max}\\) (2/2)",
+    "text": "2.4 Consequências não intencionais do \\(P_{max}\\) (2/2)\nMercado paralelo (mercado negro)\nA disposição a pagar dos consumidores excedentários (\\(Q_D - Q_S = 4\\)) é muito superior a \\(P_{max}\\) → surgem trocas informais a preços mais altos, muitas vezes ilegais.\n. . .\nRedução da oferta futura\nA menor rentabilidade desincentiva novos investimentos. A longo prazo, a oferta pode contrair ainda mais."
   },
   {
     "objectID": "slides/20_controlo_precos.html#controlos-de-preços-justificados-12",
     "href": "slides/20_controlo_precos.html#controlos-de-preços-justificados-12",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Controlos de preços justificados? (1/2)",
-    "text": "Controlos de preços justificados? (1/2)\nA teoria standard conclui que os controlos são ineficientes em mercados perfeitamente competitivos. Mas há casos que alteram a análise:\n1. Poder de mercado (monopólio ou monopsónia)\nSe o vendedor/comprador já fixa um preço fora do óptimo, um controlo pode melhorar a eficiência.\n\n2. Falhas de informação\nEm mercados com assimetria de informação severa, a concorrência de preços pode não funcionar."
+    "section": "5.1 Controlos de preços justificados? (1/2)",
+    "text": "5.1 Controlos de preços justificados? (1/2)\nA teoria standard conclui que os controlos são ineficientes em mercados perfeitamente competitivos. Mas há casos que alteram a análise:\n1. Poder de mercado (monopólio ou monopsónia)\nSe o vendedor/comprador já fixa um preço fora do óptimo, um controlo pode melhorar a eficiência.\n. . .\n2. Falhas de informação\nEm mercados com assimetria de informação severa, a concorrência de preços pode não funcionar."
   },
   {
     "objectID": "slides/20_controlo_precos.html#controlos-de-preços-justificados-22",
     "href": "slides/20_controlo_precos.html#controlos-de-preços-justificados-22",
     "title": "Intervenções nos Mercados: Controlo de Preços",
-    "section": "Controlos de preços justificados? (2/2)",
-    "text": "Controlos de preços justificados? (2/2)\n3. Objectivos distributivos explícitos\nUma sociedade pode preferir aceitar algum DWL para redistribuir de ricos para pobres — decisão normativa, não positiva.\n\n4. Choques transitórios e emergências\nControlos temporários durante crises podem evitar rendas de extracção (price gouging). O custo de eficiência pode ser menor do que os ganhos de estabilidade social."
+    "section": "5.2 Controlos de preços justificados? (2/2)",
+    "text": "5.2 Controlos de preços justificados? (2/2)\n3. Objectivos distributivos explícitos\nUma sociedade pode preferir aceitar algum DWL para redistribuir de ricos para pobres — decisão normativa, não positiva.\n. . .\n4. Choques transitórios e emergências\nControlos temporários durante crises podem evitar rendas de extracção (price gouging). O custo de eficiência pode ser menor do que os ganhos de estabilidade social."
   },
   {
     "objectID": "slides/23_elasticidades_procura-document.html",
@@ -7985,5 +7985,852 @@
     "title": "Microeconomia",
     "section": "Solução — Exercício de Desenvolvimento",
     "text": "Solução — Exercício de Desenvolvimento\na) \\(Cmg = \\dfrac{dCT}{dQ} = 2Q\\) \\(\\quad;\\quad\\) \\(CTM = \\dfrac{Q^2+12}{Q} = Q + \\dfrac{12}{Q}\\)\n\nb) \\(Rmg = 18-4Q\\). \\(\\quad Rmg=Cmg \\Rightarrow 18-4Q=2Q \\Rightarrow Q^*_{cp}=3\\)\n\\(P^*_{cp} = 18-6 = 12\\) \\(\\quad;\\quad\\) \\(CTM(3)=3+4=7\\) \\(\\quad;\\quad\\) \\(\\Pi = (12-7)\\times 3 = 15\\)\n\n\nc) O lucro positivo (\\(\\Pi=15\\)) atrai novas empresas com produtos diferenciados. A entrada divide a procura por mais variantes, deslocando a curva \\(D\\) de cada empresa para a esquerda. O processo continua até \\(\\Pi=0\\).\n\n\nd) \\(Rmg_{lp}=12-4Q\\). \\(\\quad Rmg=Cmg \\Rightarrow 12-4Q=2Q \\Rightarrow Q^*_{lp}=2\\)\n\\(P^*_{lp}=12-4=8\\) \\(\\quad;\\quad\\) \\(CTM(2)=2+6=8\\) \\(\\quad\\Rightarrow\\quad P=CTM\\) ✓ (tangência)\n\\(\\Pi_{lp}=(8-8)\\times 2=0\\) ✓\nVerificação da tangência: \\(\\dfrac{dD}{dQ}\\big|_{Q=2}=-2\\) \\(\\quad;\\quad\\) \\(\\dfrac{dCTM}{dQ}\\big|_{Q=2}=1-\\dfrac{12}{4}=-2\\) ✓\n\n\ne) \\(Cmg(2)=4 &lt; P^*_{lp}=8\\). O equilíbrio não é eficiente: \\(P&gt;Cmg\\) significa que há unidades não produzidas para as quais a disposição a pagar supera o custo. A empresa produz \\(Q=2\\), abaixo da escala eficiente (\\(Q_{minCTM}\\approx 3.46\\)) — há excesso de capacidade."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html",
+    "href": "slides/25_bertrand_colusao-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Em Cournot, duas empresas com \\(Cmg = 6\\) e procura \\(P = 30 - Q\\) obtêm:\n\\[Q_C = 16,\\quad P_C = 14,\\quad \\Pi_C = 64 \\text{ cada}\\]\n. . .\nE se, em vez de escolherem quantidades, as empresas escolhessem preços?\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nEsta é a diferença essencial entre Cournot e Bertrand: a variável estratégica. Mesma estrutura de mercado, mesmo número de empresas — resultado radicalmente diferente.\n\n\n\n\n\nCom produto homogéneo, consumidores compram sempre à empresa mais barata.\n. . .\nSuponha que a Empresa B cobra \\(P_B = 14\\) (preço de Cournot):\n\n\nA Empresa A cobra \\(P_A = 13{,}99\\) — captura todo o mercado e ganha lucro positivo\nB responde com \\(P_B = 13{,}98\\) — captura todo o mercado de volta\nA responde com \\(P_A = 13{,}97\\ldots\\)\n\n\n. . .\nEste processo — undercutting — só pára quando nenhuma empresa tem incentivo a baixar mais o preço.\n. . .\n\\[P_A = P_B = Cmg = 6\\]\nAbaixo de \\(Cmg\\), vender implica prejuízo. Acima de \\(Cmg\\), a rival subcorta.\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nParadoxo de Bertrand: com apenas duas empresas, produto homogéneo e decisões simultâneas de preço, o equilíbrio de Nash é \\(P = Cmg\\) — o mesmo resultado que concorrência perfeita com infinitas empresas.\n\n\n. . .\nVerificação do Equilíbrio de Nash:\n\n\nSe \\(P_B = 6 = Cmg\\): cobrar \\(P_A &lt; 6\\) gera prejuízo; cobrar \\(P_A &gt; 6\\) perde todos os clientes; cobrar \\(P_A = 6\\) dá lucro zero. Nenhum desvio é rentável. ✓\n\n\n. . .\n\\[P^*_{\\text{Bert}} = Cmg = 6 \\qquad Q^*_{\\text{Bert}} = 24 \\qquad \\Pi^*_{\\text{Bert}} = 0\\]\n\n\n\n\n\n\n\n\nCournot\nBertrand\n\n\n\n\nVariável estratégica\nQuantidade\nPreço\n\n\nTiming\nSimultâneo\nSimultâneo\n\n\nResultado\n\\(P &gt; Cmg\\), \\(\\Pi &gt; 0\\)\n\\(P = Cmg\\), \\(\\Pi = 0\\)\n\n\nEquivalente a\n—\nConc. Perfeita\n\n\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO paradoxo levanta uma questão: qual o modelo mais realista? Depende do mercado. Quando as empresas constroem capacidade com antecedência (e depois competem em preço), o resultado aproxima-se de Cournot. Quando podem ajustar a oferta instantaneamente, Bertrand é mais adequado.\n\n\n\n\n\nNa prática, o resultado de Bertrand raramente se verifica porque:\n\n\nDiferenciação de produto — com produtos diferentes, a empresa que baixa o preço não captura imediatamente todo o mercado; há fidelização\nCapacidade instalada limitada — se a empresa não tem capacidade para servir todo o mercado, o undercutting total não é possível\nInteracção repetida — em mercados com encontros frequentes, a ameaça de represália pode sustentar preços acima de \\(Cmg\\)\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nEste último ponto — a interacção repetida — é o tema da segunda parte desta aula. A repetição transforma o jogo e pode sustentar resultados que não seriam possíveis num jogo de uma só vez."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#uma-pergunta-simples",
+    "href": "slides/25_bertrand_colusao-document.html#uma-pergunta-simples",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Em Cournot, duas empresas com \\(Cmg = 6\\) e procura \\(P = 30 - Q\\) obtêm:\n\\[Q_C = 16,\\quad P_C = 14,\\quad \\Pi_C = 64 \\text{ cada}\\]\n. . .\nE se, em vez de escolherem quantidades, as empresas escolhessem preços?\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nEsta é a diferença essencial entre Cournot e Bertrand: a variável estratégica. Mesma estrutura de mercado, mesmo número de empresas — resultado radicalmente diferente."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#a-lógica-do-undercutting",
+    "href": "slides/25_bertrand_colusao-document.html#a-lógica-do-undercutting",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Com produto homogéneo, consumidores compram sempre à empresa mais barata.\n. . .\nSuponha que a Empresa B cobra \\(P_B = 14\\) (preço de Cournot):\n\n\nA Empresa A cobra \\(P_A = 13{,}99\\) — captura todo o mercado e ganha lucro positivo\nB responde com \\(P_B = 13{,}98\\) — captura todo o mercado de volta\nA responde com \\(P_A = 13{,}97\\ldots\\)\n\n\n. . .\nEste processo — undercutting — só pára quando nenhuma empresa tem incentivo a baixar mais o preço.\n. . .\n\\[P_A = P_B = Cmg = 6\\]\nAbaixo de \\(Cmg\\), vender implica prejuízo. Acima de \\(Cmg\\), a rival subcorta."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#o-paradoxo-de-bertrand",
+    "href": "slides/25_bertrand_colusao-document.html#o-paradoxo-de-bertrand",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Important\n\n\n\nParadoxo de Bertrand: com apenas duas empresas, produto homogéneo e decisões simultâneas de preço, o equilíbrio de Nash é \\(P = Cmg\\) — o mesmo resultado que concorrência perfeita com infinitas empresas.\n\n\n. . .\nVerificação do Equilíbrio de Nash:\n\n\nSe \\(P_B = 6 = Cmg\\): cobrar \\(P_A &lt; 6\\) gera prejuízo; cobrar \\(P_A &gt; 6\\) perde todos os clientes; cobrar \\(P_A = 6\\) dá lucro zero. Nenhum desvio é rentável. ✓\n\n\n. . .\n\\[P^*_{\\text{Bert}} = Cmg = 6 \\qquad Q^*_{\\text{Bert}} = 24 \\qquad \\Pi^*_{\\text{Bert}} = 0\\]"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#cournot-vs.-bertrand-o-que-muda",
+    "href": "slides/25_bertrand_colusao-document.html#cournot-vs.-bertrand-o-que-muda",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Cournot\nBertrand\n\n\n\n\nVariável estratégica\nQuantidade\nPreço\n\n\nTiming\nSimultâneo\nSimultâneo\n\n\nResultado\n\\(P &gt; Cmg\\), \\(\\Pi &gt; 0\\)\n\\(P = Cmg\\), \\(\\Pi = 0\\)\n\n\nEquivalente a\n—\nConc. Perfeita\n\n\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO paradoxo levanta uma questão: qual o modelo mais realista? Depende do mercado. Quando as empresas constroem capacidade com antecedência (e depois competem em preço), o resultado aproxima-se de Cournot. Quando podem ajustar a oferta instantaneamente, Bertrand é mais adequado."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#saídas-do-paradoxo",
+    "href": "slides/25_bertrand_colusao-document.html#saídas-do-paradoxo",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Na prática, o resultado de Bertrand raramente se verifica porque:\n\n\nDiferenciação de produto — com produtos diferentes, a empresa que baixa o preço não captura imediatamente todo o mercado; há fidelização\nCapacidade instalada limitada — se a empresa não tem capacidade para servir todo o mercado, o undercutting total não é possível\nInteracção repetida — em mercados com encontros frequentes, a ameaça de represália pode sustentar preços acima de \\(Cmg\\)\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nEste último ponto — a interacção repetida — é o tema da segunda parte desta aula. A repetição transforma o jogo e pode sustentar resultados que não seriam possíveis num jogo de uma só vez."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#o-sonho-do-cartel",
+    "href": "slides/25_bertrand_colusao-document.html#o-sonho-do-cartel",
+    "title": "Microeconomia",
+    "section": "2.1 O Sonho do Cartel",
+    "text": "2.1 O Sonho do Cartel\nSe as empresas pudessem coordenar os preços, agiriam como um monopolista:\n\\[Q_m = 12,\\quad P_m = 18,\\quad \\Pi_m = 144 \\quad\\Rightarrow\\quad \\Pi_{\\text{cada}} = 72\\]\n. . .\nComparando com Bertrand (\\(\\Pi = 0\\)) e Cournot (\\(\\Pi = 64\\)), a colusão maximiza o lucro conjunto.\n. . .\nMas cada empresa tem incentivo a desviar:\n. . .\nSe B mantém o preço de cartel \\(P_B = 18\\), A pode cobrar \\(P_A = 17{,}99\\) e capturar todo o mercado, obtendo \\(\\Pi_A \\approx 144\\) em vez de \\(72\\).\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nEstrutura de Dilema do Prisioneiro (já conhecida da Aula 22): o resultado colectivamente óptimo (cooperar) não é sustentável num jogo de uma só vez porque cada empresa tem incentivo a desviar unilateralmente."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#matriz-do-jogo-de-preços-uma-vez",
+    "href": "slides/25_bertrand_colusao-document.html#matriz-do-jogo-de-preços-uma-vez",
+    "title": "Microeconomia",
+    "section": "2.2 Matriz do Jogo de Preços (Uma Vez)",
+    "text": "2.2 Matriz do Jogo de Preços (Uma Vez)\n. . .\nDesviar domina Colusão (num jogo de uma só vez): \\(144 &gt; 72\\) se o outro coopera; \\(0 = 0\\) se o outro desvia.\nEN: (Desviar, Desviar) = (0, 0) — mesma estrutura do dilema do prisioneiro. ✓"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#a-repetição-muda-o-jogo",
+    "href": "slides/25_bertrand_colusao-document.html#a-repetição-muda-o-jogo",
+    "title": "Microeconomia",
+    "section": "3.1 A Repetição Muda o Jogo",
+    "text": "3.1 A Repetição Muda o Jogo\nNum mercado real, as empresas interagem repetidamente — todos os meses, todos os anos.\n. . .\nA repetição introduz um elemento novo: a ameaça de represália futura.\n. . .\n\n\nSe A desviar hoje, B pune A amanhã (e depois, e sempre)\nA punição reduz os lucros futuros de A\nSe A valorizar suficientemente o futuro, a ameaça de punição pode impedir o desvio\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO jogo repetido não elimina o incentivo a desviar num único período — mas cria um trade-off inter-temporal: ganho imediato de desviar vs. perda de lucros futuros pela punição."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#o-factor-de-desconto-delta",
+    "href": "slides/25_bertrand_colusao-document.html#o-factor-de-desconto-delta",
+    "title": "Microeconomia",
+    "section": "3.2 O Factor de Desconto \\(\\delta\\)",
+    "text": "3.2 O Factor de Desconto \\(\\delta\\)\n\\(\\delta \\in (0,1)\\) é o factor de desconto — mede quanto a empresa valoriza \\(1\\) euro de lucro no próximo período em comparação com \\(1\\) euro hoje.\n. . .\n\n\n\\(\\delta\\) próximo de \\(1\\): empresa muito paciente — valoriza muito o futuro\n\\(\\delta\\) próximo de \\(0\\): empresa impaciente — quase só valoriza o presente\n\n\n. . .\nO valor presente de um fluxo constante \\(\\Pi\\) por período, para sempre:\n\\[NPV = \\Pi + \\delta\\Pi + \\delta^2\\Pi + \\ldots = \\frac{\\Pi}{1-\\delta}\\]\n. . .\n\n\n\n\n\n\nTip\n\n\n\n\\(\\delta\\) pode interpretar-se como \\(\\dfrac{1}{1+r}\\) onde \\(r\\) é a taxa de juro, ou como a probabilidade de o jogo continuar no próximo período."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#estratégia-grim-trigger",
+    "href": "slides/25_bertrand_colusao-document.html#estratégia-grim-trigger",
+    "title": "Microeconomia",
+    "section": "3.3 Estratégia Grim Trigger",
+    "text": "3.3 Estratégia Grim Trigger\nA estratégia mais simples que pode sustentar a colusão:\n. . .\n\n\n\n\n\n\nNote\n\n\n\nGrim Trigger (gatilho implacável):\n\nCooperar (cobrar \\(P_m\\)) enquanto o rival cooperar\nSe o rival desviar alguma vez: punir para sempre — cobrar \\(P = Cmg\\) (Bertrand) eternamente\n\n\n\n. . .\nEsta estratégia é simples e credível: uma vez activada a punição, jogar Bertrand é óptimo para ambas as empresas (é o EN do jogo estático). A ameaça é credível porque não requer que ninguém “sacrifique” lucros para punir."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#condição-de-sustentabilidade-da-colusão",
+    "href": "slides/25_bertrand_colusao-document.html#condição-de-sustentabilidade-da-colusão",
+    "title": "Microeconomia",
+    "section": "3.4 Condição de Sustentabilidade da Colusão",
+    "text": "3.4 Condição de Sustentabilidade da Colusão\nEmpresa A compara dois cenários:\n. . .\nCooperar sempre (recebe \\(\\Pi_{coop}\\) por período):\n\\[NPV_{\\text{coop}} = \\frac{\\Pi_{coop}}{1-\\delta}\\]\n. . .\nDesviar hoje (recebe \\(\\Pi_{dev}\\) hoje, depois punição \\(\\Pi_N = 0\\) para sempre):\n\\[NPV_{dev} = \\Pi_{dev} + \\frac{\\delta \\cdot 0}{1-\\delta} = \\Pi_{dev}\\]\n. . .\nColusão sustentável se \\(NPV_{\\text{coop}} \\geq NPV_{dev}\\):\n\\[\\frac{\\Pi_{coop}}{1-\\delta} \\geq \\Pi_{dev} \\quad\\Leftrightarrow\\quad \\delta \\geq 1 - \\frac{\\Pi_{coop}}{\\Pi_{dev}}\\]"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#derivação-do-delta-mínimo",
+    "href": "slides/25_bertrand_colusao-document.html#derivação-do-delta-mínimo",
+    "title": "Microeconomia",
+    "section": "3.5 Derivação do \\(\\delta\\) Mínimo",
+    "text": "3.5 Derivação do \\(\\delta\\) Mínimo\nCom \\(\\Pi_{coop} = 72\\) e \\(\\Pi_{dev} = 144\\):\n\\[\\frac{72}{1-\\delta} \\geq 144\\]\n. . .\n\\[72 \\geq 144(1-\\delta)\\]\n. . .\n\\[144\\delta \\geq 144 - 72 = 72\\]\n. . .\n\\[\\boxed{\\delta \\geq \\frac{1}{2}}\\]\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nSe \\(\\delta \\geq \\tfrac{1}{2}\\), a colusão é sustentável com grim trigger. Se \\(\\delta &lt; \\tfrac{1}{2}\\), a empresa prefere desviar hoje — o futuro não pesa suficientemente para disciplinar o comportamento presente."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#interpretação-económica-de-delta-geq-frac12",
+    "href": "slides/25_bertrand_colusao-document.html#interpretação-económica-de-delta-geq-frac12",
+    "title": "Microeconomia",
+    "section": "3.6 Interpretação Económica de \\(\\delta \\geq \\frac{1}{2}\\)",
+    "text": "3.6 Interpretação Económica de \\(\\delta \\geq \\frac{1}{2}\\)\n. . .\nQuanto maior \\(\\delta\\) (mais paciente a empresa), maior \\(NPV_{\\text{coop}}\\) — o fluxo futuro de lucros de colusão vale mais. Para \\(\\delta = \\tfrac{1}{2}\\): \\(NPV_{\\text{coop}} = \\tfrac{72}{1/2} = 144 = NPV_{dev}\\) — a empresa é indiferente."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#quando-é-a-colusão-mais-provável",
+    "href": "slides/25_bertrand_colusao-document.html#quando-é-a-colusão-mais-provável",
+    "title": "Microeconomia",
+    "section": "3.7 Quando é a Colusão Mais Provável?",
+    "text": "3.7 Quando é a Colusão Mais Provável?\nA condição \\(\\delta \\geq \\tfrac{1}{2}\\) é mais fácil de satisfazer quando:\n\n\nTaxas de juro baixas — \\(\\delta = 1/(1+r)\\) é maior quando \\(r\\) é pequeno; o futuro desconta menos\nMercado estável e de longa duração — horizon longo aumenta o valor dos lucros futuros\nInteracções frequentes — empresas que se encontram frequentemente têm mais oportunidades de punir desvios rapidamente\nPoucos participantes — é mais fácil monitorizar o comportamento das rivais e detectar desvios\nLucro de desvio relativamente pequeno — se \\(\\Pi_{dev}/\\Pi_{coop}\\) for baixo, o \\(\\delta\\) necessário é menor\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nImplicação para a política de concorrência: os reguladores monitorizam especialmente mercados concentrados, estáveis e com interacções frequentes — precisamente onde a colusão tácita é mais fácil de sustentar."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#tabela-final-todas-as-estruturas",
+    "href": "slides/25_bertrand_colusao-document.html#tabela-final-todas-as-estruturas",
+    "title": "Microeconomia",
+    "section": "3.8 Tabela Final: Todas as Estruturas",
+    "text": "3.8 Tabela Final: Todas as Estruturas\n\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi\\) cada\nEficiência\n\n\n\n\nMonopólio/Cartel\n\\(12\\)\n\\(18\\)\n\\(72\\)\nMínima\n\n\nStackelberg\n\\(18\\)\n\\(12\\)\n\\(72\\ /\\ 36\\)\n—\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\nIntermédia\n\n\nBertrand\n\\(24\\)\n\\(6\\)\n\\(0\\)\nMáxima\n\n\nConc. Perfeita\n\\(24\\)\n\\(6\\)\n\\(0\\)\nMáxima\n\n\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nBertrand com produto homogéneo e custos idênticos reproduz exactamente o resultado de concorrência perfeita — com apenas duas empresas. A variável estratégica importa tanto quanto o número de concorrentes."
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#exercício-1-escolha-múltipla",
+    "href": "slides/25_bertrand_colusao-document.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "4.1 Exercício 1 — Escolha Múltipla",
+    "text": "4.1 Exercício 1 — Escolha Múltipla\nDuas empresas com produto homogéneo e \\(Cmg = 10\\) competem em preços (Bertrand). O equilíbrio de Nash é:\n\n\n\\(P = 10\\), \\(\\Pi = 0\\) para cada empresa\n\\(P &gt; 10\\), com lucros positivos para ambas\nUma empresa cobra \\(P &gt; 10\\) e a outra cobra \\(P = 10\\)\nDepende da procura — não há solução geral"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#solução-exercício-1",
+    "href": "slides/25_bertrand_colusao-document.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "4.2 Solução — Exercício 1",
+    "text": "4.2 Solução — Exercício 1\nA lógica de undercutting: qualquer \\(P &gt; Cmg = 10\\) é instável — a rival tem incentivo a cobrar \\(P - \\varepsilon\\) e capturar todo o mercado.\nO processo pára em \\(P = Cmg = 10\\): abaixo, há prejuízo; acima, a rival subcorta.\nResposta: (a)\nVerificação Nash: se \\(P_B = 10\\), cobrar \\(P_A &lt; 10\\) gera prejuízo; cobrar \\(P_A &gt; 10\\) perde clientes; cobrar \\(P_A = 10\\) dá \\(\\Pi = 0\\). Nenhum desvio é estritamente rentável. ✓"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#exercício-2-escolha-múltipla",
+    "href": "slides/25_bertrand_colusao-document.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "4.3 Exercício 2 — Escolha Múltipla",
+    "text": "4.3 Exercício 2 — Escolha Múltipla\nEm jogos repetidos com estratégia grim trigger, se o lucro de cooperação é \\(\\Pi_{coop} = 8\\) e o lucro de desvio é \\(\\Pi_{dev} = 16\\) (com punição Bertrand \\(\\Pi_N = 0\\)), o factor de desconto mínimo para sustentar a colusão é:\n\n\n\\(\\delta \\geq \\dfrac{1}{4}\\)\n\\(\\delta \\geq \\dfrac{1}{3}\\)\n\\(\\delta \\geq \\dfrac{1}{2}\\)\n\\(\\delta \\geq \\dfrac{2}{3}\\)"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#solução-exercício-2",
+    "href": "slides/25_bertrand_colusao-document.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "4.4 Solução — Exercício 2",
+    "text": "4.4 Solução — Exercício 2\nCondição: \\(\\dfrac{\\Pi_{coop}}{1-\\delta} \\geq \\Pi_{dev}\\)\n\\[\\frac{8}{1-\\delta} \\geq 16 \\quad\\Rightarrow\\quad 8 \\geq 16(1-\\delta) \\quad\\Rightarrow\\quad \\delta \\geq 1 - \\frac{8}{16} = \\frac{1}{2}\\]\nResposta: (c)\nVerificação: \\(\\delta = \\frac{1}{2}\\) \\(\\Rightarrow\\) \\(NPV_{\\text{coop}} = \\frac{8}{1/2} = 16 = NPV_{dev}\\) ✓ (restrição vinculativa)"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#exercício-de-desenvolvimento",
+    "href": "slides/25_bertrand_colusao-document.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "4.5 Exercício de Desenvolvimento",
+    "text": "4.5 Exercício de Desenvolvimento\nDuas empresas farmacêuticas produzem um medicamento genérico (produto homogéneo) e competem em preço. Em cada período, o lucro de monopólio partilhado é \\(\\Pi_{coop} = 60\\) (cada), o lucro de desvio (capturar todo o mercado) é \\(\\Pi_{dev} = 100\\), e o lucro de Nash de Bertrand é \\(\\Pi_N = 0\\).\nAlíneas:\n\n\nExplique por que razão, num jogo de uma só vez, nenhuma empresa consegue manter o preço de monopólio. Qual é o Equilíbrio de Nash estático?\nNo jogo repetido com grim trigger, escreva as expressões para \\(NPV_{\\text{coop}}\\) e \\(NPV_{dev}\\).\nDerive o valor mínimo de \\(\\delta\\) para que a colusão seja sustentável.\nInterprete o resultado: que condições de mercado favorecem \\(\\delta\\) acima do limiar calculado?\nSuponha que o regulador consegue aumentar a probabilidade de detecção do cartel, o que equivale a reduzir \\(\\Pi_{dev}\\) para \\(80\\) (coima esperada reduz o ganho do desvio). Recalcule o \\(\\delta\\) mínimo. O que conclui?"
+  },
+  {
+    "objectID": "slides/25_bertrand_colusao-document.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/25_bertrand_colusao-document.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "4.6 Solução — Exercício de Desenvolvimento",
+    "text": "4.6 Solução — Exercício de Desenvolvimento\na) Num jogo de uma só vez, desviar domina: se a rival coopera, \\(\\Pi_{dev}=100 &gt; \\Pi_{coop}=60\\); se a rival desvia, \\(0 = 0\\). Ambas desviam. EN estático: (Desviar, Desviar) = (0, 0). A colusão colapsa pela lógica do dilema do prisioneiro.\n. . .\nb) \\[NPV_{\\text{coop}} = \\frac{60}{1-\\delta} \\qquad NPV_{dev} = 100 + \\frac{\\delta \\cdot 0}{1-\\delta} = 100\\]\n. . .\nc) \\(NPV_{\\text{coop}} \\geq NPV_{dev}\\):\n\\[\\frac{60}{1-\\delta} \\geq 100 \\;\\Rightarrow\\; 60 \\geq 100(1-\\delta) \\;\\Rightarrow\\; 100\\delta \\geq 40 \\;\\Rightarrow\\; \\boxed{\\delta \\geq \\frac{2}{5}}\\]\nVerificação: \\(\\delta = \\frac{2}{5}\\) \\(\\Rightarrow\\) \\(NPV_{\\text{coop}} = \\frac{60}{3/5} = 100 = NPV_{dev}\\) ✓ (restrição vinculativa)\n. . .\nd) \\(\\delta \\geq \\frac{2}{5}\\) é mais fácil de satisfazer com taxas de juro baixas (empresas pacientes), horizonte longo, interacções frequentes e poucos concorrentes (monitorização fácil de desvios).\n. . .\ne) Com \\(\\Pi_{dev} = 80\\):\n\\[\\frac{60}{1-\\delta} \\geq 80 \\;\\Rightarrow\\; 60 \\geq 80(1-\\delta) \\;\\Rightarrow\\; 80\\delta \\geq 20 \\;\\Rightarrow\\; \\delta \\geq \\frac{1}{4}\\]\nVerificação: \\(\\delta = \\frac{1}{4}\\) \\(\\Rightarrow\\) \\(NPV_{\\text{coop}} = \\frac{60}{3/4} = 80 = NPV_{dev}\\) ✓\nO \\(\\delta\\) mínimo baixou de \\(\\frac{2}{5}\\) para \\(\\frac{1}{4}\\): desviar tornou-se menos atractivo (o ganho cai de 100 para 80), pelo que empresas com menos paciência conseguem agora manter o acordo. A política de leniência funciona de forma diferente: ao reduzir o ganho do desvio, o regulador na verdade facilita a colusão tácita. O verdadeiro efeito dissuasor vem de reduzir os lucros de cooperação (proibição e coimas sobre os lucros do cartel), não apenas o ganho de desviar."
+  },
+  {
+    "objectID": "slides/23_cournot-document.html",
+    "href": "slides/23_cournot-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Poucas empresas dominam o mercado — tipicamente 2 a 10\nProduto pode ser homogéneo (petróleo, aço) ou diferenciado (automóveis, smartphones)\nBarreiras à entrada significativas — custos elevados, economias de escala, patentes\nInterdependência estratégica — o lucro de cada empresa depende das decisões das rivais\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nA característica central do oligopólio é a interdependência estratégica. A empresa A não pode optimizar sem antecipar o comportamento da empresa B — e B sabe que A sabe isso. É precisamente aqui que a teoria de jogos se aplica.\n\n\n\n\n\nA variável estratégica define o modelo:\n. . .\n\n\n\n\nModelo\nVariável estratégica\nTiming\n\n\n\n\nCournot\nQuantidade\nSimultâneo\n\n\nStackelberg\nQuantidade\nSequencial\n\n\nBertrand\nPreço\nSimultâneo\n\n\n\n\n. . .\nHoje: Cournot — cada empresa escolhe simultaneamente a quantidade a produzir, tomando a quantidade da rival como dada."
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#características-do-oligopólio",
+    "href": "slides/23_cournot-document.html#características-do-oligopólio",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Poucas empresas dominam o mercado — tipicamente 2 a 10\nProduto pode ser homogéneo (petróleo, aço) ou diferenciado (automóveis, smartphones)\nBarreiras à entrada significativas — custos elevados, economias de escala, patentes\nInterdependência estratégica — o lucro de cada empresa depende das decisões das rivais\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nA característica central do oligopólio é a interdependência estratégica. A empresa A não pode optimizar sem antecipar o comportamento da empresa B — e B sabe que A sabe isso. É precisamente aqui que a teoria de jogos se aplica."
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#como-modelar-o-oligopólio",
+    "href": "slides/23_cournot-document.html#como-modelar-o-oligopólio",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "A variável estratégica define o modelo:\n. . .\n\n\n\n\nModelo\nVariável estratégica\nTiming\n\n\n\n\nCournot\nQuantidade\nSimultâneo\n\n\nStackelberg\nQuantidade\nSequencial\n\n\nBertrand\nPreço\nSimultâneo\n\n\n\n\n. . .\nHoje: Cournot — cada empresa escolhe simultaneamente a quantidade a produzir, tomando a quantidade da rival como dada."
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#estrutura-do-modelo",
+    "href": "slides/23_cournot-document.html#estrutura-do-modelo",
+    "title": "Microeconomia",
+    "section": "2.1 Estrutura do Modelo",
+    "text": "2.1 Estrutura do Modelo\nDuopólio simétrico:\n\n\nDuas empresas, A e B, produzem um bem homogéneo\nProcura inversa de mercado: \\(P = a - b(q_A + q_B)\\)\nCustos idênticos: \\(CT_i = c \\cdot q_i\\) (custo marginal constante \\(Cmg = c\\), sem custos fixos)\nDecisão simultânea de quantidade — nenhuma empresa observa a escolha da outra antes de decidir\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nA hipótese de Cournot: cada empresa trata a quantidade da rival como fixa ao optimizar. É uma hipótese simplificadora mas gera um equilíbrio de Nash bem definido."
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#maximização-do-lucro-empresa-a",
+    "href": "slides/23_cournot-document.html#maximização-do-lucro-empresa-a",
+    "title": "Microeconomia",
+    "section": "2.2 Maximização do Lucro — Empresa A",
+    "text": "2.2 Maximização do Lucro — Empresa A\nO lucro da empresa A é:\n\\[\\Pi_A = P \\cdot q_A - c \\cdot q_A = \\bigl[a - b(q_A + q_B)\\bigr] q_A - c \\cdot q_A\\]\n. . .\nExpandindo:\n\\[\\Pi_A = (a - c)\\,q_A - b\\,q_A^2 - b\\,q_A q_B\\]\n. . .\nCondição de primeira ordem (\\(q_B\\) tratado como fixo):\n\\[\\frac{\\partial \\Pi_A}{\\partial q_A} = (a - c) - 2b\\,q_A - b\\,q_B = 0\\]\n. . .\n\\[\\boxed{q_A^* = \\frac{a-c}{2b} - \\frac{q_B}{2}}\\]"
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#a-função-de-reacção-best-response",
+    "href": "slides/23_cournot-document.html#a-função-de-reacção-best-response",
+    "title": "Microeconomia",
+    "section": "2.3 A Função de Reacção (Best Response)",
+    "text": "2.3 A Função de Reacção (Best Response)\n\\[q_A^*(q_B) = \\frac{a-c}{2b} - \\frac{1}{2}\\,q_B\\]\n. . .\nEsta é a função de reacção (ou best response) da empresa A: para cada valor de \\(q_B\\), indica a quantidade óptima de A.\n. . .\n\n\nQuando \\(q_B = 0\\): \\(q_A^* = \\dfrac{a-c}{2b}\\) — A produz como monopolista\nQuando \\(q_B\\) aumenta: \\(q_A^*\\) diminui — A produz menos porque o preço já é pressionado pela produção de B\nA inclinação é \\(-\\tfrac{1}{2}\\): por cada unidade adicional de B, A reduz a sua produção em meia unidade\n\n\n. . .\nPor simetria, a função de reacção de B é:\n\\[q_B^*(q_A) = \\frac{a-c}{2b} - \\frac{1}{2}\\,q_A\\]"
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#equilíbrio-de-nash-de-cournot",
+    "href": "slides/23_cournot-document.html#equilíbrio-de-nash-de-cournot",
+    "title": "Microeconomia",
+    "section": "2.4 Equilíbrio de Nash de Cournot",
+    "text": "2.4 Equilíbrio de Nash de Cournot\nO equilíbrio ocorre quando ambas as empresas estão na sua função de reacção simultaneamente:\n\\[q_A = q_B^*(q_A) \\quad \\text{e} \\quad q_B = q_A^*(q_B)\\]\n. . .\nSubstituindo \\(q_B^*\\) na função de reacção de A (duopólio simétrico):\n\\[q_A = \\frac{a-c}{2b} - \\frac{1}{2}\\left(\\frac{a-c}{2b} - \\frac{q_A}{2}\\right) = \\frac{a-c}{2b} - \\frac{a-c}{4b} + \\frac{q_A}{4}\\]\n\\[\\frac{3}{4}\\,q_A = \\frac{a-c}{4b} \\quad\\Rightarrow\\quad \\boxed{q_A^* = q_B^* = \\frac{a-c}{3b}}\\]\n. . .\nQuantidade total e preço de equilíbrio:\n\\[Q^*_C = \\frac{2(a-c)}{3b} \\qquad P^*_C = a - b\\,Q^*_C = \\frac{a + 2c}{3}\\]"
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#diagrama-das-funções-de-reacção",
+    "href": "slides/23_cournot-document.html#diagrama-das-funções-de-reacção",
+    "title": "Microeconomia",
+    "section": "2.5 Diagrama das Funções de Reacção",
+    "text": "2.5 Diagrama das Funções de Reacção"
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#leitura-do-diagrama",
+    "href": "slides/23_cournot-document.html#leitura-do-diagrama",
+    "title": "Microeconomia",
+    "section": "2.6 Leitura do Diagrama",
+    "text": "2.6 Leitura do Diagrama\n\n\n\\(BR_A\\) (azul): função de reacção de A — para cada \\(q_B\\), a melhor resposta de A\n\\(BR_B\\) (vermelha): função de reacção de B — para cada \\(q_A\\), a melhor resposta de B\nCournot (8, 8): interseção das duas funções — único ponto em que ambas as empresas estão simultaneamente a optimizar\nCartel (6, 6): se as empresas cooperassem, produziriam menos e ganhariam mais — mas não está na intersecção das BRs, logo não é estável\nC.P. (12, 12): equilíbrio competitivo — está fora da região de lucros positivos de cada empresa\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nO Cartel (6, 6) não é um Equilíbrio de Nash: se B produz 6, a melhor resposta de A é \\(BR_A(6) = 12 - 3 = 9 \\neq 6\\). Cada empresa tem incentivo a desviar — o cartel é instável."
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#exemplo-p-30---q-cmg-6",
+    "href": "slides/23_cournot-document.html#exemplo-p-30---q-cmg-6",
+    "title": "Microeconomia",
+    "section": "3.1 Exemplo: \\(P = 30 - Q\\), \\(Cmg = 6\\)",
+    "text": "3.1 Exemplo: \\(P = 30 - Q\\), \\(Cmg = 6\\)\nCom \\(a=30\\), \\(b=1\\), \\(c=6\\):\n. . .\nFunções de reacção:\n\\[q_A^*(q_B) = 12 - \\frac{q_B}{2} \\qquad q_B^*(q_A) = 12 - \\frac{q_A}{2}\\]\n. . .\nEquilíbrio de Cournot (resolver o sistema):\n\\[q_A^* = 12 - \\frac{q_A^*}{4} \\cdot \\ldots \\quad \\Rightarrow \\quad q_A^* = q_B^* = \\frac{30-6}{3} = 8\\]\n. . .\n\\[Q^*_C = 16 \\qquad P^*_C = 30 - 16 = 14 \\qquad \\Pi^*_{\\text{cada}} = (14-6)\\times 8 = 64\\]"
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#comparação-entre-estruturas-de-mercado",
+    "href": "slides/23_cournot-document.html#comparação-entre-estruturas-de-mercado",
+    "title": "Microeconomia",
+    "section": "3.2 Comparação entre Estruturas de Mercado",
+    "text": "3.2 Comparação entre Estruturas de Mercado\n\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi\\) cada\n\n\n\n\nMonopólio (cartel)\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\n\nConcorrência Perfeita\n\\(24\\)\n\\(6\\)\n\\(0\\)\n\n\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nOrdenações que sempre se verificam (duopólio simétrico):\n\\(Q_{\\text{mono}} &lt; Q_{\\text{Cournot}} &lt; Q_{\\text{CP}}\\)\n\\(P_{\\text{mono}} &gt; P_{\\text{Cournot}} &gt; P_{\\text{CP}}\\)\n\\(\\Pi_{\\text{mono}}/2 &gt; \\Pi_{\\text{Cournot}} &gt; 0\\)"
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#por-que-o-cartel-é-instável",
+    "href": "slides/23_cournot-document.html#por-que-o-cartel-é-instável",
+    "title": "Microeconomia",
+    "section": "3.3 Por que o Cartel é Instável?",
+    "text": "3.3 Por que o Cartel é Instável?\nSe ambas cooperassem e produzissem \\(q = 6\\) cada (resultado de monopólio):\n. . .\nA empresa A verifica: \\(BR_A(6) = 12 - 3 = 9 \\neq 6\\)\n. . .\nSe A desviar para \\(q_A = 9\\) (com \\(q_B = 6\\)):\n\\[P = 30 - (9+6) = 15 \\qquad \\Pi_A = (15-6)\\times 9 = 81 &gt; 72\\]\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nAo desviar do cartel, A aumenta o lucro de \\(72\\) para \\(81\\). B raciocina da mesma forma. O acordo colapsa — estrutura de dilema do prisioneiro.\nEsta ligação entre Cournot e teoria de jogos (aula anterior) é exacta: o equilíbrio de Cournot é o Equilíbrio de Nash do jogo em que as estratégias são quantidades."
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#exercício-1-escolha-múltipla",
+    "href": "slides/23_cournot-document.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "4.1 Exercício 1 — Escolha Múltipla",
+    "text": "4.1 Exercício 1 — Escolha Múltipla\nNo modelo de Cournot com duas empresas simétricas e procura linear, quando a empresa A aumenta a sua produção, a função de reacção da empresa B indica que B deve:\n\n\nAumentar também a produção, para manter a quota de mercado\nManter a produção inalterada, pois toma \\(q_A\\) como dado\nReduzir a produção, porque o preço de mercado desceu\nSair do mercado se o preço cair abaixo do custo médio"
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#solução-exercício-1",
+    "href": "slides/23_cournot-document.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "4.2 Solução — Exercício 1",
+    "text": "4.2 Solução — Exercício 1\nA função de reacção de B é \\(q_B^*(q_A) = \\dfrac{a-c}{2b} - \\dfrac{1}{2}q_A\\).\nA inclinação é \\(-\\tfrac{1}{2}\\): quando \\(q_A\\) sobe 1 unidade, \\(q_B^*\\) desce \\(\\tfrac{1}{2}\\).\nResposta: (c) — B reduz a produção porque a maior quantidade de A baixa o preço de mercado; a melhor resposta de B é produzir menos para limitar a queda do preço que recebe.\n\ndescreve a hipótese de Cournot (B toma \\(q_A\\) como dado ao optimizar), não a direcção da resposta óptima quando \\(q_A\\) muda."
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#exercício-2-escolha-múltipla",
+    "href": "slides/23_cournot-document.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "4.3 Exercício 2 — Escolha Múltipla",
+    "text": "4.3 Exercício 2 — Escolha Múltipla\nNo equilíbrio de Cournot de um duopólio simétrico, comparando com o resultado de monopólio:\n\n\nA quantidade total é maior e o preço é menor\nA quantidade total é menor e o preço é maior\nO lucro de cada empresa é maior do que metade do lucro de monopólio\nO resultado é eficiente porque \\(P = Cmg\\)"
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#solução-exercício-2",
+    "href": "slides/23_cournot-document.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "4.4 Solução — Exercício 2",
+    "text": "4.4 Solução — Exercício 2\n\n(a) Verdadeiro — \\(Q_C &gt; Q_m\\) e \\(P_C &lt; P_m\\): a concorrência entre as duas empresas aumenta a produção total e baixa o preço face ao monopólio\n\nFalso — inverte as ordenações correctas\n\n\nFalso — o lucro de cada empresa em Cournot (\\(64\\)) é menor do que metade do lucro de monopólio (\\(72\\)): a concorrência dissipa parte dos lucros\n\n\nFalso — em Cournot \\(P &gt; Cmg\\); o resultado é ineficiente (existe DWL), embora menor do que em monopólio\n\n\nResposta: (a)"
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#exercício-de-desenvolvimento",
+    "href": "slides/23_cournot-document.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "4.5 Exercício de Desenvolvimento",
+    "text": "4.5 Exercício de Desenvolvimento\nDuas empresas, A e B, operam num mercado com procura inversa \\(P = 30 - (q_A + q_B)\\).\nAmbas têm custo marginal constante \\(Cmg = 6\\) e sem custos fixos.\nAlíneas:\n\n\nDerive a função de reacção (best response) da empresa A, \\(q_A^*(q_B)\\).\nPor simetria, escreva a função de reacção de B. Resolva o sistema para obter o equilíbrio de Cournot \\((q_A^*, q_B^*)\\).\nCalcule a quantidade total \\(Q^*_C\\), o preço \\(P^*_C\\) e o lucro de cada empresa \\(\\Pi^*_C\\).\nDetermine o resultado de monopólio: quantidade, preço e lucro total. Compare com Cournot.\nMostre que o acordo de cartel (cada empresa produz \\(q=6\\)) não é estável: calcule o lucro de A se se desviar enquanto B produz 6.\nDetermine o equilíbrio de concorrência perfeita e complete a tabela comparativa."
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/23_cournot-document.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "4.6 Solução — Exercício de Desenvolvimento",
+    "text": "4.6 Solução — Exercício de Desenvolvimento\na) \\(\\Pi_A = (30 - q_A - q_B)q_A - 6q_A\\). CPO: \\(\\dfrac{\\partial \\Pi_A}{\\partial q_A} = 24 - 2q_A - q_B = 0\\)\n\\[q_A^*(q_B) = 12 - \\frac{q_B}{2}\\]\n. . .\nb) \\(q_B^*(q_A) = 12 - \\dfrac{q_A}{2}\\). Substituindo: \\(q_A = 12 - \\dfrac{1}{2}\\!\\left(12 - \\dfrac{q_A}{2}\\right) = 6 + \\dfrac{q_A}{4}\\)\n\\(\\dfrac{3}{4}q_A = 6 \\Rightarrow q_A^* = q_B^* = 8\\)\n. . .\nc) \\(Q^*_C = 16\\), \\(P^*_C = 30-16 = 14\\), \\(\\Pi^*_C = (14-6)\\times 8 = 64\\) cada\n. . .\nd) Monopolista: \\(Rmg = 30-2Q = 6 \\Rightarrow Q_m=12\\), \\(P_m=18\\), \\(\\Pi_m=144\\) (cada: \\(72\\))\nCournot produz mais (\\(16&gt;12\\)), cobra menos (\\(14&lt;18\\)), lucro por empresa menor (\\(64&lt;72\\)).\n. . .\ne) Se B produz \\(6\\): \\(q_A^{dev} = 12-3=9\\), \\(P=30-15=15\\), \\(\\Pi_A^{dev}=(15-6)\\times 9=81&gt;72\\) ✓\nA tem incentivo a desviar do cartel — o acordo é instável."
+  },
+  {
+    "objectID": "slides/23_cournot-document.html#solução-exercício-de-desenvolvimento-1",
+    "href": "slides/23_cournot-document.html#solução-exercício-de-desenvolvimento-1",
+    "title": "Microeconomia",
+    "section": "4.7 Solução — Exercício de Desenvolvimento",
+    "text": "4.7 Solução — Exercício de Desenvolvimento\nf) \\(P=Cmg \\Rightarrow 30-Q=6 \\Rightarrow Q_{cp}=24\\), \\(P_{cp}=6\\), \\(\\Pi=0\\)\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi\\) cada\n\n\n\n\nMonopólio\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\n\nConc. Perf.\n\\(24\\)\n\\(6\\)\n\\(0\\)"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html",
+    "href": "slides/21_conc_monopolistica-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "A concorrência monopolística combina elementos dos dois modelos extremos:\n\n\nMuitas empresas — como em concorrência perfeita; nenhuma domina o mercado\nDiferenciação de produto — cada empresa oferece uma variante distinta; os produtos são substitutos próximos mas não perfeitos\nEntrada e saída livres — sem barreiras estruturais à entrada\nPoder de mercado limitado — a diferenciação confere algum poder, mas a concorrência de substitutos limita-o\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nA diferenciação significa que cada empresa enfrenta uma curva de procura com inclinação negativa — ao contrário da empresa em CP que enfrenta procura horizontal.\n\n\n\n\n\n\n\nRestaurantes — servem refeições (substitutos próximos), mas cada um tem cozinha, ambiente e localização distintos\nMarcas de roupa — t-shirts de diferentes marcas satisfazem a mesma necessidade, mas diferem em estilo e imagem\nAplicações móveis — editores de texto, apps de fitness, jogos casuais: muitas opções, cada uma ligeiramente diferente\nCabeleireiros, ginásios, cafés — serviços standardizáveis mas com forte componente local e identitária\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nO ponto-chave: os consumidores valorizam a variedade. A diferenciação não é artificial \\(\\rightarrow\\) responde a preferências heterogéneas.\n\n\n\n\n\n\n\n\n\n\nConc. Perfeita\nConc. Monop.\nOligopólio\nMonopólio\n\n\n\n\nN.º empresas\nMuitas\nMuitas\nPoucas\nUma\n\n\nProduto\nHomogéneo\nDiferenciado\nHomo/Difer.\nÚnico\n\n\nEntrada\nLivre\nLivre\nBarreiras\nBloqueada\n\n\nCurva D\nHorizontal\nDecrescente\nDecrescente\nDecrescente\n\n\n\\(P\\) vs \\(Cmg\\)\n\\(P=Cmg\\)\n\\(P&gt;Cmg\\)\n\\(P&gt;Cmg\\)\n\\(P&gt;Cmg\\)\n\n\nLucro LP\nZero\nZero\nPositivo\nPositivo"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#características-definidoras",
+    "href": "slides/21_conc_monopolistica-document.html#características-definidoras",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "A concorrência monopolística combina elementos dos dois modelos extremos:\n\n\nMuitas empresas — como em concorrência perfeita; nenhuma domina o mercado\nDiferenciação de produto — cada empresa oferece uma variante distinta; os produtos são substitutos próximos mas não perfeitos\nEntrada e saída livres — sem barreiras estruturais à entrada\nPoder de mercado limitado — a diferenciação confere algum poder, mas a concorrência de substitutos limita-o\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nA diferenciação significa que cada empresa enfrenta uma curva de procura com inclinação negativa — ao contrário da empresa em CP que enfrenta procura horizontal."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#exemplos-reais",
+    "href": "slides/21_conc_monopolistica-document.html#exemplos-reais",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Restaurantes — servem refeições (substitutos próximos), mas cada um tem cozinha, ambiente e localização distintos\nMarcas de roupa — t-shirts de diferentes marcas satisfazem a mesma necessidade, mas diferem em estilo e imagem\nAplicações móveis — editores de texto, apps de fitness, jogos casuais: muitas opções, cada uma ligeiramente diferente\nCabeleireiros, ginásios, cafés — serviços standardizáveis mas com forte componente local e identitária\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nO ponto-chave: os consumidores valorizam a variedade. A diferenciação não é artificial \\(\\rightarrow\\) responde a preferências heterogéneas."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#posição-no-espectro-de-mercados",
+    "href": "slides/21_conc_monopolistica-document.html#posição-no-espectro-de-mercados",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Conc. Perfeita\nConc. Monop.\nOligopólio\nMonopólio\n\n\n\n\nN.º empresas\nMuitas\nMuitas\nPoucas\nUma\n\n\nProduto\nHomogéneo\nDiferenciado\nHomo/Difer.\nÚnico\n\n\nEntrada\nLivre\nLivre\nBarreiras\nBloqueada\n\n\nCurva D\nHorizontal\nDecrescente\nDecrescente\nDecrescente\n\n\n\\(P\\) vs \\(Cmg\\)\n\\(P=Cmg\\)\n\\(P&gt;Cmg\\)\n\\(P&gt;Cmg\\)\n\\(P&gt;Cmg\\)\n\n\nLucro LP\nZero\nZero\nPositivo\nPositivo"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#comportamento-no-curto-prazo",
+    "href": "slides/21_conc_monopolistica-document.html#comportamento-no-curto-prazo",
+    "title": "Microeconomia",
+    "section": "2.1 Comportamento no Curto Prazo",
+    "text": "2.1 Comportamento no Curto Prazo\nNo curto prazo, o número de empresas está fixo. A empresa comporta-se como um monopolista sobre a sua variante:\n\n\nEnfrenta uma curva de procura com inclinação negativa\nCalcula \\(Rmg\\) e iguala a \\(Cmg\\)\nPode obter lucro económico positivo\n\n\n. . .\nA condição de optimização é exactamente a mesma que no monopólio:\n\\[Rmg = Cmg \\quad \\Rightarrow \\quad Q^*_{cp},\\ P^*_{cp}\\]\n. . .\nCom \\(P^*_{cp} &gt; CTM(Q^*_{cp})\\), o lucro é positivo: \\(\\Pi_{cp} &gt; 0\\)."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#equilíbrio-de-curto-prazo-gráfico",
+    "href": "slides/21_conc_monopolistica-document.html#equilíbrio-de-curto-prazo-gráfico",
+    "title": "Microeconomia",
+    "section": "2.2 Equilíbrio de Curto Prazo: Gráfico",
+    "text": "2.2 Equilíbrio de Curto Prazo: Gráfico"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#leitura-do-gráfico-de-curto-prazo",
+    "href": "slides/21_conc_monopolistica-document.html#leitura-do-gráfico-de-curto-prazo",
+    "title": "Microeconomia",
+    "section": "2.3 Leitura do Gráfico de Curto Prazo",
+    "text": "2.3 Leitura do Gráfico de Curto Prazo\n\n\n\\(Rmg = Cmg\\): \\(18 - 4Q = 2Q \\Rightarrow Q^*_{cp} = 3\\)\nPreço na curva de procura: \\(P^*_{cp} = 18 - 2(3) = 12\\)\nCusto médio: \\(CTM(3) = 3 + 12/3 = 7\\)\nLucro: \\(\\Pi = (12 - 7) \\times 3 = 15 &gt; 0\\)\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nO lucro positivo (\\(\\Pi = 15\\)) é um sinal de mercado: novas empresas têm incentivo a entrar com produtos diferenciados. Este processo leva ao equilíbrio de longo prazo."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#o-mecanismo-de-entrada",
+    "href": "slides/21_conc_monopolistica-document.html#o-mecanismo-de-entrada",
+    "title": "Microeconomia",
+    "section": "3.1 O Mecanismo de Entrada",
+    "text": "3.1 O Mecanismo de Entrada\nCom lucros positivos no curto prazo, novas empresas entram no mercado com produtos diferenciados. O que acontece?\n\n\nOs consumidores distribuem-se por mais variantes\nA procura que cada empresa enfrenta desloca-se para a esquerda (menor quantidade para cada preço)\nTambém se torna mais elástica (mais substitutos disponíveis)\nOs lucros de cada empresa diminuem\n\n\n. . .\nO processo continua até que o lucro económico seja nulo: \\(\\Pi = 0\\).\n. . .\n\n\n\n\n\n\nNote\n\n\n\nTal como em concorrência perfeita, a entrada livre elimina os lucros no longo prazo. A diferença está na forma como esse equilíbrio é atingido."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#condição-de-equilíbrio-de-longo-prazo",
+    "href": "slides/21_conc_monopolistica-document.html#condição-de-equilíbrio-de-longo-prazo",
+    "title": "Microeconomia",
+    "section": "3.2 Condição de Equilíbrio de Longo Prazo",
+    "text": "3.2 Condição de Equilíbrio de Longo Prazo\nEm LP, duas condições são satisfeitas simultaneamente:\n. . .\n1. Optimização: a empresa maximiza o lucro dado que enfrenta curva D com inclinação negativa: \\[Rmg = Cmg\\]\n. . .\n2. Lucro nulo: a entrada eliminou todos os lucros extraordinários: \\[P = CTM\\]\n. . .\nEstas duas condições implicam que a curva de procura é tangente à curva CTM no ponto de equilíbrio."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#equilíbrio-de-longo-prazo-gráfico",
+    "href": "slides/21_conc_monopolistica-document.html#equilíbrio-de-longo-prazo-gráfico",
+    "title": "Microeconomia",
+    "section": "3.3 Equilíbrio de Longo Prazo — Gráfico",
+    "text": "3.3 Equilíbrio de Longo Prazo — Gráfico"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#leitura-do-gráfico-de-longo-prazo",
+    "href": "slides/21_conc_monopolistica-document.html#leitura-do-gráfico-de-longo-prazo",
+    "title": "Microeconomia",
+    "section": "3.4 Leitura do Gráfico de Longo Prazo",
+    "text": "3.4 Leitura do Gráfico de Longo Prazo\n\n\n\\(Rmg = Cmg\\): \\(12 - 4Q = 2Q \\Rightarrow Q^*_{lp} = 2\\)\nPreço: \\(P^*_{lp} = 12 - 2(2) = 8\\)\n\\(CTM(2) = 2 + 12/2 = 8\\) — tangência confirmada: \\(P = CTM\\) ✓\nLucro: \\(\\Pi = (8-8) \\times 2 = 0\\) ✓\n\\(Cmg(2) = 4 &lt; P = 8\\) — ineficiência persiste ✓\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nMesmo com lucro zero, \\(P &gt; Cmg\\): o equilíbrio de longo prazo não é eficiente. Esta é a ineficiência residual da concorrência monopolística."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#duas-ineficiências-no-equilíbrio-de-lp",
+    "href": "slides/21_conc_monopolistica-document.html#duas-ineficiências-no-equilíbrio-de-lp",
+    "title": "Microeconomia",
+    "section": "4.1 Duas Ineficiências no Equilíbrio de LP",
+    "text": "4.1 Duas Ineficiências no Equilíbrio de LP\n1. \\(P &gt; Cmg\\) — Ineficiência alocativa\n\n\nEm CP: \\(P = Cmg\\) — todas as unidades mutuamente vantajosas são produzidas\nEm conc. monop. LP: \\(P = 8 &gt; Cmg = 4\\) — há unidades que não se produzem, apesar de a disposição a pagar superar o custo\n\n\n. . .\n2. Excesso de capacidade — Ineficiência produtiva\n\n\nA empresa produz \\(Q^*_{lp} = 2\\)\nO mínimo de \\(CTM\\) ocorre em \\(Q \\approx 3.46\\)\nCada empresa opera abaixo da escala mínima eficiente\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nEm CP perfeita, no LP cada empresa produz no mínimo de \\(CTM\\). Em conc. monopolística, a tangência ocorre na parte decrescente do CTM — sempre à esquerda do mínimo."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#o-trade-off-variedade-vs.-ineficiência",
+    "href": "slides/21_conc_monopolistica-document.html#o-trade-off-variedade-vs.-ineficiência",
+    "title": "Microeconomia",
+    "section": "4.2 O Trade-off: Variedade vs. Ineficiência",
+    "text": "4.2 O Trade-off: Variedade vs. Ineficiência\nA concorrência monopolística é ineficiente — mas isso é necessariamente mau?\n. . .\nArgumentos contra (custo da diferenciação):\n\n\nExcesso de capacidade: recursos não usados na escala eficiente\n\\(P &gt; Cmg\\): transacções mutuamente vantajosas não realizadas\n“Demasiados” produtos semelhantes no mercado\n\n\n. . .\nArgumentos a favor (benefício da variedade):\n\n\nOs consumidores valorizam a variedade — não é indiferente ter só um produto homogéneo\nA diferenciação pode reflectir inovação e qualidade\nO excedente do consumidor derivado da variedade pode compensar a ineficiência\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nNão há uma resposta única. O juízo depende do quanto os consumidores valorizam a diversidade face ao ganho de eficiência de ter menos variantes a menor custo."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#exercício-1-escolha-múltipla",
+    "href": "slides/21_conc_monopolistica-document.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "5.1 Exercício 1 — Escolha Múltipla",
+    "text": "5.1 Exercício 1 — Escolha Múltipla\nNo equilíbrio de longo prazo de uma empresa em concorrência monopolística, é verdade que:\n\n\n\\(P = Cmg\\) e \\(\\Pi = 0\\)\n\\(P = CTM\\) e \\(P = Cmg\\)\n\\(P = CTM\\) e \\(P &gt; Cmg\\)\n\\(P &gt; CTM\\) e \\(\\Pi &gt; 0\\)"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#solução-exercício-1",
+    "href": "slides/21_conc_monopolistica-document.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "5.2 Solução — Exercício 1",
+    "text": "5.2 Solução — Exercício 1\nNo LP da conc. monopolística:\n\nA entrada livre elimina lucros: \\(P = CTM\\) ✓\nA empresa tem poder de mercado (\\(D\\) com inclinação negativa): \\(Rmg &lt; P\\), logo \\(Rmg = Cmg\\) implica \\(P &gt; Cmg\\) ✓\n\nA combinação \\(P = CTM\\) com \\(P &gt; Cmg\\) é o que define o equilíbrio de tangência.\nResposta: (c)"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#exercício-2-escolha-múltipla",
+    "href": "slides/21_conc_monopolistica-document.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "5.3 Exercício 2 — Escolha Múltipla",
+    "text": "5.3 Exercício 2 — Escolha Múltipla\nUma empresa em concorrência monopolística tem lucros positivos no curto prazo. No longo prazo, esperamos que:\n\n\nO preço desça, a quantidade suba, e o lucro fique positivo\nNovas empresas entrem, a procura de cada empresa se desloque para a esquerda, e o lucro tenda para zero\nA empresa aumente a produção até ao mínimo de CTM, eliminando o excesso de capacidade\nO mercado converja para concorrência perfeita, com \\(P = Cmg\\)"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#solução-exercício-2",
+    "href": "slides/21_conc_monopolistica-document.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "5.4 Solução — Exercício 2",
+    "text": "5.4 Solução — Exercício 2\n\n\nIncorrecto — o preço desce mas o lucro converge para zero, não permanece positivo\n\n(b) Correcto — a entrada de rivais com produtos diferenciados desloca a procura de cada empresa para a esquerda até \\(\\Pi = 0\\)\n\nIncorrecto — a tangência ocorre à esquerda do mínimo de CTM; o excesso de capacidade persiste no LP\n\n\nIncorrecto — \\(P &gt; Cmg\\) mantém-se no LP porque a procura continua a ter inclinação negativa\n\n\nResposta: (b)"
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#exercício-de-desenvolvimento",
+    "href": "slides/21_conc_monopolistica-document.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "5.5 Exercício de Desenvolvimento",
+    "text": "5.5 Exercício de Desenvolvimento\nUma empresa em concorrência monopolística tem estrutura de custos \\(CT = Q^2 + 12\\) e enfrenta, no curto prazo, a procura inversa \\(P = 18 - 2Q\\).\nAlíneas:\n\n\nDetermine o custo marginal (\\(Cmg\\)) e o custo total médio (\\(CTM\\)).\nCalcule a quantidade óptima \\(Q^*_{cp}\\), o preço \\(P^*_{cp}\\) e o lucro de curto prazo \\(\\Pi_{cp}\\).\nExplique o mecanismo pelo qual o mercado converge para o equilíbrio de longo prazo.\nNo longo prazo, a procura que a empresa enfrenta é \\(P = 12 - 2Q\\). Verifique que esta curva é tangente ao \\(CTM\\) e calcule \\(Q^*_{lp}\\), \\(P^*_{lp}\\) e \\(\\Pi_{lp}\\).\nCompare \\(P^*_{lp}\\) com \\(Cmg(Q^*_{lp})\\). O equilíbrio de LP é eficiente? Justifique."
+  },
+  {
+    "objectID": "slides/21_conc_monopolistica-document.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/21_conc_monopolistica-document.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "5.6 Solução — Exercício de Desenvolvimento",
+    "text": "5.6 Solução — Exercício de Desenvolvimento\na) \\(Cmg = \\dfrac{dCT}{dQ} = 2Q\\) \\(\\quad;\\quad\\) \\(CTM = \\dfrac{Q^2+12}{Q} = Q + \\dfrac{12}{Q}\\)\n. . .\nb) \\(Rmg = 18-4Q\\). \\(\\quad Rmg=Cmg \\Rightarrow 18-4Q=2Q \\Rightarrow Q^*_{cp}=3\\)\n\\(P^*_{cp} = 18-6 = 12\\) \\(\\quad;\\quad\\) \\(CTM(3)=3+4=7\\) \\(\\quad;\\quad\\) \\(\\Pi = (12-7)\\times 3 = 15\\)\n. . .\nc) O lucro positivo (\\(\\Pi=15\\)) atrai novas empresas com produtos diferenciados. A entrada divide a procura por mais variantes, deslocando a curva \\(D\\) de cada empresa para a esquerda. O processo continua até \\(\\Pi=0\\).\n. . .\nd) \\(Rmg_{lp}=12-4Q\\). \\(\\quad Rmg=Cmg \\Rightarrow 12-4Q=2Q \\Rightarrow Q^*_{lp}=2\\)\n\\(P^*_{lp}=12-4=8\\) \\(\\quad;\\quad\\) \\(CTM(2)=2+6=8\\) \\(\\quad\\Rightarrow\\quad P=CTM\\) ✓ (tangência)\n\\(\\Pi_{lp}=(8-8)\\times 2=0\\) ✓\nVerificação da tangência: \\(\\dfrac{dD}{dQ}\\big|_{Q=2}=-2\\) \\(\\quad;\\quad\\) \\(\\dfrac{dCTM}{dQ}\\big|_{Q=2}=1-\\dfrac{12}{4}=-2\\) ✓\n. . .\ne) \\(Cmg(2)=4 &lt; P^*_{lp}=8\\). O equilíbrio não é eficiente: \\(P&gt;Cmg\\) significa que há unidades não produzidas para as quais a disposição a pagar supera o custo. A empresa produz \\(Q=2\\), abaixo da escala eficiente (\\(Q_{minCTM}\\approx 3.46\\)) — há excesso de capacidade."
+  },
+  {
+    "objectID": "slides/20_controlo_precos.html",
+    "href": "slides/20_controlo_precos.html",
+    "title": "Intervenções nos Mercados: Controlo de Preços",
+    "section": "",
+    "text": "Impostos e subsídios são intervenções que actuam sobre o preço de mercado de forma indirecta\nAmbos criam uma perda de excedente total (DWL), cuja incidência depende das elasticidades\n\n. . .\nHoje: o Estado fixa directamente o preço — controlo de preços\n. . .\n\n\n\n\n\n\nNoteDefinição\n\n\n\nUm preço máximo (\\(P_{max}\\)) impede que o preço suba acima de um tecto fixado pelo Estado. Um preço mínimo (\\(P_{min}\\)) impede que o preço desça abaixo de um piso. Quando vinculativos, impedem o mercado de atingir o equilíbrio competitivo.\n\n\n\n\n\nPara fixar um preço máximo:\n\nProteger consumidores de preços considerados excessivos\nExemplos: controlo de rendas, tarifas de energia, medicamentos essenciais, alimentos em tempo de guerra\n\n. . .\nPara fixar um preço mínimo:\n\nGarantir rendimento suficiente a produtores ou trabalhadores\nExemplos: preços mínimos agrícolas (PAC), salário mínimo nacional\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nA economia positiva não diz que estas políticas são “erradas” — analisa as suas consequências. A avaliação normativa depende dos valores da sociedade e dos trade-offs entre eficiência e equidade."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html",
+    "href": "slides/20_problema_monopolista-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Característica\nConc. Perfeita\nOligopólio\nConc. Monopolística\nMonopólio\n\n\n\n\nN.º de empresas\nMuitas\nPoucas\nMuitas\nUma\n\n\nProduto\nHomogéneo\nHomo/Difer.\nDiferenciado\nÚnico\n\n\nPoder de mercado\nNenhum\nElevado\nAlgum\nMáximo\n\n\nBarreiras entrada\nNenhuma\nElevadas\nBaixas\nIntransponíveis\n\n\nP vs. Cmg\n\\(P = Cmg\\)\n\\(P &gt; Cmg\\)\n\\(P &gt; Cmg\\)\n\\(P &gt; Cmg\\)\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nO monopólio é o caso polar oposto à concorrência perfeita. Analisamos os dois extremos para depois entender os casos intermédios.\n\n\n\n\n\nPara existir monopólio, a entrada de rivais tem de ser impedida:\n\n\nLegais: licenças exclusivas, concessões do Estado, patentes\nEstruturais: custos de entrada muito elevados\nEconomias de escala: tecnologia que favorece uma única empresa grande (menção apenas, não é o foco desta aula)\n\n\n\n\n\n\n\n\nImportant\n\n\n\nSem barreiras à entrada, lucros positivos atrairiam concorrentes e o monopólio desapareceria. As barreiras são a condição necessária."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#estruturas-de-mercado-um-espectro",
+    "href": "slides/20_problema_monopolista-document.html#estruturas-de-mercado-um-espectro",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Característica\nConc. Perfeita\nOligopólio\nConc. Monopolística\nMonopólio\n\n\n\n\nN.º de empresas\nMuitas\nPoucas\nMuitas\nUma\n\n\nProduto\nHomogéneo\nHomo/Difer.\nDiferenciado\nÚnico\n\n\nPoder de mercado\nNenhum\nElevado\nAlgum\nMáximo\n\n\nBarreiras entrada\nNenhuma\nElevadas\nBaixas\nIntransponíveis\n\n\nP vs. Cmg\n\\(P = Cmg\\)\n\\(P &gt; Cmg\\)\n\\(P &gt; Cmg\\)\n\\(P &gt; Cmg\\)\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nO monopólio é o caso polar oposto à concorrência perfeita. Analisamos os dois extremos para depois entender os casos intermédios."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#barreiras-à-entrada",
+    "href": "slides/20_problema_monopolista-document.html#barreiras-à-entrada",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Para existir monopólio, a entrada de rivais tem de ser impedida:\n\n\nLegais: licenças exclusivas, concessões do Estado, patentes\nEstruturais: custos de entrada muito elevados\nEconomias de escala: tecnologia que favorece uma única empresa grande (menção apenas, não é o foco desta aula)\n\n\n\n\n\n\n\n\nImportant\n\n\n\nSem barreiras à entrada, lucros positivos atrairiam concorrentes e o monopólio desapareceria. As barreiras são a condição necessária."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#concorrência-perfeita-vs.-monopólio",
+    "href": "slides/20_problema_monopolista-document.html#concorrência-perfeita-vs.-monopólio",
+    "title": "Microeconomia",
+    "section": "2.1 Concorrência Perfeita vs. Monopólio",
+    "text": "2.1 Concorrência Perfeita vs. Monopólio\nEm concorrência perfeita, a empresa é price-taker:\n\\[P = \\bar{P} \\quad \\Rightarrow \\quad RT = \\bar{P} \\cdot Q\\]\n. . .\nO monopolista enfrenta a curva de procura do mercado \\(\\rightarrow\\) é price-maker:\n\\[P = P(Q) \\quad \\text{(função decrescente)} \\quad \\Rightarrow \\quad RT = P(Q) \\cdot Q\\]\n. . .\nPara vender mais, o monopolista tem de baixar o preço, e essa descida aplica-se a todas as unidades vendidas."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#receita-total-e-receita-marginal",
+    "href": "slides/20_problema_monopolista-document.html#receita-total-e-receita-marginal",
+    "title": "Microeconomia",
+    "section": "2.2 Receita Total e Receita Marginal",
+    "text": "2.2 Receita Total e Receita Marginal\nCom procura inversa linear \\(P = a - bQ\\):\n\\[RT = (a - bQ) \\cdot Q = aQ - bQ^2\\]\n. . .\nA receita marginal é:\n\\[Rmg = \\frac{dRT}{dQ} = a - 2bQ\\]\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nRmg tem o dobro do declive (em módulo) da curva de procura inversa.\nSe \\(P = a - bQ\\), então \\(Rmg = a - 2bQ\\)."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#rmg-p-sempre-que-a-procura-tem-inclinação-negativa",
+    "href": "slides/20_problema_monopolista-document.html#rmg-p-sempre-que-a-procura-tem-inclinação-negativa",
+    "title": "Microeconomia",
+    "section": "2.3 Rmg < P sempre que a procura tem inclinação negativa",
+    "text": "2.3 Rmg &lt; P sempre que a procura tem inclinação negativa\n\\[Rmg = P + Q \\frac{dP}{dQ}\\]\n. . .\nComo \\(\\dfrac{dP}{dQ} &lt; 0\\) e \\(Q &gt; 0\\), temos \\(Q \\dfrac{dP}{dQ} &lt; 0\\), portanto:\n\\[\\boxed{Rmg &lt; P}\\]\n. . .\nIntuição: para vender uma unidade adicional, o monopolista baixa o preço. O ganho dessa unidade é \\(P\\), mas perde \\(Q \\cdot |dP/dQ|\\) nas unidades anteriores."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#rt-e-rmg-gráfico",
+    "href": "slides/20_problema_monopolista-document.html#rt-e-rmg-gráfico",
+    "title": "Microeconomia",
+    "section": "2.4 RT e Rmg — Gráfico",
+    "text": "2.4 RT e Rmg — Gráfico"
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#rmg-zona-elástica-e-zona-rígida",
+    "href": "slides/20_problema_monopolista-document.html#rmg-zona-elástica-e-zona-rígida",
+    "title": "Microeconomia",
+    "section": "2.5 Rmg, Zona Elástica e Zona Rígida",
+    "text": "2.5 Rmg, Zona Elástica e Zona Rígida\n\\[Rmg = P\\!\\left(1 + \\frac{1}{\\varepsilon_D}\\right) = P\\!\\left(1 - \\frac{1}{|\\varepsilon_D|}\\right)\\]\n. . .\n\n\n\n\nZona da procura\n\\(|\\varepsilon_D|\\)\n\\(Rmg\\)\n\\(RT\\) ao aumentar \\(Q\\)\n\n\n\n\nElástica\n\\(&gt; 1\\)\n\\(&gt; 0\\)\nAumenta\n\n\nUnitária\n\\(= 1\\)\n\\(= 0\\)\nMáxima\n\n\nRígida\n\\(&lt; 1\\)\n\\(&lt; 0\\)\nDiminui\n\n\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO monopolista nunca opera na zona rígida: baixar o preço aumentaria \\(Q\\) mas reduziria \\(RT\\) — e os custos também aumentariam. Logo, \\(\\Pi\\) diminuiria de forma garantida."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#condição-de-optimização",
+    "href": "slides/20_problema_monopolista-document.html#condição-de-optimização",
+    "title": "Microeconomia",
+    "section": "3.1 Condição de Optimização",
+    "text": "3.1 Condição de Optimização\nO monopolista maximiza o lucro:\n\\[\\max_Q \\ \\Pi = RT(Q) - CT(Q)\\]\n. . .\nCondição de primeira ordem:\n\\[\\frac{d\\Pi}{dQ} = 0 \\iff \\underbrace{\\frac{dRT}{dQ}}_{Rmg} - \\underbrace{\\frac{dCT}{dQ}}_{Cmg} = 0\\]\n\\[\\boxed{Rmg = Cmg}\\]\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nA regra \\(Rmg = Cmg\\) é a mesma que em concorrência perfeita.\nA diferença: em CP, \\(Rmg = P\\); em monopólio, \\(Rmg &lt; P\\).\nLogo, o preço de monopólio está acima do custo marginal."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#porque-não-existe-curva-de-oferta-no-monopólio",
+    "href": "slides/20_problema_monopolista-document.html#porque-não-existe-curva-de-oferta-no-monopólio",
+    "title": "Microeconomia",
+    "section": "3.2 Porque não existe Curva de Oferta no Monopólio?",
+    "text": "3.2 Porque não existe Curva de Oferta no Monopólio?\nEm CP, a curva de oferta é \\(P = Cmg(Q)\\): para cada preço, a empresa escolhe \\(Q\\).\n. . .\nNo monopólio, o preço não é dado \\(\\rightarrow\\) é determinado pela procura:\n\\[Q^* \\leftarrow Rmg = Cmg \\quad \\Rightarrow \\quad P^* = D(Q^*)\\]\n. . .\nO mesmo \\(Q^*\\) pode corresponder a preços diferentes conforme a procura mude: não há uma relação unívoca preço-quantidade.\n\n\n\n\n\n\nNote\n\n\n\nNão existe curva de oferta do monopolista. A decisão de produção depende sempre da curva de procura enfrentada."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#determinação-de-q-p-e-lucro-gráfico",
+    "href": "slides/20_problema_monopolista-document.html#determinação-de-q-p-e-lucro-gráfico",
+    "title": "Microeconomia",
+    "section": "3.3 Determinação de Q*, P* e Lucro — Gráfico",
+    "text": "3.3 Determinação de Q*, P* e Lucro — Gráfico"
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#leitura-do-gráfico-passo-a-passo",
+    "href": "slides/20_problema_monopolista-document.html#leitura-do-gráfico-passo-a-passo",
+    "title": "Microeconomia",
+    "section": "3.4 Leitura do Gráfico: Passo a Passo",
+    "text": "3.4 Leitura do Gráfico: Passo a Passo\n\n\nEncontrar \\(Q^*\\): interseção de \\(Rmg\\) e \\(Cmg\\) \\(\\rightarrow\\) \\(Q^* = 4\\)\nSubir até à curva de procura \\(D\\) para obter \\(P^*\\): \\(P^* = 6\\)\nLer \\(CTM(Q^*) = 3\\) na curva de custo médio total\nLucro: \\(\\Pi = (P^* - CTM) \\times Q^* = (6-3) \\times 4 = 12\\)\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nNote que o ponto de optimização \\(Rmg = Cmg\\) fica abaixo do preço. O preço lê-se sempre na curva de procura à quantidade óptima."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#comparação-de-excedentes",
+    "href": "slides/20_problema_monopolista-document.html#comparação-de-excedentes",
+    "title": "Microeconomia",
+    "section": "4.1 Comparação de Excedentes",
+    "text": "4.1 Comparação de Excedentes"
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#tabela-comparativa",
+    "href": "slides/20_problema_monopolista-document.html#tabela-comparativa",
+    "title": "Microeconomia",
+    "section": "4.2 Tabela Comparativa",
+    "text": "4.2 Tabela Comparativa\n\n\n\n\n\nConcorrência Perfeita\nMonopólio\n\n\n\n\nQuantidade\n\\(Q_{cp} = 8\\)\n\\(Q_m = 4\\)\n\n\nPreço\n\\(P_{cp} = 2\\)\n\\(P_m = 6\\)\n\n\nExcedente do Consumidor\n\\(32\\) (A+B+C)\n\\(8\\) (A)\n\n\nExcedente do Produtor\n\\(0\\)\n\\(16\\) (B)\n\n\nExcedente Total\n\\(32\\)\n\\(24\\)\n\n\nPerda de Excedente (DWL)\n—\n\\(8\\) (C)\n\n\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nO monopólio é ineficiente: a área C representa valor destruído — nem consumidores nem produtor a obtêm. Há transacções mutuamente vantajosas que não se realizam porque \\(P_m &gt; Cmg\\)."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#por-que-o-monopólio-é-ineficiente",
+    "href": "slides/20_problema_monopolista-document.html#por-que-o-monopólio-é-ineficiente",
+    "title": "Microeconomia",
+    "section": "4.3 Por que o Monopólio é Ineficiente?",
+    "text": "4.3 Por que o Monopólio é Ineficiente?\nEm concorrência perfeita: \\(P = Cmg\\): todas as unidades para as quais a disposição a pagar supera o custo são produzidas.\n. . .\nEm monopólio: \\(P &gt; Cmg\\), entre \\(Q_m = 4\\) e \\(Q_{cp} = 8\\), há unidades cujo valor para o consumidor (\\(&lt; P_m\\) mas \\(&gt; Cmg\\)) nunca são produzidas.\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO produtor não produz essas unidades porque baixar o preço implicaria também baixá-lo nas unidades anteriores: o mecanismo de price-making gera a ineficiência."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#exercício-1-escolha-múltipla",
+    "href": "slides/20_problema_monopolista-document.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "5.1 Exercício 1 — Escolha Múltipla",
+    "text": "5.1 Exercício 1 — Escolha Múltipla\nUma empresa monopolista enfrenta a procura \\(P = 12 - 2Q\\) e tem custo marginal constante \\(Cmg = 4\\). A quantidade óptima de produção é:\n\n\n\\(Q^* = 2\\)\n\\(Q^* = 3\\)\n\n\\(Q^* = 4\\)\n\\(Q^* = 6\\)"
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#solução-exercício-1",
+    "href": "slides/20_problema_monopolista-document.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "5.2 Solução — Exercício 1",
+    "text": "5.2 Solução — Exercício 1\n\\(Rmg = 12 - 4Q\\) (declive duplo da procura inversa).\nCondição: \\(Rmg = Cmg \\Rightarrow 12 - 4Q = 4 \\Rightarrow Q^* = 2\\).\nResposta: (a)\nPreço: \\(P^* = 12 - 2(2) = 8\\)."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#exercício-2-escolha-múltipla",
+    "href": "slides/20_problema_monopolista-document.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "5.3 Exercício 2 — Escolha Múltipla",
+    "text": "5.3 Exercício 2 — Escolha Múltipla\nComparando monopólio com concorrência perfeita (mesmos custos e procura), é sempre verdade que:\n\n\nO monopolista tem custos marginais mais elevados\nO preço de monopólio é superior ao preço de concorrência perfeita\nO excedente do produtor é nulo em monopólio\nO excedente total é igual nos dois casos"
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#solução-exercício-2",
+    "href": "slides/20_problema_monopolista-document.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "5.4 Solução — Exercício 2",
+    "text": "5.4 Solução — Exercício 2\n\n\nFalso — os custos são iguais por hipótese\n\n(b) Verdadeiro — \\(P_m &gt; P_{cp}\\), uma vez que \\(Rmg &lt; P\\) leva o monopolista a produzir menos e cobrar mais\n\nFalso — o excedente do produtor em monopólio é positivo (é precisamente a razão pela qual o monopólio é preferível para o produtor)\n\n\nFalso — o excedente total é menor em monopólio (existe DWL)\n\n\nResposta: (b)"
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#exercício-de-desenvolvimento",
+    "href": "slides/20_problema_monopolista-document.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "5.5 Exercício de Desenvolvimento",
+    "text": "5.5 Exercício de Desenvolvimento\nUma empresa monopolista opera num mercado com procura inversa \\(P = 10 - Q\\).\nOs seus custos são: \\(CT = 2Q + 4\\) (custo fixo \\(CF = 4\\), custo marginal \\(Cmg = 2\\)).\nAlíneas:\n\n\nDerive a expressão da receita marginal (\\(Rmg\\)).\nDetermine a quantidade óptima \\(Q^*\\) e o preço \\(P^*\\).\nCalcule o lucro económico \\(\\Pi^*\\).\nCalcule o excedente do consumidor e o excedente do produtor em monopólio.\nDetermine o equilíbrio de concorrência perfeita (\\(Q_{cp}\\), \\(P_{cp}\\)).\nCalcule a perda de excedente (DWL) gerada pelo monopólio. Interprete."
+  },
+  {
+    "objectID": "slides/20_problema_monopolista-document.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/20_problema_monopolista-document.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "5.6 Solução — Exercício de Desenvolvimento",
+    "text": "5.6 Solução — Exercício de Desenvolvimento\na) \\(RT = (10-Q)Q = 10Q - Q^2 \\Rightarrow Rmg = 10 - 2Q\\)\n. . .\nb) \\(Rmg = Cmg \\Rightarrow 10 - 2Q = 2 \\Rightarrow Q^* = 4\\)\n\\(P^* = 10 - 4 = 6\\)\n. . .\nc) \\(CTM(4) = 2 + 4/4 = 3 \\Rightarrow \\Pi^* = (P^* - CTM) \\cdot Q^* = (6-3)\\cdot 4 = 12\\)\nOu directamente: \\(\\Pi = RT - CT = 6 \\cdot 4 - (2 \\cdot 4 + 4) = 24 - 12 = 12\\) ✓\n. . .\nd) \\(XD_m = \\frac{1}{2}(10-6)\\cdot 4 = 8\\) (triângulo acima de \\(P^*\\))\n\\(XS_m = (P^* - Cmg)\\cdot Q^* = (6-2)\\cdot 4 = 16\\) (rectângulo, \\(Cmg\\) constante)\n. . .\ne) \\(P = Cmg \\Rightarrow 10 - Q = 2 \\Rightarrow Q_{cp} = 8,\\ P_{cp} = 2\\)\n. . .\nf) \\(DWL = \\frac{1}{2}(P_m - P_{cp})(Q_{cp} - Q_m) = \\frac{1}{2}(6-2)(8-4) = 8\\)\nO monopólio impede a realização de transacções entre \\(Q=4\\) e \\(Q=8\\) que seriam mutuamente vantajosas (disposição a pagar \\(&gt; Cmg = 2\\)), destruindo \\(8\\) unidades de excedente total."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html",
+    "href": "slides/22_teoria_jogos_I-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Até agora, cada decisor foi analisado em isolamento:\n\n\nO consumidor maximiza utilidade dado um preço que não controla\nA empresa em CP escolhe \\(Q\\) dado um preço de mercado\nO monopolista optimiza face a uma curva de procura passiva\n\n\n. . .\nMas e quando o resultado de cada agente depende das escolhas dos outros?\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nEm oligopólio, duas ou três empresas controlam o mercado. A decisão de uma afecta directamente o lucro das outras. Cada empresa precisa de antecipar o comportamento das rivais — e elas sabem disso.\nA teoria de jogos é a ferramenta adequada para analisar estas situações de interdependência estratégica.\n\n\n\n\n\nTodo o jogo em forma normal é definido por três elementos:\n. . .\n1. Jogadores — quem decide? (\\(i = 1, 2, \\ldots, n\\))\n. . .\n2. Estratégias — que acções estão disponíveis a cada jogador?\n\\[S_i = \\{s_{i1},\\ s_{i2},\\ \\ldots\\}\\]\n. . .\n3. Payoffs — que resultado obtém cada jogador para cada combinação de estratégias?\n\\[\\pi_i(s_1, s_2, \\ldots, s_n)\\]\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO payoff pode representar lucro, utilidade, anos de prisão evitados, ou qualquer medida de bem-estar relevante. A teoria é geral — o conteúdo depende da aplicação.\n\n\n\n\n\nCom dois jogadores e duas estratégias cada, o jogo representa-se numa matriz \\(2\\times2\\):\n. . .\n\n\n\n\n\n\n\n\n\n. . .\nConvenção: cada célula mostra \\((\\pi_A,\\ \\pi_B)\\) — primeiro o payoff da empresa que escolhe a linha, segundo o da coluna."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#porque-precisamos-de-teoria-de-jogos",
+    "href": "slides/22_teoria_jogos_I-document.html#porque-precisamos-de-teoria-de-jogos",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Até agora, cada decisor foi analisado em isolamento:\n\n\nO consumidor maximiza utilidade dado um preço que não controla\nA empresa em CP escolhe \\(Q\\) dado um preço de mercado\nO monopolista optimiza face a uma curva de procura passiva\n\n\n. . .\nMas e quando o resultado de cada agente depende das escolhas dos outros?\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nEm oligopólio, duas ou três empresas controlam o mercado. A decisão de uma afecta directamente o lucro das outras. Cada empresa precisa de antecipar o comportamento das rivais — e elas sabem disso.\nA teoria de jogos é a ferramenta adequada para analisar estas situações de interdependência estratégica."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#os-elementos-de-um-jogo",
+    "href": "slides/22_teoria_jogos_I-document.html#os-elementos-de-um-jogo",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Todo o jogo em forma normal é definido por três elementos:\n. . .\n1. Jogadores — quem decide? (\\(i = 1, 2, \\ldots, n\\))\n. . .\n2. Estratégias — que acções estão disponíveis a cada jogador?\n\\[S_i = \\{s_{i1},\\ s_{i2},\\ \\ldots\\}\\]\n. . .\n3. Payoffs — que resultado obtém cada jogador para cada combinação de estratégias?\n\\[\\pi_i(s_1, s_2, \\ldots, s_n)\\]\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO payoff pode representar lucro, utilidade, anos de prisão evitados, ou qualquer medida de bem-estar relevante. A teoria é geral — o conteúdo depende da aplicação."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#forma-normal-a-matriz-de-payoffs",
+    "href": "slides/22_teoria_jogos_I-document.html#forma-normal-a-matriz-de-payoffs",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Com dois jogadores e duas estratégias cada, o jogo representa-se numa matriz \\(2\\times2\\):\n. . .\n\n\n\n\n\n\n\n\n\n. . .\nConvenção: cada célula mostra \\((\\pi_A,\\ \\pi_B)\\) — primeiro o payoff da empresa que escolhe a linha, segundo o da coluna."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#dominância-estrita",
+    "href": "slides/22_teoria_jogos_I-document.html#dominância-estrita",
+    "title": "Microeconomia",
+    "section": "2.1 Dominância Estrita",
+    "text": "2.1 Dominância Estrita\n\n\n\n\n\n\nNote\n\n\n\nDefinição: A estratégia \\(s_i\\) domina estritamente \\(s_i'\\) se, independentemente do que os outros jogadores fizerem, \\(s_i\\) dá sempre um payoff estritamente superior a \\(s_i'\\).\n\n\n. . .\nSe existe uma estratégia dominante para um jogador, um agente racional nunca escolhe a estratégia dominada — independentemente das suas crenças sobre os rivais.\n. . .\nEliminação iterada de estratégias dominadas:\n\n\nEliminar as estratégias estritamente dominadas de cada jogador\nRepetir com a matriz reduzida\nContinuar até não haver mais eliminações\n\n\n. . .\nSe este processo conduz a uma única célula, temos um equilíbrio em estratégias dominantes."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#equilíbrio-de-nash",
+    "href": "slides/22_teoria_jogos_I-document.html#equilíbrio-de-nash",
+    "title": "Microeconomia",
+    "section": "2.2 Equilíbrio de Nash",
+    "text": "2.2 Equilíbrio de Nash\n\n\n\n\n\n\nImportant\n\n\n\nDefinição (John Nash, 1950): Um perfil de estratégias \\((s_1^*, s_2^*, \\ldots, s_n^*)\\) é um Equilíbrio de Nash se nenhum jogador tem incentivo a desviar-se unilateralmente, dado que os outros mantêm as suas estratégias.\n\n\n. . .\nFormalmente, para cada jogador \\(i\\):\n\\[\\pi_i(s_i^*,\\ s_{-i}^*) \\geq \\pi_i(s_i,\\ s_{-i}^*) \\quad \\forall s_i\\]\nonde \\(s_{-i}^*\\) denota as estratégias de todos os outros jogadores.\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO Equilíbrio de Nash é um conceito de consistência mútua: cada jogador está a fazer o melhor que pode dado o que os outros estão a fazer. Ninguém se arrepende da sua escolha a posteriori."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#nash-vs.-óptimo-colectivo",
+    "href": "slides/22_teoria_jogos_I-document.html#nash-vs.-óptimo-colectivo",
+    "title": "Microeconomia",
+    "section": "2.3 Nash vs. Óptimo Colectivo",
+    "text": "2.3 Nash vs. Óptimo Colectivo\nUm Equilíbrio de Nash não é necessariamente o melhor resultado colectivo:\n. . .\n\n\nO EN é estável do ponto de vista individual — ninguém quer desviar sozinho\nMas pode existir outro resultado em que todos ficariam melhor\nEsse resultado não é sustentável sem coordenação ou compromisso vinculativo\n\n\n. . .\nEsta tensão entre racionalidade individual e óptimo colectivo é o coração do Dilema do Prisioneiro."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#a-história-original",
+    "href": "slides/22_teoria_jogos_I-document.html#a-história-original",
+    "title": "Microeconomia",
+    "section": "3.1 A História Original",
+    "text": "3.1 A História Original\nDois suspeitos são detidos e interrogados separadamente. Cada um pode:\n\n\nCalar (cooperar com o cúmplice)\nConfessar (delatar o cúmplice)\n\n\n. . .\n\n\n\n\n\n\n\n\n\n(payoffs = anos de prisão evitados — maior é melhor)"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#análise-dominância-e-nash",
+    "href": "slides/22_teoria_jogos_I-document.html#análise-dominância-e-nash",
+    "title": "Microeconomia",
+    "section": "3.2 Análise: Dominância e Nash",
+    "text": "3.2 Análise: Dominância e Nash\nRaciocínio de A:\n\n\nSe B calar: A obtém \\(5\\) (confessar) vs \\(4\\) (calar) \\(\\Rightarrow\\) Confessar\nSe B confessar: A obtém \\(1\\) (confessar) vs \\(0\\) (calar) \\(\\Rightarrow\\) Confessar\n\n\n. . .\nConfessar domina estritamente Calar — para A. Pelo mesmo raciocínio, também para B.\n. . .\nEquilíbrio de Nash: (Confessar, Confessar) = (1, 1)\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nMas (Calar, Calar) = (4, 4) é Pareto superior — ambos ficariam melhor se calassem. O problema: nenhum consegue credibilmente comprometer-se a calar sem que o outro aproveite para confessar.\nA racionalidade individual leva a um resultado colectivamente mau."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#aplicação-delação-premiada-em-cartéis",
+    "href": "slides/22_teoria_jogos_I-document.html#aplicação-delação-premiada-em-cartéis",
+    "title": "Microeconomia",
+    "section": "3.3 Aplicação: Delação Premiada em Cartéis",
+    "text": "3.3 Aplicação: Delação Premiada em Cartéis\nO dilema do prisioneiro tem uma aplicação directa à política de concorrência:\n. . .\nDuas empresas num cartel podem:\n\n\nCooperar — manter o acordo de cartel, partilhar lucros de monopólio\nDelatar — informar a autoridade da concorrência, obtendo imunidade ou redução de coima\n\n\n. . .\n\n\n\n\n\n\n\n\n\n(payoffs em milhares de euros de lucro líquido)"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#análise-da-delação-premiada",
+    "href": "slides/22_teoria_jogos_I-document.html#análise-da-delação-premiada",
+    "title": "Microeconomia",
+    "section": "3.4 Análise da Delação Premiada",
+    "text": "3.4 Análise da Delação Premiada\nDominância de Delatar:\n\n\nSe B cooperar: A obtém \\(8\\) (delatar) vs \\(6\\) (cooperar) \\(\\Rightarrow\\) Delatar\nSe B delatar: A obtém \\(2\\) (delatar) vs \\(0\\) (cooperar) \\(\\Rightarrow\\) Delatar\n\n\n. . .\nEquilíbrio de Nash: (Delatar, Delatar) = (2, 2)\nResultado colectivamente inferior a (Cooperar, Cooperar) = (6, 6).\n. . .\n\n\n\n\n\n\nTip\n\n\n\nLógica da política de leniência: os reguladores exploram exactamente esta estrutura. Ao oferecer imunidade total ao primeiro a delatar, tornam a delação ainda mais atractiva — o equilíbrio de Nash desloca-se para (Delatar, Delatar) de forma ainda mais robusta.\nOs cartéis são instáveis precisamente porque cada membro tem incentivo a trair os parceiros."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#jogos-de-coordenação",
+    "href": "slides/22_teoria_jogos_I-document.html#jogos-de-coordenação",
+    "title": "Microeconomia",
+    "section": "4.1 Jogos de Coordenação",
+    "text": "4.1 Jogos de Coordenação\nNem todos os jogos têm a estrutura problemática do dilema do prisioneiro:\n. . .\n\n\n\n\n\n\n\n\n\n(Exemplo: lados de circulação no trânsito)\n. . .\nDois Equilíbrios de Nash: (Esq, Esq) e (Dir, Dir). Aqui o problema não é a traição — é a coordenação: ambos querem fazer o mesmo, mas qual?"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#resumo-conceitos-chave",
+    "href": "slides/22_teoria_jogos_I-document.html#resumo-conceitos-chave",
+    "title": "Microeconomia",
+    "section": "4.2 Resumo: Conceitos-Chave",
+    "text": "4.2 Resumo: Conceitos-Chave\n\n\n\n\n\n\n\n\nConceito\nDefinição em síntese\n\n\n\n\nEstratégia dominante\nMelhor resposta independentemente do rival\n\n\nEstratégia dominada\nNunca é a melhor resposta — racional eliminá-la\n\n\nEquilíbrio de Nash\nNinguém quer desviar unilateralmente\n\n\nDilema do Prisioneiro\nEN existe mas é Pareto inferior — racionalidade individual \\(\\neq\\) óptimo colectivo\n\n\nJogo de coordenação\nMúltiplos EN — o problema é coordenar, não trair\n\n\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nNa próxima aula aplicamos estes conceitos ao oligopólio: o modelo de Cournot é precisamente um jogo em que cada empresa escolhe quantidade tomando a rival como dado — e o equilíbrio de Nash em quantidades é o resultado central."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#exercício-1-escolha-múltipla",
+    "href": "slides/22_teoria_jogos_I-document.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "5.1 Exercício 1 — Escolha Múltipla",
+    "text": "5.1 Exercício 1 — Escolha Múltipla\nConsidere a seguinte matriz de payoffs \\((\\pi_A,\\ \\pi_B)\\):\n\n\n\n\n\n\n\n\n\nO Equilíbrio de Nash desta matriz é:\n\n\n(Alto, Alto) = (3, 3)\n(Alto, Baixo) = (1, 5)\n(Baixo, Baixo) = (2, 2)\nNão existe Equilíbrio de Nash"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#solução-exercício-1",
+    "href": "slides/22_teoria_jogos_I-document.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "5.2 Solução — Exercício 1",
+    "text": "5.2 Solução — Exercício 1\nA: Se B=Alto: \\(5 &gt; 3\\) → Baixo. Se B=Baixo: \\(2 &gt; 1\\) → Baixo. Baixo domina.\nB: Se A=Alto: \\(5 &gt; 3\\) → Baixo. Se A=Baixo: \\(2 &gt; 1\\) → Baixo. Baixo domina.\nNash: (Baixo, Baixo) = (2, 2) — nenhum quer desviar unilateralmente.\nNote: (Alto, Alto) = (3, 3) é Pareto superior mas não é EN — cada um tem incentivo a desviar para Baixo.\nResposta: (c)"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#exercício-2-escolha-múltipla",
+    "href": "slides/22_teoria_jogos_I-document.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "5.3 Exercício 2 — Escolha Múltipla",
+    "text": "5.3 Exercício 2 — Escolha Múltipla\nNo Dilema do Prisioneiro, o Equilíbrio de Nash é:\n\n\nO resultado que maximiza a soma dos payoffs dos dois jogadores\nO resultado em que nenhum jogador quer desviar, mesmo que seja Pareto inferior\nSempre o resultado em que ambos cooperam\nO resultado que só é atingível com comunicação entre os jogadores"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#solução-exercício-2",
+    "href": "slides/22_teoria_jogos_I-document.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "5.4 Solução — Exercício 2",
+    "text": "5.4 Solução — Exercício 2\n\n\nFalso — o EN do DP é (Confessar, Confessar) que minimiza a soma dos payoffs\n\n(b) Verdadeiro — o EN é estável individualmente (ninguém quer desviar sozinho) mesmo sendo Pareto inferior a (Calar, Calar)\n\nFalso — no DP o EN é precisamente a não-cooperação\n\n\nFalso — o EN existe sem comunicação; com comunicação vinculativa o resultado poderia mudar, mas o EN em si não requer comunicação\n\n\nResposta: (b)"
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#exercício-de-desenvolvimento",
+    "href": "slides/22_teoria_jogos_I-document.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "5.5 Exercício de Desenvolvimento",
+    "text": "5.5 Exercício de Desenvolvimento\nDuas empresas, A e B, participavam num cartel ilegal. A autoridade da concorrência abre uma investigação e contacta cada empresa separadamente, oferecendo imunidade total à primeira a colaborar.\nCada empresa pode Cooperar (manter silêncio) ou Delatar (colaborar com a autoridade).\nOs payoffs (lucro líquido esperado, em milhares de euros) são:\n\n\n\n\n\n\n\n\n\n\n\nMostre que Delatar é uma estratégia estritamente dominante para a Empresa A.\nIdentifique o Equilíbrio de Nash. Qual o payoff de cada empresa?\nQual o resultado colectivamente óptimo? Compare com o EN.\nExplique por que razão a política de leniência é eficaz para desmantelar cartéis."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/22_teoria_jogos_I-document.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "5.6 Solução — Exercício de Desenvolvimento",
+    "text": "5.6 Solução — Exercício de Desenvolvimento\na) Verificação da dominância de Delatar para A:\n\nSe B Cooperar: A obtém \\(8\\) (Delatar) \\(&gt;\\) \\(6\\) (Cooperar) \\(\\Rightarrow\\) Delatar\nSe B Delatar: A obtém \\(2\\) (Delatar) \\(&gt;\\) \\(0\\) (Cooperar) \\(\\Rightarrow\\) Delatar\n\nDelatar é estritamente dominante — A prefere Delatar independentemente da escolha de B. ✓\n. . .\nb) Pelo mesmo raciocínio (o jogo é simétrico), Delatar também domina para B.\nEquilíbrio de Nash: (Delatar, Delatar) = (2, 2)\nNenhuma empresa quer desviar: se A está a delatar, B obtém \\(2\\) (delatar) \\(&gt;\\) \\(0\\) (cooperar). ✓\n. . .\nc) O resultado colectivamente óptimo é (Cooperar, Cooperar) = (6, 6) — soma de payoffs \\(12 &gt; 4\\).\nMas não é sustentável: qualquer empresa tem incentivo a desviar unilateralmente para Delatar e obter \\(8\\) em vez de \\(6\\).\n. . .\nd) A política de leniência reforça exactamente esta estrutura. Ao garantir imunidade ao primeiro a delatar, o regulador torna o payoff de Delatar ainda mais atractivo. Cada empresa sabe que a rival tem incentivo a delatar primeiro — o que acelera a delação mútua. O cartel dissolve-se pela mesma lógica do dilema do prisioneiro: a racionalidade individual destrói a colusão colectiva."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html",
+    "href": "slides/24_jogos_II_stackelberg-document.html",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Na aula anterior, analisámos jogos em forma normal — decisões simultâneas representadas em matriz.\n. . .\nMuitas situações económicas são sequenciais: um jogador age primeiro, o outro observa e responde.\n. . .\n\n\n\n\n\nForma Normal\nForma Extensiva\n\n\n\n\nTiming\nSimultâneo\nSequencial\n\n\nRepresentação\nMatriz de payoffs\nÁrvore de decisão\n\n\nConceito solução\nEquilíbrio de Nash\nIndução para trás\n\n\nInformação\nSem observação\nObservação da jogada anterior\n\n\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nA forma extensiva acrescenta estrutura temporal ao jogo. Quem move primeiro tem informação comprometida — e quem move depois tem mais informação mas menos iniciativa.\n\n\n\n\n\nUma árvore de decisão representa:\n\n\nNós de decisão — pontos onde um jogador escolhe\nRamos — as acções disponíveis em cada nó\nFolhas — resultados finais com os payoffs \\((π_1,\\ π_2)\\)\nOrdem das jogadas — lê-se da esquerda (raiz) para a direita (folhas)\n\n\n. . .\nO método de solução é a indução para trás (backward induction):\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nResolver o jogo de trás para a frente: começar nas folhas e determinar a escolha óptima do último jogador; dado isso, determinar a escolha óptima do penúltimo; e assim sucessivamente até à raiz."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#da-forma-normal-à-forma-extensiva",
+    "href": "slides/24_jogos_II_stackelberg-document.html#da-forma-normal-à-forma-extensiva",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Na aula anterior, analisámos jogos em forma normal — decisões simultâneas representadas em matriz.\n. . .\nMuitas situações económicas são sequenciais: um jogador age primeiro, o outro observa e responde.\n. . .\n\n\n\n\n\nForma Normal\nForma Extensiva\n\n\n\n\nTiming\nSimultâneo\nSequencial\n\n\nRepresentação\nMatriz de payoffs\nÁrvore de decisão\n\n\nConceito solução\nEquilíbrio de Nash\nIndução para trás\n\n\nInformação\nSem observação\nObservação da jogada anterior\n\n\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nA forma extensiva acrescenta estrutura temporal ao jogo. Quem move primeiro tem informação comprometida — e quem move depois tem mais informação mas menos iniciativa."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#a-árvore-de-decisão",
+    "href": "slides/24_jogos_II_stackelberg-document.html#a-árvore-de-decisão",
+    "title": "Microeconomia",
+    "section": "",
+    "text": "Uma árvore de decisão representa:\n\n\nNós de decisão — pontos onde um jogador escolhe\nRamos — as acções disponíveis em cada nó\nFolhas — resultados finais com os payoffs \\((π_1,\\ π_2)\\)\nOrdem das jogadas — lê-se da esquerda (raiz) para a direita (folhas)\n\n\n. . .\nO método de solução é a indução para trás (backward induction):\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nResolver o jogo de trás para a frente: começar nas folhas e determinar a escolha óptima do último jogador; dado isso, determinar a escolha óptima do penúltimo; e assim sucessivamente até à raiz."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#o-jogo-de-entrada-no-mercado",
+    "href": "slides/24_jogos_II_stackelberg-document.html#o-jogo-de-entrada-no-mercado",
+    "title": "Microeconomia",
+    "section": "2.1 O Jogo de Entrada no Mercado",
+    "text": "2.1 O Jogo de Entrada no Mercado\nUma empresa Entrante pondera entrar num mercado onde existe uma empresa Incumbente.\n. . .\n\n\n\n\n\n\n\n\n\n(payoffs: Entrante, Incumbente)"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#solução-por-indução-para-trás",
+    "href": "slides/24_jogos_II_stackelberg-document.html#solução-por-indução-para-trás",
+    "title": "Microeconomia",
+    "section": "2.2 Solução por Indução para Trás",
+    "text": "2.2 Solução por Indução para Trás\nPasso 1 — O que faz o Incumbente se a Entrante entrar?\n\n\nCombater: payoff \\(= -1\\)\nAcomodar: payoff \\(= 2\\)\n\n\n. . .\n\\(2 &gt; -1\\) \\(\\Rightarrow\\) Incumbente acomoda. A ameaça de combater não é credível.\n. . .\nPasso 2 — O que faz a Entrante, antecipando a acomodação?\n\n\nEntrar (sabendo que Incumbente acomoda): payoff \\(= 3\\)\nFicar Fora: payoff \\(= 0\\)\n\n\n. . .\n\\(3 &gt; 0\\) \\(\\Rightarrow\\) Entrante entra.\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nResultado por indução para trás: (Entrar, Acomodar) = (3, 2)\nA ameaça de combater é não credível: o Incumbente preferirá sempre acomodar ex-post. Um jogador racional não acredita em ameaças que o ameaçador não tem incentivo a cumprir."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#ameaças-credíveis-e-não-credíveis",
+    "href": "slides/24_jogos_II_stackelberg-document.html#ameaças-credíveis-e-não-credíveis",
+    "title": "Microeconomia",
+    "section": "2.3 Ameaças Credíveis e Não Credíveis",
+    "text": "2.3 Ameaças Credíveis e Não Credíveis\nO jogo de entrada ilustra um princípio central:\n. . .\n\n\n\n\n\n\nNote\n\n\n\nAmeaça credível: acção que o ameaçador tem incentivo a executar quando chega o momento, independentemente do que disse antes.\nAmeaça não credível: acção que o ameaçador prefere não executar quando chega o momento — racionalmente ignorada pelo rival.\n\n\n. . .\nO Incumbente pode dizer “se entrar, combato” — mas a Entrante sabe que, uma vez dentro, o Incumbente preferirá acomodar. As palavras não chegam; só os incentivos ex-post contam.\n. . .\n\n\n\n\n\n\nTip\n\n\n\nAplicação: um monopolista que ameaça baixar preços drasticamente para afastar rivais precisa de tornar essa ameaça credível — por exemplo, através de investimento em capacidade que torna o combate rentável."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#stackelberg-como-jogo-sequencial",
+    "href": "slides/24_jogos_II_stackelberg-document.html#stackelberg-como-jogo-sequencial",
+    "title": "Microeconomia",
+    "section": "3.1 Stackelberg como Jogo Sequencial",
+    "text": "3.1 Stackelberg como Jogo Sequencial\nO modelo de Stackelberg aplica a lógica dos jogos sequenciais ao oligopólio de quantidades:\n\n\nLíder (Empresa 1): escolhe \\(q_1\\) primeiro, de forma observável\nSeguidor (Empresa 2): observa \\(q_1\\) e escolhe \\(q_2\\) a seguir\nMesma estrutura de mercado da aula anterior: \\(P = 30 - (q_1+q_2)\\), \\(Cmg = 6\\)\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nA diferença face a Cournot é apenas o timing: em Cournot, as decisões são simultâneas e cada empresa toma a quantidade da outra como dada. Em Stackelberg, o líder conhece a função de reacção do seguidor e optimiza em função dela."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#passo-1-a-função-de-reacção-do-seguidor",
+    "href": "slides/24_jogos_II_stackelberg-document.html#passo-1-a-função-de-reacção-do-seguidor",
+    "title": "Microeconomia",
+    "section": "3.2 Passo 1 — A Função de Reacção do Seguidor",
+    "text": "3.2 Passo 1 — A Função de Reacção do Seguidor\nO seguidor resolve o seu problema exactamente como em Cournot, dado \\(q_1\\) observado:\n\\[\\Pi_2 = (30 - q_1 - q_2)\\,q_2 - 6\\,q_2\\]\n. . .\n\\[\\frac{\\partial \\Pi_2}{\\partial q_2} = 24 - q_1 - 2q_2 = 0 \\quad\\Rightarrow\\quad \\boxed{q_2^*(q_1) = 12 - \\frac{q_1}{2}}\\]\n. . .\nEsta é a mesma função de reacção da aula anterior — o líder sabe que o seguidor a irá usar."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#passo-2-o-líder-internaliza-a-reacção-do-seguidor",
+    "href": "slides/24_jogos_II_stackelberg-document.html#passo-2-o-líder-internaliza-a-reacção-do-seguidor",
+    "title": "Microeconomia",
+    "section": "3.3 Passo 2 — O Líder Internaliza a Reacção do Seguidor",
+    "text": "3.3 Passo 2 — O Líder Internaliza a Reacção do Seguidor\nO líder substitui \\(q_2^*(q_1)\\) no seu próprio lucro:\n\\[\\Pi_1 = \\bigl(30 - q_1 - q_2^*(q_1)\\bigr)\\,q_1 - 6\\,q_1\\]\n. . .\n\\[= \\left(30 - q_1 - \\left(12 - \\frac{q_1}{2}\\right)\\right)q_1 - 6q_1 = \\left(12 - \\frac{q_1}{2}\\right)q_1\\]\n. . .\n\\[\\Pi_1 = 12\\,q_1 - \\frac{q_1^2}{2}\\]\n. . .\nCondição de primeira ordem:\n\\[\\frac{d\\Pi_1}{dq_1} = 12 - q_1 = 0 \\quad\\Rightarrow\\quad \\boxed{q_1^* = 12}\\]"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#passo-3-equilíbrio-de-sta",
+    "href": "slides/24_jogos_II_stackelberg-document.html#passo-3-equilíbrio-de-sta",
+    "title": "Microeconomia",
+    "section": "3.4 Passo 3 — Equilíbrio de Sta",
+    "text": "3.4 Passo 3 — Equilíbrio de Sta\nCom \\(q_1^* = 12\\), o seguidor responde:\n\\[q_2^* = 12 - \\frac{12}{2} = 6\\]\n. . .\nResultados de equilíbrio:\n\\[Q^*_S = 12 + 6 = 18 \\qquad P^*_S = 30 - 18 = 12\\]\n. . .\n\\[\\Pi_{\\text{líder}} = (12-6)\\times 12 = 72 \\qquad \\Pi_{\\text{seguidor}} = (12-6)\\times 6 = 36\\]\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nVantagem do primeiro movente: o líder ganha 72 — tanto quanto o monopolista — enquanto o seguidor fica com apenas 36, abaixo dos 64 de Cournot.\nO líder usa a quantidade como compromisso: ao produzir muito (12), força o seguidor a produzir pouco (6)."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#stackelberg-vs.-cournot-diagrama",
+    "href": "slides/24_jogos_II_stackelberg-document.html#stackelberg-vs.-cournot-diagrama",
+    "title": "Microeconomia",
+    "section": "3.5 Stackelberg vs. Cournot — Diagrama",
+    "text": "3.5 Stackelberg vs. Cournot — Diagrama"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#intuição-do-primeiro-movente",
+    "href": "slides/24_jogos_II_stackelberg-document.html#intuição-do-primeiro-movente",
+    "title": "Microeconomia",
+    "section": "3.6 Intuição do Primeiro Movente",
+    "text": "3.6 Intuição do Primeiro Movente\nPor que vale a pena ser o líder?\n. . .\nEm Cournot, se a Empresa 1 aumentasse unilateralmente a sua produção de 8 para 12, o preço desceria e o lucro cairia (dado \\(q_2 = 8\\) fixo).\n. . .\nEm Stackelberg, o líder sabe que ao produzir 12, o seguidor responde com 6 (não com 8). O efeito adverso no preço é parcialmente compensado pela contracção do seguidor.\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO compromisso credível de produzir muito disciplina o rival. O líder renuncia à melhor resposta de Cournot, mas obtém um resultado melhor porque o seguidor ajusta em sentido contrário.\nEsta é a essência da vantagem do primeiro movente em jogos de quantidades."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#tabela-resumo-quatro-estruturas",
+    "href": "slides/24_jogos_II_stackelberg-document.html#tabela-resumo-quatro-estruturas",
+    "title": "Microeconomia",
+    "section": "4.1 Tabela Resumo: Quatro Estruturas",
+    "text": "4.1 Tabela Resumo: Quatro Estruturas\n\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi_1\\)\n\\(\\Pi_2\\)\n\n\n\n\nMonopólio (cartel)\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\\(72\\)\n\n\nStackelberg\n\\(18\\)\n\\(12\\)\n\\(72\\)\n\\(36\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\\(64\\)\n\n\nConc. Perfeita\n\\(24\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\n\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nOrdenações que sempre se verificam:\n\\(Q_m &lt; Q_C &lt; Q_S &lt; Q_{cp}\\) e \\(P_m &gt; P_C &gt; P_S &gt; P_{cp}\\)\n\\(\\Pi_{\\text{líder}}^S &gt; \\Pi^C &gt; \\Pi_{\\text{seguidor}}^S\\)\nO líder de Stackelberg ganha tanto quanto o monopolista — ao comprometer-se com produção elevada, captura toda a vantagem estratégica."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#cournot-vs.-stackelberg-síntese",
+    "href": "slides/24_jogos_II_stackelberg-document.html#cournot-vs.-stackelberg-síntese",
+    "title": "Microeconomia",
+    "section": "4.2 Cournot vs. Stackelberg: Síntese",
+    "text": "4.2 Cournot vs. Stackelberg: Síntese\nUma empresa Entrante pondera entrar num mercado onde existe uma empresa Incumbente. :::{.nonincremental} | | Cournot | Stackelberg | |—|—|—| | Timing | Simultâneo | Sequencial | | Hipótese sobre rival | \\(q_j\\) fixo (conjectura) | \\(q_j = BR_j(q_i)\\) (conhecida) | | Equilíbrio | Nash em quantidades | Backward induction | | \\(q_{\\text{líder}}\\) vs \\(q_C\\) | \\(q^C = 8\\) | \\(q_L^S = 12 &gt; 8\\) | | \\(q_{\\text{seguidor}}\\) vs \\(q_C\\) | \\(q^C = 8\\) | \\(q_F^S = 6 &lt; 8\\) | | \\(\\Pi_{\\text{líder}}\\) vs \\(\\Pi_C\\) | \\(64\\) | \\(72 &gt; 64\\) | | \\(\\Pi_{\\text{seguidor}}\\) vs \\(\\Pi_C\\) | \\(64\\) | \\(36 &lt; 64\\) | :::"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#exercício-1-escolha-múltipla",
+    "href": "slides/24_jogos_II_stackelberg-document.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "5.1 Exercício 1 — Escolha Múltipla",
+    "text": "5.1 Exercício 1 — Escolha Múltipla\nNo modelo de Stackelberg, o líder produz mais do que no equilíbrio de Cournot porque:\n\n\nO líder tem custos marginais mais baixos\nO líder sabe que o seguidor reduzirá a sua produção em resposta — o compromisso com quantidade elevada disciplina o rival\nO líder age simultaneamente com o seguidor e pode coordenar melhor\nO seguidor não observa a quantidade do líder e não consegue reagir"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#solução-exercício-1",
+    "href": "slides/24_jogos_II_stackelberg-document.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "5.2 Solução — Exercício 1",
+    "text": "5.2 Solução — Exercício 1\n\n\nFalso — os custos são idênticos nos dois modelos\n\n(b) Verdadeiro — o líder internaliza a função de reacção do seguidor: sabe que produzir mais força o seguidor a produzir menos, atenuando o efeito negativo no preço. É a essência da vantagem do primeiro movente.\n\nFalso — Stackelberg é sequencial, não simultâneo\n\n\nFalso — o seguidor observa \\(q_1\\) antes de decidir; é precisamente isso que torna o compromisso do líder credível\n\n\nResposta: (b)"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#exercício-2-escolha-múltipla",
+    "href": "slides/24_jogos_II_stackelberg-document.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "5.3 Exercício 2 — Escolha Múltipla",
+    "text": "5.3 Exercício 2 — Escolha Múltipla\nNo jogo de entrada com payoffs (Entrante, Incumbente): Entrar+Combater = \\((-2,\\ -1)\\); Entrar+Acomodar = \\((3,\\ 2)\\); Ficar Fora = \\((0,\\ 5)\\). Por indução para trás, o resultado é:\n\n\nFicar Fora, porque o Incumbente ameaça combater\nEntrar + Combater, porque o Incumbente cumpre a ameaça\nEntrar + Acomodar, porque a ameaça de combater não é credível\nIndeterminado — há dois Equilíbrios de Nash"
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#solução-exercício-2",
+    "href": "slides/24_jogos_II_stackelberg-document.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "5.4 Solução — Exercício 2",
+    "text": "5.4 Solução — Exercício 2\nIndução para trás:\n\nSe Entrante entrar, Incumbente escolhe: Combater \\((-1)\\) vs Acomodar \\((2)\\) \\(\\Rightarrow\\) Acomodar\nEntrante antecipa Acomodar: Entrar \\((3)\\) vs Ficar Fora \\((0)\\) \\(\\Rightarrow\\) Entrar\n\nA ameaça de combater é não credível — o Incumbente não a executaria ex-post.\nResposta: (c)\nNota: existe um EN na forma normal em que Entrante fica fora com base na ameaça de combater — mas a indução para trás elimina esse EN por envolver estratégias não credíveis."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#exercício-de-desenvolvimento",
+    "href": "slides/24_jogos_II_stackelberg-document.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "5.5 Exercício de Desenvolvimento",
+    "text": "5.5 Exercício de Desenvolvimento\nDois produtores de aço, a Empresa 1 (líder) e a Empresa 2 (seguidor), operam no mercado com procura inversa \\(P = 30 - (q_1 + q_2)\\) e custo marginal \\(Cmg = 6\\) para ambas.\nAlíneas:\n\n\nDerive a função de reacção do seguidor (Empresa 2), \\(q_2^*(q_1)\\).\nSubstitua \\(q_2^*(q_1)\\) na função de lucro do líder e simplifique.\nDetermine a quantidade óptima do líder \\(q_1^*\\) e a resposta do seguidor \\(q_2^*\\).\nCalcule \\(Q^*_S\\), \\(P^*_S\\), \\(\\Pi_{\\text{líder}}\\) e \\(\\Pi_{\\text{seguidor}}\\).\nCompare com o equilíbrio de Cournot da aula anterior (\\(q^C = 8\\), \\(\\Pi^C = 64\\)). Quem ganha e quem perde com a liderança? Justifique.\nComplete a tabela com os quatro resultados: monopólio, Stackelberg, Cournot, concorrência perfeita."
+  },
+  {
+    "objectID": "slides/24_jogos_II_stackelberg-document.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/24_jogos_II_stackelberg-document.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "5.6 Solução — Exercício de Desenvolvimento",
+    "text": "5.6 Solução — Exercício de Desenvolvimento\na) \\(\\Pi_2 = (30-q_1-q_2-6)q_2\\). CPO: \\(24-q_1-2q_2=0\\)\n\\[q_2^*(q_1) = 12 - \\frac{q_1}{2}\\]\n. . .\nb) \\(\\Pi_1 = \\!\\left(30-q_1-\\!\\left(12-\\tfrac{q_1}{2}\\right)-6\\right)q_1 = \\!\\left(12-\\tfrac{q_1}{2}\\right)q_1 = 12q_1 - \\tfrac{q_1^2}{2}\\)\n. . .\nc) \\(\\dfrac{d\\Pi_1}{dq_1} = 12 - q_1 = 0 \\Rightarrow q_1^* = 12\\)\n\\(q_2^* = 12 - 6 = 6\\)\n. . .\nd) \\(Q^*_S = 18\\), \\(P^*_S = 30-18 = 12\\)\n\\(\\Pi_{\\text{líder}} = (12-6)\\times 12 = 72\\) \\(\\quad;\\quad\\) \\(\\Pi_{\\text{seguidor}} = (12-6)\\times 6 = 36\\)\n. . .\ne) O líder ganha \\(72 &gt; 64\\) (Cournot): ao comprometer-se com \\(q_1=12\\), força o seguidor a retrair-se para \\(q_2=6\\), capturando mais mercado. O seguidor perde: \\(36 &lt; 64\\) (Cournot) — é penalizado por agir segundo, ficando com um mercado residual mais pequeno.\n. . .\nf)\n\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi_1\\)\n\\(\\Pi_2\\)\n\n\n\n\nMonopólio\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\\(72\\)\n\n\nStackelberg\n\\(18\\)\n\\(12\\)\n\\(72\\)\n\\(36\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\\(64\\)\n\n\nConc. Perfeita\n\\(24\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)"
   }
 ]
