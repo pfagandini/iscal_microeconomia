@@ -45,7 +45,7 @@ execute:
 
 # O que é a Concorrência Monopolística? {background-color="#2C3E7A"}
 
-## Características Definidoras
+## Características Definidoras {.smaller}
 
 A concorrência monopolística combina elementos dos dois modelos extremos:
 
@@ -163,7 +163,7 @@ O lucro positivo ($\Pi = 15$) é um **sinal de mercado**: novas empresas têm in
 
 # Longo Prazo {background-color="#2C3E7A"}
 
-## O Mecanismo de Entrada
+## O Mecanismo de Entrada {.smaller}
 
 Com lucros positivos no curto prazo, novas empresas entram no mercado com produtos diferenciados. O que acontece?
 

@@ -7719,5 +7719,271 @@
     "title": "Microeconomia",
     "section": "Solução — Exercício de Desenvolvimento",
     "text": "Solução — Exercício de Desenvolvimento\na) \\(\\Pi_2 = (30-q_1-q_2-6)q_2\\). CPO: \\(24-q_1-2q_2=0\\)\n\\[q_2^*(q_1) = 12 - \\frac{q_1}{2}\\]\n\nb) \\(\\Pi_1 = \\!\\left(30-q_1-\\!\\left(12-\\tfrac{q_1}{2}\\right)-6\\right)q_1 = \\!\\left(12-\\tfrac{q_1}{2}\\right)q_1 = 12q_1 - \\tfrac{q_1^2}{2}\\)\n\n\nc) \\(\\dfrac{d\\Pi_1}{dq_1} = 12 - q_1 = 0 \\Rightarrow q_1^* = 12\\)\n\\(q_2^* = 12 - 6 = 6\\)\n\n\nd) \\(Q^*_S = 18\\), \\(P^*_S = 30-18 = 12\\)\n\\(\\Pi_{\\text{líder}} = (12-6)\\times 12 = 72\\) \\(\\quad;\\quad\\) \\(\\Pi_{\\text{seguidor}} = (12-6)\\times 6 = 36\\)\n\n\ne) O líder ganha \\(72 &gt; 64\\) (Cournot): ao comprometer-se com \\(q_1=12\\), força o seguidor a retrair-se para \\(q_2=6\\), capturando mais mercado. O seguidor perde: \\(36 &lt; 64\\) (Cournot) — é penalizado por agir segundo, ficando com um mercado residual mais pequeno.\n\n\nf)\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi_1\\)\n\\(\\Pi_2\\)\n\n\n\n\nMonopólio\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\\(72\\)\n\n\nStackelberg\n\\(18\\)\n\\(12\\)\n\\(72\\)\n\\(36\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\\(64\\)\n\n\nConc. Perfeita\n\\(24\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)"
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#estruturas-de-mercado-um-espectro",
+    "href": "slides/21_problema_monopolista.html#estruturas-de-mercado-um-espectro",
+    "title": "Microeconomia",
+    "section": "Estruturas de Mercado: Um Espectro",
+    "text": "Estruturas de Mercado: Um Espectro\n\n\n\n\n\n\n\n\n\n\nCaracterística\nConc. Perfeita\nOligopólio\nConc. Monopolística\nMonopólio\n\n\n\n\nN.º de empresas\nMuitas\nPoucas\nMuitas\nUma\n\n\nProduto\nHomogéneo\nHomo/Difer.\nDiferenciado\nÚnico\n\n\nPoder de mercado\nNenhum\nElevado\nAlgum\nMáximo\n\n\nBarreiras entrada\nNenhuma\nElevadas\nBaixas\nIntransponíveis\n\n\nP vs. Cmg\n\\(P = Cmg\\)\n\\(P &gt; Cmg\\)\n\\(P &gt; Cmg\\)\n\\(P &gt; Cmg\\)\n\n\n\n\n\n\n\n\n\nNote\n\n\nO monopólio é o caso polar oposto à concorrência perfeita. Analisamos os dois extremos para depois entender os casos intermédios."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#barreiras-à-entrada",
+    "href": "slides/21_problema_monopolista.html#barreiras-à-entrada",
+    "title": "Microeconomia",
+    "section": "Barreiras à Entrada",
+    "text": "Barreiras à Entrada\nPara existir monopólio, a entrada de rivais tem de ser impedida:\n\nLegais: licenças exclusivas, concessões do Estado, patentes\nEstruturais: custos de entrada muito elevados\nEconomias de escala: tecnologia que favorece uma única empresa grande (menção apenas, não é o foco desta aula)\n\n\n\n\n\n\n\nImportant\n\n\nSem barreiras à entrada, lucros positivos atrairiam concorrentes e o monopólio desapareceria. As barreiras são a condição necessária."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#concorrência-perfeita-vs.-monopólio",
+    "href": "slides/21_problema_monopolista.html#concorrência-perfeita-vs.-monopólio",
+    "title": "Microeconomia",
+    "section": "Concorrência Perfeita vs. Monopólio",
+    "text": "Concorrência Perfeita vs. Monopólio\nEm concorrência perfeita, a empresa é price-taker:\n\\[P = \\bar{P} \\quad \\Rightarrow \\quad RT = \\bar{P} \\cdot Q\\]\n\nO monopolista enfrenta a curva de procura do mercado \\(\\rightarrow\\) é price-maker:\n\\[P = P(Q) \\quad \\text{(função decrescente)} \\quad \\Rightarrow \\quad RT = P(Q) \\cdot Q\\]\n\n\nPara vender mais, o monopolista tem de baixar o preço, e essa descida aplica-se a todas as unidades vendidas."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#receita-total-e-receita-marginal",
+    "href": "slides/21_problema_monopolista.html#receita-total-e-receita-marginal",
+    "title": "Microeconomia",
+    "section": "Receita Total e Receita Marginal",
+    "text": "Receita Total e Receita Marginal\nCom procura inversa linear \\(P = a - bQ\\):\n\\[RT = (a - bQ) \\cdot Q = aQ - bQ^2\\]\n\nA receita marginal é:\n\\[Rmg = \\frac{dRT}{dQ} = a - 2bQ\\]\n\n\n\n\n\n\n\n\nImportant\n\n\nRmg tem o dobro do declive (em módulo) da curva de procura inversa.\nSe \\(P = a - bQ\\), então \\(Rmg = a - 2bQ\\)."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#rmg-p-sempre-que-a-procura-tem-inclinação-negativa",
+    "href": "slides/21_problema_monopolista.html#rmg-p-sempre-que-a-procura-tem-inclinação-negativa",
+    "title": "Microeconomia",
+    "section": "Rmg < P sempre que a procura tem inclinação negativa",
+    "text": "Rmg &lt; P sempre que a procura tem inclinação negativa\n\\[Rmg = P + Q \\frac{dP}{dQ}\\]\n\nComo \\(\\dfrac{dP}{dQ} &lt; 0\\) e \\(Q &gt; 0\\), temos \\(Q \\dfrac{dP}{dQ} &lt; 0\\), portanto:\n\\[\\boxed{Rmg &lt; P}\\]\n\n\nIntuição: para vender uma unidade adicional, o monopolista baixa o preço. O ganho dessa unidade é \\(P\\), mas perde \\(Q \\cdot |dP/dQ|\\) nas unidades anteriores."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#rt-e-rmg-gráfico",
+    "href": "slides/21_problema_monopolista.html#rt-e-rmg-gráfico",
+    "title": "Microeconomia",
+    "section": "RT e Rmg — Gráfico",
+    "text": "RT e Rmg — Gráfico"
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#rmg-zona-elástica-e-zona-rígida",
+    "href": "slides/21_problema_monopolista.html#rmg-zona-elástica-e-zona-rígida",
+    "title": "Microeconomia",
+    "section": "Rmg, Zona Elástica e Zona Rígida",
+    "text": "Rmg, Zona Elástica e Zona Rígida\n\\[Rmg = P\\!\\left(1 + \\frac{1}{\\varepsilon_D}\\right) = P\\!\\left(1 - \\frac{1}{|\\varepsilon_D|}\\right)\\]\n\n\n\n\nZona da procura\n\\(|\\varepsilon_D|\\)\n\\(Rmg\\)\n\\(RT\\) ao aumentar \\(Q\\)\n\n\n\n\nElástica\n\\(&gt; 1\\)\n\\(&gt; 0\\)\nAumenta\n\n\nUnitária\n\\(= 1\\)\n\\(= 0\\)\nMáxima\n\n\nRígida\n\\(&lt; 1\\)\n\\(&lt; 0\\)\nDiminui\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nO monopolista nunca opera na zona rígida: baixar o preço aumentaria \\(Q\\) mas reduziria \\(RT\\) — e os custos também aumentariam. Logo, \\(\\Pi\\) diminuiria de forma garantida."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#condição-de-optimização",
+    "href": "slides/21_problema_monopolista.html#condição-de-optimização",
+    "title": "Microeconomia",
+    "section": "Condição de Optimização",
+    "text": "Condição de Optimização\nO monopolista maximiza o lucro:\n\\[\\max_Q \\ \\Pi = RT(Q) - CT(Q)\\]\n\nCondição de primeira ordem:\n\\[\\frac{d\\Pi}{dQ} = 0 \\iff \\underbrace{\\frac{dRT}{dQ}}_{Rmg} - \\underbrace{\\frac{dCT}{dQ}}_{Cmg} = 0\\]\n\\[\\boxed{Rmg = Cmg}\\]\n\n\n\n\n\n\n\n\nImportant\n\n\nA regra \\(Rmg = Cmg\\) é a mesma que em concorrência perfeita.\nA diferença: em CP, \\(Rmg = P\\); em monopólio, \\(Rmg &lt; P\\).\nLogo, o preço de monopólio está acima do custo marginal."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#porque-não-existe-curva-de-oferta-no-monopólio",
+    "href": "slides/21_problema_monopolista.html#porque-não-existe-curva-de-oferta-no-monopólio",
+    "title": "Microeconomia",
+    "section": "Porque não existe Curva de Oferta no Monopólio?",
+    "text": "Porque não existe Curva de Oferta no Monopólio?\nEm CP, a curva de oferta é \\(P = Cmg(Q)\\): para cada preço, a empresa escolhe \\(Q\\).\n\nNo monopólio, o preço não é dado \\(\\rightarrow\\) é determinado pela procura:\n\\[Q^* \\leftarrow Rmg = Cmg \\quad \\Rightarrow \\quad P^* = D(Q^*)\\]\n\n\nO mesmo \\(Q^*\\) pode corresponder a preços diferentes conforme a procura mude: não há uma relação unívoca preço-quantidade.\n\n\n\n\n\n\nNote\n\n\nNão existe curva de oferta do monopolista. A decisão de produção depende sempre da curva de procura enfrentada."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#determinação-de-q-p-e-lucro-gráfico",
+    "href": "slides/21_problema_monopolista.html#determinação-de-q-p-e-lucro-gráfico",
+    "title": "Microeconomia",
+    "section": "Determinação de Q*, P* e Lucro — Gráfico",
+    "text": "Determinação de Q*, P* e Lucro — Gráfico"
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#leitura-do-gráfico-passo-a-passo",
+    "href": "slides/21_problema_monopolista.html#leitura-do-gráfico-passo-a-passo",
+    "title": "Microeconomia",
+    "section": "Leitura do Gráfico: Passo a Passo",
+    "text": "Leitura do Gráfico: Passo a Passo\n\nEncontrar \\(Q^*\\): interseção de \\(Rmg\\) e \\(Cmg\\) \\(\\rightarrow\\) \\(Q^* = 4\\)\nSubir até à curva de procura \\(D\\) para obter \\(P^*\\): \\(P^* = 6\\)\nLer \\(CTM(Q^*) = 3\\) na curva de custo médio total\nLucro: \\(\\Pi = (P^* - CTM) \\times Q^* = (6-3) \\times 4 = 12\\)\n\n\n\n\n\n\n\n\nNote\n\n\nNote que o ponto de optimização \\(Rmg = Cmg\\) fica abaixo do preço. O preço lê-se sempre na curva de procura à quantidade óptima."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#comparação-de-excedentes",
+    "href": "slides/21_problema_monopolista.html#comparação-de-excedentes",
+    "title": "Microeconomia",
+    "section": "Comparação de Excedentes",
+    "text": "Comparação de Excedentes"
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#tabela-comparativa",
+    "href": "slides/21_problema_monopolista.html#tabela-comparativa",
+    "title": "Microeconomia",
+    "section": "Tabela Comparativa",
+    "text": "Tabela Comparativa\n\n\n\n\nConcorrência Perfeita\nMonopólio\n\n\n\n\nQuantidade\n\\(Q_{cp} = 8\\)\n\\(Q_m = 4\\)\n\n\nPreço\n\\(P_{cp} = 2\\)\n\\(P_m = 6\\)\n\n\nExcedente do Consumidor\n\\(32\\) (A+B+C)\n\\(8\\) (A)\n\n\nExcedente do Produtor\n\\(0\\)\n\\(16\\) (B)\n\n\nExcedente Total\n\\(32\\)\n\\(24\\)\n\n\nPerda de Excedente (DWL)\n—\n\\(8\\) (C)\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nO monopólio é ineficiente: a área C representa valor destruído — nem consumidores nem produtor a obtêm. Há transacções mutuamente vantajosas que não se realizam porque \\(P_m &gt; Cmg\\)."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#por-que-o-monopólio-é-ineficiente",
+    "href": "slides/21_problema_monopolista.html#por-que-o-monopólio-é-ineficiente",
+    "title": "Microeconomia",
+    "section": "Por que o Monopólio é Ineficiente?",
+    "text": "Por que o Monopólio é Ineficiente?\nEm concorrência perfeita: \\(P = Cmg\\): todas as unidades para as quais a disposição a pagar supera o custo são produzidas.\n\nEm monopólio: \\(P &gt; Cmg\\), entre \\(Q_m = 4\\) e \\(Q_{cp} = 8\\), há unidades cujo valor para o consumidor (\\(&lt; P_m\\) mas \\(&gt; Cmg\\)) nunca são produzidas.\n\n\n\n\n\n\n\n\nNote\n\n\nO produtor não produz essas unidades porque baixar o preço implicaria também baixá-lo nas unidades anteriores: o mecanismo de price-making gera a ineficiência."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#exercício-1-escolha-múltipla",
+    "href": "slides/21_problema_monopolista.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nUma empresa monopolista enfrenta a procura \\(P = 12 - 2Q\\) e tem custo marginal constante \\(Cmg = 4\\). A quantidade óptima de produção é:\n\n\\(Q^* = 2\\)\n\\(Q^* = 3\\)\n\n\\(Q^* = 4\\)\n\\(Q^* = 6\\)"
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#solução-exercício-1",
+    "href": "slides/21_problema_monopolista.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 1",
+    "text": "Solução — Exercício 1\n\\(Rmg = 12 - 4Q\\) (declive duplo da procura inversa).\nCondição: \\(Rmg = Cmg \\Rightarrow 12 - 4Q = 4 \\Rightarrow Q^* = 2\\).\nResposta: (a)\nPreço: \\(P^* = 12 - 2(2) = 8\\)."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#exercício-2-escolha-múltipla",
+    "href": "slides/21_problema_monopolista.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nComparando monopólio com concorrência perfeita (mesmos custos e procura), é sempre verdade que:\n\nO monopolista tem custos marginais mais elevados\nO preço de monopólio é superior ao preço de concorrência perfeita\nO excedente do produtor é nulo em monopólio\nO excedente total é igual nos dois casos"
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#solução-exercício-2",
+    "href": "slides/21_problema_monopolista.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 2",
+    "text": "Solução — Exercício 2\n\n\nFalso — os custos são iguais por hipótese\n\n(b) Verdadeiro — \\(P_m &gt; P_{cp}\\), uma vez que \\(Rmg &lt; P\\) leva o monopolista a produzir menos e cobrar mais\n\nFalso — o excedente do produtor em monopólio é positivo (é precisamente a razão pela qual o monopólio é preferível para o produtor)\n\n\nFalso — o excedente total é menor em monopólio (existe DWL)\n\n\nResposta: (b)"
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#exercício-de-desenvolvimento",
+    "href": "slides/21_problema_monopolista.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício de Desenvolvimento",
+    "text": "Exercício de Desenvolvimento\nUma empresa monopolista opera num mercado com procura inversa \\(P = 10 - Q\\).\nOs seus custos são: \\(CT = 2Q + 4\\) (custo fixo \\(CF = 4\\), custo marginal \\(Cmg = 2\\)).\nAlíneas:\n\nDerive a expressão da receita marginal (\\(Rmg\\)).\nDetermine a quantidade óptima \\(Q^*\\) e o preço \\(P^*\\).\nCalcule o lucro económico \\(\\Pi^*\\).\nCalcule o excedente do consumidor e o excedente do produtor em monopólio.\nDetermine o equilíbrio de concorrência perfeita (\\(Q_{cp}\\), \\(P_{cp}\\)).\nCalcule a perda de excedente (DWL) gerada pelo monopólio. Interprete."
+  },
+  {
+    "objectID": "slides/21_problema_monopolista.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/21_problema_monopolista.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício de Desenvolvimento",
+    "text": "Solução — Exercício de Desenvolvimento\na) \\(RT = (10-Q)Q = 10Q - Q^2 \\Rightarrow Rmg = 10 - 2Q\\)\n\nb) \\(Rmg = Cmg \\Rightarrow 10 - 2Q = 2 \\Rightarrow Q^* = 4\\)\n\\(P^* = 10 - 4 = 6\\)\n\n\nc) \\(CTM(4) = 2 + 4/4 = 3 \\Rightarrow \\Pi^* = (P^* - CTM) \\cdot Q^* = (6-3)\\cdot 4 = 12\\)\nOu directamente: \\(\\Pi = RT - CT = 6 \\cdot 4 - (2 \\cdot 4 + 4) = 24 - 12 = 12\\) ✓\n\n\nd) \\(XD_m = \\frac{1}{2}(10-6)\\cdot 4 = 8\\) (triângulo acima de \\(P^*\\))\n\\(XS_m = (P^* - Cmg)\\cdot Q^* = (6-2)\\cdot 4 = 16\\) (rectângulo, \\(Cmg\\) constante)\n\n\ne) \\(P = Cmg \\Rightarrow 10 - Q = 2 \\Rightarrow Q_{cp} = 8,\\ P_{cp} = 2\\)\n\n\nf) \\(DWL = \\frac{1}{2}(P_m - P_{cp})(Q_{cp} - Q_m) = \\frac{1}{2}(6-2)(8-4) = 8\\)\nO monopólio impede a realização de transacções entre \\(Q=4\\) e \\(Q=8\\) que seriam mutuamente vantajosas (disposição a pagar \\(&gt; Cmg = 2\\)), destruindo \\(8\\) unidades de excedente total."
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#características-definidoras",
+    "href": "slides/22_conc_monopolistica.html#características-definidoras",
+    "title": "Microeconomia",
+    "section": "Características Definidoras",
+    "text": "Características Definidoras\nA concorrência monopolística combina elementos dos dois modelos extremos:\n\nMuitas empresas — como em concorrência perfeita; nenhuma domina o mercado\nDiferenciação de produto — cada empresa oferece uma variante distinta; os produtos são substitutos próximos mas não perfeitos\nEntrada e saída livres — sem barreiras estruturais à entrada\nPoder de mercado limitado — a diferenciação confere algum poder, mas a concorrência de substitutos limita-o\n\n\n\n\n\n\n\n\nNote\n\n\nA diferenciação significa que cada empresa enfrenta uma curva de procura com inclinação negativa — ao contrário da empresa em CP que enfrenta procura horizontal."
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#exemplos-reais",
+    "href": "slides/22_conc_monopolistica.html#exemplos-reais",
+    "title": "Microeconomia",
+    "section": "Exemplos Reais",
+    "text": "Exemplos Reais\n\nRestaurantes — servem refeições (substitutos próximos), mas cada um tem cozinha, ambiente e localização distintos\nMarcas de roupa — t-shirts de diferentes marcas satisfazem a mesma necessidade, mas diferem em estilo e imagem\nAplicações móveis — editores de texto, apps de fitness, jogos casuais: muitas opções, cada uma ligeiramente diferente\nCabeleireiros, ginásios, cafés — serviços standardizáveis mas com forte componente local e identitária\n\n\n\n\n\n\n\n\nTip\n\n\nO ponto-chave: os consumidores valorizam a variedade. A diferenciação não é artificial \\(\\rightarrow\\) responde a preferências heterogéneas."
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#posição-no-espectro-de-mercados",
+    "href": "slides/22_conc_monopolistica.html#posição-no-espectro-de-mercados",
+    "title": "Microeconomia",
+    "section": "Posição no Espectro de Mercados",
+    "text": "Posição no Espectro de Mercados\n\n\n\n\nConc. Perfeita\nConc. Monop.\nOligopólio\nMonopólio\n\n\n\n\nN.º empresas\nMuitas\nMuitas\nPoucas\nUma\n\n\nProduto\nHomogéneo\nDiferenciado\nHomo/Difer.\nÚnico\n\n\nEntrada\nLivre\nLivre\nBarreiras\nBloqueada\n\n\nCurva D\nHorizontal\nDecrescente\nDecrescente\nDecrescente\n\n\n\\(P\\) vs \\(Cmg\\)\n\\(P=Cmg\\)\n\\(P&gt;Cmg\\)\n\\(P&gt;Cmg\\)\n\\(P&gt;Cmg\\)\n\n\nLucro LP\nZero\nZero\nPositivo\nPositivo"
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#comportamento-no-curto-prazo",
+    "href": "slides/22_conc_monopolistica.html#comportamento-no-curto-prazo",
+    "title": "Microeconomia",
+    "section": "Comportamento no Curto Prazo",
+    "text": "Comportamento no Curto Prazo\nNo curto prazo, o número de empresas está fixo. A empresa comporta-se como um monopolista sobre a sua variante:\n\nEnfrenta uma curva de procura com inclinação negativa\nCalcula \\(Rmg\\) e iguala a \\(Cmg\\)\nPode obter lucro económico positivo\n\n\nA condição de optimização é exactamente a mesma que no monopólio:\n\\[Rmg = Cmg \\quad \\Rightarrow \\quad Q^*_{cp},\\ P^*_{cp}\\]\n\n\nCom \\(P^*_{cp} &gt; CTM(Q^*_{cp})\\), o lucro é positivo: \\(\\Pi_{cp} &gt; 0\\)."
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#equilíbrio-de-curto-prazo-gráfico",
+    "href": "slides/22_conc_monopolistica.html#equilíbrio-de-curto-prazo-gráfico",
+    "title": "Microeconomia",
+    "section": "Equilíbrio de Curto Prazo: Gráfico",
+    "text": "Equilíbrio de Curto Prazo: Gráfico"
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#leitura-do-gráfico-de-curto-prazo",
+    "href": "slides/22_conc_monopolistica.html#leitura-do-gráfico-de-curto-prazo",
+    "title": "Microeconomia",
+    "section": "Leitura do Gráfico de Curto Prazo",
+    "text": "Leitura do Gráfico de Curto Prazo\n\n\\(Rmg = Cmg\\): \\(18 - 4Q = 2Q \\Rightarrow Q^*_{cp} = 3\\)\nPreço na curva de procura: \\(P^*_{cp} = 18 - 2(3) = 12\\)\nCusto médio: \\(CTM(3) = 3 + 12/3 = 7\\)\nLucro: \\(\\Pi = (12 - 7) \\times 3 = 15 &gt; 0\\)\n\n\n\n\n\n\n\n\nImportant\n\n\nO lucro positivo (\\(\\Pi = 15\\)) é um sinal de mercado: novas empresas têm incentivo a entrar com produtos diferenciados. Este processo leva ao equilíbrio de longo prazo."
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#o-mecanismo-de-entrada",
+    "href": "slides/22_conc_monopolistica.html#o-mecanismo-de-entrada",
+    "title": "Microeconomia",
+    "section": "O Mecanismo de Entrada",
+    "text": "O Mecanismo de Entrada\nCom lucros positivos no curto prazo, novas empresas entram no mercado com produtos diferenciados. O que acontece?\n\nOs consumidores distribuem-se por mais variantes\nA procura que cada empresa enfrenta desloca-se para a esquerda (menor quantidade para cada preço)\nTambém se torna mais elástica (mais substitutos disponíveis)\nOs lucros de cada empresa diminuem\n\n\nO processo continua até que o lucro económico seja nulo: \\(\\Pi = 0\\).\n\n\n\n\n\n\n\n\nNote\n\n\nTal como em concorrência perfeita, a entrada livre elimina os lucros no longo prazo. A diferença está na forma como esse equilíbrio é atingido."
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#condição-de-equilíbrio-de-longo-prazo",
+    "href": "slides/22_conc_monopolistica.html#condição-de-equilíbrio-de-longo-prazo",
+    "title": "Microeconomia",
+    "section": "Condição de Equilíbrio de Longo Prazo",
+    "text": "Condição de Equilíbrio de Longo Prazo\nEm LP, duas condições são satisfeitas simultaneamente:\n\n1. Optimização: a empresa maximiza o lucro dado que enfrenta curva D com inclinação negativa: \\[Rmg = Cmg\\]\n\n\n2. Lucro nulo: a entrada eliminou todos os lucros extraordinários: \\[P = CTM\\]\n\n\nEstas duas condições implicam que a curva de procura é tangente à curva CTM no ponto de equilíbrio."
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#equilíbrio-de-longo-prazo-gráfico",
+    "href": "slides/22_conc_monopolistica.html#equilíbrio-de-longo-prazo-gráfico",
+    "title": "Microeconomia",
+    "section": "Equilíbrio de Longo Prazo — Gráfico",
+    "text": "Equilíbrio de Longo Prazo — Gráfico"
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#leitura-do-gráfico-de-longo-prazo",
+    "href": "slides/22_conc_monopolistica.html#leitura-do-gráfico-de-longo-prazo",
+    "title": "Microeconomia",
+    "section": "Leitura do Gráfico de Longo Prazo",
+    "text": "Leitura do Gráfico de Longo Prazo\n\n\\(Rmg = Cmg\\): \\(12 - 4Q = 2Q \\Rightarrow Q^*_{lp} = 2\\)\nPreço: \\(P^*_{lp} = 12 - 2(2) = 8\\)\n\\(CTM(2) = 2 + 12/2 = 8\\) — tangência confirmada: \\(P = CTM\\) ✓\nLucro: \\(\\Pi = (8-8) \\times 2 = 0\\) ✓\n\\(Cmg(2) = 4 &lt; P = 8\\) — ineficiência persiste ✓\n\n\n\n\n\n\n\n\nImportant\n\n\nMesmo com lucro zero, \\(P &gt; Cmg\\): o equilíbrio de longo prazo não é eficiente. Esta é a ineficiência residual da concorrência monopolística."
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#duas-ineficiências-no-equilíbrio-de-lp",
+    "href": "slides/22_conc_monopolistica.html#duas-ineficiências-no-equilíbrio-de-lp",
+    "title": "Microeconomia",
+    "section": "Duas Ineficiências no Equilíbrio de LP",
+    "text": "Duas Ineficiências no Equilíbrio de LP\n1. \\(P &gt; Cmg\\) — Ineficiência alocativa\n\nEm CP: \\(P = Cmg\\) — todas as unidades mutuamente vantajosas são produzidas\nEm conc. monop. LP: \\(P = 8 &gt; Cmg = 4\\) — há unidades que não se produzem, apesar de a disposição a pagar superar o custo\n\n\n2. Excesso de capacidade — Ineficiência produtiva\n\nA empresa produz \\(Q^*_{lp} = 2\\)\nO mínimo de \\(CTM\\) ocorre em \\(Q \\approx 3.46\\)\nCada empresa opera abaixo da escala mínima eficiente\n\n\n\n\n\n\n\n\n\nNote\n\n\nEm CP perfeita, no LP cada empresa produz no mínimo de \\(CTM\\). Em conc. monopolística, a tangência ocorre na parte decrescente do CTM — sempre à esquerda do mínimo."
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#o-trade-off-variedade-vs.-ineficiência",
+    "href": "slides/22_conc_monopolistica.html#o-trade-off-variedade-vs.-ineficiência",
+    "title": "Microeconomia",
+    "section": "O Trade-off: Variedade vs. Ineficiência",
+    "text": "O Trade-off: Variedade vs. Ineficiência\nA concorrência monopolística é ineficiente — mas isso é necessariamente mau?\n\nArgumentos contra (custo da diferenciação):\n\nExcesso de capacidade: recursos não usados na escala eficiente\n\\(P &gt; Cmg\\): transacções mutuamente vantajosas não realizadas\n“Demasiados” produtos semelhantes no mercado\n\n\n\nArgumentos a favor (benefício da variedade):\n\nOs consumidores valorizam a variedade — não é indiferente ter só um produto homogéneo\nA diferenciação pode reflectir inovação e qualidade\nO excedente do consumidor derivado da variedade pode compensar a ineficiência\n\n\n\n\n\n\n\n\n\nTip\n\n\nNão há uma resposta única. O juízo depende do quanto os consumidores valorizam a diversidade face ao ganho de eficiência de ter menos variantes a menor custo."
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#exercício-1-escolha-múltipla",
+    "href": "slides/22_conc_monopolistica.html#exercício-1-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 1 — Escolha Múltipla",
+    "text": "Exercício 1 — Escolha Múltipla\nNo equilíbrio de longo prazo de uma empresa em concorrência monopolística, é verdade que:\n\n\\(P = Cmg\\) e \\(\\Pi = 0\\)\n\\(P = CTM\\) e \\(P = Cmg\\)\n\\(P = CTM\\) e \\(P &gt; Cmg\\)\n\\(P &gt; CTM\\) e \\(\\Pi &gt; 0\\)"
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#solução-exercício-1",
+    "href": "slides/22_conc_monopolistica.html#solução-exercício-1",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 1",
+    "text": "Solução — Exercício 1\nNo LP da conc. monopolística:\n\nA entrada livre elimina lucros: \\(P = CTM\\) ✓\nA empresa tem poder de mercado (\\(D\\) com inclinação negativa): \\(Rmg &lt; P\\), logo \\(Rmg = Cmg\\) implica \\(P &gt; Cmg\\) ✓\n\nA combinação \\(P = CTM\\) com \\(P &gt; Cmg\\) é o que define o equilíbrio de tangência.\nResposta: (c)"
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#exercício-2-escolha-múltipla",
+    "href": "slides/22_conc_monopolistica.html#exercício-2-escolha-múltipla",
+    "title": "Microeconomia",
+    "section": "Exercício 2 — Escolha Múltipla",
+    "text": "Exercício 2 — Escolha Múltipla\nUma empresa em concorrência monopolística tem lucros positivos no curto prazo. No longo prazo, esperamos que:\n\nO preço desça, a quantidade suba, e o lucro fique positivo\nNovas empresas entrem, a procura de cada empresa se desloque para a esquerda, e o lucro tenda para zero\nA empresa aumente a produção até ao mínimo de CTM, eliminando o excesso de capacidade\nO mercado converja para concorrência perfeita, com \\(P = Cmg\\)"
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#solução-exercício-2",
+    "href": "slides/22_conc_monopolistica.html#solução-exercício-2",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício 2",
+    "text": "Solução — Exercício 2\n\n\nIncorrecto — o preço desce mas o lucro converge para zero, não permanece positivo\n\n(b) Correcto — a entrada de rivais com produtos diferenciados desloca a procura de cada empresa para a esquerda até \\(\\Pi = 0\\)\n\nIncorrecto — a tangência ocorre à esquerda do mínimo de CTM; o excesso de capacidade persiste no LP\n\n\nIncorrecto — \\(P &gt; Cmg\\) mantém-se no LP porque a procura continua a ter inclinação negativa\n\n\nResposta: (b)"
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#exercício-de-desenvolvimento",
+    "href": "slides/22_conc_monopolistica.html#exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Exercício de Desenvolvimento",
+    "text": "Exercício de Desenvolvimento\nUma empresa em concorrência monopolística tem estrutura de custos \\(CT = Q^2 + 12\\) e enfrenta, no curto prazo, a procura inversa \\(P = 18 - 2Q\\).\nAlíneas:\n\nDetermine o custo marginal (\\(Cmg\\)) e o custo total médio (\\(CTM\\)).\nCalcule a quantidade óptima \\(Q^*_{cp}\\), o preço \\(P^*_{cp}\\) e o lucro de curto prazo \\(\\Pi_{cp}\\).\nExplique o mecanismo pelo qual o mercado converge para o equilíbrio de longo prazo.\nNo longo prazo, a procura que a empresa enfrenta é \\(P = 12 - 2Q\\). Verifique que esta curva é tangente ao \\(CTM\\) e calcule \\(Q^*_{lp}\\), \\(P^*_{lp}\\) e \\(\\Pi_{lp}\\).\nCompare \\(P^*_{lp}\\) com \\(Cmg(Q^*_{lp})\\). O equilíbrio de LP é eficiente? Justifique."
+  },
+  {
+    "objectID": "slides/22_conc_monopolistica.html#solução-exercício-de-desenvolvimento",
+    "href": "slides/22_conc_monopolistica.html#solução-exercício-de-desenvolvimento",
+    "title": "Microeconomia",
+    "section": "Solução — Exercício de Desenvolvimento",
+    "text": "Solução — Exercício de Desenvolvimento\na) \\(Cmg = \\dfrac{dCT}{dQ} = 2Q\\) \\(\\quad;\\quad\\) \\(CTM = \\dfrac{Q^2+12}{Q} = Q + \\dfrac{12}{Q}\\)\n\nb) \\(Rmg = 18-4Q\\). \\(\\quad Rmg=Cmg \\Rightarrow 18-4Q=2Q \\Rightarrow Q^*_{cp}=3\\)\n\\(P^*_{cp} = 18-6 = 12\\) \\(\\quad;\\quad\\) \\(CTM(3)=3+4=7\\) \\(\\quad;\\quad\\) \\(\\Pi = (12-7)\\times 3 = 15\\)\n\n\nc) O lucro positivo (\\(\\Pi=15\\)) atrai novas empresas com produtos diferenciados. A entrada divide a procura por mais variantes, deslocando a curva \\(D\\) de cada empresa para a esquerda. O processo continua até \\(\\Pi=0\\).\n\n\nd) \\(Rmg_{lp}=12-4Q\\). \\(\\quad Rmg=Cmg \\Rightarrow 12-4Q=2Q \\Rightarrow Q^*_{lp}=2\\)\n\\(P^*_{lp}=12-4=8\\) \\(\\quad;\\quad\\) \\(CTM(2)=2+6=8\\) \\(\\quad\\Rightarrow\\quad P=CTM\\) ✓ (tangência)\n\\(\\Pi_{lp}=(8-8)\\times 2=0\\) ✓\nVerificação da tangência: \\(\\dfrac{dD}{dQ}\\big|_{Q=2}=-2\\) \\(\\quad;\\quad\\) \\(\\dfrac{dCTM}{dQ}\\big|_{Q=2}=1-\\dfrac{12}{4}=-2\\) ✓\n\n\ne) \\(Cmg(2)=4 &lt; P^*_{lp}=8\\). O equilíbrio não é eficiente: \\(P&gt;Cmg\\) significa que há unidades não produzidas para as quais a disposição a pagar supera o custo. A empresa produz \\(Q=2\\), abaixo da escala eficiente (\\(Q_{minCTM}\\approx 3.46\\)) — há excesso de capacidade."
   }
 ]

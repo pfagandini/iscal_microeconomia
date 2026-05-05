@@ -185,7 +185,7 @@ O monopolista **nunca opera na zona rígida**: baixar o preço aumentaria $Q$ ma
 
 # Optimização do Monopolista {background-color="#2C3E7A"}
 
-## Condição de Optimização
+## Condição de Optimização {.smaller}
 
 O monopolista maximiza o lucro:
 
