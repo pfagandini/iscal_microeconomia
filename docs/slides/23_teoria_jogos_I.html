@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.26">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="ISCAL - IPL">
   <title>Iscal - Microeconomia (Plano de Transição) – Microeconomia</title>
@@ -206,15 +206,32 @@ ISCAL - IPL
 <h2>Forma Normal: A Matriz de Payoffs</h2>
 <p>Com dois jogadores e duas estratégias cada, o jogo representa-se numa <strong>matriz <span class="math inline">\(2\times2\)</span></strong>:</p>
 <div class="fragment">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="23_teoria_jogos_I_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+<table class="caption-top">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 35%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Empresa B: <span class="math inline">\(s_{B1}\)</span></strong></th>
+<th style="text-align: center;"><strong>Empresa B: <span class="math inline">\(s_{B2}\)</span></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Empresa A: <span class="math inline">\(s_{A1}\)</span></strong></td>
+<td style="text-align: center;"><span class="math inline">\((\pi_A^{11},\ \pi_B^{11})\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((\pi_A^{12},\ \pi_B^{12})\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Empresa A: <span class="math inline">\(s_{A2}\)</span></strong></td>
+<td style="text-align: center;"><span class="math inline">\((\pi_A^{21},\ \pi_B^{21})\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((\pi_A^{22},\ \pi_B^{22})\)</span></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="fragment">
 <p>Convenção: cada célula mostra <span class="math inline">\((\pi_A,\ \pi_B)\)</span> — <strong>primeiro o payoff da empresa que escolhe a linha</strong>, segundo o da coluna.</p>
@@ -253,6 +270,40 @@ ISCAL - IPL
 </div>
 <div class="fragment">
 <p>Se este processo conduz a uma única célula, temos um <strong>equilíbrio em estratégias dominantes</strong>.</p>
+</div>
+</section>
+<section id="exemplo-dominância-e-ieds" class="slide level2">
+<h2>Exemplo: Dominância e IEDS</h2>
+<p>Considere o seguinte jogo:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Jogador B: <span class="math inline">\(s_{B1}\)</span></strong></th>
+<th style="text-align: center;"><strong>Jogador B: <span class="math inline">\(s_{B2}\)</span></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Jogador A: <span class="math inline">\(s_{A1}\)</span></strong></td>
+<td style="text-align: center;"><span class="math inline">\((3, 2)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((4, 1)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Jogador A: <span class="math inline">\(s_{A2}\)</span></strong></td>
+<td style="text-align: center;"><span class="math inline">\((1, 3)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((2, 4)\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p><strong>1. Análise do Jogador A:</strong> - Se B joga <span class="math inline">\(s_{B1}\)</span>: <span class="math inline">\(3 &gt; 1 \Rightarrow s_{A1}\)</span> é melhor. - Se B joga <span class="math inline">\(s_{B2}\)</span>: <span class="math inline">\(4 &gt; 2 \Rightarrow s_{A1}\)</span> é melhor. - <span class="math inline">\(\therefore s_{A1}\)</span> <strong>domina estritamente</strong> <span class="math inline">\(s_{A2}\)</span>. O Jogador A eliminará <span class="math inline">\(s_{A2}\)</span>.</p>
+</div>
+<div class="fragment">
+<p><strong>2. Análise do Jogador B (após a eliminação de <span class="math inline">\(s_{A2}\)</span>):</strong> - Sabendo que A jogará <span class="math inline">\(s_{A1}\)</span>, o Jogador B compara os seus payoffs na primeira linha: <span class="math inline">\(2 &gt; 1\)</span>. - <span class="math inline">\(\therefore s_{B1}\)</span> é a melhor resposta ao jogar <span class="math inline">\(s_{A1}\)</span>.</p>
+</div>
+<div class="fragment">
+<p><strong>Resultado IEDS:</strong> O jogo converge para o perfil de estratégias <strong><span class="math inline">\((s_{A1}, s_{B1})\)</span></strong>.</p>
 </div>
 </section>
 <section id="equilíbrio-de-nash" class="slide level2">
@@ -318,15 +369,27 @@ ISCAL - IPL
 <li><strong>Confessar</strong> (delatar o cúmplice)</li>
 </ul>
 <div class="fragment">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="23_teoria_jogos_I_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Suspeito B: Calar</strong></th>
+<th style="text-align: center;"><strong>Suspeito B: Confessar</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Suspeito A: Calar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((4, 4)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((0, 5)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Suspeito A: Confessar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((5, 0)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((1, 1)\)</span></td>
+</tr>
+</tbody>
+</table>
 <p><em>(payoffs = anos de prisão evitados — maior é melhor)</em></p>
 </div>
 </section>
@@ -371,15 +434,27 @@ ISCAL - IPL
 </ul>
 </div>
 <div class="fragment">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="23_teoria_jogos_I_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Empresa B: Cooperar</strong></th>
+<th style="text-align: center;"><strong>Empresa B: Delatar</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Empresa A: Cooperar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((6, 6)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((0, 8)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Empresa A: Delatar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((8, 0)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((2, 2)\)</span></td>
+</tr>
+</tbody>
+</table>
 <p><em>(payoffs em milhares de euros de lucro líquido)</em></p>
 </div>
 </section>
@@ -420,15 +495,27 @@ ISCAL - IPL
 <h2>Jogos de Coordenação</h2>
 <p>Nem todos os jogos têm a estrutura problemática do dilema do prisioneiro:</p>
 <div class="fragment">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="23_teoria_jogos_I_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Jogador B: Esquerda</strong></th>
+<th style="text-align: center;"><strong>Jogador B: Direita</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Jogador A: Esquerda</strong></td>
+<td style="text-align: center;"><span class="math inline">\((3, 3)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((0, 0)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Jogador A: Direita</strong></td>
+<td style="text-align: center;"><span class="math inline">\((0, 0)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((3, 3)\)</span></td>
+</tr>
+</tbody>
+</table>
 <p><em>(Exemplo: lados de circulação no trânsito)</em></p>
 </div>
 <div class="fragment">
@@ -498,8 +585,28 @@ ISCAL - IPL
 <section id="exercício-1-escolha-múltipla" class="slide level2">
 <h2>Exercício 1 — Escolha Múltipla</h2>
 <p>Considere a seguinte matriz de payoffs <span class="math inline">\((\pi_A,\ \pi_B)\)</span>:</p>
-
-<img data-src="23_teoria_jogos_I_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><p>O Equilíbrio de Nash desta matriz é:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Empresa B: Alto</strong></th>
+<th style="text-align: center;"><strong>Empresa B: Baixo</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Empresa A: Alto</strong></td>
+<td style="text-align: center;"><span class="math inline">\((3, 3)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((1, 5)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Empresa A: Baixo</strong></td>
+<td style="text-align: center;"><span class="math inline">\((5, 1)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((2, 2)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>O Equilíbrio de Nash desta matriz é:</p>
 <ol type="a">
 <li>(Alto, Alto) = (3, 3)</li>
 <li>(Alto, Baixo) = (1, 5)</li>
@@ -546,8 +653,28 @@ ISCAL - IPL
 <p>Duas empresas, A e B, participavam num cartel ilegal. A autoridade da concorrência abre uma investigação e contacta cada empresa separadamente, oferecendo <strong>imunidade total</strong> à primeira a colaborar.</p>
 <p>Cada empresa pode <strong>Cooperar</strong> (manter silêncio) ou <strong>Delatar</strong> (colaborar com a autoridade).</p>
 <p>Os payoffs (lucro líquido esperado, em milhares de euros) são:</p>
-
-<img data-src="23_teoria_jogos_I_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><ol type="a">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Empresa B: Cooperar</strong></th>
+<th style="text-align: center;"><strong>Empresa B: Delatar</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Empresa A: Cooperar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((6, 6)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((0, 8)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Empresa A: Delatar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((8, 0)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((2, 2)\)</span></td>
+</tr>
+</tbody>
+</table>
+<ol type="a">
 <li>Mostre que <strong>Delatar</strong> é uma estratégia estritamente dominante para a Empresa A.</li>
 <li>Identifique o Equilíbrio de Nash. Qual o payoff de cada empresa?</li>
 <li>Qual o resultado colectivamente óptimo? Compare com o EN.</li>

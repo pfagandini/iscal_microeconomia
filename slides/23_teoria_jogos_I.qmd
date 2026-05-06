@@ -99,23 +99,10 @@ Com dois jogadores e duas estratégias cada, o jogo representa-se numa **matriz 
 
 . . .
 
-```{r, engine='tikz', engine.opts=list(extra.preamble="\\usetikzlibrary{matrix}")}
-\begin{tikzpicture}[every node/.style={scale=0.85}]
-  \matrix (m) [
-    matrix of nodes,
-    nodes={minimum width=2.2cm, minimum height=1.1cm, align=center},
-    column sep=0pt, row sep=0pt
-  ]{
-                    & \textbf{Empresa B: $s_{B1}$} & \textbf{Empresa B: $s_{B2}$} \\
-    \textbf{Empresa A: $s_{A1}$} & $(\pi_A^{11},\ \pi_B^{11})$ & $(\pi_A^{12},\ \pi_B^{12})$ \\
-    \textbf{Empresa A: $s_{A2}$} & $(\pi_A^{21},\ \pi_B^{21})$ & $(\pi_A^{22},\ \pi_B^{22})$ \\
-  };
-  \draw (m-1-2.north west) -- (m-3-2.south west);
-  \draw (m-1-3.north west) -- (m-3-3.south west);
-  \draw (m-2-1.north west) -- (m-2-3.north east);
-  \draw (m-3-1.north west) -- (m-3-3.north east);
-\end{tikzpicture}
-```
+| | **Empresa B: $s_{B1}$** | **Empresa B: $s_{B2}$** |
+|:---|:---:|:---:|
+| **Empresa A: $s_{A1}$** | $(\pi_A^{11},\ \pi_B^{11})$ | $(\pi_A^{12},\ \pi_B^{12})$ |
+| **Empresa A: $s_{A2}$** | $(\pi_A^{21},\ \pi_B^{21})$ | $(\pi_A^{22},\ \pi_B^{22})$ |
 
 . . .
 
@@ -146,6 +133,32 @@ Se existe uma estratégia dominante para um jogador, um agente racional **nunca*
 . . .
 
 Se este processo conduz a uma única célula, temos um **equilíbrio em estratégias dominantes**.
+
+## Exemplo: Dominância e IEDS
+
+Considere o seguinte jogo:
+
+| | **Jogador B: $s_{B1}$** | **Jogador B: $s_{B2}$** |
+|:---|:---:|:---:|
+| **Jogador A: $s_{A1}$** | $(3, 2)$ | $(4, 1)$ |
+| **Jogador A: $s_{A2}$** | $(1, 3)$ | $(2, 4)$ |
+
+. . .
+
+**1. Análise do Jogador A:**
+- Se B joga $s_{B1}$: $3 > 1 \Rightarrow s_{A1}$ é melhor.
+- Se B joga $s_{B2}$: $4 > 2 \Rightarrow s_{A1}$ é melhor.
+- $\therefore s_{A1}$ **domina estritamente** $s_{A2}$. O Jogador A eliminará $s_{A2}$.
+
+. . .
+
+**2. Análise do Jogador B (após a eliminação de $s_{A2}$):**
+- Sabendo que A jogará $s_{A1}$, o Jogador B compara os seus payoffs na primeira linha: $2 > 1$.
+- $\therefore s_{B1}$ é a melhor resposta ao jogar $s_{A1}$.
+
+. . .
+
+**Resultado IEDS:** O jogo converge para o perfil de estratégias **$(s_{A1}, s_{B1})$**.
 
 ## Equilíbrio de Nash
 
@@ -196,28 +209,10 @@ Dois suspeitos são detidos e interrogados separadamente. Cada um pode:
 
 . . .
 
-```{r,engine='tikz'}
-\begin{tikzpicture}[every node/.style={scale=0.82}]
-  \node at (2.5, 1.7) {\textbf{Suspeito B}};
-  \node at (2.1, 1.2) {\textit{Calar}};
-  \node at (3.8, 1.2) {\textit{Confessar}};
-  \node[rotate=90] at (0.3, 0) {\textbf{Suspeito A}};
-  \node[rotate=90] at (0.55,  0.4) {\textit{Calar}};
-  \node[rotate=90] at (0.55, -0.8) {\textit{Confessar}};
-
-  \draw[thick] (1.0, 1.0) -- (1.0,-1.5);
-  \draw[thick] (1.0, 0.0) -- (5.0, 0.0);
-
-  \node at (2.1,  0.5) {$(4,\ 4)$};
-  \node at (3.8,  0.5) {$(0,\ 5)$};
-  \node at (2.1, -0.7) {$(5,\ 0)$};
-  \node at (3.8, -0.7) {$(1,\ 1)$};
-
-  \draw (1.0, 1.0) rectangle (5.0,-1.5);
-  \draw (3.0, 1.0) -- (3.0,-1.5);
-  \draw (1.0, 0.0) -- (5.0, 0.0);
-\end{tikzpicture}
-```
+| | **Suspeito B: Calar** | **Suspeito B: Confessar** |
+|:---|:---:|:---:|
+| **Suspeito A: Calar** | $(4, 4)$ | $(0, 5)$ |
+| **Suspeito A: Confessar** | $(5, 0)$ | $(1, 1)$ |
 
 *(payoffs = anos de prisão evitados — maior é melhor)*
 
@@ -261,28 +256,10 @@ Duas empresas num cartel podem:
 
 . . .
 
-```{r, engine='tikz'}
-\begin{tikzpicture}[every node/.style={scale=0.82}]
-  \node at (2.5, 1.6) {\textbf{Empresa B}};
-  \node at (2.0, 1.2) {\textit{Cooperar}};
-  \node at (3.9, 1.2) {\textit{Delatar}};
-  \node[rotate=90] at (0.3, 0) {\textbf{Empresa A}};
-  \node[rotate=90] at (0.6,  0.4) {\textit{Cooperar}};
-  \node[rotate=90] at (0.6, -0.8) {\textit{Delatar}};
-
-  \draw[thick] (1.0, 1.0) -- (1.0,-1.5);
-  \draw[thick] (1.0, 0.0) -- (5.0, 0.0);
-
-  \node at (2.0,  0.5) {$(6,\ 6)$};
-  \node at (3.9,  0.5) {$(0,\ 8)$};
-  \node at (2.0, -0.7) {$(8,\ 0)$};
-  \node at (3.9, -0.7) {$(2,\ 2)$};
-
-  \draw (1.0, 1.0) rectangle (5.0,-1.5);
-  \draw (3.0, 1.0) -- (3.0,-1.5);
-  \draw (1.0, 0.0) -- (5.0, 0.0);
-\end{tikzpicture}
-```
+| | **Empresa B: Cooperar** | **Empresa B: Delatar** |
+|:---|:---:|:---:|
+| **Empresa A: Cooperar** | $(6, 6)$ | $(0, 8)$ |
+| **Empresa A: Delatar** | $(8, 0)$ | $(2, 2)$ |
 
 *(payoffs em milhares de euros de lucro líquido)*
 
@@ -317,27 +294,10 @@ Nem todos os jogos têm a estrutura problemática do dilema do prisioneiro:
 
 . . .
 
-```{r, engine='tikz'}
-\begin{tikzpicture}[every node/.style={scale=0.82}]
-  \node at (2.7, 1.6) {\textbf{Jogador B}};
-  \node at (2.1, 1.2) {\textit{Esquerda}};
-  \node at (3.9, 1.2) {\textit{Direita}};
-  \node[rotate=90] at (0.4, 0) {\textbf{Jogador A}};
-  \node[rotate=90] at (0.7,  0.4) {\textit{Esquerda}};
-  \node[rotate=90] at (0.7, -0.8) {\textit{Direita}};
-
-  \draw[thick] (1.0, 1.0) -- (1.0,-1.5);
-
-  \node at (2.1,  0.5) {$(3,\ 3)$};
-  \node at (3.9,  0.5) {$(0,\ 0)$};
-  \node at (2.1, -0.7) {$(0,\ 0)$};
-  \node at (3.9, -0.7) {$(3,\ 3)$};
-
-  \draw (1.0, 1.0) rectangle (5.0,-1.5);
-  \draw (3.0, 1.0) -- (3.0,-1.5);
-  \draw (1.0, 0.0) -- (5.0, 0.0);
-\end{tikzpicture}
-```
+| | **Jogador B: Esquerda** | **Jogador B: Direita** |
+|:---|:---:|:---:|
+| **Jogador A: Esquerda** | $(3, 3)$ | $(0, 0)$ |
+| **Jogador A: Direita** | $(0, 0)$ | $(3, 3)$ |
 
 *(Exemplo: lados de circulação no trânsito)*
 
@@ -371,23 +331,10 @@ Na próxima aula aplicamos estes conceitos ao oligopólio: o modelo de Cournot �
 
 Considere a seguinte matriz de payoffs $(\pi_A,\ \pi_B)$:
 
-```{r, engine='tikz'}
-\begin{tikzpicture}[every node/.style={scale=0.85}]
-  \node at (2.5, 1.5) {\textbf{Empresa B}};
-  \node at (2.0, 1.15) {\textit{Alto}};
-  \node at (3.8, 1.15) {\textit{Baixo}};
-  \node[rotate=90] at (0.3, 0) {\textbf{Empresa A}};
-  \node[rotate=90] at (0.55,  0.4) {\textit{Alto}};
-  \node[rotate=90] at (0.55, -0.8) {\textit{Baixo}};
-  \node at (2.0,  0.5) {$(3,\ 3)$};
-  \node at (3.8,  0.5) {$(1,\ 5)$};
-  \node at (2.0, -0.7) {$(5,\ 1)$};
-  \node at (3.8, -0.7) {$(2,\ 2)$};
-  \draw (1.0, 1.0) rectangle (5.0,-1.5);
-  \draw (3.0, 1.0) -- (3.0,-1.5);
-  \draw (1.0, 0.0) -- (5.0, 0.0);
-\end{tikzpicture}
-```
+| | **Empresa B: Alto** | **Empresa B: Baixo** |
+|:---|:---:|:---:|
+| **Empresa A: Alto** | $(3, 3)$ | $(1, 5)$ |
+| **Empresa A: Baixo** | $(5, 1)$ | $(2, 2)$ |
 
 O Equilíbrio de Nash desta matriz é:
 
@@ -438,23 +385,10 @@ Cada empresa pode **Cooperar** (manter silêncio) ou **Delatar** (colaborar com 
 
 Os payoffs (lucro líquido esperado, em milhares de euros) são:
 
-```{r, engine='tikz'}
-\begin{tikzpicture}[every node/.style={scale=0.85}]
-  \node at (2.5, 1.7) {\textbf{Empresa B}};
-  \node at (2.0, 1.1) {\textit{Cooperar}};
-  \node at (3.9, 1.1) {\textit{Delatar}};
-  \node[rotate=90] at (0, 0) {\textbf{Empresa A}};
-  \node[rotate=90] at (0.6,  0.4) {\textit{Cooperar}};
-  \node[rotate=90] at (0.6, -0.8) {\textit{Delatar}};
-  \node at (2.0,  0.5) {$(6,\ 6)$};
-  \node at (3.9,  0.5) {$(0,\ 8)$};
-  \node at (2.0, -0.7) {$(8,\ 0)$};
-  \node at (3.9, -0.7) {$(2,\ 2)$};
-  \draw (1.0, 1.0) rectangle (5.0,-1.5);
-  \draw (3.0, 1.0) -- (3.0,-1.5);
-  \draw (1.0, 0.0) -- (5.0, 0.0);
-\end{tikzpicture}
-```
+| | **Empresa B: Cooperar** | **Empresa B: Delatar** |
+|:---|:---:|:---:|
+| **Empresa A: Cooperar** | $(6, 6)$ | $(0, 8)$ |
+| **Empresa A: Delatar** | $(8, 0)$ | $(2, 2)$ |
 
 :::{.nonincremental}
 a) Mostre que **Delatar** é uma estratégia estritamente dominante para a Empresa A.

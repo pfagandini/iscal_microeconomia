@@ -7354,7 +7354,7 @@
     "href": "slides/23_teoria_jogos_I.html#forma-normal-a-matriz-de-payoffs",
     "title": "Microeconomia",
     "section": "Forma Normal: A Matriz de Payoffs",
-    "text": "Forma Normal: A Matriz de Payoffs\nCom dois jogadores e duas estratégias cada, o jogo representa-se numa matriz \\(2\\times2\\):\n\n\n\n\n\n\n\n\n\n\n\n\nConvenção: cada célula mostra \\((\\pi_A,\\ \\pi_B)\\) — primeiro o payoff da empresa que escolhe a linha, segundo o da coluna."
+    "text": "Forma Normal: A Matriz de Payoffs\nCom dois jogadores e duas estratégias cada, o jogo representa-se numa matriz \\(2\\times2\\):\n\n\n\n\n\n\n\n\n\n\nEmpresa B: \\(s_{B1}\\)\nEmpresa B: \\(s_{B2}\\)\n\n\n\n\nEmpresa A: \\(s_{A1}\\)\n\\((\\pi_A^{11},\\ \\pi_B^{11})\\)\n\\((\\pi_A^{12},\\ \\pi_B^{12})\\)\n\n\nEmpresa A: \\(s_{A2}\\)\n\\((\\pi_A^{21},\\ \\pi_B^{21})\\)\n\\((\\pi_A^{22},\\ \\pi_B^{22})\\)\n\n\n\n\n\nConvenção: cada célula mostra \\((\\pi_A,\\ \\pi_B)\\) — primeiro o payoff da empresa que escolhe a linha, segundo o da coluna."
   },
   {
     "objectID": "slides/23_teoria_jogos_I.html#dominância-estrita",
@@ -7382,7 +7382,7 @@
     "href": "slides/23_teoria_jogos_I.html#a-história-original",
     "title": "Microeconomia",
     "section": "A História Original",
-    "text": "A História Original\nDois suspeitos são detidos e interrogados separadamente. Cada um pode:\n\nCalar (cooperar com o cúmplice)\nConfessar (delatar o cúmplice)\n\n\n\n\n\n\n\n\n\n\n\n(payoffs = anos de prisão evitados — maior é melhor)"
+    "text": "A História Original\nDois suspeitos são detidos e interrogados separadamente. Cada um pode:\n\nCalar (cooperar com o cúmplice)\nConfessar (delatar o cúmplice)\n\n\n\n\n\n\nSuspeito B: Calar\nSuspeito B: Confessar\n\n\n\n\nSuspeito A: Calar\n\\((4, 4)\\)\n\\((0, 5)\\)\n\n\nSuspeito A: Confessar\n\\((5, 0)\\)\n\\((1, 1)\\)\n\n\n\n(payoffs = anos de prisão evitados — maior é melhor)"
   },
   {
     "objectID": "slides/23_teoria_jogos_I.html#análise-dominância-e-nash",
@@ -7396,7 +7396,7 @@
     "href": "slides/23_teoria_jogos_I.html#aplicação-delação-premiada-em-cartéis",
     "title": "Microeconomia",
     "section": "Aplicação: Delação Premiada em Cartéis",
-    "text": "Aplicação: Delação Premiada em Cartéis\nO dilema do prisioneiro tem uma aplicação directa à política de concorrência:\n\nDuas empresas num cartel podem:\n\nCooperar — manter o acordo de cartel, partilhar lucros de monopólio\nDelatar — informar a autoridade da concorrência, obtendo imunidade ou redução de coima\n\n\n\n\n\n\n\n\n\n\n\n\n(payoffs em milhares de euros de lucro líquido)"
+    "text": "Aplicação: Delação Premiada em Cartéis\nO dilema do prisioneiro tem uma aplicação directa à política de concorrência:\n\nDuas empresas num cartel podem:\n\nCooperar — manter o acordo de cartel, partilhar lucros de monopólio\nDelatar — informar a autoridade da concorrência, obtendo imunidade ou redução de coima\n\n\n\n\n\n\n\nEmpresa B: Cooperar\nEmpresa B: Delatar\n\n\n\n\nEmpresa A: Cooperar\n\\((6, 6)\\)\n\\((0, 8)\\)\n\n\nEmpresa A: Delatar\n\\((8, 0)\\)\n\\((2, 2)\\)\n\n\n\n(payoffs em milhares de euros de lucro líquido)"
   },
   {
     "objectID": "slides/23_teoria_jogos_I.html#análise-da-delação-premiada",
@@ -7410,7 +7410,7 @@
     "href": "slides/23_teoria_jogos_I.html#jogos-de-coordenação",
     "title": "Microeconomia",
     "section": "Jogos de Coordenação",
-    "text": "Jogos de Coordenação\nNem todos os jogos têm a estrutura problemática do dilema do prisioneiro:\n\n\n\n\n\n\n\n\n\n\n(Exemplo: lados de circulação no trânsito)\n\n\nDois Equilíbrios de Nash: (Esq, Esq) e (Dir, Dir). Aqui o problema não é a traição — é a coordenação: ambos querem fazer o mesmo, mas qual?"
+    "text": "Jogos de Coordenação\nNem todos os jogos têm a estrutura problemática do dilema do prisioneiro:\n\n\n\n\n\nJogador B: Esquerda\nJogador B: Direita\n\n\n\n\nJogador A: Esquerda\n\\((3, 3)\\)\n\\((0, 0)\\)\n\n\nJogador A: Direita\n\\((0, 0)\\)\n\\((3, 3)\\)\n\n\n\n(Exemplo: lados de circulação no trânsito)\n\n\nDois Equilíbrios de Nash: (Esq, Esq) e (Dir, Dir). Aqui o problema não é a traição — é a coordenação: ambos querem fazer o mesmo, mas qual?"
   },
   {
     "objectID": "slides/23_teoria_jogos_I.html#resumo-conceitos-chave",
@@ -7424,7 +7424,7 @@
     "href": "slides/23_teoria_jogos_I.html#exercício-1-escolha-múltipla",
     "title": "Microeconomia",
     "section": "Exercício 1 — Escolha Múltipla",
-    "text": "Exercício 1 — Escolha Múltipla\nConsidere a seguinte matriz de payoffs \\((\\pi_A,\\ \\pi_B)\\):\n\nO Equilíbrio de Nash desta matriz é:\n\n(Alto, Alto) = (3, 3)\n(Alto, Baixo) = (1, 5)\n(Baixo, Baixo) = (2, 2)\nNão existe Equilíbrio de Nash"
+    "text": "Exercício 1 — Escolha Múltipla\nConsidere a seguinte matriz de payoffs \\((\\pi_A,\\ \\pi_B)\\):\n\n\n\n\nEmpresa B: Alto\nEmpresa B: Baixo\n\n\n\n\nEmpresa A: Alto\n\\((3, 3)\\)\n\\((1, 5)\\)\n\n\nEmpresa A: Baixo\n\\((5, 1)\\)\n\\((2, 2)\\)\n\n\n\nO Equilíbrio de Nash desta matriz é:\n\n(Alto, Alto) = (3, 3)\n(Alto, Baixo) = (1, 5)\n(Baixo, Baixo) = (2, 2)\nNão existe Equilíbrio de Nash"
   },
   {
     "objectID": "slides/23_teoria_jogos_I.html#solução-exercício-1",
@@ -7452,7 +7452,7 @@
     "href": "slides/23_teoria_jogos_I.html#exercício-de-desenvolvimento",
     "title": "Microeconomia",
     "section": "Exercício de Desenvolvimento",
-    "text": "Exercício de Desenvolvimento\nDuas empresas, A e B, participavam num cartel ilegal. A autoridade da concorrência abre uma investigação e contacta cada empresa separadamente, oferecendo imunidade total à primeira a colaborar.\nCada empresa pode Cooperar (manter silêncio) ou Delatar (colaborar com a autoridade).\nOs payoffs (lucro líquido esperado, em milhares de euros) são:\n\n\nMostre que Delatar é uma estratégia estritamente dominante para a Empresa A.\nIdentifique o Equilíbrio de Nash. Qual o payoff de cada empresa?\nQual o resultado colectivamente óptimo? Compare com o EN.\nExplique por que razão a política de leniência é eficaz para desmantelar cartéis."
+    "text": "Exercício de Desenvolvimento\nDuas empresas, A e B, participavam num cartel ilegal. A autoridade da concorrência abre uma investigação e contacta cada empresa separadamente, oferecendo imunidade total à primeira a colaborar.\nCada empresa pode Cooperar (manter silêncio) ou Delatar (colaborar com a autoridade).\nOs payoffs (lucro líquido esperado, em milhares de euros) são:\n\n\n\n\nEmpresa B: Cooperar\nEmpresa B: Delatar\n\n\n\n\nEmpresa A: Cooperar\n\\((6, 6)\\)\n\\((0, 8)\\)\n\n\nEmpresa A: Delatar\n\\((8, 0)\\)\n\\((2, 2)\\)\n\n\n\n\nMostre que Delatar é uma estratégia estritamente dominante para a Empresa A.\nIdentifique o Equilíbrio de Nash. Qual o payoff de cada empresa?\nQual o resultado colectivamente óptimo? Compare com o EN.\nExplique por que razão a política de leniência é eficaz para desmantelar cartéis."
   },
   {
     "objectID": "slides/23_teoria_jogos_I.html#solução-exercício-de-desenvolvimento",
@@ -8565,7 +8565,7 @@
     "href": "slides/22_teoria_jogos_I-document.html",
     "title": "Microeconomia",
     "section": "",
-    "text": "Até agora, cada decisor foi analisado em isolamento:\n\n\nO consumidor maximiza utilidade dado um preço que não controla\nA empresa em CP escolhe \\(Q\\) dado um preço de mercado\nO monopolista optimiza face a uma curva de procura passiva\n\n\n. . .\nMas e quando o resultado de cada agente depende das escolhas dos outros?\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nEm oligopólio, duas ou três empresas controlam o mercado. A decisão de uma afecta directamente o lucro das outras. Cada empresa precisa de antecipar o comportamento das rivais — e elas sabem disso.\nA teoria de jogos é a ferramenta adequada para analisar estas situações de interdependência estratégica.\n\n\n\n\n\nTodo o jogo em forma normal é definido por três elementos:\n. . .\n1. Jogadores — quem decide? (\\(i = 1, 2, \\ldots, n\\))\n. . .\n2. Estratégias — que acções estão disponíveis a cada jogador?\n\\[S_i = \\{s_{i1},\\ s_{i2},\\ \\ldots\\}\\]\n. . .\n3. Payoffs — que resultado obtém cada jogador para cada combinação de estratégias?\n\\[\\pi_i(s_1, s_2, \\ldots, s_n)\\]\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO payoff pode representar lucro, utilidade, anos de prisão evitados, ou qualquer medida de bem-estar relevante. A teoria é geral — o conteúdo depende da aplicação.\n\n\n\n\n\nCom dois jogadores e duas estratégias cada, o jogo representa-se numa matriz \\(2\\times2\\):\n. . .\n\n\n\n\n\n\n\n\n\n. . .\nConvenção: cada célula mostra \\((\\pi_A,\\ \\pi_B)\\) — primeiro o payoff da empresa que escolhe a linha, segundo o da coluna."
+    "text": "Até agora, cada decisor foi analisado em isolamento:\n\n\nO consumidor maximiza utilidade dado um preço que não controla\nA empresa em CP escolhe \\(Q\\) dado um preço de mercado\nO monopolista optimiza face a uma curva de procura passiva\n\n\n. . .\nMas e quando o resultado de cada agente depende das escolhas dos outros?\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nEm oligopólio, duas ou três empresas controlam o mercado. A decisão de uma afecta directamente o lucro das outras. Cada empresa precisa de antecipar o comportamento das rivais — e elas sabem disso.\nA teoria de jogos é a ferramenta adequada para analisar estas situações de interdependência estratégica.\n\n\n\n\n\nTodo o jogo em forma normal é definido por três elementos:\n. . .\n1. Jogadores — quem decide? (\\(i = 1, 2, \\ldots, n\\))\n. . .\n2. Estratégias — que acções estão disponíveis a cada jogador?\n\\[S_i = \\{s_{i1},\\ s_{i2},\\ \\ldots\\}\\]\n. . .\n3. Payoffs — que resultado obtém cada jogador para cada combinação de estratégias?\n\\[\\pi_i(s_1, s_2, \\ldots, s_n)\\]\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO payoff pode representar lucro, utilidade, anos de prisão evitados, ou qualquer medida de bem-estar relevante. A teoria é geral — o conteúdo depende da aplicação.\n\n\n\n\n\nCom dois jogadores e duas estratégias cada, o jogo representa-se numa matriz \\(2\\times2\\):\n. . .\n\n\n\n\n\n\n\n\n\nEmpresa B: \\(s_{B1}\\)\nEmpresa B: \\(s_{B2}\\)\n\n\n\n\nEmpresa A: \\(s_{A1}\\)\n\\((\\pi_A^{11},\\ \\pi_B^{11})\\)\n\\((\\pi_A^{12},\\ \\pi_B^{12})\\)\n\n\nEmpresa A: \\(s_{A2}\\)\n\\((\\pi_A^{21},\\ \\pi_B^{21})\\)\n\\((\\pi_A^{22},\\ \\pi_B^{22})\\)\n\n\n\n. . .\nConvenção: cada célula mostra \\((\\pi_A,\\ \\pi_B)\\) — primeiro o payoff da empresa que escolhe a linha, segundo o da coluna."
   },
   {
     "objectID": "slides/22_teoria_jogos_I-document.html#porque-precisamos-de-teoria-de-jogos",
@@ -8586,7 +8586,7 @@
     "href": "slides/22_teoria_jogos_I-document.html#forma-normal-a-matriz-de-payoffs",
     "title": "Microeconomia",
     "section": "",
-    "text": "Com dois jogadores e duas estratégias cada, o jogo representa-se numa matriz \\(2\\times2\\):\n. . .\n\n\n\n\n\n\n\n\n\n. . .\nConvenção: cada célula mostra \\((\\pi_A,\\ \\pi_B)\\) — primeiro o payoff da empresa que escolhe a linha, segundo o da coluna."
+    "text": "Com dois jogadores e duas estratégias cada, o jogo representa-se numa matriz \\(2\\times2\\):\n. . .\n\n\n\n\n\n\n\n\n\nEmpresa B: \\(s_{B1}\\)\nEmpresa B: \\(s_{B2}\\)\n\n\n\n\nEmpresa A: \\(s_{A1}\\)\n\\((\\pi_A^{11},\\ \\pi_B^{11})\\)\n\\((\\pi_A^{12},\\ \\pi_B^{12})\\)\n\n\nEmpresa A: \\(s_{A2}\\)\n\\((\\pi_A^{21},\\ \\pi_B^{21})\\)\n\\((\\pi_A^{22},\\ \\pi_B^{22})\\)\n\n\n\n. . .\nConvenção: cada célula mostra \\((\\pi_A,\\ \\pi_B)\\) — primeiro o payoff da empresa que escolhe a linha, segundo o da coluna."
   },
   {
     "objectID": "slides/22_teoria_jogos_I-document.html#dominância-estrita",
@@ -8599,22 +8599,22 @@
     "objectID": "slides/22_teoria_jogos_I-document.html#equilíbrio-de-nash",
     "href": "slides/22_teoria_jogos_I-document.html#equilíbrio-de-nash",
     "title": "Microeconomia",
-    "section": "2.2 Equilíbrio de Nash",
-    "text": "2.2 Equilíbrio de Nash\n\n\n\n\n\n\nImportant\n\n\n\nDefinição (John Nash, 1950): Um perfil de estratégias \\((s_1^*, s_2^*, \\ldots, s_n^*)\\) é um Equilíbrio de Nash se nenhum jogador tem incentivo a desviar-se unilateralmente, dado que os outros mantêm as suas estratégias.\n\n\n. . .\nFormalmente, para cada jogador \\(i\\):\n\\[\\pi_i(s_i^*,\\ s_{-i}^*) \\geq \\pi_i(s_i,\\ s_{-i}^*) \\quad \\forall s_i\\]\nonde \\(s_{-i}^*\\) denota as estratégias de todos os outros jogadores.\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO Equilíbrio de Nash é um conceito de consistência mútua: cada jogador está a fazer o melhor que pode dado o que os outros estão a fazer. Ninguém se arrepende da sua escolha a posteriori."
+    "section": "2.3 Equilíbrio de Nash",
+    "text": "2.3 Equilíbrio de Nash\n\n\n\n\n\n\nImportant\n\n\n\nDefinição (John Nash, 1950): Um perfil de estratégias \\((s_1^*, s_2^*, \\ldots, s_n^*)\\) é um Equilíbrio de Nash se nenhum jogador tem incentivo a desviar-se unilateralmente, dado que os outros mantêm as suas estratégias.\n\n\n. . .\nFormalmente, para cada jogador \\(i\\):\n\\[\\pi_i(s_i^*,\\ s_{-i}^*) \\geq \\pi_i(s_i,\\ s_{-i}^*) \\quad \\forall s_i\\]\nonde \\(s_{-i}^*\\) denota as estratégias de todos os outros jogadores.\n. . .\n\n\n\n\n\n\nNote\n\n\n\nO Equilíbrio de Nash é um conceito de consistência mútua: cada jogador está a fazer o melhor que pode dado o que os outros estão a fazer. Ninguém se arrepende da sua escolha a posteriori."
   },
   {
     "objectID": "slides/22_teoria_jogos_I-document.html#nash-vs.-óptimo-colectivo",
     "href": "slides/22_teoria_jogos_I-document.html#nash-vs.-óptimo-colectivo",
     "title": "Microeconomia",
-    "section": "2.3 Nash vs. Óptimo Colectivo",
-    "text": "2.3 Nash vs. Óptimo Colectivo\nUm Equilíbrio de Nash não é necessariamente o melhor resultado colectivo:\n. . .\n\n\nO EN é estável do ponto de vista individual — ninguém quer desviar sozinho\nMas pode existir outro resultado em que todos ficariam melhor\nEsse resultado não é sustentável sem coordenação ou compromisso vinculativo\n\n\n. . .\nEsta tensão entre racionalidade individual e óptimo colectivo é o coração do Dilema do Prisioneiro."
+    "section": "2.4 Nash vs. Óptimo Colectivo",
+    "text": "2.4 Nash vs. Óptimo Colectivo\nUm Equilíbrio de Nash não é necessariamente o melhor resultado colectivo:\n. . .\n\n\nO EN é estável do ponto de vista individual — ninguém quer desviar sozinho\nMas pode existir outro resultado em que todos ficariam melhor\nEsse resultado não é sustentável sem coordenação ou compromisso vinculativo\n\n\n. . .\nEsta tensão entre racionalidade individual e óptimo colectivo é o coração do Dilema do Prisioneiro."
   },
   {
     "objectID": "slides/22_teoria_jogos_I-document.html#a-história-original",
     "href": "slides/22_teoria_jogos_I-document.html#a-história-original",
     "title": "Microeconomia",
     "section": "3.1 A História Original",
-    "text": "3.1 A História Original\nDois suspeitos são detidos e interrogados separadamente. Cada um pode:\n\n\nCalar (cooperar com o cúmplice)\nConfessar (delatar o cúmplice)\n\n\n. . .\n\n\n\n\n\n\n\n\n\n(payoffs = anos de prisão evitados — maior é melhor)"
+    "text": "3.1 A História Original\nDois suspeitos são detidos e interrogados separadamente. Cada um pode:\n\n\nCalar (cooperar com o cúmplice)\nConfessar (delatar o cúmplice)\n\n\n. . .\n\n\n\n\nSuspeito B: Calar\nSuspeito B: Confessar\n\n\n\n\nSuspeito A: Calar\n\\((4, 4)\\)\n\\((0, 5)\\)\n\n\nSuspeito A: Confessar\n\\((5, 0)\\)\n\\((1, 1)\\)\n\n\n\n(payoffs = anos de prisão evitados — maior é melhor)"
   },
   {
     "objectID": "slides/22_teoria_jogos_I-document.html#análise-dominância-e-nash",
@@ -8628,7 +8628,7 @@
     "href": "slides/22_teoria_jogos_I-document.html#aplicação-delação-premiada-em-cartéis",
     "title": "Microeconomia",
     "section": "3.3 Aplicação: Delação Premiada em Cartéis",
-    "text": "3.3 Aplicação: Delação Premiada em Cartéis\nO dilema do prisioneiro tem uma aplicação directa à política de concorrência:\n. . .\nDuas empresas num cartel podem:\n\n\nCooperar — manter o acordo de cartel, partilhar lucros de monopólio\nDelatar — informar a autoridade da concorrência, obtendo imunidade ou redução de coima\n\n\n. . .\n\n\n\n\n\n\n\n\n\n(payoffs em milhares de euros de lucro líquido)"
+    "text": "3.3 Aplicação: Delação Premiada em Cartéis\nO dilema do prisioneiro tem uma aplicação directa à política de concorrência:\n. . .\nDuas empresas num cartel podem:\n\n\nCooperar — manter o acordo de cartel, partilhar lucros de monopólio\nDelatar — informar a autoridade da concorrência, obtendo imunidade ou redução de coima\n\n\n. . .\n\n\n\n\nEmpresa B: Cooperar\nEmpresa B: Delatar\n\n\n\n\nEmpresa A: Cooperar\n\\((6, 6)\\)\n\\((0, 8)\\)\n\n\nEmpresa A: Delatar\n\\((8, 0)\\)\n\\((2, 2)\\)\n\n\n\n(payoffs em milhares de euros de lucro líquido)"
   },
   {
     "objectID": "slides/22_teoria_jogos_I-document.html#análise-da-delação-premiada",
@@ -8642,7 +8642,7 @@
     "href": "slides/22_teoria_jogos_I-document.html#jogos-de-coordenação",
     "title": "Microeconomia",
     "section": "4.1 Jogos de Coordenação",
-    "text": "4.1 Jogos de Coordenação\nNem todos os jogos têm a estrutura problemática do dilema do prisioneiro:\n. . .\n\n\n\n\n\n\n\n\n\n(Exemplo: lados de circulação no trânsito)\n. . .\nDois Equilíbrios de Nash: (Esq, Esq) e (Dir, Dir). Aqui o problema não é a traição — é a coordenação: ambos querem fazer o mesmo, mas qual?"
+    "text": "4.1 Jogos de Coordenação\nNem todos os jogos têm a estrutura problemática do dilema do prisioneiro:\n. . .\n\n\n\n\nJogador B: Esquerda\nJogador B: Direita\n\n\n\n\nJogador A: Esquerda\n\\((3, 3)\\)\n\\((0, 0)\\)\n\n\nJogador A: Direita\n\\((0, 0)\\)\n\\((3, 3)\\)\n\n\n\n(Exemplo: lados de circulação no trânsito)\n. . .\nDois Equilíbrios de Nash: (Esq, Esq) e (Dir, Dir). Aqui o problema não é a traição — é a coordenação: ambos querem fazer o mesmo, mas qual?"
   },
   {
     "objectID": "slides/22_teoria_jogos_I-document.html#resumo-conceitos-chave",
@@ -8656,7 +8656,7 @@
     "href": "slides/22_teoria_jogos_I-document.html#exercício-1-escolha-múltipla",
     "title": "Microeconomia",
     "section": "5.1 Exercício 1 — Escolha Múltipla",
-    "text": "5.1 Exercício 1 — Escolha Múltipla\nConsidere a seguinte matriz de payoffs \\((\\pi_A,\\ \\pi_B)\\):\n\n\n\n\n\n\n\n\n\nO Equilíbrio de Nash desta matriz é:\n\n\n(Alto, Alto) = (3, 3)\n(Alto, Baixo) = (1, 5)\n(Baixo, Baixo) = (2, 2)\nNão existe Equilíbrio de Nash"
+    "text": "5.1 Exercício 1 — Escolha Múltipla\nConsidere a seguinte matriz de payoffs \\((\\pi_A,\\ \\pi_B)\\):\n\n\n\n\nEmpresa B: Alto\nEmpresa B: Baixo\n\n\n\n\nEmpresa A: Alto\n\\((3, 3)\\)\n\\((1, 5)\\)\n\n\nEmpresa A: Baixo\n\\((5, 1)\\)\n\\((2, 2)\\)\n\n\n\nO Equilíbrio de Nash desta matriz é:\n\n\n(Alto, Alto) = (3, 3)\n(Alto, Baixo) = (1, 5)\n(Baixo, Baixo) = (2, 2)\nNão existe Equilíbrio de Nash"
   },
   {
     "objectID": "slides/22_teoria_jogos_I-document.html#solução-exercício-1",
@@ -8684,7 +8684,7 @@
     "href": "slides/22_teoria_jogos_I-document.html#exercício-de-desenvolvimento",
     "title": "Microeconomia",
     "section": "5.5 Exercício de Desenvolvimento",
-    "text": "5.5 Exercício de Desenvolvimento\nDuas empresas, A e B, participavam num cartel ilegal. A autoridade da concorrência abre uma investigação e contacta cada empresa separadamente, oferecendo imunidade total à primeira a colaborar.\nCada empresa pode Cooperar (manter silêncio) ou Delatar (colaborar com a autoridade).\nOs payoffs (lucro líquido esperado, em milhares de euros) são:\n\n\n\n\n\n\n\n\n\n\n\nMostre que Delatar é uma estratégia estritamente dominante para a Empresa A.\nIdentifique o Equilíbrio de Nash. Qual o payoff de cada empresa?\nQual o resultado colectivamente óptimo? Compare com o EN.\nExplique por que razão a política de leniência é eficaz para desmantelar cartéis."
+    "text": "5.5 Exercício de Desenvolvimento\nDuas empresas, A e B, participavam num cartel ilegal. A autoridade da concorrência abre uma investigação e contacta cada empresa separadamente, oferecendo imunidade total à primeira a colaborar.\nCada empresa pode Cooperar (manter silêncio) ou Delatar (colaborar com a autoridade).\nOs payoffs (lucro líquido esperado, em milhares de euros) são:\n\n\n\n\nEmpresa B: Cooperar\nEmpresa B: Delatar\n\n\n\n\nEmpresa A: Cooperar\n\\((6, 6)\\)\n\\((0, 8)\\)\n\n\nEmpresa A: Delatar\n\\((8, 0)\\)\n\\((2, 2)\\)\n\n\n\n\n\nMostre que Delatar é uma estratégia estritamente dominante para a Empresa A.\nIdentifique o Equilíbrio de Nash. Qual o payoff de cada empresa?\nQual o resultado colectivamente óptimo? Compare com o EN.\nExplique por que razão a política de leniência é eficaz para desmantelar cartéis."
   },
   {
     "objectID": "slides/22_teoria_jogos_I-document.html#solução-exercício-de-desenvolvimento",
@@ -8832,5 +8832,19 @@
     "title": "Microeconomia",
     "section": "5.6 Solução — Exercício de Desenvolvimento",
     "text": "5.6 Solução — Exercício de Desenvolvimento\na) \\(\\Pi_2 = (30-q_1-q_2-6)q_2\\). CPO: \\(24-q_1-2q_2=0\\)\n\\[q_2^*(q_1) = 12 - \\frac{q_1}{2}\\]\n. . .\nb) \\(\\Pi_1 = \\!\\left(30-q_1-\\!\\left(12-\\tfrac{q_1}{2}\\right)-6\\right)q_1 = \\!\\left(12-\\tfrac{q_1}{2}\\right)q_1 = 12q_1 - \\tfrac{q_1^2}{2}\\)\n. . .\nc) \\(\\dfrac{d\\Pi_1}{dq_1} = 12 - q_1 = 0 \\Rightarrow q_1^* = 12\\)\n\\(q_2^* = 12 - 6 = 6\\)\n. . .\nd) \\(Q^*_S = 18\\), \\(P^*_S = 30-18 = 12\\)\n\\(\\Pi_{\\text{líder}} = (12-6)\\times 12 = 72\\) \\(\\quad;\\quad\\) \\(\\Pi_{\\text{seguidor}} = (12-6)\\times 6 = 36\\)\n. . .\ne) O líder ganha \\(72 &gt; 64\\) (Cournot): ao comprometer-se com \\(q_1=12\\), força o seguidor a retrair-se para \\(q_2=6\\), capturando mais mercado. O seguidor perde: \\(36 &lt; 64\\) (Cournot) — é penalizado por agir segundo, ficando com um mercado residual mais pequeno.\n. . .\nf)\n\n\n\n\nEstrutura\n\\(Q\\)\n\\(P\\)\n\\(\\Pi_1\\)\n\\(\\Pi_2\\)\n\n\n\n\nMonopólio\n\\(12\\)\n\\(18\\)\n\\(72\\)\n\\(72\\)\n\n\nStackelberg\n\\(18\\)\n\\(12\\)\n\\(72\\)\n\\(36\\)\n\n\nCournot\n\\(16\\)\n\\(14\\)\n\\(64\\)\n\\(64\\)\n\n\nConc. Perfeita\n\\(24\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)"
+  },
+  {
+    "objectID": "slides/23_teoria_jogos_I.html#exemplo-dominância-e-ieds",
+    "href": "slides/23_teoria_jogos_I.html#exemplo-dominância-e-ieds",
+    "title": "Microeconomia",
+    "section": "Exemplo: Dominância e IEDS",
+    "text": "Exemplo: Dominância e IEDS\nConsidere o seguinte jogo:\n\n\n\n\nJogador B: \\(s_{B1}\\)\nJogador B: \\(s_{B2}\\)\n\n\n\n\nJogador A: \\(s_{A1}\\)\n\\((3, 2)\\)\n\\((4, 1)\\)\n\n\nJogador A: \\(s_{A2}\\)\n\\((1, 3)\\)\n\\((2, 4)\\)\n\n\n\n\n1. Análise do Jogador A: - Se B joga \\(s_{B1}\\): \\(3 &gt; 1 \\Rightarrow s_{A1}\\) é melhor. - Se B joga \\(s_{B2}\\): \\(4 &gt; 2 \\Rightarrow s_{A1}\\) é melhor. - \\(\\therefore s_{A1}\\) domina estritamente \\(s_{A2}\\). O Jogador A eliminará \\(s_{A2}\\).\n\n\n2. Análise do Jogador B (após a eliminação de \\(s_{A2}\\)): - Sabendo que A jogará \\(s_{A1}\\), o Jogador B compara os seus payoffs na primeira linha: \\(2 &gt; 1\\). - \\(\\therefore s_{B1}\\) é a melhor resposta ao jogar \\(s_{A1}\\).\n\n\nResultado IEDS: O jogo converge para o perfil de estratégias \\((s_{A1}, s_{B1})\\)."
+  },
+  {
+    "objectID": "slides/22_teoria_jogos_I-document.html#exemplo-dominância-e-ieds",
+    "href": "slides/22_teoria_jogos_I-document.html#exemplo-dominância-e-ieds",
+    "title": "Microeconomia",
+    "section": "2.2 Exemplo: Dominância e IEDS",
+    "text": "2.2 Exemplo: Dominância e IEDS\nConsidere o seguinte jogo:\n\n\n\n\nJogador B: \\(s_{B1}\\)\nJogador B: \\(s_{B2}\\)\n\n\n\n\nJogador A: \\(s_{A1}\\)\n\\((3, 2)\\)\n\\((4, 1)\\)\n\n\nJogador A: \\(s_{A2}\\)\n\\((1, 3)\\)\n\\((2, 4)\\)\n\n\n\n. . .\n1. Análise do Jogador A: - Se B joga \\(s_{B1}\\): \\(3 &gt; 1 \\Rightarrow s_{A1}\\) é melhor. - Se B joga \\(s_{B2}\\): \\(4 &gt; 2 \\Rightarrow s_{A1}\\) é melhor. - \\(\\therefore s_{A1}\\) domina estritamente \\(s_{A2}\\). O Jogador A eliminará \\(s_{A2}\\).\n. . .\n2. Análise do Jogador B (após a eliminação de \\(s_{A2}\\)): - Sabendo que A jogará \\(s_{A1}\\), o Jogador B compara os seus payoffs na primeira linha: \\(2 &gt; 1\\). - \\(\\therefore s_{B1}\\) é a melhor resposta ao jogar \\(s_{A1}\\).\n. . .\nResultado IEDS: O jogo converge para o perfil de estratégias \\((s_{A1}, s_{B1})\\)."
   }
 ]

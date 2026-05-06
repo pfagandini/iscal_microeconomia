@@ -155,8 +155,9 @@ window.Quarto = {
   <li><a href="#conceitos-fundamentais" id="toc-conceitos-fundamentais" class="nav-link" data-scroll-target="#conceitos-fundamentais"><span class="header-section-number">2</span> Conceitos Fundamentais</a>
   <ul class="collapse">
   <li><a href="#dominância-estrita" id="toc-dominância-estrita" class="nav-link" data-scroll-target="#dominância-estrita"><span class="header-section-number">2.1</span> Dominância Estrita</a></li>
-  <li><a href="#equilíbrio-de-nash" id="toc-equilíbrio-de-nash" class="nav-link" data-scroll-target="#equilíbrio-de-nash"><span class="header-section-number">2.2</span> Equilíbrio de Nash</a></li>
-  <li><a href="#nash-vs.-óptimo-colectivo" id="toc-nash-vs.-óptimo-colectivo" class="nav-link" data-scroll-target="#nash-vs.-óptimo-colectivo"><span class="header-section-number">2.3</span> Nash vs.&nbsp;Óptimo Colectivo</a></li>
+  <li><a href="#exemplo-dominância-e-ieds" id="toc-exemplo-dominância-e-ieds" class="nav-link" data-scroll-target="#exemplo-dominância-e-ieds"><span class="header-section-number">2.2</span> Exemplo: Dominância e IEDS</a></li>
+  <li><a href="#equilíbrio-de-nash" id="toc-equilíbrio-de-nash" class="nav-link" data-scroll-target="#equilíbrio-de-nash"><span class="header-section-number">2.3</span> Equilíbrio de Nash</a></li>
+  <li><a href="#nash-vs.-óptimo-colectivo" id="toc-nash-vs.-óptimo-colectivo" class="nav-link" data-scroll-target="#nash-vs.-óptimo-colectivo"><span class="header-section-number">2.4</span> Nash vs.&nbsp;Óptimo Colectivo</a></li>
   </ul></li>
   <li><a href="#o-dilema-do-prisioneiro" id="toc-o-dilema-do-prisioneiro" class="nav-link" data-scroll-target="#o-dilema-do-prisioneiro"><span class="header-section-number">3</span> O Dilema do Prisioneiro</a>
   <ul class="collapse">
@@ -271,15 +272,32 @@ Note
 <h2 data-number="1.3" class="anchored" data-anchor-id="forma-normal-a-matriz-de-payoffs"><span class="header-section-number">1.3</span> Forma Normal: A Matriz de Payoffs</h2>
 <p>Com dois jogadores e duas estratégias cada, o jogo representa-se numa <strong>matriz <span class="math inline">\(2\times2\)</span></strong>:</p>
 <p>. . .</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="23_teoria_jogos_I_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 35%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Empresa B: <span class="math inline">\(s_{B1}\)</span></strong></th>
+<th style="text-align: center;"><strong>Empresa B: <span class="math inline">\(s_{B2}\)</span></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Empresa A: <span class="math inline">\(s_{A1}\)</span></strong></td>
+<td style="text-align: center;"><span class="math inline">\((\pi_A^{11},\ \pi_B^{11})\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((\pi_A^{12},\ \pi_B^{12})\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Empresa A: <span class="math inline">\(s_{A2}\)</span></strong></td>
+<td style="text-align: center;"><span class="math inline">\((\pi_A^{21},\ \pi_B^{21})\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((\pi_A^{22},\ \pi_B^{22})\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>. . .</p>
 <p>Convenção: cada célula mostra <span class="math inline">\((\pi_A,\ \pi_B)\)</span> — <strong>primeiro o payoff da empresa que escolhe a linha</strong>, segundo o da coluna.</p>
 </section>
@@ -315,8 +333,39 @@ Note
 <p>. . .</p>
 <p>Se este processo conduz a uma única célula, temos um <strong>equilíbrio em estratégias dominantes</strong>.</p>
 </section>
-<section id="equilíbrio-de-nash" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="equilíbrio-de-nash"><span class="header-section-number">2.2</span> Equilíbrio de Nash</h2>
+<section id="exemplo-dominância-e-ieds" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="exemplo-dominância-e-ieds"><span class="header-section-number">2.2</span> Exemplo: Dominância e IEDS</h2>
+<p>Considere o seguinte jogo:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Jogador B: <span class="math inline">\(s_{B1}\)</span></strong></th>
+<th style="text-align: center;"><strong>Jogador B: <span class="math inline">\(s_{B2}\)</span></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Jogador A: <span class="math inline">\(s_{A1}\)</span></strong></td>
+<td style="text-align: center;"><span class="math inline">\((3, 2)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((4, 1)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Jogador A: <span class="math inline">\(s_{A2}\)</span></strong></td>
+<td style="text-align: center;"><span class="math inline">\((1, 3)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((2, 4)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>. . .</p>
+<p><strong>1. Análise do Jogador A:</strong> - Se B joga <span class="math inline">\(s_{B1}\)</span>: <span class="math inline">\(3 &gt; 1 \Rightarrow s_{A1}\)</span> é melhor. - Se B joga <span class="math inline">\(s_{B2}\)</span>: <span class="math inline">\(4 &gt; 2 \Rightarrow s_{A1}\)</span> é melhor. - <span class="math inline">\(\therefore s_{A1}\)</span> <strong>domina estritamente</strong> <span class="math inline">\(s_{A2}\)</span>. O Jogador A eliminará <span class="math inline">\(s_{A2}\)</span>.</p>
+<p>. . .</p>
+<p><strong>2. Análise do Jogador B (após a eliminação de <span class="math inline">\(s_{A2}\)</span>):</strong> - Sabendo que A jogará <span class="math inline">\(s_{A1}\)</span>, o Jogador B compara os seus payoffs na primeira linha: <span class="math inline">\(2 &gt; 1\)</span>. - <span class="math inline">\(\therefore s_{B1}\)</span> é a melhor resposta ao jogar <span class="math inline">\(s_{A1}\)</span>.</p>
+<p>. . .</p>
+<p><strong>Resultado IEDS:</strong> O jogo converge para o perfil de estratégias <strong><span class="math inline">\((s_{A1}, s_{B1})\)</span></strong>.</p>
+</section>
+<section id="equilíbrio-de-nash" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="equilíbrio-de-nash"><span class="header-section-number">2.3</span> Equilíbrio de Nash</h2>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -349,8 +398,8 @@ Note
 </div>
 </div>
 </section>
-<section id="nash-vs.-óptimo-colectivo" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="nash-vs.-óptimo-colectivo"><span class="header-section-number">2.3</span> Nash vs.&nbsp;Óptimo Colectivo</h2>
+<section id="nash-vs.-óptimo-colectivo" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="nash-vs.-óptimo-colectivo"><span class="header-section-number">2.4</span> Nash vs.&nbsp;Óptimo Colectivo</h2>
 <p>Um Equilíbrio de Nash <strong>não é necessariamente</strong> o melhor resultado colectivo:</p>
 <p>. . .</p>
 <div class="nonincremental">
@@ -376,15 +425,27 @@ Note
 </ul>
 </div>
 <p>. . .</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="23_teoria_jogos_I_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Suspeito B: Calar</strong></th>
+<th style="text-align: center;"><strong>Suspeito B: Confessar</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Suspeito A: Calar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((4, 4)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((0, 5)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Suspeito A: Confessar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((5, 0)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((1, 1)\)</span></td>
+</tr>
+</tbody>
+</table>
 <p><em>(payoffs = anos de prisão evitados — maior é melhor)</em></p>
 </section>
 <section id="análise-dominância-e-nash" class="level2" data-number="3.2">
@@ -428,15 +489,27 @@ Important
 </ul>
 </div>
 <p>. . .</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="23_teoria_jogos_I_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Empresa B: Cooperar</strong></th>
+<th style="text-align: center;"><strong>Empresa B: Delatar</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Empresa A: Cooperar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((6, 6)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((0, 8)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Empresa A: Delatar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((8, 0)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((2, 2)\)</span></td>
+</tr>
+</tbody>
+</table>
 <p><em>(payoffs em milhares de euros de lucro líquido)</em></p>
 </section>
 <section id="análise-da-delação-premiada" class="level2" data-number="3.4">
@@ -474,15 +547,27 @@ Tip
 <h2 data-number="4.1" class="anchored" data-anchor-id="jogos-de-coordenação"><span class="header-section-number">4.1</span> Jogos de Coordenação</h2>
 <p>Nem todos os jogos têm a estrutura problemática do dilema do prisioneiro:</p>
 <p>. . .</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="23_teoria_jogos_I_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Jogador B: Esquerda</strong></th>
+<th style="text-align: center;"><strong>Jogador B: Direita</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Jogador A: Esquerda</strong></td>
+<td style="text-align: center;"><span class="math inline">\((3, 3)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((0, 0)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Jogador A: Direita</strong></td>
+<td style="text-align: center;"><span class="math inline">\((0, 0)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((3, 3)\)</span></td>
+</tr>
+</tbody>
+</table>
 <p><em>(Exemplo: lados de circulação no trânsito)</em></p>
 <p>. . .</p>
 <p>Dois Equilíbrios de Nash: <strong>(Esq, Esq)</strong> e <strong>(Dir, Dir)</strong>. Aqui o problema não é a traição — é a <strong>coordenação</strong>: ambos querem fazer o mesmo, mas qual?</p>
@@ -547,15 +632,27 @@ Note
 <section id="exercício-1-escolha-múltipla" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="exercício-1-escolha-múltipla"><span class="header-section-number">5.1</span> Exercício 1 — Escolha Múltipla</h2>
 <p>Considere a seguinte matriz de payoffs <span class="math inline">\((\pi_A,\ \pi_B)\)</span>:</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="23_teoria_jogos_I_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Empresa B: Alto</strong></th>
+<th style="text-align: center;"><strong>Empresa B: Baixo</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Empresa A: Alto</strong></td>
+<td style="text-align: center;"><span class="math inline">\((3, 3)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((1, 5)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Empresa A: Baixo</strong></td>
+<td style="text-align: center;"><span class="math inline">\((5, 1)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((2, 2)\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>O Equilíbrio de Nash desta matriz é:</p>
 <div class="nonincremental">
 <ol type="a">
@@ -607,15 +704,27 @@ Note
 <p>Duas empresas, A e B, participavam num cartel ilegal. A autoridade da concorrência abre uma investigação e contacta cada empresa separadamente, oferecendo <strong>imunidade total</strong> à primeira a colaborar.</p>
 <p>Cada empresa pode <strong>Cooperar</strong> (manter silêncio) ou <strong>Delatar</strong> (colaborar com a autoridade).</p>
 <p>Os payoffs (lucro líquido esperado, em milhares de euros) são:</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="23_teoria_jogos_I_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Empresa B: Cooperar</strong></th>
+<th style="text-align: center;"><strong>Empresa B: Delatar</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Empresa A: Cooperar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((6, 6)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((0, 8)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Empresa A: Delatar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((8, 0)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((2, 2)\)</span></td>
+</tr>
+</tbody>
+</table>
 <div class="nonincremental">
 <ol type="a">
 <li>Mostre que <strong>Delatar</strong> é uma estratégia estritamente dominante para a Empresa A.</li>
