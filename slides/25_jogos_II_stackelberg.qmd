@@ -451,7 +451,8 @@ $q_2^* = 12 - 6 = 6$
 
 $\Pi_{\text{líder}} = (12-6)\times 12 = 72$ $\quad;\quad$ $\Pi_{\text{seguidor}} = (12-6)\times 6 = 36$
 
-. . .
+
+## Solução — Exercício de Desenvolvimento {visibility="uncounted" .smaller}
 
 **e)** O líder ganha $72 > 64$ (Cournot): ao comprometer-se com $q_1=12$, força o seguidor a retrair-se para $q_2=6$, capturando mais mercado. O seguidor perde: $36 < 64$ (Cournot) — é penalizado por agir segundo, ficando com um mercado residual mais pequeno.
 

@@ -61,7 +61,7 @@ E se, em vez de escolherem **quantidades**, as empresas escolhessem **preços**?
 Esta é a diferença essencial entre Cournot e Bertrand: **a variável estratégica**. Mesma estrutura de mercado, mesmo número de empresas — resultado radicalmente diferente.
 :::
 
-## A Lógica do Undercutting
+## A Lógica do Undercutting {.smaller}
 
 Com produto homogéneo, consumidores compram sempre à empresa mais barata.
 
@@ -120,7 +120,7 @@ $$P^*_{\text{Bert}} = Cmg = 6 \qquad Q^*_{\text{Bert}} = 24 \qquad \Pi^*_{\text{
 O paradoxo levanta uma questão: qual o modelo mais realista? Depende do mercado. Quando as empresas constroem capacidade com antecedência (e depois competem em preço), o resultado aproxima-se de Cournot. Quando podem ajustar a oferta instantaneamente, Bertrand é mais adequado.
 :::
 
-## Saídas do Paradoxo
+## Saídas do Paradoxo {.smaller}
 
 Na prática, o resultado de Bertrand raramente se verifica porque:
 
@@ -138,7 +138,7 @@ Este último ponto — a **interacção repetida** — é o tema da segunda part
 
 # Colusão e o Incentivo a Desviar {background-color="#2C3E7A"}
 
-## O Sonho do Cartel
+## O Sonho do Cartel {.smaller}
 
 Se as empresas pudessem coordenar os preços, agiriam como um monopolista:
 
@@ -164,27 +164,12 @@ Estrutura de **Dilema do Prisioneiro** (já conhecida da Aula 22): o resultado c
 
 ## Matriz do Jogo de Preços (Uma Vez)
 
-```{=latex}
-\begin{center}
-\begin{tikzpicture}[every node/.style={scale=0.84}]
-  \node at (2.6, 1.8) {\textbf{Empresa B}};
-  \node at (2.0, 1.15) {\textit{Colusão ($P_m$)}};
-  \node at (4.1, 1.15) {\textit{Desviar ($P_m\!-\!\varepsilon$)}};
-  \node[rotate=90] at (-0.35, 0) {\textbf{Empresa A}};
-  \node at (0.7,  0.45) {\textit{Colusão}};
-  \node at (0.7, -0.85) {\textit{Desviar}};
-
-  \node at (2.0,  0.5) {$(72,\ 72)$};
-  \node at (4.1,  0.5) {$(0,\ 144)$};
-  \node at (2.0, -0.8) {$(144,\ 0)$};
-  \node at (4.1, -0.8) {$(0,\ 0)$};
-
-  \draw (1.1, 1.0) rectangle (5.2,-1.45);
-  \draw (3.1, 1.0) -- (3.1,-1.45);
-  \draw (1.1, 0.0) -- (5.2, 0.0);
-\end{tikzpicture}
-\end{center}
-```
+:::{.nonincremental}
+|  | **B: Colusão ($P_m$)** | **B: Desviar ($P_m - \varepsilon$)** |
+|---|:---:|:---:|
+| **A: Colusão** | $(72,\ 72)$ | $(0,\ 144)$ |
+| **A: Desviar** | $(144,\ 0)$ | $(0,\ 0)$ |
+:::
 
 . . .
 
@@ -216,7 +201,7 @@ A repetição introduz um elemento novo: a **ameaça de represália futura**.
 O jogo repetido não elimina o incentivo a desviar num único período — mas cria um **trade-off inter-temporal**: ganho imediato de desviar vs. perda de lucros futuros pela punição.
 :::
 
-## O Factor de Desconto $\delta$
+## O Factor de Desconto $\delta$ {.smaller}
 
 $\delta \in (0,1)$ é o **factor de desconto** — mede quanto a empresa valoriza $1$ euro de lucro no próximo período em comparação com $1$ euro hoje.
 
@@ -256,7 +241,7 @@ A estratégia mais simples que pode sustentar a colusão:
 
 Esta estratégia é **simples e credível**: uma vez activada a punição, jogar Bertrand é óptimo para ambas as empresas (é o EN do jogo estático). A ameaça é credível porque não requer que ninguém "sacrifique" lucros para punir.
 
-## Condição de Sustentabilidade da Colusão
+## Condição de Sustentabilidade da Colusão {.smaller}
 
 Empresa A compara dois cenários:
 
@@ -278,7 +263,7 @@ Colusão sustentável se $NPV_{\text{coop}} \geq NPV_{dev}$:
 
 $$\frac{\Pi_{coop}}{1-\delta} \geq \Pi_{dev} \quad\Leftrightarrow\quad \delta \geq 1 - \frac{\Pi_{coop}}{\Pi_{dev}}$$
 
-## Derivação do $\delta$ Mínimo
+## Derivação do $\delta$ Mínimo {.smaller}
 
 Com $\Pi_{coop} = 72$ e $\Pi_{dev} = 144$:
 
@@ -304,7 +289,7 @@ Se $\delta \geq \tfrac{1}{2}$, a colusão é sustentável com grim trigger. Se $
 
 ## Interpretação Económica de $\delta \geq \frac{1}{2}$
 
-```{=latex}
+```{r, engine='tikz'}
 \begin{tikzpicture}[
   scale=1.0,
   every node/.style={scale=0.78}
@@ -344,13 +329,13 @@ Se $\delta \geq \tfrac{1}{2}$, a colusão é sustentável com grim trigger. Se $
 
 Quanto maior $\delta$ (mais paciente a empresa), maior $NPV_{\text{coop}}$ — o fluxo futuro de lucros de colusão vale mais. Para $\delta = \tfrac{1}{2}$: $NPV_{\text{coop}} = \tfrac{72}{1/2} = 144 = NPV_{dev}$ — a empresa é indiferente.
 
-## Quando é a Colusão Mais Provável?
+## Quando é a Colusão Mais Provável? {.smaller}
 
 A condição $\delta \geq \tfrac{1}{2}$ é mais fácil de satisfazer quando:
 
 :::{.incremental}
 - **Taxas de juro baixas** — $\delta = 1/(1+r)$ é maior quando $r$ é pequeno; o futuro desconta menos
-- **Mercado estável e de longa duração** — horizon longo aumenta o valor dos lucros futuros
+- **Mercado estável e de longa duração** — horizonte longo aumenta o valor dos lucros futuros
 - **Interacções frequentes** — empresas que se encontram frequentemente têm mais oportunidades de punir desvios rapidamente
 - **Poucos participantes** — é mais fácil monitorizar o comportamento das rivais e detectar desvios
 - **Lucro de desvio relativamente pequeno** — se $\Pi_{dev}/\Pi_{coop}$ for baixo, o $\delta$ necessário é menor
@@ -461,7 +446,7 @@ Verificação: $\delta = \frac{2}{5}$ $\Rightarrow$ $NPV_{\text{coop}} = \frac{6
 
 **d)** $\delta \geq \frac{2}{5}$ é mais fácil de satisfazer com taxas de juro baixas (empresas pacientes), horizonte longo, interacções frequentes e poucos concorrentes (monitorização fácil de desvios).
 
-. . .
+## Solução — Exercício de Desenvolvimento {visibility="uncounted" .smaller}
 
 **e)** Com $\Pi_{dev} = 80$:
 

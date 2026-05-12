@@ -128,7 +128,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Microeconomia</h1>
-  <p class="subtitle">Aula 24 — Jogos Sequenciais e o Modelo de Stackelberg</p>
+  <p class="subtitle">Aula 25 — Bertrand, Colusão e Jogos Repetidos</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -140,76 +140,16 @@ ISCAL - IPL
 
 </section>
 <section>
-<section id="jogos-sequenciais" class="title-slide slide level1 center" data-background-color="#2C3E7A">
-<h1>Jogos Sequenciais</h1>
+<section id="o-modelo-de-bertrand" class="title-slide slide level1 center" data-background-color="#2C3E7A">
+<h1>O Modelo de Bertrand</h1>
 
 </section>
-<section id="da-forma-normal-à-forma-extensiva" class="slide level2 smaller">
-<h2>Da Forma Normal à Forma Extensiva</h2>
-<p>Na aula anterior, analisámos jogos em <strong>forma normal</strong> — decisões simultâneas representadas em matriz.</p>
+<section id="uma-pergunta-simples" class="slide level2">
+<h2>Uma Pergunta Simples</h2>
+<p>Em Cournot, duas empresas com <span class="math inline">\(Cmg = 6\)</span> e procura <span class="math inline">\(P = 30 - Q\)</span> obtêm:</p>
+<p><span class="math display">\[Q_C = 16,\quad P_C = 14,\quad \Pi_C = 64 \text{ cada}\]</span></p>
 <div class="fragment">
-<p>Muitas situações económicas são <strong>sequenciais</strong>: um jogador age primeiro, o outro observa e responde.</p>
-</div>
-<div class="fragment">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th></th>
-<th>Forma Normal</th>
-<th>Forma Extensiva</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Timing</td>
-<td>Simultâneo</td>
-<td>Sequencial</td>
-</tr>
-<tr class="even">
-<td>Representação</td>
-<td>Matriz de payoffs</td>
-<td>Árvore de decisão</td>
-</tr>
-<tr class="odd">
-<td>Conceito solução</td>
-<td>Equilíbrio de Nash</td>
-<td>Indução para trás</td>
-</tr>
-<tr class="even">
-<td>Informação</td>
-<td>Sem observação</td>
-<td>Observação da jogada anterior</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>A forma extensiva acrescenta <strong>estrutura temporal</strong> ao jogo. Quem move primeiro tem informação comprometida — e quem move depois tem mais informação mas menos iniciativa.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="a-árvore-de-decisão" class="slide level2">
-<h2>A Árvore de Decisão</h2>
-<p>Uma árvore de decisão representa:</p>
-<ul>
-<li class="fragment"><strong>Nós de decisão</strong> — pontos onde um jogador escolhe</li>
-<li class="fragment"><strong>Ramos</strong> — as acções disponíveis em cada nó</li>
-<li class="fragment"><strong>Folhas</strong> — resultados finais com os payoffs <span class="math inline">\((π_1,\ π_2)\)</span></li>
-<li class="fragment"><strong>Ordem das jogadas</strong> — lê-se da esquerda (raiz) para a direita (folhas)</li>
-</ul>
-<div class="fragment">
-<p>O método de solução é a <strong>indução para trás</strong> (<em>backward induction</em>):</p>
+<p>E se, em vez de escolherem <strong>quantidades</strong>, as empresas escolhessem <strong>preços</strong>?</p>
 </div>
 <div class="fragment">
 <div class="callout callout-important callout-titled callout-style-default">
@@ -221,52 +161,146 @@ ISCAL - IPL
 <p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
-<p>Resolver o jogo <strong>de trás para a frente</strong>: começar nas folhas e determinar a escolha óptima do último jogador; dado isso, determinar a escolha óptima do penúltimo; e assim sucessivamente até à raiz.</p>
+<p>Esta é a diferença essencial entre Cournot e Bertrand: <strong>a variável estratégica</strong>. Mesma estrutura de mercado, mesmo número de empresas — resultado radicalmente diferente.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="a-lógica-do-undercutting" class="slide level2 smaller">
+<h2>A Lógica do Undercutting</h2>
+<p>Com produto homogéneo, consumidores compram sempre à empresa mais barata.</p>
+<div class="fragment">
+<p>Suponha que a Empresa B cobra <span class="math inline">\(P_B = 14\)</span> (preço de Cournot):</p>
+<ul>
+<li class="fragment">A Empresa A cobra <span class="math inline">\(P_A = 13{,}99\)</span> — captura <strong>todo</strong> o mercado e ganha lucro positivo</li>
+<li class="fragment">B responde com <span class="math inline">\(P_B = 13{,}98\)</span> — captura todo o mercado de volta</li>
+<li class="fragment">A responde com <span class="math inline">\(P_A = 13{,}97\ldots\)</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Este processo — <strong>undercutting</strong> — só pára quando nenhuma empresa tem incentivo a baixar mais o preço.</p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[P_A = P_B = Cmg = 6\]</span></p>
+<p>Abaixo de <span class="math inline">\(Cmg\)</span>, vender implica prejuízo. Acima de <span class="math inline">\(Cmg\)</span>, a rival subcorta.</p>
+</div>
+</section>
+<section id="o-paradoxo-de-bertrand" class="slide level2">
+<h2>O Paradoxo de Bertrand</h2>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Paradoxo de Bertrand:</strong> com apenas <strong>duas</strong> empresas, produto homogéneo e decisões simultâneas de preço, o equilíbrio de Nash é <span class="math inline">\(P = Cmg\)</span> — o mesmo resultado que concorrência perfeita com infinitas empresas.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>Verificação do Equilíbrio de Nash:</p>
+<ul>
+<li>Se <span class="math inline">\(P_B = 6 = Cmg\)</span>: cobrar <span class="math inline">\(P_A &lt; 6\)</span> gera prejuízo; cobrar <span class="math inline">\(P_A &gt; 6\)</span> perde todos os clientes; cobrar <span class="math inline">\(P_A = 6\)</span> dá lucro zero. <strong>Nenhum desvio é rentável.</strong> ✓</li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="math display">\[P^*_{\text{Bert}} = Cmg = 6 \qquad Q^*_{\text{Bert}} = 24 \qquad \Pi^*_{\text{Bert}} = 0\]</span></p>
+</div>
+</section>
+<section id="cournot-vs.-bertrand-o-que-muda" class="slide level2">
+<h2>Cournot vs.&nbsp;Bertrand — O que Muda?</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th>Cournot</th>
+<th>Bertrand</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Variável estratégica</td>
+<td>Quantidade</td>
+<td>Preço</td>
+</tr>
+<tr class="even">
+<td>Timing</td>
+<td>Simultâneo</td>
+<td>Simultâneo</td>
+</tr>
+<tr class="odd">
+<td>Resultado</td>
+<td><span class="math inline">\(P &gt; Cmg\)</span>, <span class="math inline">\(\Pi &gt; 0\)</span></td>
+<td><span class="math inline">\(P = Cmg\)</span>, <span class="math inline">\(\Pi = 0\)</span></td>
+</tr>
+<tr class="even">
+<td>Equivalente a</td>
+<td>—</td>
+<td>Conc. Perfeita</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>O paradoxo levanta uma questão: qual o modelo mais realista? Depende do mercado. Quando as empresas constroem capacidade com antecedência (e depois competem em preço), o resultado aproxima-se de Cournot. Quando podem ajustar a oferta instantaneamente, Bertrand é mais adequado.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="saídas-do-paradoxo" class="slide level2 smaller">
+<h2>Saídas do Paradoxo</h2>
+<p>Na prática, o resultado de Bertrand raramente se verifica porque:</p>
+<ul>
+<li class="fragment"><strong>Diferenciação de produto</strong> — com produtos diferentes, a empresa que baixa o preço não captura imediatamente todo o mercado; há fidelização</li>
+<li class="fragment"><strong>Capacidade instalada limitada</strong> — se a empresa não tem capacidade para servir todo o mercado, o undercutting total não é possível</li>
+<li class="fragment"><strong>Interacção repetida</strong> — em mercados com encontros frequentes, a ameaça de represália pode sustentar preços acima de <span class="math inline">\(Cmg\)</span></li>
+</ul>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Este último ponto — a <strong>interacção repetida</strong> — é o tema da segunda parte desta aula. A repetição transforma o jogo e pode sustentar resultados que não seriam possíveis num jogo de uma só vez.</p>
 </div>
 </div>
 </div>
 </div>
 </section></section>
 <section>
-<section id="indução-para-trás-jogo-de-entrada" class="title-slide slide level1 center" data-background-color="#2C3E7A">
-<h1>Indução para Trás: Jogo de Entrada</h1>
+<section id="colusão-e-o-incentivo-a-desviar" class="title-slide slide level1 center" data-background-color="#2C3E7A">
+<h1>Colusão e o Incentivo a Desviar</h1>
 
 </section>
-<section id="o-jogo-de-entrada-no-mercado" class="slide level2 smaller">
-<h2>O Jogo de Entrada no Mercado</h2>
-<p>Uma empresa <strong>Entrante</strong> pondera entrar num mercado onde existe uma empresa <strong>Incumbente</strong>.</p>
+<section id="o-sonho-do-cartel" class="slide level2 smaller">
+<h2>O Sonho do Cartel</h2>
+<p>Se as empresas pudessem coordenar os preços, agiriam como um monopolista:</p>
+<p><span class="math display">\[Q_m = 12,\quad P_m = 18,\quad \Pi_m = 144 \quad\Rightarrow\quad \Pi_{\text{cada}} = 72\]</span></p>
 <div class="fragment">
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="25_jogos_II_stackelberg_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center" width="652"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><em>(payoffs: Entrante, Incumbente)</em></p>
-</div>
-</section>
-<section id="solução-por-indução-para-trás" class="slide level2 smaller">
-<h2>Solução por Indução para Trás</h2>
-<p><strong>Passo 1 — O que faz o Incumbente se a Entrante entrar?</strong></p>
-<ul>
-<li>Combater: payoff <span class="math inline">\(= -1\)</span></li>
-<li>Acomodar: payoff <span class="math inline">\(= 2\)</span></li>
-</ul>
-<div class="fragment">
-<p><span class="math inline">\(2 &gt; -1\)</span> <span class="math inline">\(\Rightarrow\)</span> <strong>Incumbente acomoda</strong>. A ameaça de combater não é credível.</p>
+<p>Comparando com Bertrand (<span class="math inline">\(\Pi = 0\)</span>) e Cournot (<span class="math inline">\(\Pi = 64\)</span>), a colusão maximiza o lucro conjunto.</p>
 </div>
 <div class="fragment">
-<p><strong>Passo 2 — O que faz a Entrante, antecipando a acomodação?</strong></p>
-<ul>
-<li>Entrar (sabendo que Incumbente acomoda): payoff <span class="math inline">\(= 3\)</span></li>
-<li>Ficar Fora: payoff <span class="math inline">\(= 0\)</span></li>
-</ul>
+<p><strong>Mas cada empresa tem incentivo a desviar:</strong></p>
 </div>
 <div class="fragment">
-<p><span class="math inline">\(3 &gt; 0\)</span> <span class="math inline">\(\Rightarrow\)</span> <strong>Entrante entra</strong>.</p>
+<p>Se B mantém o preço de cartel <span class="math inline">\(P_B = 18\)</span>, A pode cobrar <span class="math inline">\(P_A = 17{,}99\)</span> e capturar <strong>todo</strong> o mercado, obtendo <span class="math inline">\(\Pi_A \approx 144\)</span> em vez de <span class="math inline">\(72\)</span>.</p>
 </div>
 <div class="fragment">
 <div class="callout callout-important callout-titled callout-style-default">
@@ -278,16 +312,58 @@ ISCAL - IPL
 <p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Resultado por indução para trás: (Entrar, Acomodar) = (3, 2)</strong></p>
-<p>A ameaça de combater é <strong>não credível</strong>: o Incumbente preferirá sempre acomodar ex-post. Um jogador racional não acredita em ameaças que o ameaçador não tem incentivo a cumprir.</p>
+<p>Estrutura de <strong>Dilema do Prisioneiro</strong> (já conhecida da Aula 22): o resultado colectivamente óptimo (cooperar) não é sustentável num jogo de uma só vez porque cada empresa tem incentivo a desviar unilateralmente.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="ameaças-credíveis-e-não-credíveis" class="slide level2 smaller">
-<h2>Ameaças Credíveis e Não Credíveis</h2>
-<p>O jogo de entrada ilustra um princípio central:</p>
+<section id="matriz-do-jogo-de-preços-uma-vez" class="slide level2">
+<h2>Matriz do Jogo de Preços (Uma Vez)</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;"><strong>B: Colusão (<span class="math inline">\(P_m\)</span>)</strong></th>
+<th style="text-align: center;"><strong>B: Desviar (<span class="math inline">\(P_m - \varepsilon\)</span>)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>A: Colusão</strong></td>
+<td style="text-align: center;"><span class="math inline">\((72,\ 72)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((0,\ 144)\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>A: Desviar</strong></td>
+<td style="text-align: center;"><span class="math inline">\((144,\ 0)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((0,\ 0)\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p><strong>Desviar domina Colusão</strong> (num jogo de uma só vez): <span class="math inline">\(144 &gt; 72\)</span> se o outro coopera; <span class="math inline">\(0 = 0\)</span> se o outro desvia.</p>
+<p><strong>EN: (Desviar, Desviar) = (0, 0)</strong> — mesma estrutura do dilema do prisioneiro. ✓</p>
+</div>
+</section></section>
+<section>
+<section id="jogos-repetidos-e-colusão-sustentável" class="title-slide slide level1 center" data-background-color="#2C3E7A">
+<h1>Jogos Repetidos e Colusão Sustentável</h1>
+
+</section>
+<section id="a-repetição-muda-o-jogo" class="slide level2">
+<h2>A Repetição Muda o Jogo</h2>
+<p>Num mercado real, as empresas interagem <strong>repetidamente</strong> — todos os meses, todos os anos.</p>
+<div class="fragment">
+<p>A repetição introduz um elemento novo: a <strong>ameaça de represália futura</strong>.</p>
+</div>
+<div class="fragment">
+<ul>
+<li class="fragment">Se A desviar hoje, B pune A amanhã (e depois, e sempre)</li>
+<li class="fragment">A punição reduz os lucros futuros de A</li>
+<li class="fragment">Se A valorizar suficientemente o futuro, a ameaça de punição pode impedir o desvio</li>
+</ul>
+</div>
 <div class="fragment">
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -298,14 +374,24 @@ ISCAL - IPL
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Ameaça credível:</strong> acção que o ameaçador tem incentivo a executar quando chega o momento, independentemente do que disse antes.</p>
-<p><strong>Ameaça não credível:</strong> acção que o ameaçador <em>prefere não executar</em> quando chega o momento — racionalmente ignorada pelo rival.</p>
+<p>O jogo repetido não elimina o incentivo a desviar num único período — mas cria um <strong>trade-off inter-temporal</strong>: ganho imediato de desviar vs.&nbsp;perda de lucros futuros pela punição.</p>
 </div>
 </div>
 </div>
+</div>
+</section>
+<section id="o-factor-de-desconto-delta" class="slide level2 smaller">
+<h2>O Factor de Desconto <span class="math inline">\(\delta\)</span></h2>
+<p><span class="math inline">\(\delta \in (0,1)\)</span> é o <strong>factor de desconto</strong> — mede quanto a empresa valoriza <span class="math inline">\(1\)</span> euro de lucro no próximo período em comparação com <span class="math inline">\(1\)</span> euro hoje.</p>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(\delta\)</span> próximo de <span class="math inline">\(1\)</span>: empresa muito paciente — valoriza muito o futuro</li>
+<li><span class="math inline">\(\delta\)</span> próximo de <span class="math inline">\(0\)</span>: empresa impaciente — quase só valoriza o presente</li>
+</ul>
 </div>
 <div class="fragment">
-<p>O Incumbente pode dizer <em>“se entrar, combato”</em> — mas a Entrante sabe que, uma vez dentro, o Incumbente preferirá acomodar. As palavras não chegam; só os <strong>incentivos ex-post</strong> contam.</p>
+<p>O valor presente de um fluxo constante <span class="math inline">\(\Pi\)</span> por período, para sempre:</p>
+<p><span class="math display">\[NPV = \Pi + \delta\Pi + \delta^2\Pi + \ldots = \frac{\Pi}{1-\delta}\]</span></p>
 </div>
 <div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -317,24 +403,99 @@ ISCAL - IPL
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p>Aplicação: um monopolista que ameaça baixar preços drasticamente para afastar rivais precisa de tornar essa ameaça credível — por exemplo, através de investimento em capacidade que torna o combate rentável.</p>
+<p><span class="math inline">\(\delta\)</span> pode interpretar-se como <span class="math inline">\(\dfrac{1}{1+r}\)</span> onde <span class="math inline">\(r\)</span> é a taxa de juro, ou como a probabilidade de o jogo continuar no próximo período.</p>
 </div>
 </div>
 </div>
 </div>
-</section></section>
-<section>
-<section id="o-modelo-de-stackelberg" class="title-slide slide level1 center" data-background-color="#2C3E7A">
-<h1>O Modelo de Stackelberg</h1>
-
 </section>
-<section id="stackelberg-como-jogo-sequencial" class="slide level2">
-<h2>Stackelberg como Jogo Sequencial</h2>
-<p>O modelo de Stackelberg aplica a lógica dos jogos sequenciais ao oligopólio de quantidades:</p>
+<section id="estratégia-grim-trigger" class="slide level2">
+<h2>Estratégia Grim Trigger</h2>
+<p>A estratégia mais simples que pode sustentar a colusão:</p>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Grim Trigger (gatilho implacável):</strong></p>
 <ul>
-<li class="fragment"><strong>Líder</strong> (Empresa 1): escolhe <span class="math inline">\(q_1\)</span> primeiro, de forma observável</li>
-<li class="fragment"><strong>Seguidor</strong> (Empresa 2): observa <span class="math inline">\(q_1\)</span> e escolhe <span class="math inline">\(q_2\)</span> a seguir</li>
-<li class="fragment">Mesma estrutura de mercado da aula anterior: <span class="math inline">\(P = 30 - (q_1+q_2)\)</span>, <span class="math inline">\(Cmg = 6\)</span></li>
+<li class="fragment">Cooperar (cobrar <span class="math inline">\(P_m\)</span>) enquanto o rival cooperar</li>
+<li class="fragment">Se o rival desviar <strong>alguma vez</strong>: punir para sempre — cobrar <span class="math inline">\(P = Cmg\)</span> (Bertrand) eternamente</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>Esta estratégia é <strong>simples e credível</strong>: uma vez activada a punição, jogar Bertrand é óptimo para ambas as empresas (é o EN do jogo estático). A ameaça é credível porque não requer que ninguém “sacrifique” lucros para punir.</p>
+</div>
+</section>
+<section id="condição-de-sustentabilidade-da-colusão" class="slide level2 smaller">
+<h2>Condição de Sustentabilidade da Colusão</h2>
+<p>Empresa A compara dois cenários:</p>
+<div class="fragment">
+<p><strong>Cooperar sempre</strong> (recebe <span class="math inline">\(\Pi_{coop}\)</span> por período):</p>
+<p><span class="math display">\[NPV_{\text{coop}} = \frac{\Pi_{coop}}{1-\delta}\]</span></p>
+</div>
+<div class="fragment">
+<p><strong>Desviar hoje</strong> (recebe <span class="math inline">\(\Pi_{dev}\)</span> hoje, depois punição <span class="math inline">\(\Pi_N = 0\)</span> para sempre):</p>
+<p><span class="math display">\[NPV_{dev} = \Pi_{dev} + \frac{\delta \cdot 0}{1-\delta} = \Pi_{dev}\]</span></p>
+</div>
+<div class="fragment">
+<p>Colusão sustentável se <span class="math inline">\(NPV_{\text{coop}} \geq NPV_{dev}\)</span>:</p>
+<p><span class="math display">\[\frac{\Pi_{coop}}{1-\delta} \geq \Pi_{dev} \quad\Leftrightarrow\quad \delta \geq 1 - \frac{\Pi_{coop}}{\Pi_{dev}}\]</span></p>
+</div>
+</section>
+<section id="derivação-do-delta-mínimo" class="slide level2 smaller">
+<h2>Derivação do <span class="math inline">\(\delta\)</span> Mínimo</h2>
+<p>Com <span class="math inline">\(\Pi_{coop} = 72\)</span> e <span class="math inline">\(\Pi_{dev} = 144\)</span>:</p>
+<p><span class="math display">\[\frac{72}{1-\delta} \geq 144\]</span></p>
+<div class="fragment">
+<p><span class="math display">\[72 \geq 144(1-\delta)\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[144\delta \geq 144 - 72 = 72\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\boxed{\delta \geq \frac{1}{2}}\]</span></p>
+</div>
+<div class="fragment">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>Se <span class="math inline">\(\delta \geq \tfrac{1}{2}\)</span>, a colusão é sustentável com grim trigger. Se <span class="math inline">\(\delta &lt; \tfrac{1}{2}\)</span>, a empresa prefere desviar hoje — o futuro não pesa suficientemente para disciplinar o comportamento presente.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="interpretação-económica-de-delta-geq-frac12" class="slide level2">
+<h2>Interpretação Económica de <span class="math inline">\(\delta \geq \frac{1}{2}\)</span></h2>
+
+<img data-src="26_bertrand_colusao_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><div class="fragment">
+<p>Quanto maior <span class="math inline">\(\delta\)</span> (mais paciente a empresa), maior <span class="math inline">\(NPV_{\text{coop}}\)</span> — o fluxo futuro de lucros de colusão vale mais. Para <span class="math inline">\(\delta = \tfrac{1}{2}\)</span>: <span class="math inline">\(NPV_{\text{coop}} = \tfrac{72}{1/2} = 144 = NPV_{dev}\)</span> — a empresa é indiferente.</p>
+</div>
+</section>
+<section id="quando-é-a-colusão-mais-provável" class="slide level2 smaller">
+<h2>Quando é a Colusão Mais Provável?</h2>
+<p>A condição <span class="math inline">\(\delta \geq \tfrac{1}{2}\)</span> é mais fácil de satisfazer quando:</p>
+<ul>
+<li class="fragment"><strong>Taxas de juro baixas</strong> — <span class="math inline">\(\delta = 1/(1+r)\)</span> é maior quando <span class="math inline">\(r\)</span> é pequeno; o futuro desconta menos</li>
+<li class="fragment"><strong>Mercado estável e de longa duração</strong> — horizonte longo aumenta o valor dos lucros futuros</li>
+<li class="fragment"><strong>Interacções frequentes</strong> — empresas que se encontram frequentemente têm mais oportunidades de punir desvios rapidamente</li>
+<li class="fragment"><strong>Poucos participantes</strong> — é mais fácil monitorizar o comportamento das rivais e detectar desvios</li>
+<li class="fragment"><strong>Lucro de desvio relativamente pequeno</strong> — se <span class="math inline">\(\Pi_{dev}/\Pi_{coop}\)</span> for baixo, o <span class="math inline">\(\delta\)</span> necessário é menor</li>
 </ul>
 <div class="fragment">
 <div class="callout callout-note callout-titled callout-style-default">
@@ -346,141 +507,59 @@ ISCAL - IPL
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>A diferença face a Cournot é apenas o <strong>timing</strong>: em Cournot, as decisões são simultâneas e cada empresa toma a quantidade da outra como dada. Em Stackelberg, o líder <strong>conhece a função de reacção do seguidor</strong> e optimiza em função dela.</p>
+<p><strong>Implicação para a política de concorrência:</strong> os reguladores monitorizam especialmente mercados concentrados, estáveis e com interacções frequentes — precisamente onde a colusão tácita é mais fácil de sustentar.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="passo-1-a-função-de-reacção-do-seguidor" class="slide level2">
-<h2>Passo 1 — A Função de Reacção do Seguidor</h2>
-<p>O seguidor resolve o seu problema exactamente como em Cournot, dado <span class="math inline">\(q_1\)</span> observado:</p>
-<p><span class="math display">\[\Pi_2 = (30 - q_1 - q_2)\,q_2 - 6\,q_2\]</span></p>
-<div class="fragment">
-<p><span class="math display">\[\frac{\partial \Pi_2}{\partial q_2} = 24 - q_1 - 2q_2 = 0 \quad\Rightarrow\quad \boxed{q_2^*(q_1) = 12 - \frac{q_1}{2}}\]</span></p>
-</div>
-<div class="fragment">
-<p>Esta é a mesma função de reacção da aula anterior — o líder <strong>sabe</strong> que o seguidor a irá usar.</p>
-</div>
-</section>
-<section id="passo-2-o-líder-internaliza-a-reacção-do-seguidor" class="slide level2">
-<h2>Passo 2 — O Líder Internaliza a Reacção do Seguidor</h2>
-<p>O líder substitui <span class="math inline">\(q_2^*(q_1)\)</span> no seu próprio lucro:</p>
-<p><span class="math display">\[\Pi_1 = \bigl(30 - q_1 - q_2^*(q_1)\bigr)\,q_1 - 6\,q_1\]</span></p>
-<div class="fragment">
-<p><span class="math display">\[= \left(30 - q_1 - \left(12 - \frac{q_1}{2}\right)\right)q_1 - 6q_1 = \left(12 - \frac{q_1}{2}\right)q_1\]</span></p>
-</div>
-<div class="fragment">
-<p><span class="math display">\[\Pi_1 = 12\,q_1 - \frac{q_1^2}{2}\]</span></p>
-</div>
-<div class="fragment">
-<p>Condição de primeira ordem:</p>
-<p><span class="math display">\[\frac{d\Pi_1}{dq_1} = 12 - q_1 = 0 \quad\Rightarrow\quad \boxed{q_1^* = 12}\]</span></p>
-</div>
-</section>
-<section id="passo-3-equilíbrio-de-stackelberg" class="slide level2 smaller">
-<h2>Passo 3 — Equilíbrio de Stackelberg</h2>
-<p>Com <span class="math inline">\(q_1^* = 12\)</span>, o seguidor responde:</p>
-<p><span class="math display">\[q_2^* = 12 - \frac{12}{2} = 6\]</span></p>
-<div class="fragment">
-<p>Resultados de equilíbrio:</p>
-<p><span class="math display">\[Q^*_S = 12 + 6 = 18 \qquad P^*_S = 30 - 18 = 12\]</span></p>
-</div>
-<div class="fragment">
-<p><span class="math display">\[\Pi_{\text{líder}} = (12-6)\times 12 = 72 \qquad \Pi_{\text{seguidor}} = (12-6)\times 6 = 36\]</span></p>
-</div>
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Vantagem do primeiro movente:</strong> o líder ganha <strong>72</strong> — tanto quanto o monopolista — enquanto o seguidor fica com apenas <strong>36</strong>, abaixo dos <strong>64</strong> de Cournot.</p>
-<p>O líder usa a quantidade como <strong>compromisso</strong>: ao produzir muito (12), força o seguidor a produzir pouco (6).</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="stackelberg-vs.-cournot-diagrama" class="slide level2">
-<h2>Stackelberg vs.&nbsp;Cournot — Diagrama</h2>
-
-<img data-src="25_jogos_II_stackelberg_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
-<section id="intuição-do-primeiro-movente" class="slide level2">
-<h2>Intuição do Primeiro Movente</h2>
-<p>Por que vale a pena ser o líder?</p>
-<div class="fragment">
-<p>Em Cournot, se a Empresa 1 aumentasse unilateralmente a sua produção de 8 para 12, o preço desceria e o lucro cairia (dado <span class="math inline">\(q_2 = 8\)</span> fixo).</p>
-</div>
-<div class="fragment">
-<p>Em Stackelberg, o líder sabe que ao produzir 12, o seguidor responde com 6 (não com 8). O efeito adverso no preço é parcialmente compensado pela <strong>contracção do seguidor</strong>.</p>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>O compromisso credível de produzir muito <strong>disciplina o rival</strong>. O líder renuncia à melhor resposta de Cournot, mas obtém um resultado melhor porque o seguidor ajusta em sentido contrário.</p>
-<p>Esta é a essência da <strong>vantagem do primeiro movente</strong> em jogos de quantidades.</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="comparação-final" class="title-slide slide level1 center" data-background-color="#2C3E7A">
-<h1>Comparação Final</h1>
-
-</section>
-<section id="tabela-resumo-quatro-estruturas" class="slide level2">
-<h2>Tabela Resumo: Quatro Estruturas</h2>
+<section id="tabela-final-todas-as-estruturas" class="slide level2">
+<h2>Tabela Final: Todas as Estruturas</h2>
 <table class="caption-top">
 <thead>
 <tr class="header">
 <th>Estrutura</th>
 <th><span class="math inline">\(Q\)</span></th>
 <th><span class="math inline">\(P\)</span></th>
-<th><span class="math inline">\(\Pi_1\)</span></th>
-<th><span class="math inline">\(\Pi_2\)</span></th>
+<th><span class="math inline">\(\Pi\)</span> cada</th>
+<th>Eficiência</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Monopólio (cartel)</td>
+<td>Monopólio/Cartel</td>
 <td><span class="math inline">\(12\)</span></td>
 <td><span class="math inline">\(18\)</span></td>
 <td><span class="math inline">\(72\)</span></td>
-<td><span class="math inline">\(72\)</span></td>
+<td>Mínima</td>
 </tr>
 <tr class="even">
-<td><strong>Stackelberg</strong></td>
-<td><strong><span class="math inline">\(18\)</span></strong></td>
-<td><strong><span class="math inline">\(12\)</span></strong></td>
-<td><strong><span class="math inline">\(72\)</span></strong></td>
-<td><strong><span class="math inline">\(36\)</span></strong></td>
+<td>Stackelberg</td>
+<td><span class="math inline">\(18\)</span></td>
+<td><span class="math inline">\(12\)</span></td>
+<td><span class="math inline">\(72\ /\ 36\)</span></td>
+<td>—</td>
 </tr>
 <tr class="odd">
 <td>Cournot</td>
 <td><span class="math inline">\(16\)</span></td>
 <td><span class="math inline">\(14\)</span></td>
 <td><span class="math inline">\(64\)</span></td>
-<td><span class="math inline">\(64\)</span></td>
+<td>Intermédia</td>
 </tr>
 <tr class="even">
+<td><strong>Bertrand</strong></td>
+<td><strong><span class="math inline">\(24\)</span></strong></td>
+<td><strong><span class="math inline">\(6\)</span></strong></td>
+<td><strong><span class="math inline">\(0\)</span></strong></td>
+<td><strong>Máxima</strong></td>
+</tr>
+<tr class="odd">
 <td>Conc. Perfeita</td>
 <td><span class="math inline">\(24\)</span></td>
 <td><span class="math inline">\(6\)</span></td>
 <td><span class="math inline">\(0\)</span></td>
-<td><span class="math inline">\(0\)</span></td>
+<td>Máxima</td>
 </tr>
 </tbody>
 </table>
@@ -494,69 +573,11 @@ ISCAL - IPL
 <p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Ordenações que sempre se verificam:</strong></p>
-<p><span class="math inline">\(Q_m &lt; Q_C &lt; Q_S &lt; Q_{cp}\)</span> e <span class="math inline">\(P_m &gt; P_C &gt; P_S &gt; P_{cp}\)</span></p>
-<p><span class="math inline">\(\Pi_{\text{líder}}^S &gt; \Pi^C &gt; \Pi_{\text{seguidor}}^S\)</span></p>
-<p>O líder de Stackelberg ganha tanto quanto o monopolista — ao comprometer-se com produção elevada, captura toda a vantagem estratégica.</p>
+<p>Bertrand com produto homogéneo e custos idênticos reproduz exactamente o resultado de concorrência perfeita — com apenas duas empresas. A variável estratégica importa tanto quanto o número de concorrentes.</p>
 </div>
 </div>
 </div>
 </div>
-</section>
-<section id="cournot-vs.-stackelberg-síntese" class="slide level2">
-<h2>Cournot vs.&nbsp;Stackelberg: Síntese</h2>
-<p>Os dois modelos diferem na <strong>informação</strong> e no <strong>timing</strong> — com consequências directas sobre quem ganha e quem perde.</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>Cournot</th>
-<th>Stackelberg</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Timing</td>
-<td>Simultâneo</td>
-<td>Sequencial</td>
-</tr>
-<tr class="even">
-<td>Hipótese sobre rival</td>
-<td><span class="math inline">\(q_j\)</span> fixo (conjectura)</td>
-<td><span class="math inline">\(q_j = BR_j(q_i)\)</span> (conhecida)</td>
-</tr>
-<tr class="odd">
-<td>Equilíbrio</td>
-<td>Nash em quantidades</td>
-<td>Backward induction</td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(q_{\text{líder}}\)</span> vs <span class="math inline">\(q_C\)</span></td>
-<td><span class="math inline">\(q^C = 8\)</span></td>
-<td><span class="math inline">\(q_L^S = 12 &gt; 8\)</span></td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\(q_{\text{seguidor}}\)</span> vs <span class="math inline">\(q_C\)</span></td>
-<td><span class="math inline">\(q^C = 8\)</span></td>
-<td><span class="math inline">\(q_F^S = 6 &lt; 8\)</span></td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(\Pi_{\text{líder}}\)</span> vs <span class="math inline">\(\Pi_C\)</span></td>
-<td><span class="math inline">\(64\)</span></td>
-<td><span class="math inline">\(72 &gt; 64\)</span></td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\(\Pi_{\text{seguidor}}\)</span> vs <span class="math inline">\(\Pi_C\)</span></td>
-<td><span class="math inline">\(64\)</span></td>
-<td><span class="math inline">\(36 &lt; 64\)</span></td>
-</tr>
-</tbody>
-</table>
 </section>
 <section class="slide level2">
 
@@ -568,130 +589,74 @@ ISCAL - IPL
 </section>
 <section id="exercício-1-escolha-múltipla" class="slide level2">
 <h2>Exercício 1 — Escolha Múltipla</h2>
-<p>No modelo de Stackelberg, o líder produz <strong>mais</strong> do que no equilíbrio de Cournot porque:</p>
+<p>Duas empresas com produto homogéneo e <span class="math inline">\(Cmg = 10\)</span> competem em preços (Bertrand). O equilíbrio de Nash é:</p>
 <ol type="a">
-<li>O líder tem custos marginais mais baixos</li>
-<li>O líder sabe que o seguidor reduzirá a sua produção em resposta — o compromisso com quantidade elevada disciplina o rival</li>
-<li>O líder age simultaneamente com o seguidor e pode coordenar melhor</li>
-<li>O seguidor não observa a quantidade do líder e não consegue reagir</li>
+<li><span class="math inline">\(P = 10\)</span>, <span class="math inline">\(\Pi = 0\)</span> para cada empresa</li>
+<li><span class="math inline">\(P &gt; 10\)</span>, com lucros positivos para ambas</li>
+<li>Uma empresa cobra <span class="math inline">\(P &gt; 10\)</span> e a outra cobra <span class="math inline">\(P = 10\)</span></li>
+<li>Depende da procura — não há solução geral</li>
 </ol>
 </section>
 <section id="solução-exercício-1" class="slide level2" data-visibility="uncounted">
 <h2>Solução — Exercício 1</h2>
-<ul>
-<li class="fragment"><ol type="a">
-<li class="fragment">Falso — os custos são idênticos nos dois modelos</li>
-</ol></li>
-<li class="fragment"><strong>(b) Verdadeiro</strong> — o líder internaliza a função de reacção do seguidor: sabe que produzir mais força o seguidor a produzir menos, atenuando o efeito negativo no preço. É a essência da vantagem do primeiro movente.</li>
-<li class="fragment"><ol start="3" type="a">
-<li class="fragment">Falso — Stackelberg é sequencial, não simultâneo</li>
-</ol></li>
-<li class="fragment"><ol start="4" type="a">
-<li class="fragment">Falso — o seguidor <strong>observa</strong> <span class="math inline">\(q_1\)</span> antes de decidir; é precisamente isso que torna o compromisso do líder credível</li>
-</ol></li>
-</ul>
-<p><strong>Resposta: (b)</strong></p>
+<p>A lógica de undercutting: qualquer <span class="math inline">\(P &gt; Cmg = 10\)</span> é instável — a rival tem incentivo a cobrar <span class="math inline">\(P - \varepsilon\)</span> e capturar todo o mercado.</p>
+<p>O processo pára em <span class="math inline">\(P = Cmg = 10\)</span>: abaixo, há prejuízo; acima, a rival subcorta.</p>
+<p><strong>Resposta: (a)</strong></p>
+<p>Verificação Nash: se <span class="math inline">\(P_B = 10\)</span>, cobrar <span class="math inline">\(P_A &lt; 10\)</span> gera prejuízo; cobrar <span class="math inline">\(P_A &gt; 10\)</span> perde clientes; cobrar <span class="math inline">\(P_A = 10\)</span> dá <span class="math inline">\(\Pi = 0\)</span>. Nenhum desvio é estritamente rentável. ✓</p>
 </section>
 <section id="exercício-2-escolha-múltipla" class="slide level2">
 <h2>Exercício 2 — Escolha Múltipla</h2>
-<p>No jogo de entrada com payoffs (Entrante, Incumbente): Entrar+Combater = <span class="math inline">\((-2,\ -1)\)</span>; Entrar+Acomodar = <span class="math inline">\((3,\ 2)\)</span>; Ficar Fora = <span class="math inline">\((0,\ 5)\)</span>. Por indução para trás, o resultado é:</p>
+<p>Em jogos repetidos com estratégia grim trigger, se o lucro de cooperação é <span class="math inline">\(\Pi_{coop} = 8\)</span> e o lucro de desvio é <span class="math inline">\(\Pi_{dev} = 16\)</span> (com punição Bertrand <span class="math inline">\(\Pi_N = 0\)</span>), o factor de desconto mínimo para sustentar a colusão é:</p>
 <ol type="a">
-<li>Ficar Fora, porque o Incumbente ameaça combater</li>
-<li>Entrar + Combater, porque o Incumbente cumpre a ameaça</li>
-<li>Entrar + Acomodar, porque a ameaça de combater não é credível</li>
-<li>Indeterminado — há dois Equilíbrios de Nash</li>
+<li><span class="math inline">\(\delta \geq \dfrac{1}{4}\)</span></li>
+<li><span class="math inline">\(\delta \geq \dfrac{1}{3}\)</span></li>
+<li><span class="math inline">\(\delta \geq \dfrac{1}{2}\)</span></li>
+<li><span class="math inline">\(\delta \geq \dfrac{2}{3}\)</span></li>
 </ol>
 </section>
 <section id="solução-exercício-2" class="slide level2" data-visibility="uncounted">
 <h2>Solução — Exercício 2</h2>
-<p>Indução para trás:</p>
-<ol type="1">
-<li class="fragment">Se Entrante entrar, Incumbente escolhe: Combater <span class="math inline">\((-1)\)</span> vs Acomodar <span class="math inline">\((2)\)</span> <span class="math inline">\(\Rightarrow\)</span> <strong>Acomodar</strong></li>
-<li class="fragment">Entrante antecipa Acomodar: Entrar <span class="math inline">\((3)\)</span> vs Ficar Fora <span class="math inline">\((0)\)</span> <span class="math inline">\(\Rightarrow\)</span> <strong>Entrar</strong></li>
-</ol>
-<p>A ameaça de combater é não credível — o Incumbente não a executaria ex-post.</p>
+<p>Condição: <span class="math inline">\(\dfrac{\Pi_{coop}}{1-\delta} \geq \Pi_{dev}\)</span></p>
+<p><span class="math display">\[\frac{8}{1-\delta} \geq 16 \quad\Rightarrow\quad 8 \geq 16(1-\delta) \quad\Rightarrow\quad \delta \geq 1 - \frac{8}{16} = \frac{1}{2}\]</span></p>
 <p><strong>Resposta: (c)</strong></p>
-<p><em>Nota: existe um EN na forma normal em que Entrante fica fora com base na ameaça de combater — mas a indução para trás elimina esse EN por envolver estratégias não credíveis.</em></p>
+<p>Verificação: <span class="math inline">\(\delta = \frac{1}{2}\)</span> <span class="math inline">\(\Rightarrow\)</span> <span class="math inline">\(NPV_{\text{coop}} = \frac{8}{1/2} = 16 = NPV_{dev}\)</span> ✓ (restrição vinculativa)</p>
 </section>
 <section id="exercício-de-desenvolvimento" class="slide level2 smaller">
 <h2>Exercício de Desenvolvimento</h2>
-<p>Dois produtores de aço, a Empresa 1 (líder) e a Empresa 2 (seguidor), operam no mercado com procura inversa <span class="math inline">\(P = 30 - (q_1 + q_2)\)</span> e custo marginal <span class="math inline">\(Cmg = 6\)</span> para ambas.</p>
+<p>Duas empresas farmacêuticas produzem um medicamento genérico (produto homogéneo) e competem em preço. Em cada período, o lucro de monopólio partilhado é <span class="math inline">\(\Pi_{coop} = 60\)</span> (cada), o lucro de desvio (capturar todo o mercado) é <span class="math inline">\(\Pi_{dev} = 100\)</span>, e o lucro de Nash de Bertrand é <span class="math inline">\(\Pi_N = 0\)</span>.</p>
 <p><strong>Alíneas:</strong></p>
 <ol type="a">
-<li>Derive a função de reacção do seguidor (Empresa 2), <span class="math inline">\(q_2^*(q_1)\)</span>.</li>
-<li>Substitua <span class="math inline">\(q_2^*(q_1)\)</span> na função de lucro do líder e simplifique.</li>
-<li>Determine a quantidade óptima do líder <span class="math inline">\(q_1^*\)</span> e a resposta do seguidor <span class="math inline">\(q_2^*\)</span>.</li>
-<li>Calcule <span class="math inline">\(Q^*_S\)</span>, <span class="math inline">\(P^*_S\)</span>, <span class="math inline">\(\Pi_{\text{líder}}\)</span> e <span class="math inline">\(\Pi_{\text{seguidor}}\)</span>.</li>
-<li>Compare com o equilíbrio de Cournot da aula anterior (<span class="math inline">\(q^C = 8\)</span>, <span class="math inline">\(\Pi^C = 64\)</span>). Quem ganha e quem perde com a liderança? Justifique.</li>
-<li>Complete a tabela com os quatro resultados: monopólio, Stackelberg, Cournot, concorrência perfeita.</li>
+<li>Explique por que razão, num jogo de uma só vez, nenhuma empresa consegue manter o preço de monopólio. Qual é o Equilíbrio de Nash estático?</li>
+<li>No jogo repetido com grim trigger, escreva as expressões para <span class="math inline">\(NPV_{\text{coop}}\)</span> e <span class="math inline">\(NPV_{dev}\)</span>.</li>
+<li>Derive o valor mínimo de <span class="math inline">\(\delta\)</span> para que a colusão seja sustentável.</li>
+<li>Interprete o resultado: que condições de mercado favorecem <span class="math inline">\(\delta\)</span> acima do limiar calculado?</li>
+<li>Suponha que o regulador consegue aumentar a probabilidade de detecção do cartel, o que equivale a reduzir <span class="math inline">\(\Pi_{dev}\)</span> para <span class="math inline">\(80\)</span> (coima esperada reduz o ganho do desvio). Recalcule o <span class="math inline">\(\delta\)</span> mínimo. O que conclui?</li>
 </ol>
 </section>
 <section id="solução-exercício-de-desenvolvimento" class="slide level2 smaller" data-visibility="uncounted">
 <h2>Solução — Exercício de Desenvolvimento</h2>
-<p><strong>a)</strong> <span class="math inline">\(\Pi_2 = (30-q_1-q_2-6)q_2\)</span>. CPO: <span class="math inline">\(24-q_1-2q_2=0\)</span></p>
-<p><span class="math display">\[q_2^*(q_1) = 12 - \frac{q_1}{2}\]</span></p>
+<p><strong>a)</strong> Num jogo de uma só vez, desviar domina: se a rival coopera, <span class="math inline">\(\Pi_{dev}=100 &gt; \Pi_{coop}=60\)</span>; se a rival desvia, <span class="math inline">\(0 = 0\)</span>. Ambas desviam. <strong>EN estático: (Desviar, Desviar) = (0, 0)</strong>. A colusão colapsa pela lógica do dilema do prisioneiro.</p>
 <div class="fragment">
-<p><strong>b)</strong> <span class="math inline">\(\Pi_1 = \!\left(30-q_1-\!\left(12-\tfrac{q_1}{2}\right)-6\right)q_1 = \!\left(12-\tfrac{q_1}{2}\right)q_1 = 12q_1 - \tfrac{q_1^2}{2}\)</span></p>
+<p><strong>b)</strong> <span class="math display">\[NPV_{\text{coop}} = \frac{60}{1-\delta} \qquad NPV_{dev} = 100 + \frac{\delta \cdot 0}{1-\delta} = 100\]</span></p>
 </div>
 <div class="fragment">
-<p><strong>c)</strong> <span class="math inline">\(\dfrac{d\Pi_1}{dq_1} = 12 - q_1 = 0 \Rightarrow q_1^* = 12\)</span></p>
-<p><span class="math inline">\(q_2^* = 12 - 6 = 6\)</span></p>
+<p><strong>c)</strong> <span class="math inline">\(NPV_{\text{coop}} \geq NPV_{dev}\)</span>:</p>
+<p><span class="math display">\[\frac{60}{1-\delta} \geq 100 \;\Rightarrow\; 60 \geq 100(1-\delta) \;\Rightarrow\; 100\delta \geq 40 \;\Rightarrow\; \boxed{\delta \geq \frac{2}{5}}\]</span></p>
+<p>Verificação: <span class="math inline">\(\delta = \frac{2}{5}\)</span> <span class="math inline">\(\Rightarrow\)</span> <span class="math inline">\(NPV_{\text{coop}} = \frac{60}{3/5} = 100 = NPV_{dev}\)</span> ✓ (restrição vinculativa)</p>
 </div>
 <div class="fragment">
-<p><strong>d)</strong> <span class="math inline">\(Q^*_S = 18\)</span>, <span class="math inline">\(P^*_S = 30-18 = 12\)</span></p>
-<p><span class="math inline">\(\Pi_{\text{líder}} = (12-6)\times 12 = 72\)</span> <span class="math inline">\(\quad;\quad\)</span> <span class="math inline">\(\Pi_{\text{seguidor}} = (12-6)\times 6 = 36\)</span></p>
+<p><strong>d)</strong> <span class="math inline">\(\delta \geq \frac{2}{5}\)</span> é mais fácil de satisfazer com taxas de juro baixas (empresas pacientes), horizonte longo, interacções frequentes e poucos concorrentes (monitorização fácil de desvios).</p>
 </div>
 </section>
 <section id="solução-exercício-de-desenvolvimento-1" class="slide level2 smaller" data-visibility="uncounted">
 <h2>Solução — Exercício de Desenvolvimento</h2>
-<p><strong>e)</strong> O líder ganha <span class="math inline">\(72 &gt; 64\)</span> (Cournot): ao comprometer-se com <span class="math inline">\(q_1=12\)</span>, força o seguidor a retrair-se para <span class="math inline">\(q_2=6\)</span>, capturando mais mercado. O seguidor perde: <span class="math inline">\(36 &lt; 64\)</span> (Cournot) — é penalizado por agir segundo, ficando com um mercado residual mais pequeno.</p>
-<div class="fragment">
-<p><strong>f)</strong></p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Estrutura</th>
-<th><span class="math inline">\(Q\)</span></th>
-<th><span class="math inline">\(P\)</span></th>
-<th><span class="math inline">\(\Pi_1\)</span></th>
-<th><span class="math inline">\(\Pi_2\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Monopólio</td>
-<td><span class="math inline">\(12\)</span></td>
-<td><span class="math inline">\(18\)</span></td>
-<td><span class="math inline">\(72\)</span></td>
-<td><span class="math inline">\(72\)</span></td>
-</tr>
-<tr class="even">
-<td>Stackelberg</td>
-<td><span class="math inline">\(18\)</span></td>
-<td><span class="math inline">\(12\)</span></td>
-<td><span class="math inline">\(72\)</span></td>
-<td><span class="math inline">\(36\)</span></td>
-</tr>
-<tr class="odd">
-<td>Cournot</td>
-<td><span class="math inline">\(16\)</span></td>
-<td><span class="math inline">\(14\)</span></td>
-<td><span class="math inline">\(64\)</span></td>
-<td><span class="math inline">\(64\)</span></td>
-</tr>
-<tr class="even">
-<td>Conc. Perfeita</td>
-<td><span class="math inline">\(24\)</span></td>
-<td><span class="math inline">\(6\)</span></td>
-<td><span class="math inline">\(0\)</span></td>
-<td><span class="math inline">\(0\)</span></td>
-</tr>
-</tbody>
-</table>
+<p><strong>e)</strong> Com <span class="math inline">\(\Pi_{dev} = 80\)</span>:</p>
+<p><span class="math display">\[\frac{60}{1-\delta} \geq 80 \;\Rightarrow\; 60 \geq 80(1-\delta) \;\Rightarrow\; 80\delta \geq 20 \;\Rightarrow\; \delta \geq \frac{1}{4}\]</span></p>
+<p>Verificação: <span class="math inline">\(\delta = \frac{1}{4}\)</span> <span class="math inline">\(\Rightarrow\)</span> <span class="math inline">\(NPV_{\text{coop}} = \frac{60}{3/4} = 80 = NPV_{dev}\)</span> ✓</p>
+<p>O <span class="math inline">\(\delta\)</span> mínimo <strong>baixou</strong> de <span class="math inline">\(\frac{2}{5}\)</span> para <span class="math inline">\(\frac{1}{4}\)</span>: desviar tornou-se menos atractivo (o ganho cai de 100 para 80), pelo que empresas com menos paciência conseguem agora manter o acordo. A política de leniência funciona de forma diferente: ao reduzir o ganho do desvio, o regulador na verdade facilita a colusão tácita. O verdadeiro efeito dissuasor vem de reduzir os lucros de <strong>cooperação</strong> (proibição e coimas sobre os lucros do cartel), não apenas o ganho de desviar.</p>
 
 
 
-</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
