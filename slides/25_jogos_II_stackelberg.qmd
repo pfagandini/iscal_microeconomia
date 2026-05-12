@@ -93,13 +93,13 @@ Resolver o jogo **de trás para a frente**: começar nas folhas e determinar a e
 
 # Indução para Trás: Jogo de Entrada {background-color="#2C3E7A"}
 
-## O Jogo de Entrada no Mercado
+## O Jogo de Entrada no Mercado {.smaller}
 
 Uma empresa **Entrante** pondera entrar num mercado onde existe uma empresa **Incumbente**.
 
 . . .
 
-```{r, engine='tikz', fig.width=8.8, fig.height=3.8, fig.align='center'}
+```{r, engine='tikz', fig.width=6.8, fig.height=2.8, fig.align='center'}
 \begin{tikzpicture}[
   grow=right,
   level distance=2.1cm,
@@ -239,7 +239,7 @@ Condição de primeira ordem:
 
 $$\frac{d\Pi_1}{dq_1} = 12 - q_1 = 0 \quad\Rightarrow\quad \boxed{q_1^* = 12}$$
 
-## Passo 3 — Equilíbrio de Sta
+## Passo 3 — Equilíbrio de Stackelberg {.smaller}
 
 Com $q_1^* = 12$, o seguidor responde:
 
@@ -351,7 +351,9 @@ O líder de Stackelberg ganha tanto quanto o monopolista — ao comprometer-se c
 :::
 
 ## Cournot vs. Stackelberg: Síntese
-Uma empresa Entrante pondera entrar num mercado onde existe uma empresa Incumbente.
+
+Os dois modelos diferem na **informação** e no **timing** — com consequências directas sobre quem ganha e quem perde.
+
 :::{.nonincremental}
 | | Cournot | Stackelberg |
 |---|---|---|

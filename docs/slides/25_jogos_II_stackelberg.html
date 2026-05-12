@@ -232,7 +232,7 @@ ISCAL - IPL
 <h1>Indução para Trás: Jogo de Entrada</h1>
 
 </section>
-<section id="o-jogo-de-entrada-no-mercado" class="slide level2">
+<section id="o-jogo-de-entrada-no-mercado" class="slide level2 smaller">
 <h2>O Jogo de Entrada no Mercado</h2>
 <p>Uma empresa <strong>Entrante</strong> pondera entrar num mercado onde existe uma empresa <strong>Incumbente</strong>.</p>
 <div class="fragment">
@@ -240,7 +240,7 @@ ISCAL - IPL
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="25_jogos_II_stackelberg_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center" width="844"></p>
+<p><img data-src="25_jogos_II_stackelberg_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center" width="652"></p>
 </figure>
 </div>
 </div>
@@ -505,7 +505,58 @@ ISCAL - IPL
 </section>
 <section id="cournot-vs.-stackelberg-síntese" class="slide level2">
 <h2>Cournot vs.&nbsp;Stackelberg: Síntese</h2>
-<p>Uma empresa Entrante pondera entrar num mercado onde existe uma empresa Incumbente. :::{.nonincremental} | | Cournot | Stackelberg | |—|—|—| | Timing | Simultâneo | Sequencial | | Hipótese sobre rival | <span class="math inline">\(q_j\)</span> fixo (conjectura) | <span class="math inline">\(q_j = BR_j(q_i)\)</span> (conhecida) | | Equilíbrio | Nash em quantidades | Backward induction | | <span class="math inline">\(q_{\text{líder}}\)</span> vs <span class="math inline">\(q_C\)</span> | <span class="math inline">\(q^C = 8\)</span> | <span class="math inline">\(q_L^S = 12 &gt; 8\)</span> | | <span class="math inline">\(q_{\text{seguidor}}\)</span> vs <span class="math inline">\(q_C\)</span> | <span class="math inline">\(q^C = 8\)</span> | <span class="math inline">\(q_F^S = 6 &lt; 8\)</span> | | <span class="math inline">\(\Pi_{\text{líder}}\)</span> vs <span class="math inline">\(\Pi_C\)</span> | <span class="math inline">\(64\)</span> | <span class="math inline">\(72 &gt; 64\)</span> | | <span class="math inline">\(\Pi_{\text{seguidor}}\)</span> vs <span class="math inline">\(\Pi_C\)</span> | <span class="math inline">\(64\)</span> | <span class="math inline">\(36 &lt; 64\)</span> | :::</p>
+<p>Os dois modelos diferem na <strong>informação</strong> e no <strong>timing</strong> — com consequências directas sobre quem ganha e quem perde.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Cournot</th>
+<th>Stackelberg</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Timing</td>
+<td>Simultâneo</td>
+<td>Sequencial</td>
+</tr>
+<tr class="even">
+<td>Hipótese sobre rival</td>
+<td><span class="math inline">\(q_j\)</span> fixo (conjectura)</td>
+<td><span class="math inline">\(q_j = BR_j(q_i)\)</span> (conhecida)</td>
+</tr>
+<tr class="odd">
+<td>Equilíbrio</td>
+<td>Nash em quantidades</td>
+<td>Backward induction</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(q_{\text{líder}}\)</span> vs <span class="math inline">\(q_C\)</span></td>
+<td><span class="math inline">\(q^C = 8\)</span></td>
+<td><span class="math inline">\(q_L^S = 12 &gt; 8\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(q_{\text{seguidor}}\)</span> vs <span class="math inline">\(q_C\)</span></td>
+<td><span class="math inline">\(q^C = 8\)</span></td>
+<td><span class="math inline">\(q_F^S = 6 &lt; 8\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\Pi_{\text{líder}}\)</span> vs <span class="math inline">\(\Pi_C\)</span></td>
+<td><span class="math inline">\(64\)</span></td>
+<td><span class="math inline">\(72 &gt; 64\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\Pi_{\text{seguidor}}\)</span> vs <span class="math inline">\(\Pi_C\)</span></td>
+<td><span class="math inline">\(64\)</span></td>
+<td><span class="math inline">\(36 &lt; 64\)</span></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section class="slide level2">
 

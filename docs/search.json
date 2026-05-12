@@ -7676,7 +7676,7 @@
     "href": "slides/25_jogos_II_stackelberg.html#cournot-vs.-stackelberg-síntese",
     "title": "Microeconomia",
     "section": "Cournot vs. Stackelberg: Síntese",
-    "text": "Cournot vs. Stackelberg: Síntese\nUma empresa Entrante pondera entrar num mercado onde existe uma empresa Incumbente. :::{.nonincremental} | | Cournot | Stackelberg | |—|—|—| | Timing | Simultâneo | Sequencial | | Hipótese sobre rival | \\(q_j\\) fixo (conjectura) | \\(q_j = BR_j(q_i)\\) (conhecida) | | Equilíbrio | Nash em quantidades | Backward induction | | \\(q_{\\text{líder}}\\) vs \\(q_C\\) | \\(q^C = 8\\) | \\(q_L^S = 12 &gt; 8\\) | | \\(q_{\\text{seguidor}}\\) vs \\(q_C\\) | \\(q^C = 8\\) | \\(q_F^S = 6 &lt; 8\\) | | \\(\\Pi_{\\text{líder}}\\) vs \\(\\Pi_C\\) | \\(64\\) | \\(72 &gt; 64\\) | | \\(\\Pi_{\\text{seguidor}}\\) vs \\(\\Pi_C\\) | \\(64\\) | \\(36 &lt; 64\\) | :::"
+    "text": "Cournot vs. Stackelberg: Síntese\nOs dois modelos diferem na informação e no timing — com consequências directas sobre quem ganha e quem perde.\n\n\n\n\n\n\n\n\n\nCournot\nStackelberg\n\n\n\n\nTiming\nSimultâneo\nSequencial\n\n\nHipótese sobre rival\n\\(q_j\\) fixo (conjectura)\n\\(q_j = BR_j(q_i)\\) (conhecida)\n\n\nEquilíbrio\nNash em quantidades\nBackward induction\n\n\n\\(q_{\\text{líder}}\\) vs \\(q_C\\)\n\\(q^C = 8\\)\n\\(q_L^S = 12 &gt; 8\\)\n\n\n\\(q_{\\text{seguidor}}\\) vs \\(q_C\\)\n\\(q^C = 8\\)\n\\(q_F^S = 6 &lt; 8\\)\n\n\n\\(\\Pi_{\\text{líder}}\\) vs \\(\\Pi_C\\)\n\\(64\\)\n\\(72 &gt; 64\\)\n\n\n\\(\\Pi_{\\text{seguidor}}\\) vs \\(\\Pi_C\\)\n\\(64\\)\n\\(36 &lt; 64\\)"
   },
   {
     "objectID": "slides/25_jogos_II_stackelberg.html#exercício-1-escolha-múltipla",
@@ -8846,5 +8846,12 @@
     "title": "Microeconomia",
     "section": "2.2 Exemplo: Dominância e IEDS",
     "text": "2.2 Exemplo: Dominância e IEDS\nConsidere o seguinte jogo:\n\n\n\n\nJogador B: \\(s_{B1}\\)\nJogador B: \\(s_{B2}\\)\n\n\n\n\nJogador A: \\(s_{A1}\\)\n\\((3, 2)\\)\n\\((4, 1)\\)\n\n\nJogador A: \\(s_{A2}\\)\n\\((1, 3)\\)\n\\((2, 4)\\)\n\n\n\n. . .\n1. Análise do Jogador A: - Se B joga \\(s_{B1}\\): \\(3 &gt; 1 \\Rightarrow s_{A1}\\) é melhor. - Se B joga \\(s_{B2}\\): \\(4 &gt; 2 \\Rightarrow s_{A1}\\) é melhor. - \\(\\therefore s_{A1}\\) domina estritamente \\(s_{A2}\\). O Jogador A eliminará \\(s_{A2}\\).\n. . .\n2. Análise do Jogador B (após a eliminação de \\(s_{A2}\\)): - Sabendo que A jogará \\(s_{A1}\\), o Jogador B compara os seus payoffs na primeira linha: \\(2 &gt; 1\\). - \\(\\therefore s_{B1}\\) é a melhor resposta ao jogar \\(s_{A1}\\).\n. . .\nResultado IEDS: O jogo converge para o perfil de estratégias \\((s_{A1}, s_{B1})\\)."
+  },
+  {
+    "objectID": "slides/25_jogos_II_stackelberg.html#passo-3-equilíbrio-de-sta",
+    "href": "slides/25_jogos_II_stackelberg.html#passo-3-equilíbrio-de-sta",
+    "title": "Microeconomia",
+    "section": "Passo 3 — Equilíbrio de Sta",
+    "text": "Passo 3 — Equilíbrio de Sta\nCom \\(q_1^* = 12\\), o seguidor responde:\n\\[q_2^* = 12 - \\frac{12}{2} = 6\\]\n\nResultados de equilíbrio:\n\\[Q^*_S = 12 + 6 = 18 \\qquad P^*_S = 30 - 18 = 12\\]\n\n\n\\[\\Pi_{\\text{líder}} = (12-6)\\times 12 = 72 \\qquad \\Pi_{\\text{seguidor}} = (12-6)\\times 6 = 36\\]\n\n\n\n\n\n\n\n\nImportant\n\n\nVantagem do primeiro movente: o líder ganha 72 — tanto quanto o monopolista — enquanto o seguidor fica com apenas 36, abaixo dos 64 de Cournot.\nO líder usa a quantidade como compromisso: ao produzir muito (12), força o seguidor a produzir pouco (6)."
   }
 ]
